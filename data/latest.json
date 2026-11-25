@@ -1,0 +1,613 @@
+{
+  "meta": {
+    "as_of": "2026-11-25",
+    "generated_at": "2026-11-25T13:24:26Z",
+    "scope": "面向宁德时代产业投资视角的公开产业观察样本；不代表宁德时代内部口径、实际投资清单或已知业务敞口。",
+    "mode": "公开免费第一手来源核验快照",
+    "update_note": "本次核验12条公开事件及年度基线，覆盖9个观察类别。事实、企业计划和条件性影响分别记录；价格未取得可靠同口径数据，暂不展示。地图仅为项目或实体所在区域示意，不是精确矿权边界或航行坐标。法人治理条目为公开公司监测示例，接入境外子公司需补充法定名称及注册号。"
+  },
+  "events": [
+    {
+      "id": "core-finniss-shipment-20261125",
+      "category": "供需平衡",
+      "title": "Finniss复产后首批锂精矿计划装船：关注实际到货与爬坡",
+      "summary": "Core Lithium在11月25日公告中称，约1万湿吨、约5.1% Li₂O品位的锂辉石精矿已售出，计划当日在达尔文港开始装船。该批货来自Finniss重启后的生产，公司预计12月收到暂定货款；最终结算仍取决于价格、重量和化验结果。公告不等于已经交付或达产。",
+      "impact": "条件性分析：若后续连续出货和选厂稳定运行得到确认，澳洲硬岩锂供给弹性可能提高，影响资源项目现金流与采购议价。单船出货不足以证明全行业过剩，也不能据此推定宁德时代已有采购敞口。",
+      "action": "跟踪装运完成、后续季度产销、回收率与单位成本；将实际到货和最终结算与原计划对照，再更新锂资源情景。",
+      "entity": "Core Lithium / Finniss",
+      "country": "澳大利亚",
+      "published_at": "2026-11-25",
+      "event_date": "2026-11-25",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "Core Lithium ASX公告",
+      "source_url": "https://corelithium.com.au/announcements/kaRXpZ-first-shipment-of-spodumene-concentrate-post-finniss-restart",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "已售出，计划装船；未确认完成交付",
+          "unit": ""
+        },
+        {
+          "label": "数量",
+          "value": "约10,000湿吨",
+          "unit": ""
+        },
+        {
+          "label": "品位",
+          "value": "约5.1% Li₂O",
+          "unit": ""
+        },
+        {
+          "label": "暂定收款",
+          "value": "预计2026年12月",
+          "unit": ""
+        }
+      ],
+      "lat": -12.46,
+      "lon": 130.84
+    },
+    {
+      "id": "core-director-interest-20261117",
+      "category": "法人治理",
+      "title": "Core董事权益申报：可从免费公告抓取董事持股变动",
+      "summary": "Core于11月17日披露Anna Neuling的董事权益变动通知：变动发生于11月13日，间接权益增加4万股普通股，方式为场内买入，公告列示对价10,200澳元。本条是董事权益披露示例，并非董事任免或宁德时代境外子公司变更。",
+      "impact": "条件性分析：同一机制可用公司注册号或上市代码持续匹配任免、权益与申报日期，形成法人治理变更日志。公开持股变化本身不能证明公司价值变化或存在治理异常；四十多个国家的子公司监测仍需逐一建立实体和注册处映射。",
+      "action": "先建立法定名称、注册号、司法辖区和官方来源清单；将任免、持股及地址变更分开记录，对需要解释的变化再人工核验。",
+      "entity": "Core Lithium / Anna Neuling",
+      "country": "澳大利亚",
+      "published_at": "2026-11-17",
+      "event_date": "2026-11-13",
+      "priority": "P2",
+      "evidence_level": "企业披露",
+      "source_name": "Core Lithium Appendix 3Y",
+      "source_url": "https://corelithium.com.au/announcements/zX8XaL-change-of-directors-interest-a-neuling",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "披露日",
+          "value": "2026-11-17",
+          "unit": ""
+        },
+        {
+          "label": "实际变动日",
+          "value": "2026-11-13",
+          "unit": ""
+        },
+        {
+          "label": "间接权益增加",
+          "value": "40,000股",
+          "unit": ""
+        },
+        {
+          "label": "性质",
+          "value": "场内买入，非董事任免",
+          "unit": ""
+        }
+      ],
+      "lat": -31.95,
+      "lon": 115.86
+    },
+    {
+      "id": "wto-trade-monitoring-20261117",
+      "category": "贸易与政策",
+      "title": "WTO贸易监测：电动车领域仍需逐项核对市场准入变化",
+      "summary": "WTO在11月17日发布的贸易监测报告中指出，2026年上半年新增限制性及其他非便利化措施333项；累计仍生效的进口相关措施覆盖约21.3%的世界进口额。统计截止6月30日。报告同时记录大量便利化措施，电动车和光伏是其强调的行业例外。",
+      "impact": "条件性分析：全球措施数量是政策环境信号，不能直接换算成某款电池税率。若具体目的地新增关税、原产地或补贴限制，可能改变出口、当地制造和技术合作方案的成本排序。",
+      "action": "按电芯、储能系统、正负极材料和设备的HS编码维护目的地规则；新增限制必须回溯到实施机关原文、适用主体和生效日期。",
+      "entity": "WTO / 全球贸易",
+      "country": "全球",
+      "published_at": "2026-11-17",
+      "event_date": "2026-06-30",
+      "priority": "P1",
+      "evidence_level": "官方原文",
+      "source_name": "WTO贸易监测公告",
+      "source_url": "https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "统计截止",
+          "value": "2026-06-30",
+          "unit": ""
+        },
+        {
+          "label": "上半年新增限制及非便利化措施",
+          "value": "333项",
+          "unit": ""
+        },
+        {
+          "label": "累计进口措施覆盖",
+          "value": "世界进口额21.3%",
+          "unit": ""
+        },
+        {
+          "label": "口径",
+          "value": "全行业；非电池专属税率",
+          "unit": ""
+        }
+      ],
+      "lat": 46.2,
+      "lon": 6.15
+    },
+    {
+      "id": "un-hormuz-bab-al-mandab-20261113",
+      "category": "地缘与航运",
+      "title": "联合国警示霍尔木兹与曼德海峡风险：需核对在途敞口",
+      "summary": "联合国11月13日安理会通报援引IMO数据：截至11月11日，霍尔木兹及更广泛中东海域累计记录134起确认事件，海运量仍低于冲突前。通报同时说明近期未收到红海商船遇袭报告，但曼德海峡周边冲突与通航威胁仍令人担忧。本条是当时通报，非今天的航行指令。",
+      "impact": "条件性分析：若原料、设备或电池交付依赖相关海域，运期、保险和能源成本可能受影响。霍尔木兹与红海航线应分别匹配，不能把一个海峡的通航状况直接套用到全部亚洲—欧洲货运。",
+      "action": "将船期、装卸港、贸易条款与路线对应；向实际承运人核对最新通航和附加费，结合库存覆盖天数比较改道与缓冲方案。",
+      "entity": "联合国DPPA / IMO",
+      "country": "中东海域",
+      "published_at": "2026-11-13",
+      "event_date": "2026-11-11",
+      "priority": "P0",
+      "evidence_level": "官方原文",
+      "source_name": "联合国DPPA安理会通报",
+      "source_url": "https://dppa.un.org/en/node/137371",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "通报日期",
+          "value": "2026-11-13",
+          "unit": ""
+        },
+        {
+          "label": "事件统计截止",
+          "value": "2026-11-11",
+          "unit": ""
+        },
+        {
+          "label": "确认事件",
+          "value": "134起（霍尔木兹及更广泛中东海域）",
+          "unit": ""
+        },
+        {
+          "label": "采集",
+          "value": "官方检索原文可读，直连受限",
+          "unit": ""
+        }
+      ],
+      "lat": 26.57,
+      "lon": 56.25
+    },
+    {
+      "id": "quantumscape-osprey-20261111",
+      "category": "技术突破",
+      "title": "QuantumScape Osprey披露低压全固态测试，量产仍待证明",
+      "summary": "QuantumScape于11月11日发布Osprey平台，将其陶瓷隔膜和无负极锂金属设计与固态正极结合。公司披露早期测试达到1,000次完整循环后约80%容量保持、10%至80%充电约5分钟，并报告一大气压工作条件；约1,100 Wh/L为预测能量密度。不同指标的测试条件需阅读白皮书逐项核对。",
+      "impact": "条件性分析：若低压力与快充性能能在汽车规格多层电芯、良率和成本约束下同时成立，可能改变固态隔膜、硫化物材料及制造设备的投资价值。当前证据属于企业早期测试披露，尚不足以认定对既有量产电池形成替代。",
+      "action": "跟踪白皮书中的电芯尺寸、面容量、温度、倍率和外压条件；把客户验证、连续制造良率、规模化成本和量产时间作为后续门槛。",
+      "entity": "QuantumScape",
+      "country": "美国",
+      "published_at": "2026-11-11",
+      "event_date": "2026-11-11",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "QuantumScape投资者关系公告",
+      "source_url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-expands-commercial-roadmap-osprey-open-all-solid",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "早期测试 / 开发平台",
+          "unit": ""
+        },
+        {
+          "label": "循环",
+          "value": "1,000次后约80%容量（公司披露）",
+          "unit": ""
+        },
+        {
+          "label": "压力",
+          "value": "一大气压（公司披露）",
+          "unit": ""
+        },
+        {
+          "label": "能量密度",
+          "value": "约1,100 Wh/L为预测值",
+          "unit": ""
+        }
+      ],
+      "lat": 37.34,
+      "lon": -121.89
+    },
+    {
+      "id": "pursuit-ecopro-rio-grande-sur-20261109",
+      "category": "资源与矿权",
+      "title": "EcoPro拟以股权与预付款锁定阿根廷锂资源，尚为非约束MoU",
+      "summary": "Pursuit于11月9日公告与EcoPro Innovation签署非约束性谅解备忘录，拟为阿根廷Rio Grande Sur项目提供4,000万美元投资及融资：2,000万美元股权投资拟换取项目子公司20%权益，另拟提供2,000万美元预付包销融资。安排拟覆盖一期约5,000吨LCE年产量，仍须尽调、正式协议及审批。",
+      "impact": "条件性分析：若正式落地，竞争性材料企业将通过少数股权和包销强化上游控制；有必要关注可供第三方采购的产量和项目融资条件。不能把MoU金额计入已完成交易额，也不能把一期目标计入现有供应。",
+      "action": "追踪正式投资及包销合同、融资到位、许可和建设里程碑；对照盐湖资源、工艺验证、供水及当地监管条件重新评估可交付性。",
+      "entity": "Pursuit Minerals / EcoPro Innovation",
+      "country": "阿根廷",
+      "published_at": "2026-11-09",
+      "event_date": "2026-11-09",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "Pursuit Minerals ASX公告",
+      "source_url": "https://announcements.asx.com.au/asxpdf/20261109/pdf/076cktdg0v5hj9.pdf",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "非约束性MoU",
+          "unit": ""
+        },
+        {
+          "label": "拟投资及融资",
+          "value": "合计4,000万美元",
+          "unit": ""
+        },
+        {
+          "label": "拟项目股权",
+          "value": "20%",
+          "unit": ""
+        },
+        {
+          "label": "一期包销目标",
+          "value": "约5,000吨LCE/年",
+          "unit": ""
+        }
+      ],
+      "lat": -24.79,
+      "lon": -65.41
+    },
+    {
+      "id": "csrc-lithium-hydroxide-registration-20261106",
+      "category": "原材料",
+      "title": "氢氧化锂期货期权获准注册：增加原料风险监测维度",
+      "summary": "中国证监会11月6日公告同意广州期货交易所氢氧化锂期货和期权注册，并要求交易所做好推出准备。该公告确认的是产品注册批准，未提供任何日内成交价、结算价或现货报价。",
+      "impact": "条件性分析：相关产品推出并形成有效交易后，可为氢氧化锂远期价格和风险管理提供额外观察维度。不同锂盐、品级和交割月份存在差异，不能将氢氧化锂期货、碳酸锂期货与采购现货价混为同一指标。",
+      "action": "继续核验交易所上市及合约规则，未来采集时固定交易日、合约代码、结算或收盘口径和单位；完成可核验行情接入前不展示涨跌幅。",
+      "entity": "中国证监会 / 广州期货交易所",
+      "country": "中国",
+      "published_at": "2026-11-06",
+      "event_date": "2026-11-06",
+      "priority": "P2",
+      "evidence_level": "官方原文",
+      "source_name": "中国证监会公告",
+      "source_url": "https://www.csrc.gov.cn/csrc/c100028/c7669233/content.shtml",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "同意注册",
+          "unit": ""
+        },
+        {
+          "label": "标的",
+          "value": "氢氧化锂期货与期权",
+          "unit": ""
+        },
+        {
+          "label": "行情状态",
+          "value": "本版未接入可核验逐日报价",
+          "unit": ""
+        }
+      ],
+      "lat": 23.13,
+      "lon": 113.26
+    },
+    {
+      "id": "lges-north-america-ess-20261103",
+      "category": "竞争与合作",
+      "title": "LG新能源提出2027年北美ESS产能超过70GWh目标",
+      "summary": "LG新能源11月3日三季度业绩公告提出，通过转产EV软包线和新增方形ESS产线，使北美储能电池产能在2027年底超过70GWh。公司同时披露北美本地原料及非PFE正极供应链扩展，以及年内为ESS客户制作钠离子样品的计划。70GWh是未来目标，不是当前产量或已交付订单。",
+      "impact": "条件性分析：若产能与当地材料配套按计划落地，北美储能竞争可能进一步围绕供应链资格、本地制造和系统集成展开；对宁德时代视角，应分别评估技术许可、设备材料合作及其他市场的竞争压力。",
+      "action": "逐厂跟踪已投产、转产、在建和规划状态；核对客户合同、利用率与材料来源，监测当地规则原文，不以企业合规宣传替代法律核验。",
+      "entity": "LG Energy Solution",
+      "country": "美国 / 加拿大",
+      "published_at": "2026-11-03",
+      "event_date": "2026-11-03",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "LG Energy Solution业绩公告",
+      "source_url": "https://news.lgensol.com/company-news/press-releases/5549/",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "2027年底产能目标",
+          "unit": ""
+        },
+        {
+          "label": "北美ESS",
+          "value": "目标超过70GWh",
+          "unit": ""
+        },
+        {
+          "label": "扩张方式",
+          "value": "EV线转产与新增产线",
+          "unit": ""
+        },
+        {
+          "label": "钠离子",
+          "value": "年内样品 / PoC计划",
+          "unit": ""
+        }
+      ],
+      "lat": 42.73,
+      "lon": -84.56
+    },
+    {
+      "id": "samsung-sdi-ess-orders-20261029",
+      "category": "竞争与合作",
+      "title": "三星SDI披露ESS订单超过60GWh，美国LFP方形电芯开始量产",
+      "summary": "三星SDI10月29日业绩公告称，当年已取得超过60GWh的ESS电池订单，并称10月已在美国StarPlus Energy工厂开始高容量方形LFP电芯量产。公司还披露为人形机器人用途交付全固态样品。订单、生产启动和送样是不同阶段，公告未证明这些订单已全部交付。",
+      "impact": "条件性分析：美国本地LFP供给及AI数据中心需求可能重塑储能客户的采购组合。机器人固态送样属于新应用验证信号，适合纳入技术观察，尚不能作为稳定收入或成熟量产的依据。",
+      "action": "跟踪订单交付期、投产后良率与产量，以及客户集中度；将储能业务和机器人固态研发分别管理，避免混合计算商业规模。",
+      "entity": "Samsung SDI / StarPlus Energy",
+      "country": "美国 / 韩国",
+      "published_at": "2026-10-29",
+      "event_date": "2026-10-29",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "Samsung SDI三季度业绩公告",
+      "source_url": "https://news.samsungsdi.com/global/articleView?seq=470",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "ESS订单",
+          "value": "2026年已取得超过60GWh（公司披露）",
+          "unit": ""
+        },
+        {
+          "label": "美国LFP",
+          "value": "10月开始量产（公司披露）",
+          "unit": ""
+        },
+        {
+          "label": "全固态机器人电池",
+          "value": "样品交付阶段",
+          "unit": ""
+        },
+        {
+          "label": "订单量不等于当期交付量",
+          "value": "",
+          "unit": ""
+        }
+      ],
+      "lat": 40.49,
+      "lon": -86.13
+    },
+    {
+      "id": "arena-rio-tinto-thermal-storage-20261021",
+      "category": "矿山零碳",
+      "title": "力拓氧化铝精炼厂360MWh热储能项目进入前期设计",
+      "summary": "ARENA10月21日公告支持力拓Yarwun氧化铝精炼厂的Rondo热储能示范，初始提供360万澳元完成前端工程设计。项目拟配置360MWh热储能、30MW热输出和78MW电输入；后续部署资金有前提条件，预计减排量亦属目标。该项目属于工业热储能，不能计入锂电池电化学储能装机。",
+      "impact": "条件性分析：矿业和冶炼客户的脱碳需求可能同时涉及供电、运输与高温工艺热。对产业投资而言，应区分电化学储能的电网服务价值和热储能的蒸汽替代价值，识别互补系统机会及需求被其他技术承接的部分。",
+      "action": "持续关注可研、最终投资决定、用电成本和连续供汽验证；与矿区电池储能项目分别计算系统效率、输出介质及全寿命成本。",
+      "entity": "Rio Tinto / Rondo Energy / ARENA",
+      "country": "澳大利亚",
+      "published_at": "2026-10-21",
+      "event_date": "2026-10-21",
+      "priority": "P2",
+      "evidence_level": "官方原文",
+      "source_name": "澳大利亚可再生能源署ARENA",
+      "source_url": "https://arena.gov.au/news/demonstrating-a-new-pathway-for-electrifying-industrial-heat-at-scale/",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "前端工程设计 / 后续部署有条件",
+          "unit": ""
+        },
+        {
+          "label": "规划储能",
+          "value": "360MWh（热）",
+          "unit": ""
+        },
+        {
+          "label": "规划输出",
+          "value": "30MW热功率",
+          "unit": ""
+        },
+        {
+          "label": "初始FEED支持",
+          "value": "360万澳元",
+          "unit": ""
+        }
+      ],
+      "lat": -23.84,
+      "lon": 151.12
+    },
+    {
+      "id": "volkswagen-powerco-gotion-20260928",
+      "category": "竞争与合作",
+      "title": "大众、PowerCo与国轩拟建欧洲—摩洛哥LFP产业链合作",
+      "summary": "大众9月28日公告披露与PowerCo、国轩深化合作，拟在西班牙瓦伦西亚、斯洛伐克Šurany和摩洛哥Kenitra建立涉及LFP电芯及正极材料的三家合资企业。国轩拟投资约11亿欧元取得瓦伦西亚项目49%权益；PowerCo拟至2030年向另两个项目投入约4.7亿欧元。交易仍需监管及股东批准等条件。",
+      "impact": "条件性分析：若这些安排交割并按计划投产，欧洲LFP竞争将更依赖客户绑定、材料配套和跨区域生产网络。材料及设备企业可能出现合作入口，但仅凭签约不能判定新增供应的年份、规模或客户份额。",
+      "action": "分别追踪股东和监管批准、交割、厂区建设及量产节点；对当地材料配套、物流和能源成本开展项目级比较。",
+      "entity": "Volkswagen / PowerCo / Gotion",
+      "country": "西班牙 / 斯洛伐克 / 摩洛哥",
+      "published_at": "2026-09-28",
+      "event_date": "2026-09-28",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "Volkswagen Group官方新闻稿",
+      "source_url": "https://www.volkswagen-group.com/en/press-releases/volkswagen-group-powerco-and-gotion-deepen-strategic-partnership-20710",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "协议披露，仍待审批及交割",
+          "unit": ""
+        },
+        {
+          "label": "合作",
+          "value": "拟建立3家合资企业",
+          "unit": ""
+        },
+        {
+          "label": "国轩瓦伦西亚投资",
+          "value": "拟约11亿欧元",
+          "unit": ""
+        },
+        {
+          "label": "PowerCo另两项目投资",
+          "value": "至2030年拟约4.7亿欧元",
+          "unit": ""
+        }
+      ],
+      "lat": 39.47,
+      "lon": -0.38
+    },
+    {
+      "id": "iea-battery-supply-chain-baseline-20260520",
+      "category": "供需平衡",
+      "title": "IEA年度基线：名义产能扩张与中游瓶颈、回收缺料并存",
+      "summary": "IEA《Global EV Outlook 2026》于5月20日发布：2025年底全球锂离子电池名义制造产能超过4TWh，电池中游材料及工艺能力仍高度集中；报告同时指出回收产能超过可用原料、部分材料企业利润受压，以及钠离子硬碳供应链尚不成熟。它是年度结构基线，不代表11月25日的即时供需。",
+      "impact": "条件性分析：电芯总产能大并不等于所有材料和地区供应充裕。宁德时代产业投资的筛选可分别检视有效产出、合格率、客户认证及原料可得性，关注局部瓶颈；回收项目尤其需要验证真实进料保障，避免只以名义规模推算收益。",
+      "action": "将电芯、正极、负极、锂盐和回收分别建表；按区域、技术路线及实际产量滚动更新，优先核查硬碳等瓶颈和回收项目的长期进料。",
+      "entity": "IEA / 全球电池供应链",
+      "country": "全球",
+      "published_at": "2026-05-20",
+      "event_date": "2025-12-31",
+      "priority": "P2",
+      "evidence_level": "研究报告",
+      "source_name": "IEA Global EV Outlook 2026",
+      "source_url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries",
+      "verified_at": "2026-11-25T13:24:26Z",
+      "metrics": [
+        {
+          "label": "报告发布日期",
+          "value": "2026-05-20",
+          "unit": ""
+        },
+        {
+          "label": "2025年底锂电名义制造产能",
+          "value": "超过4TWh",
+          "unit": ""
+        },
+        {
+          "label": "口径",
+          "value": "名义产能不等于实际产出",
+          "unit": ""
+        },
+        {
+          "label": "用途",
+          "value": "年度结构基线，非即时报价",
+          "unit": ""
+        }
+      ],
+      "lat": 48.86,
+      "lon": 2.35
+    }
+  ],
+  "prices": [],
+  "sources": [
+    {
+      "name": "Core Lithium ASX公告",
+      "url": "https://corelithium.com.au/announcements/kaRXpZ-first-shipment-of-spodumene-concentrate-post-finniss-restart",
+      "category": "供需平衡",
+      "status": "官方检索可见 / 直连受限",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "检索正文可读，浏览抓取通道出现不可访问；本次额外直接HTTP请求成功读取正文。公告日期11月25日，装船为当日计划，持续采集可用性仍需监控。"
+    },
+    {
+      "name": "Core Lithium Appendix 3Y",
+      "url": "https://corelithium.com.au/announcements/zX8XaL-change-of-directors-interest-a-neuling",
+      "category": "法人治理",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "公开第一手公告；保留披露日和事项阶段。"
+    },
+    {
+      "name": "WTO贸易监测公告",
+      "url": "https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm",
+      "category": "贸易与政策",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "公开第一手公告；保留披露日和事项阶段。"
+    },
+    {
+      "name": "联合国DPPA安理会通报",
+      "url": "https://dppa.un.org/en/node/137371",
+      "category": "地缘与航运",
+      "status": "检索可读，直连受限",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "已核对联合国官方检索全文；直接访问返回403。统计截至11月11日，不能当作当日航行态势。"
+    },
+    {
+      "name": "QuantumScape投资者关系公告",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-expands-commercial-roadmap-osprey-open-all-solid",
+      "category": "技术突破",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "企业披露；实验指标和预测密度保留阶段标识，未认定量产实现。"
+    },
+    {
+      "name": "Pursuit Minerals ASX公告",
+      "url": "https://announcements.asx.com.au/asxpdf/20261109/pdf/076cktdg0v5hj9.pdf",
+      "category": "资源与矿权",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "交易所公开PDF；非约束性MoU，未计为完成交易。"
+    },
+    {
+      "name": "中国证监会公告",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7669233/content.shtml",
+      "category": "原材料",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "公开第一手公告；保留披露日和事项阶段。"
+    },
+    {
+      "name": "LG Energy Solution业绩公告",
+      "url": "https://news.lgensol.com/company-news/press-releases/5549/",
+      "category": "竞争与合作",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "公开第一手公告；保留披露日和事项阶段。"
+    },
+    {
+      "name": "Samsung SDI三季度业绩公告",
+      "url": "https://news.samsungsdi.com/global/articleView?seq=470",
+      "category": "竞争与合作",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "公开第一手公告；保留披露日和事项阶段。"
+    },
+    {
+      "name": "澳大利亚可再生能源署ARENA",
+      "url": "https://arena.gov.au/news/demonstrating-a-new-pathway-for-electrifying-industrial-heat-at-scale/",
+      "category": "矿山零碳",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "公开第一手公告；保留披露日和事项阶段。"
+    },
+    {
+      "name": "Volkswagen Group官方新闻稿",
+      "url": "https://www.volkswagen-group.com/en/press-releases/volkswagen-group-powerco-and-gotion-deepen-strategic-partnership-20710",
+      "category": "竞争与合作",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "公开第一手公告；保留披露日和事项阶段。"
+    },
+    {
+      "name": "IEA Global EV Outlook 2026",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries",
+      "category": "供需平衡",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "免费公开年度报告，CC BY 4.0；报告发表日期5月20日，事实及预测需按各自统计期使用。"
+    },
+    {
+      "name": "UKMTO Recent Incidents",
+      "url": "https://www.ukmto.org/recent-incidents",
+      "category": "地缘与航运",
+      "status": "采集待完善",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "官方搜索结果与动态页面读取结果不一致；本版未把索引中的事件直接纳入快报。需要可靠的事件详情与持久链接。"
+    },
+    {
+      "name": "广州期货交易所碳酸锂产品页",
+      "url": "https://www.gfex.com.cn/gfex/sytslqhhy/202307/9ad927b8ec4c458594e172fd1ada2a9b.shtml",
+      "category": "原材料",
+      "status": "未接入行情",
+      "last_checked": "2026-11-25T13:24:26Z",
+      "note": "已确认官方产品及报价单位，但未取得连续且同口径的日行情；价格区保持空白。不可将产品页当作实时价格API。"
+    }
+  ]
+}

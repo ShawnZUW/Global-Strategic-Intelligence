@@ -1,0 +1,69 @@
+name: Daily public source collection
+
+on:
+  schedule:
+    # UTC 23:40 = next day 07:40 in Asia/Shanghai. Scheduling is best effort.
+    - cron: '40 23 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/**
+      - data/feed_sources.json
+      - .github/workflows/daily-public-feeds.yml
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: daily-public-feeds
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.repository == 'ShawnZUW/Global-Strategic-Intelligence'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Check deduplication and source-failure handling
+        run: python3 -m unittest discover -s tests -p 'test_collect_feeds.py' -v
+
+      - name: Collect public official headlines
+        id: collection
+        # Persist a failure audit even if all sources are unavailable.
+        continue-on-error: true
+        run: python3 scripts/collect_feeds.py
+
+      - name: Commit public feed snapshot and audit
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/feed-latest.json data/feed-state.json data/feed-history/
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            git commit -m 'Update public official feed headlines and source audit'
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Request and verify branch-based Pages rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GSI_REPOSITORY: ${{ github.repository }}
+        run: python3 scripts/rebuild_pages.py
+
+      - name: Report collection failure
+        if: steps.collection.outcome == 'failure'
+        run: |
+          echo '::error::All sources failed, or the collector could not finish. Review the source audit; preserved older items are not new observations.'
+          exit 1

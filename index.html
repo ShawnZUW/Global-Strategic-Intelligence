@@ -1,1 +1,61 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>全球战略情报中心</title><style>body{background:#0b1524;color:#e4edf8;font:16px system-ui;margin:0}main{max-width:1200px;margin:auto;padding:28px}small,p{color:#a8bdd3;line-height:1.7}h1{font-size:clamp(25px,4vw,42px)}section{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}article{background:#14263c;border:1px solid #304962;padding:20px;border-radius:12px}a{color:#83caff}button,input{background:#182e46;color:white;border:1px solid #45617e;padding:10px;border-radius:6px;margin:4px}button{cursor:pointer}</style><main><small>GLOBAL STRATEGIC INTELLIGENCE / PUBLIC DATA POC</small><h1>全球战略情报与投后监控中心</h1><p>公开信息研究原型 · 非企业官方系统 · 尚未接入每日数据流。以下为常设监控方向及官方信源入口，不代表已核实的最新事件。</p><input id="q" placeholder="搜索监控领域"><nav id="nav"></nav><section id="out"></section></main><script>const d=[['资源与矿权','锂、镍、钴、石墨、铜；矿权、许可、资源量、复产、包销','https://www.usgs.gov/centers/national-minerals-information-center'],['原材料价格','价格异常、库存、期现价差','https://www.metal.com/'],['供需平衡','产量、有效产能、需求、供给短缺与过剩','https://www.iea.org/'],['地缘与航运','冲突、港口、海峡、运输风险','https://portwatch.imf.org/'],['贸易与政策','关税、出口限制、本地化要求','https://www.wto.org/'],['技术突破','固态、钠电、硅碳、直接提锂、干法电极','https://www.energy.gov/'],['竞争与合作','竞争对手产能、订单、合资及技术授权','https://www.sec.gov/edgar/search/'],['法人治理','董事任免、股权、注册状态','https://find-and-update.company-information.service.gov.uk/'],['矿山零碳','微电网、储能、矿卡换电','https://www.iea.org/']];let t='全部';for(const n of ['全部',...d.map(x=>x[0])]){let b=document.createElement('button');b.textContent=n;b.onclick=()=>{t=n;render()};nav.append(b)}function render(){out.replaceChildren();for(const x of d.filter(x=>(t==='全部'||x[0]===t)&&x.join(' ').includes(q.value))){let a=document.createElement('article'),h=document.createElement('h2'),p=document.createElement('p'),l=document.createElement('a');h.textContent=x[0];p.textContent=x[1];l.href=x[2];l.textContent='公开信源入口';a.append(h,p,l);out.append(a)}}q.oninput=render;render()</script></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="面向电池产业投资的公开信息研究仪表盘，覆盖矿产、原料、航运、技术、竞争合作与法人治理。">
+  <title>全球战略情报 · Global Strategic Intelligence</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳转至内容</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="全球战略情报首页"><span class="brand-mark" aria-hidden="true">◈</span><span><strong>STRATEGIC INTELLIGENCE</strong><small>全球战略情报 · 公开资料研究</small></span></a>
+    <div class="top-actions"><span class="public-label">PUBLIC SOURCES</span><button class="icon-button" id="refresh" title="重新读取最新数据"><span aria-hidden="true">↻</span><span>刷新</span></button><button id="export" class="export-button">导出事件 CSV</button></div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="栏目导航">
+      <div class="nav-caption">工作台 <span>WORKSPACE</span></div>
+      <nav id="sections" class="sections"></nav>
+      <div class="sidebar-bottom"><span class="small-kicker">研究范围</span><p>电池产业投资<br>全球资源与供应链<br>海外项目与法人治理</p><div class="sidebar-rule"></div><small>基于公开资料的独立研究。<br>不代表企业官方观点。</small></div>
+    </aside>
+    <main id="main" class="main">
+      <section class="page-head">
+        <div><div class="eyebrow">GLOBAL OUTLOOK / BATTERY VALUE CHAIN</div><h1>全球战略情报</h1><p class="subtitle">从全球变化，看到产业链影响与投资问题。</p></div>
+        <div class="snapshot-control"><label for="snapshot">情报快照</label><select id="snapshot"><option value="latest">最新发布</option></select><span id="asof" class="mono">正在读取…</span></div>
+      </section>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <div id="freshness" class="freshness"><span class="status-dot"></span><span id="freshness-text">正在读取已发布数据</span><span class="freshness-divider">/</span><span id="scope-note">所有事件保留原始来源</span></div>
+      <section id="stats" class="stats" aria-label="快照概览"></section>
+      <section id="overview" class="overview">
+        <div class="panel map-panel">
+          <div class="panel-head"><div><span class="small-kicker">GEOGRAPHIC LENS</span><h2>全球事件分布</h2></div><span id="map-count" class="tag">公开事件</span></div>
+          <div class="world-map"><svg id="map" viewBox="0 0 840 410" role="img" aria-label="已取得地理位置的公开事件分布图"><g id="graticule"></g><g id="land"></g><g id="markers"></g></svg><div class="map-legend"><span><i class="legend-dot red"></i>P0</span><span><i class="legend-dot amber"></i>P1</span><span><i class="legend-dot cyan"></i>其他</span><span>点击标记查看事件</span></div></div>
+          <div class="map-foot"><span id="map-note">仅绘制有明确地理坐标的记录</span><span>Natural Earth</span></div>
+        </div>
+        <div class="panel priorities-panel"><div class="panel-head"><div><span class="small-kicker">DECISION AGENDA</span><h2>本期优先关注</h2></div><span class="tag">研究优先级</span></div><div id="priorities"></div></div>
+      </section>
+      <section class="panel workspace-panel">
+        <div class="workspace-top"><div><span class="small-kicker" id="section-kicker">INTELLIGENCE FEED</span><h2 id="section-title">全部战略事件</h2></div><div id="result-count" class="result-count"></div></div>
+        <form id="filters" class="filters" role="search">
+          <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索企业、材料、国家或技术" aria-label="搜索情报"></div>
+          <select id="category" aria-label="按领域筛选"><option value="">全部领域</option></select>
+          <select id="priority" aria-label="按研究优先级筛选"><option value="">全部优先级</option><option value="P0">P0 · 优先核实</option><option value="P1">P1 · 重点研究</option><option value="P2">P2 · 持续观察</option></select>
+          <select id="evidence" aria-label="按证据筛选"><option value="">全部证据</option><option value="primary">一手披露</option><option value="other">其他 / 待核验</option></select>
+          <select id="period" aria-label="按披露时间筛选"><option value="all">全部日期</option><option value="7">快照前7日</option><option value="30">快照前30日</option><option value="90">快照前90日</option></select>
+          <button id="reset" type="button" class="reset-button">重置</button>
+        </form>
+        <div id="content" class="content"><div class="loading-state"><div class="spinner"></div><p>正在读取公开信息快照…</p></div></div>
+      </section>
+      <section id="research-note" class="research-note"><div><span class="small-kicker">READING GUIDE</span><h3>事实、目标与研判分别呈现</h3></div><p>企业公告记录其披露内容，规划产能不等于已投产，技术测试不等于量产验证。影响与建议属于研究判断。未取得数据的领域保留缺口，不填入模拟数据。</p></section>
+      <footer class="footer"><span>GLOBAL STRATEGIC INTELLIGENCE</span><span id="footer-date">公开数据 · 来源可追溯</span><a href="https://github.com/ShawnZUW/Global-Strategic-Intelligence" target="_blank" rel="noopener noreferrer">项目与更新记录</a></footer>
+    </main>
+  </div>
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+  <aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden><button id="drawer-close" class="drawer-close" aria-label="关闭详情">×</button><div id="drawer-body"></div></aside>
+  <noscript><p class="noscript">此页面需要 JavaScript 读取数据。可直接打开 <a href="data/latest.json">最新公开数据 JSON</a>。</p></noscript>
+</body>
+</html>

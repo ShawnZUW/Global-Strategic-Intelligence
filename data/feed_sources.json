@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "description": "公开官方RSS，仅采集标题、原文链接和来源时间；分类为关键词线索，未经逐条核验。",
+  "sources": [
+    {
+      "id": "eia-today-in-energy",
+      "name": "美国能源信息署 EIA",
+      "url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "homepage": "https://www.eia.gov/todayinenergy/",
+      "allowed_hosts": ["www.eia.gov", "eia.gov"],
+      "categories": ["能源与供需"],
+      "match_keywords": [],
+      "publisher_type": "政府机构",
+      "coverage_note": "能源供需、发电和油气运输；不提供电池材料实时成交价。"
+    },
+    {
+      "id": "un-news",
+      "name": "联合国 UN News",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "homepage": "https://news.un.org/",
+      "allowed_hosts": ["news.un.org"],
+      "categories": ["地缘与贸易"],
+      "match_keywords": ["conflict", "war", "ceasefire", "ukraine", "russia", "sudan", "congo", "yemen", "gaza", "iran", "israel", "red sea", "shipping", "maritime", "trade", "supply", "energy", "mineral", "climate"],
+      "publisher_type": "国际组织",
+      "coverage_note": "按标题筛选冲突、贸易、航运和能源线索；不等于特定矿区或航道的实时风险预警。"
+    },
+    {
+      "id": "quantumscape-ir",
+      "name": "QuantumScape 投资者关系",
+      "url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "homepage": "https://ir.quantumscape.com/news-events/news-releases",
+      "allowed_hosts": ["ir.quantumscape.com"],
+      "categories": ["技术与竞对"],
+      "match_keywords": [],
+      "publisher_type": "企业自述",
+      "coverage_note": "公司固态电池、合作、产线与财报公告；技术性能和商业化表述需独立验证。"
+    },
+    {
+      "id": "lg-energy-solution",
+      "name": "LG Energy Solution Newsroom",
+      "url": "https://news.lgensol.com/feed/",
+      "homepage": "https://news.lgensol.com/",
+      "allowed_hosts": ["news.lgensol.com"],
+      "categories": ["技术与竞对"],
+      "match_keywords": [],
+      "publisher_type": "企业自述",
+      "coverage_note": "公司电池、储能、工厂和合作动态；不能将宣传或转述当成已核实技术突破。"
+    }
+  ]
+}

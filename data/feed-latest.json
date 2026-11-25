@@ -1,0 +1,1239 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "generated_at": "2026-11-25T13:25:12Z",
+    "as_of": "2026-11-25",
+    "mode": "official-feed-leads",
+    "collection_status": "success",
+    "note": "标题来自官方订阅，关键词分类仅供筛选，未经逐条核验。首次发现时间不是事件发生时间，企业表述不代表独立验证。",
+    "source_count": 4,
+    "successful_sources": 4,
+    "item_count": 63,
+    "newly_discovered_count": 63,
+    "initial_baseline": true,
+    "baseline_note": "首次建库，所见旧公告不视为今日新增事件。",
+    "schedule": "每日北京时间约07:40；GitHub调度可能延迟。"
+  },
+  "items": [
+    {
+      "title": "How does EIA compare different types of energy?",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
+      "published_at": "2026-11-24T14:00:00Z",
+      "source_updated_at": null,
+      "id": "41ee440d15205b02d80cf16a",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "DR Congo: Concern for trapped Ebola workers as violence against women and girls deepens",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168865",
+      "published_at": "2026-11-24T12:00:00Z",
+      "source_updated_at": null,
+      "id": "a44f2907ccd9b3976bfbbf51",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Security Council LIVE: Can conflict resolution keep pace as AI and drones reshape war?",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168866",
+      "published_at": "2026-11-24T12:00:00Z",
+      "source_updated_at": null,
+      "id": "7d8cc547f7c9a0219b514d6d",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "World News in Brief: Vaccine crisis in Yemen, aid for Ukraine, another UNRWA staffer killed",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168871",
+      "published_at": "2026-11-24T12:00:00Z",
+      "source_updated_at": null,
+      "id": "3db522a7a8e9380966f81ce7",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Heavy fighting in Ituri traps DR Congo Ebola responders: WHO",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168858",
+      "published_at": "2026-11-23T12:00:00Z",
+      "source_updated_at": null,
+      "id": "a68db2f1d7afa7818e90f7e2",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Gaza war has undone 77 years of human development, UN warns",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168862",
+      "published_at": "2026-11-23T12:00:00Z",
+      "source_updated_at": null,
+      "id": "23ce2785727fbeec4d3c9013",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Security Council LIVE: Winter attacks on Ukraine's power grid and Black Sea shipping threaten lives and global food supplies",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168859",
+      "published_at": "2026-11-23T12:00:00Z",
+      "source_updated_at": null,
+      "id": "095442ef4a2257f8bdef35ff",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易",
+        "航道与物流",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "RE+ 2026 recap: Facing an uncertain future, clean energy industries focus on addressing load growth and broadening political horizons",
+      "url": "https://news.lgensol.com/insights/market-trend/5688/",
+      "published_at": "2026-11-23T07:23:36Z",
+      "source_updated_at": null,
+      "id": "8b0b8d9d1b1809cc2b54ebe7",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "COP31 ends without climate pact as UN chief warns there is ‘no ambiguity in the science’",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168855",
+      "published_at": "2026-11-22T12:00:00Z",
+      "source_updated_at": null,
+      "id": "d8cb37b6ee449ecf0032af0e",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "‘I had a better life in Iran’: Afghan women forced home struggle to rebuild",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168852",
+      "published_at": "2026-11-22T12:00:00Z",
+      "source_updated_at": null,
+      "id": "2f16e29e794aeda17bf3c36f",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Guterres laments COP31 outcome, urges climate justice from Barbados",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168856",
+      "published_at": "2026-11-22T12:00:00Z",
+      "source_updated_at": null,
+      "id": "180a5dc2f3a58b222d120c48",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "‘We escaped with only our lives’: Fighting to give birth in war-torn Yemen",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168851",
+      "published_at": "2026-11-21T12:00:00Z",
+      "source_updated_at": null,
+      "id": "1651c68df9d739512efb7515",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "COP31: Countries demand stronger climate deal amid deadlock in Antalya",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168845",
+      "published_at": "2026-11-20T12:00:00Z",
+      "source_updated_at": null,
+      "id": "c425ac3b9ef5c2a1e911dc1b",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Shattered playgrounds and freezing classrooms: Inside Ukraine’s deadliest year for children",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168847",
+      "published_at": "2026-11-20T12:00:00Z",
+      "source_updated_at": null,
+      "id": "689337f466be3e7c13d2e503",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "West Bank: Record settler attacks mar olive harvest as UN urges Israel to protect farmers",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168849",
+      "published_at": "2026-11-20T12:00:00Z",
+      "source_updated_at": null,
+      "id": "1e33a84d56832480d23569e6",
+      "source_id": "un-news",
+      "source_name": "联合国 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_type": "国际组织",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "地缘与贸易"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "LG Energy Solution Wroclaw Marks 10 Years in Poland: Its Impact on Poland and Europe’s Battery Industry",
+      "url": "https://news.lgensol.com/company-news/supplementary-stories/5677/",
+      "published_at": "2026-11-20T00:39:56Z",
+      "source_updated_at": null,
+      "id": "a0fa45353c12ff32aaa3619c",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Oil flows through Middle East chokepoints increased in the third quarter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=",
+      "published_at": "2026-11-19T14:00:00Z",
+      "source_updated_at": null,
+      "id": "7dd88225b4ad6945571af2ee",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "From Individual Expertise to Collective Growth: Inside LG Energy Solution Wroclaw’s Internal Trainers Program",
+      "url": "https://news.lgensol.com/company-news/supplementary-stories/5652/",
+      "published_at": "2026-11-18T22:00:00Z",
+      "source_updated_at": null,
+      "id": "6d0fb6d822c5d9059d39606c",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. natural gas inventories end injection season above normal levels",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+      "published_at": "2026-11-18T14:00:00Z",
+      "source_updated_at": null,
+      "id": "a4c390e9c48b4825355d9bf6",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "‘Using every ounce of value from the assets’: LG Energy Solution Vertech CPO talks data centres, BESS and software integration at RE+ 2026",
+      "url": "https://news.lgensol.com/company-news/media-headlines/5673/",
+      "published_at": "2026-11-18T04:38:02Z",
+      "source_updated_at": null,
+      "id": "94899e36031e54453b14b8c7",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "LG Energy Solution Showcases Integrated Power Infrastructure for AI Data Centers at RE+ 2026",
+      "url": "https://news.lgensol.com/company-news/press-releases/5631/",
+      "published_at": "2026-11-17T23:00:00Z",
+      "source_updated_at": null,
+      "id": "80bb0d5aefd587952325a965",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "How does EIA account for small differences between energy supply and demand data?",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68464",
+      "published_at": "2026-11-17T14:00:00Z",
+      "source_updated_at": null,
+      "id": "b9b1dbb35bdc6562fe0996b4",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "NextStar Energy CEO wants Windsor-Essex to be world’s battery capital",
+      "url": "https://news.lgensol.com/company-news/media-headlines/5648/",
+      "published_at": "2026-11-16T02:15:53Z",
+      "source_updated_at": null,
+      "id": "941136f538180faed4808a08",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "The Next Phase of ESS: Chang Beom Kang on LG Energy Solution’s Strategy",
+      "url": "https://news.lgensol.com/insights/from-our-experts/5587/",
+      "published_at": "2026-11-14T00:28:20Z",
+      "source_updated_at": null,
+      "id": "ab9767adc8f5712de8f7ffdc",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Hydropower generation in the Southwest fell to record lows this summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68445",
+      "published_at": "2026-11-13T14:00:00Z",
+      "source_updated_at": null,
+      "id": "2474a6edd8a20e4b6f123491",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "How LG Energy Solution Is Strengthening Michigan’s Battery Ecosystem, Workforce, and Communities",
+      "url": "https://news.lgensol.com/company-news/supplementary-stories/5609/",
+      "published_at": "2026-11-13T03:38:18Z",
+      "source_updated_at": null,
+      "id": "85c592138a69b27403e1e720",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "The next phase of ESS: LG Energy Solution’s strategy for an evolving energy market",
+      "url": "https://news.lgensol.com/company-news/media-headlines/5670/",
+      "published_at": "2026-11-13T01:28:00Z",
+      "source_updated_at": null,
+      "id": "ed5b70511f70b73ffc31107c",
+      "source_id": "lg-energy-solution",
+      "source_name": "LG Energy Solution Newsroom",
+      "source_url": "https://news.lgensol.com/feed/",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68444",
+      "published_at": "2026-11-12T14:00:00Z",
+      "source_updated_at": null,
+      "id": "e3f23c3f0faa7979a64467b0",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Expands Commercial Roadmap with Osprey, the Open All-Solid-State Platform for Battery Development",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-expands-commercial-roadmap-osprey-open-all-solid",
+      "published_at": "2026-11-11T14:00:33Z",
+      "source_updated_at": null,
+      "id": "6b43a575af9742a097c65510",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. crude oil imports from Venezuela in July were highest since 2017",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68425",
+      "published_at": "2026-11-06T14:00:00Z",
+      "source_updated_at": null,
+      "id": "0300679559154a9dd732227b",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Refineries have shifted production away from gasoline to middle distillates",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68424",
+      "published_at": "2026-11-05T14:00:00Z",
+      "source_updated_at": null,
+      "id": "3993941242fcf8c5b02082c0",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68404",
+      "published_at": "2026-11-03T14:00:00Z",
+      "source_updated_at": null,
+      "id": "526cec034ccb484b91924a63",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "The share of solar generation with co-located battery storage is increasing",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68384",
+      "published_at": "2026-10-30T14:00:00Z",
+      "source_updated_at": null,
+      "id": "a3882203fc7693802125f3b4",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需",
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "LNG imports make up increasing share of Colombia's natural gas supply",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68364",
+      "published_at": "2026-10-29T14:00:00Z",
+      "source_updated_at": null,
+      "id": "6d5f94b54e3e2bf7acf1f26b",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. refineries have been running at very high rates in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68344",
+      "published_at": "2026-10-22T14:00:00Z",
+      "source_updated_at": null,
+      "id": "11274263ec4ec7aa15ad19bc",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Announces Plans for 100 MWh Solid-State Battery Production Line for AI Data Centers, Aerospace and Defense",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-plans-100-mwh-solid-state-battery",
+      "published_at": "2026-10-21T20:15:31Z",
+      "source_updated_at": null,
+      "id": "3e5a8c65c3af1b48f6b8f19e",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Reports Third Quarter 2026 Business and Financial Results",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-reports-third-quarter-2026-business-and-financial",
+      "published_at": "2026-10-21T20:15:27Z",
+      "source_updated_at": null,
+      "id": "4894cc05dbcda8a2bb32aef2",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Hybrid sales rise while battery electric sales remain lower after tax credit expiration",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68325",
+      "published_at": "2026-10-19T14:00:00Z",
+      "source_updated_at": null,
+      "id": "9b574b9b6d9a12cd61d4433d",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需",
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. small-scale solar generation has quadrupled in the last decade",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
+      "published_at": "2026-10-16T14:00:00Z",
+      "source_updated_at": null,
+      "id": "207bf0c6d4cca97565ea6563",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "PJM, ERCOT, and SWPP all set peak load records this summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68305",
+      "published_at": "2026-10-15T14:00:00Z",
+      "source_updated_at": null,
+      "id": "cb5890d031cd055d66cdc7cf",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Monthly wind generation in ISO-NE is about 68% higher than last year",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
+      "published_at": "2026-10-14T14:00:00Z",
+      "source_updated_at": null,
+      "id": "15c2bd28b112053151bc52a6",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Announces Timing of Third Quarter 2026 Business Results and Webcast",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-timing-third-quarter-2026-business",
+      "published_at": "2026-10-08T20:15:00Z",
+      "source_updated_at": null,
+      "id": "9e3fcec95a03e91c6bc2919a",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Announces QS PowerBlock for In-Rack Energy Storage in AI Data Centers",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-qs-powerblock-rack-energy-storage-ai-data",
+      "published_at": "2026-10-08T12:30:39Z",
+      "source_updated_at": null,
+      "id": "5c78eae59f9ef3a4d6190b5d",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Mixed outlook for energy expenditures this winter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68264",
+      "published_at": "2026-10-07T14:00:00Z",
+      "source_updated_at": null,
+      "id": "109f7d64c8d9628cdb1057d1",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
+      "published_at": "2026-10-05T14:00:00Z",
+      "source_updated_at": null,
+      "id": "73998ce676150f5cf0a3c1ae",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. natural gas production reached a record high in July 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68225",
+      "published_at": "2026-10-02T14:00:00Z",
+      "source_updated_at": null,
+      "id": "a1bdb43bd9d916d69fc53219",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. exports of propane reached records in the first half of 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68244",
+      "published_at": "2026-10-01T14:00:00Z",
+      "source_updated_at": null,
+      "id": "312ecd6a696d2a87caef2cc8",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68224",
+      "published_at": "2026-09-30T14:00:00Z",
+      "source_updated_at": null,
+      "id": "a148fadf946c26c24b755553",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Henry Hub natural gas prices this summer were 6% lower than last summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
+      "published_at": "2026-09-25T14:00:00Z",
+      "source_updated_at": null,
+      "id": "becfb45a459ae5cb357f40c4",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Public companies produce most U.S. crude oil and natural gas",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68184",
+      "published_at": "2026-09-22T14:00:00Z",
+      "source_updated_at": null,
+      "id": "fcdc5fa84a432ec44f7e11a9",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "What goes into diesel prices?",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68164",
+      "published_at": "2026-09-18T14:00:00Z",
+      "source_updated_at": null,
+      "id": "e0e70cabf6c7a7a03e02d9a5",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Corpus Christi LNG expansion makes facility the second-largest in the United States",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68144",
+      "published_at": "2026-09-15T14:00:00Z",
+      "source_updated_at": null,
+      "id": "d5b166b152066e00b9e30d77",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "United States on track for record crude oil production in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68125",
+      "published_at": "2026-09-10T14:00:00Z",
+      "source_updated_at": null,
+      "id": "3ca1bd1030e8a3faacc183dd",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "New England natural gas prices have been trading near record discounts to Henry Hub",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68124",
+      "published_at": "2026-09-09T14:00:00Z",
+      "source_updated_at": null,
+      "id": "121d8be51366c09f6019c834",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68104",
+      "published_at": "2026-09-04T14:00:00Z",
+      "source_updated_at": null,
+      "id": "aa6979c4c99abd0495ce8c03",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Weekly average load in ERCOT continues near record high",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68084",
+      "published_at": "2026-09-03T14:00:00Z",
+      "source_updated_at": null,
+      "id": "ddc4d7a8713badb0124664b7",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68064",
+      "published_at": "2026-09-01T14:00:00Z",
+      "source_updated_at": null,
+      "id": "ffda70c20a7584dc75132218",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Reports Second Quarter 2026 Business and Financial Results",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-reports-second-quarter-2026-business-and-financial",
+      "published_at": "2026-07-22T20:15:28Z",
+      "source_updated_at": null,
+      "id": "75cd5a037637a90218c059b4",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Announces Timing of Second Quarter 2026 Business Results and Webcast",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-timing-second-quarter-2026-business",
+      "published_at": "2026-07-08T20:15:00Z",
+      "source_updated_at": null,
+      "id": "1e626f169aa1afb8cc3ef783",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Announces Agreement with Honda on Solid-State Battery Technology",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-agreement-honda-solid-state-battery",
+      "published_at": "2026-06-18T13:00:00Z",
+      "source_updated_at": null,
+      "id": "0b1b4737030783a97b4b1576",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对",
+        "合作与投资"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "JB Straubel Joins QuantumScape Strategic Advisory Board",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/jb-straubel-joins-quantumscape-strategic-advisory-board",
+      "published_at": "2026-06-03T15:55:00Z",
+      "source_updated_at": null,
+      "id": "4d2664b6ecfbf2213b0d0fc7",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "QuantumScape Reports First Quarter 2026 Business and Financial Results",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-reports-first-quarter-2026-business-and-financial",
+      "published_at": "2026-04-22T20:15:00Z",
+      "source_updated_at": null,
+      "id": "9e86e93cea6f712f8ffece85",
+      "source_id": "quantumscape-ir",
+      "source_name": "QuantumScape 投资者关系",
+      "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "publisher_type": "企业自述",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "技术与竞对"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    },
+    {
+      "title": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "published_at": null,
+      "source_updated_at": null,
+      "id": "77ab5d7af2eff7b8db8f51d6",
+      "source_id": "eia-today-in-energy",
+      "source_name": "美国能源信息署 EIA",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "publisher_type": "政府机构",
+      "first_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:25:12Z",
+      "categories": [
+        "能源与供需"
+      ],
+      "evidence_level": "官方订阅线索",
+      "status": "待核验"
+    }
+  ],
+  "sources": [
+    {
+      "id": "eia-today-in-energy",
+      "name": "美国能源信息署 EIA",
+      "url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "homepage": "https://www.eia.gov/todayinenergy/",
+      "publisher_type": "政府机构",
+      "coverage_note": "能源供需、发电和油气运输；不提供电池材料实时成交价。",
+      "status": "success",
+      "checked_at": "2026-11-25T13:25:12Z",
+      "last_success_at": "2026-11-25T13:25:12Z",
+      "item_count": 31,
+      "relevant_count": 31,
+      "latest_publication_at": "2026-11-24T14:00:00Z",
+      "error": null,
+      "http_status": 200,
+      "bytes": 19738
+    },
+    {
+      "id": "un-news",
+      "name": "联合国 UN News",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "homepage": "https://news.un.org/",
+      "publisher_type": "国际组织",
+      "coverage_note": "按标题筛选冲突、贸易、航运和能源线索；不等于特定矿区或航道的实时风险预警。",
+      "status": "success",
+      "checked_at": "2026-11-25T13:25:12Z",
+      "last_success_at": "2026-11-25T13:25:12Z",
+      "item_count": 30,
+      "relevant_count": 13,
+      "latest_publication_at": "2026-11-24T12:00:00Z",
+      "error": null,
+      "http_status": 200,
+      "bytes": 34864
+    },
+    {
+      "id": "quantumscape-ir",
+      "name": "QuantumScape 投资者关系",
+      "url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "homepage": "https://ir.quantumscape.com/news-events/news-releases",
+      "publisher_type": "企业自述",
+      "coverage_note": "公司固态电池、合作、产线与财报公告；技术性能和商业化表述需独立验证。",
+      "status": "success",
+      "checked_at": "2026-11-25T13:25:12Z",
+      "last_success_at": "2026-11-25T13:25:12Z",
+      "item_count": 10,
+      "relevant_count": 10,
+      "latest_publication_at": "2026-11-11T14:00:33Z",
+      "error": null,
+      "http_status": 200,
+      "bytes": 7673
+    },
+    {
+      "id": "lg-energy-solution",
+      "name": "LG Energy Solution Newsroom",
+      "url": "https://news.lgensol.com/feed/",
+      "homepage": "https://news.lgensol.com/",
+      "publisher_type": "企业自述",
+      "coverage_note": "公司电池、储能、工厂和合作动态；不能将宣传或转述当成已核实技术突破。",
+      "status": "success",
+      "checked_at": "2026-11-25T13:25:12Z",
+      "last_success_at": "2026-11-25T13:25:12Z",
+      "item_count": 9,
+      "relevant_count": 9,
+      "latest_publication_at": "2026-11-23T07:23:36Z",
+      "error": null,
+      "http_status": 200,
+      "bytes": 73989
+    }
+  ]
+}
