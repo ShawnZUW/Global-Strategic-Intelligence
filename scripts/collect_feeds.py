@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect public official RSS/Atom headlines. Python 3.11+, standard library only.
+"""Collect public official RSS/Atom and fixed newsroom headlines. Standard library only.
 
 This writes a separate candidate-feed dataset; it never edits curated intelligence.
 """
@@ -12,6 +12,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import hashlib
 import html
+from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
@@ -24,9 +25,10 @@ from zoneinfo import ZoneInfo
 
 UTC = timezone.utc
 MAX_BYTES = 2_000_000
-MAX_ITEMS = 200
-MAX_PER_SOURCE = 60
-USER_AGENT = "GlobalStrategicIntelligence/1.0 (public RSS headlines; daily refresh)"
+MAX_ITEMS = 1500
+MAX_PER_SOURCE = 40
+HTML_PARSER_VERSION = 2
+USER_AGENT = "GlobalStrategicIntelligence/1.1 (public official headlines; daily refresh)"
 TRACKING_PARAMS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
 CLASSIFIERS = {
     "航道与物流": r"\b(shipping|maritime|chokepoint|strait|canal|red sea|port|logistics)\b",
@@ -47,6 +49,11 @@ def parse_date(value: str | None) -> str | None:
     if not value or not value.strip():
         return None
     value = value.strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        try:
+            return datetime.strptime(value, "%Y-%m-%d").date().isoformat()
+        except ValueError:
+            return None
     try:
         parsed = parsedate_to_datetime(value)
     except (TypeError, ValueError, OverflowError):
@@ -60,6 +67,8 @@ def parse_date(value: str | None) -> str | None:
 
 
 def normalize_url(value: str, base: str = "") -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
     try:
         parts = urlsplit(urljoin(base, value.strip()))
         if parts.scheme.lower() not in {"https", "http"} or not parts.hostname:
@@ -78,7 +87,7 @@ def normalize_url(value: str, base: str = "") -> str | None:
 
 
 def clean_title(value: str) -> str:
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]*>", "", html.unescape(value))).strip()[:500]
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]*>", "", html.unescape(value or ""))).strip()[:500]
 
 
 def child_text(node: ET.Element, names: tuple[str, ...]) -> str | None:
@@ -118,6 +127,108 @@ def parse_feed(payload: bytes, base_url: str) -> list[dict]:
     return items
 
 
+class NewsroomLinks(HTMLParser):
+    """Read visible headline anchors only; never infer dates from URL paths."""
+    def __init__(self, headline_classes=()):
+        super().__init__(convert_charrefs=True)
+        self.anchor = None
+        self.links = []
+        self.ignore_depth = 0
+        self.stack = []
+        self.headline_classes = set(headline_classes)
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag in {"script", "style", "template", "noscript"}:
+            self.ignore_depth += 1
+        if self.ignore_depth:
+            return
+        if tag == "a":
+            self.anchor = {"href": attrs.get("href", ""), "title": attrs.get("title", ""), "text": [], "headlines": [], "published_at": None, "has_body": False}
+            self.stack = []
+        elif tag == "time" and self.anchor is not None:
+            self.anchor["published_at"] = parse_date(attrs.get("datetime"))
+        if self.anchor is not None and tag != "a" and tag not in {"img", "br", "hr", "input", "meta", "link", "source", "wbr"}:
+            marker = " ".join(str(attrs.get(k) or "") for k in ("class", "id", "itemprop"))
+            explicit = (tag in {"h1", "h2", "h3", "h4", "h5", "h6"}
+                        or bool(self.headline_classes.intersection((attrs.get("class") or "").split()))
+                        or bool(re.search(r"(?:headline|(?:^|[\s_-])(?:title|tit\d*|ttl|heading|subject)(?:$|[\s_-]))", marker, re.I)))
+            self.stack.append({"tag": tag, "headline": explicit, "text": []})
+            if (tag == "p" and not explicit and not any(x["headline"] for x in self.stack)) or re.search(r"(?:description|excerpt|body|teaser|std_word|nclt_word)", marker, re.I):
+                self.anchor["has_body"] = True
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style", "template", "noscript"} and self.ignore_depth:
+            self.ignore_depth -= 1
+        if tag == "a" and self.anchor is not None:
+            for entry in self.stack:
+                if entry["headline"]:
+                    self.anchor["headlines"].append(" ".join(entry["text"]))
+            self.links.append(self.anchor)
+            self.anchor = None
+            self.stack = []
+        elif self.anchor is not None:
+            for index in range(len(self.stack) - 1, -1, -1):
+                if self.stack[index]["tag"] == tag:
+                    for entry in self.stack[index:]:
+                        if entry["headline"]:
+                            self.anchor["headlines"].append(" ".join(entry["text"]))
+                    self.stack = self.stack[:index]
+                    break
+
+    def handle_data(self, data):
+        if self.anchor is not None and not self.ignore_depth:
+            self.anchor["text"].append(data)
+            for entry in self.stack:
+                if entry["headline"]:
+                    entry["text"].append(data)
+
+
+def headline_text(value: str, explicit: bool = False) -> str | None:
+    """Reject prose instead of truncating it and calling it a headline."""
+    value = re.sub(r"\s+", " ", html.unescape(value or "")).strip()
+    value = re.sub(r"\s*(?:(?:Read more|Learn more|Find out more|Continue reading|了解更多|阅读更多|View)\s*[→›»]*)+$", "", value, flags=re.I).strip()
+    limit = 320 if explicit else 180
+    if not 8 <= len(value) <= limit or re.fullmatch(r"[\d\W_]+", value):
+        return None
+    if value.casefold() in {"press briefings", "news releases", "press releases", "latest news", "company news", "corporate news", "newsroom", "news", "read more", "learn more"}:
+        return None
+    if not explicit and (len(value.split()) > 28 or re.search(r"[.!?]\s+[A-Z]", value)):
+        return None
+    return value
+
+
+def parse_html_listing(payload: bytes, base_url: str, source: dict, encoding="utf-8") -> list[dict]:
+    pattern = source.get("link_pattern")
+    if not pattern:
+        raise ValueError("HTML source requires a verified article-link pattern")
+    # CATL's official list was inspected: p.mc_e1_txt is the headline,
+    # while sibling div.mc_e1_date is metadata. Do not generalize '*txt'.
+    verified_classes = {"www.catl.com": {"mc_e1_txt"}}
+    parser = NewsroomLinks(set(source.get("headline_classes", [])) | verified_classes.get(urlsplit(base_url).hostname, set()))
+    parser.feed(payload.decode(encoding, errors="replace"))
+    hosts = set(source.get("article_allowed_hosts", source["allowed_hosts"]))
+    items = {}
+    for anchor in parser.links:
+        url = normalize_url(anchor["href"], base_url)
+        if not url or urlsplit(url).hostname not in hosts or not re.search(pattern, url):
+            continue
+        candidates = [headline_text(value, explicit=True) for value in anchor["headlines"]]
+        title = next((value for value in candidates if value), None) or headline_text(anchor["title"], explicit=True)
+        if not title and not anchor["has_body"]:
+            title = headline_text(" ".join(anchor["text"]))
+        if not title:
+            continue
+        row = {"title": title, "url": url, "published_at": anchor["published_at"],
+               "parser_version": HTML_PARSER_VERSION,
+               "source_updated_at": None, "date_note": None if anchor["published_at"] else "列表未提供可核验发布日期；不以发现时间代替"}
+        if url not in items or len(title) < len(items[url]["title"]):
+            items[url] = row
+    if not items:
+        raise ValueError("no article headlines matched; page may be dynamic or its layout changed")
+    return list(items.values())
+
+
 class OfficialRedirects(HTTPRedirectHandler):
     def __init__(self, allowed_hosts: set[str]):
         super().__init__()
@@ -136,7 +247,9 @@ def fetch_source(source: dict) -> tuple[list[dict], dict]:
     allowed = set(source["allowed_hosts"])
     if parsed.scheme != "https" or parsed.hostname not in allowed or parsed.username or parsed.password:
         raise ValueError("source must use its configured official HTTPS host")
-    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"})
+    method = source.get("method", "rss")
+    accept = "text/html,application/xhtml+xml" if method == "html" else "application/rss+xml, application/atom+xml, application/xml, text/xml"
+    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": accept})
     opener = build_opener(OfficialRedirects(allowed))
     with opener.open(request, timeout=20) as response:
         body = response.read(MAX_BYTES + 1)
@@ -144,15 +257,20 @@ def fetch_source(source: dict) -> tuple[list[dict], dict]:
             raise ValueError("response exceeds 2 MB limit")
         if response.status != 200:
             raise ValueError(f"unexpected HTTP {response.status}")
-        result = parse_feed(body, response.url)
-        return result, {"http_status": response.status, "bytes": len(body)}
+        if method == "html":
+            encoding = response.headers.get_content_charset() or source.get("encoding", "utf-8")
+            result = parse_html_listing(body, response.url, source, encoding)
+        else:
+            result = parse_feed(body, response.url)
+        return result, {"http_status": response.status, "bytes": len(body), "method": method}
 
 
 def is_relevant(title: str, source: dict) -> bool:
     words = source.get("match_keywords", [])
     if not words:
         return True
-    return any(re.search(r"(?<!\w)" + re.escape(word) + r"(?!\w)", title, re.I) for word in words)
+    return any((word.casefold() in title.casefold()) if re.search(r"[\u3400-\u9fff]", word)
+               else re.search(r"(?<!\w)" + re.escape(word) + r"(?!\w)", title, re.I) for word in words)
 
 
 def classify(title: str, source: dict) -> list[str]:
@@ -173,6 +291,10 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
     for old in previous.get("items", []):
         if old.get("source_id") not in current_sources:
             continue
+        # Retain fingerprints, but never republish an old untrusted HTML title.
+        seen.setdefault(old["id"], {"first_seen_at": old["first_seen_at"]})
+        if current_sources[old["source_id"]].get("method") == "html" and old.get("parser_version") != HTML_PARSER_VERSION:
+            continue
         key = normalize_url(old.get("url", ""))
         if key:
             old = dict(old, url=key)
@@ -184,15 +306,17 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
         try:
             data, details = fetcher(source)
             return source, data, details, None
-        except (HTTPError, URLError, TimeoutError, OSError, ET.ParseError, ValueError) as exc:
+        except (HTTPError, URLError, TimeoutError, OSError, ET.ParseError, ValueError, LookupError) as exc:
             # No response bodies, credentials, or full article text in logs/audits.
             return source, [], {}, (f"{type(exc).__name__}: {exc}")[:240]
 
-    with ThreadPoolExecutor(max_workers=min(4, max(1, len(config["sources"])))) as pool:
+    with ThreadPoolExecutor(max_workers=min(6, max(1, len(config["sources"])))) as pool:
         for source, raw_items, details, error in pool.map(request, config["sources"]):
             matching = [row for row in raw_items if is_relevant(row["title"], source)]
             audit = {"id": source["id"], "name": source["name"], "url": source["url"],
                      "homepage": source.get("homepage"), "publisher_type": source.get("publisher_type"),
+                     "publisher_id": source.get("publisher_id", source["id"]), "method": source.get("method", "rss"),
+                     "initial_baseline": not old_sources.get(source["id"], {}).get("last_success_at"),
                      "coverage_note": source.get("coverage_note"),
                      "status": "failed" if error else "success", "checked_at": stamp,
                      "last_success_at": old_sources.get(source["id"], {}).get("last_success_at") if error else stamp,
@@ -208,22 +332,34 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
                        "source_url": source["url"], "publisher_type": source.get("publisher_type"),
                        "first_seen_at": record["first_seen_at"], "last_seen_at": stamp,
                        "categories": classify(row["title"], source),
-                       "evidence_level": "官方订阅线索", "status": "待核验"}
+                       "collection_method": source.get("method", "rss"),
+                       "evidence_level": "官方页面线索" if source.get("method") == "html" else "官方订阅线索", "status": "待核验"}
                 # If two feeds point to the same canonical page, keep one signal.
                 if key in items:
                     row["first_seen_at"] = min(items[key]["first_seen_at"], row["first_seen_at"])
                     record["first_seen_at"] = row["first_seen_at"]
                 items[key] = row
-    ordered = sorted(items.values(), key=lambda x: (x.get("published_at") or "", x["first_seen_at"], x["id"]), reverse=True)[:MAX_ITEMS]
+    # Per-source budgets prevent a high-volume feed from hiding smaller specialist publishers.
+    budget = min(MAX_PER_SOURCE, max(1, MAX_ITEMS // max(1, len(current_sources))))
+    ranked = sorted(items.values(), key=lambda x: (x.get("published_at") or "", x["first_seen_at"], x["id"]), reverse=True)
+    kept_per_source = {}
+    ordered = []
+    for row in ranked:
+        source_id = row["source_id"]
+        if kept_per_source.get(source_id, 0) < budget:
+            ordered.append(row)
+            kept_per_source[source_id] = kept_per_source.get(source_id, 0) + 1
     success_count = sum(x["status"] == "success" for x in audits)
     baseline = not state.get("seen") and not previous.get("items")
     new_count = sum(x["first_seen_at"] == stamp for x in ordered)
     data = {"meta": {"schema_version": 1, "generated_at": stamp,
                      "as_of": now.astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat(),
                      "mode": "official-feed-leads", "collection_status": "success" if success_count == len(audits) else ("partial" if success_count else "failed"),
-                     "note": "标题来自官方订阅，关键词分类仅供筛选，未经逐条核验。首次发现时间不是事件发生时间，企业表述不代表独立验证。",
+                     "note": "标题来自官方RSS或固定新闻列表，关键词分类仅供筛选，未经逐条核验。未提供发布日期的列表条目保留空值，首次发现时间不是事件发生时间。",
                      "source_count": len(audits), "successful_sources": success_count,
                      "item_count": len(ordered), "newly_discovered_count": new_count,
+                     "discovery_count_label": "本次首次发现（含新源历史建库，非今日发生事件）",
+                     "baseline_source_count": sum(x["initial_baseline"] for x in audits),
                      "initial_baseline": baseline, "baseline_note": "首次建库，所见旧公告不视为今日新增事件。" if baseline else None,
                      "schedule": "每日北京时间约07:40；GitHub调度可能延迟。"},
             "items": ordered, "sources": audits}

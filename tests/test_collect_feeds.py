@@ -87,6 +87,32 @@ class FeedTests(unittest.TestCase):
             handler.redirect_request(None, None, 302, "Moved", {}, "http://127.0.0.1/private")
         self.assertIsNone(feeds.normalize_url("https://user:secret@official.example/private"))
 
+    def test_html_listing_excludes_navigation_and_does_not_invent_dates(self):
+        source = dict(SOURCE, method="html", link_pattern=r"/news/[^/]+$")
+        payload = '''<!doctype html><html><nav><a href="/about">About this publisher</a><a href title>Empty attributes</a></nav>
+        <a href="/news/battery-project">Battery project begins <time datetime="2026-11-24">24 November</time></a>
+        <a href="/news/2026-11-25-plan">A development plan with no stated date</a>
+        <a href="https://unrelated.example/news/spam">A different publisher headline</a>
+        <script>var bait = '<a href="/news/bait">Injected navigation text</a>';</script></html>'''.encode()
+        rows = feeds.parse_html_listing(payload, SOURCE["url"], source)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["published_at"], "2026-11-24")
+        self.assertIsNone(rows[1]["published_at"])
+        with self.assertRaises(ValueError):
+            feeds.parse_html_listing(b"<html><p>Loading news...</p></html>", SOURCE["url"], source)
+
+    def test_specialist_source_is_retained_beside_high_volume_publisher(self):
+        specialist = dict(SOURCE, id="specialist")
+        def news(source):
+            count = 80 if source["id"] == "official" else 1
+            return [{"title": "Verified listing headline " + str(i),
+                     "url": "https://official.example/" + source["id"] + "/" + str(i),
+                     "published_at": "2026-11-24T00:00:00Z" if count > 1 else None,
+                     "source_updated_at": None} for i in range(count)], {"http_status": 200}
+        data, _ = feeds.collect({"sources": [SOURCE, specialist]}, {}, {}, NOW, news)
+        self.assertEqual(sum(x["source_id"] == "specialist" for x in data["items"]), 1)
+        self.assertLessEqual(sum(x["source_id"] == "official" for x in data["items"]), feeds.MAX_PER_SOURCE)
+
     def test_history_is_last_thirty_calendar_days_and_newest_first(self):
         data, state = feeds.collect({"sources": [SOURCE]}, {}, {}, NOW, self.fetch)
         with tempfile.TemporaryDirectory() as directory:
@@ -102,6 +128,51 @@ class FeedTests(unittest.TestCase):
             self.assertEqual([x["date"] for x in manifest["days"]], ["2026-11-25", "2026-11-24"])
             self.assertFalse((root / "feed-history" / "2026-10-26.json").exists())
             self.assertFalse((root / "latest.json").exists())
+
+    def test_real_sdi_and_huayou_card_structures_keep_only_headlines(self):
+        # Structures observed on the official newsroom lists on 2026-11-25.
+        source = dict(SOURCE, method="html", link_pattern=r"/(?:global/click\?seq=\d+|en/news/corporate-news/\d+)$")
+        markup = '''<a href="/global/click?seq=484" class="swiper-slide"><span class="image"></span><span class="summary"><span class="title">SAMSUNG SDI Ulsan Plant Wins Top Award at 2026 Green Management Awards</span><span class="text">SAMSUNG SDI today announced that its Ulsan plant has received an award. This entire article summary must never be copied as the title.</span></span></a>
+        <a href="/en/news/corporate-news/484" title="Huayou Cobalt Adds Two More Provincial-Level Enterprise Technology Centers"><div class="news_cont_list_text"><div class="nclt_tit"><p class="std_tit6">Huayou Cobalt Adds Two More Provincial-Level Enterprise Technology Centers</p></div><div class="nclt_word std_word"><p>Recently, a department released a long list of newly accredited centers. This excerpt is not the title.</p></div><div class="nclt_date">2026-11-04</div></div></a>'''
+        rows = feeds.parse_html_listing(markup.encode(), SOURCE["url"], source)
+        self.assertEqual([r["title"] for r in rows], ["SAMSUNG SDI Ulsan Plant Wins Top Award at 2026 Green Management Awards", "Huayou Cobalt Adds Two More Provincial-Level Enterprise Technology Centers"])
+        self.assertTrue(all(r["parser_version"] == feeds.HTML_PARSER_VERSION for r in rows))
+        with self.assertRaises(ValueError):
+            feeds.parse_html_listing(b'<a href="/global/click?seq=1"><p>Short article summary. It should never become a title.</p></a>', SOURCE["url"], source)
+        self.assertIsNone(feeds.headline_text("Press Briefings"))
+        self.assertIsNone(feeds.headline_text("Long prose " * 60))
+
+    def test_legacy_html_removed_but_fingerprint_survives_refresh(self):
+        source = dict(SOURCE, method="html", link_pattern=r"/article")
+        old, state = feeds.collect({"sources": [SOURCE]}, {}, {}, NOW, self.fetch)
+        for row in old["items"]:
+            row["collection_method"] = "html"
+            row["title"] = "Legacy untrusted text " * 20
+
+        def refreshed(s):
+            return feeds.parse_html_listing(b'<a href="https://official.example/article?a=1"><h3>Verified headline structure</h3><p>Do not copy this text.</p></a>', SOURCE["url"], source), {"http_status": 200}
+
+        data, state2 = feeds.collect({"sources": [source]}, old, state, NOW + timedelta(days=1), refreshed)
+        self.assertEqual(len(data["items"]), 1)
+        self.assertEqual(data["items"][0]["title"], "Verified headline structure")
+        self.assertEqual(data["items"][0]["first_seen_at"], feeds.iso(NOW))
+        self.assertEqual(state2["seen"], state["seen"])
+        self.assertEqual(data["meta"]["newly_discovered_count"], 0)
+
+    def test_new_source_baseline_persists_after_an_initial_failure(self):
+        def unavailable(source):
+            raise TimeoutError("unavailable")
+        failed, state = feeds.collect({"sources": [SOURCE]}, {}, {}, NOW, unavailable)
+        data, _ = feeds.collect({"sources": [SOURCE]}, failed, state, NOW + timedelta(days=1), self.fetch)
+        self.assertTrue(data["sources"][0]["initial_baseline"])
+        self.assertEqual(data["meta"]["baseline_source_count"], 1)
+
+    def test_catl_verified_headline_class_excludes_sibling_date(self):
+        source = dict(SOURCE, id="catl", allowed_hosts=["www.catl.com"], method="html", link_pattern=r"/en/news/\d+\.html$")
+        markup = '<a href="/en/news/7084.html" class="mc_e1_lisbox"><div class="mc_e1_imgbox"><img src="image.jpg"></div><div class="mc_e1_txtbox"><p class="mc_e1_txt">CATL Opens Türkiye\'s First NING SERVICE Experience Center in Istanbul</p><div class="mc_e1_date">11/19/2026</div></div></a>'
+        row = feeds.parse_html_listing(markup.encode(), "https://www.catl.com/en/news/", source)[0]
+        self.assertEqual(row["title"], "CATL Opens Türkiye's First NING SERVICE Experience Center in Istanbul")
+        self.assertIsNone(row["published_at"])
 
 
 if __name__ == "__main__":

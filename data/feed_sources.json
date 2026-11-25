@@ -1,50 +1,980 @@
 {
-  "version": 1,
-  "description": "公开官方RSS，仅采集标题、原文链接和来源时间；分类为关键词线索，未经逐条核验。",
+  "version": 2,
+  "description": "官方RSS/Atom与固定新闻列表，只采集标题、原文链接及可核验日期；机构归并，线索待核验。",
   "sources": [
     {
-      "id": "eia-today-in-energy",
-      "name": "美国能源信息署 EIA",
-      "url": "https://www.eia.gov/rss/todayinenergy.xml",
-      "homepage": "https://www.eia.gov/todayinenergy/",
-      "allowed_hosts": ["www.eia.gov", "eia.gov"],
-      "categories": ["能源与供需"],
+      "id": "catl",
+      "publisher_id": "catl",
+      "name": "宁德时代 CATL",
+      "url": "https://www.catl.com/en/news/",
+      "homepage": "https://www.catl.com/en/news/",
+      "method": "html",
+      "allowed_hosts": [
+        "www.catl.com"
+      ],
+      "categories": [
+        "竞争与合作"
+      ],
       "match_keywords": [],
-      "publisher_type": "政府机构",
-      "coverage_note": "能源供需、发电和油气运输；不提供电池材料实时成交价。"
+      "publisher_type": "企业原始披露",
+      "coverage_note": "电池技术、储能、国际工厂、合作和服务；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "中国",
+      "link_pattern": "/en/news/\\d+\\.html$"
     },
     {
-      "id": "un-news",
-      "name": "联合国 UN News",
-      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "homepage": "https://news.un.org/",
-      "allowed_hosts": ["news.un.org"],
-      "categories": ["地缘与贸易"],
-      "match_keywords": ["conflict", "war", "ceasefire", "ukraine", "russia", "sudan", "congo", "yemen", "gaza", "iran", "israel", "red sea", "shipping", "maritime", "trade", "supply", "energy", "mineral", "climate"],
-      "publisher_type": "国际组织",
-      "coverage_note": "按标题筛选冲突、贸易、航运和能源线索；不等于特定矿区或航道的实时风险预警。"
+      "id": "eve",
+      "publisher_id": "eve",
+      "name": "亿纬锂能 EVE",
+      "url": "https://www.evebattery.com/en/news",
+      "homepage": "https://www.evebattery.com/en/news",
+      "method": "html",
+      "allowed_hosts": [
+        "www.evebattery.com"
+      ],
+      "categories": [
+        "竞争与合作"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "储能与动力电池、工厂产线、订单与技术发布；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "中国",
+      "link_pattern": "/en/news-\\d+$"
     },
     {
-      "id": "quantumscape-ir",
-      "name": "QuantumScape 投资者关系",
-      "url": "https://ir.quantumscape.com/rss/news-releases.xml",
-      "homepage": "https://ir.quantumscape.com/news-events/news-releases",
-      "allowed_hosts": ["ir.quantumscape.com"],
-      "categories": ["技术与竞对"],
+      "id": "calb",
+      "publisher_id": "calb",
+      "name": "中创新航 CALB",
+      "url": "https://en.calb-tech.com/InformationDisclosure.html",
+      "homepage": "https://en.calb-tech.com/InformationDisclosure.html",
+      "method": "html",
+      "allowed_hosts": [
+        "en.calb-tech.com"
+      ],
+      "categories": [
+        "竞争与合作"
+      ],
       "match_keywords": [],
-      "publisher_type": "企业自述",
-      "coverage_note": "公司固态电池、合作、产线与财报公告；技术性能和商业化表述需独立验证。"
+      "publisher_type": "企业原始披露",
+      "coverage_note": "动力储能电池、客户合作、技术与电池护照；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "中国",
+      "link_pattern": "/NewsDetails/\\d+\\.html$"
+    },
+    {
+      "id": "sunwoda",
+      "publisher_id": "sunwoda",
+      "name": "欣旺达 Sunwoda",
+      "url": "https://en.sunwoda.com/search.html",
+      "homepage": "https://en.sunwoda.com/search.html",
+      "method": "html",
+      "allowed_hosts": [
+        "en.sunwoda.com"
+      ],
+      "categories": [
+        "竞争与合作"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "储能系统、动力电池、海外客户与工厂合作；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "中国",
+      "link_pattern": "/article/\\d+(?:/\\d+)?(?:\\.html)?$"
     },
     {
       "id": "lg-energy-solution",
-      "name": "LG Energy Solution Newsroom",
+      "publisher_id": "lges",
+      "name": "LG Energy Solution",
       "url": "https://news.lgensol.com/feed/",
       "homepage": "https://news.lgensol.com/",
-      "allowed_hosts": ["news.lgensol.com"],
-      "categories": ["技术与竞对"],
+      "method": "rss",
+      "allowed_hosts": [
+        "news.lgensol.com"
+      ],
+      "categories": [
+        "竞争与合作"
+      ],
       "match_keywords": [],
-      "publisher_type": "企业自述",
-      "coverage_note": "公司电池、储能、工厂和合作动态；不能将宣传或转述当成已核实技术突破。"
+      "publisher_type": "企业原始披露",
+      "coverage_note": "电池财报、储能布局、材料供应链与产能计划；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "韩国"
+    },
+    {
+      "id": "samsung-sdi",
+      "publisher_id": "samsung-sdi",
+      "name": "Samsung SDI",
+      "url": "https://news.samsungsdi.com/global/",
+      "homepage": "https://news.samsungsdi.com/global/",
+      "method": "html",
+      "allowed_hosts": [
+        "news.samsungsdi.com"
+      ],
+      "categories": [
+        "竞争与合作"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "动力储能电池、固态样品、订单与产能；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "韩国",
+      "link_pattern": "/global/(?:click|articleView)\\?seq=\\d+$"
+    },
+    {
+      "id": "panasonic",
+      "publisher_id": "panasonic",
+      "name": "Panasonic Energy / 松下",
+      "url": "https://www.panasonic.com/content/dam/panasonic/global/en/energy/news/news_en.xml",
+      "homepage": "https://www.panasonic.com/global/energy/news.html",
+      "method": "rss",
+      "allowed_hosts": [
+        "www.panasonic.com"
+      ],
+      "categories": [
+        "技术突破"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "电池研发、量产、数据中心电源及海外工厂；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "日本"
+    },
+    {
+      "id": "quantumscape-ir",
+      "publisher_id": "quantumscape",
+      "name": "QuantumScape",
+      "url": "https://ir.quantumscape.com/rss/news-releases.xml",
+      "homepage": "https://ir.quantumscape.com/news-events/news-releases",
+      "method": "rss",
+      "allowed_hosts": [
+        "ir.quantumscape.com"
+      ],
+      "categories": [
+        "技术突破"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "固态电池研发、客户验证和产线进展；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "美国"
+    },
+    {
+      "id": "amprius",
+      "publisher_id": "amprius",
+      "name": "Amprius Technologies",
+      "url": "https://ir.amprius.com/news-events/press-releases/rss",
+      "homepage": "https://ir.amprius.com/news-events/press-releases",
+      "method": "rss",
+      "allowed_hosts": [
+        "ir.amprius.com"
+      ],
+      "categories": [
+        "技术突破"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "硅负极高能量密度电芯、产能与客户验证；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "美国"
+    },
+    {
+      "id": "sqm",
+      "publisher_id": "sqm",
+      "name": "SQM",
+      "url": "https://ir.sqm.com/news-events/news",
+      "homepage": "https://ir.sqm.com/news-events/news",
+      "method": "html",
+      "allowed_hosts": [
+        "ir.sqm.com"
+      ],
+      "categories": [
+        "资源与矿权"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "盐湖锂资源、产销、合资与新建项目；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "智利",
+      "link_pattern": "/system/files-encrypted/nasdaq_kms/news/.*\\.pdf$"
+    },
+    {
+      "id": "pls",
+      "publisher_id": "pls",
+      "name": "PLS（原Pilbara Minerals）",
+      "url": "https://www.pls.com/news?category=business",
+      "homepage": "https://www.pls.com/news?category=business",
+      "method": "html",
+      "allowed_hosts": [
+        "www.pls.com"
+      ],
+      "categories": [
+        "供需平衡"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "锂辉石产销、季度报告、融资和矿山电力合同；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "澳大利亚",
+      "link_pattern": "/news/(?!media-assets/?$)[^/?#]+/?$"
+    },
+    {
+      "id": "core-lithium",
+      "publisher_id": "core-lithium",
+      "name": "Core Lithium",
+      "url": "https://corelithium.com.au/announcements",
+      "homepage": "https://corelithium.com.au/announcements",
+      "method": "html",
+      "allowed_hosts": [
+        "corelithium.com.au"
+      ],
+      "categories": [
+        "供需平衡"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "Finniss锂矿复产、出货、季度经营及董事公告；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "澳大利亚",
+      "link_pattern": "/announcements/[A-Za-z0-9]+-[^/?#]+/?$"
+    },
+    {
+      "id": "syrah",
+      "publisher_id": "syrah",
+      "name": "Syrah Resources",
+      "url": "https://www.syrahresources.com.au/news",
+      "homepage": "https://www.syrahresources.com.au/news",
+      "method": "html",
+      "allowed_hosts": [
+        "www.syrahresources.com.au"
+      ],
+      "categories": [
+        "原材料"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "天然石墨矿山、负极材料、客户认证与供应；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "澳大利亚 / 莫桑比克 / 美国",
+      "link_pattern": "/news/[^/?#]+/?$"
+    },
+    {
+      "id": "cmoc",
+      "publisher_id": "cmoc",
+      "name": "洛阳钼业 CMOC",
+      "url": "https://en.cmoc.com/html/Media/News/",
+      "homepage": "https://en.cmoc.com/html/Media/News/",
+      "method": "html",
+      "allowed_hosts": [
+        "en.cmoc.com"
+      ],
+      "categories": [
+        "资源与矿权"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "铜钴矿山、海外资源项目与产销披露；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "中国 / 刚果（金）",
+      "link_pattern": "/html/\\d{4}/News_\\d+/\\d+\\.html$"
+    },
+    {
+      "id": "huayou",
+      "publisher_id": "huayou",
+      "name": "华友钴业 Huayou",
+      "url": "https://www.huayou.com/en/news/corporate-news",
+      "homepage": "https://www.huayou.com/en/news/corporate-news",
+      "method": "html",
+      "allowed_hosts": [
+        "www.huayou.com"
+      ],
+      "categories": [
+        "原材料"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "镍钴冶炼、前驱体正极、印尼项目及合作；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "中国 / 印度尼西亚",
+      "link_pattern": "/en/news/corporate-news/\\d+(?:\\.html)?$"
+    },
+    {
+      "id": "ecopro",
+      "publisher_id": "ecopro",
+      "name": "EcoPro集团",
+      "url": "https://ecopro.co.kr/sub0401",
+      "homepage": "https://ecopro.co.kr/sub0401",
+      "method": "html",
+      "allowed_hosts": [
+        "ecopro.co.kr"
+      ],
+      "categories": [
+        "原材料"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "正极材料、镍资源与电池材料客户；原文韩语；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "韩国",
+      "link_pattern": "/sub0401/view/id/\\d+$"
+    },
+    {
+      "id": "umicore",
+      "publisher_id": "umicore",
+      "name": "Umicore 优美科",
+      "url": "https://www.umicore.com/en/media/newsroom/",
+      "homepage": "https://www.umicore.com/en/media/newsroom/",
+      "method": "html",
+      "allowed_hosts": [
+        "www.umicore.com"
+      ],
+      "categories": [
+        "原材料"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "正极材料、回收、金属加工和工厂策略；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "比利时",
+      "link_pattern": "/en/media/newsroom/[^/?#]+/?$"
+    },
+    {
+      "id": "novonix",
+      "publisher_id": "novonix",
+      "name": "NOVONIX",
+      "url": "https://ir.novonixgroup.com/news-events/news-releases",
+      "homepage": "https://ir.novonixgroup.com/news-events/news-releases",
+      "method": "html",
+      "allowed_hosts": [
+        "ir.novonixgroup.com"
+      ],
+      "categories": [
+        "原材料"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "人造石墨负极、量产资格、客户合同与北美融资；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "澳大利亚 / 美国",
+      "link_pattern": "/news-releases/news-release-details/[^/?#]+/?$"
+    },
+    {
+      "id": "fortescue",
+      "publisher_id": "fortescue",
+      "name": "Fortescue",
+      "url": "https://www.fortescue.com/en/articles",
+      "homepage": "https://www.fortescue.com/en/articles",
+      "method": "html",
+      "allowed_hosts": [
+        "www.fortescue.com"
+      ],
+      "categories": [
+        "矿山零碳"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "矿山绿电、电动矿卡、电池系统和能源合作；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "澳大利亚",
+      "link_pattern": "/en/articles/[^/?#]+/?$"
+    },
+    {
+      "id": "caterpillar",
+      "publisher_id": "caterpillar",
+      "name": "Caterpillar 卡特彼勒",
+      "url": "https://www.cat.com/en_US/news/press-releases.html",
+      "homepage": "https://www.cat.com/en_US/news/press-releases.html",
+      "method": "html",
+      "allowed_hosts": [
+        "www.cat.com"
+      ],
+      "categories": [
+        "矿山零碳"
+      ],
+      "match_keywords": [],
+      "publisher_type": "企业原始披露",
+      "coverage_note": "矿山电动装备、离网供电、发电机及客户试验；免费公开新闻与公告标题、链接及披露事实。",
+      "country": "美国",
+      "link_pattern": "/en_US/news/(?:machine|engine)-press-releases/[^/?#]+\\.html$"
+    },
+    {
+      "id": "eia-today-in-energy",
+      "publisher_id": "us-eia",
+      "name": "美国能源信息署 EIA",
+      "url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "homepage": "https://www.eia.gov/todayinenergy/",
+      "method": "rss",
+      "allowed_hosts": [
+        "www.eia.gov"
+      ],
+      "categories": [
+        "供需平衡"
+      ],
+      "match_keywords": [],
+      "publisher_type": "公共机构",
+      "coverage_note": "能源供需、发电、电池储能、电力与油气航运的公开数据和分析",
+      "country": "美国"
+    },
+    {
+      "id": "iea",
+      "publisher_id": "iea",
+      "name": "国际能源署 IEA",
+      "url": "https://www.iea.org/news",
+      "homepage": "https://www.iea.org/news",
+      "method": "html",
+      "allowed_hosts": [
+        "www.iea.org"
+      ],
+      "categories": [
+        "供需平衡"
+      ],
+      "match_keywords": [],
+      "publisher_type": "公共机构",
+      "coverage_note": "公开能源、电动车、电池、关键矿产及能源安全新闻与报告",
+      "country": "全球",
+      "link_pattern": "^https://www\\.iea\\.org/news/[^/?#]+/?$"
+    },
+    {
+      "id": "imo",
+      "publisher_id": "imo",
+      "name": "国际海事组织 IMO",
+      "url": "https://www.imo.org/en/mediacentre/pages/default.aspx",
+      "homepage": "https://www.imo.org/en/mediacentre/pages/default.aspx",
+      "method": "html",
+      "allowed_hosts": [
+        "www.imo.org"
+      ],
+      "categories": [
+        "地缘与航运"
+      ],
+      "match_keywords": [],
+      "publisher_type": "公共机构",
+      "coverage_note": "海上安全、通航风险和航运规则的官方公开通报",
+      "country": "全球",
+      "link_pattern": "^https://www\\.imo\\.org/en/MediaCentre/PressBriefings/(?:Pages|pages)/(?!default\\.aspx|index\\.aspx)[^/?#]+\\.aspx$"
+    },
+    {
+      "id": "un-news",
+      "publisher_id": "united-nations",
+      "name": "联合国新闻 UN News",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "homepage": "https://news.un.org/",
+      "method": "rss",
+      "allowed_hosts": [
+        "news.un.org"
+      ],
+      "categories": [
+        "地缘与航运"
+      ],
+      "match_keywords": [
+        "conflict",
+        "war",
+        "ceasefire",
+        "ukraine",
+        "russia",
+        "sudan",
+        "congo",
+        "yemen",
+        "gaza",
+        "iran",
+        "israel",
+        "red sea",
+        "shipping",
+        "maritime",
+        "trade",
+        "supply",
+        "energy",
+        "mineral",
+        "climate"
+      ],
+      "publisher_type": "公共机构",
+      "coverage_note": "冲突、能源、贸易及人道事件官方报道",
+      "country": "全球"
+    },
+    {
+      "id": "us-ofac",
+      "publisher_id": "us-ofac",
+      "name": "美国财政部 OFAC",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "homepage": "https://ofac.treasury.gov/recent-actions",
+      "method": "html",
+      "allowed_hosts": [
+        "ofac.treasury.gov"
+      ],
+      "categories": [
+        "贸易与政策"
+      ],
+      "match_keywords": [],
+      "publisher_type": "公共机构",
+      "coverage_note": "制裁名单变动、一般许可、豁免与执法公告",
+      "country": "美国 / 全球",
+      "link_pattern": "^https://ofac\\.treasury\\.gov/recent-actions/\\d{8}(?:-\\d+)?/?$"
+    },
+    {
+      "id": "eu-commission",
+      "publisher_id": "eu-commission",
+      "name": "欧盟委员会贸易与经济安全部门",
+      "url": "https://policy.trade.ec.europa.eu/node/2/rss_en",
+      "homepage": "https://policy.trade.ec.europa.eu/news_en",
+      "method": "rss",
+      "allowed_hosts": [
+        "policy.trade.ec.europa.eu"
+      ],
+      "categories": [
+        "贸易与政策"
+      ],
+      "match_keywords": [],
+      "publisher_type": "公共机构",
+      "coverage_note": "贸易协定、保障措施、反倾销和市场准入公开新闻",
+      "country": "欧盟 / 全球"
+    },
+    {
+      "id": "cn-mofcom",
+      "publisher_id": "cn-mofcom",
+      "name": "中国商务部",
+      "url": "https://www.mofcom.gov.cn/xwfb/",
+      "homepage": "https://www.mofcom.gov.cn/xwfb/",
+      "method": "html",
+      "allowed_hosts": [
+        "www.mofcom.gov.cn"
+      ],
+      "categories": [
+        "贸易与政策"
+      ],
+      "match_keywords": [
+        "battery",
+        "batteries",
+        "energy",
+        "critical",
+        "mineral",
+        "minerals",
+        "lithium",
+        "nickel",
+        "cobalt",
+        "graphite",
+        "copper",
+        "solid-state",
+        "sodium",
+        "storage",
+        "electric",
+        "hydrogen",
+        "grid",
+        "recycling",
+        "supply chain",
+        "rare earth",
+        "solar",
+        "wind",
+        "mining",
+        "metal",
+        "electrolyte",
+        "cathode",
+        "anode",
+        "tariff",
+        "trade",
+        "sanction",
+        "电池",
+        "储能",
+        "电力",
+        "新能源",
+        "矿产",
+        "矿山",
+        "锂",
+        "镍",
+        "钴",
+        "石墨",
+        "铜",
+        "关税",
+        "贸易",
+        "出口",
+        "进口",
+        "产业链",
+        "供应链",
+        "零碳",
+        "能源",
+        "产业",
+        "投资",
+        "技术"
+      ],
+      "publisher_type": "公共机构",
+      "coverage_note": "出口管制、贸易救济、协定、对外投资和经贸谈判信息",
+      "country": "中国 / 全球",
+      "link_pattern": "^https://www\\.mofcom\\.gov\\.cn/xwfb/[^?#]+/art/\\d{4}/art_[a-fA-F0-9]+\\.html$"
+    },
+    {
+      "id": "cn-ndrc",
+      "publisher_id": "cn-ndrc",
+      "name": "中国国家发展改革委",
+      "url": "https://www.ndrc.gov.cn/xwdt/",
+      "homepage": "https://www.ndrc.gov.cn/xwdt/",
+      "method": "html",
+      "allowed_hosts": [
+        "www.ndrc.gov.cn"
+      ],
+      "categories": [
+        "矿山零碳"
+      ],
+      "match_keywords": [
+        "battery",
+        "batteries",
+        "energy",
+        "critical",
+        "mineral",
+        "minerals",
+        "lithium",
+        "nickel",
+        "cobalt",
+        "graphite",
+        "copper",
+        "solid-state",
+        "sodium",
+        "storage",
+        "electric",
+        "hydrogen",
+        "grid",
+        "recycling",
+        "supply chain",
+        "rare earth",
+        "solar",
+        "wind",
+        "mining",
+        "metal",
+        "electrolyte",
+        "cathode",
+        "anode",
+        "tariff",
+        "trade",
+        "sanction",
+        "电池",
+        "储能",
+        "电力",
+        "新能源",
+        "矿产",
+        "矿山",
+        "锂",
+        "镍",
+        "钴",
+        "石墨",
+        "铜",
+        "关税",
+        "贸易",
+        "出口",
+        "进口",
+        "产业链",
+        "供应链",
+        "零碳",
+        "能源",
+        "产业",
+        "投资",
+        "技术"
+      ],
+      "publisher_type": "公共机构",
+      "coverage_note": "能源价格、储能、产业投资和项目政策公开信息",
+      "country": "中国",
+      "link_pattern": "^https://www\\.ndrc\\.gov\\.cn/xwdt/[^?#]+/\\d{6}/t\\d{8}_\\d+\\.html$"
+    },
+    {
+      "id": "us-doe",
+      "publisher_id": "us-doe",
+      "name": "美国能源部 DOE",
+      "url": "https://www.energy.gov/rss/energygov/2193718",
+      "homepage": "https://www.energy.gov/listings/energy-news",
+      "method": "rss",
+      "allowed_hosts": [
+        "www.energy.gov"
+      ],
+      "categories": [
+        "矿山零碳"
+      ],
+      "match_keywords": [
+        "battery",
+        "batteries",
+        "energy",
+        "critical",
+        "mineral",
+        "minerals",
+        "lithium",
+        "nickel",
+        "cobalt",
+        "graphite",
+        "copper",
+        "solid-state",
+        "sodium",
+        "storage",
+        "electric",
+        "hydrogen",
+        "grid",
+        "recycling",
+        "supply chain",
+        "rare earth",
+        "solar",
+        "wind",
+        "mining",
+        "metal",
+        "electrolyte",
+        "cathode",
+        "anode",
+        "tariff",
+        "trade",
+        "sanction",
+        "电池",
+        "储能",
+        "电力",
+        "新能源",
+        "矿产",
+        "矿山",
+        "锂",
+        "镍",
+        "钴",
+        "石墨",
+        "铜",
+        "关税",
+        "贸易",
+        "出口",
+        "进口",
+        "产业链",
+        "供应链",
+        "零碳",
+        "能源",
+        "产业",
+        "投资",
+        "技术"
+      ],
+      "publisher_type": "公共机构",
+      "coverage_note": "能源政策、项目资助、储能及关键材料计划公开发布",
+      "country": "美国"
+    },
+    {
+      "id": "csiro",
+      "publisher_id": "csiro",
+      "name": "澳大利亚联邦科学与工业研究组织 CSIRO",
+      "url": "https://www.csiro.au/en/news",
+      "homepage": "https://www.csiro.au/en/news",
+      "method": "html",
+      "allowed_hosts": [
+        "www.csiro.au"
+      ],
+      "categories": [
+        "技术突破"
+      ],
+      "match_keywords": [
+        "battery",
+        "batteries",
+        "energy",
+        "critical",
+        "mineral",
+        "minerals",
+        "lithium",
+        "nickel",
+        "cobalt",
+        "graphite",
+        "copper",
+        "solid-state",
+        "sodium",
+        "storage",
+        "electric",
+        "hydrogen",
+        "grid",
+        "recycling",
+        "supply chain",
+        "rare earth",
+        "solar",
+        "wind",
+        "mining",
+        "metal",
+        "electrolyte",
+        "cathode",
+        "anode",
+        "tariff",
+        "trade",
+        "sanction",
+        "电池",
+        "储能",
+        "电力",
+        "新能源",
+        "矿产",
+        "矿山",
+        "锂",
+        "镍",
+        "钴",
+        "石墨",
+        "铜",
+        "关税",
+        "贸易",
+        "出口",
+        "进口",
+        "产业链",
+        "供应链",
+        "零碳",
+        "能源",
+        "产业",
+        "投资",
+        "技术"
+      ],
+      "publisher_type": "公共机构",
+      "coverage_note": "电池、关键矿产、制造工艺、矿山能源与商业化研究",
+      "country": "澳大利亚",
+      "link_pattern": "^https://www\\.csiro\\.au/en/news/All/(?:News|Articles)/\\d{4}/[^/?#]+/[^/?#]+/?$"
+    },
+    {
+      "id": "ornl",
+      "publisher_id": "ornl",
+      "name": "美国橡树岭国家实验室 ORNL",
+      "url": "https://www.ornl.gov/news/feed/",
+      "homepage": "https://www.ornl.gov/news/",
+      "method": "rss",
+      "allowed_hosts": [
+        "www.ornl.gov"
+      ],
+      "categories": [
+        "技术突破"
+      ],
+      "match_keywords": [
+        "battery",
+        "batteries",
+        "energy",
+        "critical",
+        "mineral",
+        "minerals",
+        "lithium",
+        "nickel",
+        "cobalt",
+        "graphite",
+        "copper",
+        "solid-state",
+        "sodium",
+        "storage",
+        "electric",
+        "hydrogen",
+        "grid",
+        "recycling",
+        "supply chain",
+        "rare earth",
+        "solar",
+        "wind",
+        "mining",
+        "metal",
+        "electrolyte",
+        "cathode",
+        "anode",
+        "tariff",
+        "trade",
+        "sanction",
+        "电池",
+        "储能",
+        "电力",
+        "新能源",
+        "矿产",
+        "矿山",
+        "锂",
+        "镍",
+        "钴",
+        "石墨",
+        "铜",
+        "关税",
+        "贸易",
+        "出口",
+        "进口",
+        "产业链",
+        "供应链",
+        "零碳",
+        "能源",
+        "产业",
+        "投资",
+        "技术"
+      ],
+      "publisher_type": "公共机构",
+      "coverage_note": "电池材料、制造、回收、先进计算与能源科研原始披露",
+      "country": "美国"
+    },
+    {
+      "id": "pnnl",
+      "publisher_id": "pnnl",
+      "name": "美国太平洋西北国家实验室 PNNL",
+      "url": "https://www.pnnl.gov/news",
+      "homepage": "https://www.pnnl.gov/news",
+      "method": "html",
+      "allowed_hosts": [
+        "www.pnnl.gov"
+      ],
+      "categories": [
+        "技术突破"
+      ],
+      "match_keywords": [
+        "battery",
+        "batteries",
+        "energy",
+        "critical",
+        "mineral",
+        "minerals",
+        "lithium",
+        "nickel",
+        "cobalt",
+        "graphite",
+        "copper",
+        "solid-state",
+        "sodium",
+        "storage",
+        "electric",
+        "hydrogen",
+        "grid",
+        "recycling",
+        "supply chain",
+        "rare earth",
+        "solar",
+        "wind",
+        "mining",
+        "metal",
+        "electrolyte",
+        "cathode",
+        "anode",
+        "tariff",
+        "trade",
+        "sanction",
+        "电池",
+        "储能",
+        "电力",
+        "新能源",
+        "矿产",
+        "矿山",
+        "锂",
+        "镍",
+        "钴",
+        "石墨",
+        "铜",
+        "关税",
+        "贸易",
+        "出口",
+        "进口",
+        "产业链",
+        "供应链",
+        "零碳",
+        "能源",
+        "产业",
+        "投资",
+        "技术"
+      ],
+      "publisher_type": "公共机构",
+      "coverage_note": "储能电池、材料、电网可靠性和技术示范研究",
+      "country": "美国",
+      "link_pattern": "^https://www\\.pnnl\\.gov/news-media/[^/?#]+/?$"
+    },
+    {
+      "id": "id-esdm",
+      "publisher_id": "id-esdm",
+      "name": "印度尼西亚能源与矿产资源部 ESDM",
+      "url": "https://www.esdm.go.id/en/media-center/news-archives",
+      "homepage": "https://www.esdm.go.id/en/media-center/news-archives",
+      "method": "html",
+      "allowed_hosts": [
+        "www.esdm.go.id"
+      ],
+      "categories": [
+        "资源与矿权"
+      ],
+      "match_keywords": [],
+      "publisher_type": "公共机构",
+      "coverage_note": "矿产下游化、镍煤能源政策和矿业项目官方消息",
+      "country": "印度尼西亚",
+      "link_pattern": "^https://www\\.esdm\\.go\\.id/en/media-center/news-archives/[^/?#]+/?$"
+    },
+    {
+      "id": "cochilco",
+      "publisher_id": "cochilco",
+      "name": "智利铜业委员会 Cochilco",
+      "url": "https://www.cochilco.cl/web/feed/",
+      "homepage": "https://www.cochilco.cl:443/web/",
+      "method": "rss",
+      "allowed_hosts": [
+        "www.cochilco.cl"
+      ],
+      "categories": [
+        "原材料"
+      ],
+      "match_keywords": [],
+      "publisher_type": "公共机构",
+      "coverage_note": "铜与锂市场、矿业投资组合、用能/用水公开报告及统计",
+      "country": "智利 / 全球"
     }
   ]
 }

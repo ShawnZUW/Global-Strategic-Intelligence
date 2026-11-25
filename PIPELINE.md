@@ -1,75 +1,67 @@
-# 免费官方订阅线索：每日采集与发布
+# 免费公开来源：采集、核验与发布
 
-此采集层使用四个无需付费或 API 密钥的官方 RSS。只保存标题、原文链接、来源和时间，供董事会及投后团队筛选线索。它不下载全文，不调用付费大模型，也不把企业宣传认定为独立验证的技术突破。
+## 当前范围（2026-11-25）
 
-## 已接入的来源
+来源目录 data/source-catalog.json 按发布机构归并，共92家：35家企业与产业机构、30家公共机构、27家登记或披露机构。多个新闻入口、语言版本、同一机构的多份公告不增加机构数。
 
-| 官方来源 | 订阅地址 | 适用范围 | 已知边界 |
-| --- | --- | --- | --- |
-| 美国能源信息署 EIA | https://www.eia.gov/rss/todayinenergy.xml | 能源供需、发电结构、油气运输与海峡 | 不是电池材料的实时成交价或全品类价格数据库 |
-| 联合国 UN News | https://news.un.org/feed/subscribe/en/news/all/rss.xml | 按标题筛选冲突、贸易、航运和能源 | 不是每个矿区、港口和航道的实时预警 |
-| QuantumScape 投资者关系 | https://ir.quantumscape.com/rss/news-releases.xml | 固态电池、产线、合作与财报公告 | 属于企业自述，性能、量产与商业化表述需验证 |
-| LG Energy Solution Newsroom | https://news.lgensol.com/feed/ | 电池、储能、工厂和合作信息 | 可能包括品牌文章或行业转述，需继续筛选 |
+其中34家配置每日自动采集：10个RSS/Atom源、24个官方固定新闻列表。27个登记或披露入口等待实际主体映射，其余31家供定期检索与原文核验。目录被收录、入口可访问、定时采集成功以及已核实事件，是四种不同状态。
 
-首次接入时四个端点均完成实际 HTTP 200 和 XML 解析测试。每次运行的最新结果保存在 `data/feed-latest.json` 的 `sources`，以后不能据首次验证就假定源一直可用。USGS 矿产 RSS 在接入测试中返回空正文，未纳入已启用源；IEA 被测试的 RSS 地址返回 404，UNCTAD 返回 403，均没有绕过或当作成功。
+实际配置以 data/feed_sources.json 为准；最近一次运行及失败原因见 data/feed-latest.json。公开入口在不同环境下可能返回403、503或动态空列表，不依据早先一次成功假定一直可用，也不绕过限制。
 
-来源配置位于 `data/feed_sources.json`。新增来源需确认官方发布者、端点可用性及公开访问条件，避免把聚合媒体伪装成一手来源。
+## 数据范围与更新节奏
 
-## 每天如何运行
+企业原始披露覆盖CATL、EVE、CALB、LGES、Samsung SDI、Panasonic、QuantumScape、Amprius、SQM、PLS、Core、Syrah、CMOC、华友、EcoPro、Umicore、NOVONIX、Fortescue和Caterpillar等。BASF、BHP、Rio Tinto等需要额外适配的入口保留在研究目录，未虚标为定时采集。
 
-GitHub Actions 工作流为 `Daily public source collection`，按 UTC `23:40`（次日北京时间约 `07:40`）运行，也支持仓库 Actions 页手工 `Run workflow`。工作流只在此仓库的 `main` 分支运行，最长八分钟；采用 GitHub 托管的标准 Linux runner。
+公共来源包括EIA、UN News、欧盟贸易部门、DOE、ORNL、Cochilco，以及IEA、OFAC、中国商务部、国家发改委、CSIRO、PNNL、印尼ESDM、IMO的官方新闻列表。价格数据库、UKMTO等动态页面的能力边界在目录逐一说明。
 
-1. 运行关于去重、时间真实性、来源失败和历史保留的测试。
-2. 每源访问一次 HTTPS RSS，二十秒超时、正文上限 2 MB，最多四源并行；只解析标题和链接等元数据。
-3. 生成候选线索、各源可用性审计、当日快照和最近三十个日历日的历史索引。
-4. 使用仓库临时 `GITHUB_TOKEN` 提交上述公开输出。
-5. 显式调用 GitHub `POST /repos/{owner}/{repo}/pages/builds`，然后检查目标提交的构建状态。发布源保持 **Deploy from a branch → main → / (root)**。
+源站通常按事件发布，统计资料按日、周、月或年度发布；每天检查一次不代表源站每天有新信息，更不等于实时预警。单独一条官方铜价周报观察不构成全品种连续行情服务。
 
-仅向接口提交构建请求不代表网页已经更新；工作流需看到该提交的 `built` 状态才报告成功。它不会修改 Pages 设置。如果请求被权限策略拒绝或构建没有按时完成，工作流显示失败，需要查看 Actions/Pages 日志。不能把已有网页可访问当成每日任务已成功上线。
+## 每日执行
 
-## 输出及时间口径
+GitHub Actions工作流 Daily public source collection 按UTC 23:40（北京时间次日约07:40）运行，支持 workflow_dispatch，采集脚本、配置或工作流变更也会触发。任务最长8分钟。
 
-| 文件 | 作用 |
+1. 先运行时间真实性、去重、失败保留和HTML标题质量等行为测试。
+2. 每个来源访问一次已确认的HTTPS入口，20秒超时、正文上限2MB，最多6源并行。
+3. RSS/Atom读取标题、链接和明确的发布时间。HTML只按已验证的文章链接规则提取标题；不猜发布日期，不把正文摘要作为标题。
+4. 保存候选线索、来源审计、当日快照和最近30个日历日历史索引。
+5. 用临时GITHUB_TOKEN提交公开数据，并显式请求Pages重建，确认目标提交完成构建。
+
+发布源保持 main / (root)。成功排队不等于发布成功；权限拒绝、解析失败和构建超时分别保留结果，不修改权限或回避限制。
+
+## 文件与统计口径
+
+| 文件 | 含义 |
 | --- | --- |
-| `data/feed-latest.json` | 最新运行结果；`items` 为候选线索，`sources` 为来源审计，`meta` 为采集状态 |
-| `data/feed-state.json` | URL 哈希及首次发现时间；长期保留，避免历史轮换后把同一链接再当新增 |
-| `data/feed-history/YYYY-MM-DD.json` | 北京日期下当日最后一次运行的快照 |
-| `data/feed-history/manifest.json` | 最近三十个日历日实际已有快照，按日期倒序；缺失日期不补造记录 |
+| data/source-catalog.json | 按机构去重的来源目录、公开字段、费用边界、接入状态与核验日期 |
+| data/feed_sources.json | 真正配置到采集脚本的入口与解析规则 |
+| data/feed-latest.json | 最新候选线索、各源实际结果与运行时间 |
+| data/feed-state.json | URL指纹与首次发现时间，避免历史轮换后重新报新 |
+| data/feed-history/YYYY-MM-DD.json | 北京日期下当天最后一次采集快照 |
+| data/feed-history/manifest.json | 最近30日实际存在的快照；缺失日不补造 |
+| data/latest.json | 阅读原文后核验的事实、条件性分析与建议 |
+| data/governance-latest.json | 独立治理任务输出，有实际结果后生成 |
 
-`published_at` 是原源明确提供且含时区的发布时间；未提供或无法解析时为 `null`。`source_updated_at` 单独保存 Atom 的更新时间，不冒充首次发布时间。`first_seen_at` 和 `last_seen_at` 是本系统实际观察时间。`generated_at` 是本次采集开始时间，**不是事件发生时间**。
+机构数按publisher_id去重；候选链接数按规范化URL去重；事实事件数来自独立核验后的数据。三者不能混用。一般每来源最多保留40条、全局预算1500条，避免高频来源挤掉专业机构。
 
-首次运行标记 `initial_baseline: true`，当次所见公告属于初始建库。标题分类由透明关键词规则完成，没有使用模型研判。所有条目标记为“官方订阅线索 / 待核验”，前端应使用独立区域展示；不能把这些条目的数量作为已核实战略风险事件数。
+published_at只保存来源明确提供的日期或带时区时间；没有则为null。source_updated_at不是首次发表时间。first_seen_at是本系统首次发现，last_seen_at是最近再次见到，generated_at是本次采集时间。新增来源首次导入的历史条目不称作当天新增事件。
 
-规范化 URL 后按链接去重，仅删除常见营销跟踪参数和片段，保留业务查询参数。`feed-latest.json` 最多保留二百条，按原文发布时间倒序；源失败时保留旧条目且不更新其最后发现时间，并明确记录失败与上次成功时间。旧公告仍可能出现在列表中，其原发布日期必须保留可见。历史文件保存三十天，Git 提交还保留变更记录。
+源失败时保留此前有效线索及上次成功时间，不给旧条目伪造新的观察时间。所有条目仍为待核验。关键词只用于筛选，不自动认定技术突破、供应短缺或投资风险。
 
-两个数据层互不覆盖：人工策展的 `data/latest.json` 和 `data/researched.json` 不被本脚本读取或写入。候选线索只有经过阅读原文、核实关键数字和业务相关性后，才应进入策展层。
+## 法人登记
 
-## 首次检查与故障处理
+27个司法辖区入口不表示已经监控27国实际子公司。真正接入还需法定名称、注册号、司法辖区及可靠基线。英国API需要免费密钥；一些国家的详细董事、股东或历史资料收费。美国SEC、韩国DART属于披露库，加拿大该入口仅覆盖联邦公司，日本NTA主要为法人番号基础信息。具体限制见目录。
 
-本地复现：
+本任务只使用合法免费字段，不注册付费产品，不绕登录、验证码和权限限制，不处理企业内部名单。
 
-```bash
-python3 -m unittest discover -s tests -p 'test_collect_feeds.py' -v
-python3 scripts/collect_feeds.py
-```
+## 复现与故障
 
-仓库管理员应检查第一条实际 Actions 运行及 Pages 构建结果，随后在网页上检查“最近采集时间”与各源状态。若平台连接的凭据无法创建工作流文件，不应绕过权限；可先发布静态网页和已采集数据，并使用已授权的人工/ChatGPT 定期策展任务更新仓库，待工作流权限具备后再启用自动采集。
+运行 python3 -m unittest discover -s tests -p 'test_collect_feeds.py' -v，然后 python3 scripts/collect_feeds.py。部分来源失败时仍发布其他成功结果和失败审计；全部来源失败时保留旧数据并让任务失败。损坏的状态文件不静默重置。
 
-部分来源失败时，采集仍保存其他成功结果及失败审计。全部失败时也写出审计、保留旧数据，脚本返回失败码，工作流报告失败。源不可访问不等于“没有风险”或“没有新消息”。状态文件损坏时直接失败，不静默重置首次发现时间。
-
-## 免费版的能力边界
-
-当前每天访问四个官方源，适合验证“官方订阅 → 可追溯线索 → 人工筛选”的效果。没有获得全部四十多个国家的子公司名单、注册编号和本地登记库映射，因而没有声称监控了全部海外董监高变化。矿权变更、地方许可、招投标、细分原材料日频价格、全量专利和航运位置也尚未接入；这些领域需要逐国或逐类增加公开接口及变更规则，或购买许可数据。
-
-每天调度不是实时告警。官方源有发布时滞和地域、语言、主题覆盖边界；四个 RSS 的覆盖率不能与完整商业舆情产品直接等同。GitHub 官方说明定时任务在高负载时可能延迟或被丢弃；公开仓库六十天无活动后定时任务可被自动停用。工作流也不能替代通知送达；当前机制负责更新网页，ChatGPT 早报/其他推送由各自的独立任务负责。
-
-此方案不购买数据和模型服务，不需要额外个人令牌。根据当前 GitHub 文档，公开仓库的标准 GitHub 托管 runner 免费；如果仓库日后改为私有、改用付费 runner 或加入付费源，需要重新评估费用。
+公开来源没有完整性保证。官方披露可能迟于事件，门户成功不等于实体字段全覆盖。每天调度也可能延迟；网页刷新与ChatGPT日报推送是独立任务。新源接入应依据实际运行记录验收。
 
 ## 官方技术依据
 
-- GitHub Token：Actions 使用 `GITHUB_TOKEN` 推送的提交不会自行触发 Pages 构建：<https://docs.github.com/en/actions/concepts/security/github_token>
-- GitHub Pages REST：`Request a GitHub Pages build` 支持 `Pages: write`，请求默认分支最新修订版构建：<https://docs.github.com/en/rest/pages/pages#request-a-github-pages-build>
-- GitHub Actions 调度、延迟和停用规则：<https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule>
-- GitHub Actions 托管 runner 计费：<https://docs.github.com/en/billing/concepts/product-billing/github-actions>
-- GitHub 官方 checkout Action：<https://github.com/actions/checkout>
-- EIA 官方 RSS 说明：<https://www.eia.gov/tools/rssfeeds/>
+- GitHub GITHUB_TOKEN：https://docs.github.com/en/actions/concepts/security/github_token
+- Pages构建接口：https://docs.github.com/en/rest/pages/pages#request-a-github-pages-build
+- Actions调度：https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
+- Actions计费：https://docs.github.com/en/billing/concepts/product-billing/github-actions

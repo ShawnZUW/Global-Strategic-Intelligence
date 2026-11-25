@@ -43,6 +43,8 @@
         <form id="filters" class="filters" role="search">
           <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索企业、材料、国家或技术" aria-label="搜索情报"></div>
           <select id="category" aria-label="按领域筛选"><option value="">全部领域</option></select>
+          <select id="source-mode" aria-label="按信源接入方式筛选" hidden><option value="">全部接入方式</option><option value="auto">自动采集</option><option value="research">检索核验</option><option value="registry">待主体映射</option></select>
+          <select id="feed-source" aria-label="按采集机构筛选" hidden><option value="">全部采集机构</option></select>
           <select id="priority" aria-label="按研究优先级筛选"><option value="">全部优先级</option><option value="P0">P0 · 优先核实</option><option value="P1">P1 · 重点研究</option><option value="P2">P2 · 持续观察</option></select>
           <select id="evidence" aria-label="按证据筛选"><option value="">全部证据</option><option value="primary">一手披露</option><option value="other">其他 / 待核验</option></select>
           <select id="period" aria-label="按披露时间筛选"><option value="all">全部日期</option><option value="7">快照前7日</option><option value="30">快照前30日</option><option value="90">快照前90日</option></select>
@@ -50,7 +52,7 @@
         </form>
         <div id="content" class="content"><div class="loading-state"><div class="spinner"></div><p>正在读取公开信息快照…</p></div></div>
       </section>
-      <section id="research-note" class="research-note"><div><span class="small-kicker">READING GUIDE</span><h3>事实、目标与研判分别呈现</h3></div><p>企业公告记录其披露内容，规划产能不等于已投产，技术测试不等于量产验证。影响与建议属于研究判断。未取得数据的领域保留缺口，不填入模拟数据。</p></section>
+      <section id="research-note" class="research-note"><div><span class="small-kicker">READING GUIDE</span><h3>事实、目标与研判分别呈现</h3></div><p>机构信源、自动采集和已核验情报分别统计。公开可查不等于已接入API，首次发现不等于新发生。规划产能与技术测试保留原始阶段；影响与建议属于研究判断。</p></section>
       <footer class="footer"><span>GLOBAL STRATEGIC INTELLIGENCE</span><span id="footer-date">公开数据 · 来源可追溯</span><a href="https://github.com/ShawnZUW/Global-Strategic-Intelligence" target="_blank" rel="noopener noreferrer">项目与更新记录</a></footer>
     </main>
   </div>

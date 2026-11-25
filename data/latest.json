@@ -1,10 +1,10 @@
 {
   "meta": {
     "as_of": "2026-11-25",
-    "generated_at": "2026-11-25T13:24:26Z",
+    "generated_at": "2026-11-25T13:51:11+00:00",
     "scope": "面向宁德时代产业投资视角的公开产业观察样本；不代表宁德时代内部口径、实际投资清单或已知业务敞口。",
     "mode": "公开免费第一手来源核验快照",
-    "update_note": "本次核验12条公开事件及年度基线，覆盖9个观察类别。事实、企业计划和条件性影响分别记录；价格未取得可靠同口径数据，暂不展示。地图仅为项目或实体所在区域示意，不是精确矿权边界或航行坐标。法人治理条目为公开公司监测示例，接入境外子公司需补充法定名称及注册号。"
+    "update_note": "21条经原文核验的情报；92家机构信源目录与自动采集运行记录分开展示。报价标明实际观察日；登记入口尚待实际子公司映射。"
   },
   "events": [
     {
@@ -493,9 +493,378 @@
       ],
       "lat": 48.86,
       "lon": 2.35
+    },
+    {
+      "id": "basf-catl-europe-delivery-20261123",
+      "category": "竞争与合作",
+      "title": "BASF已开始从德国向CATL交付正极材料：欧洲本地配套进入供货阶段",
+      "summary": "BASF于11月23日披露，德国Schwarzheide工厂已开始向CATL交付正极活性材料，长沙工厂也在中国市场供货。欧洲交付是在2025年7月全球框架协议后推进产品开发、认证与当地生产的结果。公告未披露本次供货量或合同单价。",
+      "impact": "研究判断：这一已披露的供货进展说明欧洲本地材料配套正在形成；后续应评估产能利用率、材料来源与成本能否支撑持续交付。它不证明所有电芯产能已经达产。",
+      "action": "持续核对批量认证、稳定交付量和工厂利用率；将已交付材料与框架协议下的未来供给分开记录。",
+      "entity": "BASF / CATL",
+      "country": "德国 / 中国",
+      "published_at": "2026-11-23",
+      "event_date": "2026-11-23",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "BASF官方新闻稿",
+      "source_url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-191",
+      "verified_at": "2026-11-25T13:43:45+00:00",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "开始初始交付",
+          "unit": ""
+        },
+        {
+          "label": "德国基地",
+          "value": "Schwarzheide",
+          "unit": ""
+        },
+        {
+          "label": "基础协议",
+          "value": "2025年7月全球CAM框架协议",
+          "unit": ""
+        }
+      ],
+      "lat": 51.48,
+      "lon": 13.87
+    },
+    {
+      "id": "basf-cylib-recycling-agreement-20261123",
+      "category": "竞争与合作",
+      "title": "BASF拟向cylib出售欧美电池回收业务，资源聚焦正极材料",
+      "summary": "BASF于11月23日公告，11月20日已与cylib签署电池回收业务出售协议，涉及欧美回收业务、知识产权、客户合作以及Schwarzheide黑粉工厂和回收试验设施。预计2027年二至三季度交割，仍需审批等条件；交易金额未披露。",
+      "impact": "研究判断：若交割完成，欧洲回收业务可能进一步向专业运营商整合。对产业投资筛选，应结合真实进料、回收率、金属价格暴露和客户协议判断项目价值，不能从资产交易直接推定回收盈利改善。",
+      "action": "跟踪监管批准和交割；核对进料合同、回收产能口径及客户服务连续性，并关注BASF其他闲置材料基地的伙伴遴选。",
+      "entity": "BASF / cylib",
+      "country": "德国 / 欧洲 / 北美",
+      "published_at": "2026-11-23",
+      "event_date": "2026-11-20",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "BASF官方新闻稿",
+      "source_url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-192",
+      "verified_at": "2026-11-25T13:43:45+00:00",
+      "metrics": [
+        {
+          "label": "签约日期",
+          "value": "2026-11-20",
+          "unit": ""
+        },
+        {
+          "label": "预计交割",
+          "value": "2027年Q2—Q3，附条件",
+          "unit": ""
+        },
+        {
+          "label": "交易金额",
+          "value": "未披露",
+          "unit": ""
+        }
+      ],
+      "lat": 51.48,
+      "lon": 13.87
+    },
+    {
+      "id": "pls-fortescue-power-20261028",
+      "category": "矿山零碳",
+      "title": "PLS与Fortescue签署20年PPA：锂矿用电与区域绿电网络衔接",
+      "summary": "PLS在10月28日公告，旗下Pilgangoora Operations与Fortescue旗下FMG Clean Energy签署20年购电协议，最低约定供电325GWh/年、目标2029年开始供电。拟建连接能力超过100MW。协议仍有生效条件，供电并非firm supply，矿山将保留并扩展现场电源以应对中断。",
+      "impact": "研究判断：大型矿业绿电网络可从自用设施发展为第三方售电业务，同时改变独立矿山微电网的竞争边界。储能、备用电源和输电接入的组合仍需按可靠性与实际负荷评估，不能只比较名义绿电价格。",
+      "action": "跟踪建设协议生效、输电连接进度、供电可靠性与现场备电配置；按年度电量、最大需量和中断责任评估储能及供电服务机会。",
+      "entity": "PLS / Fortescue",
+      "country": "澳大利亚",
+      "published_at": "2026-10-28",
+      "event_date": "2026-10-28",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "PLS ASX公告",
+      "source_url": "https://www.pls.com/storage/announcements/pls-signs-long-term-power-agreement-2026-10-28.pdf",
+      "verified_at": "2026-11-25T13:43:45+00:00",
+      "metrics": [
+        {
+          "label": "PPA期限",
+          "value": "20",
+          "unit": "年"
+        },
+        {
+          "label": "最低约定供电",
+          "value": "325",
+          "unit": "GWh/年"
+        },
+        {
+          "label": "供电开始目标",
+          "value": "2029年",
+          "unit": ""
+        },
+        {
+          "label": "连接能力",
+          "value": "超过100",
+          "unit": "MW"
+        }
+      ],
+      "lat": -21.05,
+      "lon": 118.89
+    },
+    {
+      "id": "solid-power-mobius-commissioning-20261103",
+      "category": "技术突破",
+      "title": "Solid Power硫化物电解质连续生产线开始调试，规模化质量仍待验证",
+      "summary": "Solid Power于11月3日披露，已向MOBIUS连续电解质生产线投入材料，预计2026年底完成调试。该线计划增加45吨/年电解质产能，使总年产能达到75吨；公司同时推进韩国潜在合资生产讨论。上述产能与合资仍为计划阶段。",
+      "impact": "研究判断：硫化物电解质连续制造是固态电池产业化的重要环节。若批次一致性、纯度、良率和成本能持续验证，可能影响材料与装备的投资价值；小规模产能调试不等于汽车电芯量产成熟。",
+      "action": "跟踪调试完成、合格产品实际产量、客户验证及单位成本；将电解质供应与汽车电芯的多层设计、良率验证分别评估。",
+      "entity": "Solid Power",
+      "country": "美国 / 韩国",
+      "published_at": "2026-11-03",
+      "event_date": "2026-11-03",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "Solid Power三季度原始披露",
+      "source_url": "https://www.solidpowerbattery.com/investor-relations/investor-news/news-details/2026/Solid-Power-Reports-Third-Quarter-2026-Results/default.aspx",
+      "verified_at": "2026-11-25T13:43:45+00:00",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "连续产线调试中",
+          "unit": ""
+        },
+        {
+          "label": "计划新增电解质产能",
+          "value": "45",
+          "unit": "吨/年"
+        },
+        {
+          "label": "计划总电解质产能",
+          "value": "75",
+          "unit": "吨/年"
+        },
+        {
+          "label": "调试完成目标",
+          "value": "2026年底",
+          "unit": ""
+        }
+      ],
+      "lat": 39.98,
+      "lon": -105.13
+    },
+    {
+      "id": "catl-credit-agricole-financing-framework-20261120",
+      "category": "竞争与合作",
+      "title": "CATL与Crédit Agricole签署5亿美元销售融资框架：关注海外储能项目融资支持",
+      "summary": "CATL于11月20日公告，与Crédit Agricole Group在巴黎签署5亿美元销售融资战略框架协议，拟为CATL全球合作伙伴提供融资解决方案以推进储能项目。该披露说明框架合作，不等于相关贷款已全部批准或投放，也不是已实现储能订单金额。",
+      "impact": "研究判断：海外储能项目落地除了设备性能和价格，还受客户融资能力与项目现金流影响。融资合作可能拓宽客户项目可执行性，但应逐项目核对借款主体、条件、担保和资金用途。",
+      "action": "跟踪框架下实际获批项目、融资交割、提款和设备交付；避免把融资额度直接计作销售额或已投资金额。",
+      "entity": "CATL / Crédit Agricole Group",
+      "country": "法国 / 全球",
+      "published_at": "2026-11-20",
+      "event_date": "2026-11-20",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "CATL官方公告",
+      "source_url": "https://www.catl.com/en/news/7088.html",
+      "verified_at": "2026-11-25T13:43:45+00:00",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "战略销售融资框架",
+          "unit": ""
+        },
+        {
+          "label": "框架规模",
+          "value": "5",
+          "unit": "亿美元"
+        },
+        {
+          "label": "实际提款与对应订单",
+          "value": "本公告未披露",
+          "unit": ""
+        }
+      ],
+      "lat": 48.86,
+      "lon": 2.35
+    },
+    {
+      "id": "eu-hybrid-safeguard-20261124",
+      "category": "贸易与政策",
+      "title": "欧盟公布混动车临时进口配额：12月1日起适用，需核对整车客户排产",
+      "summary": "欧盟委员会11月24日公布混合动力乘用车临时保障措施，法规(EU)2026/2614设置进口配额，12月1日起最长适用200天；配额用尽后，涉案产品不得进入欧盟。车型、原产地及豁免依正式法规判定。本条涉及特定整车进口，不等于限制所有电池出口。",
+      "impact": "条件性分析：若出口欧洲的整车客户受到配额约束，其电池采购、交付时间及本地化计划可能调整；对电池供应商的影响取决于客户、车型和产地，不能仅凭政策标题推定订单损失。",
+      "action": "将受影响整车客户、HEV/PHEV车型、原产地、CN/TARIC编码及配额窗口对应；核查客户排产和当地制造计划，并跟踪正式调查及后续措施。",
+      "entity": "欧盟委员会 / 混合动力整车出口商",
+      "country": "欧盟 / 全球",
+      "published_at": "2026-11-24",
+      "event_date": "2026-11-24",
+      "priority": "P0",
+      "evidence_level": "官方原文",
+      "source_name": "欧盟委员会官方新闻稿",
+      "source_url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2564/IP_26_2564_EN.pdf",
+      "verified_at": "2026-11-25T13:44:17Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "已公布；12月1日起适用",
+          "unit": ""
+        },
+        {
+          "label": "临时期限（最长）",
+          "value": 200,
+          "unit": "天"
+        },
+        {
+          "label": "范围",
+          "value": "正式法规列明的新混合动力乘用车",
+          "unit": ""
+        }
+      ],
+      "lat": 50.85,
+      "lon": 4.35,
+      "additional_sources": [
+        {
+          "name": "正式法规(EU)2026/2614；直接访问可能需JS验证",
+          "url": "https://eur-lex.europa.eu/eli/reg_impl/2026/2614/oj"
+        }
+      ]
+    },
+    {
+      "id": "cochilco-copper-weekly-20261120",
+      "category": "原材料",
+      "title": "铜价周度回落与地区现货偏紧并存：公开周报可补充价格观察",
+      "summary": "Cochilco截至11月20日的周报列示LME现货铜约5.55美元/磅，较前一周五下跌10.13%；三大交易所合计库存周增约0.5%。报告同时指出库存地区分布不均、部分中国即期供应仍偏紧。价格和库存日期均为11月20日，并非今天行情。",
+      "impact": "条件性分析：铜价下降可能影响铜箔、线缆及储能系统材料成本，但地区升水、加工费、合同定价窗口和库存结构可能抵消部分传导。不能由全球库存增长直接推断所有地区供给宽松。",
+      "action": "分开跟踪金属基价、铜箔加工费、地区升水和合同窗口；将周报价格与采购币种、规格和交付地匹配，避免把现货铜指数当电池级铜箔报价。",
+      "entity": "Cochilco / LME铜市场",
+      "country": "全球",
+      "published_at": "2026-11-20",
+      "event_date": "2026-11-20",
+      "priority": "P1",
+      "evidence_level": "研究报告",
+      "source_name": "智利铜业委员会周报",
+      "source_url": "https://www.cochilco.cl/web/informe-del-mercado-internacional-del-cobre-semana-del-16-al-20-de-noviembre-de-2026/",
+      "verified_at": "2026-11-25T13:44:17Z",
+      "metrics": [
+        {
+          "label": "观察日期",
+          "value": "2026-11-20",
+          "unit": ""
+        },
+        {
+          "label": "现货铜（报告取整）",
+          "value": 5.55,
+          "unit": "美元/磅"
+        },
+        {
+          "label": "较前一周五",
+          "value": -10.13,
+          "unit": "%"
+        },
+        {
+          "label": "库存周度变化",
+          "value": "约+0.5",
+          "unit": "%"
+        }
+      ],
+      "lat": -33.45,
+      "lon": -70.67,
+      "additional_sources": [
+        {
+          "name": "官方周报PDF（含价格、库存表）",
+          "url": "https://www.cochilco.cl/web/download/1006/2026/17093/informe-del-mercado-internacional-del-cobre-semana-del-16-al-20-de-noviembre-de-2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cochilco-chile-project-pipeline-20261119",
+      "category": "资源与矿权",
+      "title": "智利矿业投资项目库扩至72项：锂项目仍需逐项跟踪许可",
+      "summary": "Cochilco公布的2026—2035矿业投资项目库包含72项、合计约1,111.49亿美元，较上一版增6.3%；锂项目估计投资从47亿美元升至108亿美元。新增的重要项目包括Salar Futuro和Albemarle直接提锂转型项目，两者仍在环境评价阶段。项目库估计投资不等于已完成投资或新增产量。",
+      "impact": "条件性分析：锂资源开发向提取工艺升级及长期资本投入延伸，可能为材料、设备、工业电气化和技术合作带来机会。真正的可进入窗口取决于许可、工艺验证、融资与采购安排。",
+      "action": "按矿权主体、环境评价、最终投资决定、建设与包销里程碑拆分跟踪；将估计投资和实际投入、名义产能和可交付产量分别记录。",
+      "entity": "Cochilco / Novandino Litio / Albemarle",
+      "country": "智利",
+      "published_at": "2026-11-19",
+      "event_date": "2026-11-19",
+      "priority": "P1",
+      "evidence_level": "官方原文",
+      "source_name": "智利铜业委员会矿业投资项目库公告",
+      "source_url": "https://www.cochilco.cl/web/cartera-de-inversion-minera-alcanza-us111-149-millones-el-mayor-monto-en-13-anos/",
+      "verified_at": "2026-11-25T13:44:17Z",
+      "metrics": [
+        {
+          "label": "项目库期限",
+          "value": "2026—2035",
+          "unit": ""
+        },
+        {
+          "label": "项目数量",
+          "value": 72,
+          "unit": "项"
+        },
+        {
+          "label": "锂项目估计投资",
+          "value": 108,
+          "unit": "亿美元"
+        },
+        {
+          "label": "关键锂项目阶段",
+          "value": "环境评价中",
+          "unit": ""
+        }
+      ],
+      "lat": -23.65,
+      "lon": -70.4,
+      "additional_sources": []
+    },
+    {
+      "id": "csiro-cell-cans-foils-20261104",
+      "category": "技术突破",
+      "title": "CSIRO识别澳洲电池壳体与铜箔制造机会：从矿产延伸到材料配套",
+      "summary": "CSIRO11月4日发布电池制造研究，将铝制方形电池壳体的冲击挤压工艺和电解铜箔列为澳大利亚可优先发展的环节，依据当地铝铜资源、金属成形和精炼产业能力。报告属于制造机会评估，未宣告相关新工厂已经投产。",
+      "impact": "条件性分析：海外电池供应链本地化可能形成壳体、集流体、工艺设备和材料认证方面的合作入口。具备矿产资源或通用加工能力，并不自动满足电池级质量、成本及良率要求。",
+      "action": "评估潜在伙伴的材料纯度、厚度一致性、成形良率、客户认证、电价和规模利用率；核实后续投资决定及实际产线，再判断合作价值。",
+      "entity": "CSIRO / 澳大利亚电池零部件产业",
+      "country": "澳大利亚",
+      "published_at": "2026-11-04",
+      "event_date": "2026-11-04",
+      "priority": "P2",
+      "evidence_level": "研究报告",
+      "source_name": "CSIRO官方研究发布",
+      "source_url": "https://www.csiro.au/en/news/All/News/2026/November/Local-battery-manufacturing-sector",
+      "verified_at": "2026-11-25T13:44:17Z",
+      "metrics": [
+        {
+          "label": "阶段",
+          "value": "制造机会研究，非量产公告",
+          "unit": ""
+        },
+        {
+          "label": "重点环节",
+          "value": "方形铝壳 / 电解铜箔",
+          "unit": ""
+        },
+        {
+          "label": "判断门槛",
+          "value": "电池级质量、良率、成本、客户认证",
+          "unit": ""
+        }
+      ],
+      "lat": -37.81,
+      "lon": 144.96,
+      "additional_sources": []
     }
   ],
-  "prices": [],
+  "prices": [
+    {
+      "material": "LME现货铜（Cochilco公开周报，取整值）",
+      "value": 5.55,
+      "unit": "美元/磅",
+      "date": "2026-11-20",
+      "change_pct": -10.13,
+      "comparison_basis": "观察日2026-11-20，较前一周五；官方周报取整值。非当日报价，非铜箔采购价格。",
+      "source_name": "Cochilco 2026-11-20铜市场周报",
+      "source_url": "https://www.cochilco.cl/web/informe-del-mercado-internacional-del-cobre-semana-del-16-al-20-de-noviembre-de-2026/"
+    }
+  ],
   "sources": [
     {
       "name": "Core Lithium ASX公告",
@@ -608,6 +977,78 @@
       "status": "未接入行情",
       "last_checked": "2026-11-25T13:24:26Z",
       "note": "已确认官方产品及报价单位，但未取得连续且同口径的日行情；价格区保持空白。不可将产品页当作实时价格API。"
+    },
+    {
+      "name": "BASF官方新闻稿",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-191",
+      "category": "竞争与合作",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:43:45+00:00",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "BASF官方新闻稿",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-192",
+      "category": "竞争与合作",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:43:45+00:00",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "PLS ASX公告",
+      "url": "https://www.pls.com/storage/announcements/pls-signs-long-term-power-agreement-2026-10-28.pdf",
+      "category": "矿山零碳",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:43:45+00:00",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "Solid Power三季度原始披露",
+      "url": "https://www.solidpowerbattery.com/investor-relations/investor-news/news-details/2026/Solid-Power-Reports-Third-Quarter-2026-Results/default.aspx",
+      "category": "技术突破",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:43:45+00:00",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "CATL官方公告",
+      "url": "https://www.catl.com/en/news/7088.html",
+      "category": "竞争与合作",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:43:45+00:00",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "欧盟委员会官方新闻稿",
+      "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2564/IP_26_2564_EN.pdf",
+      "category": "贸易与政策",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:44:17Z",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "智利铜业委员会周报",
+      "url": "https://www.cochilco.cl/web/informe-del-mercado-internacional-del-cobre-semana-del-16-al-20-de-noviembre-de-2026/",
+      "category": "原材料",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:44:17Z",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "智利铜业委员会矿业投资项目库公告",
+      "url": "https://www.cochilco.cl/web/cartera-de-inversion-minera-alcanza-us111-149-millones-el-mayor-monto-en-13-anos/",
+      "category": "资源与矿权",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:44:17Z",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
+    },
+    {
+      "name": "CSIRO官方研究发布",
+      "url": "https://www.csiro.au/en/news/All/News/2026/November/Local-battery-manufacturing-sector",
+      "category": "技术突破",
+      "status": "已核验",
+      "last_checked": "2026-11-25T13:44:17Z",
+      "note": "核验具体原文；规划、交易条件和观察日期已在事件中标明。"
     }
   ]
 }
