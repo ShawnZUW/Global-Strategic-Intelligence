@@ -16,7 +16,9 @@
     "chemistry_note": "所有formula描述节点材料或状态，不将整张流程图视为配平化学反应方程。",
     "geography_note": "产地为公开产业观察范围，代表项目不等同CATL已确认供应商；资源量、矿石产量、金属含量、精炼产能和合格材料交付分别观察。",
     "sodium_note": "钠离子是独立对照路线；既有锂盐、LiPF6、正铝负铜节点不接入钠电路线。共享的是适配后的系统层级，不是相同电芯配方。",
-    "generated_at": "2026-11-25T14:52:14Z"
+    "generated_at": "2026-11-25T15:56:06.423189+00:00",
+    "risk_transmission_count": 14,
+    "risk_transmission_note": "行业通用传导与条件性判断；材料形态、直接/间接作用及客户认证分别观察。"
   },
   "routes": [
     {
@@ -673,12 +675,11 @@
         "NMC正极活性材料"
       ],
       "regions": [
-        "BASF等正极厂；与CATL关系见合作表"
+        "全球采用层状三元路线的正极材料制造商；具体商业合作另见已披露关系"
       ],
       "strategic_impact": "提高镍占比可提升容量，同时增加界面、残碱、湿敏与热稳定性控制要求。",
       "source_ids": [
-        "nmc-synthesis",
-        "basf-catl"
+        "nmc-synthesis"
       ]
     },
     {
@@ -3116,6 +3117,128 @@
       "accessed_at": "2026-11-25",
       "kind": "一手来源",
       "note": "公告提及NFPP及产线就绪；年底1GWh、2027年6月海外交付属于当时目标，非实际累计交付记录。"
+    },
+    {
+      "id": "iea-critical-2026-market",
+      "title": "IEA 2026关键矿产展望：加工集中度、硫与硫酸传导",
+      "publisher": "IEA",
+      "published_at": "2026-07-16",
+      "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/market-overview",
+      "type": "国际能源机构原始分析",
+      "verified_at": "2026-11-25T15:44:06+00:00",
+      "note": "2026年7月报告的结构背景；不据此宣称11月具体航线或厂址仍处于同一状态。"
+    },
+    {
+      "id": "iea-critical-2026-outlook",
+      "title": "IEA 2026关键矿产展望：加工与下游多元化瓶颈",
+      "publisher": "IEA",
+      "published_at": "2026-07-16",
+      "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/outlook",
+      "type": "国际能源机构原始分析",
+      "verified_at": "2026-11-25T15:44:06+00:00",
+      "note": "情景与项目管线分析；不当作已建成产能或现时短缺。"
+    },
+    {
+      "id": "resource-mbma-q3-20261102",
+      "title": "Merdeka Battery Materials Q3 2026 Quarterly Activities Report",
+      "publisher": "PT Merdeka Battery Materials Tbk",
+      "published_at": "2026-11-02",
+      "url": "https://assets.merdekabattery.com/dist/documents/MBMA_Q3_2026_Quarterly_Activities_Report_vF.pdf",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-mbma-9m-20261123",
+      "title": "Merdeka Group 9M 2026 Financial Results Presentation，第19页",
+      "publisher": "Merdeka Group / PT Merdeka Battery Materials Tbk",
+      "published_at": "2026-11-23",
+      "url": "https://assets.merdekabattery.com/dist/documents/9M26%20Merdeka%20Group%20Financial%20Presentation_vF.pdf",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-vale-rkab-q3-2026",
+      "title": "PT Vale Indonesia截至2026-09-30中期财报，附注40(g) Work and Budget Plan（PDF第101页）",
+      "publisher": "PT Vale Indonesia Tbk",
+      "published_at": null,
+      "source_doc_date": "2026-10-29",
+      "report_period_end": "2026-09-30",
+      "url": "https://www.valeindonesia.com/documents/44618/1374000/PT%2BVale%2BIndonesia%2BTbk%2BFinancial%2BStatements%2B30%2BSeptember%2B2026.pdf",
+      "type": "企业原始财报",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-arecoms-communique-20261123",
+      "title": "ARECOMS第2026/004号钴出口通知：监管机构签署原件（公开媒体镜像）",
+      "publisher": "ARECOMS（签署原件；SMM公开图片镜像）",
+      "published_at": "2026-11-23",
+      "url": "https://news.metal.com/fr/newscontent/DB3YVMTKX7ZOHJXNC2OAMVV6N2O57BWM2AMHH4Y-smm-analysis-la-rdc-suspend-%C3%A0-nouveau-ses-exportations-de-cobalt-combien-de-temps-la-reprise-peut-elle-durer",
+      "type": "监管机构签署原件（媒体镜像）",
+      "verified_at": "2026-11-25",
+      "document_urls": [
+        "https://imgqn.smm.cn/production/admin/votes/imagesyPjhO20261124201543.jpeg",
+        "https://imgqn.smm.cn/production/admin/votes/imagesLsZjh20261124201543.jpeg",
+        "https://imgqn.smm.cn/production/admin/votes/imageslkzbV20261124201543.jpeg"
+      ],
+      "note": "已核对三页签署原件；链接为公开镜像，恢复出口须另行公布决定。"
+    },
+    {
+      "id": "resource-glencore-q3-20261029",
+      "title": "Glencore Third Quarter 2026 Production Report，第1、5页",
+      "publisher": "Glencore",
+      "published_at": "2026-10-29",
+      "url": "https://www.glencore.com/.rest/api/v1/documents/static/7ed50c65-7d84-4cc1-a2c4-216060583297/GLEN_2026-Q3_ProductionReport.pdf",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "syrah-q3-execution-20261029",
+      "title": "Syrah 2026年第三季度活动报告：公司原始公告PDF（公开镜像）",
+      "publisher": "Syrah Resources",
+      "published_at": "2026-10-29",
+      "url": "https://company-announcements.afr.com/asx/syr/6788725f-d31a-11f1-a069-b6b1a9c70e34.pdf",
+      "type": "企业原始公告PDF（公告镜像）",
+      "verified_at": "2026-11-25",
+      "note": "实际读取14页公司原始公告，重点第1—4页；不是媒体摘要。官网报告目录https://www.syrahresources.com.au/investors/reports-presentations的公开页面数据指向同名原件https://www.datocms-assets.com/65260/1793225322-september-2026-quarterly-activities-and-cashflow-report_final.pdf；该CDN本次返回403，故保留可读原始文件镜像。"
+    },
+    {
+      "id": "syrah-products-qualification",
+      "title": "Products and Technology: Natural Graphite and Active Anode Material",
+      "publisher": "Syrah Resources",
+      "published_at": null,
+      "url": "https://www.syrahresources.com.au/our-business/products-and-technology",
+      "type": "企业产品与工艺说明",
+      "verified_at": "2026-11-25",
+      "note": "无明确发布日期，只用于解释天然鳞片石墨与球形纯化包覆负极材料的区别，不用核验日替代事件日期。"
+    },
+    {
+      "id": "novonix-csample-feedback-20260909",
+      "title": "Lead Customer Feedback Marks Progress in Qualification",
+      "publisher": "NOVONIX",
+      "published_at": "2026-09-09",
+      "url": "https://ir.novonixgroup.com/news-releases/news-release-details/lead-customer-feedback-marks-progress-qualification-0",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25",
+      "note": "采用新闻页及正文9月9日日期；ASX目录显示9月10日，保留日期差异。公告未披露主要客户姓名，不将该测试结果自动归属PowerCo。"
+    },
+    {
+      "id": "novonix-iso9001-20261008",
+      "title": "NOVONIX Achieves ISO 9001 Quality Management Certification",
+      "publisher": "NOVONIX",
+      "published_at": "2026-10-08",
+      "url": "https://ir.novonixgroup.com/news-releases/news-release-details/novonix-achieves-iso-9001-quality-management-certification-0",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "novonix-powerco-framework-20261019",
+      "title": "NOVONIX and PowerCo Amend Supply Agreement",
+      "publisher": "NOVONIX",
+      "published_at": "2026-10-19",
+      "url": "https://ir.novonixgroup.com/static-files/efe88eb1-1bb7-4369-a7eb-e045b99a0090",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25",
+      "note": "采用公告正文10月19日日期；IR目录显示10月18日。保留原文日期差异，不将日期设为本次核验日。"
     }
   ],
   "partners": [
@@ -3729,6 +3852,493 @@
         "pnnl-ess"
       ],
       "type": "结构推论"
+    }
+  ],
+  "risk_transmission": [
+    {
+      "id": "lithium-salts",
+      "material": "锂盐：碳酸锂与氢氧化锂",
+      "forms": "锂辉石/卤水 → 含锂溶液 → Li₂CO₃或LiOH·H₂O → 加锂烧结的正极材料",
+      "chain_routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "chain_node_ids": [
+        "li_carbonate",
+        "li_hydroxide",
+        "hard_li_process",
+        "brine_process"
+      ],
+      "direct_effect": "合格锂盐供应变化首先影响正极锂源成本与交付；LFP和三元都需要锂，但具体盐型和品质要求随材料工艺变化。",
+      "indirect_effect": "经过正极加工、合同重定价和库存周期，才进入电芯与系统报价；资源项目的权益和包销权决定谁能采购新增产出。",
+      "boundary": "精矿湿吨、Li₂O品位、LCE和锂盐实物吨须分别记录；碳酸锂、氢氧化锂与研究用碳化锂不是同一种原料。",
+      "public_signals": [
+        "矿山连续季度产销与装船；盐厂合格产出和客户认证",
+        "同地区、同品级的锂盐报价；项目许可、融资和包销生效"
+      ],
+      "decision_use": "分别评估近期合格材料保障、长期资源权益和正极加工能力，匹配不同的资本投入与验收条件。",
+      "source_ids": [
+        "li-refining",
+        "li-alkali",
+        "nmc-synthesis",
+        "hunan-yuneng"
+      ],
+      "related_insight_ids": [
+        "lithium-effective-supply-and-offtake",
+        "lithium-ownership-processing"
+      ]
+    },
+    {
+      "id": "nickel-intermediates",
+      "material": "镍：矿石、中间品与电池级盐",
+      "forms": "红土镍矿 → HPAL/MHP，或RKEF/NPI及后续转化；硫化矿亦可进入精炼链 → NiSO₄ → 前驱体",
+      "chain_routes": [
+        "nmc",
+        "recycling"
+      ],
+      "chain_node_ids": [
+        "ni_ore",
+        "hpal",
+        "rkef",
+        "ncm_salts",
+        "pcam"
+      ],
+      "direct_effect": "原矿品位、工艺路线和转化成本会改变可供三元材料使用的镍盐量；镍矿吨数与MHP含镍量不可直接相加。",
+      "indirect_effect": "镍盐影响三元前驱体与正极加工；矿端利润、NPI/高冰镍利润和HPAL产出可以呈现不同方向。",
+      "boundary": "LME金属镍、NPI、MHP和硫酸镍的规格与计价不同。LFP/LMFP不以镍为正极主成分；部分层状钠电是否用镍需按配方判断。",
+      "public_signals": [
+        "矿企披露的有效矿区批准、矿石品位和分流",
+        "HPAL实际MHP含镍产量、爬坡和现金成本；高冰镍转化利润"
+      ],
+      "decision_use": "按矿权、工艺和可交付产品分别判断供给安全与投资回报，避免以总镍产能推算电池级供应。",
+      "source_ids": [
+        "mdka-hpal",
+        "nmc-synthesis",
+        "reagents",
+        "na-cells",
+        "resource-mbma-q3-20261102",
+        "resource-mbma-9m-20261123",
+        "resource-vale-rkab-q3-2026"
+      ],
+      "related_insight_ids": [
+        "indonesia-nickel-quota-process-allocation",
+        "eu-indonesia-three-chains"
+      ]
+    },
+    {
+      "id": "cobalt-intermediates",
+      "material": "钴：从共伴生资源到可出口原料",
+      "forms": "铜钴/镍钴资源 → 含钴溶液、氢氧化钴或含钴MHP → CoSO₄ → 三元/NCA材料",
+      "chain_routes": [
+        "nmc",
+        "recycling"
+      ],
+      "chain_node_ids": [
+        "co_ore",
+        "ncm_salts",
+        "pcam",
+        "nmc",
+        "nca"
+      ],
+      "direct_effect": "生产状态、出口安排与冶炼转化共同决定可获得的电池级钴盐；资源存在和矿内库存不等于境外可交付原料。",
+      "indirect_effect": "原料到厂时间、加工及库存影响含钴正极的成本和交付；回收原料可形成补充，但要看实际含钴量和精炼资格。",
+      "boundary": "钴矿/中间品/金属含量/钴盐实物量分别记录；LFP、LMFP及铁基NFPP不因配方直接承担钴原料风险。",
+      "public_signals": [
+        "监管决定的生效范围、出口条件与明确后续决定",
+        "矿企可销售产品、境内库存、实际出运和客户交付披露"
+      ],
+      "decision_use": "分开评估政策限制与真实供给，确定需要复核的含钴材料环节、时间窗口和替代来源。",
+      "source_ids": [
+        "cmoc",
+        "usgs-mcs2026",
+        "nmc-synthesis",
+        "na-nfpp",
+        "epa-recycling",
+        "resource-arecoms-communique-20261123",
+        "resource-glencore-q3-20261029"
+      ],
+      "related_insight_ids": [
+        "drc-cobalt-export-deliverability"
+      ]
+    },
+    {
+      "id": "manganese-battery-grade",
+      "material": "锰：矿石与电池级硫酸锰",
+      "forms": "锰矿 → 浸出/除杂/制盐 → 电池级MnSO₄ → NMC前驱体或LMFP锰源",
+      "chain_routes": [
+        "nmc",
+        "lfp",
+        "recycling"
+      ],
+      "chain_node_ids": [
+        "mn_ore",
+        "mn_salt",
+        "pcam",
+        "lmfp"
+      ],
+      "direct_effect": "矿石供给首先影响冶炼原料；电池级除杂、品质一致性和客户认证决定材料链能实际使用多少锰盐。",
+      "indirect_effect": "LMFP采用会改变锰源需求及材料性能验证任务；钢铁用锰的行情不能直接代表电池级硫酸锰成本。",
+      "boundary": "LFP化学式不含锰，LMFP含锰；NCA中的Al与NMC中的Mn不同。应按具体正极配方识别需求。",
+      "public_signals": [
+        "电池级锰盐项目的合格产出与认证，而非仅矿山扩产",
+        "LMFP实际客户采用、批次稳定性与公开交付"
+      ],
+      "decision_use": "把锰资源机会与高纯材料加工机会分开，观察LMFP采用对合格锰盐的新增需求。",
+      "source_ids": [
+        "eramet-mn",
+        "usgs-mcs2026",
+        "lmfp",
+        "nmc-synthesis",
+        "reagents"
+      ],
+      "related_insight_ids": []
+    },
+    {
+      "id": "iron-phosphate",
+      "material": "铁与磷：磷酸、磷酸铁和磷酸盐正极",
+      "forms": "铁源/磷源 → 合格FePO₄·xH₂O → 与锂源合成LFP；含锰路线形成LMFP",
+      "chain_routes": [
+        "lfp",
+        "ess",
+        "recycling"
+      ],
+      "chain_node_ids": [
+        "fe_p_feed",
+        "fe_phosphate",
+        "lfp",
+        "lmfp"
+      ],
+      "direct_effect": "磷源纯化、前驱体杂质与形貌控制影响LFP/LMFP合格材料供应，矿石资源丰富不能替代材料级加工。",
+      "indirect_effect": "纯化、试剂与能源成本通过前驱体和烧结进入正极加工成本；原料由谁提供还会改变收入确认与资金占用。",
+      "boundary": "磷矿、肥料级产品、净化磷酸与电池材料不可等量互换；不把一般化工产能视为已通过电池客户认证。",
+      "public_signals": [
+        "电池级磷源/磷酸铁的认证、产销与产品结构",
+        "正极加工模式、单位材料损耗及稳定交付的公开披露"
+      ],
+      "decision_use": "评估磷化工基础与电池级纯化/前驱体能力的组合，关注合格吨成本和客户认可。",
+      "source_ids": [
+        "lfp-synthesis",
+        "hunan-yuneng",
+        "reagents",
+        "iea-critical-2026-outlook"
+      ],
+      "related_insight_ids": [
+        "lithium-ownership-processing",
+        "ess-localization-bankability"
+      ]
+    },
+    {
+      "id": "natural-graphite",
+      "material": "天然石墨：精矿与负极活性材料",
+      "forms": "鳞片石墨矿 → 选矿 → 球化/提纯/包覆 → 天然石墨负极活性材料",
+      "chain_routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "graphite_ore",
+        "natural_processing",
+        "natural_anode"
+      ],
+      "direct_effect": "矿端出货只能证明精矿供给；球化收率、提纯、包覆和客户认证决定合格负极材料的交付。",
+      "indirect_effect": "加工成本、产品适配与海外本地供应资格会影响电芯客户采购；矿山恢复后，加工端仍可能受制于不同瓶颈。",
+      "boundary": "固定碳品位的矿物精矿不等于已认证AAM；天然与人造石墨的配比须经电芯验证，不能按吨数直接替换。",
+      "public_signals": [
+        "矿山产量/销售与AAM产量/合格交付分别披露",
+        "客户认证、球化收率、加工产线能力、最新成本指引和资金安排"
+      ],
+      "decision_use": "从客户合格量和现金持续性评估海外负极项目，识别矿端与材料端分别需要的合作能力。",
+      "source_ids": [
+        "syrah-mine",
+        "syrah-aam",
+        "graphite-structure",
+        "usgs-graphite2026",
+        "syrah-q3-execution-20261029",
+        "syrah-products-qualification"
+      ],
+      "related_insight_ids": [
+        "anode-qualified-supply-execution",
+        "sodium-material-system-economics",
+        "solid-state-engineering-gates"
+      ]
+    },
+    {
+      "id": "synthetic-graphite",
+      "material": "人造石墨：焦源、热处理与一致性",
+      "forms": "石油焦/针状焦等碳源 → 造粒/炭化/石墨化/表面处理 → 人造石墨负极",
+      "chain_routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "carbon_feed",
+        "synthetic_processing",
+        "synthetic_anode"
+      ],
+      "direct_effect": "适用焦源、热处理产能和材料品质共同影响交付；设备达到安装或质量体系认证阶段，并不自动形成客户合格量。",
+      "indirect_effect": "电力与热处理成本、收率、客户样品测试和订单条件会影响海外本地化项目的成本与现金消耗。",
+      "boundary": "石墨化碳与钠电硬碳不是同一种材料；ISO体系认证、客户样品认可和商业交付应分别判断。",
+      "public_signals": [
+        "最新样品规格达标与客户最终批准",
+        "包销合同是否保留约定数量/价格/交期；爬坡成本和现金余额"
+      ],
+      "decision_use": "比较材料工艺壁垒与订单兑现，避免用名义产能或融资意向替代可持续销售。",
+      "source_ids": [
+        "graphite-process",
+        "putailai",
+        "na-cells",
+        "novonix-csample-feedback-20260909",
+        "novonix-iso9001-20261008",
+        "novonix-powerco-framework-20261019"
+      ],
+      "related_insight_ids": [
+        "anode-qualified-supply-execution",
+        "sodium-material-system-economics"
+      ]
+    },
+    {
+      "id": "silicon-composites",
+      "material": "硅基负极：容量、膨胀与电芯适配",
+      "forms": "硅源/SiOₓ或硅碳复合材料 → 与适用负极体系结合 → 极片与电芯验证",
+      "chain_routes": [
+        "anode",
+        "lfp",
+        "nmc"
+      ],
+      "chain_node_ids": [
+        "silicon_anode",
+        "electrode_mix",
+        "formation"
+      ],
+      "direct_effect": "材料容量提升需与膨胀、首效、寿命和制造一致性同时验证；单点性能不能证明合格电芯能力。",
+      "indirect_effect": "可能改变粘结剂、电解液添加剂、补锂、压实和化成需求，价值会分配到材料及适配工艺。",
+      "boundary": "材料比容量不等于电芯能量密度；硅碳、氧化亚硅路线及不同掺混比例不可拼接为同一产品指标。",
+      "public_signals": [
+        "同一电芯样品的能量、寿命、膨胀和工况说明",
+        "客户认证与稳定批次交付；材料工艺变化对制造的要求"
+      ],
+      "decision_use": "识别项目解决的是材料性能还是电芯整合瓶颈，按完整工况比较技术与合作机会。",
+      "source_ids": [
+        "silicon",
+        "silicon-swelling",
+        "manufacturing"
+      ],
+      "related_insight_ids": [
+        "solid-state-engineering-gates"
+      ]
+    },
+    {
+      "id": "copper-foil",
+      "material": "铜：电解铜、铜箔与负极集流体",
+      "forms": "铜金属 → 电池铜箔及表面处理 → 常规石墨锂离子电池负极集流体",
+      "chain_routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "cu_al_feed",
+        "collectors",
+        "coating"
+      ],
+      "direct_effect": "铜基价先影响箔材金属成本，加工费、厚度、品质和采购定价窗口决定实际采购成本。",
+      "indirect_effect": "薄化与复合化会改变单位面积用铜量，也增加制造适配与良率评价要求；铜价变化还影响材料厂资金占用。",
+      "boundary": "LME金属铜不是电池铜箔成交价；采用双铝集流体的钠电路线可能改变负极铜需求，具体型号另行确认。",
+      "public_signals": [
+        "同口径铜价、箔材加工费与产品结构",
+        "库存、应收和现金周转；极薄/复合箔的实际客户认证"
+      ],
+      "decision_use": "分别评价金属敞口、加工技术和供应商经营质量，判断降价传导与供货连续性。",
+      "source_ids": [
+        "manufacturing",
+        "cell-components",
+        "putailai",
+        "na-cells"
+      ],
+      "related_insight_ids": [
+        "copper-price-foil-conversion-working-capital",
+        "sodium-material-system-economics"
+      ]
+    },
+    {
+      "id": "aluminium-products",
+      "material": "铝：集流体与系统结构材料",
+      "forms": "金属铝 → 电池级铝箔/加工材 → 正极集流体、适用钠电双铝、包体或系统结构件",
+      "chain_routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "sodium"
+      ],
+      "chain_node_ids": [
+        "cu_al_feed",
+        "collectors",
+        "na_cell",
+        "ev_pack"
+      ],
+      "direct_effect": "金属基价通过箔材和适用结构件传导；电池级箔的质量与表面处理决定其能否用于相应电极。",
+      "indirect_effect": "钠电双铝路线改变铜铝材料组合；工况、机械设计与系统边界又影响结构材用量。",
+      "boundary": "铝金属行情不能替代铝箔或结构件报价；在配方中作为NCA元素的Al与铝集流体承担不同功能。",
+      "public_signals": [
+        "金属参考价与电池箔规格、加工费",
+        "钠电型号的集流体方案及制造认证；系统结构材料的公开变化"
+      ],
+      "decision_use": "区分活性材料、导电基底和结构件，避免把同一种元素视为同一种商业敞口。",
+      "source_ids": [
+        "cell-components",
+        "manufacturing",
+        "na-cells",
+        "nmc-synthesis"
+      ],
+      "related_insight_ids": [
+        "sodium-material-system-economics"
+      ]
+    },
+    {
+      "id": "electrolyte-formulation",
+      "material": "电解液：盐、溶剂与功能添加剂",
+      "forms": "适用锂盐（常见LiPF₆）＋有机溶剂＋配方添加剂 → 电解液 → 注液/浸润/界面形成",
+      "chain_routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "chain_node_ids": [
+        "electrolyte",
+        "wetting",
+        "formation"
+      ],
+      "direct_effect": "盐、溶剂或关键添加剂的合格供应变化，会影响配方交付和电芯制造，不同组分的约束不能由总吨数替代。",
+      "indirect_effect": "高电压、快充、硅基负极和低温要求可能改变添加剂与制造控制，带来材料升级及重新验证。",
+      "boundary": "钠电所用NaPF₆等电解质与LiPF₆配方分开；固态电解质路线也不能直接套用液态电解液产能。",
+      "public_signals": [
+        "分组分的产销、认证与客户配方变更",
+        "同一电芯的温度/电压/寿命及产气表现；实际稳定供货"
+      ],
+      "decision_use": "识别盐、溶剂、添加剂中真正限制交付的环节，按配方适配能力判断合作价值。",
+      "source_ids": [
+        "electrolyte",
+        "cell-components",
+        "catl-ctp",
+        "na-salts"
+      ],
+      "related_insight_ids": [
+        "solid-state-engineering-gates",
+        "sodium-material-system-economics"
+      ]
+    },
+    {
+      "id": "separator-coatings",
+      "material": "隔膜与涂层：安全、涂布和一致性",
+      "forms": "PE/PP基膜与适用涂层 → 隔膜产品 → 卷绕/叠片与电解液浸润",
+      "chain_routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "separator",
+        "cell_assembly",
+        "wetting"
+      ],
+      "direct_effect": "基膜、涂层与制造质量共同决定隔离和离子传输条件；针孔、厚度与热稳定性需要在产品工况下验证。",
+      "indirect_effect": "薄化或涂层变化影响涂布、叠片和浸润的适配，也可能改变电芯体积、功率与良率。",
+      "boundary": "名义平方米产能不等于客户合格面积；液态电芯隔膜与固态路线的电解质/隔离结构不能简单互换。",
+      "public_signals": [
+        "客户认证、产品结构与合格面积交付",
+        "新规格对制造节拍、稳定性和实际客户采用的影响"
+      ],
+      "decision_use": "将面积规模、产品规格和制造一致性分开评价，跟踪工艺升级的真实价值。",
+      "source_ids": [
+        "cell-components",
+        "manufacturing",
+        "putailai"
+      ],
+      "related_insight_ids": [
+        "solid-state-engineering-gates"
+      ]
+    },
+    {
+      "id": "sodium-materials",
+      "material": "钠电：正极体系、硬碳与适用电解质",
+      "forms": "钠源＋对应正极前驱原料；硬碳负极；适用钠盐电解质 → 钠离子电芯",
+      "chain_routes": [
+        "sodium",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "na_cathode",
+        "hard_carbon",
+        "na_salts",
+        "na_cell"
+      ],
+      "direct_effect": "材料组合改变对锂、石墨及部分铜箔的依赖，同时形成硬碳首效、产气、附着和水分控制要求。",
+      "indirect_effect": "电压窗口、可用能量、系统效率和客户工况决定材料替代能否变成商业采用，单一钠盐价格不能决定系统经济性。",
+      "boundary": "NFPP、层状氧化物、普鲁士白的金属需求不同；并非所有钠电均无镍，也不是所有型号均采用相同集流体。",
+      "public_signals": [
+        "具体产品配方类别、客户认证和合格制造披露",
+        "项目到场、并网与性能验收；同工况与LFP的系统表现"
+      ],
+      "decision_use": "同时评估新材料瓶颈与被替代材料的需求变化，按实际应用与交付安排产能和合作研究。",
+      "source_ids": [
+        "na-cells",
+        "na-nfpp",
+        "na-salts",
+        "catl-naxtra",
+        "catl-tener-na"
+      ],
+      "related_insight_ids": [
+        "sodium-material-system-economics"
+      ]
+    },
+    {
+      "id": "chemical-utilities",
+      "material": "跨链试剂与公用工程：硫酸、碱、水和电",
+      "forms": "硫/硫酸、烧碱/纯碱及其他适用试剂＋水/蒸汽/电 → 浸出、除杂、共沉淀和再生",
+      "chain_routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "chain_node_ids": [
+        "reagents",
+        "hpal",
+        "hard_li_process",
+        "pcam",
+        "hydro_recycle"
+      ],
+      "direct_effect": "试剂与能源约束可同时影响多个材料链的处理能力和成本；同一金属价格稳定，并不证明其加工环节稳定。",
+      "indirect_effect": "硫供应与航运、当地制酸和能源基础设施关联；材料与回收项目可能共同承受化工成本或供给变化。",
+      "boundary": "不同矿物、厂址、回收路线的试剂强度不同；学术模型不能当成CATL工厂配方、实时成本或固定用量。",
+      "public_signals": [
+        "材料厂关于制酸、试剂合同、能源和处理成本的披露",
+        "受影响的具体硫/化工航线、供应商公告与加工厂运行变化"
+      ],
+      "decision_use": "把关键试剂和公用工程加入资源与回收项目尽调，寻找跨链共因和可减少中断的配套投资。",
+      "source_ids": [
+        "reagents",
+        "iea-critical-2026-market",
+        "manufacturing",
+        "epa-recycling",
+        "resource-mbma-q3-20261102"
+      ],
+      "related_insight_ids": [
+        "indonesia-nickel-quota-process-allocation",
+        "shipping-route-specific-risk",
+        "mining-energy-load-boundaries"
+      ]
     }
   ]
 }

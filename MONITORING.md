@@ -35,8 +35,15 @@ data/insights.json包含meta、sources和insights。sources使用稳定id、titl
 - catl_relevance：dimension与point；counterpoint；
 - watch_signals：indicator、interpretation、source_ids，以及observation_source（观察出处）、frequency（建议观察频率）、decision_use（支持什么经营或投资选择）。建议频率不表示源站发布频率、当前已接入的API能力或已执行的定时扫描；内部合同、库存与良率需明确其数据边界。
 - management_question、source_ids、claimconfidence（证据性质和推论边界，不用伪精确概率）。
+- decision_checkpoints：适用时保留signal、current_reading、upgrade_when、downgrade_when、decision_use与source_ids。signal必须说明正在判断哪项能力、机会或风险；“增强/削弱”沿该判断方向解释。当前依据只使用实际证据，后两项是明确的条件性研究规则，不代表条件已经触发、不虚构自动预警。新增证据可能维持、增强、削弱或改变原判断，应保留这段原因。
 
 适用时保留material_exposure，分别说明材料、传导机制与适用边界。新版本不得删除已有字段、合作类别或化学区别。没有新证据的旧条目保持原始日期，不以任务运行时间刷新成新事件。
+
+### 材料风险传导
+
+chain.json中的risk_transmission是行业机制与材料映射，不是CATL实际敞口。字段为id、material、forms、chain_routes、chain_node_ids、direct_effect、indirect_effect、boundary、public_signals、decision_use、source_ids、related_insight_ids。日常研究读取它用于关联材料、工艺和重点议题；不自行修改图谱、前端或这套基础机制。首页新证据需继续满足原文核验门槛。
+
+监管原件若只能通过可读公开镜像取得，要明确原件发布者与承载平台，核对完整文件、日期、编号和签署，并尽可能与官方渠道交叉核验。多个镜像或多页图片只计一份原始来源，不以转载数制造独立验证。source的document_urls可保留原件分页面链接；发布日期未知时不使用报告期末或授权日期替代。
 
 ### 同步发布范围
 

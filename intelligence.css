@@ -1,4 +1,54 @@
 /* Industry analysis: readable narrative, focused detail, explicit evidence. */
+.risk-transmission{padding:24px}
+.risk-intro h3{margin:0 0 9px;font-size:22px;font-weight:600;line-height:1.55;color:#d5e6ef}
+.risk-intro p{font-size:15px;line-height:1.9;color:#9fb9cc;margin:0 0 18px;max-width:980px}
+.risk-intro .risk-scope{font-size:12px;color:#7f9fb4;margin-top:-7px}
+.risk-route-filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
+.risk-layout{display:grid;grid-template-columns:minmax(200px,260px) minmax(0,1fr);gap:20px;align-items:start}
+.risk-menu{min-width:0;border:1px solid #2c455a;border-radius:6px;background:#0e1e2e;overflow:hidden}
+.risk-menu-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;border-bottom:1px solid #2c455a;color:#91b3c9;font-size:12px}
+.risk-menu-heading strong{font-size:13px;font-weight:500;color:#bbd4e2}
+.risk-menu-items{display:grid;gap:7px;padding:9px;max-height:650px;overflow:auto;scrollbar-width:thin;scrollbar-color:#416479 #0d1b28}
+.risk-material{padding:11px 12px;text-align:left;min-width:0;border:1px solid #2a4053;border-radius:5px;background:#112638;color:#c6dce8;display:flex;flex-direction:column;gap:4px}
+.risk-material strong{font-size:14px;line-height:1.6;font-weight:500}
+.risk-material>span{font-size:12px;line-height:1.7;color:#8eacbf;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.risk-material.active{border-color:#64aaa4;background:#1a3a40}
+.risk-material.active strong{color:#b3ece0}
+.risk-material:hover,.risk-material:focus-visible{border-color:#8dc9c5;outline:2px solid transparent}
+.risk-detail{border:1px solid #355066;border-radius:6px;background:#122536;padding:22px;min-width:0;scroll-margin-top:100px;outline:none}
+.risk-detail:focus-visible{outline:2px solid #6bceca;outline-offset:3px}
+.risk-detail-heading{border-bottom:1px solid #304a5e;padding-bottom:17px;margin-bottom:20px}
+.risk-detail-heading h3{font-size:24px;line-height:1.5;margin:9px 0;color:#d9edf3}
+.risk-forms{font-family:var(--mono);font-size:14px;color:#91c7d5;line-height:1.8;margin:6px 0 12px}
+.risk-route-labels{display:flex;flex-wrap:wrap;gap:7px}
+.risk-route-labels span{font-size:11px;line-height:1.7;border:1px solid #3a5367;background:#173244;border-radius:3px;padding:2px 7px;color:#a9c8d8}
+.risk-effects{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.risk-effects .risk-effect{margin-bottom:20px}
+.risk-detail .risk-boundary{border-left:3px solid #927c59;background:#302b2044;padding:12px 16px;border-radius:0 4px 4px 0}
+.risk-detail .risk-boundary h4{color:#d5be93}
+.risk-detail .risk-decision{background:#173b3866;border:1px solid #355951;padding:15px 16px;border-radius:5px}
+.risk-node-section,.risk-related{margin-top:21px}
+.risk-node-section h4,.risk-related h4{font-size:14px;line-height:1.7;font-weight:500;color:#8bd0c9;margin:0 0 11px}
+.risk-node-links{display:flex;flex-wrap:wrap;gap:8px}
+.risk-node-link{font-size:13px;line-height:1.6;color:#aed5e4;background:#153245;border:1px solid #3b5d73;border-radius:4px;padding:7px 10px;text-align:left}
+.risk-node-link:hover,.risk-node-link:focus-visible{border-color:#6bceca;color:#d4f1eb}
+.risk-empty{padding:25px;color:#9fb9cc;font-size:15px;line-height:1.9}
+.checkpoint-list{display:grid;gap:14px}
+.checkpoint-card{border:1px solid #355166;border-radius:6px;padding:17px;background:#102436}
+.checkpoint-card h5{font-size:16px;line-height:1.6;font-weight:500;margin:0 0 13px;color:#d0e5ee}
+.checkpoint-label{display:block;font-size:12px;line-height:1.7;color:#89bbc9;font-weight:500;margin-bottom:5px}
+.checkpoint-current{padding-bottom:13px}
+.checkpoint-conditions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.checkpoint-condition{padding:12px;border:1px solid #30485b;border-radius:4px;background:#0d1c2b}
+.checkpoint-condition.strengthen{border-top:2px solid #5b9c8c}
+.checkpoint-condition.weaken{border-top:2px solid #b09b78}
+.checkpoint-condition.weaken .checkpoint-label{color:#cbb893}
+.checkpoint-use{margin-top:13px;padding-top:13px;border-top:1px solid #30495b}
+.checkpoint-card .checkpoint-current p,.checkpoint-card .checkpoint-condition p,.checkpoint-card .checkpoint-use p{font-size:14px;line-height:1.85;margin:0;color:#afc6d7}
+@media(max-width:1250px){.risk-layout{grid-template-columns:220px minmax(0,1fr);gap:15px}.risk-effects{grid-template-columns:1fr;gap:0}.risk-detail{padding:19px}}
+@media(max-width:850px){.risk-layout{grid-template-columns:1fr}.risk-menu-items{grid-template-columns:repeat(2,minmax(0,1fr));max-height:260px}.risk-menu-heading{padding:11px 14px}.risk-material>span{-webkit-line-clamp:1}}
+@media(max-width:720px){.risk-transmission{padding:17px 14px}.risk-intro h3{font-size:20px}.risk-intro p{font-size:14px}.risk-detail{padding:17px;scroll-margin-top:80px}.risk-detail-heading h3{font-size:22px}.risk-detail .intel-block p,.risk-detail .intel-facts{font-size:14px}.risk-material{padding:9px}.risk-material strong{font-size:13px}.risk-material>span{font-size:11px}.risk-node-link{font-size:12px}.checkpoint-card{padding:14px}.checkpoint-card h5{font-size:15px}.checkpoint-conditions{grid-template-columns:1fr}.checkpoint-card .checkpoint-current p,.checkpoint-card .checkpoint-condition p,.checkpoint-card .checkpoint-use p{font-size:13px}}
+@media print{.risk-route-filters,.risk-menu{display:none!important}.risk-layout{display:block}.risk-detail{border:1px solid #8aa3ad}.checkpoint-card{break-inside:avoid}}
 .decision-navigation{padding:20px 24px 22px;border-bottom:1px solid var(--line);background:#0d1b2a}
 .decision-navigation-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:13px}
 .decision-navigation-heading h3{margin:0;font-size:16px;font-weight:500;color:#c4dce7}

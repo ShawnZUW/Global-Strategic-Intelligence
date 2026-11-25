@@ -1,12 +1,172 @@
 {
   "meta": {
     "as_of": "2026-11-25",
-    "generated_at": "2026-11-25T15:25:42+00:00",
+    "generated_at": "2026-11-25T15:56:06.423189+00:00",
     "scope": "面向宁德时代产业投资视角的公开产业观察样本；不代表宁德时代内部口径、实际投资清单或已知业务敞口。",
     "mode": "原始证据核验与产业链因果研究",
-    "update_note": "新增四个因果分析、四条原始事实及材料报价传导视图；历史披露保留原日期。每个观察信号列明证据入口、建议观察频率和决策用途。"
+    "update_note": "新增刚果钴出口与库存形态、印尼镍工艺利润与MHP实产、海外负极认证与订单兑现分析，以及四条已核验事件；所有重点议题增加判断更新条件，化学图新增十四组材料风险传导。旧报价和披露保留实际日期。"
   },
   "events": [
+    {
+      "id": "arecoms-cobalt-suspension-announced-20261123",
+      "category": "贸易与政策",
+      "title": "ARECOMS已公布11月30日起暂停钴出口，旧配额不构成豁免",
+      "summary": "ARECOMS于2026年11月23日签署第2026/004号通知，规定11月30日起暂停刚果（金）矿业来源钴出口；11月出口业务应最迟11月29日完成。已获授权但尚未实际出口的货物也适用，未用额度不自动结转。四个月后的评估不自动恢复出口，恢复须另行正式决定。",
+      "impact": "条件性分析：约束首先作用于尚未出境的钴物料；境外库存、已经出境的在途货及后续精炼能力决定含钴材料链何时承压。通知本身不能证明CATL或整个钴盐市场已经短缺。",
+      "action": "按正式通知、实际出境、到港交付和合格钴盐四层更新情景；不要把旧配额、境内库存或四个月评估日当成未来供货保证。",
+      "entity": "ARECOMS",
+      "country": "刚果（金）",
+      "published_at": "2026-11-23",
+      "event_date": "2026-11-23",
+      "priority": "P1",
+      "evidence_level": "官方原文",
+      "source_name": "ARECOMS签署原件（SMM公开镜像）",
+      "source_url": "https://news.metal.com/fr/newscontent/DB3YVMTKX7ZOHJXNC2OAMVV6N2O57BWM2AMHH4Y-smm-analysis-la-rdc-suspend-%C3%A0-nouveau-ses-exportations-de-cobalt-combien-de-temps-la-reprise-peut-elle-durer",
+      "verified_at": "2026-11-25T15:41:21Z",
+      "metrics": [
+        {
+          "label": "生效日（已公布、尚未生效）",
+          "value": "2026-11-30",
+          "unit": ""
+        },
+        {
+          "label": "11月出口最迟完成日",
+          "value": "2026-11-29",
+          "unit": ""
+        },
+        {
+          "label": "恢复条件",
+          "value": "另行公布明确恢复决定；评估不等于复航",
+          "unit": ""
+        }
+      ],
+      "lat": -4.32,
+      "lon": 15.31,
+      "source_ids": [
+        "resource-arecoms-communique-20261123"
+      ],
+      "chain_node_ids": [
+        "co_ore",
+        "ncm_salts",
+        "pcam",
+        "nmc"
+      ]
+    },
+    {
+      "id": "merdeka-hpal-9m-update-20261123",
+      "category": "供需平衡",
+      "title": "Merdeka更新HPAL实产：ESG已产MHP，SLNC首次进矿须与稳定供给分开",
+      "summary": "Merdeka11月23日财务展示披露，ESG在2026年前三季度生产MHP中的镍19,767吨，9月利用率约96%；SLNC于8月取得IUI并在9月首次进矿。其Q3活动报告将SLNC名义能力界定为每年9万吨MHP含镍量，首次MHP生产仍列为当年目标。",
+      "impact": "条件性分析：HPAL新增供应应由连续MHP产出、后续精炼和合格交付验证。首次进料与名义年产能可以提高未来供给选择，但不能直接当作目前已可采购的电池级镍盐。",
+      "action": "沿分矿区料源、矿浆与酸等配套、MHP实产、合格精炼交付跟踪；区分含镍吨、MHP实物吨和矿石湿吨，避免与同一集团NPI/高冰镍中间流重复相加。",
+      "entity": "PT Merdeka Battery Materials Tbk / PT ESG / PT SLNC",
+      "country": "印度尼西亚",
+      "published_at": "2026-11-23",
+      "event_date": "2026-11-23",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "Merdeka Group 9M2026财务展示及Q3活动报告",
+      "source_url": "https://assets.merdekabattery.com/dist/documents/9M26%20Merdeka%20Group%20Financial%20Presentation_vF.pdf",
+      "verified_at": "2026-11-25T15:41:21Z",
+      "metrics": [
+        {
+          "label": "ESG累计实际产量（2026年前三季度）",
+          "value": "19,767",
+          "unit": "吨镍，包含于MHP"
+        },
+        {
+          "label": "ESG利用率（2026年9月）",
+          "value": "约96%",
+          "unit": ""
+        },
+        {
+          "label": "SLNC阶段",
+          "value": "首次进矿；名义年产能不计作已实现产量",
+          "unit": ""
+        }
+      ],
+      "lat": null,
+      "lon": null,
+      "source_ids": [
+        "resource-mbma-9m-20261123",
+        "resource-mbma-q3-20261102"
+      ],
+      "chain_node_ids": [
+        "ni_ore",
+        "hpal",
+        "reagents",
+        "ncm_salts",
+        "pcam",
+        "nmc"
+      ]
+    },
+    {
+      "id": "syrah-q3-anode-execution-20261029",
+      "category": "原材料",
+      "title": "Syrah矿端销售已兑现，Vidalia商业AAM仍以最终客户认证为条件",
+      "summary": "10月29日季度公告确认，Balama第三季度生产19.3kt、对外销售并发运18.1kt天然石墨，并完成向POSCO Future M的首次销售。Vidalia首批商业AAM销售仍以最终客户认证为条件，目标为2026年第四季度；其满产稳态成本指引上调至US$4.85—5.25/kg。",
+      "impact": "条件性分析：矿端实物供应已经形成，但有效负极供给还取决于加工收率、炉线能力和客户验收；成本指引上修需要重新检验本地化方案的经济性。不能把矿端销量直接当作CATL或海外电芯厂已获得的合格负极。",
+      "action": "对照后续正式认证、商业销售和连续季度交付；成本比较保留满产、FOB原料假设及排除45X抵免的口径。",
+      "entity": "Syrah Resources / Balama / Vidalia",
+      "country": "莫桑比克 / 美国",
+      "published_at": "2026-10-29",
+      "event_date": null,
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "Syrah Resources原始季度公告",
+      "source_url": "https://company-announcements.afr.com/asx/syr/6788725f-d31a-11f1-a069-b6b1a9c70e34.pdf",
+      "verified_at": "2026-11-25T15:46:51Z",
+      "metrics": [
+        {
+          "label": "Balama Q3产量 / 对外已售并发运",
+          "value": "19.3 / 18.1",
+          "unit": "kt天然石墨"
+        },
+        {
+          "label": "Vidalia首批商业销售阶段",
+          "value": "目标2026 Q4，取决于最终客户认证",
+          "unit": ""
+        },
+        {
+          "label": "满产稳态经营成本指引，排除45X抵免",
+          "value": "4.85—5.25",
+          "unit": "US$/kg AAM"
+        }
+      ],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "novonix-powerco-reset-20261019",
+      "category": "竞争与合作",
+      "title": "NOVONIX与PowerCo重订供货框架，原最低包销需重新评估",
+      "summary": "10月19日公司公告称，新供货框架替代原包销协议。原协议曾约定自2027年起五年最低32,000t人造石墨并附认证、合规及融资条件；新安排将数量、价格等商业条款置于完成PowerCo资格验证及适用认证后重新协商。",
+      "impact": "条件性分析：下游工厂需求与采购节奏会反向改变材料厂的有效订单和爬坡现金流。旧最低包销量不能继续当作当前已锁定采购；这不等于合作关系终止，也不证明技术验证失败。",
+      "action": "关注新约束性条款、客户产品批准及已落实资金；结合PowerCo自己的工厂计划观察实际采购窗口。",
+      "entity": "NOVONIX / PowerCo SE",
+      "country": "美国 / 加拿大 / 德国",
+      "published_at": "2026-10-19",
+      "event_date": "2026-10-19",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "NOVONIX原始ASX公告",
+      "source_url": "https://ir.novonixgroup.com/static-files/efe88eb1-1bb7-4369-a7eb-e045b99a0090",
+      "verified_at": "2026-11-25T15:46:51Z",
+      "metrics": [
+        {
+          "label": "被替代旧协议的最低量",
+          "value": "32,000，原定五年；不再作为新框架固定承诺",
+          "unit": "t"
+        },
+        {
+          "label": "新商业条款前置条件",
+          "value": "PowerCo资格验证及适用工业认证",
+          "unit": ""
+        }
+      ],
+      "lat": null,
+      "lon": null
+    },
     {
       "id": "core-finniss-shipment-20261125",
       "category": "供需平衡",
@@ -1577,6 +1737,150 @@
       "status": "verified",
       "last_checked": "2026-11-25",
       "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "resource-arecoms-communique-20261123",
+      "name": "ARECOMS第2026/004号钴出口通知：监管机构签署原件（公开媒体镜像）",
+      "url": "https://news.metal.com/fr/newscontent/DB3YVMTKX7ZOHJXNC2OAMVV6N2O57BWM2AMHH4Y-smm-analysis-la-rdc-suspend-%C3%A0-nouveau-ses-exportations-de-cobalt-combien-de-temps-la-reprise-peut-elle-durer",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "已核对三页签署原件；链接为公开镜像，恢复出口须另行公布决定。"
+    },
+    {
+      "id": "resource-glencore-q3-20261029",
+      "name": "Glencore Third Quarter 2026 Production Report，第1、5页",
+      "url": "https://www.glencore.com/.rest/api/v1/documents/static/7ed50c65-7d84-4cc1-a2c4-216060583297/GLEN_2026-Q3_ProductionReport.pdf",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "企业原始公告"
+    },
+    {
+      "id": "resource-mbma-q3-20261102",
+      "name": "Merdeka Battery Materials Q3 2026 Quarterly Activities Report",
+      "url": "https://assets.merdekabattery.com/dist/documents/MBMA_Q3_2026_Quarterly_Activities_Report_vF.pdf",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "企业原始公告"
+    },
+    {
+      "id": "resource-mbma-9m-20261123",
+      "name": "Merdeka Group 9M 2026 Financial Results Presentation，第19页",
+      "url": "https://assets.merdekabattery.com/dist/documents/9M26%20Merdeka%20Group%20Financial%20Presentation_vF.pdf",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "企业原始公告"
+    },
+    {
+      "id": "resource-vale-rkab-q3-2026",
+      "name": "PT Vale Indonesia截至2026-09-30中期财报，附注40(g) Work and Budget Plan（PDF第101页）",
+      "url": "https://www.valeindonesia.com/documents/44618/1374000/PT%2BVale%2BIndonesia%2BTbk%2BFinancial%2BStatements%2B30%2BSeptember%2B2026.pdf",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "企业原始财报"
+    },
+    {
+      "id": "resource-esdm-rkab-evaluation-20260625",
+      "name": "Kementerian ESDM Belum Putuskan Besaran RKAB Nikel 2026",
+      "url": "https://www.esdm.go.id/id/media-center/arsip-berita/kementerian-esdm-belum-putuskan-besaran-rkab-nikel-2026",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "政府原始公告（审批机制基线）"
+    },
+    {
+      "id": "resource-nmc-process-baseline",
+      "name": "High-Energy Lithium-Ion Batteries — 高镍层状正极的共沉淀、锂化与颗粒控制",
+      "url": "https://b2b.sigmaaldrich.com/GB/en/technical-documents/technical-article/materials-science-and-engineering/batteries-supercapacitors-and-fuel-cells/lib-couette-taylor-flow-reactor",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "研究者原始技术文章（稳定工艺基线）"
+    },
+    {
+      "id": "syrah-q3-execution-20261029",
+      "name": "Syrah 2026年第三季度活动报告：公司原始公告PDF（公开镜像）",
+      "url": "https://company-announcements.afr.com/asx/syr/6788725f-d31a-11f1-a069-b6b1a9c70e34.pdf",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "实际读取14页公司原始公告，重点第1—4页；不是媒体摘要。官网报告目录https://www.syrahresources.com.au/investors/reports-presentations的公开页面数据指向同名原件https://www.datocms-assets.com/65260/1793225322-september-2026-quarterly-activities-and-cashflow-report_final.pdf；该CDN本次返回403，故保留可读原始文件镜像。"
+    },
+    {
+      "id": "syrah-products-qualification",
+      "name": "Products and Technology: Natural Graphite and Active Anode Material",
+      "url": "https://www.syrahresources.com.au/our-business/products-and-technology",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "无明确发布日期，只用于解释天然鳞片石墨与球形纯化包覆负极材料的区别，不用核验日替代事件日期。"
+    },
+    {
+      "id": "novonix-csample-feedback-20260909",
+      "name": "Lead Customer Feedback Marks Progress in Qualification",
+      "url": "https://ir.novonixgroup.com/news-releases/news-release-details/lead-customer-feedback-marks-progress-qualification-0",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "采用新闻页及正文9月9日日期；ASX目录显示9月10日，保留日期差异。公告未披露主要客户姓名，不将该测试结果自动归属PowerCo。"
+    },
+    {
+      "id": "novonix-iso9001-20261008",
+      "name": "NOVONIX Achieves ISO 9001 Quality Management Certification",
+      "url": "https://ir.novonixgroup.com/news-releases/news-release-details/novonix-achieves-iso-9001-quality-management-certification-0",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "企业原始公告"
+    },
+    {
+      "id": "novonix-powerco-framework-20261019",
+      "name": "NOVONIX and PowerCo Amend Supply Agreement",
+      "url": "https://ir.novonixgroup.com/static-files/efe88eb1-1bb7-4369-a7eb-e045b99a0090",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "采用公告正文10月19日日期；IR目录显示10月18日。保留原文日期差异，不将日期设为本次核验日。"
+    },
+    {
+      "id": "novonix-q3-qualification-20261030",
+      "name": "Quarterly Activities / Appendix 4C Cash Flow Report, September 2026 quarter",
+      "url": "https://ir.novonixgroup.com/static-files/1a8f8ac8-1660-4a76-b13a-54262191331c",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "重点第2、4、5页：剩余客户规格、2027年下半年有条件销售目标、现金与PowerCo框架变化。"
+    },
+    {
+      "id": "powerco-stthomas-phasing-20260924",
+      "name": "PowerCo Advances St. Thomas Gigafactory with EllisDon Appointment and Phased Development Approach",
+      "url": "https://www.st-thomas.org/megasite/powerco-advances-st-thomas-gigafactory-with-ellisdon-appointment-and-phased-development-approach",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "公司声明日期9月24日，机构页面刊载9月25日；2029年为预计开始运营时间，非已实现产量。"
+    },
+    {
+      "id": "novonix-amortisation-20261022",
+      "name": "Second Amortisation Payment under Funding Agreement",
+      "url": "https://ir.novonixgroup.com/static-files/6e3fef5b-27af-4075-9214-76b67839bd28",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "企业原始公告"
+    },
+    {
+      "id": "resource-acp-cobalt-20261124",
+      "name": "ACP：刚果（金）11月30日起暂停钴出口的官方通讯社报道",
+      "url": "https://acp.cd/economie/la-rdc-suspend-la-commercialisation-du-cobalt-des-le-30-novembre-2026/",
+      "category": "资源与材料",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "用于交叉核对通知身份、范围及生效日期；规则以三页签署原件为准。"
     }
   ],
   "price_history": [

@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": 2,
-    "generated_at": "2026-11-25T15:25:42+00:00",
+    "generated_at": "2026-11-25T15:56:06.423189+00:00",
     "checked_at": "2026-11-25T14:52:24+00:00",
-    "source_count": 134,
+    "source_count": 136,
     "automated_publisher_count": 45,
     "registry_jurisdiction_count": 27,
     "counting_rule": "按发布机构/集团归并；同机构多个页面、刊物与X账号不重复计数。配置采集不表示本次运行成功；X是已核验身份的公开搜索观测渠道，不含付费API。",
@@ -11,14 +11,14 @@
     "configured_source_count": 45,
     "social_account_count": 12,
     "source_tier_counts": {
-      "primary": 103,
+      "primary": 105,
       "media": 11,
       "research": 16,
       "community": 4
     },
     "group_counts": {
-      "企业与产业": 45,
-      "公共机构": 30,
+      "企业与产业": 46,
+      "公共机构": 31,
       "登记与披露": 27,
       "专业媒体": 11,
       "专业研究": 9,
@@ -26,8 +26,8 @@
       "行业研究机构": 2,
       "论坛社区": 4
     },
-    "research_publisher_count": 62,
-    "update_note": "新增嘉元科技原始法定披露入口；各机构的核验时间以条目记录为准。"
+    "research_publisher_count": 64,
+    "update_note": "新增ARECOMS监管签署原件观测及PowerCo客户采购窗口研究；Merdeka补充季度经营和财务展示原文。目录收录不等于已自动采集。"
   },
   "sources": [
     {
@@ -5590,7 +5590,7 @@
       "free_scope": "SCM矿山褐铁矿、矿石准备与HPAL链条的企业进展。 仅使用免费公开原文及其事实。",
       "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
       "cost": "免费公开原文；无付费接口",
-      "checked_at": "2026-11-25T14:52:24+00:00",
+      "checked_at": "2026-11-25T15:56:06.423189+00:00",
       "verified_at": "2026-11-25",
       "access_status": "accessible",
       "resolved_url": "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/",
@@ -5605,10 +5605,12 @@
       "collection_method": null,
       "ingestion_mode": "research",
       "automatic_poll_interval": "按主题研究与原文核验任务访问",
-      "observation_question": "矿石供给、制浆和HPAL投运的衔接是否带来实际可交付MHP增量？",
+      "observation_question": "分矿种批准与来料、矿端及加工利润、HPAL含镍实产是否支持合格材料交付？",
       "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
       "evidence_urls": [
-        "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/"
+        "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/",
+        "https://assets.merdekabattery.com/dist/documents/MBMA_Q3_2026_Quarterly_Activities_Report_vF.pdf",
+        "https://assets.merdekabattery.com/dist/documents/9M26%20Merdeka%20Group%20Financial%20Presentation_vF.pdf"
       ],
       "sample_links": [
         {
@@ -5763,6 +5765,89 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225126560.PDF",
           "published_at": "2026-04-21"
         }
+      ]
+    },
+    {
+      "id": "arecoms",
+      "publisher_id": "arecoms",
+      "name": "ARECOMS 刚果（金）战略矿产市场监管机构",
+      "publisher": "ARECOMS 刚果（金）战略矿产市场监管机构",
+      "country": "刚果（金）",
+      "category": "资源与矿权",
+      "url": "https://news.metal.com/fr/newscontent/DB3YVMTKX7ZOHJXNC2OAMVV6N2O57BWM2AMHH4Y-smm-analysis-la-rdc-suspend-%C3%A0-nouveau-ses-exportations-de-cobalt-combien-de-temps-la-reprise-peut-elle-durer",
+      "group": "公共机构",
+      "publisher_type": "监管机构",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "机构按事件披露；研究任务按重点议题核验。",
+      "focus": "钴出口暂停、配额和恢复决定，是否改变可出境供应？",
+      "query_scope": "钴出口暂停、配额和恢复决定，是否改变可出境供应？",
+      "free_scope": "免费公开原始披露及必要事实；不使用付费API。",
+      "limitations": "当前核验入口是监管签署原件的公开媒体镜像，并由官方通讯社交叉核验；不是官方API，也不保证完整公告覆盖。",
+      "cost": "免费公开浏览",
+      "checked_at": "2026-11-25T15:56:06.423189+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "original_document_verified",
+      "resolved_url": "https://news.metal.com/fr/newscontent/DB3YVMTKX7ZOHJXNC2OAMVV6N2O57BWM2AMHH4Y-smm-analysis-la-rdc-suspend-%C3%A0-nouveau-ses-exportations-de-cobalt-combien-de-temps-la-reprise-peut-elle-durer",
+      "allowed_hosts": [
+        "imgqn.smm.cn",
+        "news.metal.com"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按重点议题研究访问；未配置独立定时抓取",
+      "observation_question": "钴出口暂停、配额和恢复决定，是否改变可出境供应？",
+      "validation_gate": "依据实际读到的原始文件；生效、授权、计划与实际执行分别记录。",
+      "evidence_urls": [
+        "https://imgqn.smm.cn/production/admin/votes/imagesyPjhO20261124201543.jpeg",
+        "https://imgqn.smm.cn/production/admin/votes/imagesLsZjh20261124201543.jpeg",
+        "https://imgqn.smm.cn/production/admin/votes/imageslkzbV20261124201543.jpeg"
+      ]
+    },
+    {
+      "id": "industry-powerco",
+      "publisher_id": "industry-powerco",
+      "name": "PowerCo / Volkswagen电池业务",
+      "publisher": "PowerCo / Volkswagen电池业务",
+      "country": "德国 / 加拿大",
+      "category": "竞争与合作",
+      "url": "https://www.st-thomas.org/megasite/powerco-advances-st-thomas-gigafactory-with-ellisdon-appointment-and-phased-development-approach",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "机构按事件披露；研究任务按重点议题核验。",
+      "focus": "电芯工厂实际推进、客户材料认证与采购窗口如何相互影响？",
+      "query_scope": "电芯工厂实际推进、客户材料认证与采购窗口如何相互影响？",
+      "free_scope": "免费公开原始披露及必要事实；不使用付费API。",
+      "limitations": "以客户自身声明及交易对手原始协议披露核验；当前入口由地方经济发展机构刊载公司原始声明，未配置抓取接口。",
+      "cost": "免费公开浏览",
+      "checked_at": "2026-11-25T15:56:06.423189+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "original_document_verified",
+      "resolved_url": "https://www.st-thomas.org/megasite/powerco-advances-st-thomas-gigafactory-with-ellisdon-appointment-and-phased-development-approach",
+      "allowed_hosts": [
+        "ir.novonixgroup.com",
+        "www.st-thomas.org"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按重点议题研究访问；未配置独立定时抓取",
+      "observation_question": "电芯工厂实际推进、客户材料认证与采购窗口如何相互影响？",
+      "validation_gate": "依据实际读到的原始文件；生效、授权、计划与实际执行分别记录。",
+      "evidence_urls": [
+        "https://www.st-thomas.org/megasite/powerco-advances-st-thomas-gigafactory-with-ellisdon-appointment-and-phased-development-approach",
+        "https://ir.novonixgroup.com/static-files/efe88eb1-1bb7-4369-a7eb-e045b99a0090"
       ]
     }
   ],

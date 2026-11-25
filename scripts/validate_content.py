@@ -59,12 +59,28 @@ for story in insights["insights"]:
     assert set(story.get("related_event_ids", [])) <= event_ids
     assert set(story.get('chain_node_ids', [])) <= nodes.keys(), 'unknown chemistry node in insight'
     assert set(story.get('chain_routes', [])) <= routes, 'unknown chemistry route in insight'
-    for section in ["facts", "timeline", "effect_chain", "watch_signals", "material_exposure"]:
+    for section in ["facts", "timeline", "effect_chain", "watch_signals", "material_exposure", "decision_checkpoints"]:
         for item in story.get(section, []):
             citations(item, insight_refs)
     for signal in story['watch_signals']:
         assert all(signal.get(k) for k in ['indicator', 'interpretation', 'observation_source', 'frequency', 'decision_use']), 'incomplete decision observation'
+    for checkpoint in story.get('decision_checkpoints', []):
+        assert all(isinstance(checkpoint.get(k), str) and checkpoint[k].strip() for k in ['signal', 'current_reading', 'upgrade_when', 'downgrade_when', 'decision_use']), 'incomplete judgment update condition'
     assert "待补充" not in json.dumps(story, ensure_ascii=False)
+
+transmission = chain.get('risk_transmission', [])
+assert len({r['id'] for r in transmission}) == len(transmission), 'duplicate material transmission id'
+for row in transmission:
+    assert all(isinstance(row.get(k), str) and row[k].strip() for k in ['id', 'material', 'forms', 'direct_effect', 'indirect_effect', 'boundary', 'decision_use']), 'incomplete material transmission'
+    assert row.get('public_signals') and all(isinstance(s, str) and s.strip() for s in row['public_signals']), 'missing material signals'
+    assert row.get('chain_routes') and set(row['chain_routes']) <= routes, 'unknown material route'
+    assert row.get('chain_node_ids') and set(row['chain_node_ids']) <= nodes.keys(), 'unknown material node'
+    assert set(row.get('related_insight_ids', [])) <= story_ids, 'unknown material analysis link'
+    citations(row, chain_refs)
+if 'risk_transmission_count' in chain['meta']:
+    assert chain['meta']['risk_transmission_count'] == len(transmission), 'material transmission count drift'
+if 'decision_checkpoint_count' in insights['meta']:
+    assert insights['meta']['decision_checkpoint_count'] == sum(len(s.get('decision_checkpoints', [])) for s in insights['insights']), 'judgment condition count drift'
 
 history = facts.get('price_history', [])
 price_keys = [(p['series_id'], p['date'], p['unit']) for p in history]
@@ -99,4 +115,4 @@ assert catalog['meta']['source_count'] == len(publishers), 'publisher count drif
 assert catalog['meta']['research_publisher_count'] == sum(not p.get('automation_enabled') and p.get('method') != 'registry' for p in publishers), 'research publisher count drift'
 assert insights['meta']['insight_count'] == len(story_ids)
 assert insights['meta']['source_count'] == len(insight_refs)
-print('Validated:', len(nodes), 'chain nodes,', len(edges), 'relations,', len(story_ids), 'evidence-linked analyses,', len(event_ids), 'facts,', len(facts.get('prices', [])), 'current prices and', len(history), 'historical observations.')
+print('Validated:', len(nodes), 'chain nodes,', len(edges), 'relations,', len(transmission), 'material groups,', len(story_ids), 'evidence-linked analyses,', len(event_ids), 'facts,', len(facts.get('prices', [])), 'current prices and', len(history), 'historical observations.')

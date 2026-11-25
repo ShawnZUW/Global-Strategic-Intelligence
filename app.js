@@ -78,7 +78,8 @@
   function navigate(section,route,nodeId){
     if(!sections.some(s=>s.id===section))return;state.section=section;$('category').value='';$('search').value='';
     if(section==='chain'&&(route||nodeId))window.IntelligenceUI?.setRoute(route,nodeId);
-    history.replaceState(null,'','#'+section);renderNav();renderContent();
+    const hash=section==='chain'?(window.IntelligenceUI?.getChainHash?.()||'#chain'):'#'+section;
+    history.replaceState(null,'',hash);renderNav();renderContent();
     if(!nodeId)$('main').scrollIntoView({behavior:'smooth',block:'start'});
   }
   function insightContext(){return {data:state.data,chain:state.chain,insights:state.insights,catalog:state.catalog,feed:state.feed,query:$('search').value,onSection:navigate,onEvent:openEvent,onInsight:openInsight};}
@@ -197,5 +198,7 @@
   $('refresh').onclick=()=>{const value=$('snapshot').value;load(value==='latest'?'data/latest.json':value,value!=='latest');};$('snapshot').onchange=()=>{const value=$('snapshot').value;load(value==='latest'?'data/latest.json':value,value!=='latest');};
   $('export').onclick=exportCSV;$('drawer-close').onclick=closeDrawer;$('drawer-backdrop').onclick=closeDrawer;
   document.addEventListener('keydown',e=>{if($('drawer').hidden)return;if(e.key==='Escape')closeDrawer();if(e.key==='Tab'){const nodes=$('drawer').querySelectorAll('button,a[href],[tabindex="0"]');const first=nodes[0],last=nodes[nodes.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}}});
-  const initial=location.hash.slice(1);if(sections.some(s=>s.id===initial))state.section=initial;renderNav();load();loadManifest();loadMap();
+  function readHash(){const [section,view]=location.hash.slice(1).split('/');if(!sections.some(s=>s.id===section))return false;state.section=section;if(section==='chain')window.IntelligenceUI?.setChainView?.(view);return true;}
+  window.addEventListener('hashchange',()=>{if(!readHash())return;if(!$('drawer').hidden)closeDrawer();$('category').value='';$('search').value='';renderNav();if(state.data){renderContent();$('main').scrollIntoView({behavior:'smooth',block:'start'});}});
+  readHash();renderNav();load();loadManifest();loadMap();
 })();
