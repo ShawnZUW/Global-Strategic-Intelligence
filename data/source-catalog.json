@@ -1,13 +1,32 @@
 {
   "meta": {
-    "schema_version": 1,
-    "generated_at": "2026-11-25T13:47:31+00:00",
-    "checked_at": "2026-11-25T13:47:31+00:00",
-    "source_count": 92,
-    "automated_publisher_count": 34,
+    "schema_version": 2,
+    "generated_at": "2026-11-25T14:52:24+00:00",
+    "checked_at": "2026-11-25T14:52:24+00:00",
+    "source_count": 133,
+    "automated_publisher_count": 45,
     "registry_jurisdiction_count": 27,
-    "counting_rule": "按发布机构归并；同机构多个页面不重复计数。目录登记不表示已完成全量或实体监控。",
-    "scope": "电池产业投资：资源、供需、贸易航道、技术、竞争合作、矿山零碳及法人治理"
+    "counting_rule": "按发布机构/集团归并；同机构多个页面、刊物与X账号不重复计数。配置采集不表示本次运行成功；X是已核验身份的公开搜索观测渠道，不含付费API。",
+    "scope": "CATL产业投资：材料化学、制造工艺、供应链、技术、储能市场、资源航运、矿山电气化与法人治理",
+    "configured_source_count": 45,
+    "social_account_count": 12,
+    "source_tier_counts": {
+      "primary": 102,
+      "media": 11,
+      "research": 16,
+      "community": 4
+    },
+    "group_counts": {
+      "企业与产业": 44,
+      "公共机构": 30,
+      "登记与披露": 27,
+      "专业媒体": 11,
+      "专业研究": 9,
+      "科研机构": 6,
+      "行业研究机构": 2,
+      "论坛社区": 4
+    },
+    "research_publisher_count": 61
   },
   "sources": [
     {
@@ -54,7 +73,21 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "catl"
+      "feed_source_id": "catl",
+      "source_tier": "primary",
+      "related_entities": [
+        "邦普 Brunp"
+      ],
+      "evidence_urls": [
+        "https://www.catl.com/en/news/6595.html"
+      ],
+      "related_evidence": [
+        {
+          "title": "CATL：邦普回收工艺与材料回收率",
+          "url": "https://www.catl.com/en/news/6595.html",
+          "published_at": "2025-10-22"
+        }
+      ]
     },
     {
       "id": "industry-byd",
@@ -89,7 +122,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-gotion",
@@ -124,7 +158,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-eve",
@@ -170,7 +205,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "eve"
+      "feed_source_id": "eve",
+      "source_tier": "primary"
     },
     {
       "id": "industry-calb",
@@ -216,7 +252,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "calb"
+      "feed_source_id": "calb",
+      "source_tier": "primary"
     },
     {
       "id": "industry-sunwoda",
@@ -263,7 +300,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "sunwoda"
+      "feed_source_id": "sunwoda",
+      "source_tier": "primary"
     },
     {
       "id": "industry-lges",
@@ -315,7 +353,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "rss",
-      "feed_source_id": "lg-energy-solution"
+      "feed_source_id": "lg-energy-solution",
+      "source_tier": "primary"
     },
     {
       "id": "industry-samsung-sdi",
@@ -361,7 +400,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "samsung-sdi"
+      "feed_source_id": "samsung-sdi",
+      "source_tier": "primary"
     },
     {
       "id": "industry-panasonic",
@@ -404,7 +444,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "rss",
-      "feed_source_id": "panasonic"
+      "feed_source_id": "panasonic",
+      "source_tier": "primary"
     },
     {
       "id": "industry-sk",
@@ -439,7 +480,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-quantumscape",
@@ -491,7 +533,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "rss",
-      "feed_source_id": "quantumscape-ir"
+      "feed_source_id": "quantumscape-ir",
+      "source_tier": "primary"
     },
     {
       "id": "industry-solid-power",
@@ -526,7 +569,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-ses-ai",
@@ -561,7 +605,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-amprius",
@@ -613,7 +658,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "rss",
-      "feed_source_id": "amprius"
+      "feed_source_id": "amprius",
+      "source_tier": "primary"
     },
     {
       "id": "industry-albemarle",
@@ -648,7 +694,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-sqm",
@@ -694,7 +741,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "sqm"
+      "feed_source_id": "sqm",
+      "source_tier": "primary"
     },
     {
       "id": "industry-rio-tinto",
@@ -729,7 +777,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-bhp",
@@ -764,7 +813,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-vale",
@@ -799,7 +849,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-glencore",
@@ -834,7 +885,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-pls",
@@ -881,7 +933,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "pls"
+      "feed_source_id": "pls",
+      "source_tier": "primary"
     },
     {
       "id": "industry-core-lithium",
@@ -927,7 +980,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "core-lithium"
+      "feed_source_id": "core-lithium",
+      "source_tier": "primary"
     },
     {
       "id": "industry-lithium-americas",
@@ -962,7 +1016,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-syrah",
@@ -1008,7 +1063,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "syrah"
+      "feed_source_id": "syrah",
+      "source_tier": "primary"
     },
     {
       "id": "industry-ganfeng",
@@ -1043,7 +1099,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-cmoc",
@@ -1089,7 +1146,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "cmoc"
+      "feed_source_id": "cmoc",
+      "source_tier": "primary"
     },
     {
       "id": "industry-huayou",
@@ -1135,7 +1193,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "huayou"
+      "feed_source_id": "huayou",
+      "source_tier": "primary"
     },
     {
       "id": "industry-posco",
@@ -1168,7 +1227,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-ecopro",
@@ -1214,7 +1274,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "ecopro"
+      "feed_source_id": "ecopro",
+      "source_tier": "primary"
     },
     {
       "id": "industry-umicore",
@@ -1276,7 +1337,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "umicore"
+      "feed_source_id": "umicore",
+      "source_tier": "primary"
     },
     {
       "id": "industry-novonix",
@@ -1322,7 +1384,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "novonix"
+      "feed_source_id": "novonix",
+      "source_tier": "primary"
     },
     {
       "id": "industry-fortescue",
@@ -1384,7 +1447,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "fortescue"
+      "feed_source_id": "fortescue",
+      "source_tier": "primary"
     },
     {
       "id": "industry-komatsu",
@@ -1419,7 +1483,8 @@
       "match_keywords": [],
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "industry-caterpillar",
@@ -1481,7 +1546,8 @@
       "group": "企业与产业",
       "automation_enabled": true,
       "collection_method": "html",
-      "feed_source_id": "caterpillar"
+      "feed_source_id": "caterpillar",
+      "source_tier": "primary"
     },
     {
       "id": "industry-basf",
@@ -1527,7 +1593,8 @@
       "adapter_hint": "主站新闻列表可取得详情URL，但锚文本为Read more，需从同卡片标题取名或访问详情；当前不标自动适配完成。",
       "group": "企业与产业",
       "automation_enabled": false,
-      "collection_method": null
+      "collection_method": null,
+      "source_tier": "primary"
     },
     {
       "id": "eia",
@@ -1558,7 +1625,8 @@
       "automation_enabled": true,
       "collection_method": "rss",
       "feed_source_id": "eia-today-in-energy",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "usgs",
@@ -1588,7 +1656,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "worldbank",
@@ -1618,7 +1687,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "imf",
@@ -1648,7 +1718,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "iea",
@@ -1688,7 +1759,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "iea",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "wto",
@@ -1718,7 +1790,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "unctad",
@@ -1748,7 +1821,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "imo",
@@ -1788,7 +1862,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "imo",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "ukmto",
@@ -1818,7 +1893,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "unnews",
@@ -1849,7 +1925,8 @@
       "automation_enabled": true,
       "collection_method": "rss",
       "feed_source_id": "un-news",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "ofac",
@@ -1889,7 +1966,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "us-ofac",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "arena",
@@ -1919,7 +1997,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "bis",
@@ -1949,7 +2028,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "eu_trade",
@@ -1991,7 +2071,8 @@
       "automation_enabled": true,
       "collection_method": "rss",
       "feed_source_id": "eu-commission",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "mofcom",
@@ -2031,7 +2112,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "cn-mofcom",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "customs",
@@ -2061,7 +2143,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "ndrc",
@@ -2101,7 +2184,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "cn-ndrc",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "miit",
@@ -2131,7 +2215,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "mnr",
@@ -2161,7 +2246,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "csrc",
@@ -2191,7 +2277,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "gfex",
@@ -2221,7 +2308,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "doe",
@@ -2263,7 +2351,8 @@
       "automation_enabled": true,
       "collection_method": "rss",
       "feed_source_id": "us-doe",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "csiro",
@@ -2303,7 +2392,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "csiro",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "ornl",
@@ -2345,7 +2435,8 @@
       "automation_enabled": true,
       "collection_method": "rss",
       "feed_source_id": "ornl",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "pnnl",
@@ -2385,7 +2476,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "pnnl",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "irena",
@@ -2415,7 +2507,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "nrcan",
@@ -2445,7 +2538,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "geoaus",
@@ -2475,7 +2569,8 @@
       "group": "公共机构",
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "esdm",
@@ -2515,7 +2610,8 @@
       "automation_enabled": true,
       "collection_method": "html",
       "feed_source_id": "id-esdm",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "cochilco",
@@ -2557,7 +2653,8 @@
       "automation_enabled": true,
       "collection_method": "rss",
       "feed_source_id": "cochilco",
-      "automatic_poll_interval": "每日北京时间约07:40"
+      "automatic_poll_interval": "每日北京时间约07:40",
+      "source_tier": "primary"
     },
     {
       "id": "gb-companies-house",
@@ -2598,7 +2695,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "fr-inpi-rne",
@@ -2638,7 +2736,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "de-handelsregister",
@@ -2674,7 +2773,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "no-brreg",
@@ -2714,7 +2814,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "fi-prh",
@@ -2755,7 +2856,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "nl-kvk",
@@ -2794,7 +2896,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "be-cbe",
@@ -2834,7 +2937,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "pl-krs",
@@ -2875,7 +2979,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "cz-public-register",
@@ -2914,7 +3019,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "ch-zefix",
@@ -2953,7 +3059,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "ee-rik",
@@ -2993,7 +3100,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "dk-cvr",
@@ -3029,7 +3137,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "hu-company-register",
@@ -3068,7 +3177,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "sk-orsr",
@@ -3107,7 +3217,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "it-business-register",
@@ -3146,7 +3257,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "sg-acra",
@@ -3185,7 +3297,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "jp-nta-corporate-number",
@@ -3225,7 +3338,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "in-mca",
@@ -3262,7 +3376,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "th-dbd",
@@ -3301,7 +3416,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "ca-corporations-canada",
@@ -3342,7 +3458,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "us-sec-edgar",
@@ -3381,7 +3498,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "au-asic",
@@ -3420,7 +3538,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "nz-companies-office",
@@ -3461,7 +3580,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "id-ahu",
@@ -3498,7 +3618,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "br-rfb-cnpj",
@@ -3537,7 +3658,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "cl-res",
@@ -3577,7 +3699,8 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
     },
     {
       "id": "kr-fss-dart",
@@ -3617,7 +3740,2201 @@
       "sample_links": [],
       "automation_enabled": false,
       "collection_method": null,
-      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问"
+      "automatic_poll_interval": "未配置定时拉取；按研究或实体核验任务访问",
+      "source_tier": "primary"
+    },
+    {
+      "id": "specialist-informa",
+      "publisher_id": "informa",
+      "name": "Informa / Energy-Storage.news · Battery Technology",
+      "publisher": "Informa / Energy-Storage.news · Battery Technology",
+      "country": "英国 / 全球",
+      "category": "竞争与合作",
+      "url": "https://www.energy-storage.news/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "BESS订单、系统集成商、产线、材料和电芯制造；合并Energy-Storage.news、PV Tech与Battery Technology入口。",
+      "query_scope": "BESS订单、系统集成商、产线、材料和电芯制造；合并Energy-Storage.news、PV Tech与Battery Technology入口。",
+      "free_scope": "BESS订单、系统集成商、产线、材料和电芯制造；合并Energy-Storage.news、PV Tech与Battery Technology入口。 可使用范围：公开新闻、RSS标题和摘要免费；Premium文章、数据库、报告或会议不推定免费。",
+      "limitations": "公开新闻、RSS标题和摘要免费；Premium文章、数据库、报告或会议不推定免费。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://www.energy-storage.news/feed/",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.energy-storage.news/",
+      "page_title": "Energy-Storage.News",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.energy-storage.news"
+      ],
+      "evidence_urls": [
+        "https://www.energy-storage.news/",
+        "https://www.batterytechonline.com/",
+        "https://www.solarmedia.co.uk/about/"
+      ],
+      "observation_question": "订单是否为约束性合同？交付、并网和产线达产是哪个阶段？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "Who is SunGrid? Yukon Energy terminates elusive contractor for Canada BESS",
+          "url": "https://www.energy-storage.news/who-is-sungrid-yukon-energy-terminates-elusive-contractor-for-canada-bess/",
+          "pubdate": "Wed, 25 Nov 2026 14:13:13 +0000"
+        },
+        {
+          "title": "Trina Storage launches genset-battery hybrid solution targeting AI data centre power demand",
+          "url": "https://www.energy-storage.news/trina-storage-launches-genset-battery-hybrid-solution-targeting-ai-data-centre-power-demand/",
+          "pubdate": "Wed, 25 Nov 2026 13:12:33 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-informa",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-pv-magazine",
+      "publisher_id": "pv-magazine",
+      "name": "pv magazine / ESS News",
+      "publisher": "pv magazine / ESS News",
+      "country": "德国 / 全球",
+      "category": "供需平衡",
+      "url": "https://www.pv-magazine.com/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "储能招标、并网、电站收益、技术与回收；优先ESS News与储能栏目，排除泛光伏组件营销。",
+      "query_scope": "储能招标、并网、电站收益、技术与回收；优先ESS News与储能栏目，排除泛光伏组件营销。",
+      "free_scope": "储能招标、并网、电站收益、技术与回收；优先ESS News与储能栏目，排除泛光伏组件营销。 可使用范围：公开网页和RSS可读；纸刊、付费内容、商业数据和赞助文章另作区分。",
+      "limitations": "公开网页和RSS可读；纸刊、付费内容、商业数据和赞助文章另作区分。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://www.pv-magazine.com/feed/",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.pv-magazine.com/",
+      "page_title": "Latest PV News, Insights & Industry Trends | pv magazine Global",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.pv-magazine.com"
+      ],
+      "evidence_urls": [
+        "https://www.pv-magazine.com/",
+        "https://www.ess-news.com/"
+      ],
+      "observation_question": "储能需求能否转为可融资、可并网、可交付的电芯采购量？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "UtmoLight, UNSW achieve 19.6% efficiency for 2.81 m² perovskite solar module",
+          "url": "https://www.pv-magazine.com/2026/11/25/utmolight-unsw-achieve-19-6-efficiency-for-2-81-m%c2%b2-perovskite-solar-module/",
+          "pubdate": "Wed, 25 Nov 2026 13:29:00 +0000"
+        },
+        {
+          "title": "Poweroad unveils modular LFP battery system with up to 245.76 kWh of storage",
+          "url": "https://www.pv-magazine.com/2026/11/25/poweroad-unveils-modular-lfp-battery-system-with-up-to-245-76-kwh-of-storage/",
+          "pubdate": "Wed, 25 Nov 2026 13:22:48 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-pv-magazine",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-electrive",
+      "publisher_id": "electrive",
+      "name": "electrive",
+      "publisher": "electrive",
+      "country": "德国 / 欧洲",
+      "category": "竞争与合作",
+      "url": "https://www.electrive.com/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "欧洲整车、电池工厂、供货关系、商用车与产业政策。",
+      "query_scope": "欧洲整车、电池工厂、供货关系、商用车与产业政策。",
+      "free_scope": "欧洲整车、电池工厂、供货关系、商用车与产业政策。 可使用范围：公开文章与新闻邮件；本次仅配置研究入口，未验证稳定RSS。",
+      "limitations": "公开文章与新闻邮件；本次仅配置研究入口，未验证稳定RSS。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.electrive.com/",
+      "page_title": "electrive – the industry's leading emobility media",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.electrive.com"
+      ],
+      "evidence_urls": [
+        "https://www.electrive.com/"
+      ],
+      "observation_question": "欧洲客户改变化学体系或本土采购要求，会影响哪些材料与工厂？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-charged",
+      "publisher_id": "charged",
+      "name": "Charged EVs",
+      "publisher": "Charged EVs",
+      "country": "美国 / 全球",
+      "category": "技术突破",
+      "url": "https://chargedevs.com/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "电池工程、正负极与电解液、生产设备、热管理、充电与整车供应链。",
+      "query_scope": "电池工程、正负极与电解液、生产设备、热管理、充电与整车供应链。",
+      "free_scope": "电池工程、正负极与电解液、生产设备、热管理、充电与整车供应链。 可使用范围：公开网页及RSS；白皮书可能需注册；赞助内容和厂商采访需回原始测试/披露。",
+      "limitations": "公开网页及RSS；白皮书可能需注册；赞助内容和厂商采访需回原始测试/披露。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://chargedevs.com/feed/",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://chargedevs.com/",
+      "page_title": "Charged EVs | Electric Vehicles Magazine",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "chargedevs.com"
+      ],
+      "evidence_urls": [
+        "https://chargedevs.com/",
+        "https://chargedevs.com/call-for-articles-charged-evs-magazine/"
+      ],
+      "observation_question": "技术性能改善付出了什么材料、工艺、寿命或系统成本代价？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "Ford ships first battery cells from Michigan plant for Fathom electric pickup",
+          "url": "https://chargedevs.com/newswire/ford-ships-first-battery-cells-from-michigan-plant-for-fathom-electric-pickup/",
+          "pubdate": "Tue, 24 Nov 2026 15:58:58 +0000"
+        },
+        {
+          "title": "BASF to sell battery recycling business to cylib, focus on cathode active materials",
+          "url": "https://chargedevs.com/newswire/basf-to-sell-battery-recycling-business-to-cylib-focus-on-cathode-active-materials/",
+          "pubdate": "Tue, 24 Nov 2026 15:54:50 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-charged",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-best",
+      "publisher_id": "best",
+      "name": "BEST / Energy Storage Publishing",
+      "publisher": "BEST / Energy Storage Publishing",
+      "country": "英国 / 全球",
+      "category": "技术突破",
+      "url": "https://www.bestmag.co.uk/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "电池制造、回收、替代化学体系与储能产业；过滤与CATL主线无关的铅酸内容。",
+      "query_scope": "电池制造、回收、替代化学体系与储能产业；过滤与CATL主线无关的铅酸内容。",
+      "free_scope": "电池制造、回收、替代化学体系与储能产业；过滤与CATL主线无关的铅酸内容。 可使用范围：公开新闻可读；期刊订阅、会员及商业目录不视为全量免费数据。",
+      "limitations": "公开新闻可读；期刊订阅、会员及商业目录不视为全量免费数据。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.bestmag.co.uk/",
+      "page_title": "Battery & Energy Storage News | BEST Magazine",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.bestmag.co.uk"
+      ],
+      "evidence_urls": [
+        "https://www.bestmag.co.uk/about-best-magazine/"
+      ],
+      "observation_question": "新设备或回收工艺是否有实际客户验证和工业运行记录？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-batteries-international",
+      "publisher_id": "batteries-international",
+      "name": "Batteries International",
+      "publisher": "Batteries International",
+      "country": "英国 / 全球",
+      "category": "竞争与合作",
+      "url": "https://www.batteriesinternational.com/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "锂电、BESS、回收企业与融资动态；仅保留与动力/储能产业链直接相关议题。",
+      "query_scope": "锂电、BESS、回收企业与融资动态；仅保留与动力/储能产业链直接相关议题。",
+      "free_scope": "锂电、BESS、回收企业与融资动态；仅保留与动力/储能产业链直接相关议题。 可使用范围：公开标题与部分新闻；网站明确设Premium，付费全文不采集。",
+      "limitations": "公开标题与部分新闻；网站明确设Premium，付费全文不采集。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.batteriesinternational.com/",
+      "page_title": "Battery Industry News – Batteries International",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.batteriesinternational.com"
+      ],
+      "evidence_urls": [
+        "https://www.batteriesinternational.com/"
+      ],
+      "observation_question": "回收扩产对应的料源、产物与客户能否同时成立？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-battery-design",
+      "publisher_id": "battery-design",
+      "name": "BatteryDesign.net / Nigel Taylor",
+      "publisher": "BatteryDesign.net / Nigel Taylor",
+      "country": "英国",
+      "category": "技术突破",
+      "url": "https://www.batterydesign.net/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "从电芯化学到PACK的工程参考：电极、制造、BMS、热管理、安全、系统集成与拆解。",
+      "query_scope": "从电芯化学到PACK的工程参考：电极、制造、BMS、热管理、安全、系统集成与拆解。",
+      "free_scope": "从电芯化学到PACK的工程参考：电极、制造、BMS、热管理、安全、系统集成与拆解。 可使用范围：免费网页、公开图表和部分基准数据；背景表格/模型不推定全部免费。",
+      "limitations": "免费网页、公开图表和部分基准数据；背景表格/模型不推定全部免费。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.batterydesign.net/",
+      "page_title": "Battery Design — Engineering Reference: Chemistry to Pack",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.batterydesign.net"
+      ],
+      "evidence_urls": [
+        "https://www.batterydesign.net/about-2/"
+      ],
+      "observation_question": "实验室参数能否在实际电芯、工艺节拍与PACK约束下保留？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-volta",
+      "publisher_id": "volta",
+      "name": "Volta Foundation / Battery Bits",
+      "publisher": "Volta Foundation / Battery Bits",
+      "country": "全球",
+      "category": "技术突破",
+      "url": "https://volta.foundation/battery-bits/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "年度Battery Report与专业作者博客：材料认证、LFP迭代、制造、隔膜及产业链生态。",
+      "query_scope": "年度Battery Report与专业作者博客：材料认证、LFP迭代、制造、隔膜及产业链生态。",
+      "free_scope": "年度Battery Report与专业作者博客：材料认证、LFP迭代、制造、隔膜及产业链生态。 可使用范围：公开研究与博客；引用报告中的二手数字仍需检查其原始来源和观察日期。",
+      "limitations": "公开研究与博客；引用报告中的二手数字仍需检查其原始来源和观察日期。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://volta.foundation/feed/",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://volta.foundation/battery-bits/",
+      "page_title": "Battery Bits Blog",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "volta.foundation"
+      ],
+      "evidence_urls": [
+        "https://volta.foundation/battery-bits/"
+      ],
+      "observation_question": "材料认证和客户验证为何成为扩产与技术替代的真正门槛？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "A Conversation with COMSOL’s Niloofar Kamyab",
+          "url": "https://volta.foundation/comsol-conversation/",
+          "pubdate": "Fri, 30 Oct 2026 13:39:59 +0000"
+        },
+        {
+          "title": "Building the Battery Talent Pipeline Through Academic Partnerships",
+          "url": "https://volta.foundation/workforce-case-study-oct-2026-insights/",
+          "pubdate": "Wed, 28 Oct 2026 15:46:49 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-volta",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-cadex",
+      "publisher_id": "cadex",
+      "name": "Cadex / Battery University",
+      "publisher": "Cadex / Battery University",
+      "country": "加拿大",
+      "category": "技术突破",
+      "url": "https://www.batteryuniversity.com/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "电池基础化学、衰减、充放电与测试方法；用作机制解释而非最新市场事实。",
+      "query_scope": "电池基础化学、衰减、充放电与测试方法；用作机制解释而非最新市场事实。",
+      "free_scope": "电池基础化学、衰减、充放电与测试方法；用作机制解释而非最新市场事实。 可使用范围：公开教学文章；部分内容更新时间较早，商用产品与服务不属于免费数据。",
+      "limitations": "公开教学文章；部分内容更新时间较早，商用产品与服务不属于免费数据。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.batteryuniversity.com/",
+      "page_title": "Home Page | Battery University",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.batteryuniversity.com"
+      ],
+      "evidence_urls": [
+        "https://www.batteryuniversity.com/about/"
+      ],
+      "observation_question": "一项性能宣传究竟测试了能量、倍率、循环寿命还是使用条件？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-benchmark",
+      "publisher_id": "benchmark",
+      "name": "Benchmark Mineral Intelligence / Rho Motion",
+      "publisher": "Benchmark Mineral Intelligence / Rho Motion",
+      "country": "英国 / 全球",
+      "category": "原材料",
+      "url": "https://www.benchmarkminerals.com/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "锂、镍、钴、石墨、正负极和黑粉的公开行业评论；Rho Motion同集团归并。",
+      "query_scope": "锂、镍、钴、石墨、正负极和黑粉的公开行业评论；Rho Motion同集团归并。",
+      "free_scope": "锂、镍、钴、石墨、正负极和黑粉的公开行业评论；Rho Motion同集团归并。 可使用范围：仅公开新闻、评论与可见摘要；价格评估、明细库、预测和API是商业产品，不接入付费数据。",
+      "limitations": "仅公开新闻、评论与可见摘要；价格评估、明细库、预测和API是商业产品，不接入付费数据。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.benchmarkminerals.com/",
+      "page_title": "Battery & Critical Minerals Intelligence | Benchmark",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.benchmarkminerals.com"
+      ],
+      "evidence_urls": [
+        "https://www.benchmarkminerals.com/",
+        "https://source.benchmarkminerals.com/"
+      ],
+      "observation_question": "原料价格与中游加工费、库存和终端需求是否发生背离？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-fastmarkets",
+      "publisher_id": "fastmarkets",
+      "name": "Fastmarkets",
+      "publisher": "Fastmarkets",
+      "country": "英国 / 全球",
+      "category": "原材料",
+      "url": "https://www.fastmarkets.com/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "电池原材料、黑粉、金属贸易与价格方法论的公开评论。",
+      "query_scope": "电池原材料、黑粉、金属贸易与价格方法论的公开评论。",
+      "free_scope": "电池原材料、黑粉、金属贸易与价格方法论的公开评论。 可使用范围：仅公开insights和方法论；价格终端、历史行情与API不属于本项目免费范围。",
+      "limitations": "仅公开insights和方法论；价格终端、历史行情与API不属于本项目免费范围。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.fastmarkets.com/",
+      "page_title": "Commodity price data, forecasts, insights and events - Fastmarkets",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.fastmarkets.com"
+      ],
+      "evidence_urls": [
+        "https://www.fastmarkets.com/"
+      ],
+      "observation_question": "某个报价对应什么品级、地区、交货条件与时间窗口？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-im-mining",
+      "publisher_id": "im-mining",
+      "name": "International Mining",
+      "publisher": "International Mining",
+      "country": "英国 / 全球",
+      "category": "矿山零碳",
+      "url": "https://im-mining.com/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "矿山电动化、矿卡、充换电、离网电力、选冶设备与矿企项目。",
+      "query_scope": "矿山电动化、矿卡、充换电、离网电力、选冶设备与矿企项目。",
+      "free_scope": "矿山电动化、矿卡、充换电、离网电力、选冶设备与矿企项目。 可使用范围：公开新闻与部分免费期刊；会议资料/商业服务可能另收费。",
+      "limitations": "公开新闻与部分免费期刊；会议资料/商业服务可能另收费。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://im-mining.com/",
+      "page_title": "Home - International Mining",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "im-mining.com"
+      ],
+      "evidence_urls": [
+        "https://im-mining.com/"
+      ],
+      "observation_question": "矿山降碳项目是否有矿种、工况、承包商和供电边界的实证？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-rmi",
+      "publisher_id": "rmi",
+      "name": "RMI",
+      "publisher": "RMI",
+      "country": "美国 / 全球",
+      "category": "供需平衡",
+      "url": "https://rmi.org/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "电池成本、矿物循环、工业电气化、离网与电力市场的公开分析。",
+      "query_scope": "电池成本、矿物循环、工业电气化、离网与电力市场的公开分析。",
+      "free_scope": "电池成本、矿物循环、工业电气化、离网与电力市场的公开分析。 可使用范围：公开报告、工具与文章；情景模型的假设与倡议立场必须与事实分开。",
+      "limitations": "公开报告、工具与文章；情景模型的假设与倡议立场必须与事实分开。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://rmi.org/",
+      "page_title": "RMI",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "rmi.org"
+      ],
+      "evidence_urls": [
+        "https://rmi.org/"
+      ],
+      "observation_question": "替代燃油或新增储能的经济性由哪项电价、利用率和融资假设驱动？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-ember",
+      "publisher_id": "ember",
+      "name": "Ember",
+      "publisher": "Ember",
+      "country": "英国 / 全球",
+      "category": "供需平衡",
+      "url": "https://ember-energy.org/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "公开电力数据、灵活性和储能研究；聚焦CATL海外储能市场及矿山所在国电力结构。",
+      "query_scope": "公开电力数据、灵活性和储能研究；聚焦CATL海外储能市场及矿山所在国电力结构。",
+      "free_scope": "公开电力数据、灵活性和储能研究；聚焦CATL海外储能市场及矿山所在国电力结构。 可使用范围：开放数据和研究可读；API须遵守站点当期注册及使用条款，未默认接通数据接口。",
+      "limitations": "开放数据和研究可读；API须遵守站点当期注册及使用条款，未默认接通数据接口。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://ember-energy.org/",
+      "page_title": "Ember",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "ember-energy.org"
+      ],
+      "evidence_urls": [
+        "https://ember-energy.org/"
+      ],
+      "observation_question": "当地新增光伏、弃电与尖峰需求是否形成真实储能价值？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-argonne",
+      "publisher_id": "argonne",
+      "name": "Argonne National Laboratory / ReCell",
+      "publisher": "Argonne National Laboratory / ReCell",
+      "country": "美国",
+      "category": "技术突破",
+      "url": "https://recellcenter.org/",
+      "group": "科研机构",
+      "publisher_type": "科研机构",
+      "kind": "primary_research",
+      "source_tier": "research",
+      "focus": "电池材料研发、BatPaC/EverBatt相关研究与ReCell直接再生/湿法/火法回收。",
+      "query_scope": "电池材料研发、BatPaC/EverBatt相关研究与ReCell直接再生/湿法/火法回收。",
+      "free_scope": "电池材料研发、BatPaC/EverBatt相关研究与ReCell直接再生/湿法/火法回收。 可使用范围：公开科研页面、论文及模型文档；论文付费部分、技术许可和实验服务不在免费范围。",
+      "limitations": "公开科研页面、论文及模型文档；论文付费部分、技术许可和实验服务不在免费范围。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://recellcenter.org/",
+      "page_title": "ReCell Center",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "recellcenter.org"
+      ],
+      "evidence_urls": [
+        "https://recellcenter.org/",
+        "https://www.anl.gov/partnerships/energy-storage?page=1"
+      ],
+      "observation_question": "回收是回收金属还是保留材料结构价值，何时有经济性？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-fraunhofer",
+      "publisher_id": "fraunhofer",
+      "name": "Fraunhofer ISI / Battery Update",
+      "publisher": "Fraunhofer ISI / Battery Update",
+      "country": "德国 / 欧洲",
+      "category": "技术突破",
+      "url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update.html",
+      "group": "科研机构",
+      "publisher_type": "科研机构",
+      "kind": "primary_research",
+      "source_tier": "research",
+      "focus": "电池产业链路线图、欧洲生产与回收能力、材料供需和技术商业化的研究者博客。",
+      "query_scope": "电池产业链路线图、欧洲生产与回收能力、材料供需和技术商业化的研究者博客。",
+      "free_scope": "电池产业链路线图、欧洲生产与回收能力、材料供需和技术商业化的研究者博客。 可使用范围：公开研究博客、RSS、报告；情景预测按原假设使用，宣布产能不能当实际产出。",
+      "limitations": "公开研究博客、RSS、报告；情景预测按原假设使用，宣布产能不能当实际产出。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://www.isi.fraunhofer.de/en/rss/batterie-update.rss",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update.html",
+      "page_title": "Battery Update -  Fraunhofer ISI",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.isi.fraunhofer.de"
+      ],
+      "evidence_urls": [
+        "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update.html"
+      ],
+      "observation_question": "名义产能与可获得料源、实际产出和客户认证之间差多远？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "Announced, installed, stopped: Europe's battery recycling capacities exceed current feedstock",
+          "url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update/batterie-recycling_europa_kapazitaeten_bedarf_update_2026.html",
+          "pubdate": "25 Nov 2026 09:00:00 GMT"
+        },
+        {
+          "title": "Company Cars as a Lever for Europe's Electric Vehicle Industry: What Two Proposed EU Laws Could Mean for the Economy",
+          "url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update/firmenwagen-elektroautos-eu-verordnungen-ccvr-iaa-wirtschaft.html",
+          "pubdate": "22 Oct 2026 00:01:00 GMT"
+        }
+      ],
+      "feed_source_id": "specialist-fraunhofer",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-faraday",
+      "publisher_id": "faraday",
+      "name": "Faraday Institution",
+      "publisher": "Faraday Institution",
+      "country": "英国",
+      "category": "技术突破",
+      "url": "https://www.faraday.ac.uk/",
+      "group": "科研机构",
+      "publisher_type": "科研机构",
+      "kind": "primary_research",
+      "source_tier": "research",
+      "focus": "正负极、电极制造、化成、钠离子、固态、安全与回收的研究及产业转化。",
+      "query_scope": "正负极、电极制造、化成、钠离子、固态、安全与回收的研究及产业转化。",
+      "free_scope": "正负极、电极制造、化成、钠离子、固态、安全与回收的研究及产业转化。 可使用范围：公开研究简报、新闻和论文入口；论文全文、专利许可及商业服务各有访问条件。",
+      "limitations": "公开研究简报、新闻和论文入口；论文全文、专利许可及商业服务各有访问条件。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.faraday.ac.uk/",
+      "page_title": "The Faraday Institution - Powering Britain’s Battery Revolution - Powering Britain’s Battery Revolution",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.faraday.ac.uk"
+      ],
+      "evidence_urls": [
+        "https://www.faraday.ac.uk/"
+      ],
+      "observation_question": "突破处于材料实验、样品、电芯验证还是可放大的生产阶段？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-battery2030",
+      "publisher_id": "battery2030",
+      "name": "BATTERY 2030+",
+      "publisher": "BATTERY 2030+",
+      "country": "欧洲",
+      "category": "技术突破",
+      "url": "https://battery2030.eu/",
+      "group": "科研机构",
+      "publisher_type": "科研机构",
+      "kind": "primary_research",
+      "source_tier": "research",
+      "focus": "电池研究路线图、材料发现、传感、自修复及可持续制造研究项目。",
+      "query_scope": "电池研究路线图、材料发现、传感、自修复及可持续制造研究项目。",
+      "free_scope": "电池研究路线图、材料发现、传感、自修复及可持续制造研究项目。 可使用范围：公开路线图、研讨会与项目资料；不将研究路线图或项目立项目标视为量产能力。",
+      "limitations": "公开路线图、研讨会与项目资料；不将研究路线图或项目立项目标视为量产能力。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://battery2030.eu/",
+      "page_title": "Battery2030+ - Battery 2030+",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "battery2030.eu"
+      ],
+      "evidence_urls": [
+        "https://battery2030.eu/"
+      ],
+      "observation_question": "新技术改变哪个瓶颈，距离可制造、可认证的产品还隔什么环节？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-sandia",
+      "publisher_id": "sandia",
+      "name": "Sandia National Laboratories / Energy Storage",
+      "publisher": "Sandia National Laboratories / Energy Storage",
+      "country": "美国",
+      "category": "技术突破",
+      "url": "https://www.sandia.gov/ess/",
+      "group": "科研机构",
+      "publisher_type": "科研机构",
+      "kind": "primary_research",
+      "source_tier": "research",
+      "focus": "储能安全、热失控测试、系统可靠性、长时储能与公开工程工具。",
+      "query_scope": "储能安全、热失控测试、系统可靠性、长时储能与公开工程工具。",
+      "free_scope": "储能安全、热失控测试、系统可靠性、长时储能与公开工程工具。 可使用范围：公开手册、研究数据与报告；项目测试和商业咨询不假设免费。",
+      "limitations": "公开手册、研究数据与报告；项目测试和商业咨询不假设免费。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://www.sandia.gov/ess/feed",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.sandia.gov/ess/",
+      "page_title": "DOE Office of Electricity Energy Storage Program – Sandia National Laboratories",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.sandia.gov"
+      ],
+      "evidence_urls": [
+        "https://www.sandia.gov/ess/"
+      ],
+      "observation_question": "电芯安全结果是否能外推到模块、舱级和并网系统？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "Launched: Long Duration Energy Storage Evaluation & Tracking Tool",
+          "url": "https://www.sandia.gov/ess/2026/09/03/launched-long-duration-energy-storage-evaluation-tracking-tool",
+          "pubdate": "Thu, 03 Sep 2026 22:22:33 +0000"
+        },
+        {
+          "title": "Will McNamara moderates panel on long-duration energy storage policy",
+          "url": "https://www.sandia.gov/ess/2026/09/03/will-mcnamara-moderates-panel-on-long-duration-energy-storage-policy",
+          "pubdate": "Thu, 03 Sep 2026 22:21:38 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-sandia",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-nlr",
+      "publisher_id": "nlr",
+      "name": "National Laboratory of the Rockies（原NREL）",
+      "publisher": "National Laboratory of the Rockies（原NREL）",
+      "country": "美国",
+      "category": "技术突破",
+      "url": "https://www.nlr.gov/transportation/energy-storage",
+      "group": "科研机构",
+      "publisher_type": "科研机构",
+      "kind": "primary_research",
+      "source_tier": "research",
+      "focus": "电池寿命、热安全、极快充、退役再利用与多尺度模型。",
+      "query_scope": "电池寿命、热安全、极快充、退役再利用与多尺度模型。",
+      "free_scope": "电池寿命、热安全、极快充、退役再利用与多尺度模型。 可使用范围：公开科研内容与工具说明；模型输入和许可条件需按原站；2026年使用nlr.gov现行域名。",
+      "limitations": "公开科研内容与工具说明；模型输入和许可条件需按原站；2026年使用nlr.gov现行域名。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.nlr.gov/transportation/energy-storage",
+      "page_title": "Energy Storage\r\n | Transportation and Mobility Research | NLR",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.nlr.gov"
+      ],
+      "evidence_urls": [
+        "https://www.nlr.gov/transportation/energy-storage",
+        "https://www.nlr.gov/comm-standards/editorial/national-laboratory-of-the-rockies"
+      ],
+      "observation_question": "循环测试与真实温度、SOC窗口、倍率和质保工况是否相符？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-cnesa",
+      "publisher_id": "cnesa",
+      "name": "中关村储能产业技术联盟 CNESA",
+      "publisher": "中关村储能产业技术联盟 CNESA",
+      "country": "中国 / 全球",
+      "category": "供需平衡",
+      "url": "https://www.cnesa.org/",
+      "group": "行业研究机构",
+      "publisher_type": "行业研究机构",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "储能装机、政策、市场与项目统计的公开发布。",
+      "query_scope": "储能装机、政策、市场与项目统计的公开发布。",
+      "free_scope": "储能装机、政策、市场与项目统计的公开发布。 可使用范围：公开新闻和已公开数据发布；数据库、会员月刊和部分白皮书可能受限，不能据公开摘要重建完整库。",
+      "limitations": "公开新闻和已公开数据发布；数据库、会员月刊和部分白皮书可能受限，不能据公开摘要重建完整库。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.cnesa.org/",
+      "page_title": "首页_-中关村储能产业技术联盟（CNESA）中关村储能产业技术联盟（CNESA）",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.cnesa.org"
+      ],
+      "evidence_urls": [
+        "https://www.cnesa.org/",
+        "https://research.cnesa.org/aboutus/"
+      ],
+      "observation_question": "备案、招标、中标、开工、并网和出货在统计中是否被混用？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-escn",
+      "publisher_id": "escn",
+      "name": "中国储能网",
+      "publisher": "中国储能网",
+      "country": "中国 / 全球",
+      "category": "供需平衡",
+      "url": "https://www.escn.com.cn/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "储能招投标、项目备案、容量电价、系统供应与回收。",
+      "query_scope": "储能招投标、项目备案、容量电价、系统供应与回收。",
+      "free_scope": "储能招投标、项目备案、容量电价、系统供应与回收。 可使用范围：公开网页；转载须回到政府、电网、招标人或上市公司原始公告核验。",
+      "limitations": "公开网页；转载须回到政府、电网、招标人或上市公司原始公告核验。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.escn.com.cn/",
+      "page_title": "中国储能网-www.escn.com.cn致力于推进储能产业数字化智能化高质量发展！储能网以“坚持正确舆论引导，推动储能产业可持续发展”，综合性的储能行业门户网站目标迈进。",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.escn.com.cn"
+      ],
+      "evidence_urls": [
+        "https://www.escn.com.cn/"
+      ],
+      "observation_question": "中标报价的范围是电芯、DC侧、AC侧、EPC还是全寿命服务？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-bjx",
+      "publisher_id": "bjx",
+      "name": "北极星 / 储能与电池栏目",
+      "publisher": "北极星 / 储能与电池栏目",
+      "country": "中国",
+      "category": "供需平衡",
+      "url": "https://chuneng.bjx.com.cn/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "储能招投标、地方政策、电力市场、工程并网与产业链新闻。",
+      "query_scope": "储能招投标、地方政策、电力市场、工程并网与产业链新闻。",
+      "free_scope": "储能招投标、地方政策、电力市场、工程并网与产业链新闻。 可使用范围：公开新闻标题和文章；转载来源、广告内容与付费服务分别识别。",
+      "limitations": "公开新闻标题和文章；转载来源、广告内容与付费服务分别识别。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://chuneng.bjx.com.cn/",
+      "page_title": "储能-北极星储能网-专业的储能行业垂直门户网站",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "chuneng.bjx.com.cn"
+      ],
+      "evidence_urls": [
+        "https://chuneng.bjx.com.cn/"
+      ],
+      "observation_question": "政策是否已执行，采购是否落地，报价包含哪些交付条件？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-diysolar",
+      "publisher_id": "diysolar",
+      "name": "DIY Solar Forum",
+      "publisher": "DIY Solar Forum",
+      "country": "全球",
+      "category": "技术突破",
+      "url": "https://diysolarforum.com/",
+      "group": "论坛社区",
+      "publisher_type": "论坛社区",
+      "kind": "community",
+      "source_tier": "community",
+      "focus": "终端用户的LFP一致性、BMS兼容、待机损耗、实际运行和故障反馈。",
+      "query_scope": "终端用户的LFP一致性、BMS兼容、待机损耗、实际运行和故障反馈。",
+      "free_scope": "终端用户的LFP一致性、BMS兼容、待机损耗、实际运行和故障反馈。 可使用范围：公开讨论/RSS；用户名、宣传与个别案例不代表可验证供应商质量，结论须回厂商资料/试验/召回。",
+      "limitations": "公开讨论/RSS；用户名、宣传与个别案例不代表可验证供应商质量，结论须回厂商资料/试验/召回。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://diysolarforum.com/forums/-/index.rss",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://diysolarforum.com/",
+      "page_title": "DIY Solar ForumTheme",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "diysolarforum.com"
+      ],
+      "evidence_urls": [
+        "https://diysolarforum.com/"
+      ],
+      "observation_question": "终端使用中出现了哪些说明书或发布会容易忽略的性能边界？",
+      "validation_gate": "论坛仅作议题发现，必须找到具名可核验试验、论文或机构/企业原始披露才能升级为主屏结论。",
+      "sample_links": [
+        {
+          "title": "New Reply Box and Photo Upload Features",
+          "url": "https://diysolarforum.com/threads/new-reply-box-and-photo-upload-features.132987/",
+          "pubdate": "Wed, 25 Nov 2026 14:32:35 +0000"
+        },
+        {
+          "title": "Trump",
+          "url": "https://diysolarforum.com/threads/trump.74784/",
+          "pubdate": "Wed, 25 Nov 2026 14:31:55 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-diysolar",
+      "max_items": 8
+    },
+    {
+      "id": "specialist-secondlife",
+      "publisher_id": "secondlife",
+      "name": "Second Life Storage & Solar",
+      "publisher": "Second Life Storage & Solar",
+      "country": "全球",
+      "category": "技术突破",
+      "url": "https://secondlifestorage.com/index.php",
+      "group": "论坛社区",
+      "publisher_type": "论坛社区",
+      "kind": "community",
+      "source_tier": "community",
+      "focus": "退役电池分选、梯次利用、BMS、储能运行与实测讨论。",
+      "query_scope": "退役电池分选、梯次利用、BMS、储能运行与实测讨论。",
+      "free_scope": "退役电池分选、梯次利用、BMS、储能运行与实测讨论。 可使用范围：公开讨论/RSS；样本选择偏差大，不能把单台DIY设备故障扩写为行业结论。",
+      "limitations": "公开讨论/RSS；样本选择偏差大，不能把单台DIY设备故障扩写为行业结论。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://secondlifestorage.com/index.php?forums/-/index.rss",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://secondlifestorage.com/index.php",
+      "page_title": "Second Life Storage & Solar",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "secondlifestorage.com"
+      ],
+      "evidence_urls": [
+        "https://secondlifestorage.com/index.php"
+      ],
+      "observation_question": "同一化学体系的退役电芯为何仍可能不适合重新成组？",
+      "validation_gate": "论坛仅作议题发现，必须找到具名可核验试验、论文或机构/企业原始披露才能升级为主屏结论。",
+      "sample_links": [
+        {
+          "title": "BMS for lion AND LiFePO4  powerwalls",
+          "url": "https://secondlifestorage.com/index.php?threads/bms-for-lion-and-lifepo4-powerwalls.13202/",
+          "pubdate": "Tue, 24 Nov 2026 16:00:11 +0000"
+        },
+        {
+          "title": "Nissan Leaf 48v Off-Grid Solar Project",
+          "url": "https://secondlifestorage.com/index.php?threads/nissan-leaf-48v-off-grid-solar-project.12890/",
+          "pubdate": "Tue, 24 Nov 2026 03:53:20 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-secondlife",
+      "max_items": 8
+    },
+    {
+      "id": "specialist-openenergymonitor",
+      "publisher_id": "openenergymonitor",
+      "name": "OpenEnergyMonitor Community",
+      "publisher": "OpenEnergyMonitor Community",
+      "country": "英国 / 全球",
+      "category": "技术突破",
+      "url": "https://community.openenergymonitor.org/",
+      "group": "论坛社区",
+      "publisher_type": "论坛社区",
+      "kind": "community",
+      "source_tier": "community",
+      "focus": "开放能源监测、储能接口、计量、EMS与运行数据方法讨论。",
+      "query_scope": "开放能源监测、储能接口、计量、EMS与运行数据方法讨论。",
+      "free_scope": "开放能源监测、储能接口、计量、EMS与运行数据方法讨论。 可使用范围：公开论坛与文档；用户自报数据需检验计量条件，不据此推定商业储能项目收益。",
+      "limitations": "公开论坛与文档；用户自报数据需检验计量条件，不据此推定商业储能项目收益。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "community_research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://community.openenergymonitor.org/",
+      "page_title": "OpenEnergyMonitor Community - OpenEnergyMonitor Community",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "community.openenergymonitor.org"
+      ],
+      "evidence_urls": [
+        "https://community.openenergymonitor.org/"
+      ],
+      "observation_question": "系统实测的功率、能量、损耗和控制策略能否相互对账？",
+      "validation_gate": "论坛仅作议题发现，必须找到具名可核验试验、论文或机构/企业原始披露才能升级为主屏结论。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-reddit-batteries",
+      "publisher_id": "reddit-batteries",
+      "name": "Reddit / r-batteries · r-BatteryTechnology",
+      "publisher": "Reddit / r-batteries · r-BatteryTechnology",
+      "country": "全球",
+      "category": "技术突破",
+      "url": "https://www.reddit.com/r/batteries/",
+      "group": "论坛社区",
+      "publisher_type": "论坛社区",
+      "kind": "community",
+      "source_tier": "community",
+      "focus": "电池技术讨论、工程体验、论文和新产品线索；按社区主题筛选。",
+      "query_scope": "电池技术讨论、工程体验、论文和新产品线索；按社区主题筛选。",
+      "free_scope": "电池技术讨论、工程体验、论文和新产品线索；按社区主题筛选。 可使用范围：仅公开可见帖及搜索索引；匿名发言不作为事实证据，不采个人敏感信息，不假设免费全量API。",
+      "limitations": "仅公开可见帖及搜索索引；匿名发言不作为事实证据，不采个人敏感信息，不假设免费全量API。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "community_research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.reddit.com/r/batteries/",
+      "page_title": "Reddit",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.reddit.com"
+      ],
+      "evidence_urls": [
+        "https://www.reddit.com/r/batteries/"
+      ],
+      "observation_question": "哪些争议值得回到论文、拆解、企业披露或监管记录核实？",
+      "validation_gate": "论坛仅作议题发现，必须找到具名可核验试验、论文或机构/企业原始披露才能升级为主屏结论。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-reneweconomy",
+      "publisher_id": "reneweconomy",
+      "name": "RenewEconomy",
+      "publisher": "RenewEconomy",
+      "country": "澳大利亚",
+      "category": "矿山零碳",
+      "url": "https://reneweconomy.com.au/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "澳洲大型电池、矿山供电、离网系统、并网和电力市场新闻。",
+      "query_scope": "澳洲大型电池、矿山供电、离网系统、并网和电力市场新闻。",
+      "free_scope": "澳洲大型电池、矿山供电、离网系统、并网和电力市场新闻。 可使用范围：公开文章和RSS；媒体评论需与AEMO、项目业主和监管文件交叉核验。",
+      "limitations": "公开文章和RSS；媒体评论需与AEMO、项目业主和监管文件交叉核验。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://reneweconomy.com.au/feed/",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://reneweconomy.com.au/",
+      "page_title": "News and analysis for the clean energy economy",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "reneweconomy.com.au"
+      ],
+      "evidence_urls": [
+        "https://reneweconomy.com.au/"
+      ],
+      "observation_question": "澳洲储能项目的并网瓶颈、时长与收入结构对供应商意味着什么？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "Giant Australian oil and gas project released massive methane cloud due to faulty CCS system",
+          "url": "https://reneweconomy.com.au/massive-methane-cloud-spotted-over-massive-australian-oil-and-gas-project-blamed-on-faulty-ccs-system/?utm_source=rss&utm_medium=rss&utm_campaign=massive-methane-cloud-spotted-over-massive-australian-oil-and-gas-project-blamed-on-faulty-ccs-system",
+          "pubdate": "Wed, 25 Nov 2026 09:09:16 +0000"
+        },
+        {
+          "title": "Approval sought for one of Australia’s biggest wind, solar and battery parks in Queensland coal region",
+          "url": "https://reneweconomy.com.au/approval-sought-for-one-of-australias-biggest-wind-solar-and-battery-parks-in-queensland-coal-region/?utm_source=rss&utm_medium=rss&utm_campaign=approval-sought-for-one-of-australias-biggest-wind-solar-and-battery-parks-in-queensland-coal-region",
+          "pubdate": "Wed, 25 Nov 2026 06:38:53 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-reneweconomy",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-canary",
+      "publisher_id": "canary",
+      "name": "Canary Media",
+      "publisher": "Canary Media",
+      "country": "美国",
+      "category": "竞争与合作",
+      "url": "https://www.canarymedia.com/",
+      "group": "专业媒体",
+      "publisher_type": "专业媒体",
+      "kind": "media",
+      "source_tier": "media",
+      "focus": "美国储能、电池制造、供应链和商业模式的深度报道。",
+      "query_scope": "美国储能、电池制造、供应链和商业模式的深度报道。",
+      "free_scope": "美国储能、电池制造、供应链和商业模式的深度报道。 可使用范围：公开非营利新闻/RSS；赞助内容有单独标识，项目数据回原披露。",
+      "limitations": "公开非营利新闻/RSS；赞助内容有单独标识，项目数据回原披露。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://www.canarymedia.com/rss.rss",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.canarymedia.com/",
+      "page_title": "Canary Media | Covering the clean energy transition",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.canarymedia.com"
+      ],
+      "evidence_urls": [
+        "https://www.canarymedia.com/about",
+        "https://rmi.org/news/canary-media-takes-flight-becoming-independent-of-rmi/"
+      ],
+      "observation_question": "竞争对手在北美取得的是融资、订单还是实际投运能力？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "These Maine heat-pump owners will get discounted power this winter",
+          "url": "https://www.canarymedia.com/articles/heat-pumps/maine-heat-pump-winter-discount",
+          "pubdate": "Wed, 25 Nov 2026 03:30:00 -0500"
+        },
+        {
+          "title": "Uber drivers are flocking to EVs amid high gas prices",
+          "url": "https://www.canarymedia.com/articles/electric-vehicles/uber-drivers-flocking-to-evs",
+          "pubdate": "Wed, 25 Nov 2026 03:30:00 -0500"
+        }
+      ],
+      "feed_source_id": "specialist-canary",
+      "max_items": 40
+    },
+    {
+      "id": "specialist-ieefa",
+      "publisher_id": "ieefa",
+      "name": "IEEFA",
+      "publisher": "IEEFA",
+      "country": "全球",
+      "category": "供需平衡",
+      "url": "https://ieefa.org/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "电力经济、储能、电气化、产业风险与市场政策研究；限定电池和矿山相关议题。",
+      "query_scope": "电力经济、储能、电气化、产业风险与市场政策研究；限定电池和矿山相关议题。",
+      "free_scope": "电力经济、储能、电气化、产业风险与市场政策研究；限定电池和矿山相关议题。 可使用范围：公开报告；研究观点及情景假设单列，不能把分析机构预测当官方事实。",
+      "limitations": "公开报告；研究观点及情景假设单列，不能把分析机构预测当官方事实。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "weekly_research",
+      "method": "portal",
+      "feed_url": null,
+      "collection_method": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "ingestion_mode": "research",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://ieefa.org/",
+      "page_title": "IEEFA | Institute for Energy Economics and Financial Analysis",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "ieefa.org"
+      ],
+      "evidence_urls": [
+        "https://ieefa.org/"
+      ],
+      "observation_question": "融资成本、燃料价格和电价机制会怎样改变储能与矿山电气化项目收益？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": []
+    },
+    {
+      "id": "specialist-esig",
+      "publisher_id": "esig",
+      "name": "Energy Systems Integration Group ESIG",
+      "publisher": "Energy Systems Integration Group ESIG",
+      "country": "美国 / 全球",
+      "category": "技术突破",
+      "url": "https://www.esig.energy/",
+      "group": "专业研究",
+      "publisher_type": "专业研究",
+      "kind": "research",
+      "source_tier": "research",
+      "focus": "构网型变流器、储能并网、运行、可靠性与系统规划的工程研究。",
+      "query_scope": "构网型变流器、储能并网、运行、可靠性与系统规划的工程研究。",
+      "free_scope": "构网型变流器、储能并网、运行、可靠性与系统规划的工程研究。 可使用范围：公开报告、博客和部分研讨材料；会员工作组和闭门资料不采集。",
+      "limitations": "公开报告、博客和部分研讨材料；会员工作组和闭门资料不采集。",
+      "frequency": "按源站发布；专业新闻通常随工作日事件更新，研究/论坛不保证固定发布频率。",
+      "cadence": "daily",
+      "method": "rss",
+      "feed_url": "https://www.esig.energy/feed/",
+      "collection_method": "rss",
+      "collection_fit": "ready_rss",
+      "automation_ready": true,
+      "automation_enabled": true,
+      "automatic_poll_interval": "每日北京时间约07:40；以运行审计为准",
+      "ingestion_mode": "auto",
+      "cost": "只用免费公开部分；不采购数据或API",
+      "access_status": "accessible",
+      "http_status": 200,
+      "resolved_url": "https://www.esig.energy/",
+      "page_title": "ESIG: Solving Our Energy Systems Most Pressing Challenges",
+      "checked_at": "2026-11-25T14:36:43.420921+00:00",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "allowed_hosts": [
+        "www.esig.energy"
+      ],
+      "evidence_urls": [
+        "https://www.esig.energy/"
+      ],
+      "observation_question": "市场所需的容量和电网服务是否超出电芯本身，PCS/EMS成为哪类门槛？",
+      "validation_gate": "商业事实回原始披露；技术性能回论文/试验条件；研究模型保留假设和时点。",
+      "sample_links": [
+        {
+          "title": "So You Want To Buy a Wind Farm (or Solar or Storage Site)?  ",
+          "url": "https://www.esig.energy/so-you-want-to-buy-a-wind-farm-or-solar-or-storage-site/",
+          "pubdate": "Mon, 09 Nov 2026 17:13:18 +0000"
+        },
+        {
+          "title": "New ESIG/Brattle Report Quantifies How Large Loads Affect Electricity Rates for Existing Customers in Four Regions ",
+          "url": "https://www.esig.energy/report-quantifies-how-large-loads-affect-electricity-rates-for-existing-customers/",
+          "pubdate": "Mon, 26 Oct 2026 15:06:17 +0000"
+        }
+      ],
+      "feed_source_id": "specialist-esig",
+      "max_items": 40
+    },
+    {
+      "id": "industry-hunan-yuneng",
+      "publisher_id": "hunan-yuneng",
+      "name": "湖南裕能",
+      "publisher": "湖南裕能",
+      "country": "中国",
+      "category": "原材料",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "pdf",
+      "frequency": "法定年报和重大公告按披露周期更新；本入口为已核验具体原文。",
+      "focus": "CATL碳酸锂供料加工模式、LFP正极、加工费与营运资本。",
+      "query_scope": "CATL碳酸锂供料加工模式、LFP正极、加工费与营运资本。",
+      "free_scope": "CATL碳酸锂供料加工模式、LFP正极、加工费与营运资本。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的年报/公告PDF；不自动追踪后续披露，需按报告期更新检索。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF",
+      "page_title": "湖南裕能2025年报：CATL提供碳酸锂的加工模式",
+      "allowed_hosts": [
+        "static.cninfo.com.cn"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "原料所有权及收入净额法如何改变锂价敞口、毛利率口径和现金占用？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF"
+      ],
+      "sample_links": [
+        {
+          "title": "湖南裕能2025年报：CATL提供碳酸锂的加工模式",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF",
+          "published_at": "2026-04-23"
+        }
+      ]
+    },
+    {
+      "id": "industry-longpan",
+      "publisher_id": "longpan",
+      "name": "龙蟠科技",
+      "publisher": "龙蟠科技",
+      "country": "中国 / 印度尼西亚",
+      "category": "原材料",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-09-16/1224662478.PDF",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "pdf",
+      "frequency": "法定年报和重大公告按披露周期更新；本入口为已核验具体原文。",
+      "focus": "海外LFP供应安排、产能规划、交货条件与客户协作。",
+      "query_scope": "海外LFP供应安排、产能规划、交货条件与客户协作。",
+      "free_scope": "海外LFP供应安排、产能规划、交货条件与客户协作。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的年报/公告PDF；不自动追踪后续披露，需按报告期更新检索。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://static.cninfo.com.cn/finalpage/2025-09-16/1224662478.PDF",
+      "page_title": "龙蟠科技2025-123：CATL海外LFP采购合作",
+      "allowed_hosts": [
+        "static.cninfo.com.cn"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "采购安排如何分解为目标数量、约束性条款、实际交货和有效产能？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://static.cninfo.com.cn/finalpage/2025-09-16/1224662478.PDF"
+      ],
+      "sample_links": [
+        {
+          "title": "龙蟠科技2025-123：CATL海外LFP采购合作",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-09-16/1224662478.PDF",
+          "published_at": "2025-09-16"
+        }
+      ]
+    },
+    {
+      "id": "industry-kaijin",
+      "publisher_id": "kaijin",
+      "name": "凯金新能源",
+      "publisher": "凯金新能源",
+      "country": "中国",
+      "category": "原材料",
+      "url": "https://dgkaijin.com/en/shows/CompanyNews/66.html",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "企业或项目按事件披露；研究任务按主题核验。",
+      "focus": "负极材料、公开CATL供应关系、质量与客户认证。",
+      "query_scope": "负极材料、公开CATL供应关系、质量与客户认证。",
+      "free_scope": "负极材料、公开CATL供应关系、质量与客户认证。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://dgkaijin.com/en/shows/CompanyNews/66.html",
+      "page_title": "凯金：CATL负极供应与质量奖披露",
+      "allowed_hosts": [
+        "dgkaijin.com"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "质量奖或供应关系能证明什么，能否支持供货份额、产品类别或产能利用率判断？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://dgkaijin.com/en/shows/CompanyNews/66.html"
+      ],
+      "sample_links": [
+        {
+          "title": "凯金：CATL负极供应与质量奖披露",
+          "url": "https://dgkaijin.com/en/shows/CompanyNews/66.html",
+          "published_at": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "id": "industry-putailai",
+      "publisher_id": "putailai",
+      "name": "璞泰来",
+      "publisher": "璞泰来",
+      "country": "中国",
+      "category": "原材料",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-06/1224998510.PDF",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "pdf",
+      "frequency": "法定年报和重大公告按披露周期更新；本入口为已核验具体原文。",
+      "focus": "负极、涂覆隔膜、生产设备与材料客户合作。",
+      "query_scope": "负极、涂覆隔膜、生产设备与材料客户合作。",
+      "free_scope": "负极、涂覆隔膜、生产设备与材料客户合作。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的年报/公告PDF；不自动追踪后续披露，需按报告期更新检索。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://static.cninfo.com.cn/finalpage/2026-03-06/1224998510.PDF",
+      "page_title": "璞泰来2025年报：材料与设备客户合作",
+      "allowed_hosts": [
+        "static.cninfo.com.cn"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "材料与设备销售如何区分；年报客户名单是否支持具体品类及份额归因？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://static.cninfo.com.cn/finalpage/2026-03-06/1224998510.PDF"
+      ],
+      "sample_links": [
+        {
+          "title": "璞泰来2025年报：材料与设备客户合作",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-03-06/1224998510.PDF",
+          "published_at": "2026-03-06"
+        }
+      ]
+    },
+    {
+      "id": "industry-talison",
+      "publisher_id": "talison",
+      "name": "Talison Lithium",
+      "publisher": "Talison Lithium",
+      "country": "澳大利亚",
+      "category": "资源与矿权",
+      "url": "https://www.talisonlithium.com/greenbushes-project",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "企业或项目按事件披露；研究任务按主题核验。",
+      "focus": "Greenbushes锂辉石矿、选矿及精矿产品。",
+      "query_scope": "Greenbushes锂辉石矿、选矿及精矿产品。",
+      "free_scope": "Greenbushes锂辉石矿、选矿及精矿产品。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://www.talisonlithium.com/greenbushes-project",
+      "page_title": "Talison：Greenbushes项目与选矿",
+      "allowed_hosts": [
+        "www.talisonlithium.com"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "锂精矿品位、回收率和加工路线如何影响电池级锂盐成本与供给？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://www.talisonlithium.com/greenbushes-project"
+      ],
+      "sample_links": [
+        {
+          "title": "Talison：Greenbushes项目与选矿",
+          "url": "https://www.talisonlithium.com/greenbushes-project",
+          "published_at": null
+        }
+      ]
+    },
+    {
+      "id": "industry-eramet",
+      "publisher_id": "eramet",
+      "name": "Eramet / Eramine",
+      "publisher": "Eramet / Eramine",
+      "country": "法国 / 阿根廷 / 加蓬",
+      "category": "资源与矿权",
+      "url": "https://www.eramet.com/en/news/eramet-delivers-first-lithium-carbonate-from-centenario-dle-plant-in-argentina/",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "企业或项目按事件披露；研究任务按主题核验。",
+      "focus": "Centenario盐湖DLE及碳酸锂、Moanda锰矿与材料加工。",
+      "query_scope": "Centenario盐湖DLE及碳酸锂、Moanda锰矿与材料加工。",
+      "free_scope": "Centenario盐湖DLE及碳酸锂、Moanda锰矿与材料加工。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://www.eramet.com/en/news/eramet-delivers-first-lithium-carbonate-from-centenario-dle-plant-in-argentina/",
+      "page_title": "Eramet：Centenario首次产出碳酸锂",
+      "allowed_hosts": [
+        "eramine.eramet.com",
+        "www.eramet.com"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "首次出料与持续产销有何差距；锰矿如何经过纯化进入电池级锰盐？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://www.eramet.com/en/news/eramet-delivers-first-lithium-carbonate-from-centenario-dle-plant-in-argentina/",
+        "https://eramine.eramet.com/en/activities/production/",
+        "https://www.eramet.com/en/activities/products/manganese/manganese-ores/"
+      ],
+      "sample_links": [
+        {
+          "title": "Eramet：Centenario首次产出碳酸锂",
+          "url": "https://www.eramet.com/en/news/eramet-delivers-first-lithium-carbonate-from-centenario-dle-plant-in-argentina/",
+          "published_at": "2024-12-24"
+        },
+        {
+          "title": "Eramet Eramine：Centenario工艺",
+          "url": "https://eramine.eramet.com/en/activities/production/",
+          "published_at": null
+        },
+        {
+          "title": "Eramet：Moanda锰矿产品",
+          "url": "https://www.eramet.com/en/activities/products/manganese/manganese-ores/",
+          "published_at": null
+        }
+      ]
+    },
+    {
+      "id": "industry-group14",
+      "publisher_id": "group14",
+      "name": "Group14 Technologies",
+      "publisher": "Group14 Technologies",
+      "country": "美国",
+      "category": "技术突破",
+      "url": "https://group14.technology/our-technology/",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "企业或项目按事件披露；研究任务按主题核验。",
+      "focus": "SCC55硅碳复合负极、工艺与商业化材料。",
+      "query_scope": "SCC55硅碳复合负极、工艺与商业化材料。",
+      "free_scope": "SCC55硅碳复合负极、工艺与商业化材料。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://group14.technology/our-technology/",
+      "page_title": "Group14：SCC55硅碳复合负极",
+      "allowed_hosts": [
+        "group14.technology"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "材料性能、首效、膨胀和客户验证是否能同时满足大电芯制造约束？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://group14.technology/our-technology/"
+      ],
+      "sample_links": [
+        {
+          "title": "Group14：SCC55硅碳复合负极",
+          "url": "https://group14.technology/our-technology/",
+          "published_at": null
+        }
+      ]
+    },
+    {
+      "id": "industry-merdeka",
+      "publisher_id": "merdeka",
+      "name": "Merdeka Copper Gold / 电池材料业务",
+      "publisher": "Merdeka Copper Gold / 电池材料业务",
+      "country": "印度尼西亚",
+      "category": "资源与矿权",
+      "url": "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "企业或项目按事件披露；研究任务按主题核验。",
+      "focus": "SCM矿山褐铁矿、矿石准备与HPAL链条的企业进展。",
+      "query_scope": "SCM矿山褐铁矿、矿石准备与HPAL链条的企业进展。",
+      "free_scope": "SCM矿山褐铁矿、矿石准备与HPAL链条的企业进展。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/",
+      "page_title": "Merdeka：SCM—HPAL物料流与SLNC进展",
+      "allowed_hosts": [
+        "merdekacoppergold.com"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "矿石供给、制浆和HPAL投运的衔接是否带来实际可交付MHP增量？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/"
+      ],
+      "sample_links": [
+        {
+          "title": "Merdeka：SCM—HPAL物料流与SLNC进展",
+          "url": "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/",
+          "published_at": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "industry-maersk",
+      "publisher_id": "maersk",
+      "name": "Maersk 马士基",
+      "publisher": "Maersk 马士基",
+      "country": "丹麦 / 全球",
+      "category": "地缘与航运",
+      "url": "https://www.maersk.com/news/articles/2026/11/02/me1-gemini-service-transitions-to-suez-route",
+      "group": "企业与产业",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "企业或项目按事件披露；研究任务按主题核验。",
+      "focus": "具体航线改道、苏伊士通行、地区运营及交付时效。",
+      "query_scope": "具体航线改道、苏伊士通行、地区运营及交付时效。",
+      "free_scope": "具体航线改道、苏伊士通行、地区运营及交付时效。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://www.maersk.com/news/articles/2026/11/02/me1-gemini-service-transitions-to-suez-route",
+      "page_title": "Structural changes to ME1 Gemini service",
+      "allowed_hosts": [
+        "www.maersk.com"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "单一航线复航如何影响实际物流敞口，能否外推至所有船型与航道？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://www.maersk.com/news/articles/2026/11/02/me1-gemini-service-transitions-to-suez-route",
+        "https://www.maersk.com/news/articles/2026/11/09/india-middle-east-and-africa-market-update-november"
+      ],
+      "sample_links": [
+        {
+          "title": "Structural changes to ME1 Gemini service",
+          "url": "https://www.maersk.com/news/articles/2026/11/02/me1-gemini-service-transitions-to-suez-route",
+          "published_at": "2026-11-02"
+        },
+        {
+          "title": "IMEA Maersk Market Update — November 2026",
+          "url": "https://www.maersk.com/news/articles/2026/11/09/india-middle-east-and-africa-market-update-november",
+          "published_at": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "industry-ekonid",
+      "publisher_id": "ekonid",
+      "name": "德国—印尼工商会 EKONID",
+      "publisher": "德国—印尼工商会 EKONID",
+      "country": "德国 / 印度尼西亚",
+      "category": "贸易与政策",
+      "url": "https://indonesien.ahk.de/de/infohub_events/online-introduction-session-ev-battery-recycling-pilot-project-in-indonesia",
+      "group": "行业研究机构",
+      "publisher_type": "商会项目原始说明",
+      "source_tier": "primary",
+      "kind": "primary",
+      "method": "portal",
+      "frequency": "企业或项目按事件披露；研究任务按主题核验。",
+      "focus": "印尼电动车电池回收试点、实施伙伴与项目阶段。",
+      "query_scope": "印尼电动车电池回收试点、实施伙伴与项目阶段。",
+      "free_scope": "印尼电动车电池回收试点、实施伙伴与项目阶段。 仅使用免费公开原文及其事实。",
+      "limitations": "入口为已核验的企业/项目原文；未配置定时采集或API。 公开合作和项目事实不等于已披露供货份额、客户定价、实际良率或量产利用率。",
+      "cost": "免费公开原文；无付费接口",
+      "checked_at": "2026-11-25T14:52:24+00:00",
+      "verified_at": "2026-11-25",
+      "access_status": "accessible",
+      "resolved_url": "https://indonesien.ahk.de/de/infohub_events/online-introduction-session-ev-battery-recycling-pilot-project-in-indonesia",
+      "page_title": "Online Introduction Session: EV Battery Recycling Pilot Project in Indonesia",
+      "allowed_hosts": [
+        "indonesien.ahk.de"
+      ],
+      "feed_url": null,
+      "collection_fit": "research_verified",
+      "automation_ready": false,
+      "automation_enabled": false,
+      "collection_method": null,
+      "ingestion_mode": "research",
+      "automatic_poll_interval": "按主题研究与原文核验任务访问",
+      "observation_question": "回收试点具体处理什么材料、由谁实施，与贸易协定或商业采购是否存在直接联系？",
+      "validation_gate": "根据原始披露区分签约、规划、开工、首次产出和稳定运营；不把上下游企业案例默认归因为CATL供货关系。",
+      "evidence_urls": [
+        "https://indonesien.ahk.de/de/infohub_events/online-introduction-session-ev-battery-recycling-pilot-project-in-indonesia"
+      ],
+      "sample_links": [
+        {
+          "title": "Online Introduction Session: EV Battery Recycling Pilot Project in Indonesia",
+          "url": "https://indonesien.ahk.de/de/infohub_events/online-introduction-session-ev-battery-recycling-pilot-project-in-indonesia",
+          "published_at": "2026-03-31"
+        }
+      ]
     }
-  ]
+  ],
+  "social_accounts": [
+    {
+      "publisher_id": "catl",
+      "name": "宁德时代 CATL",
+      "platform": "X",
+      "handle": "@catl_official",
+      "url": "https://twitter.com/catl_official",
+      "official_verification_url": "https://www.catl.com/en/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "电芯技术、海外合作、客户和回收服务",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "quantumscape",
+      "name": "QuantumScape",
+      "platform": "X",
+      "handle": "@QuantumScapeCo",
+      "url": "https://x.com/QuantumScapeCo",
+      "official_verification_url": "https://www.quantumscape.com/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "固态样品、客户验证和制造路线",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "fortescue",
+      "name": "Fortescue",
+      "platform": "X",
+      "handle": "@FortescueGlobal",
+      "url": "https://x.com/FortescueGlobal",
+      "official_verification_url": "https://www.fortescue.com/en",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "矿山电动化、绿电和供应链",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "umicore",
+      "name": "Umicore",
+      "platform": "X",
+      "handle": "@UmicoreGroup",
+      "url": "https://x.com/UmicoreGroup",
+      "official_verification_url": "https://www.umicore.com/en/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "正极材料、回收与产能调整",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "iea",
+      "name": "国际能源署 IEA",
+      "platform": "X",
+      "handle": "@iea",
+      "url": "https://x.com/iea",
+      "official_verification_url": "https://www.iea.org/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "电池、关键矿物和能源报告",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "us-doe",
+      "name": "美国能源部 DOE",
+      "platform": "X",
+      "handle": "@energy",
+      "url": "https://twitter.com/energy",
+      "official_verification_url": "https://www.energy.gov/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "能源储能研发和制造支持",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "sandia",
+      "name": "Sandia National Laboratories",
+      "platform": "X",
+      "handle": "@SandiaLabs",
+      "url": "https://www.twitter.com/SandiaLabs",
+      "official_verification_url": "https://www.sandia.gov/ess/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "储能安全、热失控测试、系统可靠性、长时储能与公开工程工具。",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "nlr",
+      "name": "National Laboratory of the Rockies",
+      "platform": "X",
+      "handle": "@NatLabRockies",
+      "url": "https://x.com/NatLabRockies",
+      "official_verification_url": "https://www.nlr.gov/transportation/energy-storage",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "电池寿命、热安全、极快充、退役再利用与多尺度模型。",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "ember",
+      "name": "Ember",
+      "platform": "X",
+      "handle": "@ember_energy",
+      "url": "https://x.com/ember_energy",
+      "official_verification_url": "https://ember-energy.org/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "公开电力数据、灵活性和储能研究；聚焦CATL海外储能市场及矿山所在国电力结构。",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "informa",
+      "name": "Energy-Storage.news",
+      "platform": "X",
+      "handle": "@energystoragenw",
+      "url": "https://twitter.com/energystoragenw",
+      "official_verification_url": "https://www.energy-storage.news/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "BESS订单、系统集成商、产线、材料和电芯制造；合并Energy-Storage.news、PV Tech与Battery Technology入口。",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "benchmark",
+      "name": "Benchmark Mineral Intelligence",
+      "platform": "X",
+      "handle": "@benchmarkmin",
+      "url": "https://x.com/benchmarkmin",
+      "official_verification_url": "https://www.benchmarkminerals.com/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "锂、镍、钴、石墨、正负极和黑粉的公开行业评论；Rho Motion同集团归并。",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    },
+    {
+      "publisher_id": "pv-magazine",
+      "name": "pv magazine",
+      "platform": "X",
+      "handle": "@pvmagazine",
+      "url": "https://x.com/pvmagazine",
+      "official_verification_url": "https://www.pv-magazine.com/",
+      "verification_method": "发布机构官网页脚/社交链接反向验证账号；非仅依赖蓝标或显示名称。",
+      "verified_at": "2026-11-25T14:36:43.420921+00:00",
+      "focus": "储能招标、并网、电站收益、技术与回收；优先ESS News与储能栏目，排除泛光伏组件营销。",
+      "access_method": "公开搜索索引与无需登录可读原帖；以官网披露、论文或项目文件交叉核验。",
+      "status": "account_verified_search_watchlist",
+      "automation_enabled": false,
+      "limitations": "账号身份已从官网确认，未接入X付费API。索引可能不完整或滞后；登录受限内容不读取；原帖未核验的观点不进入主屏结论。",
+      "api_policy_url": "https://developer.x.com/",
+      "count_as_new_publisher": false
+    }
+  ],
+  "evidence_policy": {
+    "primary": "原始披露可用于确认公开发布的事实；目标、公告和实际达产分别表述。",
+    "research": "用于解释机制和情景；模型假设、样品条件和时间口径保留。",
+    "media": "用于发现主题与交叉检索；关键商业/技术主张回原始披露、论文或测试。",
+    "community": "论坛与X只作为议题发现；匿名帖、流量与蓝标不等于证据。核验前不进入主屏结论。"
+  },
+  "social_observation_policy": {
+    "method": "公开搜索索引与无需登录可读原帖，回官网/论文/项目文件核验",
+    "identity_verification": "官网社交链接反向验证",
+    "api_enabled": false,
+    "api_policy_url": "https://developer.x.com/",
+    "coverage": "不承诺X全量、实时或完整历史；无可核验原帖时不发布帖子数据。"
+  }
 }

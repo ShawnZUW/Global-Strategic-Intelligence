@@ -1,5 +1,49 @@
 # 数据更新约定
 
+## 当前展示目标
+
+从宁德时代的电池产业投资视角，回答变化影响什么材料、技术、成本、供应、市场与项目收益。主界面呈现有证据的结论和完整脉络；不要以新闻标题数量代替分析。内部采购、投资持股、库存、客户合同与船货敞口均不在公开版假定范围。
+
+### 三层内容
+
+- data/chain.json：稳定的化学与产业链知识图谱，含资源、加工、电池级化工、正负极、辅材、电芯制造、动力包、储能、终端与回收。它是行业路线与公开合作事实，不能从通用边推断具体采购关系。
+- data/insights.json：重点议题的结论、时间线、材料影响、因果链、经营问题及逐条证据；主界面优先展示。每天保持原有有效分析，只依据新证据更新阶段和结论。
+- data/latest.json：已核验的具体事实。data/feed-latest.json仅用于发现线索；媒体、博客、论坛、X均不能不经原文核验自动写入结论层。
+
+### 发布门槛
+
+1. 每条重点分析至少有两个实际读过、能支持关键主张的具体来源。政府、公司、原始论文和研究机构分别标注；企业性能自述不能当独立测试验证。
+2. 原始事实保留来源ID；标题、事实、日期、单位、阶段逐项一致。正文只说证据支持的结果，不填充待补充字段，不制造百分比置信度。确有影响解释的边界必须讲清楚。
+3. 因果分析包含为何现在重要、上游变化、传导环节、对CATL的条件性影响，以及哪些后续事实会改变判断。没有实际敞口数据时，不估算公司损益。
+4. 对协议、产能、技术和回收，分别区分签署/生效、计划/投产/合格出货、实验性能/制造良率/客户采用、来料吨/黑粉吨/元素回收率/再生含量。
+5. 公开渠道有时无法观察客户报价、批次良率、料源合同、实际库存和货船。可说明它们为什么影响判断，但不得伪装为已经知道的内幕。
+
+### X、博客、媒体与论坛
+
+先读取data/source-catalog.json中的source_tier、observation_question与social_accounts，围绕当前重点议题搜索公开新信息。X账号身份须可从官网确认；帖子内容要再回公告、论文或项目文件验证。没有可读取原帖时记录本次查询限制，不虚构已抓帖、互动量或完整覆盖。不使用付费API、不绕登录或访问控制。
+
+媒体/论坛源由每日采集器产生独立线索；来源类型不代表该条内容已核验。进入主界面的结果必须经过上述发布门槛。工作区可以保留候选标题，首页不能摆未核实传闻或待办占位。
+
+### 深度分析JSON约定
+
+data/insights.json包含meta、sources和insights。sources使用稳定id、title、url、published_at、publisher等字段。每张insight至少保留：
+
+- id、title、thesis、why_now、as_of、categories、tags、chain_routes、related_event_ids；
+- facts：text与source_ids；
+- timeline：date、event、stage、source_ids，可用track区分并行的事实链；
+- effect_chain：step、text、kind、source_ids，机制与条件性研判必须明确；
+- catl_relevance：dimension与point；counterpoint；
+- watch_signals：indicator、interpretation、source_ids；
+- management_question、source_ids、claimconfidence（证据性质和推论边界，不用伪精确概率）。
+
+适用时保留material_exposure，分别说明材料、传导机制与适用边界。新版本不得删除已有字段、合作类别或化学区别。没有新证据的旧条目保持原始日期，不以任务运行时间刷新成新事件。
+
+### 同步发布范围
+
+战略研究任务更新latest、当天history、manifest，同时更新insights及data/insights-history/YYYY-MM-DD.json。写入前读取最新main，所有本轮数据使用一个提交，拒绝覆盖未知并发修改。不要修改独立feed、governance、源配置、页面代码或权限。chain.json仅作为分析映射基础，日常任务不自行改写图谱。
+
+发布前运行python3 scripts/validate_content.py，发布后核对Pages与网页数据。核验失败的候选不进入主界面；实际查过哪些来源、哪些访问失败，放在审计与日报里，不用占位结论撑满首页。
+
 ## 研究范围
 
 电池产业投资视角。重点监控资源控制与矿权、原料价格异常、供给短缺/过剩、冲突及海运贸易通道、关键技术瓶颈突破、竞争对手产能与客户、并购合资包销等合作、矿山零碳、公开企业治理。

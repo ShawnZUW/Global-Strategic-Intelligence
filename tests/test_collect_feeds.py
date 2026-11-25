@@ -113,6 +113,45 @@ class FeedTests(unittest.TestCase):
         self.assertEqual(sum(x["source_id"] == "specialist" for x in data["items"]), 1)
         self.assertLessEqual(sum(x["source_id"] == "official" for x in data["items"]), feeds.MAX_PER_SOURCE)
 
+    def test_media_and_community_provenance_never_becomes_official_evidence(self):
+        media = dict(SOURCE, id="media", publisher_type="专业媒体", source_tier="media")
+        community = dict(SOURCE, id="community", publisher_type="论坛社区", source_tier="community")
+
+        def news(source):
+            return [{"title": "LFP cell testing discussion", "url": source["url"] + "/" + source["id"],
+                     "published_at": None, "source_updated_at": None}], {"http_status": 200}
+
+        initial, state = feeds.collect({"sources": [media, community]}, {}, {}, NOW, news)
+        for row in initial["items"] + initial["sources"]:
+            self.assertIn(row["source_tier"], {"media", "community"})
+            self.assertNotIn("官方", row["evidence_level"])
+            self.assertEqual(row["publisher_type"], "专业媒体" if row["source_tier"] == "media" else "论坛社区")
+        def unavailable(source):
+            raise TimeoutError("source timeout")
+        failed, _ = feeds.collect({"sources": [media, community]}, initial, state, NOW + timedelta(days=1), unavailable)
+        self.assertEqual(failed["items"], initial["items"])
+
+    def test_source_limit_caps_new_and_retained_items_without_changing_first_seen(self):
+        source = dict(SOURCE, source_tier="community", max_items=8)
+        def news(s):
+            return [{"title": "LFP balancing observation " + str(i),
+                     "url": "https://official.example/observation/" + str(i),
+                     "published_at": "2026-11-24T00:00:00Z", "source_updated_at": None}
+                    for i in range(12)], {"http_status": 200}
+        limited, _ = feeds.collect({"sources": [source]}, {}, {}, NOW, news)
+        self.assertEqual(len(limited["items"]), 8)
+        self.assertEqual(limited["sources"][0]["max_items"], 8)
+        self.assertEqual(limited["sources"][0]["relevant_count"], 12)
+        initial, state = feeds.collect({"sources": [dict(source, max_items=40)]}, {}, {}, NOW, news)
+        def unavailable(s):
+            raise TimeoutError("source timeout")
+        failed, state2 = feeds.collect({"sources": [source]}, initial, state, NOW + timedelta(days=1), unavailable)
+        self.assertEqual(len(failed["items"]), 8)
+        self.assertEqual(state2["seen"], state["seen"])
+        self.assertTrue(all(r["first_seen_at"] == feeds.iso(NOW) and r["last_seen_at"] == feeds.iso(NOW)
+                            for r in failed["items"]))
+        self.assertEqual(failed["sources"][0]["last_success_at"], feeds.iso(NOW))
+
     def test_history_is_last_thirty_calendar_days_and_newest_first(self):
         data, state = feeds.collect({"sources": [SOURCE]}, {}, {}, NOW, self.fetch)
         with tempfile.TemporaryDirectory() as directory:

@@ -1,0 +1,3734 @@
+{
+  "meta": {
+    "as_of": "2026-11-25",
+    "title": "从矿物到终端：电池化学与产业链",
+    "scope": "宁德时代产业投资观察视角；基础路线是行业通用工艺，合作关系仅依据公开披露。",
+    "diagram_note": "节点和箭头为化学/物料或价值链关系，不代表每家工厂的完整PFD、唯一工艺或CATL实际采购BOM；晶体图为结构原理示意。",
+    "stage_labels": [
+      "资源与矿物",
+      "冶炼与化工",
+      "活性与辅助材料",
+      "电极与电芯制造",
+      "系统集成",
+      "终端应用",
+      "回收闭环"
+    ],
+    "chemistry_note": "所有formula描述节点材料或状态，不将整张流程图视为配平化学反应方程。",
+    "geography_note": "产地为公开产业观察范围，代表项目不等同CATL已确认供应商；资源量、矿石产量、金属含量、精炼产能和合格材料交付分别观察。",
+    "sodium_note": "钠离子是独立对照路线；既有锂盐、LiPF6、正铝负铜节点不接入钠电路线。共享的是适配后的系统层级，不是相同电芯配方。",
+    "generated_at": "2026-11-25T14:52:14Z"
+  },
+  "routes": [
+    {
+      "id": "lfp",
+      "title": "LFP / LMFP",
+      "color": "#73ddbb",
+      "thesis": "以锂、铁、磷为主；LMFP增加锰。成本、压实密度、快充和寿命共同决定可用价值。"
+    },
+    {
+      "id": "nmc",
+      "title": "三元 NMC / NCA",
+      "color": "#bb9cff",
+      "thesis": "镍钴盐→三元前驱体→加锂烧结。高能量密度同时要求结构、界面与热安全控制。"
+    },
+    {
+      "id": "anode",
+      "title": "石墨 / 硅碳",
+      "color": "#e8bc79",
+      "thesis": "天然和人造石墨是不同原料与加工路径；硅碳通过复合设计提高容量，同时处理膨胀与首次锂损失。"
+    },
+    {
+      "id": "ess",
+      "title": "储能系统",
+      "color": "#73bdf3",
+      "thesis": "电芯形成DC储能单元，再与PCS、EMS、温控、消防和并网设备组成可交付系统。"
+    },
+    {
+      "id": "recycling",
+      "title": "回收闭环",
+      "color": "#f28d9f",
+      "thesis": "生产废料和退役电池经分选进入不同回收路径，再回到锂盐、金属盐、活性材料或集流体环节。"
+    },
+    {
+      "id": "sodium",
+      "title": "钠离子对照",
+      "color": "#f4d270",
+      "thesis": "钠盐、硬碳与专用正极形成独立化学路线；可采用双铝集流体，减少对锂和负极铜箔的依赖。成本优势仍取决于硬碳、制造良率、能量密度和系统效率。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "li_rock",
+      "stage": 0,
+      "title": "硬岩锂矿（锂辉石）",
+      "formula": "LiAlSi₂O₆",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "锂辉石矿石"
+      ],
+      "process": "采矿后破碎、重介质/浮选等选矿；矿石、精矿和电池级锂盐是三种不同产品。",
+      "outputs": [
+        "锂辉石精矿"
+      ],
+      "regions": [
+        "澳大利亚、中国、津巴布韦、巴西等矿石锂产地；Greenbushes为代表项目",
+        "与智利、阿根廷、中国盐湖路线合看；产地名单不代表CATL采购清单"
+      ],
+      "strategic_impact": "产量要换算品位、回收率和精矿到盐的加工能力；矿山有资源不等于可交付电池级盐。",
+      "source_ids": [
+        "talison",
+        "li-refining",
+        "usgs-mcs2026"
+      ]
+    },
+    {
+      "id": "li_brine",
+      "stage": 0,
+      "title": "盐湖卤水",
+      "formula": "Li⁺ / LiCl(aq)",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "含锂卤水"
+      ],
+      "process": "不同盐湖镁锂比、杂质和水条件差异大；蒸发浓缩或直接提锂后仍需净化和盐产品转化。",
+      "outputs": [
+        "富锂溶液"
+      ],
+      "regions": [
+        "智利、阿根廷、中国等卤水锂产地",
+        "代表项目：Salar de Atacama、Centenario-Ratones；不等同CATL采购关系"
+      ],
+      "strategic_impact": "观察取水/回灌、回收率和连续运行；DLE性能必须在具体卤水条件下比较。",
+      "source_ids": [
+        "sqm",
+        "eramet-dle",
+        "eramet-production",
+        "usgs-mcs2026"
+      ]
+    },
+    {
+      "id": "ni_ore",
+      "stage": 0,
+      "title": "红土镍矿",
+      "formula": "Ni / Co含矿物",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "褐铁矿型矿",
+        "腐泥土型矿"
+      ],
+      "process": "矿层决定后续路线：褐铁矿常接HPAL，较高镍腐泥土常接RKEF。矿石湿吨不能直接当镍金属吨。",
+      "outputs": [
+        "镍矿浆或冶炼入炉矿"
+      ],
+      "regions": [
+        "印度尼西亚、菲律宾等红土镍矿产地；代表区域Halmahera、Sulawesi",
+        "俄罗斯、加拿大的硫化矿另列，不能全部套入HPAL/RKEF"
+      ],
+      "strategic_impact": "应盯矿配额、品位、硫酸、能源与尾渣处置，而不仅是LME镍价。",
+      "source_ids": [
+        "mdka-hpal",
+        "catl-indonesia",
+        "usgs-indonesia",
+        "usgs-philippines"
+      ]
+    },
+    {
+      "id": "co_ore",
+      "stage": 0,
+      "title": "钴共伴生矿",
+      "formula": "Cu–Co / Ni–Co",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "铜钴共伴生矿",
+        "含钴红土镍矿"
+      ],
+      "process": "刚果（金）铜钴矿与印尼含钴红土镍矿是不同来源；后者可经HPAL产出镍钴中间品。钴供给还受伴生主金属生产与出口政策影响。",
+      "outputs": [
+        "钴氢氧化物等中间品"
+      ],
+      "regions": [
+        "刚果（金）：Lualaba的TFM / KFM；印度尼西亚：镍钴共生产业",
+        "产业产地与项目样本，不代表全部为CATL供应商"
+      ],
+      "strategic_impact": "钴出口受阻与矿山仍在生产可以同时发生；应分库存、出口、到岸供应。",
+      "source_ids": [
+        "cmoc",
+        "usgs-mcs2026",
+        "usgs-indonesia"
+      ]
+    },
+    {
+      "id": "mn_ore",
+      "stage": 0,
+      "title": "锰矿",
+      "formula": "Mn氧化物",
+      "routes": [
+        "nmc",
+        "recycling",
+        "lfp"
+      ],
+      "inputs": [
+        "氧化锰矿"
+      ],
+      "process": "洗选富集后，进入不同用途的冶炼/湿法净化流程。钢铁级锰矿供应不能直接等同电池级硫酸锰供应。",
+      "outputs": [
+        "锰精矿/化工原料"
+      ],
+      "regions": [
+        "南非、加蓬、加纳、澳大利亚等锰矿产地；Moanda为代表项目",
+        "矿石供应不等于电池级锰盐供应；不代表CATL采购清单"
+      ],
+      "strategic_impact": "LMFP提高的是电池级高纯锰化工需求，不能只用锰矿总量推断充足。",
+      "source_ids": [
+        "eramet-mn",
+        "reagents",
+        "usgs-mcs2026"
+      ]
+    },
+    {
+      "id": "graphite_ore",
+      "stage": 0,
+      "title": "天然鳞片石墨",
+      "formula": "C",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "含石墨矿石"
+      ],
+      "process": "采矿、破碎、浮选得到精矿；仍需形貌控制、提纯和包覆才能成为负极材料。",
+      "outputs": [
+        "天然石墨精矿"
+      ],
+      "regions": [
+        "中国、莫桑比克、马达加斯加、坦桑尼亚、巴西等天然石墨产地",
+        "Balama为代表矿山；天然石墨精矿与已认证负极材料分开观察"
+      ],
+      "strategic_impact": "矿端扩产对电芯供给的作用取决于后续加工和客户认证。",
+      "source_ids": [
+        "syrah-mine",
+        "syrah-aam",
+        "usgs-graphite2026"
+      ]
+    },
+    {
+      "id": "carbon_feed",
+      "stage": 0,
+      "title": "焦类与碳源",
+      "formula": "含碳原料",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "石油焦/针状焦",
+        "沥青等碳源"
+      ],
+      "process": "人工石墨由可石墨化碳原料制备；原料结构、硫/金属杂质与批次一致性影响后续性能。",
+      "outputs": [
+        "人造石墨前驱碳"
+      ],
+      "regions": [
+        "中国与其他焦类/负极材料生产地区"
+      ],
+      "strategic_impact": "负极的成本风险包含焦价、石墨化电价和良率，天然石墨价格不是完整替代指标。",
+      "source_ids": [
+        "graphite-process",
+        "putailai"
+      ]
+    },
+    {
+      "id": "fe_p_feed",
+      "stage": 0,
+      "title": "铁源与磷源",
+      "formula": "Fe盐 / H₃PO₄",
+      "routes": [
+        "lfp",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "铁盐/铁源",
+        "磷酸/磷源"
+      ],
+      "process": "铁、磷必须达到对应材料纯度和粒径要求；后续可经磷酸铁或其他合成路线形成LFP。",
+      "outputs": [
+        "磷酸铁原料"
+      ],
+      "regions": [
+        "中国等磷化工与正极材料生产地区"
+      ],
+      "strategic_impact": "大宗铁磷资源较广不代表高品质前驱体、低杂质磷酸和加工环节没有瓶颈。",
+      "source_ids": [
+        "lfp-synthesis",
+        "hunan-yuneng"
+      ]
+    },
+    {
+      "id": "cu_al_feed",
+      "stage": 0,
+      "title": "铜与铝原料",
+      "formula": "Cu / Al",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "精炼铜",
+        "铝材"
+      ],
+      "process": "通过电解沉积或轧制等制成对应箔材；铜价、铝价与电池级薄箔加工费须分开。",
+      "outputs": [
+        "电池集流体原料"
+      ],
+      "regions": [
+        "铜铝供应链与电池箔加工地区"
+      ],
+      "strategic_impact": "薄箔强度、延伸率、针孔与涂布良率决定可用性；金属量充足不等于超薄箔稳定。",
+      "source_ids": [
+        "cell-components",
+        "putailai"
+      ]
+    },
+    {
+      "id": "hard_li_process",
+      "stage": 1,
+      "title": "焙烧浸出与除杂",
+      "formula": "Li₂SO₄(aq)",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "锂辉石精矿",
+        "硫酸",
+        "碱/石灰等"
+      ],
+      "process": "常规路线先晶型转化焙烧，再酸化、水浸与除杂；存在碱法等替代工艺，工厂不能仅凭矿种推定唯一流程。",
+      "outputs": [
+        "净化含锂溶液",
+        "锂渣/副盐"
+      ],
+      "regions": [
+        "硬岩锂化工厂"
+      ],
+      "strategic_impact": "硫酸、纯碱、能源、收率和残渣去向共同决定吨盐成本。",
+      "source_ids": [
+        "li-refining",
+        "li-alkali"
+      ]
+    },
+    {
+      "id": "brine_process",
+      "stage": 1,
+      "title": "盐湖浓缩与提锂",
+      "formula": "富锂溶液",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "卤水",
+        "吸附/萃取等介质或蒸发系统"
+      ],
+      "process": "蒸发路线浓缩并去杂；DLE选择性提锂后还需再生、浓缩、净化和盐转化。DLE不是无需水和化学品。",
+      "outputs": [
+        "制盐用锂溶液"
+      ],
+      "regions": [
+        "Atacama / Centenario代表不同工艺"
+      ],
+      "strategic_impact": "缩短提锂时间不自动等于低成本；要把试剂循环、水、能源、吸附剂寿命计入。",
+      "source_ids": [
+        "sqm",
+        "eramet-production"
+      ]
+    },
+    {
+      "id": "li_carbonate",
+      "stage": 1,
+      "title": "电池级碳酸锂",
+      "formula": "Li₂CO₃",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "净化锂溶液",
+        "Na₂CO₃等"
+      ],
+      "process": "沉淀、过滤、洗涤和精制形成电池级锂盐；控制Na、Ca、Mg等杂质。可供LFP，也可用于部分三元工艺或再转氢氧化锂。",
+      "outputs": [
+        "碳酸锂"
+      ],
+      "regions": [
+        "盐湖与矿石锂化工产地"
+      ],
+      "strategic_impact": "盐种、杂质指标、交货地和客户认证共同决定可替代性；‘锂盐’不能只看一个价格。",
+      "source_ids": [
+        "sqm",
+        "li-refining",
+        "nmc-synthesis"
+      ]
+    },
+    {
+      "id": "li_hydroxide",
+      "stage": 1,
+      "title": "电池级氢氧化锂",
+      "formula": "LiOH·H₂O",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "锂溶液或Li₂CO₃",
+        "碱/石灰等"
+      ],
+      "process": "经转化、结晶和精制形成单水氢氧化锂；高镍层状正极常采用，具体路线由配方与热处理决定。",
+      "outputs": [
+        "单水氢氧化锂"
+      ],
+      "regions": [
+        "硬岩/盐湖后续锂化工产地"
+      ],
+      "strategic_impact": "碳酸锂与氢氧化锂可转化但有成本、时间与质量约束，价差可能持续。",
+      "source_ids": [
+        "li-refining",
+        "nmc-synthesis"
+      ]
+    },
+    {
+      "id": "hpal",
+      "stage": 1,
+      "title": "高压酸浸 HPAL",
+      "formula": "MHP",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "褐铁矿型红土镍矿",
+        "硫酸",
+        "中和剂"
+      ],
+      "process": "高压酸浸并分离除杂、沉淀得到镍钴混合氢氧化物MHP；它仍是中间品，需再精炼至电池级盐。",
+      "outputs": [
+        "Ni-Co混合氢氧化物"
+      ],
+      "regions": [
+        "印度尼西亚：SCM—IMIP等产业样本"
+      ],
+      "strategic_impact": "硫酸供应、酸耗、蒸汽、设备可用率、尾渣和达产速度可改变成本优势。",
+      "source_ids": [
+        "mdka-hpal",
+        "reagents"
+      ]
+    },
+    {
+      "id": "rkef",
+      "stage": 1,
+      "title": "回转窑电炉 RKEF",
+      "formula": "FeNi / NPI",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "腐泥土型红土镍矿",
+        "电力/还原剂"
+      ],
+      "process": "干燥预还原后电炉冶炼为镍铁/NPI，通常面向不锈钢；转入电池链还需转高冰镍等额外工序和精炼。",
+      "outputs": [
+        "镍铁/NPI；可另行转化镍中间品"
+      ],
+      "regions": [
+        "印度尼西亚与其他红土镍冶炼地区"
+      ],
+      "strategic_impact": "镍铁产能不等于电池级镍盐产能；电力碳强度与转换成本改变欧洲材料竞争力。",
+      "source_ids": [
+        "mdka-hpal",
+        "reagents"
+      ]
+    },
+    {
+      "id": "ncm_salts",
+      "stage": 1,
+      "title": "镍钴电池级盐",
+      "formula": "NiSO₄ / CoSO₄",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "Ni/Co中间品",
+        "酸碱及萃取剂"
+      ],
+      "process": "镍钴中间品经浸出、除杂、萃取与结晶/配液，形成电池级镍盐和钴盐；再与独立锰盐按配方进入共沉淀。",
+      "outputs": [
+        "电池级镍盐",
+        "电池级钴盐"
+      ],
+      "regions": [
+        "金属精炼与前驱体制造地区"
+      ],
+      "strategic_impact": "矿权之外，还要验证盐的杂质控制、批次稳定性和合格客户供货。",
+      "source_ids": [
+        "nmc-synthesis",
+        "reagents"
+      ]
+    },
+    {
+      "id": "fe_phosphate",
+      "stage": 1,
+      "title": "磷酸铁前驱体",
+      "formula": "FePO₄·xH₂O",
+      "routes": [
+        "lfp",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "铁源",
+        "磷源",
+        "氧化/沉淀试剂"
+      ],
+      "process": "沉淀、洗涤、干燥等控制Fe/P比、杂质、粒径与形貌。它不含锂，不能直接当LFP正极。",
+      "outputs": [
+        "磷酸铁"
+      ],
+      "regions": [
+        "LFP正极产业配套地区"
+      ],
+      "strategic_impact": "高压实LFP的价值来自材料与工艺配合，不能只按磷酸铁吨位评价。",
+      "source_ids": [
+        "lfp-synthesis",
+        "hunan-yuneng"
+      ]
+    },
+    {
+      "id": "natural_processing",
+      "stage": 1,
+      "title": "球化提纯与包覆",
+      "formula": "球形高纯C",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "天然石墨精矿",
+        "提纯试剂/热处理",
+        "包覆碳源"
+      ],
+      "process": "粉碎与球化、提纯、表面包覆构成主要增值环节；不同厂工艺顺序与提纯方式不同。",
+      "outputs": [
+        "天然石墨负极活性材料"
+      ],
+      "regions": [
+        "莫桑比克矿→美国Vidalia为一条已披露产业路径"
+      ],
+      "strategic_impact": "球化收率、纯度、循环和客户认证影响有效供给，矿山精矿不能直供电芯。",
+      "source_ids": [
+        "syrah-aam",
+        "graphite-structure"
+      ]
+    },
+    {
+      "id": "synthetic_processing",
+      "stage": 1,
+      "title": "炭化与石墨化",
+      "formula": "有序层状C",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "焦类",
+        "沥青等碳源",
+        "电力"
+      ],
+      "process": "粉碎/造粒、炭化、高温石墨化及分级包覆；工艺组合依产品而变。",
+      "outputs": [
+        "人造石墨负极"
+      ],
+      "regions": [
+        "负极材料工厂及配套石墨化基地"
+      ],
+      "strategic_impact": "电价、炉次能耗、收率与碳足迹影响负极竞争力，值得联系绿电与矿山零碳机会。",
+      "source_ids": [
+        "graphite-process",
+        "putailai"
+      ]
+    },
+    {
+      "id": "reagents",
+      "stage": 1,
+      "title": "关键化工与公用工程",
+      "formula": "H₂SO₄ / NaOH / Na₂CO₃",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "硫/硫酸",
+        "纯碱/烧碱",
+        "氨、水、氧气、能源"
+      ],
+      "process": "酸碱参与提锂、镍钴浸出、共沉淀和回收；同一化工供给变化可同时影响多个材料环节。",
+      "outputs": [
+        "化工试剂与公用工程服务"
+      ],
+      "regions": [
+        "矿冶、材料和回收园区"
+      ],
+      "strategic_impact": "应把硫酸、烧碱、蒸汽、水和电作为跨链风险变量，避免只监测锂镍钴金属。",
+      "source_ids": [
+        "reagents"
+      ]
+    },
+    {
+      "id": "pcam",
+      "stage": 2,
+      "title": "三元前驱体 pCAM",
+      "formula": "NiₓCoᵧMn𝓏(OH)₂",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "Ni/Co/Mn盐",
+        "NaOH",
+        "氨络合体系"
+      ],
+      "process": "控制配比、pH与反应条件共沉淀，洗涤干燥后形成前驱体；x+y+z=1，尚未加入正极所需的锂。",
+      "outputs": [
+        "三元氢氧化物前驱体"
+      ],
+      "regions": [
+        "前驱体专业厂/正极一体化厂"
+      ],
+      "strategic_impact": "前驱体控制组分和颗粒结构；吨位相同也不代表可替换，需看杂质、形貌和后续认证。",
+      "source_ids": [
+        "nmc-synthesis"
+      ]
+    },
+    {
+      "id": "nmc",
+      "stage": 2,
+      "title": "三元正极 NMC",
+      "formula": "LiNiₓCoᵧMn𝓏O₂",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "三元前驱体",
+        "LiOH·H₂O或Li₂CO₃",
+        "氧气等"
+      ],
+      "process": "混锂、烧结、粉碎筛分和表面处理；形成层状氧化物。NMC811等数字是Ni:Mn:Co配比，命名顺序须核对。",
+      "outputs": [
+        "NMC正极活性材料"
+      ],
+      "regions": [
+        "BASF等正极厂；与CATL关系见合作表"
+      ],
+      "strategic_impact": "提高镍占比可提升容量，同时增加界面、残碱、湿敏与热稳定性控制要求。",
+      "source_ids": [
+        "nmc-synthesis",
+        "basf-catl"
+      ]
+    },
+    {
+      "id": "nca",
+      "stage": 2,
+      "title": "镍钴铝正极 NCA",
+      "formula": "LiNi₁₋ₓ₋ᵧCoₓAlᵧO₂",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "Ni/Co/Al前驱原料",
+        "锂盐"
+      ],
+      "process": "经组分控制、锂化与热处理形成层状正极；Al不同于NMC中的Mn，二者不能混称同一配方。",
+      "outputs": [
+        "NCA活性材料"
+      ],
+      "regions": [
+        "多家全球正极/电芯制造商采用的技术路线"
+      ],
+      "strategic_impact": "观察对象是技术路线；此图不据NCA行业应用推定CATL当前具体采购配方。",
+      "source_ids": [
+        "nmc-synthesis"
+      ]
+    },
+    {
+      "id": "lfp",
+      "stage": 2,
+      "title": "磷酸铁锂正极",
+      "formula": "LiFePO₄",
+      "routes": [
+        "lfp",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "FePO₄等铁磷前驱体",
+        "锂盐",
+        "碳源"
+      ],
+      "process": "混合、研磨及受控气氛烧结/碳包覆等形成橄榄石结构。PO₄骨架、颗粒设计与导电网络共同影响性能。",
+      "outputs": [
+        "LFP活性材料"
+      ],
+      "regions": [
+        "湖南裕能、龙蟠等公开合作案例"
+      ],
+      "strategic_impact": "LFP降低镍钴依赖，但仍受锂盐、石墨、能耗、压实密度与良率制约。",
+      "source_ids": [
+        "lfp-synthesis",
+        "lfp-structure",
+        "hunan-yuneng",
+        "longpan"
+      ]
+    },
+    {
+      "id": "lmfp",
+      "stage": 2,
+      "title": "磷酸锰铁锂正极",
+      "formula": "LiMnₓFe₁₋ₓPO₄",
+      "routes": [
+        "lfp",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "锂源",
+        "铁/锰/磷前驱体",
+        "碳源"
+      ],
+      "process": "在橄榄石体系引入Mn，优化电压与能量；仍需解决导电、锰溶出及界面问题。",
+      "outputs": [
+        "LMFP活性材料"
+      ],
+      "regions": [
+        "磷酸盐材料研发与制造企业"
+      ],
+      "strategic_impact": "要看全电芯能量、低温、快充与循环结果；LMFP是化学式类别，不能直接等同CATL M3P商品配方。",
+      "source_ids": [
+        "lmfp",
+        "hunan-yuneng"
+      ]
+    },
+    {
+      "id": "natural_anode",
+      "stage": 2,
+      "title": "天然石墨负极",
+      "formula": "C₆ ⇄ LiₓC₆",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "经提纯球化包覆的石墨"
+      ],
+      "process": "锂在石墨层间可逆嵌入/脱出；满嵌锂理想端态可写LiC₆。天然来源与最终电化学表现不是同一个指标。",
+      "outputs": [
+        "负极活性粉体"
+      ],
+      "regions": [
+        "天然石墨材料生产与客户认证基地"
+      ],
+      "strategic_impact": "杂质与表面/粒径结构影响首效、快充和循环；需看成品而非只看矿石。",
+      "source_ids": [
+        "graphite-structure",
+        "syrah-aam"
+      ]
+    },
+    {
+      "id": "synthetic_anode",
+      "stage": 2,
+      "title": "人造石墨负极",
+      "formula": "C₆ ⇄ LiₓC₆",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "人造石墨粉体"
+      ],
+      "process": "调控颗粒与表面，以匹配压实、快充、长循环及膨胀要求；可与天然石墨或硅系材料配合。",
+      "outputs": [
+        "负极活性粉体"
+      ],
+      "regions": [
+        "凯金、璞泰来等产业企业"
+      ],
+      "strategic_impact": "不同负极型号通常不能因同为‘石墨’而直接替换；有效供给取决于客户验证与批次控制。",
+      "source_ids": [
+        "graphite-process",
+        "kaijin",
+        "putailai"
+      ]
+    },
+    {
+      "id": "silicon_anode",
+      "stage": 2,
+      "title": "硅碳复合负极",
+      "formula": "Si–C / SiOₓ–C",
+      "routes": [
+        "anode",
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "硅或SiOₓ",
+        "碳骨架/包覆",
+        "可配合石墨"
+      ],
+      "process": "通过纳米/多孔/包覆等复合设计利用硅储锂，缓冲体积变化。Si–C是复合材料写法，不是SiC碳化硅。",
+      "outputs": [
+        "高容量复合负极"
+      ],
+      "regions": [
+        "Group14等材料路线样本；不表示CATL采购关系"
+      ],
+      "strategic_impact": "容量提升必须连同膨胀、首效、补锂、电解液和粘结体系一起看；实验半电池不等于车用量产。",
+      "source_ids": [
+        "silicon",
+        "silicon-swelling"
+      ]
+    },
+    {
+      "id": "electrolyte",
+      "stage": 2,
+      "title": "电解液",
+      "formula": "LiPF₆ + 碳酸酯 + 添加剂",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "锂盐（常见LiPF₆）",
+        "EC/EMC/DMC等溶剂",
+        "VC/FEC等按配方使用的添加剂"
+      ],
+      "process": "提供离子传输并参与形成界面膜；不是电子导体。盐、溶剂和添加剂组合随正负极与温度/电压要求改变。",
+      "outputs": [
+        "配方电解液"
+      ],
+      "regions": [
+        "电解液及锂盐/添加剂制造商"
+      ],
+      "strategic_impact": "高镍、高电压、硅负极、快充都可能改变配方需求，不能只用电解液总吨位判断升级受益。",
+      "source_ids": [
+        "electrolyte",
+        "cell-components",
+        "catl-ctp"
+      ]
+    },
+    {
+      "id": "separator",
+      "stage": 2,
+      "title": "隔膜与涂层",
+      "formula": "PE / PP；陶瓷涂层",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "聚烯烃基膜",
+        "Al₂O₃/勃姆石等涂层",
+        "粘结剂"
+      ],
+      "process": "隔开正负极防电子短路，孔隙中电解液允许离子通过；湿法/干法制膜与电极干法工艺是不同概念。",
+      "outputs": [
+        "隔膜卷材"
+      ],
+      "regions": [
+        "隔膜与涂覆加工企业"
+      ],
+      "strategic_impact": "厚度减薄须同时验证穿刺、热收缩、孔隙与涂覆一致性，安全和良率可能抵消理论能量收益。",
+      "source_ids": [
+        "cell-components",
+        "putailai"
+      ]
+    },
+    {
+      "id": "collectors",
+      "stage": 2,
+      "title": "正铝负铜集流体",
+      "formula": "Al(+) / Cu(−)",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "电池级铝箔",
+        "电池级铜箔"
+      ],
+      "process": "常规石墨锂离子电池：正极涂在铝箔、负极涂在铜箔；集流体收集电子，不等同活性材料。具体替代体系可不同。",
+      "outputs": [
+        "导电基底"
+      ],
+      "regions": [
+        "箔材制造商"
+      ],
+      "strategic_impact": "复合集流体、超薄箔需看机械可靠性、焊接、涂布适配和量产良率。",
+      "source_ids": [
+        "manufacturing",
+        "cell-components",
+        "putailai"
+      ]
+    },
+    {
+      "id": "binder",
+      "stage": 2,
+      "title": "粘结与导电体系",
+      "formula": "PVDF / CMC–SBR / 炭黑",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "聚合物粘结剂",
+        "导电炭黑/CNT等",
+        "溶剂或水"
+      ],
+      "process": "常见正极PVDF配NMP，石墨负极CMC–SBR水系；其他配方和干法路线并存。导电剂与粘结剂功能不同。",
+      "outputs": [
+        "可加工、导电且附着牢固的电极复合体系"
+      ],
+      "regions": [
+        "精细化工和导电材料供应商"
+      ],
+      "strategic_impact": "材料升级会改变界面与力学要求；低添加量辅材也可能是快充、寿命和良率的约束。",
+      "source_ids": [
+        "manufacturing",
+        "electrolyte",
+        "dry-electrode"
+      ]
+    },
+    {
+      "id": "electrode_mix",
+      "stage": 3,
+      "title": "配料与制浆",
+      "formula": "活性物 + 导电剂 + 粘结剂",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "正/负极活性材料",
+        "导电剂、粘结剂",
+        "NMP或水等"
+      ],
+      "process": "分散混合并控制固含、流变与团聚。干法电极通过粉体混合/成膜等替代部分湿法步骤，不代表所有工厂已采用。",
+      "outputs": [
+        "浆料或干法电极膜"
+      ],
+      "regions": [
+        "电芯/极片制造厂"
+      ],
+      "strategic_impact": "同样配方的分散和均匀性会影响后续一致性；设备交付不等于稳定良率。",
+      "source_ids": [
+        "manufacturing",
+        "dry-electrode",
+        "hitachi"
+      ]
+    },
+    {
+      "id": "coating",
+      "stage": 3,
+      "title": "涂布干燥与回收",
+      "formula": "双面极片",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "浆料",
+        "Cu/Al箔",
+        "热与溶剂回收系统"
+      ],
+      "process": "把浆料均匀涂于集流体并干燥；有机溶剂路线需要回收系统。涂布面密度、缺陷和残留影响一致性。",
+      "outputs": [
+        "干燥正负极卷料"
+      ],
+      "regions": [
+        "极片生产线"
+      ],
+      "strategic_impact": "工艺突破应体现产速、良率、能耗和单面积涂层一致性的共同改善。",
+      "source_ids": [
+        "manufacturing",
+        "hitachi"
+      ]
+    },
+    {
+      "id": "calender",
+      "stage": 3,
+      "title": "辊压分切与除水",
+      "formula": "目标孔隙 / 面密度",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "干燥极片"
+      ],
+      "process": "辊压调整密度与孔隙，分切/模切至设计尺寸，再按工艺除水；防毛刺、金属颗粒与过度压实。",
+      "outputs": [
+        "可装配极片"
+      ],
+      "regions": [
+        "电芯工厂干燥与洁净环境"
+      ],
+      "strategic_impact": "高压实提升体积能量也可能损害浸润与离子通道，需要和快充及良率一起判断。",
+      "source_ids": [
+        "manufacturing",
+        "hitachi"
+      ]
+    },
+    {
+      "id": "cell_assembly",
+      "stage": 3,
+      "title": "卷绕/叠片与封装",
+      "formula": "正极 | 隔膜 | 负极",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "正负极片",
+        "隔膜",
+        "壳体/铝塑膜、极耳"
+      ],
+      "process": "卷绕或叠片后焊接、入壳/封装；方形、圆柱、软包是形态，LFP/NMC是化学体系，二者不能混为一类。",
+      "outputs": [
+        "待注液电芯"
+      ],
+      "regions": [
+        "电芯装配线"
+      ],
+      "strategic_impact": "对齐、张力、异物和焊接可靠性是隐蔽风险点；几何创新要转化成稳定制造。",
+      "source_ids": [
+        "manufacturing",
+        "hitachi"
+      ]
+    },
+    {
+      "id": "wetting",
+      "stage": 3,
+      "title": "注液与浸润",
+      "formula": "电解液进入孔隙",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "装配电芯",
+        "电解液"
+      ],
+      "process": "在控制水分的环境中注液并充分浸润；注液量与时间需适配极片孔隙和电芯结构。",
+      "outputs": [
+        "浸润电芯"
+      ],
+      "regions": [
+        "电芯注液/静置工序"
+      ],
+      "strategic_impact": "大电芯可减少系统零件，也可能放大浸润、散热、检测和返工损失。",
+      "source_ids": [
+        "manufacturing",
+        "hitachi"
+      ]
+    },
+    {
+      "id": "formation",
+      "stage": 3,
+      "title": "化成分容与电芯",
+      "formula": "SEI / 容量 / 内阻",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "浸润电芯",
+        "充放电和检测设备"
+      ],
+      "process": "首轮充放电建立界面膜，随后老化、分容、检测与分级；得到有可测容量/内阻/自放电的合格电芯。",
+      "outputs": [
+        "合格电芯",
+        "制造废料"
+      ],
+      "regions": [
+        "电芯工厂后段"
+      ],
+      "strategic_impact": "有效产能应按合格品和实际稼动率衡量，名义GWh不能直接推算订单交付。",
+      "source_ids": [
+        "manufacturing",
+        "hitachi"
+      ]
+    },
+    {
+      "id": "ev_pack",
+      "stage": 4,
+      "title": "动力电池包",
+      "formula": "Cell → Module / CTP → Pack",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "recycling",
+        "sodium"
+      ],
+      "inputs": [
+        "合格动力电芯",
+        "BMS、结构、连接、热管理、高压保护"
+      ],
+      "process": "按整车需求串并联与集成；CTP可减少传统模组层级。动力包不自带完整电站并网系统。",
+      "outputs": [
+        "车用电池包"
+      ],
+      "regions": [
+        "整车厂与动力系统厂"
+      ],
+      "strategic_impact": "关键是续航、快充、低温、碰撞、可靠性和质保；系统能量密度不等于材料比容量。",
+      "source_ids": [
+        "catl-ctp",
+        "cell-components"
+      ]
+    },
+    {
+      "id": "ess_dc",
+      "stage": 4,
+      "title": "储能电池舱/电池柜",
+      "formula": "Cell → Rack → DC block",
+      "routes": [
+        "ess",
+        "lfp",
+        "recycling",
+        "sodium"
+      ],
+      "inputs": [
+        "储能电芯",
+        "BMS、机架/箱体、温控、消防、直流保护"
+      ],
+      "process": "构成直流储能单元；柜/舱级集成边界视合同而定，不默认已经包含PCS和升压设备。 图重点展示LFP与钠电储能路径；NMC也可用于储能，具体取决于产品设计。",
+      "outputs": [
+        "DC储能单元"
+      ],
+      "regions": [
+        "储能设备制造商与系统集成商"
+      ],
+      "strategic_impact": "只比元/Wh可能混淆DC/AC报价、温控消防、可用容量与寿命保证。",
+      "source_ids": [
+        "pnnl-ess",
+        "catl-quinbrook"
+      ]
+    },
+    {
+      "id": "ess_ac",
+      "stage": 4,
+      "title": "完整储能系统",
+      "formula": "DC + PCS + EMS + 并网",
+      "routes": [
+        "ess",
+        "lfp",
+        "recycling",
+        "sodium"
+      ],
+      "inputs": [
+        "DC储能单元",
+        "PCS、EMS",
+        "变压器、开关、计量/保护及EPC"
+      ],
+      "process": "BMS管理电池边界，PCS执行双向电能转换，EMS在约束内调度；再完成项目级并网与验收。",
+      "outputs": [
+        "可调度储能资产"
+      ],
+      "regions": [
+        "系统集成商、EPC、运营商"
+      ],
+      "strategic_impact": "盈利取决于可用率、往返效率、寿命、并网许可和收益合同；交付电池舱不是项目商运。",
+      "source_ids": [
+        "pnnl-ess",
+        "sandia-control",
+        "sandia-services"
+      ]
+    },
+    {
+      "id": "ev_users",
+      "stage": 5,
+      "title": "整车与运营车队",
+      "formula": "乘用车 / 商用车 / 换电",
+      "routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "recycling",
+        "sodium"
+      ],
+      "inputs": [
+        "动力电池包"
+      ],
+      "process": "整车厂选择平台与车型配置；运营车队关注全生命周期成本、补能停机与可靠性。",
+      "outputs": [
+        "整车/运营服务",
+        "退役动力电池"
+      ],
+      "regions": [
+        "整车厂、物流/矿卡/公交等运营场景"
+      ],
+      "strategic_impact": "新客户定点、车型平台和量产爬坡，比孤立技术发布更接近需求兑现。",
+      "source_ids": [
+        "catl-stellantis",
+        "catl-ctp"
+      ]
+    },
+    {
+      "id": "grid_users",
+      "stage": 5,
+      "title": "电网与新能源业主",
+      "formula": "容量 / 调频 / 能量搬移",
+      "routes": [
+        "ess",
+        "lfp",
+        "recycling",
+        "sodium"
+      ],
+      "inputs": [
+        "完整储能系统"
+      ],
+      "process": "按电网规则和合同提供削峰填谷、辅助服务、容量或可调度新能源；收益机制因市场而异。",
+      "outputs": [
+        "电力服务与现金流",
+        "退役储能电池"
+      ],
+      "regions": [
+        "发电商、独立储能业主、电网、基础设施投资者"
+      ],
+      "strategic_impact": "应跟踪并网、长期收入合约、利用率与衰减责任，而不只看采购GWh。",
+      "source_ids": [
+        "sandia-services",
+        "catl-quinbrook"
+      ]
+    },
+    {
+      "id": "mine_ci_users",
+      "stage": 5,
+      "title": "工商业与矿山微网",
+      "formula": "储能 + 风光 + 柴油/电网",
+      "routes": [
+        "ess",
+        "lfp",
+        "recycling",
+        "sodium"
+      ],
+      "inputs": [
+        "储能系统",
+        "现场负荷、风光与备用电源"
+      ],
+      "process": "在可靠供电约束下减少高成本燃料/需量、平滑负荷并提升可再生能源利用；停电价值与柴油物流需场景化。",
+      "outputs": [
+        "供电服务/节省成本",
+        "退役电池"
+      ],
+      "regions": [
+        "矿山、工业园、数据中心等场景"
+      ],
+      "strategic_impact": "矿山协同应比较被替代电源成本、负荷曲线与停机损失，再谈资源合作，不由‘零碳’标签直接推导投资回报。",
+      "source_ids": [
+        "sandia-services",
+        "pnnl-ess"
+      ]
+    },
+    {
+      "id": "scrap",
+      "stage": 6,
+      "title": "废料与退役电池",
+      "formula": "制造废料 / EOL",
+      "routes": [
+        "recycling"
+      ],
+      "inputs": [
+        "生产边角料与不良品",
+        "退役PACK/储能电池"
+      ],
+      "process": "建立来源、化学体系和安全状态分选；制造废料与终端退役电池的收集成本、纯度和可得时间不同。",
+      "outputs": [
+        "分选回收进料"
+      ],
+      "regions": [
+        "电芯厂、车企/维修网、储能运营商、收集网络"
+      ],
+      "strategic_impact": "回收项目关键是锁定可收集进料、化学组成和采购价，而非只比较名义处理吨数。",
+      "source_ids": [
+        "epa-recycling",
+        "brunp"
+      ]
+    },
+    {
+      "id": "mechanical_recycle",
+      "stage": 6,
+      "title": "拆解破碎与分选",
+      "formula": "黑粉 + Cu/Al + 其他",
+      "routes": [
+        "recycling"
+      ],
+      "inputs": [
+        "安全处置后的废电池/极片"
+      ],
+      "process": "拆解、破碎与物理分离生成黑粉、铜铝及其他组分；黑粉成分随电池体系和分选工艺变化。",
+      "outputs": [
+        "黑粉",
+        "铜铝及壳体回收流"
+      ],
+      "regions": [
+        "有合规处理能力的回收基地"
+      ],
+      "strategic_impact": "黑粉吨价必须对应含金属量、含水和杂质；LFP黑粉与三元黑粉不能直接同价比较。",
+      "source_ids": [
+        "epa-recycling"
+      ]
+    },
+    {
+      "id": "hydro_recycle",
+      "stage": 6,
+      "title": "湿法浸出与再制盐",
+      "formula": "Li盐 / Ni-Co-Mn盐",
+      "routes": [
+        "recycling"
+      ],
+      "inputs": [
+        "分选黑粉",
+        "酸、还原剂、碱等"
+      ],
+      "process": "浸出、除杂、萃取或沉淀，回收锂与过渡金属；产品经质量控制后回流锂盐/前驱体链。",
+      "outputs": [
+        "再生锂盐",
+        "金属盐/前驱体"
+      ],
+      "regions": [
+        "邦普等回收企业；具体工艺按披露核验"
+      ],
+      "strategic_impact": "金属收率不是整包回收率，也不是盈利率；化学品、能耗、残渣和再生材料认证影响经济性。",
+      "source_ids": [
+        "epa-recycling",
+        "brunp",
+        "reagents"
+      ]
+    },
+    {
+      "id": "pyro_recycle",
+      "stage": 6,
+      "title": "火法及后续精炼",
+      "formula": "金属合金 / 炉渣",
+      "routes": [
+        "recycling"
+      ],
+      "inputs": [
+        "废电池或预处理料"
+      ],
+      "process": "热冶金回收部分金属；锂、铝等可能进入渣相，须额外回收流程。通常需与后续湿法精炼衔接。",
+      "outputs": [
+        "Ni/Co等合金",
+        "待进一步处理的渣"
+      ],
+      "regions": [
+        "采用火法或组合流程的回收设施"
+      ],
+      "strategic_impact": "适应复杂进料不等于所有组分都高值回收；LFP缺少高价镍钴，经济逻辑需重算。",
+      "source_ids": [
+        "epa-recycling",
+        "direct-recycling"
+      ]
+    },
+    {
+      "id": "direct_recycle",
+      "stage": 6,
+      "title": "直接再生与补锂",
+      "formula": "恢复活性材料结构",
+      "routes": [
+        "recycling"
+      ],
+      "inputs": [
+        "按化学体系分选的活性材料",
+        "补锂/修复试剂"
+      ],
+      "process": "保留并修复活性材料结构，必要时补锂和表面处理；与先完全溶解成盐的路线不同。",
+      "outputs": [
+        "可再用正极材料"
+      ],
+      "regions": [
+        "直接回收/再生研发及产业示范"
+      ],
+      "strategic_impact": "价值在保留材料加工附加值；依赖分选纯度、老化诊断和下一代产品兼容性，不能把论文收率直接当量产收益。",
+      "source_ids": [
+        "direct-recycling",
+        "lfp-synthesis"
+      ]
+    },
+    {
+      "id": "reuse",
+      "stage": 6,
+      "title": "检测后再使用",
+      "formula": "SOH / 一致性 / 安全",
+      "routes": [
+        "recycling"
+      ],
+      "inputs": [
+        "可测试的退役模块/电池包"
+      ],
+      "process": "检测与分级后决定维修、原用途再使用或经验证的梯次利用；不是所有退役动力电池都适合储能。",
+      "outputs": [
+        "可用二次电池系统或回收进料"
+      ],
+      "regions": [
+        "运营商、维修与回收体系"
+      ],
+      "strategic_impact": "梯次利用需承担一致性、安全、寿命和质保责任；低进料价不一定抵消检测与重组成本。",
+      "source_ids": [
+        "epa-recycling",
+        "pnnl-ess"
+      ]
+    },
+    {
+      "id": "mn_salt",
+      "stage": 1,
+      "title": "电池级锰盐",
+      "formula": "MnSO₄等",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "inputs": [
+        "锰矿/锰中间品",
+        "酸、还原剂、除杂试剂"
+      ],
+      "process": "浸出和深度除杂等获得高纯锰盐。硫酸锰可用于三元共沉淀；LMFP可采用锰盐或其他合格锰源，具体由合成工艺决定。",
+      "outputs": [
+        "高纯硫酸锰等化工原料"
+      ],
+      "regions": [
+        "高纯锰化工与正极配套产地"
+      ],
+      "strategic_impact": "锰矿总供给充足仍可能与电池级盐的纯度、认证、产能瓶颈并存；LMFP不需要因该路线而采购镍钴。",
+      "source_ids": [
+        "nmc-synthesis",
+        "lmfp",
+        "reagents"
+      ]
+    },
+    {
+      "id": "ni_sulfide",
+      "stage": 0,
+      "title": "硫化镍铜矿",
+      "formula": "Ni–Cu硫化物",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "inputs": [
+        "硫化镍铜矿石"
+      ],
+      "process": "经选矿后采用适用的熔炼/精炼或湿法路线获得镍中间品和精炼产品，再转电池级盐；不可直接照搬红土矿HPAL/RKEF。",
+      "outputs": [
+        "镍精矿与后续镍产品"
+      ],
+      "regions": [
+        "加拿大：Sudbury / Voisey’s Bay；俄罗斯：Norilsk-Talnakh等代表矿区"
+      ],
+      "strategic_impact": "为印尼红土路线之外的供应多样性；交货地、精炼路线、能源和可追溯性决定实际替代价值。",
+      "source_ids": [
+        "usgs-ni-sulfide",
+        "nrcan-ni"
+      ]
+    },
+    {
+      "id": "na_salts",
+      "stage": 1,
+      "title": "钠盐与电解质",
+      "formula": "Na₂CO₃ / NaPF₆等",
+      "routes": [
+        "sodium"
+      ],
+      "inputs": [
+        "纯碱等钠化工原料",
+        "精细化工原料"
+      ],
+      "process": "正极钠源与电解液导电盐用途不同：纯碱等可作为合成原料，NaPF6等是专门制备的电解液盐；不能直接互换。",
+      "outputs": [
+        "正极合成钠源",
+        "钠电电解质盐"
+      ],
+      "regions": [
+        "广布钠资源与精细化工加工环节"
+      ],
+      "strategic_impact": "降低锂盐价格暴露，但电池级纯度、含水控制和电解液配方仍有壁垒。",
+      "source_ids": [
+        "na-lca",
+        "na-salts"
+      ]
+    },
+    {
+      "id": "na_cathode",
+      "stage": 2,
+      "title": "钠电正极三大类",
+      "formula": "层状 / 聚阴离子 / 普鲁士白",
+      "routes": [
+        "sodium"
+      ],
+      "inputs": [
+        "钠源",
+        "相应Fe/Mn/Ni等金属源",
+        "磷酸盐或配位前驱体等"
+      ],
+      "process": "代表体系为NaₓMO₂层状氧化物、NFPP等聚阴离子、普鲁士白框架。不同路线用金属不同；CATL TENER Sodium公告提及NFPP。",
+      "outputs": [
+        "钠电正极活性材料"
+      ],
+      "regions": [
+        "全球钠电材料产业；通用分类不是CATL配方清单"
+      ],
+      "strategic_impact": "铁基NFPP可减少对锂镍钴的依赖；部分层状钠电仍使用镍，不能把所有钠电统一视为无镍。",
+      "source_ids": [
+        "na-cells",
+        "na-nfpp",
+        "catl-tener-na"
+      ]
+    },
+    {
+      "id": "hard_carbon",
+      "stage": 2,
+      "title": "钠电硬碳负极",
+      "formula": "非石墨化C",
+      "routes": [
+        "sodium"
+      ],
+      "inputs": [
+        "生物质/树脂等适用碳前驱体"
+      ],
+      "process": "控制炭化、孔隙、表面和杂质，利用硬碳储钠；它与LIB石墨负极的结构和储存机制不同，不能按普通石墨直接等量替换。",
+      "outputs": [
+        "硬碳负极活性材料"
+      ],
+      "regions": [
+        "硬碳原料、加工与客户认证环节"
+      ],
+      "strategic_impact": "首效、产气、压实和循环约束钠电可用能量与良率；低价钠资源不自动等于低价电芯。",
+      "source_ids": [
+        "na-cells",
+        "catl-naxtra"
+      ]
+    },
+    {
+      "id": "na_cell",
+      "stage": 3,
+      "title": "钠离子电芯",
+      "formula": "Na⁺往返 / 可双铝集流体",
+      "routes": [
+        "sodium"
+      ],
+      "inputs": [
+        "钠电正极、硬碳负极",
+        "钠电电解液、隔膜",
+        "适用铝集流体及辅材"
+      ],
+      "process": "极片、装配、注液和化成需适配钠体系；商用样品已验证正负极均用铝。CATL披露硬碳产气、控水和铝箔附着工程进展。",
+      "outputs": [
+        "钠离子电芯"
+      ],
+      "regions": [
+        "CATL Naxtra / TENER Sodium与其他钠电路线"
+      ],
+      "strategic_impact": "用硬碳替代常规石墨、铝替代负极铜有成本潜力；需同时验证首效、寿命、效率、合格产出和实际交付。",
+      "source_ids": [
+        "na-cells",
+        "catl-naxtra",
+        "catl-tener-na"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "li_rock__hard_li_process",
+      "to": "hard_li_process",
+      "label": "精矿化工转化",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "li_rock"
+    },
+    {
+      "id": "li_brine__brine_process",
+      "to": "brine_process",
+      "label": "提锂/除杂",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "li_brine"
+    },
+    {
+      "id": "hard_li_process__li_carbonate",
+      "to": "li_carbonate",
+      "label": "净化与盐转化",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "hard_li_process"
+    },
+    {
+      "id": "hard_li_process__li_hydroxide",
+      "to": "li_hydroxide",
+      "label": "净化与盐转化",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "hard_li_process"
+    },
+    {
+      "id": "brine_process__li_carbonate",
+      "to": "li_carbonate",
+      "label": "净化与盐转化",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "brine_process"
+    },
+    {
+      "id": "brine_process__li_hydroxide",
+      "to": "li_hydroxide",
+      "label": "净化与盐转化",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "brine_process"
+    },
+    {
+      "id": "li_carbonate__li_hydroxide",
+      "to": "li_hydroxide",
+      "label": "可转化；有成本与质量约束",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "li_carbonate"
+    },
+    {
+      "id": "ni_ore__hpal",
+      "to": "hpal",
+      "label": "褐铁矿→高压酸浸",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "ni_ore"
+    },
+    {
+      "id": "ni_ore__rkef",
+      "to": "rkef",
+      "label": "腐泥土→镍铁",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "ni_ore"
+    },
+    {
+      "id": "hpal__ncm_salts",
+      "to": "ncm_salts",
+      "label": "MHP再精炼",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "hpal"
+    },
+    {
+      "id": "rkef__ncm_salts",
+      "to": "ncm_salts",
+      "label": "须额外转化/精炼，不是直接替代",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "rkef"
+    },
+    {
+      "id": "co_ore__ncm_salts",
+      "to": "ncm_salts",
+      "label": "钴中间品精炼",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "co_ore"
+    },
+    {
+      "id": "fe_p_feed__fe_phosphate",
+      "to": "fe_phosphate",
+      "label": "沉淀与形貌控制",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "fe_p_feed"
+    },
+    {
+      "id": "graphite_ore__natural_processing",
+      "to": "natural_processing",
+      "label": "精矿增值加工",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "graphite_ore"
+    },
+    {
+      "id": "carbon_feed__synthetic_processing",
+      "to": "synthetic_processing",
+      "label": "炭化/石墨化",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "carbon_feed"
+    },
+    {
+      "id": "natural_processing__natural_anode",
+      "to": "natural_anode",
+      "label": "合格负极成品",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "natural_processing"
+    },
+    {
+      "id": "synthetic_processing__synthetic_anode",
+      "to": "synthetic_anode",
+      "label": "合格负极成品",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "synthetic_processing"
+    },
+    {
+      "id": "cu_al_feed__collectors",
+      "to": "collectors",
+      "label": "制箔与质量控制",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "cu_al_feed"
+    },
+    {
+      "id": "reagents__hard_li_process",
+      "to": "hard_li_process",
+      "label": "酸碱/能源等工艺投入",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "reagents"
+    },
+    {
+      "id": "reagents__brine_process",
+      "to": "brine_process",
+      "label": "酸碱/能源等工艺投入",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "reagents"
+    },
+    {
+      "id": "reagents__hpal",
+      "to": "hpal",
+      "label": "酸碱/能源等工艺投入",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "reagents"
+    },
+    {
+      "id": "reagents__ncm_salts",
+      "to": "ncm_salts",
+      "label": "酸碱/能源等工艺投入",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "reagents"
+    },
+    {
+      "id": "reagents__pcam",
+      "to": "pcam",
+      "label": "酸碱/能源等工艺投入",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "reagents"
+    },
+    {
+      "id": "reagents__hydro_recycle",
+      "to": "hydro_recycle",
+      "label": "酸碱/能源等工艺投入",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "reagents"
+    },
+    {
+      "id": "ncm_salts__pcam",
+      "to": "pcam",
+      "label": "镍钴盐，与锰盐共同沉淀",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "ncm_salts"
+    },
+    {
+      "id": "pcam__nmc",
+      "to": "nmc",
+      "label": "混锂与烧结",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "pcam"
+    },
+    {
+      "id": "ncm_salts__nca",
+      "to": "nca",
+      "label": "Ni/Co盐另配Al源",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "ncm_salts"
+    },
+    {
+      "id": "li_hydroxide__nca",
+      "to": "nca",
+      "label": "锂化",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "li_hydroxide"
+    },
+    {
+      "id": "li_hydroxide__nmc",
+      "to": "nmc",
+      "label": "锂化",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "li_hydroxide"
+    },
+    {
+      "id": "li_carbonate__nmc",
+      "to": "nmc",
+      "label": "部分配方/路线使用",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "li_carbonate"
+    },
+    {
+      "id": "fe_phosphate__lfp",
+      "to": "lfp",
+      "label": "混锂/碳包覆烧结",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "fe_phosphate"
+    },
+    {
+      "id": "li_carbonate__lfp",
+      "to": "lfp",
+      "label": "锂源",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "li_carbonate"
+    },
+    {
+      "id": "fe_phosphate__lmfp",
+      "to": "lmfp",
+      "label": "铁磷原料",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "fe_phosphate"
+    },
+    {
+      "id": "li_carbonate__lmfp",
+      "to": "lmfp",
+      "label": "锂源",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "li_carbonate"
+    },
+    {
+      "id": "lfp__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "lfp"
+    },
+    {
+      "id": "lmfp__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "lmfp"
+    },
+    {
+      "id": "nmc__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "nmc"
+    },
+    {
+      "id": "nca__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "nca"
+    },
+    {
+      "id": "natural_anode__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "natural_anode"
+    },
+    {
+      "id": "synthetic_anode__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "synthetic_anode"
+    },
+    {
+      "id": "silicon_anode__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "silicon_anode"
+    },
+    {
+      "id": "binder__electrode_mix",
+      "to": "electrode_mix",
+      "label": "配方化电极制造",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "binder"
+    },
+    {
+      "id": "electrode_mix__coating",
+      "to": "coating",
+      "label": "涂布或干法膜复合",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "electrode_mix"
+    },
+    {
+      "id": "collectors__coating",
+      "to": "coating",
+      "label": "导电基底",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "collectors"
+    },
+    {
+      "id": "coating__calender",
+      "to": "calender",
+      "label": "极片致密化/分切",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "coating"
+    },
+    {
+      "id": "calender__cell_assembly",
+      "to": "cell_assembly",
+      "label": "极片装配",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "calender"
+    },
+    {
+      "id": "separator__cell_assembly",
+      "to": "cell_assembly",
+      "label": "隔开正负极",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "separator"
+    },
+    {
+      "id": "cell_assembly__wetting",
+      "to": "wetting",
+      "label": "装配电芯",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "cell_assembly"
+    },
+    {
+      "id": "electrolyte__wetting",
+      "to": "wetting",
+      "label": "注液",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "electrolyte"
+    },
+    {
+      "id": "wetting__formation",
+      "to": "formation",
+      "label": "浸润后化成/检测",
+      "routes": [
+        "nmc",
+        "ess",
+        "anode",
+        "lfp",
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "wetting"
+    },
+    {
+      "id": "formation__ev_pack",
+      "to": "ev_pack",
+      "label": "动力规格合格电芯",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "anode"
+      ],
+      "kind": "material",
+      "from": "formation"
+    },
+    {
+      "id": "formation__ess_dc",
+      "to": "ess_dc",
+      "label": "储能规格合格电芯",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess"
+      ],
+      "kind": "material",
+      "from": "formation"
+    },
+    {
+      "id": "ess_dc__ess_ac",
+      "to": "ess_ac",
+      "label": "PCS/EMS/并网集成",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess",
+        "sodium"
+      ],
+      "kind": "material",
+      "from": "ess_dc"
+    },
+    {
+      "id": "ev_pack__ev_users",
+      "to": "ev_users",
+      "label": "车型/车队应用",
+      "routes": [
+        "lfp",
+        "nmc",
+        "recycling",
+        "anode",
+        "sodium"
+      ],
+      "kind": "material",
+      "from": "ev_pack"
+    },
+    {
+      "id": "ess_ac__grid_users",
+      "to": "grid_users",
+      "label": "电网与新能源",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess",
+        "sodium"
+      ],
+      "kind": "material",
+      "from": "ess_ac"
+    },
+    {
+      "id": "ess_ac__mine_ci_users",
+      "to": "mine_ci_users",
+      "label": "工商业与微网",
+      "routes": [
+        "lfp",
+        "recycling",
+        "ess",
+        "sodium"
+      ],
+      "kind": "material",
+      "from": "ess_ac"
+    },
+    {
+      "id": "electrode_mix__scrap",
+      "to": "scrap",
+      "label": "制造废料或退役流",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "electrode_mix"
+    },
+    {
+      "id": "coating__scrap",
+      "to": "scrap",
+      "label": "制造废料或退役流",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "coating"
+    },
+    {
+      "id": "formation__scrap",
+      "to": "scrap",
+      "label": "制造废料或退役流",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "formation"
+    },
+    {
+      "id": "ev_users__scrap",
+      "to": "scrap",
+      "label": "制造废料或退役流",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "ev_users"
+    },
+    {
+      "id": "grid_users__scrap",
+      "to": "scrap",
+      "label": "制造废料或退役流",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "grid_users"
+    },
+    {
+      "id": "mine_ci_users__scrap",
+      "to": "scrap",
+      "label": "制造废料或退役流",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "mine_ci_users"
+    },
+    {
+      "id": "scrap__mechanical_recycle",
+      "to": "mechanical_recycle",
+      "label": "分选后预处理",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "scrap"
+    },
+    {
+      "id": "scrap__reuse",
+      "to": "reuse",
+      "label": "具备再用条件才进入",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "scrap"
+    },
+    {
+      "id": "mechanical_recycle__hydro_recycle",
+      "to": "hydro_recycle",
+      "label": "按体系与工艺选路",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "mechanical_recycle"
+    },
+    {
+      "id": "mechanical_recycle__pyro_recycle",
+      "to": "pyro_recycle",
+      "label": "按体系与工艺选路",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "mechanical_recycle"
+    },
+    {
+      "id": "mechanical_recycle__direct_recycle",
+      "to": "direct_recycle",
+      "label": "按体系与工艺选路",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "mechanical_recycle"
+    },
+    {
+      "id": "pyro_recycle__hydro_recycle",
+      "to": "hydro_recycle",
+      "label": "合金/渣的进一步分离",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "pyro_recycle"
+    },
+    {
+      "id": "hydro_recycle__li_carbonate",
+      "to": "li_carbonate",
+      "label": "再生锂盐",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "hydro_recycle"
+    },
+    {
+      "id": "hydro_recycle__ncm_salts",
+      "to": "ncm_salts",
+      "label": "再生镍钴盐",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "hydro_recycle"
+    },
+    {
+      "id": "direct_recycle__lfp",
+      "to": "lfp",
+      "label": "适配LFP材料再生",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "direct_recycle"
+    },
+    {
+      "id": "direct_recycle__nmc",
+      "to": "nmc",
+      "label": "适配NMC材料再生",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "direct_recycle"
+    },
+    {
+      "id": "mechanical_recycle__collectors",
+      "to": "collectors",
+      "label": "Cu/Al需再精炼制箔",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "mechanical_recycle"
+    },
+    {
+      "id": "reuse__ess_dc",
+      "to": "ess_dc",
+      "label": "经验证的梯次系统",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return",
+      "from": "reuse"
+    },
+    {
+      "id": "reuse__mechanical_recycle",
+      "to": "mechanical_recycle",
+      "label": "不适用/二次退役",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "material",
+      "from": "reuse"
+    },
+    {
+      "id": "mn_ore__mn_salt",
+      "from": "mn_ore",
+      "to": "mn_salt",
+      "label": "浸出与高纯化",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "mn_salt__pcam",
+      "from": "mn_salt",
+      "to": "pcam",
+      "label": "三元配方中的锰",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "mn_salt__lmfp",
+      "from": "mn_salt",
+      "to": "lmfp",
+      "label": "LMFP锰源之一",
+      "routes": [
+        "lfp",
+        "ess",
+        "recycling"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "ni_sulfide__ncm_salts",
+      "from": "ni_sulfide",
+      "to": "ncm_salts",
+      "label": "选矿、冶炼/精炼再制盐",
+      "routes": [
+        "nmc",
+        "recycling"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "na_salts__na_cathode",
+      "from": "na_salts",
+      "to": "na_cathode",
+      "label": "钠源合成不同正极",
+      "routes": [
+        "sodium"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "na_salts__na_cell",
+      "from": "na_salts",
+      "to": "na_cell",
+      "label": "专用钠电电解液",
+      "routes": [
+        "sodium"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "na_cathode__na_cell",
+      "from": "na_cathode",
+      "to": "na_cell",
+      "label": "正极活性材料",
+      "routes": [
+        "sodium"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "hard_carbon__na_cell",
+      "from": "hard_carbon",
+      "to": "na_cell",
+      "label": "负极活性材料",
+      "routes": [
+        "sodium"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "na_cell__ev_pack",
+      "from": "na_cell",
+      "to": "ev_pack",
+      "label": "按车型和平台适配",
+      "routes": [
+        "sodium"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "na_cell__ess_dc",
+      "from": "na_cell",
+      "to": "ess_dc",
+      "label": "按钠电设计集成",
+      "routes": [
+        "sodium"
+      ],
+      "kind": "material"
+    },
+    {
+      "id": "hydro_recycle__mn_salt",
+      "from": "hydro_recycle",
+      "to": "mn_salt",
+      "label": "再生锰盐",
+      "routes": [
+        "recycling"
+      ],
+      "kind": "return"
+    },
+    {
+      "id": "reagents__mn_salt",
+      "from": "reagents",
+      "to": "mn_salt",
+      "label": "酸与还原/除杂试剂",
+      "routes": [
+        "lfp",
+        "nmc",
+        "ess",
+        "recycling"
+      ],
+      "kind": "material"
+    }
+  ],
+  "sources": [
+    {
+      "id": "talison",
+      "title": "Talison：Greenbushes项目与选矿",
+      "url": "https://www.talisonlithium.com/greenbushes-project",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "sqm",
+      "title": "SQM 2025 Form 20-F：Atacama卤水与锂化工",
+      "url": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+      "published_at": "2026-04",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "eramet-dle",
+      "title": "Eramet：Centenario首次产出碳酸锂",
+      "url": "https://www.eramet.com/en/news/eramet-delivers-first-lithium-carbonate-from-centenario-dle-plant-in-argentina/",
+      "published_at": "2024-12-24",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "eramet-production",
+      "title": "Eramet Eramine：Centenario工艺",
+      "url": "https://eramine.eramet.com/en/activities/production/",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "mdka-hpal",
+      "title": "Merdeka：SCM—HPAL物料流与SLNC进展",
+      "url": "https://merdekacoppergold.com/en/slnc-fpp-begins-operations-strengthening-the-scm-mine-limonite-supply-chain/",
+      "published_at": "2026-10-05",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "cmoc",
+      "title": "洛阳钼业：刚果（金）铜钴资产",
+      "url": "https://en.cmoc.com/html/Business/Congo-Cu-Co/",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "eramet-mn",
+      "title": "Eramet：Moanda锰矿产品",
+      "url": "https://www.eramet.com/en/activities/products/manganese/manganese-ores/",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "syrah-mine",
+      "title": "Syrah：Balama天然石墨矿",
+      "url": "https://www.syrahresources.com.au/our-business/balama-graphite-operation",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "syrah-aam",
+      "title": "Syrah：Vidalia负极活性材料工厂",
+      "url": "https://www.syrahresources.com.au/our-business/vidalia-active-anode-material-facility",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "li-refining",
+      "title": "OECD/IGF：锂矿及锂盐定价与加工工艺",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/08/determining-the-price-of-minerals_c73ecd8a/a607ff0a-en.pdf",
+      "published_at": "2024-08",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "li-alkali",
+      "title": "研究论文：锂辉石常规/直接/电化学提锂比较",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2026/gc/d5gc04866d",
+      "published_at": "2026",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "研究路线和商业成熟度分别描述，不将实验工艺视作现有大规模替代。"
+    },
+    {
+      "id": "reagents",
+      "title": "研究论文：电池供应链化学试剂需求",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2026/gc/d5gc05122c",
+      "published_at": "2026",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "nmc-synthesis",
+      "title": "Münster/Helmholtz研究者：高镍正极生产与共沉淀",
+      "url": "https://b2b.sigmaaldrich.com/GB/en/technical-documents/technical-article/materials-science-and-engineering/batteries-supercapacitors-and-fuel-cells/lib-couette-taylor-flow-reactor",
+      "published_at": "2020",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "lfp-synthesis",
+      "title": "研究论文：LFP掺杂、碳包覆与固相合成",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10971814/",
+      "published_at": "2024",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "lfp-structure",
+      "title": "研究论文：LiFePO4橄榄石晶体结构",
+      "url": "https://www.nature.com/articles/srep19573",
+      "published_at": "2016-01-21",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "lmfp",
+      "title": "研究论文：LiMnxFe1-xPO4水热制备与电化学性能",
+      "url": "https://www.nature.com/articles/s41598-021-91881-1",
+      "published_at": "2021",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "graphite-structure",
+      "title": "原位中子衍射研究：石墨嵌锂与LiC6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3475991/",
+      "published_at": "2012",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "graphite-process",
+      "title": "Argonne研究：人造石墨生产的能耗与碳足迹",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2025/va/d5va00171d?page=search",
+      "published_at": "2025",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "silicon",
+      "title": "Group14：SCC55硅碳复合负极",
+      "url": "https://group14.technology/our-technology/",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "silicon-swelling",
+      "title": "研究论文：硅/石墨复合电芯的膨胀和老化",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378775324005342",
+      "published_at": "2024",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "manufacturing",
+      "title": "研究论文：锂离子电池制造流程与瓶颈",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8050716/",
+      "published_at": "2021-03-19",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "hitachi",
+      "title": "Hitachi High-Tech：电芯制造和质量检测",
+      "url": "https://www.hitachi-hightech.com/global/en/products/manufacturing-related/lithium-battery-solutions/kb/kb_jnl01.html",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "cell-components",
+      "title": "ACS研究：电极—隔膜—集流体复合结构",
+      "url": "https://pubs.acs.org/doi/10.1021/acsami.2c03828",
+      "published_at": "2022",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "electrolyte",
+      "title": "研究论文：电极干燥与电解液实验材料",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2022/ta/d2ta00861k",
+      "published_at": "2022",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "dry-electrode",
+      "title": "研究论文：无氟粘结剂干法厚电极",
+      "url": "https://www.nature.com/articles/s41467-025-66082-3",
+      "published_at": "2025",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "catl-ctp",
+      "title": "CATL：CTP和电解液技术",
+      "url": "https://www.catl.com/en/research/technology/",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "pnnl-ess",
+      "title": "PNNL：储能系统构成、成本边界和性能定义",
+      "url": "https://www.pnnl.gov/projects/esgc-cost-performance/subsystems-definitions",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "sandia-control",
+      "title": "Sandia/DOE手册第15章：储能管理系统",
+      "url": "https://www.sandia.gov/app/uploads/sites/163/2023/01/ESHB2020_Ch15_ESMS_Nguyen.pdf",
+      "published_at": "2020",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "sandia-services",
+      "title": "Sandia/DOE手册第23章：储能应用与电网服务",
+      "url": "https://www.sandia.gov/app/uploads/sites/163/2021/09/ESHB_Ch23_Applications_Nguyen.pdf",
+      "published_at": "2021",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "epa-recycling",
+      "title": "美国EPA：锂离子电池回收流程",
+      "url": "https://www.epa.gov/hw/lithium-ion-battery-recycling",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "direct-recycling",
+      "title": "Argonne研究：沉淀法直接回收与正极升级",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202500699",
+      "published_at": "2025",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "li-carbide",
+      "title": "研究论文：碳化锂作为补锂剂",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40181621/",
+      "published_at": "2025",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "basf-catl",
+      "title": "BASF：德国正极材料开始向CATL供货",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-191",
+      "published_at": "2026-11-23",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "basf-framework",
+      "title": "CATL：与BASF签署正极材料框架协议",
+      "url": "https://www.catl.com/en/news/6493.html",
+      "published_at": "2025-07-28",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "hunan-yuneng",
+      "title": "湖南裕能2025年报：CATL提供碳酸锂的加工模式",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF",
+      "published_at": "2026-04-23",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "PDF印刷第22页；下载PDF后pypdf核验原文。"
+    },
+    {
+      "id": "longpan",
+      "title": "龙蟠科技2025-123：CATL海外LFP采购合作",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-09-16/1224662478.PDF",
+      "published_at": "2025-09-16",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "kaijin",
+      "title": "凯金：CATL负极供应与质量奖披露",
+      "url": "https://dgkaijin.com/en/shows/CompanyNews/66.html",
+      "published_at": "2026-01-06",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "页面发表于2026-01-06，所述奖项为2025年第一季度。"
+    },
+    {
+      "id": "putailai",
+      "title": "璞泰来2025年报：材料与设备客户合作",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-06/1224998510.PDF",
+      "published_at": "2026-03-06",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "PDF第17页披露客户关系；未逐客户分拆供货品类/份额。"
+    },
+    {
+      "id": "brunp",
+      "title": "CATL：邦普回收工艺与材料回收率",
+      "url": "https://www.catl.com/en/news/6595.html",
+      "published_at": "2025-10-22",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "catl-indonesia",
+      "title": "CATL：印尼镍资源—电池一体化项目开工",
+      "url": "https://www.catl.com/en/news/6481.html",
+      "published_at": "2025-06-30",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "posco-catl",
+      "title": "POSCO：与CATL签署2026—2028锂供应协议",
+      "url": "https://newsroom.posco.com/en/posco-group-strengthens-lithium-supply-partnership-with-catl-the-worlds-largest-battery-company/",
+      "published_at": "2026-11-18",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "catl-quinbrook",
+      "title": "CATL：Quinbrook Supernode二期商运与三期融资",
+      "url": "https://www.catl.com/en/news/6951.html",
+      "published_at": "2026-08-14",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "catl-enerqb",
+      "title": "CATL：首套EnerQB八小时储能系统交付",
+      "url": "https://www.catl.com/en/news/7062.html",
+      "published_at": "2026-10-28",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "catl-stellantis",
+      "title": "Stellantis/CATL：西班牙LFP电池合资工厂协议",
+      "url": "https://www.stellantis.com/en/news/press-releases/2024/december/stellantis-and-calt-to-invest-up-to-4-1-billion-in-joint-venture-for-large-scale-lfp-battery-plant-in-spain",
+      "published_at": "2024-12-10",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "usgs-mcs2026",
+      "title": "USGS Mineral Commodity Summaries 2026：锂、钴、锰主产地",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+      "published_at": "2026-02",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "用于产地名单，不在图中混用资源量、储量、产量和精炼量。官方检索内容已核验，PDF下载端返回403。"
+    },
+    {
+      "id": "usgs-graphite2026",
+      "title": "USGS：天然石墨生产与产能地域，2026展望",
+      "url": "https://pubs.usgs.gov/publication/sir20265081/full",
+      "published_at": "2026-11",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "用于产地覆盖；不把矿山名义产能等同负极成品产量。"
+    },
+    {
+      "id": "usgs-indonesia",
+      "title": "USGS：印度尼西亚矿业，2024统计与工艺",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/indonesia",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "usgs-philippines",
+      "title": "USGS：菲律宾镍钴产地",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/philippines",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "usgs-ni-sulfide",
+      "title": "USGS：镍铜硫化矿床，Sudbury与Norilsk-Talnakh",
+      "url": "https://pubs.usgs.gov/publication/sir20105070I",
+      "published_at": "2013",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "用于矿床类型与代表地区，不沿用历史产量份额。"
+    },
+    {
+      "id": "nrcan-ni",
+      "title": "加拿大自然资源部：镍生产与加工",
+      "url": "https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/nickel-facts",
+      "published_at": null,
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "na-cells",
+      "title": "KIT / Helmholtz / ZSW：商用钠离子电芯解剖与双铝集流体",
+      "url": "https://publikationen.bibliothek.kit.edu/1000179923/157703094",
+      "published_at": "2025-04-01",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "研究实测商用18650电芯；支持硬碳、层状正极、双铝集流体。不外推为CATL具体配方。"
+    },
+    {
+      "id": "na-nfpp",
+      "title": "研究论文：NFPP/C磷酸盐正极合成",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405829718314545",
+      "published_at": "2019-11",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "na-salts",
+      "title": "研究论文：NaPF6与NaClO4电解质对比",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37710356/",
+      "published_at": "2023",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "na-lca",
+      "title": "研究论文：普鲁士白与NVP钠电材料的实验数据LCA",
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cssc.202500268",
+      "published_at": "2025",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "包含钠正极原料、硬碳、钠电装配研究；实验路线不代表唯一工业工艺。"
+    },
+    {
+      "id": "catl-naxtra",
+      "title": "CATL：Naxtra钠电工程瓶颈与量产计划",
+      "url": "https://www.catl.com/en/news/6811.html",
+      "published_at": "2026-04-21",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源"
+    },
+    {
+      "id": "catl-tener-na",
+      "title": "CATL：TENER Sodium产品发布与交付计划",
+      "url": "https://www.catl.com/en/news/6861.html",
+      "published_at": "2026-06-22",
+      "accessed_at": "2026-11-25",
+      "kind": "一手来源",
+      "note": "公告提及NFPP及产线就绪；年底1GWh、2027年6月海外交付属于当时目标，非实际累计交付记录。"
+    }
+  ],
+  "partners": [
+    {
+      "id": "p_basf",
+      "company": "BASF",
+      "node_ids": [
+        "nmc"
+      ],
+      "role": "正极活性材料供应",
+      "status": "已开始供货",
+      "date": "2026-11-23",
+      "fact": "2025年全球框架协议后，BASF披露德国Schwarzheide工厂已向CATL首次交付CAM，并在中国长沙向CATL供货。",
+      "boundary": "未披露具体化学配方、采购吨数或价格，不能自动写成某一高镍牌号。",
+      "implication": "欧洲本地认证与供应落地比泛泛产能公告更接近可交付材料；验证周期是壁垒。",
+      "source_ids": [
+        "basf-catl",
+        "basf-framework"
+      ],
+      "material_label": "正极活性材料CAM；公告未披露具体化学体系"
+    },
+    {
+      "id": "p_yuneng",
+      "company": "湖南裕能",
+      "node_ids": [
+        "li_carbonate",
+        "lfp",
+        "lmfp"
+      ],
+      "role": "磷酸盐正极加工与供货",
+      "status": "年报披露实际业务",
+      "date": "2026-04-23",
+      "fact": "2025年报说明：CATL及子公司提供碳酸锂，公司加工成指定型号磷酸盐正极材料，该项采购和销售按净额法核算。",
+      "boundary": "该披露不等于所有裕能业务都采用同一来料模式；未披露各指定型号。",
+      "implication": "资源控制权、加工附加值与会计收入分属不同层次；比较材料厂需看出货量与吨加工盈利。",
+      "source_ids": [
+        "hunan-yuneng"
+      ],
+      "material_label": "指定型号磷酸盐正极；未逐型号披露"
+    },
+    {
+      "id": "p_longpan",
+      "company": "龙蟠科技 / 锂源（亚太）",
+      "node_ids": [
+        "lfp"
+      ],
+      "role": "CATL海外工厂LFP采购合作",
+      "status": "合作协议已签署",
+      "date": "2025-09-16",
+      "fact": "公告约定2026年第二季度至2031年预计向CATL海外工厂销售15.75万吨LFP，具体采购由后续订单落实。",
+      "boundary": "公告明示预测需求不具有强制约束力；本图不将总量当已交付或保底订单。",
+      "implication": "观察海外LFP需求、供应商本地产能和订单兑现；长期框架本身不能替代营运现金流。",
+      "source_ids": [
+        "longpan"
+      ],
+      "material_label": "磷酸铁锂LFP；预计数量由后续订单落实"
+    },
+    {
+      "id": "p_kaijin",
+      "company": "凯金新能源",
+      "node_ids": [
+        "synthetic_anode"
+      ],
+      "role": "负极材料供应",
+      "status": "供应商官方披露供货关系",
+      "date": "2026-01-06",
+      "fact": "凯金官网明确向CATL提供负极材料，并披露获得CATL 2025年第一季度供应商质量奖。",
+      "boundary": "公开材料没有给出独家关系、具体型号或份额。",
+      "implication": "负极供应关系的价值需由质量、一致性与客户验证支撑，不能只按石墨化产能排序。",
+      "source_ids": [
+        "kaijin"
+      ],
+      "material_label": "电池负极材料；具体型号和份额未披露"
+    },
+    {
+      "id": "p_putailai",
+      "company": "璞泰来",
+      "node_ids": [
+        "synthetic_anode",
+        "separator",
+        "binder",
+        "coating"
+      ],
+      "role": "材料、工艺与设备合作",
+      "status": "2025年报确认客户合作",
+      "date": "2026-03-06",
+      "fact": "年报披露与CATL在研发、产品认证、质量管理等方面保持长期合作；公司覆盖负极、隔膜涂覆、功能材料和设备。",
+      "boundary": "年报未逐客户拆分具体产品、采购金额与份额；图中为合作能力范围，不是各品类已供货量清单。",
+      "implication": "材料与设备联动可使工艺更快导入，但能力范围仍须与实际订单分开。",
+      "source_ids": [
+        "putailai"
+      ],
+      "material_label": "研发/认证/质量合作；未逐客户拆分供货品类"
+    },
+    {
+      "id": "p_brunp",
+      "company": "邦普循环 Brunp",
+      "node_ids": [
+        "scrap",
+        "hydro_recycle",
+        "direct_recycle"
+      ],
+      "role": "CATL子公司回收闭环",
+      "status": "实际运营与工艺披露",
+      "date": "2025-10-22",
+      "fact": "CATL披露邦普采用智能拆解、湿法冶金和材料修复等工艺，2024年处理废电池超过12万吨。",
+      "boundary": "公司公布的金属回收率属于相应工艺/物料口径，不等于整包重量回收率或项目盈利率。",
+      "implication": "回收价值由进料保障、可回收元素、加工费用及材料重新进入电池链的能力共同决定。",
+      "source_ids": [
+        "brunp"
+      ],
+      "material_label": "废电池回收、金属回收及材料修复"
+    },
+    {
+      "id": "p_indonesia",
+      "company": "CBL / ANTAM / IBC",
+      "node_ids": [
+        "ni_ore",
+        "hpal",
+        "ncm_salts",
+        "pcam",
+        "formation",
+        "hydro_recycle"
+      ],
+      "role": "印尼镍资源—电池一体化合作",
+      "status": "已公告开工",
+      "date": "2025-06-30",
+      "fact": "CATL旗下邦普体系的CBL与ANTAM、IBC合作，项目覆盖镍矿冶炼、材料、电池制造和回收。",
+      "boundary": "近60亿美元及满产规模均为计划口径；不由开工公告推定全链已商运。",
+      "implication": "项目收益取决于矿—化工—材料—电芯各段同步爬坡；镍供给增加不会直接惠及无镍LFP正极。",
+      "source_ids": [
+        "catl-indonesia"
+      ],
+      "material_label": "镍资源—材料—电池—回收规划项目"
+    },
+    {
+      "id": "p_posco",
+      "company": "POSCO集团",
+      "node_ids": [
+        "li_carbonate",
+        "li_hydroxide"
+      ],
+      "role": "锂产品供应",
+      "status": "协议供货已开始",
+      "date": "2026-11-18",
+      "fact": "POSCO披露与CATL的锂长期供应安排覆盖2026—2028年，且已开始供货。",
+      "boundary": "公告未公开具体盐种、吨数与价格；连接锂盐节点表示产品范围观察，不表示两种盐均已供货。",
+      "implication": "跟踪供应地域多元化与实际客户认证；不能把原料多来源自动等同低成本。",
+      "source_ids": [
+        "posco-catl"
+      ],
+      "material_label": "锂产品；公告未披露具体盐种"
+    },
+    {
+      "id": "p_quinbrook",
+      "company": "Quinbrook",
+      "node_ids": [
+        "ess_dc",
+        "ess_ac",
+        "grid_users"
+      ],
+      "role": "储能设备及生命周期合作",
+      "status": "商运项目与新产品交付并存",
+      "date": "2026-10-28",
+      "fact": "Supernode二期于2026年8月公告商运，CATL为三期核心储能供应商；10月另交付首套面向澳洲的EnerQB八小时系统。",
+      "boundary": "Supernode商运不能证明EnerQB新项目也已商运；新产品交付与现场并网是不同里程碑。",
+      "implication": "海外储能竞争力包含融资接受度、服务与履约；看可用率和合同保障比仅看电芯成本更接近现金流。",
+      "source_ids": [
+        "catl-quinbrook",
+        "catl-enerqb"
+      ],
+      "material_label": "储能系统及长期服务；区分商运与新产品交付"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "碳酸锂 ≠ 氢氧化锂 ≠ 碳化锂",
+      "formula": "Li₂CO₃ / LiOH·H₂O / Li₂C₂",
+      "explanation": "前两者是常见电池锂盐。碳化锂是不同化合物，已有补锂剂研究，不能混作目前大宗正极锂盐原料。",
+      "source_ids": [
+        "li-refining",
+        "nmc-synthesis",
+        "li-carbide"
+      ]
+    },
+    {
+      "term": "三元前驱体 ≠ 三元正极",
+      "formula": "NiₓCoᵧMn𝓏(OH)₂ → LiNiₓCoᵧMn𝓏O₂",
+      "explanation": "典型氢氧化物前驱体先由金属盐共沉淀形成，随后加入锂盐并烧结才成为层状正极活性材料；x+y+z=1。",
+      "source_ids": [
+        "nmc-synthesis"
+      ]
+    },
+    {
+      "term": "NMC与NCM的数字顺序",
+      "formula": "NMC：Ni–Mn–Co；NCM：Ni–Co–Mn",
+      "explanation": "字母顺序不一样，比例标注应跟随原来源的元素顺序。811因后两项相同不显差别，532等配比不能脱离定义照抄。",
+      "source_ids": [
+        "nmc-synthesis"
+      ]
+    },
+    {
+      "term": "LFP橄榄石与三元层状结构",
+      "formula": "LiFePO₄ / LiMO₂",
+      "explanation": "LFP由PO₄和Fe–O骨架构成并提供锂迁移通道；NMC是Li层与过渡金属氧层交替的层状结构。结构影响稳定性与储锂行为，但性能仍取决于颗粒、界面及电芯设计。",
+      "source_ids": [
+        "lfp-structure",
+        "nmc-synthesis"
+      ]
+    },
+    {
+      "term": "石墨是层间嵌锂",
+      "formula": "C₆ + xLi⁺ + xe⁻ ⇄ LiₓC₆",
+      "explanation": "充电时锂进入负极石墨层间，放电时脱出。LiC₆是理想高嵌锂端态；不意味着出厂原始石墨粉末已经含有这些锂。",
+      "source_ids": [
+        "graphite-structure"
+      ]
+    },
+    {
+      "term": "硅碳复合材料 ≠ 碳化硅",
+      "formula": "Si–C复合 / SiC化合物",
+      "explanation": "电池领域Si–C通常指硅与碳复合结构，利用硅储锂和碳骨架；SiC是碳化硅化合物，常见于功率半导体等领域，两者不可混写。",
+      "source_ids": [
+        "silicon",
+        "silicon-swelling"
+      ]
+    },
+    {
+      "term": "活性材料、辅材和集流体",
+      "formula": "活性物 / 电解液 / 隔膜 / Cu、Al",
+      "explanation": "正负极活性材料承担主要储锂反应；电解液运送离子，隔膜防止电子短路，集流体传导电子，粘结剂维持附着，导电剂建立导电网络。",
+      "source_ids": [
+        "cell-components",
+        "manufacturing"
+      ]
+    },
+    {
+      "term": "LFP与LMFP不含镍钴",
+      "formula": "LiFePO₄ / LiMnₓFe₁₋ₓPO₄",
+      "explanation": "LFP不含镍钴；LMFP在铁磷骨架引入锰，也不是镍钴锰三元前驱体路线。资源冲击要先匹配配方。",
+      "source_ids": [
+        "lfp-synthesis",
+        "lmfp"
+      ]
+    },
+    {
+      "term": "MHP与NPI不是同一镍产品",
+      "formula": "混合氢氧化物 / 镍生铁",
+      "explanation": "MHP通常来自HPAL并可继续精炼镍钴盐；NPI通常来自RKEF并主要用于不锈钢。NPI进入电池材料链需要额外转化。",
+      "source_ids": [
+        "mdka-hpal",
+        "reagents"
+      ]
+    },
+    {
+      "term": "电芯、PACK与储能系统",
+      "formula": "Cell → Pack / DC block → AC ESS",
+      "explanation": "电芯是电化学单元；动力PACK增加车规结构、BMS和热管理；完整储能系统还涉及PCS、EMS、消防与并网。三个报价和能量密度口径不能直接比较。",
+      "source_ids": [
+        "catl-ctp",
+        "pnnl-ess",
+        "sandia-control"
+      ]
+    },
+    {
+      "term": "回收率、再生含量与回收效率",
+      "formula": "回收某元素 / 投入该元素",
+      "explanation": "元素回收率、整包物料回收效率、产品中再生材料占比和回收项目毛利率是不同指标；高金属回收率不自动证明商业盈利。",
+      "source_ids": [
+        "epa-recycling",
+        "brunp"
+      ]
+    },
+    {
+      "term": "钠电与锂电的材料替换",
+      "formula": "Na体系 / 硬碳 / 双铝可行",
+      "explanation": "钠电不是给锂电简单更换盐：正极、硬碳、电解液和界面需共同适配。部分体系可用双铝集流体，NFPP为Na₄Fe₃(PO₄)₂P₂O₇的代表化学式；层状钠电未必无镍。",
+      "source_ids": [
+        "na-cells",
+        "na-nfpp",
+        "na-salts"
+      ]
+    },
+    {
+      "term": "量产计划、产线就绪与客户交付",
+      "formula": "计划 ≠ 交付 ≠ 商运",
+      "explanation": "CATL 2026年4月披露Naxtra年底全面量产目标；6月TENER Sodium公告提及产线就绪、年底累计1GWh及2027年6月海外交付计划。本图据其标注技术和商业阶段，不把目标数字记为已实现交付。",
+      "source_ids": [
+        "catl-naxtra",
+        "catl-tener-na"
+      ]
+    }
+  ],
+  "pack_comparison": [
+    {
+      "dimension": "系统边界",
+      "ev": "电芯/模组或CTP + BMS + 结构、高压保护与热管理，连接车辆电驱系统。",
+      "ess": "电芯/机架/DC舱 + PCS + EMS + 温控消防 + 并网及场站设备，具体交付范围由合同定义。",
+      "meaning": "比较成本之前先统一Cell、DC系统、AC系统与EPC口径。",
+      "source_ids": [
+        "catl-ctp",
+        "pnnl-ess"
+      ]
+    },
+    {
+      "dimension": "主要性能目标",
+      "ev": "体积/重量能量密度、续航、快充、低温、峰值功率、寿命与碰撞安全。",
+      "ess": "可用MWh、MW功率与时长、往返效率、可用率、日历/循环寿命及吞吐量保证。",
+      "meaning": "同样LFP不代表同一电芯规格；性能价值取决于应用约束。",
+      "source_ids": [
+        "catl-ctp",
+        "pnnl-ess",
+        "sandia-services"
+      ]
+    },
+    {
+      "dimension": "BMS / PCS / EMS",
+      "ev": "BMS监控电芯并给出安全运行边界，与整车控制和充电系统协同。",
+      "ess": "BMS保护电池；PCS按约束双向转换电能；EMS结合价格、负荷/发电和调度信号决定运行。",
+      "meaning": "EMS优化收益不能绕过BMS安全边界，PCS功率也不能等同电池能量容量。",
+      "source_ids": [
+        "sandia-control"
+      ]
+    },
+    {
+      "dimension": "热与安全边界",
+      "ev": "重点适配车辆碰撞、振动、空间与乘员保护，包级热传播和整车协同。",
+      "ess": "重点关注舱/柜间传播、场站消防、运维隔离、热管理和并网故障协同。",
+      "meaning": "LFP相对热稳定优势不等于系统不会起火；安全须按系统层级验证。",
+      "source_ids": [
+        "catl-ctp",
+        "epa-recycling",
+        "pnnl-ess"
+      ]
+    },
+    {
+      "dimension": "客户与最终使用者",
+      "ev": "直接客户可为整车厂；最终使用者为车主、公交/物流/矿卡等运营车队。",
+      "ess": "集成商、EPC、开发商或业主采购；电网、发电商、工业用户使用电力服务。",
+      "meaning": "材料/电芯出货、整车销售、电站商运是不同兑现节点。",
+      "source_ids": [
+        "catl-stellantis",
+        "catl-quinbrook",
+        "sandia-services"
+      ]
+    },
+    {
+      "dimension": "经济价值与收入",
+      "ev": "供货与服务收入；用户关注购置、能耗、补能停机、残值和质保成本。",
+      "ess": "设备销售/长期服务；资产可通过电价时移、辅助服务、容量或供电合同等获得价值。",
+      "meaning": "属于业务分析：电芯降本只有在合同与竞争结构允许时才转化为供应商或业主利润。",
+      "source_ids": [
+        "catl-quinbrook",
+        "sandia-services"
+      ]
+    },
+    {
+      "dimension": "最值得跟踪的证据",
+      "ev": "客户定点→样品验证→车型量产→交付与售后表现。",
+      "ess": "设备交付→到场安装→并网验收→商运→可用率/收入合同与现金回收。",
+      "meaning": "将里程碑分开，避免把框架规模、出厂交付和商运混在一个GWh数字里。",
+      "source_ids": [
+        "catl-quinbrook",
+        "catl-enerqb"
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "i_chemistry",
+      "title": "同一矿产冲击，对不同电池路线的影响不同",
+      "causal_chain": [
+        "镍/钴供给变化",
+        "三元材料成本和可得性变化",
+        "NMC/NCA方案受影响",
+        "LFP正极不直接消耗镍钴"
+      ],
+      "so_what": "先按材料配方和实际合同映射风险，避免把镍价变化机械套到所有电芯。",
+      "observation": [
+        "技术路线出货结构",
+        "锂盐与镍钴盐分别报价",
+        "原料定价条款"
+      ],
+      "source_ids": [
+        "nmc-synthesis",
+        "lfp-synthesis"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_lithium",
+      "title": "锂资源多，不等于合格锂盐随时可替换",
+      "causal_chain": [
+        "矿石/卤水资源",
+        "提锂、净化与盐转换",
+        "杂质/粒径与客户认证",
+        "可交付电池级盐"
+      ],
+      "so_what": "收购矿权和锁定合格精炼能力解决的是不同约束；应把精矿吨、LCE和盐产品吨分开。",
+      "observation": [
+        "产品规格",
+        "回收率与合格率",
+        "运输和客户认证"
+      ],
+      "source_ids": [
+        "li-refining",
+        "sqm",
+        "nmc-synthesis"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_tolling",
+      "title": "来料加工使营业收入与供货规模脱钩",
+      "causal_chain": [
+        "CATL提供碳酸锂",
+        "材料厂加工磷酸盐正极",
+        "相关交易按净额确认",
+        "收入更接近加工增值而非全材料价值"
+      ],
+      "so_what": "评价材料企业应同时看吨出货、吨加工收益、客户集中和现金占用；收入排名可能误导供应链判断。",
+      "observation": [
+        "出货吨数",
+        "净额/总额会计口径",
+        "存货与应收",
+        "锂价传导条款"
+      ],
+      "source_ids": [
+        "hunan-yuneng"
+      ],
+      "type": "披露事实与分析"
+    },
+    {
+      "id": "i_reagents",
+      "title": "硫酸和电力是跨多个材料环节的共同风险",
+      "causal_chain": [
+        "硫酸/能源供给成本变化",
+        "HPAL、锂化工和回收成本变化",
+        "中间品与再生盐边际成本变化",
+        "供应商利润与爬坡节奏变化"
+      ],
+      "so_what": "化工与公用工程也应进入监测，尤其评估印尼镍项目和回收园区。",
+      "observation": [
+        "硫/硫酸价格",
+        "酸耗",
+        "电力可靠性/碳强度",
+        "尾渣处理与回收率"
+      ],
+      "source_ids": [
+        "reagents",
+        "mdka-hpal"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_anode",
+      "title": "负极风险更靠近加工与认证，而不仅是石墨矿",
+      "causal_chain": [
+        "天然石墨精矿或焦类",
+        "提纯/球化或石墨化",
+        "包覆与成品一致性",
+        "客户认证后进入电芯"
+      ],
+      "so_what": "原矿扩产无法直接替代球形高纯石墨；人造石墨则暴露于电价、炉能耗与焦原料。",
+      "observation": [
+        "球化收率",
+        "电耗",
+        "首效/循环一致性",
+        "量产认证"
+      ],
+      "source_ids": [
+        "syrah-aam",
+        "graphite-process",
+        "kaijin"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_silicon",
+      "title": "硅碳突破是材料、界面和制造一起过关",
+      "causal_chain": [
+        "负极容量提高",
+        "体积膨胀和首次锂损失约束",
+        "粘结剂/电解液/补锂/结构配合",
+        "全电芯能量与寿命才可能改善"
+      ],
+      "so_what": "优先看全电芯、实际面载量、外压和循环条件，半电池容量纪录不足以证明量产替代。",
+      "observation": [
+        "全电芯Wh/kg与Wh/L",
+        "循环条件",
+        "膨胀与首效",
+        "产线良率"
+      ],
+      "source_ids": [
+        "silicon",
+        "silicon-swelling"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_effective_capacity",
+      "title": "名义GWh与有效供给之间还有良率和认证",
+      "causal_chain": [
+        "设备安装/名义产能",
+        "制造稳定性与化成分容",
+        "合格品比例和客户批准",
+        "实际可交付电芯"
+      ],
+      "so_what": "判断过剩或短缺应分技术规格、地区与合格产出；开工规模不能直接计入当期供给。",
+      "observation": [
+        "产线验收",
+        "良率与稼动率",
+        "客户量产批准",
+        "产销与存货"
+      ],
+      "source_ids": [
+        "manufacturing",
+        "hitachi"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_recycle",
+      "title": "LFP扩张会改变回收的利润来源",
+      "causal_chain": [
+        "回收进料中LFP占比提高",
+        "可回收镍钴价值下降",
+        "经济性更依赖锂、加工效率与直接再生",
+        "进料采购和客户闭环更重要"
+      ],
+      "so_what": "三元回收项目历史毛利不能直接外推LFP；金属回收率高也可能因进料贵而不盈利。",
+      "observation": [
+        "进料化学组成",
+        "采购定价系数",
+        "锂回收和纯度",
+        "实际开工率",
+        "再生材料客户"
+      ],
+      "source_ids": [
+        "epa-recycling",
+        "direct-recycling",
+        "lfp-synthesis"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_ess",
+      "title": "储能采购优势必须传递到项目级可融资性",
+      "causal_chain": [
+        "电芯与系统成本下降",
+        "并网和性能保证",
+        "收入合同与融资",
+        "商运可用率及回款"
+      ],
+      "so_what": "设备低价只解决一环；长期服务、质保信用和项目交付记录可能影响海外系统订单。",
+      "observation": [
+        "商运证明",
+        "长期服务协议",
+        "收益合同",
+        "可用率与RTE",
+        "质保责任"
+      ],
+      "source_ids": [
+        "catl-quinbrook",
+        "pnnl-ess"
+      ],
+      "type": "结构推论"
+    },
+    {
+      "id": "i_qualify",
+      "title": "本地材料供货的门槛包含工艺匹配与客户验证",
+      "causal_chain": [
+        "本地CAM产线",
+        "开发与客户认证",
+        "首次交付",
+        "稳定放量和长期采购"
+      ],
+      "so_what": "BASF德国向CATL首批供货说明合作跨过了一个具体节点，但不能据此推断全部需求已本地化。",
+      "observation": [
+        "首次供货",
+        "持续供货/产能利用率",
+        "地区来源",
+        "供应规格与合同"
+      ],
+      "source_ids": [
+        "basf-framework",
+        "basf-catl"
+      ],
+      "type": "披露事实与分析"
+    },
+    {
+      "id": "sodium_tradeoff",
+      "title": "钠电把风险从锂价部分转向硬碳与制造",
+      "causal_chain": [
+        "钠正极与钠电解质减少锂盐使用",
+        "硬碳与双铝路径改变石墨、铜箔需求结构",
+        "首效、控水、产气与附着影响良率和可用能量",
+        "系统效率、寿命与实际交付决定最终成本"
+      ],
+      "so_what": "针对CATL，要跟踪钠电的合格产出和客户交付，以及锂价变化后的系统全生命周期成本；不能只凭钠资源便宜推定盈利。",
+      "observation": [
+        "硬碳首效与产气",
+        "电芯良率、密度与循环",
+        "DC/AC效率和辅机损耗",
+        "实际交付、验收和质保兑现"
+      ],
+      "source_ids": [
+        "na-cells",
+        "catl-naxtra",
+        "catl-tener-na",
+        "pnnl-ess"
+      ],
+      "type": "结构推论"
+    }
+  ]
+}

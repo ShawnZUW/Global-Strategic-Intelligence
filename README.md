@@ -11,7 +11,9 @@
 - 原始来源、披露日期、核验日期、证据类型、研究判断与建议。
 - 公开源自动采集线索及访问审计、历史快照与筛选导出。
 
-2026年11月25日扩源：92家发布机构，34家配置RSS/官方新闻列表采集，27个司法辖区的登记或披露入口等待主体映射，其余31家供检索核验。网页将机构数、当次采集成功数与已核验事件数分开统计；每家机构的免费范围、接口限制和更新节奏均可查看。
+2026年11月25日升级：56个化学与产业链节点、87条关系、6条路线、9个公开合作案例、13个术语与7个动力包/储能比较维度。首页以6个深度议题展示前因后果、材料影响和经营问题；28条已核验事件作为事实底稿。
+
+来源目录包含133家机构：45家配置RSS或公开新闻列表采集，61家用于主题研究，27家为登记/披露入口。另有12个从官网反向核验的X账号渠道，不重复计机构数。原始披露、专业研究、媒体和论坛分层保存；候选线索不能自动进入结论层。配置数不等于每次实际访问成功数。
 
 数字只展示有明确出处的数据。企业目标、意向协议、实验室测试与已完成交易分别描述；价格缺失不记为零，未发现信息不等于没有风险。
 
@@ -23,15 +25,17 @@ GitHub Pages 从 `main` 分支根目录发布。前端使用相对路径，无�
 
 | 文件 | 用途 |
 | --- | --- |
-| `index.html`、`styles.css`、`app.js` | 网页与交互 |
-| `data/latest.json` | 经公开原文核验的战略研究快照 |
-| `data/history/YYYY-MM-DD.json` | 战略研究每日快照 |
-| `data/manifest.json` | 历史快照索引 |
-| `data/governance-latest.json` | 独立法人治理任务结果（有实际结果后生成） |
-| `data/feed-latest.json` | 程序采集的官方公开源线索，尚未经完整研判 |
-| `data/feed-history/` | 自动采集历史记录 |
-| `data/source-catalog.json` | 按发布机构归并的来源目录、免费字段与接入状态 |
-| `data/feed_sources.json` | 已实际配置定时采集的来源和解析规则 |
+| index.html、styles.css、app.js | 网页基础交互 |
+| intelligence.js、intelligence.css | 图谱、化学词典、合作与系统比较、因果分析 |
+| data/chain.json | 化学路线、物料工艺、公开合作与科学依据 |
+| data/insights.json | 时间脉络与逐条证据的重点分析 |
+| data/insights-history/YYYY-MM-DD.json | 深度议题每日版本 |
+| data/latest.json、data/history/ | 已核验事实与每日快照 |
+| data/manifest.json | 历史索引 |
+| data/governance-latest.json | 独立法人治理结果 |
+| data/feed-latest.json、data/feed-history/ | 独立候选线索与运行审计 |
+| data/source-catalog.json | 机构目录、类型、免费范围与接入状态；X账号单列 |
+| data/feed_sources.json | 实际采集配置与解析规则 |
 
 ## 更新方式
 
@@ -46,3 +50,7 @@ ChatGPT 的战略研究任务计划在北京时间每天约08:00更新已核验�
 ## 数据使用
 
 只保存必要的事实摘要、标题、日期、结构化指标和原始链接，不复制新闻全文，不绕过登录、验证码或付费限制。地图采用Natural Earth地理概览，项目点仅为地域示意。不得上传内部投资台账、非公开战略、凭据或个人敏感信息。
+
+## 内容验证
+
+发布前执行 node --check app.js、node --check intelligence.js、python3 scripts/validate_content.py。采集器的15项行为验证见tests。图谱高亮不跨回收闭环无限传播，防止把镍链误作LFP的直接材料风险。图可下载SVG，详细化学、工艺、地区与证据可点节点查看。

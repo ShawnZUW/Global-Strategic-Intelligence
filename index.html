@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="面向电池产业投资的公开信息研究仪表盘，覆盖矿产、原料、航运、技术、竞争合作与法人治理。">
+  <meta name="description" content="从宁德时代产业投资视角，连接电池化学、供应链、技术与市场变化。提供可追溯的产业链图谱、合作关系与因果分析。">
   <title>全球战略情报 · Global Strategic Intelligence</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="intelligence.css">
+  <script src="intelligence.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -24,26 +26,19 @@
     </aside>
     <main id="main" class="main">
       <section class="page-head">
-        <div><div class="eyebrow">GLOBAL OUTLOOK / BATTERY VALUE CHAIN</div><h1>全球战略情报</h1><p class="subtitle">从全球变化，看到产业链影响与投资问题。</p></div>
+        <div><div class="eyebrow">CATL LENS / CHEMISTRY TO BUSINESS</div><h1>全球战略情报</h1><p class="subtitle">沿着电池产业链，看懂变化如何影响材料、成本、技术与市场。</p></div>
         <div class="snapshot-control"><label for="snapshot">情报快照</label><select id="snapshot"><option value="latest">最新发布</option></select><span id="asof" class="mono">正在读取…</span></div>
       </section>
       <div id="notice" class="notice" role="status" hidden></div>
       <div id="freshness" class="freshness"><span class="status-dot"></span><span id="freshness-text">正在读取已发布数据</span><span class="freshness-divider">/</span><span id="scope-note">所有事件保留原始来源</span></div>
       <section id="stats" class="stats" aria-label="快照概览"></section>
-      <section id="overview" class="overview">
-        <div class="panel map-panel">
-          <div class="panel-head"><div><span class="small-kicker">GEOGRAPHIC LENS</span><h2>全球事件分布</h2></div><span id="map-count" class="tag">公开事件</span></div>
-          <div class="world-map"><svg id="map" viewBox="0 0 840 410" role="img" aria-label="已取得地理位置的公开事件分布图"><g id="graticule"></g><g id="land"></g><g id="markers"></g></svg><div class="map-legend"><span><i class="legend-dot red"></i>P0</span><span><i class="legend-dot amber"></i>P1</span><span><i class="legend-dot cyan"></i>其他</span><span>点击标记查看事件</span></div></div>
-          <div class="map-foot"><span id="map-note">仅绘制有明确地理坐标的记录</span><span>Natural Earth</span></div>
-        </div>
-        <div class="panel priorities-panel"><div class="panel-head"><div><span class="small-kicker">DECISION AGENDA</span><h2>本期优先关注</h2></div><span class="tag">研究优先级</span></div><div id="priorities"></div></div>
-      </section>
       <section class="panel workspace-panel">
         <div class="workspace-top"><div><span class="small-kicker" id="section-kicker">INTELLIGENCE FEED</span><h2 id="section-title">全部战略事件</h2></div><div id="result-count" class="result-count"></div></div>
         <form id="filters" class="filters" role="search">
           <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索企业、材料、国家或技术" aria-label="搜索情报"></div>
           <select id="category" aria-label="按领域筛选"><option value="">全部领域</option></select>
           <select id="source-mode" aria-label="按信源接入方式筛选" hidden><option value="">全部接入方式</option><option value="auto">自动采集</option><option value="research">检索核验</option><option value="registry">待主体映射</option></select>
+          <select id="source-tier" aria-label="按信源类型筛选" hidden><option value="">全部信源类型</option><option value="primary">原始披露</option><option value="research">专业研究</option><option value="media">专业媒体</option><option value="community">论坛社区</option></select>
           <select id="feed-source" aria-label="按采集机构筛选" hidden><option value="">全部采集机构</option></select>
           <select id="priority" aria-label="按研究优先级筛选"><option value="">全部优先级</option><option value="P0">P0 · 优先核实</option><option value="P1">P1 · 重点研究</option><option value="P2">P2 · 持续观察</option></select>
           <select id="evidence" aria-label="按证据筛选"><option value="">全部证据</option><option value="primary">一手披露</option><option value="other">其他 / 待核验</option></select>
@@ -52,7 +47,15 @@
         </form>
         <div id="content" class="content"><div class="loading-state"><div class="spinner"></div><p>正在读取公开信息快照…</p></div></div>
       </section>
-      <section id="research-note" class="research-note"><div><span class="small-kicker">READING GUIDE</span><h3>事实、目标与研判分别呈现</h3></div><p>机构信源、自动采集和已核验情报分别统计。公开可查不等于已接入API，首次发现不等于新发生。规划产能与技术测试保留原始阶段；影响与建议属于研究判断。</p></section>
+      <section id="overview" class="overview">
+        <div class="panel map-panel">
+          <div class="panel-head"><div><span class="small-kicker">GEOGRAPHIC LENS</span><h2>全球事件分布</h2></div><span id="map-count" class="tag">公开事件</span></div>
+          <div class="world-map"><svg id="map" viewBox="0 0 840 410" role="img" aria-label="已取得地理位置的公开事件分布图"><g id="graticule"></g><g id="land"></g><g id="markers"></g></svg><div class="map-legend"><span><i class="legend-dot red"></i>P0</span><span><i class="legend-dot amber"></i>P1</span><span><i class="legend-dot cyan"></i>其他</span><span>点击标记查看事件</span></div></div>
+          <div class="map-foot"><span id="map-note">仅绘制有明确地理坐标的记录</span><span>Natural Earth</span></div>
+        </div>
+        <div class="panel priorities-panel"><div class="panel-head"><div><span class="small-kicker">DECISION AGENDA</span><h2>本期优先关注</h2></div><span class="tag">研究优先级</span></div><div id="priorities"></div></div>
+      </section>
+      <section id="research-note" class="research-note"><div><span class="small-kicker">RESEARCH STANDARD</span><h3>原文支持事实，因果支持判断</h3></div><p>主界面呈现经过核验的结论与清晰的影响路径。专业媒体、博客、论坛和X用于发现议题；研究线索与采集运行记录收在独立工作区。化学路线、商业合作及项目阶段均保留证据。</p></section>
       <footer class="footer"><span>GLOBAL STRATEGIC INTELLIGENCE</span><span id="footer-date">公开数据 · 来源可追溯</span><a href="https://github.com/ShawnZUW/Global-Strategic-Intelligence" target="_blank" rel="noopener noreferrer">项目与更新记录</a></footer>
     </main>
   </div>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect public official RSS/Atom and fixed newsroom headlines. Standard library only.
+"""Collect public RSS/Atom and fixed newsroom headlines with source provenance.
 
 This writes a separate candidate-feed dataset; it never edits curated intelligence.
 """
@@ -28,7 +28,7 @@ MAX_BYTES = 2_000_000
 MAX_ITEMS = 1500
 MAX_PER_SOURCE = 40
 HTML_PARSER_VERSION = 2
-USER_AGENT = "GlobalStrategicIntelligence/1.1 (public official headlines; daily refresh)"
+USER_AGENT = "GlobalStrategicIntelligence/1.2 (public source headlines; daily refresh)"
 TRACKING_PARAMS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
 CLASSIFIERS = {
     "航道与物流": r"\b(shipping|maritime|chokepoint|strait|canal|red sea|port|logistics)\b",
@@ -281,10 +281,35 @@ def classify(title: str, source: dict) -> list[str]:
     return result
 
 
+def source_metadata(source: dict) -> dict:
+    """Source identity is not evidence that a particular headline has been verified."""
+    tier = source.get("source_tier", "primary")
+    labels = {
+        "primary": "原始披露线索",
+        "research": "专业研究线索",
+        "media": "专业媒体线索",
+        "community": "社区讨论线索",
+    }
+    if tier not in labels:
+        raise ValueError("source_tier must be primary, research, media or community")
+    return {"publisher_id": source.get("publisher_id", source["id"]),
+            "publisher_type": source.get("publisher_type"),
+            "source_tier": tier, "evidence_level": labels[tier]}
+
+
+def source_limit(source: dict) -> int:
+    value = source.get("max_items", MAX_PER_SOURCE)
+    if isinstance(value, bool) or not isinstance(value, int) or value < 1:
+        raise ValueError("max_items must be a positive integer")
+    return min(value, MAX_PER_SOURCE)
+
+
 def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fetch_source) -> tuple[dict, dict]:
     stamp = iso(now)
     old_sources = {x["id"]: x for x in previous.get("sources", [])}
     current_sources = {x["id"]: x for x in config["sources"]}
+    metadata = {key: source_metadata(source) for key, source in current_sources.items()}
+    limits = {key: source_limit(source) for key, source in current_sources.items()}
     seen = dict(state.get("seen", {}))
     items = {}
     # Retain previously displayed signals on transient source failure or feed rollover.
@@ -297,7 +322,8 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
             continue
         key = normalize_url(old.get("url", ""))
         if key:
-            old = dict(old, url=key)
+            # Update source classification, but never the retained observation timestamps.
+            old = dict(old, url=key, **metadata[old["source_id"]])
             items[key] = old
             seen.setdefault(old["id"], {"first_seen_at": old["first_seen_at"]})
     audits = []
@@ -314,8 +340,8 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
         for source, raw_items, details, error in pool.map(request, config["sources"]):
             matching = [row for row in raw_items if is_relevant(row["title"], source)]
             audit = {"id": source["id"], "name": source["name"], "url": source["url"],
-                     "homepage": source.get("homepage"), "publisher_type": source.get("publisher_type"),
-                     "publisher_id": source.get("publisher_id", source["id"]), "method": source.get("method", "rss"),
+                     "homepage": source.get("homepage"), **metadata[source["id"]],
+                     "method": source.get("method", "rss"), "max_items": limits[source["id"]],
                      "initial_baseline": not old_sources.get(source["id"], {}).get("last_success_at"),
                      "coverage_note": source.get("coverage_note"),
                      "status": "failed" if error else "success", "checked_at": stamp,
@@ -324,16 +350,16 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
                      "latest_publication_at": max((x["published_at"] for x in raw_items if x["published_at"]), default=None),
                      "error": error, **details}
             audits.append(audit)
-            for row in matching[:MAX_PER_SOURCE]:
+            for row in matching[:limits[source["id"]]]:
                 key = row["url"]
                 identity = hashlib.sha256(key.encode("utf-8")).hexdigest()[:24]
                 record = seen.setdefault(identity, {"first_seen_at": stamp})
                 row = {**row, "id": identity, "source_id": source["id"], "source_name": source["name"],
-                       "source_url": source["url"], "publisher_type": source.get("publisher_type"),
+                       "source_url": source["url"], **metadata[source["id"]],
                        "first_seen_at": record["first_seen_at"], "last_seen_at": stamp,
                        "categories": classify(row["title"], source),
                        "collection_method": source.get("method", "rss"),
-                       "evidence_level": "官方页面线索" if source.get("method") == "html" else "官方订阅线索", "status": "待核验"}
+                       "status": "待核验"}
                 # If two feeds point to the same canonical page, keep one signal.
                 if key in items:
                     row["first_seen_at"] = min(items[key]["first_seen_at"], row["first_seen_at"])
@@ -346,7 +372,7 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
     ordered = []
     for row in ranked:
         source_id = row["source_id"]
-        if kept_per_source.get(source_id, 0) < budget:
+        if kept_per_source.get(source_id, 0) < min(budget, limits[source_id]):
             ordered.append(row)
             kept_per_source[source_id] = kept_per_source.get(source_id, 0) + 1
     success_count = sum(x["status"] == "success" for x in audits)
@@ -354,8 +380,8 @@ def collect(config: dict, previous: dict, state: dict, now: datetime, fetcher=fe
     new_count = sum(x["first_seen_at"] == stamp for x in ordered)
     data = {"meta": {"schema_version": 1, "generated_at": stamp,
                      "as_of": now.astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat(),
-                     "mode": "official-feed-leads", "collection_status": "success" if success_count == len(audits) else ("partial" if success_count else "failed"),
-                     "note": "标题来自官方RSS或固定新闻列表，关键词分类仅供筛选，未经逐条核验。未提供发布日期的列表条目保留空值，首次发现时间不是事件发生时间。",
+                     "mode": "tiered-public-source-leads", "collection_status": "success" if success_count == len(audits) else ("partial" if success_count else "failed"),
+                     "note": "标题来自原始披露、专业研究、媒体或社区RSS及固定新闻列表，逐条保留来源层级；关键词分类不构成事实核验。未提供发布日期的条目保留空值，首次发现时间不是事件发生时间。社区与媒体线索须回原始资料核验后才进入主面板结论。",
                      "source_count": len(audits), "successful_sources": success_count,
                      "item_count": len(ordered), "newly_discovered_count": new_count,
                      "discovery_count_label": "本次首次发现（含新源历史建库，非今日发生事件）",

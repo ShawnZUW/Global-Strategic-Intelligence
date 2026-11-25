@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+"""Check evidence links and semantic boundaries before publishing curated content."""
+import json
+from pathlib import Path
+from urllib.parse import urlsplit
+
+ROOT = Path(__file__).resolve().parents[1]
+
+def read(name):
+    return json.loads((ROOT / "data" / name).read_text())
+
+def check_sources(bundle):
+    refs = bundle["sources"]
+    ids = {x["id"] for x in refs}
+    assert len(ids) == len(refs), "duplicate evidence source id"
+    for source in refs:
+        url = urlsplit(source["url"])
+        assert url.scheme in ("https", "http") and url.hostname, "invalid evidence URL"
+    return ids
+
+def citations(item, ids, required=True):
+    refs = item.get("source_ids", [])
+    assert (bool(refs) or not required) and set(refs) <= ids, "missing or unresolved citation: " + str(item.get("id", item.get("text", "")))[:120]
+
+chain, insights, facts = read("chain.json"), read("insights.json"), read("latest.json")
+chain_refs, insight_refs = check_sources(chain), check_sources(insights)
+nodes = {n["id"]: n for n in chain["nodes"]}
+assert len(nodes) == len(chain["nodes"]), "duplicate chain node"
+routes = {r["id"] for r in chain["routes"]}
+for node in nodes.values():
+    assert node["stage"] in range(7)
+    assert set(node["routes"]) <= routes
+    assert node["title"] and node["process"] and node["outputs"]
+    citations(node, chain_refs)
+edges = chain["edges"]
+assert len({(e["from"], e["to"]) for e in edges}) == len(edges), "duplicate chain relation"
+for edge in edges:
+    assert edge["from"] in nodes and edge["to"] in nodes
+    assert set(edge["routes"]) <= routes
+for section in ["partners", "glossary", "pack_comparison", "insights"]:
+    for item in chain[section]:
+        citations(item, chain_refs)
+for partner in chain["partners"]:
+    assert partner["material_label"] and partner["fact"] and partner["status"]
+assert not any(e["from"] in {"hpal", "rkef", "ncm_salts", "pcam"} and e["to"] in {"lfp", "lmfp"} for e in edges)
+assert any(e["from"] == "mn_salt" and e["to"] == "lmfp" for e in edges)
+assert not any(e["to"] in {"na_cathode", "na_cell"} and e["from"] in {"li_carbonate", "li_hydroxide", "electrolyte", "collectors", "natural_anode", "synthetic_anode"} for e in edges)
+event_ids = {e["id"] for e in facts["events"]}
+assert len(event_ids) == len(facts["events"]), "duplicate fact id"
+for story in insights["insights"]:
+    assert all(story.get(k) for k in ["id", "title", "thesis", "why_now", "timeline", "facts", "effect_chain", "catl_relevance", "watch_signals", "management_question"])
+    citations(story, insight_refs)
+    assert len(set(story["source_ids"])) >= 2, "deep analysis requires multiple sources"
+    assert set(story.get("related_event_ids", [])) <= event_ids
+    for section in ["facts", "timeline", "effect_chain", "watch_signals", "material_exposure"]:
+        for item in story.get(section, []):
+            citations(item, insight_refs)
+    assert "待补充" not in json.dumps(story, ensure_ascii=False)
+print("Validated:", len(nodes), "chain nodes,", len(edges), "relations,", len(insights["insights"]), "evidence-linked analyses,", len(event_ids), "facts.")
