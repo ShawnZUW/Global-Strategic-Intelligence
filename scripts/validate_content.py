@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Check evidence links and semantic boundaries before publishing curated content."""
 import json
+import math
+from datetime import date
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -24,6 +26,7 @@ def citations(item, ids, required=True):
 
 chain, insights, facts = read("chain.json"), read("insights.json"), read("latest.json")
 chain_refs, insight_refs = check_sources(chain), check_sources(insights)
+fact_refs = {x['id'] for x in facts['sources'] if x.get('id')}
 nodes = {n["id"]: n for n in chain["nodes"]}
 assert len(nodes) == len(chain["nodes"]), "duplicate chain node"
 routes = {r["id"] for r in chain["routes"]}
@@ -47,13 +50,53 @@ assert any(e["from"] == "mn_salt" and e["to"] == "lmfp" for e in edges)
 assert not any(e["to"] in {"na_cathode", "na_cell"} and e["from"] in {"li_carbonate", "li_hydroxide", "electrolyte", "collectors", "natural_anode", "synthetic_anode"} for e in edges)
 event_ids = {e["id"] for e in facts["events"]}
 assert len(event_ids) == len(facts["events"]), "duplicate fact id"
+story_ids = {s['id'] for s in insights['insights']}
+assert len(story_ids) == len(insights['insights']), 'duplicate insight id'
 for story in insights["insights"]:
     assert all(story.get(k) for k in ["id", "title", "thesis", "why_now", "timeline", "facts", "effect_chain", "catl_relevance", "watch_signals", "management_question"])
     citations(story, insight_refs)
     assert len(set(story["source_ids"])) >= 2, "deep analysis requires multiple sources"
     assert set(story.get("related_event_ids", [])) <= event_ids
+    assert set(story.get('chain_node_ids', [])) <= nodes.keys(), 'unknown chemistry node in insight'
+    assert set(story.get('chain_routes', [])) <= routes, 'unknown chemistry route in insight'
     for section in ["facts", "timeline", "effect_chain", "watch_signals", "material_exposure"]:
         for item in story.get(section, []):
             citations(item, insight_refs)
+    for signal in story['watch_signals']:
+        assert all(signal.get(k) for k in ['indicator', 'interpretation', 'observation_source', 'frequency', 'decision_use']), 'incomplete decision observation'
     assert "待补充" not in json.dumps(story, ensure_ascii=False)
-print("Validated:", len(nodes), "chain nodes,", len(edges), "relations,", len(insights["insights"]), "evidence-linked analyses,", len(event_ids), "facts.")
+
+history = facts.get('price_history', [])
+price_keys = [(p['series_id'], p['date'], p['unit']) for p in history]
+assert len(set(price_keys)) == len(price_keys), 'duplicate historical price observation'
+history_map = dict(zip(price_keys, history))
+for point in facts.get('prices', []) + history:
+    assert isinstance(point.get('value'), (int, float)) and math.isfinite(point['value']) and point['value'] > 0, 'invalid price'
+    assert point.get('series_id') and point.get('material') and point.get('unit'), 'price missing specification'
+    observed = date.fromisoformat(point['date'])
+    assert observed <= date.fromisoformat(facts['meta']['as_of']), 'future observed price'
+    if point.get('source_doc_date'):
+        assert observed <= date.fromisoformat(point['source_doc_date']), 'price observation after source report'
+    url = urlsplit(point['source_url'])
+    assert url.scheme in ('http', 'https') and url.hostname, 'price source URL missing'
+    if point.get('source_id'):
+        assert point['source_id'] in insight_refs | fact_refs, 'price evidence source unresolved'
+    if point.get('related_insight_id'):
+        assert point['related_insight_id'] in story_ids, 'price analysis unresolved'
+    assert set(point.get('chain_node_ids', [])) <= nodes.keys(), 'price chemistry node unresolved'
+    if point.get('chain_route'):
+        assert point['chain_route'] in routes | {'all'}, 'price chemistry route unresolved'
+    if point.get('comparison_date'):
+        assert date.fromisoformat(point['comparison_date']) < observed, 'invalid price comparison date'
+        prior = history_map.get((point['series_id'], point['comparison_date'], point['unit']))
+        if prior and point.get('change_pct') is not None:
+            computed = (point['value'] / prior['value'] - 1) * 100
+            assert abs(computed - point['change_pct']) < .02, 'price change disagrees with comparable observations'
+
+catalog = read('source-catalog.json')
+publishers = catalog['sources']
+assert catalog['meta']['source_count'] == len(publishers), 'publisher count drift'
+assert catalog['meta']['research_publisher_count'] == sum(not p.get('automation_enabled') and p.get('method') != 'registry' for p in publishers), 'research publisher count drift'
+assert insights['meta']['insight_count'] == len(story_ids)
+assert insights['meta']['source_count'] == len(insight_refs)
+print('Validated:', len(nodes), 'chain nodes,', len(edges), 'relations,', len(story_ids), 'evidence-linked analyses,', len(event_ids), 'facts,', len(facts.get('prices', [])), 'current prices and', len(history), 'historical observations.')

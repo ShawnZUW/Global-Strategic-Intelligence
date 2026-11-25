@@ -1,10 +1,10 @@
 {
   "meta": {
     "as_of": "2026-11-25",
-    "generated_at": "2026-11-25T14:52:14Z",
+    "generated_at": "2026-11-25T15:25:42+00:00",
     "scope": "面向宁德时代产业投资视角的公开产业观察样本；不代表宁德时代内部口径、实际投资清单或已知业务敞口。",
     "mode": "原始证据核验与产业链因果研究",
-    "update_note": "主界面展示已核验议题、时间脉络与影响路径；化学图谱和合作关系可逐层查看，研究线索独立保存。"
+    "update_note": "新增四个因果分析、四条原始事实及材料报价传导视图；历史披露保留原日期。每个观察信号列明证据入口、建议观察频率和决策用途。"
   },
   "events": [
     {
@@ -991,18 +991,253 @@
       "metrics": [],
       "lat": 49.01,
       "lon": 8.4
+    },
+    {
+      "id": "cochilco-metals-daily-20261125",
+      "category": "原材料",
+      "title": "Cochilco日报：11月25日铜、铝现货参考价回落，须按品种与日期读取",
+      "summary": "Cochilco 11月25日日报列示LME现货铜11,703美元/吨（日变动-2.76%）、铝2,849美元/吨（-8.70%）、镍15,035美元/吨（-0.17%）。同页碳酸锂≥99.5% FOB南美参考价为14.95美元/公斤，实际观察日是11月24日。日报是公开行情汇编，不是电池材料采购价或实时接口。",
+      "impact": "研判：金属基价可经集流体、活性材料及系统材料传导，但加工费、品质、合同定价窗口、地区和币种会改变影响。价格下降本身不能证明供给过剩，也不能直接换算CATL利润。",
+      "action": "保留各品种观察日与报告发布日期；分开跟踪基价、加工费及地区供给，出现显著变化时核对具体材料与合同口径。",
+      "entity": "Cochilco / LME参考行情",
+      "country": "全球",
+      "published_at": "2026-11-25",
+      "event_date": "2026-11-25",
+      "priority": "P1",
+      "evidence_level": "官方原文",
+      "source_name": "Cochilco La Rueda日报",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "metrics": [
+        {
+          "label": "铜 / LME现货",
+          "value": "11,703",
+          "unit": "美元/吨"
+        },
+        {
+          "label": "铜较前一日",
+          "value": -2.76,
+          "unit": "%"
+        },
+        {
+          "label": "锂参考价观察日",
+          "value": "2026-11-24",
+          "unit": ""
+        },
+        {
+          "label": "碳酸锂价格口径",
+          "value": "≥99.5%，FOB南美，14.95",
+          "unit": "美元/公斤"
+        }
+      ],
+      "lat": -33.45,
+      "lon": -70.67,
+      "additional_sources": [
+        {
+          "name": "11月24日同口径日报",
+          "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "jiayuan-copper-foil-pricing-20260421",
+      "category": "原材料",
+      "title": "嘉元年报说明铜价与加工费分层：采购销售定价时点不完全匹配",
+      "summary": "嘉元科技2025年报披露铜箔采用铜基价加加工费模式，采购点价与销售定价时间不能完全匹配；铜价上涨也会增加资金需求。该报告同时把产品结构优化和加工费变化列为业绩影响因素。本条为2026年4月披露的商业模式基线。",
+      "impact": "研判：铜价变化与铜箔厂盈利、下游采购成本之间存在合同与库存传导；需要区分金属敞口、加工能力及营运资金，不能以铜价单一指标评估材料供应商。",
+      "action": "按报告期跟踪加工费、规格组合、产销与现金周转；具体客户定价条款须由实际合同确认。",
+      "entity": "嘉元科技",
+      "country": "中国",
+      "published_at": "2026-04-21",
+      "event_date": "2025-12-31",
+      "priority": "P2",
+      "evidence_level": "企业披露",
+      "source_name": "嘉元科技2025年年度报告",
+      "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225126560.PDF",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "metrics": [
+        {
+          "label": "定价结构",
+          "value": "铜基价 + 加工费",
+          "unit": ""
+        },
+        {
+          "label": "报告期",
+          "value": "2025年度",
+          "unit": ""
+        },
+        {
+          "label": "用途",
+          "value": "商业模式基线，非当日加工费报价",
+          "unit": ""
+        }
+      ],
+      "lat": 24.29,
+      "lon": 116.12,
+      "additional_sources": []
+    },
+    {
+      "id": "catl-tener-sodium-launch-20260622",
+      "category": "技术突破",
+      "title": "TENER Sodium把钠电推进到系统平台：交付目标与实际验收需逐项跟踪",
+      "summary": "CATL 6月22日发布TENER Sodium储能系统，公告涉及NFPP材料、专用电压调节、BMS和模块化架构；当时提出2026年底累计出货1GWh及2027年6月开始国际交付的计划。本记录用于技术与商业化背景，不把目标改记为11月实际交付。",
+      "impact": "研究判断：材料替换的经济性需要由合格制造、系统效率、应用条件和客户验收共同证明；钠盐价格不能代表完整储能系统成本。",
+      "action": "跟踪产品确认、认证、具体项目到场/并网/验收，以及同口径可用能量与运行表现。",
+      "entity": "CATL",
+      "country": "中国 / 德国 / 全球",
+      "published_at": "2026-06-22",
+      "event_date": "2026-06-22",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "CATL官方产品发布",
+      "source_url": "https://www.catl.com/en/news/6861.html",
+      "verified_at": "2026-11-25T15:17:07+00:00",
+      "metrics": [
+        {
+          "label": "截至年底累计出货",
+          "value": "1GWh（公告目标）",
+          "unit": ""
+        },
+        {
+          "label": "国际交付开始",
+          "value": "2027年6月（公告计划）",
+          "unit": ""
+        }
+      ],
+      "lat": 48.14,
+      "lon": 11.58
+    },
+    {
+      "id": "catl-intilion-mou-20261027",
+      "category": "竞争与合作",
+      "title": "CATL与INTILION披露欧洲3GWh部署MoU：按框架目标跟踪项目兑现",
+      "summary": "CATL 10月27日公告称与INTILION签署谅解备忘录，计划未来五年在德国、瑞士、奥地利等市场部署3GWh TENER储能系统，服务大型电站和工商业。正文同时涉及钠离子与锂离子合作，未给出已交付钠电数量。",
+      "impact": "条件性分析：欧洲系统伙伴可提供本地集成、客户与服务入口；机会是否转化为材料或电芯需求，应由具体项目合同、化学体系和交付验收确认。",
+      "action": "按项目追踪产品选型、认证、现场交付及运行，不将MoU总量作为已实现订单或装机。",
+      "entity": "CATL / INTILION",
+      "country": "德国 / 瑞士 / 奥地利",
+      "published_at": "2026-10-27",
+      "event_date": null,
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "CATL官方合作公告",
+      "source_url": "https://www.catl.com/en/news/7046.html",
+      "verified_at": "2026-11-25T15:17:07+00:00",
+      "metrics": [
+        {
+          "label": "合作形式",
+          "value": "MoU",
+          "unit": ""
+        },
+        {
+          "label": "五年部署目标",
+          "value": "3",
+          "unit": "GWh"
+        },
+        {
+          "label": "适用市场",
+          "value": "德语区等欧洲市场",
+          "unit": ""
+        }
+      ],
+      "lat": 51.72,
+      "lon": 8.76
     }
   ],
   "prices": [
     {
-      "material": "LME现货铜（Cochilco公开周报，取整值）",
-      "value": 5.55,
-      "unit": "美元/磅",
-      "date": "2026-11-20",
-      "change_pct": -10.13,
-      "comparison_basis": "观察日2026-11-20，较前一周五；官方周报取整值。非当日报价，非铜箔采购价格。",
-      "source_name": "Cochilco 2026-11-20铜市场周报",
-      "source_url": "https://www.cochilco.cl/web/informe-del-mercado-internacional-del-cobre-semana-del-16-al-20-de-noviembre-de-2026/"
+      "material": "铜 · LME现货",
+      "value": 11703,
+      "unit": "美元/吨",
+      "date": "2026-11-25",
+      "change_pct": -2.76,
+      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-25",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "source_id": "cochilco-daily-20261125",
+      "source_doc_date": "2026-11-25",
+      "comparison_date": "2026-11-24",
+      "series_id": "copper-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "market_basis": "LME现货金属铜；Cochilco公开汇编，非盘中行情。",
+      "cost_transmission": "铜金属基价 → 铜箔基价；实际采购还叠加加工费、规格及定价窗口。材料厂营运资金和库存敞口可能与金属价格同向变化。",
+      "related_insight_id": "copper-price-foil-conversion-working-capital",
+      "chain_route": "lfp",
+      "chain_node_ids": [
+        "collectors",
+        "cu_al_feed"
+      ]
+    },
+    {
+      "material": "铝 · LME现货",
+      "value": 2849,
+      "unit": "美元/吨",
+      "date": "2026-11-25",
+      "change_pct": -8.7,
+      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-25",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "source_id": "cochilco-daily-20261125",
+      "source_doc_date": "2026-11-25",
+      "comparison_date": "2026-11-24",
+      "series_id": "aluminium-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "market_basis": "LME现货金属铝；不能直接当作电池铝箔或结构件报价。",
+      "cost_transmission": "铝金属基价 → 适用集流体、壳体与结构件成本；电池级质量、表面处理、加工费与采购周期决定实际传导。",
+      "chain_route": "lfp",
+      "chain_node_ids": [
+        "collectors",
+        "cu_al_feed",
+        "ev_pack"
+      ]
+    },
+    {
+      "material": "镍 · LME现货",
+      "value": 15035,
+      "unit": "美元/吨",
+      "date": "2026-11-25",
+      "change_pct": -0.17,
+      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-25",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "source_id": "cochilco-daily-20261125",
+      "source_doc_date": "2026-11-25",
+      "comparison_date": "2026-11-24",
+      "series_id": "nickel-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "market_basis": "LME现货金属镍；与MHP、镍铁或电池级硫酸镍规格不同。",
+      "cost_transmission": "镍市场变化需经中间品计价、杂质控制和硫酸盐转化传到三元前驱体；不能把金属镍报价直接作为NMC原料采购价。",
+      "related_insight_id": "eu-indonesia-three-chains",
+      "chain_route": "nmc",
+      "chain_node_ids": [
+        "ncm_salts",
+        "hpal",
+        "pcam"
+      ]
+    },
+    {
+      "material": "碳酸锂 ≥99.5% · FOB南美",
+      "value": 14.95,
+      "unit": "美元/公斤",
+      "date": "2026-11-24",
+      "change_pct": null,
+      "comparison_basis": "FOB南美，最低纯度99.5%；本次没有取得可比前值，不计算涨跌。非中国现货、非氢氧化锂。",
+      "source_name": "Cochilco La Rueda 2026-11-25",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "source_id": "cochilco-daily-20261125",
+      "source_doc_date": "2026-11-25",
+      "comparison_date": null,
+      "series_id": "lithium-carbonate-fob-south-america",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "market_basis": "碳酸锂最低纯度99.5%，南美FOB；与中国现货、到厂价格及氢氧化锂分别观察。",
+      "cost_transmission": "锂盐价格影响正极锂源成本，但合格品产出、包销权、运费、品质和库存周期共同决定可采购成本；不同地区价格不直接拼接。",
+      "related_insight_id": "lithium-effective-supply-and-offtake",
+      "chain_route": "lfp",
+      "chain_node_ids": [
+        "li_carbonate",
+        "hard_li_process",
+        "lfp"
+      ]
     }
   ],
   "sources": [
@@ -1252,6 +1487,216 @@
       "status": "verified",
       "last_checked": "2026-11-25T14:52:14Z",
       "note": "已核对官方公开原文或原始研究；详情见关联深度分析。"
+    },
+    {
+      "id": "cochilco-daily-20261124",
+      "name": "La Rueda — 24 de noviembre de 2026",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
+      "category": "原材料",
+      "status": "verified",
+      "last_checked": "2026-11-25T15:14:49+00:00",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "cochilco-daily-20261125",
+      "name": "La Rueda — 25 de noviembre de 2026",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "category": "原材料",
+      "status": "verified",
+      "last_checked": "2026-11-25T15:14:49+00:00",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "jiayuan-annual-2025",
+      "name": "广东嘉元科技股份有限公司2025年年度报告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225126560.PDF",
+      "category": "原材料",
+      "status": "verified",
+      "last_checked": "2026-11-25T15:14:49+00:00",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "tech-catl-naxtra-20260421",
+      "name": "CATL：Naxtra钠电工程瓶颈与2026年底量产目标",
+      "url": "https://www.catl.com/en/news/6811.html",
+      "category": "技术与产业",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "tech-catl-tener-sodium-20260622",
+      "name": "CATL：TENER Sodium发布、NFPP材料与交付计划",
+      "url": "https://www.catl.com/en/news/6861.html",
+      "category": "技术与产业",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "tech-catl-intilion-20261027",
+      "name": "CATL与INTILION：欧洲3GWh储能部署谅解备忘录",
+      "url": "https://www.catl.com/en/news/7046.html",
+      "category": "技术与产业",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "tech-na-cost-nature-20250113",
+      "name": "Yao等：钠离子相对锂离子成本竞争力的技术路线与情景研究",
+      "url": "https://d-nb.info/136757269X/34",
+      "category": "技术与产业",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "tech-na-cell-characterization-20250401",
+      "name": "Marangon等：商用钠电电芯解剖、硬碳负极及双铝集流体",
+      "url": "https://publikationen.bibliothek.kit.edu/1000179923/157703094",
+      "category": "技术与产业",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。 开放原文使用作者机构KIT仓储链接。"
+    },
+    {
+      "id": "tech-fortescue-green-grid-20261027",
+      "name": "Fortescue：Green Grid首个外部客户及区域电力网络",
+      "url": "https://www.fortescue.com/en/articles/fortescue-signs-first-green-grid-power-deal-securing-20-year-customer",
+      "category": "技术与产业",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    },
+    {
+      "id": "tech-arena-yarwun-project",
+      "name": "ARENA项目页：Yarwun热储能的负荷、工艺和投资门槛",
+      "url": "https://arena.gov.au/projects/rio-tinto-yarwun-thermal-energy-storage-industrial-demonstration-project/",
+      "category": "技术与产业",
+      "status": "verified",
+      "last_checked": "2026-11-25",
+      "note": "原始公告、政府数据或原始研究；事实、目标和条件性研判分别记录。"
+    }
+  ],
+  "price_history": [
+    {
+      "material": "镍 · LME现货",
+      "value": 15035,
+      "unit": "美元/吨",
+      "date": "2026-11-25",
+      "change_pct": -0.17,
+      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-25",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "source_id": "cochilco-daily-20261125",
+      "source_doc_date": "2026-11-25",
+      "comparison_date": "2026-11-24",
+      "series_id": "nickel-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "铜 · LME现货",
+      "value": 11703,
+      "unit": "美元/吨",
+      "date": "2026-11-25",
+      "change_pct": -2.76,
+      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-25",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "source_id": "cochilco-daily-20261125",
+      "source_doc_date": "2026-11-25",
+      "comparison_date": "2026-11-24",
+      "series_id": "copper-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "铝 · LME现货",
+      "value": 2849,
+      "unit": "美元/吨",
+      "date": "2026-11-25",
+      "change_pct": -8.7,
+      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-25",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "source_id": "cochilco-daily-20261125",
+      "source_doc_date": "2026-11-25",
+      "comparison_date": "2026-11-24",
+      "series_id": "aluminium-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "镍 · LME现货",
+      "value": 15060,
+      "unit": "美元/吨",
+      "date": "2026-11-24",
+      "change_pct": -1.02,
+      "comparison_basis": "报告列示较上一日报价；本次仅保存实际读取的11月24日数据，不补造11月23日价格。",
+      "source_name": "Cochilco La Rueda 2026-11-24",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
+      "source_id": "cochilco-daily-20261124",
+      "source_doc_date": "2026-11-24",
+      "comparison_date": "2026-11-23",
+      "series_id": "nickel-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "碳酸锂 ≥99.5% · FOB南美",
+      "value": 14.95,
+      "unit": "美元/公斤",
+      "date": "2026-11-24",
+      "change_pct": null,
+      "comparison_basis": "FOB南美，最低纯度99.5%；本次没有取得可比前值，不计算涨跌。非中国现货、非氢氧化锂。",
+      "source_name": "Cochilco La Rueda 2026-11-24",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
+      "source_id": "cochilco-daily-20261124",
+      "source_doc_date": "2026-11-24",
+      "comparison_date": null,
+      "series_id": "lithium-carbonate-fob-south-america",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "铜 · LME现货",
+      "value": 12035,
+      "unit": "美元/吨",
+      "date": "2026-11-24",
+      "change_pct": -1.07,
+      "comparison_basis": "报告列示较上一日报价；本次仅保存实际读取的11月24日数据，不补造11月23日价格。",
+      "source_name": "Cochilco La Rueda 2026-11-24",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
+      "source_id": "cochilco-daily-20261124",
+      "source_doc_date": "2026-11-24",
+      "comparison_date": "2026-11-23",
+      "series_id": "copper-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "铝 · LME现货",
+      "value": 3120.5,
+      "unit": "美元/吨",
+      "date": "2026-11-24",
+      "change_pct": -2.53,
+      "comparison_basis": "报告列示较上一日报价；本次仅保存实际读取的11月24日数据，不补造11月23日价格。",
+      "source_name": "Cochilco La Rueda 2026-11-24",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
+      "source_id": "cochilco-daily-20261124",
+      "source_doc_date": "2026-11-24",
+      "comparison_date": "2026-11-23",
+      "series_id": "aluminium-lme-cash",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "LME现货铜（Cochilco公开周报，取整值）",
+      "value": 5.55,
+      "unit": "美元/磅",
+      "date": "2026-11-20",
+      "change_pct": -10.13,
+      "comparison_basis": "观察日2026-11-20，较前一周五；官方周报取整值。非当日报价，非铜箔采购价格。",
+      "source_name": "Cochilco 2026-11-20铜市场周报",
+      "source_url": "https://www.cochilco.cl/web/informe-del-mercado-internacional-del-cobre-semana-del-16-al-20-de-noviembre-de-2026/",
+      "series_id": "copper-lme-cash-weekly-rounded-usd-lb",
+      "source_doc_date": "2026-11-20",
+      "market_basis": "公开周报美元/磅取整值，保留原单位；不与美元/吨日序列直接拼接。"
     }
   ]
 }

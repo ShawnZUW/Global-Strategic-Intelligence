@@ -75,13 +75,13 @@
     if(evidence==='primary'&&!isPrimary(e))return false;if(evidence==='other'&&isPrimary(e))return false;
     if(days!=='all'){const d=asDate(e.published_at);if(!d)return false;const age=(end.getTime()-d.getTime())/86400000;if(age>Number(days)||age<-1)return false;}return true;
   }).sort(prioritySort);}
-  function navigate(section,route){
+  function navigate(section,route,nodeId){
     if(!sections.some(s=>s.id===section))return;state.section=section;$('category').value='';$('search').value='';
-    if(section==='chain'&&route)window.IntelligenceUI?.setRoute(route);
+    if(section==='chain'&&(route||nodeId))window.IntelligenceUI?.setRoute(route,nodeId);
     history.replaceState(null,'','#'+section);renderNav();renderContent();
-    $('main').scrollIntoView({behavior:'smooth',block:'start'});
+    if(!nodeId)$('main').scrollIntoView({behavior:'smooth',block:'start'});
   }
-  function insightContext(){return {data:state.data,chain:state.chain,insights:state.insights,catalog:state.catalog,feed:state.feed,query:$('search').value,onSection:navigate,onEvent:openEvent};}
+  function insightContext(){return {data:state.data,chain:state.chain,insights:state.insights,catalog:state.catalog,feed:state.feed,query:$('search').value,onSection:navigate,onEvent:openEvent,onInsight:openInsight};}
   function renderNav(){const nav=$('sections');nav.replaceChildren();for(const section of sections){if(section.id==='feeds'){nav.append(el('div','nav-divider'),el('div','nav-secondary-title','研究底稿'));}const b=el('button','nav-item'+(state.section===section.id?' active':''));b.type='button';b.setAttribute('aria-current',state.section===section.id?'page':'false');const icon=svg('svg',{viewBox:'0 0 24 24',class:'nav-icon','aria-hidden':true,fill:'none',stroke:'currentColor','stroke-width':1.5,'stroke-linejoin':'round','stroke-linecap':'round'});icon.append(svg('path',{d:icons[section.id]}));b.append(icon,el('span','',section.label));const n=section.id==='chain'?(state.chain?.nodes?.length||0):section.id==='overview'?(state.insights?.insights?.length||state.events.length):section.id==='sources'?(catalogSources().length||state.sources.length):section.id==='feeds'?(state.feed?.items?.length||0):sectionEvents(section.id).length;b.append(el('span','nav-count',n||'—'));b.onclick=()=>navigate(section.id);nav.append(b);}}
   function catalogSources(){return Array.isArray(state.catalog?.sources)?state.catalog.sources:[];}
   function sourceCategories(source){return Array.isArray(source.category)?source.category:[source.category||'其他'];}
@@ -100,7 +100,7 @@
     const events=currentEvents();$('result-count').textContent=events.length+' 条已核验事件';
     if(state.section==='materials')renderPrices(content);
     const stories=(state.insights?.insights||[]).filter(x=>section.test?.test(text(x.categories))&&(!$('search').value||text([x.title,x.thesis,x.tags]).toLowerCase().includes($('search').value.toLowerCase())));
-    if(stories.length){const group=el('div','related-stories');group.append(el('h3','','先看影响，再看事实'));for(const item of stories)group.append(window.IntelligenceUI.insightCard(item,state.insights,r=>navigate('chain',r)));content.append(group);}
+    if(stories.length){const group=el('div','related-stories');group.append(el('h3','','先看影响，再看事实'));for(const item of stories)group.append(window.IntelligenceUI.insightCard(item,state.insights,(route,nodeId)=>navigate('chain',route,nodeId)));content.append(group);}
     let target=content;if(stories.length){const archive=el('details','evidence-archive');archive.append(el('summary','',events.length+' 条相关已核验事实'));content.append(archive);target=archive;}
     if(state.section==='governance'){const g=state.governance;if(g){target.append(el('div','section-intro','法人治理快照：'+timeDate(g.meta?.generated_at)));}}
     if(!events.length){target.append(empty('没有符合条件的已收录事实','可以调整筛选条件。'));return;}
@@ -111,7 +111,48 @@
     const metrics=(Array.isArray(event.metrics)?event.metrics:[]).slice(0,3);if(metrics.length){const list=el('div','metrics-inline');for(const m of metrics){const tag=el('span','metric-inline');if(typeof m==='string')tag.textContent=m;else{tag.append(document.createTextNode((m.label||m.name||'指标')+' '),el('b','',text(m.value)+(m.unit?' '+m.unit:'')));}list.append(tag);}body.append(list);}
     const source=el('div','event-source');source.append(link(event.source_name||'原始来源',event.source_url));if(event.entity)source.append(el('span','entity',text(event.entity)));body.append(source);
     const impact=el('div','event-impact');impact.append(el('span','label','产业与投资影响 · 研判'),el('p','',event.impact||'影响尚待研究，不作自动风险定性。'));const details=el('button','event-detail-link','查看事实、脉络与证据');details.onclick=()=>openEvent(event);impact.append(details);const story=(state.insights?.insights||[]).find(x=>(x.related_event_ids||[]).includes(event.id));if(story){const b=el('button','event-story-link','阅读关联深度分析');b.onclick=()=>openInsight(story);impact.append(b);}row.append(stamp,body,impact);return row;}
-  function renderPrices(out){const all=Array.isArray(state.data?.prices)?state.data.prices:[];const q=$('search').value.trim().toLowerCase();const prices=all.filter(p=>text([p.material,p.name,p.unit,p.source_name]).toLowerCase().includes(q));const intro=el('div','section-intro');intro.append(el('strong','','价格与事件采用独立观察日期。'),document.createTextNode(' 只展示已提供来源、日期和单位的报价；无可比基期时不计算涨跌。价格变化不单独构成供给短缺或过剩的证据。'));out.append(intro);if(!prices.length){out.append(empty('本快照未收录可核验报价','下方仍保留相关原料与供需事件。'));return;}const wrap=el('div','data-table-wrap'),table=el('table','data-table');const head=el('thead'),tr=el('tr');for(const h of ['品种 / 规格','报价','变动','报价日期','口径 / 来源'])tr.append(el('th','',h));head.append(tr);table.append(head);const body=el('tbody');for(const p of prices){const r=el('tr');const v=p.value!==null&&p.value!==undefined?text(p.value):'未披露';r.append(el('td','',p.material||p.name),el('td','number',`${v}${p.unit?' '+p.unit:''}`));const valid=typeof p.change_pct==='number'&&isFinite(p.change_pct);const change=el('td',valid?(p.change_pct>0?'number positive':'number negative'):'',valid?`${p.change_pct>0?'+':''}${p.change_pct.toLocaleString('zh-CN',{maximumFractionDigits:2})}%`:'未提供可比值');r.append(change,el('td','date',shortDate(p.date)));const s=el('td','source-note');s.append(link(p.source_name||'原始数据',p.source_url));if(p.comparison_basis)s.append(el('div','',p.comparison_basis));r.append(s);body.append(r);}table.append(body);wrap.append(table);out.append(wrap);}
+  function renderPrices(out){
+    const all=Array.isArray(state.data?.prices)?state.data.prices:[];
+    const query=$('search').value.trim().toLowerCase();
+    const matches=p=>text([p.material,p.name,p.unit,p.source_name,p.cost_transmission]).toLowerCase().includes(query);
+    const prices=all.filter(matches);
+    const history=(state.data?.price_history||[]).filter(matches).sort((a,b)=>text(b.date).localeCompare(text(a.date))||text(a.material).localeCompare(text(b.material)));
+    const intro=el('div','section-intro');
+    intro.append(el('strong','','有日期、有口径的材料参考价。'),document.createTextNode(' 金属报价、地区锂盐指标和实际采购成交价分别理解；下列影响路径为研判，价格变化需要与库存、供给阶段和合同定价方式共同观察。'));
+    out.append(intro);
+    if(!prices.length&&!history.length){out.append(empty('本快照未收录符合条件的报价','可调整搜索，或查看下方已核验的原料与供需事件。'));return;}
+    const number=v=>typeof v==='number'&&isFinite(v)?v.toLocaleString('zh-CN',{maximumFractionDigits:4}):text(v);
+    const wrap=el('div','data-table-wrap'),table=el('table','data-table price-table');
+    const head=el('thead'),tr=el('tr');
+    for(const title of ['品种 / 规格','参考价','变动 / 基期','实际观察日','产业链传导 · 研判','原始证据'])tr.append(el('th','',title));
+    head.append(tr);table.append(head);const body=el('tbody');
+    for(const price of prices){
+      const row=el('tr'),material=el('td');material.append(el('strong','',price.material||price.name));
+      if(price.market_basis)material.append(el('div','source-note',price.market_basis));
+      row.append(material,el('td','number',number(price.value)+(price.unit?' '+price.unit:'')));
+      const change=el('td'),valid=typeof price.change_pct==='number'&&isFinite(price.change_pct);
+      change.append(el('div',valid?(price.change_pct>0?'number positive':'number negative'):'source-note',valid?(price.change_pct>0?'+':'')+number(price.change_pct)+'%':'未提供可比涨跌'));
+      if(price.comparison_basis)change.append(el('div','source-note',price.comparison_basis));
+      row.append(change,el('td','date',shortDate(price.date)));
+      const transmission=el('td','price-transmission');
+      if(price.cost_transmission)transmission.append(el('p','',price.cost_transmission));
+      const story=(state.insights?.insights||[]).find(x=>x.id===price.related_insight_id);
+      if(story){const button=el('button','event-story-link','查看价格传导分析');button.type='button';button.onclick=()=>openInsight(story);transmission.append(button);}
+      if(price.chain_node_ids?.length){const button=el('button','event-story-link','定位产业链环节');button.type='button';button.onclick=()=>navigate('chain',price.chain_route||'all',price.chain_node_ids[0]);transmission.append(button);}
+      row.append(transmission);
+      const source=el('td','source-note');source.append(link(price.source_name||'原始数据',price.source_url));
+      if(price.source_doc_date)source.append(el('div','','文件日期 '+shortDate(price.source_doc_date)));
+      row.append(source);body.append(row);
+    }
+    if(prices.length){table.append(body);wrap.append(table);out.append(wrap);}
+    if(history.length){
+      const details=el('details','evidence-archive price-history');details.append(el('summary','',history.length+' 条已核验历史报价 · 保留原始日期和单位'));
+      const scroll=el('div','data-table-wrap'),historical=el('table','data-table'),header=el('tr');
+      for(const title of ['观察日','品种 / 规格','数值 / 单位','口径与出处'])header.append(el('th','',title));historical.append(header);
+      for(const point of history){const r=el('tr');r.append(el('td','date',shortDate(point.date)),el('td','',point.material||point.name),el('td','number',number(point.value)+(point.unit?' '+point.unit:'')));const source=el('td','source-note');source.append(link(point.source_name||'原始数据',point.source_url));if(point.comparison_basis)source.append(el('div','',point.comparison_basis));r.append(source);historical.append(r);}
+      scroll.append(historical);details.append(scroll);out.append(details);
+    }
+  }
   function renderSources(out){
     const catalog=catalogSources();const q=$('search').value.trim().toLowerCase();const category=$('category').value;const mode=$('source-mode').value;const tier=$('source-tier').value;
     const all=catalog.length?catalog:state.sources;const sources=all.filter(x=>(!q||text([x.name,x.publisher,x.country,x.category,x.free_scope,x.limitations,x.note]).toLowerCase().includes(q))&&(!category||sourceCategories(x).includes(category))&&(!mode||sourceMode(x)===mode)&&(!tier||sourceTier(x)===tier));
@@ -144,7 +185,7 @@
     const evidence=el('section','drawer-section');evidence.append(el('h3','','原始证据'),link(event.source_name||'打开原始来源',event.source_url));if(event.source_url)evidence.append(el('p','source-address',event.source_url));if(Array.isArray(event.additional_sources))for(const source of event.additional_sources)evidence.append(link(source.name||source.url,source.url));d.append(evidence,el('div','drawer-note','披露事实与研究判断分别呈现。该信息不代表被监控企业与任何特定投资组合存在持股关系；公司规划、目标与测试数据应按原文条件理解。'));
     $('drawer-backdrop').hidden=false;$('drawer').hidden=false;document.body.style.overflow='hidden';$('drawer').scrollTop=0;$('drawer-close').focus();
   }
-  function openInsight(item){state.lastFocus=document.activeElement;const d=$('drawer-body');d.replaceChildren();const head=el('div','drawer-head');head.append(el('span','category-chip',(item.tags||[]).join(' / ')));const title=el('h2','',item.title);title.id='drawer-title';head.append(title,el('p','insight-thesis',item.thesis));d.append(head,window.IntelligenceUI.insightDetail(item,state.insights,route=>{closeDrawer();navigate('chain',route);}));$('drawer').classList.add('story-drawer');$('drawer-backdrop').hidden=false;$('drawer').hidden=false;document.body.style.overflow='hidden';$('drawer').scrollTop=0;$('drawer-close').focus();}
+  function openInsight(item){state.lastFocus=document.activeElement;const d=$('drawer-body');d.replaceChildren();const head=el('div','drawer-head');head.append(el('span','category-chip',(item.tags||[]).join(' / ')));const title=el('h2','',item.title);title.id='drawer-title';head.append(title,el('p','insight-thesis',item.thesis));d.append(head,window.IntelligenceUI.insightDetail(item,state.insights,(route,nodeId)=>{closeDrawer();navigate('chain',route,nodeId);}));$('drawer').classList.add('story-drawer');$('drawer-backdrop').hidden=false;$('drawer').hidden=false;document.body.style.overflow='hidden';$('drawer').scrollTop=0;$('drawer-close').focus();}
   function closeDrawer(){$('drawer').hidden=true;$('drawer-backdrop').hidden=true;document.body.style.overflow='';state.lastFocus?.focus?.();}
   function mapX(lon){return (lon+180)/360*840;}function mapY(lat){return (90-Math.max(-85,Math.min(85,lat)))/180*410;}
   function pathCoordinates(rings){return rings.map(r=>r.map(([x,y],i)=>`${i?'L':'M'}${mapX(x).toFixed(1)},${mapY(y).toFixed(1)}`).join('')+'Z').join('');}
@@ -152,7 +193,7 @@
   function renderMarkers(){const group=$('markers');group.replaceChildren();let count=0;const positions=new Map();for(const e of state.events){const lat=Number(e.lat),lon=Number(e.lon);if(e.lat===null||e.lon===null||e.lat===undefined||e.lon===undefined||!isFinite(lat)||!isFinite(lon)||lat>90||lat<-90||lon>180||lon<-180)continue;count++;const key=`${lat.toFixed(2)},${lon.toFixed(2)}`,n=positions.get(key)||0;positions.set(key,n+1);const x=mapX(lon)+(n?Math.cos(n*2.4)*8:0),y=mapY(lat)+(n?Math.sin(n*2.4)*8:0);const color={P0:'#ed8178',P1:'#ddb979',P2:'#6bceca'}[pri(e)]||'#80b7ea';const point=svg('g',{class:'map-point',tabindex:0,role:'button','aria-label':`${e.title}，查看事件详情`});point.append(svg('circle',{cx:x,cy:y,r:13,fill:color,class:'halo'}),svg('circle',{cx:x,cy:y,r:4.2,fill:color,stroke:'#101b2a','stroke-width':1.5,class:'core'}));const title=svg('title');title.textContent=e.title;point.append(title);point.addEventListener('click',()=>openEvent(e));point.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();openEvent(e);}});group.append(point);} $('map-count').textContent=`${count} 条可定位事件`;$('map-note').textContent=`已定位 ${count} / ${state.events.length} 条；位置用于研究概览，不表示实际投资敞口`;}
   function exportCSV(){const events=currentEvents();const columns=[['披露日期','published_at'],['事件日期','event_date'],['领域','category'],['标题','title'],['主体','entity'],['区域','country'],['优先级','priority'],['证据','evidence_level'],['事实摘要','summary'],['产业与投资影响（研判）','impact'],['建议核实事项','action'],['来源','source_name'],['原始链接','source_url'],['核验时间','verified_at']];const quote=v=>{let s=text(v);if(/^[=+\-@\t\r]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};const rows=[columns.map(c=>quote(c[0])).join(','),...events.map(e=>columns.map(c=>quote(e[c[1]])).join(','))];const blob=new Blob(['\ufeff'+rows.join('\r\n')],{type:'text/csv;charset=utf-8;'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`strategic-intelligence-${shortDate(state.data?.meta?.as_of||new Date())}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   $('filters').addEventListener('submit',e=>e.preventDefault());for(const id of ['search','category','priority','evidence','period','source-mode','source-tier','feed-source'])$(id).addEventListener(id==='search'?'input':'change',()=>{state.feedLimit=60;renderContent();});
-  $('reset').onclick=()=>{$('search').value='';$('category').value='';$('priority').value='';$('evidence').value='';$('period').value='all';$('source-mode').value='';$('source-tier').value='';$('feed-source').value='';state.feedLimit=60;renderContent();};
+  $('reset').onclick=()=>{$('search').value='';$('category').value='';$('priority').value='';$('evidence').value='';$('period').value='all';$('source-mode').value='';$('source-tier').value='';$('feed-source').value='';state.feedLimit=60;window.IntelligenceUI?.resetOverview();renderContent();};
   $('refresh').onclick=()=>{const value=$('snapshot').value;load(value==='latest'?'data/latest.json':value,value!=='latest');};$('snapshot').onchange=()=>{const value=$('snapshot').value;load(value==='latest'?'data/latest.json':value,value!=='latest');};
   $('export').onclick=exportCSV;$('drawer-close').onclick=closeDrawer;$('drawer-backdrop').onclick=closeDrawer;
   document.addEventListener('keydown',e=>{if($('drawer').hidden)return;if(e.key==='Escape')closeDrawer();if(e.key==='Tab'){const nodes=$('drawer').querySelectorAll('button,a[href],[tabindex="0"]');const first=nodes[0],last=nodes[nodes.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}}});

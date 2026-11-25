@@ -28,12 +28,12 @@
 
 data/insights.json包含meta、sources和insights。sources使用稳定id、title、url、published_at、publisher等字段。每张insight至少保留：
 
-- id、title、thesis、why_now、as_of、categories、tags、chain_routes、related_event_ids；
+- id、title、thesis、why_now、as_of、categories、tags、chain_routes、chain_node_ids、related_event_ids；chain_node_ids对应chain.json中真实节点，用于议题与材料环节双向定位；它表示分析涉及的环节，不表示实际供货合同。
 - facts：text与source_ids；
 - timeline：date、event、stage、source_ids，可用track区分并行的事实链；
 - effect_chain：step、text、kind、source_ids，机制与条件性研判必须明确；
 - catl_relevance：dimension与point；counterpoint；
-- watch_signals：indicator、interpretation、source_ids；
+- watch_signals：indicator、interpretation、source_ids，以及observation_source（观察出处）、frequency（建议观察频率）、decision_use（支持什么经营或投资选择）。建议频率不表示源站发布频率、当前已接入的API能力或已执行的定时扫描；内部合同、库存与良率需明确其数据边界。
 - management_question、source_ids、claimconfidence（证据性质和推论边界，不用伪精确概率）。
 
 适用时保留material_exposure，分别说明材料、传导机制与适用边界。新版本不得删除已有字段、合作类别或化学区别。没有新证据的旧条目保持原始日期，不以任务运行时间刷新成新事件。
@@ -109,7 +109,9 @@ data/insights.json包含meta、sources和insights。sources使用稳定id、titl
 
 `metrics` 条目为 `{ "label": "指标口径", "value": "含阶段的数值", "unit": "单位" }`。每条均需得到事件原文支持。
 
-`prices` 条目包含 `material,value,unit,date,change_pct,comparison_basis,source_name,source_url`；可增加历史序列但不得补造空缺。
+`prices` 条目包含 `material,value,unit,date,change_pct,comparison_basis,source_name,source_url`；date是实际价格观察日，source_doc_date是文件日期，两者可不同。新增series_id稳定标识品种、市场与单位；market_basis说明现货/期货、地区、规格，cost_transmission是明确标注的经营研判。related_insight_id、chain_route和chain_node_ids将参考价连接到分析及材料环节。
+
+`price_history`保存实际核验过的历史观察。更新同一series_id的当前报价时，把旧观察保留在历史，按series_id+date+unit去重；不得补点、线性插值或从图形猜数。同比、日变动、周变动和期货合约月份须分别标明。区域FOB锂盐指标不能写成中国电池级现货；交易所镍价不能代替MHP或硫酸镍采购价。未得到新同口径值时，保留原价日期。日常更新须保留以上可选连接字段与有效历史。
 
 `sources` 条目包含 `name,url,category,status,last_checked,note`。
 
