@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
-  const state = {data:null, governance:null, feed:null, catalog:null, chain:null, insights:null, feedLimit:60, events:[], sources:[], section:'overview', archive:false, lastFocus:null, filter:null, loading:false};
+  const state = {data:null, governance:null, feed:null, catalog:null, chain:null, insights:null, feedLimit:60, events:[], sources:[], section:'overview', archive:false, lastFocus:null, filter:null, loading:false, rendered:false};
   const SVG = 'http://www.w3.org/2000/svg';
   const icons = {
     chain:'M4 5h5v5H4z M15 5h5v5h-5z M9 17h6v5H9z M9 7h6 M6 10v7h3 M18 10v7h-3',
@@ -60,10 +60,11 @@
       if(results[0].status!=='fulfilled')throw results[0].reason;
       if(!results[0].value||typeof results[0].value!=='object')throw new Error('数据结构无效');
       state.data=results[0].value;state.archive=isArchive;state.governance=results[1].status==='fulfilled'?results[1].value:null;state.feed=results[2].status==='fulfilled'?results[2].value:null;
-      state.catalog=results[3].status==='fulfilled'?results[3].value:null;state.chain=results[4].status==='fulfilled'?results[4].value:null;state.insights=results[5].status==='fulfilled'?results[5].value:null;rebuildData();fillCategories();fillFeedSources();renderAll();
+      state.catalog=results[3].status==='fulfilled'?results[3].value:null;state.chain=results[4].status==='fulfilled'?results[4].value:null;state.insights=results[5].status==='fulfilled'?results[5].value:null;rebuildData();fillCategories();fillFeedSources();renderAll();state.rendered=true;
+      if(state.chain&&state.insights&&state.catalog){document.documentElement.dataset.gsiReady='true';window.dispatchEvent(new Event('gsi:ready'));}
     }catch(err){
-      message(`未能读取${isArchive?'所选历史':'最新'}数据（${err.message}）。${state.data?'当前仍显示此前已加载的快照。':'请稍后刷新，或查看项目更新记录。'}`);
-      if(!state.data){$('content').replaceChildren(empty('数据尚未载入','未取得数据时，不展示模拟事件或监控评分。'));$('asof').textContent='尚未读取';$('freshness-text').textContent='数据读取失败';$('overview').hidden=true;renderNav();}
+      message(`未能读取${isArchive?'所选历史':'最新'}数据（${err.message}）。${state.rendered?'当前仍显示此前已加载的快照。':'请稍后刷新，或查看项目更新记录。'}`);
+      if(!state.rendered){$('content').replaceChildren(empty('数据尚未载入','未取得数据时，不展示模拟事件或监控评分。'));$('asof').textContent='尚未读取';$('freshness-text').textContent='数据读取失败';$('overview').hidden=true;renderNav();}
     }finally{state.loading=false;$('refresh').disabled=false;}
   }
   async function loadManifest(){const m=await readJSON('data/manifest.json',true);if(!m)return;let records=Array.isArray(m)?m:(m.snapshots||m.history||m.entries||[]);records=records.map(r=>typeof r==='string'?{date:r,path:`data/history/${r}.json`}:r).filter(r=>r.path||r.file||r.url);records.sort((a,b)=>text(b.date).localeCompare(text(a.date)));for(const r of records){const path=r.path||r.file||r.url;const u=safeURL(path);if(!u||new URL(u).origin!==location.origin)continue;const option=el('option','',r.label||r.date||path);option.value=path;$('snapshot').append(option);}}
@@ -79,7 +80,7 @@
     if(!sections.some(s=>s.id===section))return;state.section=section;$('category').value='';$('search').value='';
     if(section==='chain'&&(route||nodeId))window.IntelligenceUI?.setRoute(route,nodeId);
     const hash=section==='chain'?(window.IntelligenceUI?.getChainHash?.()||'#chain'):'#'+section;
-    history.replaceState(null,'',hash);renderNav();renderContent();
+    try{history.replaceState(null,'',hash);}catch{/* File and sandbox previews may reject history updates; keep in-page navigation working. */}renderNav();renderContent();
     if(!nodeId)$('main').scrollIntoView({behavior:'smooth',block:'start'});
   }
   function insightContext(){return {data:state.data,chain:state.chain,insights:state.insights,catalog:state.catalog,feed:state.feed,query:$('search').value,onSection:navigate,onEvent:openEvent,onInsight:openInsight};}
