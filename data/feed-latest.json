@@ -1,17 +1,17 @@
 {
   "meta": {
     "schema_version": 1,
-    "generated_at": "2026-11-25T13:25:12Z",
+    "generated_at": "2026-11-25T13:27:16Z",
     "as_of": "2026-11-25",
     "mode": "official-feed-leads",
-    "collection_status": "success",
+    "collection_status": "partial",
     "note": "标题来自官方订阅，关键词分类仅供筛选，未经逐条核验。首次发现时间不是事件发生时间，企业表述不代表独立验证。",
     "source_count": 4,
-    "successful_sources": 4,
+    "successful_sources": 3,
     "item_count": 63,
-    "newly_discovered_count": 63,
-    "initial_baseline": true,
-    "baseline_note": "首次建库，所见旧公告不视为今日新增事件。",
+    "newly_discovered_count": 0,
+    "initial_baseline": false,
+    "baseline_note": null,
     "schedule": "每日北京时间约07:40；GitHub调度可能延迟。"
   },
   "items": [
@@ -26,7 +26,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -44,7 +44,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -62,7 +62,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -80,7 +80,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -98,7 +98,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -116,7 +116,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -134,7 +134,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易",
         "航道与物流",
@@ -173,7 +173,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -191,7 +191,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -209,7 +209,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -227,7 +227,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -245,7 +245,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易",
         "能源与供需"
@@ -264,7 +264,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -282,7 +282,7 @@
       "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "publisher_type": "国际组织",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "地缘与贸易"
       ],
@@ -319,7 +319,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -356,7 +356,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -412,7 +412,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -468,7 +468,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -524,7 +524,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -542,7 +542,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -560,7 +560,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -578,7 +578,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -596,7 +596,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -614,7 +614,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需",
         "技术与竞对"
@@ -633,7 +633,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -651,7 +651,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -669,7 +669,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -687,7 +687,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -705,7 +705,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需",
         "技术与竞对"
@@ -724,7 +724,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -742,7 +742,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -760,7 +760,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -778,7 +778,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -796,7 +796,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对",
         "能源与供需"
@@ -815,7 +815,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -833,7 +833,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -851,7 +851,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -869,7 +869,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -887,7 +887,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -905,7 +905,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -923,7 +923,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -941,7 +941,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -959,7 +959,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -977,7 +977,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -995,7 +995,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -1013,7 +1013,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -1031,7 +1031,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -1049,7 +1049,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -1067,7 +1067,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -1085,7 +1085,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -1103,7 +1103,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对",
         "合作与投资"
@@ -1122,7 +1122,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -1140,7 +1140,7 @@
       "source_url": "https://ir.quantumscape.com/rss/news-releases.xml",
       "publisher_type": "企业自述",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "技术与竞对"
       ],
@@ -1158,7 +1158,7 @@
       "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "publisher_type": "政府机构",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-25T13:25:12Z",
+      "last_seen_at": "2026-11-25T13:27:16Z",
       "categories": [
         "能源与供需"
       ],
@@ -1175,8 +1175,8 @@
       "publisher_type": "政府机构",
       "coverage_note": "能源供需、发电和油气运输；不提供电池材料实时成交价。",
       "status": "success",
-      "checked_at": "2026-11-25T13:25:12Z",
-      "last_success_at": "2026-11-25T13:25:12Z",
+      "checked_at": "2026-11-25T13:27:16Z",
+      "last_success_at": "2026-11-25T13:27:16Z",
       "item_count": 31,
       "relevant_count": 31,
       "latest_publication_at": "2026-11-24T14:00:00Z",
@@ -1192,8 +1192,8 @@
       "publisher_type": "国际组织",
       "coverage_note": "按标题筛选冲突、贸易、航运和能源线索；不等于特定矿区或航道的实时风险预警。",
       "status": "success",
-      "checked_at": "2026-11-25T13:25:12Z",
-      "last_success_at": "2026-11-25T13:25:12Z",
+      "checked_at": "2026-11-25T13:27:16Z",
+      "last_success_at": "2026-11-25T13:27:16Z",
       "item_count": 30,
       "relevant_count": 13,
       "latest_publication_at": "2026-11-24T12:00:00Z",
@@ -1209,8 +1209,8 @@
       "publisher_type": "企业自述",
       "coverage_note": "公司固态电池、合作、产线与财报公告；技术性能和商业化表述需独立验证。",
       "status": "success",
-      "checked_at": "2026-11-25T13:25:12Z",
-      "last_success_at": "2026-11-25T13:25:12Z",
+      "checked_at": "2026-11-25T13:27:16Z",
+      "last_success_at": "2026-11-25T13:27:16Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": "2026-11-11T14:00:33Z",
@@ -1225,15 +1225,13 @@
       "homepage": "https://news.lgensol.com/",
       "publisher_type": "企业自述",
       "coverage_note": "公司电池、储能、工厂和合作动态；不能将宣传或转述当成已核实技术突破。",
-      "status": "success",
-      "checked_at": "2026-11-25T13:25:12Z",
+      "status": "failed",
+      "checked_at": "2026-11-25T13:27:16Z",
       "last_success_at": "2026-11-25T13:25:12Z",
-      "item_count": 9,
-      "relevant_count": 9,
-      "latest_publication_at": "2026-11-23T07:23:36Z",
-      "error": null,
-      "http_status": 200,
-      "bytes": 73989
+      "item_count": 0,
+      "relevant_count": 0,
+      "latest_publication_at": null,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
     }
   ]
 }
