@@ -1,7 +1,14 @@
 {
-  "updated_at": "2026-11-25T15:29:50Z",
+  "updated_at": "2026-11-26T05:27:03Z",
   "retention_days": 30,
   "days": [
+    {
+      "date": "2026-11-26",
+      "path": "data/feed-history/2026-11-26.json",
+      "generated_at": "2026-11-26T05:27:03Z",
+      "item_count": 503,
+      "collection_status": "partial"
+    },
     {
       "date": "2026-11-25",
       "path": "data/feed-history/2026-11-25.json",
