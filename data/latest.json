@@ -1,12 +1,188 @@
 {
   "meta": {
-    "as_of": "2026-11-25",
-    "generated_at": "2026-11-25T15:56:06.423189+00:00",
+    "as_of": "2026-11-26",
+    "generated_at": "2026-11-26T08:16:36+08:00",
     "scope": "面向宁德时代产业投资视角的公开产业观察样本；不代表宁德时代内部口径、实际投资清单或已知业务敞口。",
     "mode": "原始证据核验与产业链因果研究",
-    "update_note": "新增刚果钴出口与库存形态、印尼镍工艺利润与MHP实产、海外负极认证与订单兑现分析，以及四条已核验事件；所有重点议题增加判断更新条件，化学图新增十四组材料风险传导。旧报价和披露保留实际日期。"
+    "update_note": "新增一项意大利储能招标经济性分析与两条事实（11月25日中标方新披露、11月24日Terna公告补录）；原13项分析、价格及历史观察日期保留。三项重点材料判断暂无充分新证据调整。",
+    "research_audit": {
+      "window": "北京时间2026-11-25 08:16至2026-11-26 08:16；早期事实标注补录",
+      "focus": "意大利ESS招标与既有钴、镍、负极议题后续",
+      "checked_sources": [
+        {
+          "name": "Terna",
+          "url": "https://www.terna.it/en/media/press-releases/detail/completed-second-macse-auction",
+          "status": "部分 / 受限",
+          "note": "官方索引正文可读；直连仅返回动态页面框架。意大利当地11月24日17:24发布，北京时间11月25日00:24，属于本轮补录背景。"
+        },
+        {
+          "name": "BW ESS / A2A",
+          "url": "https://www.bw-ess.com/news/bw-ess-and-a2a-success-in-italys-macse-auction-for-battery-energy-storage-systems",
+          "status": "部分 / 受限",
+          "note": "官方索引正文可读，直接抓取失败；A2A同文公开镜像及ANSA报道交叉核对，同一联合公告只计一个来源。"
+        },
+        {
+          "name": "Terna Lightbox",
+          "url": "https://lightbox.terna.it/en/insight/m-for-macse",
+          "status": "成功",
+          "note": "原文直接可读；第一轮招标的历史背景，不作为本日新增事件。"
+        },
+        {
+          "name": "Fraunhofer ISI",
+          "url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update/batterie-recycling_europa_kapazitaeten_bedarf_update_2026.html",
+          "status": "成功",
+          "note": "原文直接可读，11月25日研究已在上一快照入库，不重复新增。"
+        },
+        {
+          "name": "ACP",
+          "url": "https://acp.cd/economie/la-rdc-suspend-la-commercialisation-du-cobalt-des-le-30-novembre-2026/",
+          "status": "成功",
+          "note": "11月24日原有报道可读；本次定向检索未发现新恢复决定。11月30日仍为已公布未来生效日。"
+        },
+        {
+          "name": "Merdeka Battery Materials",
+          "url": "https://merdekabattery.com/en",
+          "status": "成功",
+          "note": "官网公开索引正文可读，最新新闻列表为11月20日；没有查得更新的分矿种许可/HPAL实产披露。"
+        },
+        {
+          "name": "印尼ESDM",
+          "url": "https://esdm.go.id/id/media-center/arsip-berita/hma-nikel-naik-jadi-usd1559688-per-ton-pada-paruh-kedua-november-2026",
+          "status": "成功",
+          "note": "11月17日发布的半月HMA为不同监管参考口径，不替换现有LME现金价；本次未查得新RKAB决定。"
+        },
+        {
+          "name": "Syrah Resources",
+          "url": "https://www.syrahresources.com.au/news",
+          "status": "成功",
+          "note": "直接访问新闻页，最新列示11月5日；定向搜索没有取得新增最终客户认证及订单。并非完整交易所公告扫描。"
+        },
+        {
+          "name": "NOVONIX",
+          "url": "https://ir.novonixgroup.com/news-events/news-releases",
+          "status": "访问受限",
+          "note": "直连403；公开搜索未检出符合窗口的新客户认证或订单公告；不据此断言无公告。"
+        },
+        {
+          "name": "Glencore",
+          "url": "https://www.glencore.com/media-and-insights/news",
+          "status": "部分 / 受限",
+          "note": "媒体页可读但无完整新闻明细；未确认新增出货。"
+        },
+        {
+          "name": "Fluence",
+          "url": "https://ir.fluenceenergy.com/news-releases/news-release-details/fluence-energy-inc-reports-2026-financial-results",
+          "status": "成功",
+          "note": "官方检索正文可读，11月23日业绩及11月24日电话会是窗口前背景；暂不扩展本轮主题。"
+        },
+        {
+          "name": "Energy-Storage.news",
+          "url": "https://www.energy-storage.news/italys-second-macse-auction-clears-12-lower-than-first-enel-bw-ess-a2a-and-field-among-winners/",
+          "status": "成功",
+          "note": "11月25日媒体线索，回Terna及中标方披露核验。"
+        }
+      ],
+      "social": "公开索引查询已核验账号@energystoragenw、@benchmarkmin，未取得可读原帖；其余账号未检查，不声称抓取X数据。",
+      "coverage": "本轮定向轮换；未全量复查136家目录。独立feed快照仍为11月25日15:29:50 UTC，41/45成功、496条线索；不当作本轮运行成绩。",
+      "prices": "无新同口径报价核实，保留原观察日与历史；ESDM半月HMA与LME现货不同。"
+    }
   },
   "events": [
+    {
+      "id": "bwess-a2a-italy-macse-awards-20261125",
+      "category": "竞争与合作",
+      "title": "BW ESS与A2A披露四个MACSE项目中标，合计2,608MWh",
+      "summary": "11月25日双方联合公告，新设合资企业获得四个BESS项目的中标安排，合计约400MW/2,608MWh，分布于San Filippo与Brindisi两个地点。BW ESS主导投标并负责建设至调试，A2A参与项目实施及电力调度；该容量包含在Terna授予的16GWh内。",
+      "impact": "条件性研判：有明确的开发商及系统项目机会；合计能量/功率约6.5小时（基于近似总功率），不能当作四个项目各自的设计时长。公告没有确认电芯或系统供应商。",
+      "action": "跟踪四个项目的系统/EPC采购、并网、融资和技术规格；不把中标容量记为CATL订单。",
+      "entity": "BW ESS / A2A",
+      "country": "意大利",
+      "published_at": "2026-11-25",
+      "event_date": "2026-11-24",
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "BW ESS / A2A",
+      "source_url": "https://www.bw-ess.com/news/bw-ess-and-a2a-success-in-italys-macse-auction-for-battery-energy-storage-systems",
+      "verified_at": "2026-11-26T08:16:36+08:00",
+      "metrics": [
+        {
+          "label": "中标项目",
+          "value": 4,
+          "unit": "个"
+        },
+        {
+          "label": "总功率（约）",
+          "value": 400,
+          "unit": "MW"
+        },
+        {
+          "label": "总能量",
+          "value": 2608,
+          "unit": "MWh"
+        }
+      ],
+      "lat": null,
+      "lon": null,
+      "source_ids": [
+        "bwess-a2a-macse-award-20261125"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "ess_dc",
+        "ess_ac",
+        "grid_users"
+      ]
+    },
+    {
+      "id": "italy-macse-second-auction-20261124",
+      "category": "供需平衡",
+      "title": "意大利第二轮MACSE授予16GWh，2029年交付容量价格较上一轮低12%",
+      "summary": "Terna于意大利当地11月24日17:24披露，第二轮锂离子储能招标授予16GWh，约67GWh项目取得资格，约43GWh参加报价；加权中标价为11,382欧元/MWh·年，低于27,000欧元/MWh·年的上限及第一轮约12%。预计2029年投运。公告时点在本轮24小时窗口前，作为11月25日中标方披露的背景补录。",
+      "impact": "条件性研判：中标量形成更明确的系统需求，较低容量收入也提高项目全寿命成本竞争要求。中标价不是电芯采购价，也不代表已经交付。",
+      "action": "按项目建设、系统招标、融资和并网节点跟踪；分别评估容量收入、CAPEX、OPEX和性能担保。",
+      "entity": "Terna",
+      "country": "意大利",
+      "published_at": "2026-11-24",
+      "event_date": "2026-11-24",
+      "priority": "P1",
+      "evidence_level": "官方原文",
+      "source_name": "Terna",
+      "source_url": "https://www.terna.it/en/media/press-releases/detail/completed-second-macse-auction",
+      "verified_at": "2026-11-26T08:16:36+08:00",
+      "metrics": [
+        {
+          "label": "中标储能容量",
+          "value": 16,
+          "unit": "GWh"
+        },
+        {
+          "label": "实际报价容量（约）",
+          "value": 43,
+          "unit": "GWh"
+        },
+        {
+          "label": "加权中标价",
+          "value": 11382,
+          "unit": "欧元/MWh·年"
+        },
+        {
+          "label": "较第一轮变动",
+          "value": -12,
+          "unit": "%"
+        }
+      ],
+      "lat": null,
+      "lon": null,
+      "source_ids": [
+        "terna-macse-2029-award-20261124"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "ess_dc",
+        "ess_ac",
+        "grid_users"
+      ]
+    },
     {
       "id": "arecoms-cobalt-suspension-announced-20261123",
       "category": "贸易与政策",
@@ -1641,12 +1817,12 @@
     },
     {
       "id": "fraunhofer-recycling",
-      "name": "Announced, installed, stopped: Europe's battery recycling capacities exceed current feedstock",
+      "name": "Fraunhofer ISI",
       "url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update/batterie-recycling_europa_kapazitaeten_bedarf_update_2026.html",
       "category": "供需平衡",
-      "status": "verified",
-      "last_checked": "2026-11-25T14:52:14Z",
-      "note": "已核对官方公开原文或原始研究；详情见关联深度分析。"
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "原文直接可读，11月25日研究已在上一快照入库，不重复新增。"
     },
     {
       "id": "cochilco-daily-20261124",
@@ -1875,12 +2051,92 @@
     },
     {
       "id": "resource-acp-cobalt-20261124",
-      "name": "ACP：刚果（金）11月30日起暂停钴出口的官方通讯社报道",
+      "name": "ACP",
       "url": "https://acp.cd/economie/la-rdc-suspend-la-commercialisation-du-cobalt-des-le-30-novembre-2026/",
-      "category": "资源与材料",
-      "status": "verified",
-      "last_checked": "2026-11-25",
-      "note": "用于交叉核对通知身份、范围及生效日期；规则以三页签署原件为准。"
+      "category": "贸易与政策",
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "11月24日原有报道可读；本次定向检索未发现新恢复决定。11月30日仍为已公布未来生效日。"
+    },
+    {
+      "name": "Terna",
+      "url": "https://www.terna.it/en/media/press-releases/detail/completed-second-macse-auction",
+      "category": "供需平衡",
+      "status": "部分 / 受限",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "官方索引正文可读；直连仅返回动态页面框架。意大利当地11月24日17:24发布，北京时间11月25日00:24，属于本轮补录背景。"
+    },
+    {
+      "name": "BW ESS / A2A",
+      "url": "https://www.bw-ess.com/news/bw-ess-and-a2a-success-in-italys-macse-auction-for-battery-energy-storage-systems",
+      "category": "供需平衡",
+      "status": "部分 / 受限",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "官方索引正文可读，直接抓取失败；A2A同文公开镜像及ANSA报道交叉核对，同一联合公告只计一个来源。"
+    },
+    {
+      "name": "Terna Lightbox",
+      "url": "https://lightbox.terna.it/en/insight/m-for-macse",
+      "category": "供需平衡",
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "原文直接可读；第一轮招标的历史背景，不作为本日新增事件。"
+    },
+    {
+      "name": "Merdeka Battery Materials",
+      "url": "https://merdekabattery.com/en",
+      "category": "资源与矿权",
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "官网公开索引正文可读，最新新闻列表为11月20日；没有查得更新的分矿种许可/HPAL实产披露。"
+    },
+    {
+      "name": "印尼ESDM",
+      "url": "https://esdm.go.id/id/media-center/arsip-berita/hma-nikel-naik-jadi-usd1559688-per-ton-pada-paruh-kedua-november-2026",
+      "category": "原材料",
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "11月17日发布的半月HMA为不同监管参考口径，不替换现有LME现金价；本次未查得新RKAB决定。"
+    },
+    {
+      "name": "Syrah Resources",
+      "url": "https://www.syrahresources.com.au/news",
+      "category": "竞争与合作",
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "直接访问新闻页，最新列示11月5日；定向搜索没有取得新增最终客户认证及订单。并非完整交易所公告扫描。"
+    },
+    {
+      "name": "NOVONIX",
+      "url": "https://ir.novonixgroup.com/news-events/news-releases",
+      "category": "竞争与合作",
+      "status": "访问受限",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "直连403；公开搜索未检出符合窗口的新客户认证或订单公告；不据此断言无公告。"
+    },
+    {
+      "name": "Glencore",
+      "url": "https://www.glencore.com/media-and-insights/news",
+      "category": "资源与矿权",
+      "status": "部分 / 受限",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "媒体页可读但无完整新闻明细；未确认新增出货。"
+    },
+    {
+      "name": "Fluence",
+      "url": "https://ir.fluenceenergy.com/news-releases/news-release-details/fluence-energy-inc-reports-2026-financial-results",
+      "category": "竞争与合作",
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "官方检索正文可读，11月23日业绩及11月24日电话会是窗口前背景；暂不扩展本轮主题。"
+    },
+    {
+      "name": "Energy-Storage.news",
+      "url": "https://www.energy-storage.news/italys-second-macse-auction-clears-12-lower-than-first-enel-bw-ess-a2a-and-field-among-winners/",
+      "category": "供需平衡",
+      "status": "成功",
+      "last_checked": "2026-11-26T08:16:36+08:00",
+      "note": "11月25日媒体线索，回Terna及中标方披露核验。"
     }
   ],
   "price_history": [

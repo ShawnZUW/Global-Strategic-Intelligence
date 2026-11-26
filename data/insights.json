@@ -1,15 +1,15 @@
 {
   "meta": {
-    "as_of": "2026-11-25",
+    "as_of": "2026-11-26",
     "title": "CATL产业链决策洞察",
     "scope": "公开产业投资视角；把事实、工程阶段和经营研判分别标识",
     "method": "企业/政府原文与独立研究交叉检查；时间轴保留发生日、披露日、未来目标的区别；不编造内部采购、船货或投资敞口",
-    "insight_count": 13,
-    "source_count": 55,
-    "review_notes": "新增刚果钴出口、印尼镍工艺分化和海外负极兑现三项分析；保留原有十项研究并补判断更新条件。监管签署原件、季度披露和客户声明分别核验，历史日期与未来阶段保留。",
-    "generated_at": "2026-11-25T15:56:06.423189+00:00",
+    "insight_count": 14,
+    "source_count": 58,
+    "review_notes": "新纳入意大利MACSE授予与系统经济性议题；保留此前有效分析与各自日期。钴、镍、负极的判断更新条件未获充分新证据，不改变结论。",
+    "generated_at": "2026-11-26T08:16:36+08:00",
     "editorial_note": "重点议题连接事实、时间线、材料节点、经营问题及判断更新条件；条件为研究规则，不表示已触发自动预警或掌握内部敞口。",
-    "decision_checkpoint_count": 29
+    "decision_checkpoint_count": 31
   },
   "sources": [
     {
@@ -571,6 +571,36 @@
       "type": "官方通讯社交叉核验",
       "verified_at": "2026-11-25",
       "note": "用于交叉核对通知身份、范围及生效日期；规则以三页签署原件为准。"
+    },
+    {
+      "id": "terna-macse-2029-award-20261124",
+      "title": "Terna completes second MACSE auction: 16 GWh of energy storage capacity awarded",
+      "publisher": "Terna",
+      "published_at": "2026-11-24",
+      "url": "https://www.terna.it/en/media/press-releases/detail/completed-second-macse-auction",
+      "type": "电网运营方原始公告",
+      "verified_at": "2026-11-26",
+      "access_note": "官方索引正文可读；直连仅返回动态页面框架。意大利当地11月24日17:24发布，北京时间11月25日00:24，属于本轮补录背景。"
+    },
+    {
+      "id": "bwess-a2a-macse-award-20261125",
+      "title": "BW ESS and A2A: Success in Italy’s MACSE Auction for Battery Energy Storage Systems",
+      "publisher": "BW ESS / A2A",
+      "published_at": "2026-11-25",
+      "url": "https://www.bw-ess.com/news/bw-ess-and-a2a-success-in-italys-macse-auction-for-battery-energy-storage-systems",
+      "type": "中标企业联合公告",
+      "verified_at": "2026-11-26",
+      "access_note": "官方索引正文可读，直接抓取失败；A2A同文公开镜像及ANSA报道交叉核对，同一联合公告只计一个来源。"
+    },
+    {
+      "id": "terna-macse-first-20251013",
+      "title": "M for MACSE",
+      "publisher": "Terna Lightbox",
+      "published_at": "2025-10-13",
+      "url": "https://lightbox.terna.it/en/insight/m-for-macse",
+      "type": "电网运营方机制说明",
+      "verified_at": "2026-11-26",
+      "access_note": "原文直接可读；第一轮招标的历史背景，不作为本日新增事件。"
     }
   ],
   "insights": [
@@ -1449,6 +1479,233 @@
       "claimconfidence": {
         "facts": "高：公司原始季度和重大事项披露；客户工厂日程由PowerCo自己的声明交叉核验。成本为企业指引，测试为企业转述客户结果，均非独立审计测试。",
         "analysis": "机制与条件性经营研判：三项升降级条件是本Dashboard的观察规则，不是已经发生的结果；没有内部良率、报价、库存、客户验收报告或CATL采购敞口。"
+      }
+    },
+    {
+      "id": "italy-macse-contracted-demand-system-economics",
+      "title": "意大利储能招标扩量降价：收入端承压，系统生命周期成本与交付成为竞争关键",
+      "thesis": "研判：2029年意大利MACSE授予16GWh，比2028年交付轮次的10GWh增加60%，但加权年容量价格降低12%。11月25日BW ESS与A2A披露具体中标组合，需求从市场总量落实到开发商；CATL观察重点应从GWh市场规模推进到采购入口、可用能量保证、融资与交付责任。不能将容量收入价格等同于电池价格或项目收益率。",
+      "why_now": "11月25日新披露的合资项目明确四个中标项目及分工。结合此前一晚Terna公布的第二轮结果，可判断需求有明确授予对象，但尚未证明设备采购和并网兑现。",
+      "tags": [
+        "欧洲储能",
+        "MACSE",
+        "项目经济性",
+        "系统交付"
+      ],
+      "categories": [
+        "供需平衡",
+        "竞争与合作"
+      ],
+      "chain_routes": [
+        "ess"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "ess_dc",
+        "ess_ac",
+        "grid_users"
+      ],
+      "related_event_ids": [
+        "italy-macse-second-auction-20261124",
+        "bwess-a2a-italy-macse-awards-20261125"
+      ],
+      "as_of": "2026-11-26",
+      "timeline": [
+        {
+          "date": "2025-09-30",
+          "event": "第一轮MACSE招标授予10GWh，目标2028年投运。",
+          "stage": "历史招标基线",
+          "source_ids": [
+            "terna-macse-first-20251013"
+          ]
+        },
+        {
+          "date": "2026-11-24",
+          "event": "第二轮授予16GWh，公布加权中标价11,382欧元/MWh·年及2029年目标。",
+          "stage": "容量授予",
+          "source_ids": [
+            "terna-macse-2029-award-20261124"
+          ]
+        },
+        {
+          "date": "2026-11-25",
+          "event": "BW ESS与A2A披露四个项目、合计2,608MWh及建设与调度分工。",
+          "stage": "中标方披露",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "date": "2029",
+          "event": "第二轮中标设施预计进入运行，实际完工、并网与验收以届时披露为准。",
+          "stage": "未来目标",
+          "source_ids": [
+            "terna-macse-2029-award-20261124"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "第二轮约43GWh提交报价，授予16GWh；加权年容量中标价11,382欧元/MWh·年，较上一轮低12%。招标对象为锂离子储能。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124"
+          ]
+        },
+        {
+          "text": "BW ESS/A2A四个项目合计约400MW和2,608MWh，属于16GWh的一部分，不能重复累加。",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125",
+            "terna-macse-2029-award-20261124"
+          ]
+        },
+        {
+          "text": "由中标方承担设施建设并按机制提供储能容量；中标方联合公告未披露电池供应商或价格。",
+          "source_ids": [
+            "terna-macse-first-20251013",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "收入机制",
+          "text": "竞争性容量招标给项目长期收入框架；较低年容量价意味着相同条件下固定收入降低。",
+          "kind": "事实与机制",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "terna-macse-first-20251013"
+          ]
+        },
+        {
+          "step": "系统经济性",
+          "text": "条件相同下，开发商需优化设备采购、工程、融资、衰减与可用率成本；实际经济性还取决于合同和其他收入。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "terna-macse-first-20251013"
+          ]
+        },
+        {
+          "step": "采购与交付",
+          "text": "中标开发商分工清晰，为后续系统设备、EPC及性能担保形成可追踪的合作对象。中标不代表采购已完成。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "step": "产业投资",
+          "text": "若设备供应商能在满足长时运行、可用容量和担保要求的前提下降低全寿命成本，则可能改善竞争地位；不能据此推算CATL市场份额。",
+          "kind": "投资研究",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125",
+            "terna-macse-first-20251013"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "市场",
+          "point": "用已授予项目筛选潜在客户和采购窗口，区别整个16GWh市场与合资企业2.608GWh子集。"
+        },
+        {
+          "dimension": "技术与成本",
+          "point": "比较可用能量、衰减、补容、效率、可用率和安全的全寿命交付成本；不能只比较电芯元/Wh。"
+        },
+        {
+          "dimension": "资本与合作",
+          "point": "区分电芯/直流舱供应、完整AC系统集成、工程交付与项目投资；评估各角色承担的性能、延迟和融资责任。"
+        }
+      ],
+      "counterpoint": "容量价格下降也可能反映融资成本、其他收入预期、竞标策略或项目配置变化；在没有项目CAPEX、合同及现金流的情况下，不推导利润率、IRR或电池降价幅度。",
+      "material_exposure": [
+        {
+          "material": "锂离子电芯 / 储能系统",
+          "mechanism": "明确的容量授予为系统需求提供更强依据，后续电芯订单取决于项目技术规格和采购选择。",
+          "boundary": "没有披露LFP或三元具体配方，不把项目容量直接换算锂盐、镍钴、石墨采购量。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "material": "DC电池舱 / AC侧PCS、EMS及并网",
+          "mechanism": "系统交付、容量保证、衰减和效率共同影响履约成本与项目经济性。",
+          "boundary": "四个项目具体设备、责任边界和报价尚未披露，不能认定CATL或任一系统商中标。",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125",
+            "terna-macse-first-20251013"
+          ]
+        }
+      ],
+      "watch_signals": [
+        {
+          "indicator": "中标项目公布系统/EPC供应商与合同范围",
+          "interpretation": "识别容量授予能否转成设备采购和可验证订单。",
+          "observation_source": "BW ESS、A2A及项目公司公开公告",
+          "frequency": "按项目里程碑及季度披露",
+          "decision_use": "筛选实际采购机会，区分系统集成与电芯供货。",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "indicator": "建设、融资、并网及商业运行",
+          "interpretation": "验证2029年运行目标能否兑现；融资框架或计划不算实际提款与完工。",
+          "observation_source": "Terna及中标开发商项目公告",
+          "frequency": "季度或重大里程碑",
+          "decision_use": "调整订单兑现概率的定性判断和合作时间窗口。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "indicator": "实际可用容量、效率和全寿命成本口径",
+          "interpretation": "同口径的系统指标及担保责任有助于区分低报价和低履约成本。",
+          "observation_source": "项目公开招标、验收或运营披露；未公开合同条款不作推定",
+          "frequency": "公开采购或运营数据出现时",
+          "decision_use": "比较系统方案及性能风险承担。",
+          "source_ids": [
+            "terna-macse-first-20251013",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "意大利中标容量向可执行系统设备需求转化的确定性",
+          "current_reading": "Terna公布16GWh授予量；BW ESS/A2A确认其中四个项目，但未披露设备供应商。",
+          "upgrade_when": "公布具有约束力的设备合同、融资落实及建设进展，增强需求兑现判断。",
+          "downgrade_when": "延期、取消、融资失败或规模调整削弱兑现判断。",
+          "decision_use": "将获授容量、系统订单和实际交付分阶段跟踪。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "signal": "低容量收入环境下全寿命成本竞争压力",
+          "current_reading": "第二轮加权容量价较上一轮低12%；尚无同口径项目实际成本与现金流。",
+          "upgrade_when": "若后续采购和财务披露显示同等服务要求下成本约束收紧，增强系统成本压力判断。",
+          "downgrade_when": "若其他收入、融资或合同安排改善并抵消容量收入下降，削弱由该价格推导的成本压力判断。",
+          "decision_use": "优先比较全寿命成本、担保与融资，而非直接压缩电芯报价。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "terna-macse-first-20251013"
+          ]
+        }
+      ],
+      "management_question": "对意大利长时锂离子储能项目，如何在已授予的容量收入约束下，选择电芯、直流舱或AC系统合作入口，并用可用能量和履约成本验证竞争力？",
+      "source_ids": [
+        "terna-macse-2029-award-20261124",
+        "bwess-a2a-macse-award-20261125",
+        "terna-macse-first-20251013"
+      ],
+      "claimconfidence": {
+        "facts": "高：Terna原始公告、机制说明与中标方联合公告；两家独立发布主体，联合公告镜像不重复计数。",
+        "analysis": "条件性经营研判；无CATL供应关系、项目利润率或报价数据。"
       }
     },
     {
