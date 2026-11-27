@@ -1,15 +1,15 @@
 {
   "meta": {
-    "as_of": "2026-11-26",
+    "as_of": "2026-11-27",
     "title": "CATL产业链决策洞察",
     "scope": "公开产业投资视角；把事实、工程阶段和经营研判分别标识",
     "method": "企业/政府原文与独立研究交叉检查；时间轴保留发生日、披露日、未来目标的区别；不编造内部采购、船货或投资敞口",
-    "insight_count": 14,
-    "source_count": 58,
-    "review_notes": "新纳入意大利MACSE授予与系统经济性议题；保留此前有效分析与各自日期。钴、镍、负极的判断更新条件未获充分新证据，不改变结论。",
-    "generated_at": "2026-11-26T08:16:36+08:00",
+    "insight_count": 15,
+    "source_count": 62,
+    "review_notes": "新增澳洲储能FID、户储与电价反馈分析，更新铜价判断条件；其他有效议题保留原日期。钴、镍、负极没有足以改变结论的新证据。",
+    "generated_at": "2026-11-27T08:55:08+08:00",
     "editorial_note": "重点议题连接事实、时间线、材料节点、经营问题及判断更新条件；条件为研究规则，不表示已触发自动预警或掌握内部敞口。",
-    "decision_checkpoint_count": 31
+    "decision_checkpoint_count": 33
   },
   "sources": [
     {
@@ -601,6 +601,46 @@
       "type": "电网运营方机制说明",
       "verified_at": "2026-11-26",
       "access_note": "原文直接可读；第一轮招标的历史背景，不作为本日新增事件。"
+    },
+    {
+      "id": "cer-qcmr-q3-20261126",
+      "title": "Quarterly Carbon Market Report September quarter 2026",
+      "publisher": "Australian Clean Energy Regulator",
+      "published_at": "2026-11-26",
+      "url": "https://cer.gov.au/markets/reports-and-data/quarterly-carbon-market-reports/quarterly-carbon-market-report-september-quarter-2026",
+      "type": "政府监管机构报告网页摘要",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "Highlights：13.8/20 GWh FID；10.3 GWh已安装获批；13–15.5 GWh预测"
+    },
+    {
+      "id": "aemo-qed-q3-20261023",
+      "title": "Warmer weather, solar and batteries reshape energy markets",
+      "publisher": "AEMO",
+      "published_at": "2026-10-23",
+      "url": "https://www.aemo.com.au/newsroom/media-release/qed-q3-2026",
+      "type": "电网运营商原始披露",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "National Electricity Market；Q3 2026"
+    },
+    {
+      "id": "cec-h1-storage-20261026",
+      "title": "Clean energy investment surges, Australian energy security strengthens",
+      "publisher": "Clean Energy Council",
+      "published_at": "2026-10-26",
+      "url": "https://cleanenergycouncil.org.au/news-resources/clean-energy-investment-surges,-australian-energy-security-strengthens",
+      "type": "行业协会原始投资报告摘要",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "H1 2026投运容量"
+    },
+    {
+      "id": "cochilco-daily-20261126",
+      "title": "La Rueda — 26 de noviembre de 2026",
+      "publisher": "Cochilco",
+      "published_at": "2026-11-26",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "type": "政府公开行情汇编",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "PDF第1页，经页面图像核对；LME Contado US$/TM，Otros metales y litio"
     }
   ],
   "insights": [
@@ -1482,6 +1522,229 @@
       }
     },
     {
+      "id": "australia-storage-fid-dispatch-economics",
+      "title": "澳洲储能投资加速，但储能本身也会改变电价：大储项目和户储渠道应分开估值",
+      "thesis": "研判：CER新报告同时确认大储FID规模扩张和家用电池安装需求；AEMO早期运营统计显示储能参与率上升可压低晚峰价格。对产业投资而言，设备需求与电站收入不是同一变量，需将订单兑现、时段收益、系统责任和渠道经济性拆开。",
+      "why_now": "11月26日CER首次在该季度报告中展示大储项目进度追踪，并上调全年家用电池预测；为观察市场阶段、需求和调度反馈提供可用官方数据。",
+      "timeline": [
+        {
+          "date": "2026-10-23",
+          "event": "AEMO披露Q3实际运行情况：晚峰电池供电占比8%，高于燃气5.1%；NEM平均批发电价同比下降27%。",
+          "stage": "运行基线",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "date": "2026-10-26",
+          "event": "CEC披露H1九个大型电池项目投入运行，合计2.3GW/7.1GWh。",
+          "stage": "历史投运基线",
+          "source_ids": [
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "date": "2026-11-26",
+          "event": "CER披露Q3大储13.8GWh达到FID、前三季度20GWh；家用电池计划已安装获批10.3GWh，上调全年预测。",
+          "stage": "新报告披露",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "CER报告的20GWh是前三季度达到FID的大储能量容量，不是已运行或已确认设备订单。Q3单季为13.8GWh，包含在20GWh内。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        },
+        {
+          "text": "2026年前三季度家用电池计划下已安装获批10.3GWh，全年预测上调至13–15.5GWh，不能将预测与已批准容量相加。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        },
+        {
+          "text": "AEMO报告Q3 NEM平均批发电价为63澳元/MWh，同比下降27%；晚峰电池供电占8%，高于燃气的5.1%。天气、需求和其他发电条件也有影响。",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "text": "CEC报告H1已投运大型电池2.3GW/7.1GWh，属于不同阶段统计，不应与CER FID直接相加。",
+          "source_ids": [
+            "cec-h1-storage-20261026"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "需求形成",
+          "text": "FID代表项目资本决策，后续仍需采购、施工、并网与验收；已安装获批户储则属于不同商业渠道。",
+          "kind": "事实与机制",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "step": "电网反馈",
+          "text": "更多储能在低价时充电、高价时放电，有可能压缩价差；AEMO指出电池活动与晚峰价格下降有关。",
+          "kind": "事实与机制",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "step": "经济性分化",
+          "text": "若套利价差收窄，项目收益更依赖运行策略、合同收入、可用率、效率和资金成本；不同节点和时长不能同价估算。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "aemo-qed-q3-20261023",
+            "cer-qcmr-q3-20261126"
+          ]
+        },
+        {
+          "step": "合作入口",
+          "text": "设备商应区分大型项目直流舱、完整AC系统与分布式产品渠道；以实际订单及验收证明商业兑现。",
+          "kind": "投资研究",
+          "source_ids": [
+            "cec-h1-storage-20261026",
+            "cer-qcmr-q3-20261126",
+            "aemo-qed-q3-20261023"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "市场",
+          "point": "用FID项目库筛选大储潜在采购入口；分布式项目按渠道及产品准入观察，不用全国规模直接推定份额。"
+        },
+        {
+          "dimension": "技术与成本",
+          "point": "在实际时段与调度工况下比较可用能量、往返效率、衰减、补容和EMS能力；区分设备成本与电站收益。 "
+        },
+        {
+          "dimension": "资本",
+          "point": "项目股权投资需要现金流与合同收益证据；电芯或系统供货则需按验收、担保与收款责任评价。"
+        }
+      ],
+      "counterpoint": "批发均价下降并不等于每个电站套利收入下降；区域、小时级价差、辅助服务、容量或其他合同收入可不同。未披露电池化学配方、供应商及项目现金流，不推算CATL份额、利润或锂盐吨数。",
+      "watch_signals": [
+        {
+          "indicator": "已FID项目的系统采购、施工及投运节点",
+          "interpretation": "验证投资计划到设备订单和实际装机的转化。",
+          "observation_source": "CER项目追踪、CEC投运报告及开发商公开披露",
+          "frequency": "季度及项目里程碑",
+          "decision_use": "按兑现程度筛选系统机会。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "indicator": "NEM分时价差、实际充放电与调度收入",
+          "interpretation": "辨别储能渗透率变化对项目可实现收入的影响；均价不能代替套利价差。",
+          "observation_source": "AEMO季度报告及公开市场数据",
+          "frequency": "月度或季度",
+          "decision_use": "评估调度、时长、合同和系统效率的重要性。",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "indicator": "户储计划的实际获批容量和后续预测变化",
+          "interpretation": "区分销量、安装及补贴获批，识别分布式需求兑现。",
+          "observation_source": "CER季度报告与方案公开数据",
+          "frequency": "季度",
+          "decision_use": "决定渠道和产品适配研究优先级。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ],
+      "management_question": "澳洲大储的20GWh FID与户储获批量分别对应何种可追踪采购入口？在电池参与调度改变收益曲线时，系统方案及投资收益模型是否采用实际分时价格和合同边界？",
+      "source_ids": [
+        "cer-qcmr-q3-20261126",
+        "aemo-qed-q3-20261023",
+        "cec-h1-storage-20261026"
+      ],
+      "claimconfidence": {
+        "facts": "高：CER监管报告网页摘要、AEMO运行披露及CEC行业协会投运统计；不同阶段不相加。",
+        "analysis": "条件性产业研判；没有CATL实际订单、项目IRR或分时利润数据。"
+      },
+      "categories": [
+        "供需平衡",
+        "竞争与合作"
+      ],
+      "tags": [
+        "澳洲储能",
+        "FID",
+        "户储",
+        "调度",
+        "项目经济性"
+      ],
+      "chain_routes": [
+        "ess"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "ess_dc",
+        "ess_ac",
+        "grid_users",
+        "mine_ci_users"
+      ],
+      "related_event_ids": [
+        "australia-cer-storage-pipeline-20261126"
+      ],
+      "as_of": "2026-11-27",
+      "material_exposure": [
+        {
+          "material": "储能电芯 / 直流舱",
+          "mechanism": "项目进入FID扩大潜在系统采购需求；户储获批显示另一类已安装市场。",
+          "boundary": "没有具体化学配方与系统商份额，不换算LFP、三元或钠电材料吨数。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "material": "PCS / EMS / 完整AC系统",
+          "mechanism": "电池参与分时调度与市场价格反馈可能增加优化系统效率和可用率的价值。",
+          "boundary": "没有具体项目合同与收入分项，不能从NEM均价推算IRR。",
+          "source_ids": [
+            "aemo-qed-q3-20261023",
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "澳洲大储FID向可验证交付转化的确定性",
+          "current_reading": "CER确认前三季度20GWh达到FID；CEC历史投运基线另计。",
+          "upgrade_when": "明确项目采购合同、设备到场、并网验收和商业运行，增强兑现判断。",
+          "downgrade_when": "项目延期、取消或缩减规模，削弱兑现判断。",
+          "decision_use": "将FID、订单、投运分层管理，不重复统计。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "signal": "高储能渗透率下的项目收益压缩风险",
+          "current_reading": "AEMO确认晚峰电池参与及均价下降；尚无同口径项目净收入数据。",
+          "upgrade_when": "实际节点价差及净调度收益持续下降，且无合同或其他收入抵消，增强风险判断。",
+          "downgrade_when": "价差恢复或合同、辅助服务等收入抵消压力，削弱风险判断。",
+          "decision_use": "用实际运行工况、效率、衰减、合同收益与资金成本比较方案。",
+          "source_ids": [
+            "aemo-qed-q3-20261023",
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ]
+    },
+    {
       "id": "italy-macse-contracted-demand-system-economics",
       "title": "意大利储能招标扩量降价：收入端承压，系统生命周期成本与交付成为竞争关键",
       "thesis": "研判：2029年意大利MACSE授予16GWh，比2028年交付轮次的10GWh增加60%，但加权年容量价格降低12%。11月25日BW ESS与A2A披露具体中标组合，需求从市场总量落实到开发商；CATL观察重点应从GWh市场规模推进到采购入口、可用能量保证、融资与交付责任。不能将容量收入价格等同于电池价格或项目收益率。",
@@ -1942,10 +2205,10 @@
     },
     {
       "id": "copper-price-foil-conversion-working-capital",
-      "title": "铜价回落怎样进入电池成本：要同时看金属基价、铜箔加工费与定价时点",
-      "thesis": "研判：铜价下降可以降低后续采购的金属基价，却不必然同比例降低已签电池或储能系统成本。铜箔加工费、产品规格、采购销售定价时点及供应商资金占用，会改变传导速度和分配结果。",
-      "why_now": "Cochilco已发布11月25日价格参考；11月20日周报同时记录铜价下跌和部分地区现货偏紧。将行情与铜箔企业披露结合，才能把价格信号转为采购和投后观察问题。",
-      "as_of": "2026-11-25",
+      "title": "铜价先跌后反弹怎样进入电池成本：金属基价、加工费与定价时点需分开",
+      "thesis": "研判：铜现金参考价25日回落、26日反弹，说明短期价格方向不稳定。金属基价可以影响后续铜箔采购，但加工费、规格、合同窗口、资金占用决定传导幅度与速度；不能从一天行情推导已签电池或储能系统的成本变化。",
+      "why_now": "Cochilco 11月26日同口径铜价较前日报价反弹2.24%，仍低于24日；这削弱由25日下跌直接推导持续降本的判断，但没有改变铜箔加工费和定价窗口的结构机制。",
+      "as_of": "2026-11-27",
       "categories": [
         "原材料",
         "供需平衡"
@@ -1976,7 +2239,8 @@
       "related_event_ids": [
         "cochilco-copper-weekly-20261120",
         "cochilco-metals-daily-20261125",
-        "jiayuan-copper-foil-pricing-20260421"
+        "jiayuan-copper-foil-pricing-20260421",
+        "cochilco-metals-daily-20261126"
       ],
       "facts": [
         {
@@ -1996,6 +2260,14 @@
           "text": "嘉元科技2025年报披露铜箔采用金属基价加加工费的定价方式，并指出采购点价与销售定价时点不能完全匹配；公司也说明产品结构改善会提高平均加工费。",
           "source_ids": [
             "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "text": "11月26日LME现货铜11,965美元/吨，较25日上涨2.24%，仍低于24日12,035美元/吨。三日观察不构成长期走势。",
+          "source_ids": [
+            "cochilco-daily-20261126",
+            "cochilco-daily-20261125",
+            "cochilco-daily-20261124"
           ]
         }
       ],
@@ -2026,6 +2298,14 @@
           "source_ids": [
             "cochilco-daily-20261124",
             "cochilco-daily-20261125"
+          ]
+        },
+        {
+          "date": "2026-11-26",
+          "event": "铜现金参考价反弹至11,965美元/吨。",
+          "stage": "新日报观察",
+          "source_ids": [
+            "cochilco-daily-20261126"
           ]
         }
       ],
@@ -2116,7 +2396,8 @@
           "frequency": "每个发布交易日",
           "decision_use": "识别需要复核采购定价窗口的价格变化，不直接判定短缺或过剩。",
           "source_ids": [
-            "cochilco-daily-20261125"
+            "cochilco-daily-20261125",
+            "cochilco-daily-20261126"
           ]
         },
         {
@@ -2145,7 +2426,8 @@
         "cochilco-copper-week-20261120",
         "cochilco-daily-20261124",
         "cochilco-daily-20261125",
-        "jiayuan-annual-2025"
+        "jiayuan-annual-2025",
+        "cochilco-daily-20261126"
       ],
       "claimconfidence": {
         "facts": "高：政府公开价格汇编与上市公司原始年报；价格保留真实观察日",
@@ -2154,14 +2436,15 @@
       "decision_checkpoints": [
         {
           "signal": "金属降价传到合格铜箔采购成本",
-          "current_reading": "同口径LME铜现金价从11月24日12,035降至25日11,703美元/吨；嘉元披露的定价包括铜基价与加工费。",
+          "current_reading": "11月24日12,035、25日11,703、26日11,965美元/吨：短期回升削弱持续基价下降的证据，但加工费和采购窗口仍决定实际传导。",
           "upgrade_when": "金属价格变化持续，且实际适用品种的加工费和采购定价窗口支持传导，才增强箔材成本下降的判断。",
           "downgrade_when": "加工费、产品结构、定价时差或认证要求抵消金属降价时，削弱直接降本判断。",
           "decision_use": "分别观察金属基价、加工价值与采购时间窗口；采购端结论还需内部合同。",
           "source_ids": [
             "cochilco-daily-20261124",
             "cochilco-daily-20261125",
-            "jiayuan-annual-2025"
+            "jiayuan-annual-2025",
+            "cochilco-daily-20261126"
           ]
         },
         {

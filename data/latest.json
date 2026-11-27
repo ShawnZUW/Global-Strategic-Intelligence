@@ -1,93 +1,219 @@
 {
   "meta": {
-    "as_of": "2026-11-26",
-    "generated_at": "2026-11-26T08:16:36+08:00",
+    "as_of": "2026-11-27",
+    "generated_at": "2026-11-27T08:55:08+08:00",
     "scope": "面向宁德时代产业投资视角的公开产业观察样本；不代表宁德时代内部口径、实际投资清单或已知业务敞口。",
     "mode": "原始证据核验与产业链因果研究",
-    "update_note": "新增一项意大利储能招标经济性分析与两条事实（11月25日中标方新披露、11月24日Terna公告补录）；原13项分析、价格及历史观察日期保留。三项重点材料判断暂无充分新证据调整。",
+    "update_note": "新纳入澳洲储能FID、家用电池需求与调度收益反馈分析；新增CER报告与Cochilco日报2条事实，更新3个金属参考价，锂仍为11月24日。铜价反弹削弱持续降本依据；钴、镍工艺与负极认证原判断维持。",
     "research_audit": {
-      "window": "北京时间2026-11-25 08:16至2026-11-26 08:16；早期事实标注补录",
-      "focus": "意大利ESS招标与既有钴、镍、负极议题后续",
+      "window": "北京时间2026-11-26 08:55至2026-11-27 08:55；早期来源仅作背景",
+      "focus": "重点议题后续、澳洲储能市场与金属同口径报价",
       "checked_sources": [
         {
-          "name": "Terna",
-          "url": "https://www.terna.it/en/media/press-releases/detail/completed-second-macse-auction",
+          "name": "CER季度报告",
+          "url": "https://cer.gov.au/markets/reports-and-data/quarterly-carbon-market-reports/quarterly-carbon-market-report-september-quarter-2026",
+          "status": "成功",
+          "note": "11月26日发布；公开网页Highlights可读，未声称读过完整PDF或工作簿。"
+        },
+        {
+          "name": "CER媒体公告",
+          "url": "https://cer.gov.au/news-and-media/media/2026/november/household-and-large-scale-renewable-energy-reach-record-levels",
+          "status": "成功",
+          "note": "同一报告发布者，不计独立佐证。"
+        },
+        {
+          "name": "AEMO",
+          "url": "https://www.aemo.com.au/newsroom/media-release/qed-q3-2026",
+          "status": "成功",
+          "note": "10月23日原始公告；11月媒体转述并非新季度数据。"
+        },
+        {
+          "name": "Clean Energy Council",
+          "url": "https://cleanenergycouncil.org.au/news-resources/clean-energy-investment-surges,-australian-energy-security-strengthens",
+          "status": "成功",
+          "note": "10月26日历史基线；H1投运与CER FID阶段不同。"
+        },
+        {
+          "name": "pv magazine",
+          "url": "https://www.pv-magazine.com/2026/11/26/1-gw-solar-capacity-reaches-fid-in-q3-2026-a-confident-cer-boosts-2027-projection/",
+          "status": "成功",
+          "note": "公开索引正文提供新报告线索，回CER核验。"
+        },
+        {
+          "name": "RenewEconomy",
+          "url": "https://reneweconomy.com.au/records-tumble-for-big-and-small-renewables-as-doubling-of-big-batteries-helps-slash-cost-of-power/",
+          "status": "访问受限",
+          "note": "正文直连失败，不采用其新主张。"
+        },
+        {
+          "name": "Cochilco",
+          "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+          "status": "成功",
+          "note": "11月26日报PDF正文及图像核对；锂仍为24日观察。"
+        },
+        {
+          "name": "CMOC",
+          "url": "https://en.cmoc.com/html/Media/News/",
+          "status": "成功",
+          "note": "英文新闻列表未见本次新出口公告；不等于完整公告扫描。"
+        },
+        {
+          "name": "Mining.com.au",
+          "url": "https://mining.com.au/cmoc-plans-to-speed-up-cobalt-shipments-ahead-of-drc-ban/",
           "status": "部分 / 受限",
-          "note": "官方索引正文可读；直连仅返回动态页面框架。意大利当地11月24日17:24发布，北京时间11月25日00:24，属于本轮补录背景。"
+          "note": "报道可定位；尚未取得对应可核验公司原文或实际出运，未纳入结论。"
         },
         {
-          "name": "BW ESS / A2A",
-          "url": "https://www.bw-ess.com/news/bw-ess-and-a2a-success-in-italys-macse-auction-for-battery-energy-storage-systems",
-          "status": "部分 / 受限",
-          "note": "官方索引正文可读，直接抓取失败；A2A同文公开镜像及ANSA报道交叉核对，同一联合公告只计一个来源。"
-        },
-        {
-          "name": "Terna Lightbox",
-          "url": "https://lightbox.terna.it/en/insight/m-for-macse",
+          "name": "SMM",
+          "url": "https://news.metal.com/newscontent/JUTU72A5BPZE7RKNMM6OWNDPXLUFHYO3VWXKZZA-smm-analysis-drc-suspends-cobalt-exports-again-how-long-can-this-round-of-cobalt-price-increases-last",
           "status": "成功",
-          "note": "原文直接可读；第一轮招标的历史背景，不作为本日新增事件。"
-        },
-        {
-          "name": "Fraunhofer ISI",
-          "url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update/batterie-recycling_europa_kapazitaeten_bedarf_update_2026.html",
-          "status": "成功",
-          "note": "原文直接可读，11月25日研究已在上一快照入库，不重复新增。"
-        },
-        {
-          "name": "ACP",
-          "url": "https://acp.cd/economie/la-rdc-suspend-la-commercialisation-du-cobalt-des-le-30-novembre-2026/",
-          "status": "成功",
-          "note": "11月24日原有报道可读；本次定向检索未发现新恢复决定。11月30日仍为已公布未来生效日。"
+          "note": "11月24日原有通知翻译及市场估计；未作为新政策决定或实际库存。"
         },
         {
           "name": "Merdeka Battery Materials",
-          "url": "https://merdekabattery.com/en",
+          "url": "https://merdekabattery.com/en/investor/announcements/information-disclosure",
           "status": "成功",
-          "note": "官网公开索引正文可读，最新新闻列表为11月20日；没有查得更新的分矿种许可/HPAL实产披露。"
+          "note": "列表最新11月17日；未确认新增分矿区许可与实产。"
         },
         {
-          "name": "印尼ESDM",
-          "url": "https://esdm.go.id/id/media-center/arsip-berita/hma-nikel-naik-jadi-usd1559688-per-ton-pada-paruh-kedua-november-2026",
+          "name": "ESDM",
+          "url": "https://www.esdm.go.id/id/media-center/arsip-berita/hma-nikel-naik-jadi-usd1559688-per-ton-pada-paruh-kedua-november-2026",
           "status": "成功",
-          "note": "11月17日发布的半月HMA为不同监管参考口径，不替换现有LME现金价；本次未查得新RKAB决定。"
+          "note": "11月17日半月HMA旧口径，不替换金属现货。"
         },
         {
-          "name": "Syrah Resources",
+          "name": "Syrah",
           "url": "https://www.syrahresources.com.au/news",
           "status": "成功",
-          "note": "直接访问新闻页，最新列示11月5日；定向搜索没有取得新增最终客户认证及订单。并非完整交易所公告扫描。"
+          "note": "最新新闻11月5日；无新客户认证原文。"
         },
         {
-          "name": "NOVONIX",
-          "url": "https://ir.novonixgroup.com/news-events/news-releases",
-          "status": "访问受限",
-          "note": "直连403；公开搜索未检出符合窗口的新客户认证或订单公告；不据此断言无公告。"
-        },
-        {
-          "name": "Glencore",
-          "url": "https://www.glencore.com/media-and-insights/news",
+          "name": "Syrah ASX",
+          "url": "https://www.syrahresources.com.au/investors/asx-announcements",
           "status": "部分 / 受限",
-          "note": "媒体页可读但无完整新闻明细；未确认新增出货。"
+          "note": "页面框架可读，公告列表未呈现。"
         },
         {
-          "name": "Fluence",
-          "url": "https://ir.fluenceenergy.com/news-releases/news-release-details/fluence-energy-inc-reports-2026-financial-results",
+          "name": "NOVONIX新闻",
+          "url": "https://ir.novonixgroup.com/news-events/news-releases",
           "status": "成功",
-          "note": "官方检索正文可读，11月23日业绩及11月24日电话会是窗口前背景；暂不扩展本轮主题。"
+          "note": "最新11月18日访谈条目；本轮未确认最终认证及新约束订单。"
         },
         {
-          "name": "Energy-Storage.news",
-          "url": "https://www.energy-storage.news/italys-second-macse-auction-clears-12-lower-than-first-enel-bw-ess-a2a-and-field-among-winners/",
+          "name": "NOVONIX ASX",
+          "url": "https://ir.novonixgroup.com/financial-information/asx-announcements",
           "status": "成功",
-          "note": "11月25日媒体线索，回Terna及中标方披露核验。"
+          "note": "列表最新10月30日季度活动；不证明所有交易所渠道无公告。"
+        },
+        {
+          "name": "Core Lithium",
+          "url": "https://corelithium.com.au/announcements/kaRXpZ-first-shipment-of-spodumene-concentrate-post-finniss-restart",
+          "status": "成功",
+          "note": "11月25日原公告仍为装船计划；未确认新实际完成证据。"
         }
       ],
-      "social": "公开索引查询已核验账号@energystoragenw、@benchmarkmin，未取得可读原帖；其余账号未检查，不声称抓取X数据。",
-      "coverage": "本轮定向轮换；未全量复查136家目录。独立feed快照仍为11月25日15:29:50 UTC，41/45成功、496条线索；不当作本轮运行成绩。",
-      "prices": "无新同口径报价核实，保留原观察日与历史；ESDM半月HMA与LME现货不同。"
+      "social": "公开搜索目录账号@benchmarkmin，未取得相关可读原帖；其余账号未检查。",
+      "coverage": "定向核验，未扫描全部136家目录。独立feed生成于2026-11-26T05:27:03Z，41/45源成功，503累计线索、13首次发现；不是本次采集或核验成绩。",
+      "prices": "Cochilco 26日PDF图像与文本一致；铜铝镍更新，锂24日同一观察重复刊载不新增。",
+      "limitations": "CER网页公开摘要已读，完整PDF、工作簿未检查；钴抢运报道未获对应原始公司公告，不能确认实际船货。印尼许可、海外负极客户订单没有充分新原文。"
     }
   },
   "events": [
+    {
+      "id": "australia-cer-storage-pipeline-20261126",
+      "category": "供需平衡",
+      "title": "澳洲储能投资进入兑现阶段：前三季度20GWh大储FID，户储预测上调",
+      "summary": "CER于11月26日发布三季度报告：Q3有13.8GWh大规模电池储能达到最终投资决策（FID），前三季度累计20.0GWh；2026年前三季度家用电池计划下已安装且获批10.3GWh，全年预测由8–12上调至13–15.5GWh。两类统计阶段不同。",
+      "impact": "条件性研判：大储采购与分布式渠道均出现可观察需求，但新增电池参与调度可能压缩部分时段套利空间；应区分设备订单、已投运容量和项目收益。",
+      "action": "按项目跟踪设备/EPC合同、并网及投运；家用电池按合规产品、渠道、售后和实际获批容量跟踪。未公开供应商不归因CATL。",
+      "entity": "Australian Clean Energy Regulator",
+      "country": "澳大利亚",
+      "published_at": "2026-11-26",
+      "event_date": null,
+      "priority": "P1",
+      "evidence_level": "官方原文",
+      "source_name": "CER Q3 2026",
+      "source_url": "https://cer.gov.au/markets/reports-and-data/quarterly-carbon-market-reports/quarterly-carbon-market-report-september-quarter-2026",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "metrics": [
+        {
+          "label": "Q3大储达到FID",
+          "value": 13.8,
+          "unit": "GWh"
+        },
+        {
+          "label": "前三季度大储达到FID",
+          "value": 20,
+          "unit": "GWh"
+        },
+        {
+          "label": "前三季度户储计划已安装获批",
+          "value": 10.3,
+          "unit": "GWh"
+        },
+        {
+          "label": "全年户储预测",
+          "value": "13–15.5",
+          "unit": "GWh"
+        }
+      ],
+      "lat": null,
+      "lon": null,
+      "source_ids": [
+        "cer-qcmr-q3-20261126"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "ess_dc",
+        "ess_ac",
+        "grid_users",
+        "mine_ci_users"
+      ]
+    },
+    {
+      "id": "cochilco-metals-daily-20261126",
+      "category": "原材料",
+      "title": "11月26日LME铜、铝、镍现金参考价反弹；锂指标仍为24日",
+      "summary": "Cochilco 11月26日公开日报：铜11,965美元/吨、铝2,975美元/吨、镍15,665美元/吨，对前日报价分别上涨2.24%、4.42%、4.19%；碳酸锂≥99.5% FOB南美14.95美元/公斤仍对应11月24日。",
+      "impact": "条件性研判：集流体与含镍正极金属基价短期回升，实际采购传导取决于加工费、合同窗口、产品规格及中间品供需。日涨幅不代表电池材料同幅涨价。",
+      "action": "保留同口径历史观察；不将锂旧报价算作新观察，不由一天行情推断持续短缺。",
+      "entity": "Cochilco / LME参考行情",
+      "country": "全球",
+      "published_at": "2026-11-26",
+      "event_date": "2026-11-26",
+      "priority": "P1",
+      "evidence_level": "官方原文",
+      "source_name": "Cochilco La Rueda日报",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "metrics": [
+        {
+          "label": "铜 / LME现货",
+          "value": 11965,
+          "unit": "美元/吨"
+        },
+        {
+          "label": "铝 / LME现货",
+          "value": 2975,
+          "unit": "美元/吨"
+        },
+        {
+          "label": "镍 / LME现货",
+          "value": 15665,
+          "unit": "美元/吨"
+        }
+      ],
+      "lat": -33.45,
+      "lon": -70.67,
+      "source_ids": [
+        "cochilco-daily-20261126"
+      ],
+      "chain_node_ids": [
+        "collectors",
+        "cu_al_feed",
+        "ncm_salts"
+      ]
+    },
     {
       "id": "bwess-a2a-italy-macse-awards-20261125",
       "category": "竞争与合作",
@@ -1483,18 +1609,18 @@
   "prices": [
     {
       "material": "铜 · LME现货",
-      "value": 11703,
+      "value": 11965,
       "unit": "美元/吨",
-      "date": "2026-11-25",
-      "change_pct": -2.76,
-      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
-      "source_name": "Cochilco La Rueda 2026-11-25",
-      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
-      "source_id": "cochilco-daily-20261125",
-      "source_doc_date": "2026-11-25",
-      "comparison_date": "2026-11-24",
+      "date": "2026-11-26",
+      "change_pct": 2.24,
+      "comparison_basis": "较2026-11-25同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-26",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "source_id": "cochilco-daily-20261126",
+      "source_doc_date": "2026-11-26",
+      "comparison_date": "2026-11-25",
       "series_id": "copper-lme-cash",
-      "verified_at": "2026-11-25T15:14:49+00:00",
+      "verified_at": "2026-11-27T08:55:08+08:00",
       "market_basis": "LME现货金属铜；Cochilco公开汇编，非盘中行情。",
       "cost_transmission": "铜金属基价 → 铜箔基价；实际采购还叠加加工费、规格及定价窗口。材料厂营运资金和库存敞口可能与金属价格同向变化。",
       "related_insight_id": "copper-price-foil-conversion-working-capital",
@@ -1506,18 +1632,18 @@
     },
     {
       "material": "铝 · LME现货",
-      "value": 2849,
+      "value": 2975,
       "unit": "美元/吨",
-      "date": "2026-11-25",
-      "change_pct": -8.7,
-      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
-      "source_name": "Cochilco La Rueda 2026-11-25",
-      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
-      "source_id": "cochilco-daily-20261125",
-      "source_doc_date": "2026-11-25",
-      "comparison_date": "2026-11-24",
+      "date": "2026-11-26",
+      "change_pct": 4.42,
+      "comparison_basis": "较2026-11-25同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-26",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "source_id": "cochilco-daily-20261126",
+      "source_doc_date": "2026-11-26",
+      "comparison_date": "2026-11-25",
       "series_id": "aluminium-lme-cash",
-      "verified_at": "2026-11-25T15:14:49+00:00",
+      "verified_at": "2026-11-27T08:55:08+08:00",
       "market_basis": "LME现货金属铝；不能直接当作电池铝箔或结构件报价。",
       "cost_transmission": "铝金属基价 → 适用集流体、壳体与结构件成本；电池级质量、表面处理、加工费与采购周期决定实际传导。",
       "chain_route": "lfp",
@@ -1529,18 +1655,18 @@
     },
     {
       "material": "镍 · LME现货",
-      "value": 15035,
+      "value": 15665,
       "unit": "美元/吨",
-      "date": "2026-11-25",
-      "change_pct": -0.17,
-      "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
-      "source_name": "Cochilco La Rueda 2026-11-25",
-      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
-      "source_id": "cochilco-daily-20261125",
-      "source_doc_date": "2026-11-25",
-      "comparison_date": "2026-11-24",
+      "date": "2026-11-26",
+      "change_pct": 4.19,
+      "comparison_basis": "较2026-11-25同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-26",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "source_id": "cochilco-daily-20261126",
+      "source_doc_date": "2026-11-26",
+      "comparison_date": "2026-11-25",
       "series_id": "nickel-lme-cash",
-      "verified_at": "2026-11-25T15:14:49+00:00",
+      "verified_at": "2026-11-27T08:55:08+08:00",
       "market_basis": "LME现货金属镍；与MHP、镍铁或电池级硫酸镍规格不同。",
       "cost_transmission": "镍市场变化需经中间品计价、杂质控制和硫酸盐转化传到三元前驱体；不能把金属镍报价直接作为NMC原料采购价。",
       "related_insight_id": "eu-indonesia-three-chains",
@@ -1581,9 +1707,9 @@
       "name": "Core Lithium ASX公告",
       "url": "https://corelithium.com.au/announcements/kaRXpZ-first-shipment-of-spodumene-concentrate-post-finniss-restart",
       "category": "供需平衡",
-      "status": "官方检索可见 / 直连受限",
-      "last_checked": "2026-11-25T13:24:26Z",
-      "note": "检索正文可读，浏览抓取通道出现不可访问；本次额外直接HTTP请求成功读取正文。公告日期11月25日，装船为当日计划，持续采集可用性仍需监控。"
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "11月25日原公告仍为装船计划；未确认新实际完成证据。"
     },
     {
       "name": "Core Lithium Appendix 3Y",
@@ -2103,16 +2229,16 @@
       "url": "https://www.syrahresources.com.au/news",
       "category": "竞争与合作",
       "status": "成功",
-      "last_checked": "2026-11-26T08:16:36+08:00",
-      "note": "直接访问新闻页，最新列示11月5日；定向搜索没有取得新增最终客户认证及订单。并非完整交易所公告扫描。"
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "最新新闻11月5日；无新客户认证原文。"
     },
     {
       "name": "NOVONIX",
       "url": "https://ir.novonixgroup.com/news-events/news-releases",
       "category": "竞争与合作",
-      "status": "访问受限",
-      "last_checked": "2026-11-26T08:16:36+08:00",
-      "note": "直连403；公开搜索未检出符合窗口的新客户认证或订单公告；不据此断言无公告。"
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "最新11月18日访谈条目；本轮未确认最终认证及新约束订单。"
     },
     {
       "name": "Glencore",
@@ -2137,22 +2263,204 @@
       "status": "成功",
       "last_checked": "2026-11-26T08:16:36+08:00",
       "note": "11月25日媒体线索，回Terna及中标方披露核验。"
+    },
+    {
+      "name": "CER季度报告",
+      "url": "https://cer.gov.au/markets/reports-and-data/quarterly-carbon-market-reports/quarterly-carbon-market-report-september-quarter-2026",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "11月26日发布；公开网页Highlights可读，未声称读过完整PDF或工作簿。"
+    },
+    {
+      "name": "CER媒体公告",
+      "url": "https://cer.gov.au/news-and-media/media/2026/november/household-and-large-scale-renewable-energy-reach-record-levels",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "同一报告发布者，不计独立佐证。"
+    },
+    {
+      "name": "AEMO",
+      "url": "https://www.aemo.com.au/newsroom/media-release/qed-q3-2026",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "10月23日原始公告；11月媒体转述并非新季度数据。"
+    },
+    {
+      "name": "Clean Energy Council",
+      "url": "https://cleanenergycouncil.org.au/news-resources/clean-energy-investment-surges,-australian-energy-security-strengthens",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "10月26日历史基线；H1投运与CER FID阶段不同。"
+    },
+    {
+      "name": "pv magazine",
+      "url": "https://www.pv-magazine.com/2026/11/26/1-gw-solar-capacity-reaches-fid-in-q3-2026-a-confident-cer-boosts-2027-projection/",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "公开索引正文提供新报告线索，回CER核验。"
+    },
+    {
+      "name": "RenewEconomy",
+      "url": "https://reneweconomy.com.au/records-tumble-for-big-and-small-renewables-as-doubling-of-big-batteries-helps-slash-cost-of-power/",
+      "category": "定向研究核验",
+      "status": "访问受限",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "正文直连失败，不采用其新主张。"
+    },
+    {
+      "name": "Cochilco",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "11月26日报PDF正文及图像核对；锂仍为24日观察。"
+    },
+    {
+      "name": "CMOC",
+      "url": "https://en.cmoc.com/html/Media/News/",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "英文新闻列表未见本次新出口公告；不等于完整公告扫描。"
+    },
+    {
+      "name": "Mining.com.au",
+      "url": "https://mining.com.au/cmoc-plans-to-speed-up-cobalt-shipments-ahead-of-drc-ban/",
+      "category": "定向研究核验",
+      "status": "部分 / 受限",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "报道可定位；尚未取得对应可核验公司原文或实际出运，未纳入结论。"
+    },
+    {
+      "name": "SMM",
+      "url": "https://news.metal.com/newscontent/JUTU72A5BPZE7RKNMM6OWNDPXLUFHYO3VWXKZZA-smm-analysis-drc-suspends-cobalt-exports-again-how-long-can-this-round-of-cobalt-price-increases-last",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "11月24日原有通知翻译及市场估计；未作为新政策决定或实际库存。"
+    },
+    {
+      "name": "Merdeka Battery Materials",
+      "url": "https://merdekabattery.com/en/investor/announcements/information-disclosure",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "列表最新11月17日；未确认新增分矿区许可与实产。"
+    },
+    {
+      "name": "ESDM",
+      "url": "https://www.esdm.go.id/id/media-center/arsip-berita/hma-nikel-naik-jadi-usd1559688-per-ton-pada-paruh-kedua-november-2026",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "11月17日半月HMA旧口径，不替换金属现货。"
+    },
+    {
+      "name": "Syrah ASX",
+      "url": "https://www.syrahresources.com.au/investors/asx-announcements",
+      "category": "定向研究核验",
+      "status": "部分 / 受限",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "页面框架可读，公告列表未呈现。"
+    },
+    {
+      "name": "NOVONIX ASX",
+      "url": "https://ir.novonixgroup.com/financial-information/asx-announcements",
+      "category": "定向研究核验",
+      "status": "成功",
+      "last_checked": "2026-11-27T08:55:08+08:00",
+      "note": "列表最新10月30日季度活动；不证明所有交易所渠道无公告。"
     }
   ],
   "price_history": [
     {
+      "material": "铝 · LME现货",
+      "value": 2975,
+      "unit": "美元/吨",
+      "date": "2026-11-26",
+      "change_pct": 4.42,
+      "comparison_basis": "较2026-11-25同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-26",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "source_id": "cochilco-daily-20261126",
+      "source_doc_date": "2026-11-26",
+      "comparison_date": "2026-11-25",
+      "series_id": "aluminium-lme-cash",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "market_basis": "LME现货金属铝；不能直接当作电池铝箔或结构件报价。",
+      "cost_transmission": "铝金属基价 → 适用集流体、壳体与结构件成本；电池级质量、表面处理、加工费与采购周期决定实际传导。",
+      "chain_route": "lfp",
+      "chain_node_ids": [
+        "collectors",
+        "cu_al_feed",
+        "ev_pack"
+      ]
+    },
+    {
+      "material": "铜 · LME现货",
+      "value": 11965,
+      "unit": "美元/吨",
+      "date": "2026-11-26",
+      "change_pct": 2.24,
+      "comparison_basis": "较2026-11-25同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-26",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "source_id": "cochilco-daily-20261126",
+      "source_doc_date": "2026-11-26",
+      "comparison_date": "2026-11-25",
+      "series_id": "copper-lme-cash",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "market_basis": "LME现货金属铜；Cochilco公开汇编，非盘中行情。",
+      "cost_transmission": "铜金属基价 → 铜箔基价；实际采购还叠加加工费、规格及定价窗口。材料厂营运资金和库存敞口可能与金属价格同向变化。",
+      "related_insight_id": "copper-price-foil-conversion-working-capital",
+      "chain_route": "lfp",
+      "chain_node_ids": [
+        "collectors",
+        "cu_al_feed"
+      ]
+    },
+    {
       "material": "镍 · LME现货",
-      "value": 15035,
+      "value": 15665,
+      "unit": "美元/吨",
+      "date": "2026-11-26",
+      "change_pct": 4.19,
+      "comparison_basis": "较2026-11-25同品种LME现货报价；日报非盘中实时价。",
+      "source_name": "Cochilco La Rueda 2026-11-26",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "source_id": "cochilco-daily-20261126",
+      "source_doc_date": "2026-11-26",
+      "comparison_date": "2026-11-25",
+      "series_id": "nickel-lme-cash",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "market_basis": "LME现货金属镍；与MHP、镍铁或电池级硫酸镍规格不同。",
+      "cost_transmission": "镍市场变化需经中间品计价、杂质控制和硫酸盐转化传到三元前驱体；不能把金属镍报价直接作为NMC原料采购价。",
+      "related_insight_id": "eu-indonesia-three-chains",
+      "chain_route": "nmc",
+      "chain_node_ids": [
+        "ncm_salts",
+        "hpal",
+        "pcam"
+      ]
+    },
+    {
+      "material": "铝 · LME现货",
+      "value": 2849,
       "unit": "美元/吨",
       "date": "2026-11-25",
-      "change_pct": -0.17,
+      "change_pct": -8.7,
       "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
       "source_name": "Cochilco La Rueda 2026-11-25",
       "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
       "source_id": "cochilco-daily-20261125",
       "source_doc_date": "2026-11-25",
       "comparison_date": "2026-11-24",
-      "series_id": "nickel-lme-cash",
+      "series_id": "aluminium-lme-cash",
       "verified_at": "2026-11-25T15:14:49+00:00"
     },
     {
@@ -2171,48 +2479,33 @@
       "verified_at": "2026-11-25T15:14:49+00:00"
     },
     {
-      "material": "铝 · LME现货",
-      "value": 2849,
+      "material": "镍 · LME现货",
+      "value": 15035,
       "unit": "美元/吨",
       "date": "2026-11-25",
-      "change_pct": -8.7,
+      "change_pct": -0.17,
       "comparison_basis": "较2026-11-24同品种LME现货报价；日报非盘中实时价。",
       "source_name": "Cochilco La Rueda 2026-11-25",
       "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
       "source_id": "cochilco-daily-20261125",
       "source_doc_date": "2026-11-25",
       "comparison_date": "2026-11-24",
-      "series_id": "aluminium-lme-cash",
+      "series_id": "nickel-lme-cash",
       "verified_at": "2026-11-25T15:14:49+00:00"
     },
     {
-      "material": "镍 · LME现货",
-      "value": 15060,
+      "material": "铝 · LME现货",
+      "value": 3120.5,
       "unit": "美元/吨",
       "date": "2026-11-24",
-      "change_pct": -1.02,
+      "change_pct": -2.53,
       "comparison_basis": "报告列示较上一日报价；本次仅保存实际读取的11月24日数据，不补造11月23日价格。",
       "source_name": "Cochilco La Rueda 2026-11-24",
       "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
       "source_id": "cochilco-daily-20261124",
       "source_doc_date": "2026-11-24",
       "comparison_date": "2026-11-23",
-      "series_id": "nickel-lme-cash",
-      "verified_at": "2026-11-25T15:14:49+00:00"
-    },
-    {
-      "material": "碳酸锂 ≥99.5% · FOB南美",
-      "value": 14.95,
-      "unit": "美元/公斤",
-      "date": "2026-11-24",
-      "change_pct": null,
-      "comparison_basis": "FOB南美，最低纯度99.5%；本次没有取得可比前值，不计算涨跌。非中国现货、非氢氧化锂。",
-      "source_name": "Cochilco La Rueda 2026-11-24",
-      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
-      "source_id": "cochilco-daily-20261124",
-      "source_doc_date": "2026-11-24",
-      "comparison_date": null,
-      "series_id": "lithium-carbonate-fob-south-america",
+      "series_id": "aluminium-lme-cash",
       "verified_at": "2026-11-25T15:14:49+00:00"
     },
     {
@@ -2231,18 +2524,33 @@
       "verified_at": "2026-11-25T15:14:49+00:00"
     },
     {
-      "material": "铝 · LME现货",
-      "value": 3120.5,
+      "material": "碳酸锂 ≥99.5% · FOB南美",
+      "value": 14.95,
+      "unit": "美元/公斤",
+      "date": "2026-11-24",
+      "change_pct": null,
+      "comparison_basis": "FOB南美，最低纯度99.5%；本次没有取得可比前值，不计算涨跌。非中国现货、非氢氧化锂。",
+      "source_name": "Cochilco La Rueda 2026-11-24",
+      "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
+      "source_id": "cochilco-daily-20261124",
+      "source_doc_date": "2026-11-24",
+      "comparison_date": null,
+      "series_id": "lithium-carbonate-fob-south-america",
+      "verified_at": "2026-11-25T15:14:49+00:00"
+    },
+    {
+      "material": "镍 · LME现货",
+      "value": 15060,
       "unit": "美元/吨",
       "date": "2026-11-24",
-      "change_pct": -2.53,
+      "change_pct": -1.02,
       "comparison_basis": "报告列示较上一日报价；本次仅保存实际读取的11月24日数据，不补造11月23日价格。",
       "source_name": "Cochilco La Rueda 2026-11-24",
       "source_url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
       "source_id": "cochilco-daily-20261124",
       "source_doc_date": "2026-11-24",
       "comparison_date": "2026-11-23",
-      "series_id": "aluminium-lme-cash",
+      "series_id": "nickel-lme-cash",
       "verified_at": "2026-11-25T15:14:49+00:00"
     },
     {

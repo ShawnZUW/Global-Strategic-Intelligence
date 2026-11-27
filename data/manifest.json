@@ -1,6 +1,11 @@
 {
   "snapshots": [
     {
+      "date": "2026-11-27",
+      "path": "data/history/2026-11-27.json",
+      "label": "2026-11-27"
+    },
+    {
       "date": "2026-11-26",
       "path": "data/history/2026-11-26.json",
       "label": "2026-11-26"

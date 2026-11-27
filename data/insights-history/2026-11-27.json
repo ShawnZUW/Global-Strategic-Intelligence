@@ -1,0 +1,4300 @@
+{
+  "meta": {
+    "as_of": "2026-11-27",
+    "title": "CATL产业链决策洞察",
+    "scope": "公开产业投资视角；把事实、工程阶段和经营研判分别标识",
+    "method": "企业/政府原文与独立研究交叉检查；时间轴保留发生日、披露日、未来目标的区别；不编造内部采购、船货或投资敞口",
+    "insight_count": 15,
+    "source_count": 62,
+    "review_notes": "新增澳洲储能FID、户储与电价反馈分析，更新铜价判断条件；其他有效议题保留原日期。钴、镍、负极没有足以改变结论的新证据。",
+    "generated_at": "2026-11-27T08:55:08+08:00",
+    "editorial_note": "重点议题连接事实、时间线、材料节点、经营问题及判断更新条件；条件为研究规则，不表示已触发自动预警或掌握内部敞口。",
+    "decision_checkpoint_count": 33
+  },
+  "sources": [
+    {
+      "id": "ec-cepa-sign",
+      "title": "EU and Indonesia sign ambitious trade and investment agreements",
+      "publisher": "欧洲委员会",
+      "published_at": "2026-11-21",
+      "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2532/IP_26_2532_EN.pdf",
+      "ref": "turn613136694view0",
+      "type": "政府原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "ec-cepa-benefits",
+      "title": "EU–Indonesia CEPA: Main benefits",
+      "publisher": "欧洲委员会贸易与经济安全总司",
+      "published_at": "2026-11-21",
+      "url": "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/indonesia/eu-indonesia-agreements/factsheets/factsheet-eu-indonesia-comprehensive-economic-partnership-agreement-main-benefits-0_en",
+      "ref": "turn613136694view1",
+      "type": "政府协议说明",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "ec-cepa-chapters",
+      "title": "Key elements of the EU–Indonesia Trade Agreement and Investment Protection Agreement",
+      "publisher": "欧洲委员会贸易与经济安全总司",
+      "published_at": "2025-09-23",
+      "url": "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/indonesia/eu-indonesia-agreements/key-elements-eu-indonesia-trade-agreement-and-investment-protection-agreement_en",
+      "ref": "turn613136694view2",
+      "type": "政府协议说明",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "german-idn-recycling",
+      "title": "EV-Recycling-IDN: EV Battery Recycling Pilot Project Indonesia 2025–2027",
+      "publisher": "德国环境保护出口倡议",
+      "published_at": null,
+      "url": "https://www.exportinitiative-umweltschutz.de/en/projects/ev-recycling-idn/",
+      "ref": "turn624331188view3",
+      "type": "资助项目原始页面",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "ekonid-recycling",
+      "title": "Online Introduction Session: EV Battery Recycling Pilot Project in Indonesia",
+      "publisher": "德国—印尼工商会 EKONID",
+      "published_at": "2026-03-31",
+      "url": "https://indonesien.ahk.de/de/infohub_events/online-introduction-session-ev-battery-recycling-pilot-project-in-indonesia",
+      "ref": "turn737244635view0",
+      "type": "项目实施方说明",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "catl-idn-project",
+      "title": "CATL and Partners Break Ground on US$6 Billion Battery Integration Project in Indonesia",
+      "publisher": "CATL",
+      "published_at": "2025-06-30",
+      "url": "https://www.catl.com/en/news/6481.html",
+      "type": "企业原始公告（公开布局基线）",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "basf-catl-framework",
+      "title": "CATL and BASF Battery Materials Sign a Framework Agreement for Cathode Active Materials",
+      "publisher": "CATL",
+      "published_at": "2025-07-28",
+      "url": "https://www.catl.com/en/news/6493.html",
+      "ref": "turn333338489search1",
+      "type": "合作方原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "basf-catl-delivery",
+      "title": "From Europe for Europe: BASF starts battery materials supply to CATL",
+      "publisher": "BASF",
+      "published_at": "2026-11-23",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-191",
+      "ref": "turn613136694view5",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "basf-cylib-sale",
+      "title": "BASF Battery Materials focuses its portfolio on Cathode Active Materials",
+      "publisher": "BASF",
+      "published_at": "2026-11-23",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-192",
+      "ref": "turn613136694view4",
+      "type": "企业交易公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "fraunhofer-recycling",
+      "title": "Announced, installed, stopped: Europe's battery recycling capacities exceed current feedstock",
+      "publisher": "Fraunhofer ISI / Maximilian Stephan",
+      "published_at": "2026-11-25",
+      "url": "https://www.isi.fraunhofer.de/en/blog/themen/batterie-update/batterie-recycling_europa_kapazitaeten_bedarf_update_2026.html",
+      "ref": "turn812518486search0",
+      "type": "研究机构原始分析",
+      "access_note": "官方页面全文经公开搜索索引读取；独立于BASF公告的产业背景证据",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "iea-ev-batteries-2026",
+      "title": "Global EV Outlook 2026 — Electric vehicle batteries",
+      "publisher": "国际能源署 IEA",
+      "published_at": "2026-05-20",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries/",
+      "ref": "turn737244635view2",
+      "type": "国际机构研究",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "yuneng-annual-2025",
+      "title": "湖南裕能2025年年度报告，第22、75页",
+      "publisher": "湖南裕能 / 巨潮资讯",
+      "published_at": "2026-04-23",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF",
+      "ref": "turn201004929view1",
+      "type": "上市公司法定披露",
+      "access_note": "已下载官方PDF并独立提取第22、75页核对净额法与金额",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "posco-catl-lithium",
+      "title": "POSCO group Strengthens Lithium Supply Partnership with CATL",
+      "publisher": "POSCO",
+      "published_at": "2026-11-18",
+      "url": "https://newsroom.posco.com/en/posco-group-strengthens-lithium-supply-partnership-with-catl-the-worlds-largest-battery-company/",
+      "ref": "turn201004929view0",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "doe-battery-chain",
+      "title": "Supply Chain Readiness Level Preliminary Analysis: Batteries Summary",
+      "publisher": "美国能源部 MESC",
+      "published_at": "2024-11",
+      "url": "https://www.energy.gov/sites/default/files/2024-12/Supply_Chain_Readiness_Level_SCRL_Analysis_Nov-2024_2024.12.20.pdf",
+      "ref": "turn499866147view1",
+      "type": "政府技术报告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "lges-q3-2026",
+      "title": "LG Energy Solution Releases 2026 Third-Quarter Financial Results",
+      "publisher": "LG Energy Solution",
+      "published_at": "2026-11-03",
+      "url": "https://news.lgensol.com/company-news/press-releases/5549/",
+      "ref": "turn666882756view1",
+      "type": "企业业绩公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "sdi-q3-2026",
+      "title": "SAMSUNG SDI Announces Third Quarter 2026 Earnings Results",
+      "publisher": "Samsung SDI",
+      "published_at": "2026-10-29",
+      "url": "https://news.samsungsdi.com/global/articleView?seq=470",
+      "ref": "turn666882756view2",
+      "type": "企业业绩公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "lges-ess-strategy",
+      "title": "The Next Phase of ESS: Chang Beom Kang on LG Energy Solution’s Strategy",
+      "publisher": "LG Energy Solution",
+      "published_at": "2026-11-14",
+      "url": "https://news.lgensol.com/insights/from-our-experts/5587/",
+      "ref": "turn631302187search1",
+      "type": "企业高管原始访谈",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "catl-financing",
+      "title": "Crédit Agricole and CATL Sign Agreement to Provide US$500 Million in Financing for Global Energy Storage Projects",
+      "publisher": "CATL",
+      "published_at": "2026-11-20",
+      "url": "https://www.catl.com/en/news/7088.html",
+      "ref": "turn666882756view3",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "qs-osprey",
+      "title": "QuantumScape Expands Commercial Roadmap with Osprey",
+      "publisher": "QuantumScape",
+      "published_at": "2026-11-11",
+      "url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-expands-commercial-roadmap-osprey-open-all-solid",
+      "ref": "turn624331188view0",
+      "type": "企业技术披露",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "solid-power-q3",
+      "title": "Solid Power Reports Third Quarter 2026 Results",
+      "publisher": "Solid Power",
+      "published_at": "2026-11-03",
+      "url": "https://www.solidpowerbattery.com/investor-relations/investor-news/news-details/2026/Solid-Power-Reports-Third-Quarter-2026-Results/default.aspx",
+      "ref": "turn624331188view1",
+      "type": "企业业绩公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "un-maritime-20261113",
+      "title": "Remarks by the Assistant Secretary-General at the Security Council on the Middle East",
+      "publisher": "联合国 DPPA",
+      "published_at": "2026-11-13",
+      "url": "https://dppa.un.org/en/node/137371",
+      "ref": "turn333338489search4",
+      "type": "联合国正式通报",
+      "access_note": "官方原文经公开搜索索引读取；直连曾返回403",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "maersk-me1",
+      "title": "Structural changes to ME1 Gemini service",
+      "publisher": "Maersk",
+      "published_at": "2026-11-02",
+      "url": "https://www.maersk.com/news/articles/2026/11/02/me1-gemini-service-transitions-to-suez-route",
+      "ref": "turn666882756view4",
+      "type": "承运人运营公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "maersk-imea",
+      "title": "IMEA Maersk Market Update — November 2026",
+      "publisher": "Maersk",
+      "published_at": "2026-11-09",
+      "url": "https://www.maersk.com/news/articles/2026/11/09/india-middle-east-and-africa-market-update-november",
+      "ref": "turn666882756view5",
+      "type": "承运人区域运营说明",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "core-first-restart-cargo-20261125",
+      "title": "First Shipment of Spodumene Concentrate Following Finniss Restart",
+      "publisher": "Core Lithium",
+      "published_at": "2026-11-25",
+      "url": "https://corelithium.com.au/announcements/kaRXpZ-first-shipment-of-spodumene-concentrate-post-finniss-restart",
+      "ref": "turn370995747view2",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "locator": "公告第1—2页；网页正文第22—26行"
+    },
+    {
+      "id": "pursuit-ecopro-mou-20261109",
+      "title": "Pursuit executes strategic MoU with EcoPro for investment and lithium offtake",
+      "publisher": "Pursuit Minerals / ASX",
+      "published_at": "2026-11-09",
+      "url": "https://announcements.asx.com.au/asxpdf/20261109/pdf/076cktdg0v5hj9.pdf",
+      "ref": "turn370995747view3",
+      "type": "交易所公司公告",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "locator": "Key Terms：非约束条件、20%股权、100%一期产量拟包销；正文第55—57行"
+    },
+    {
+      "id": "cochilco-project-pipeline-20261119",
+      "title": "Cartera de inversión minera alcanza US$111.149 millones, el mayor monto en 13 años",
+      "publisher": "Cochilco",
+      "published_at": "2026-11-19",
+      "url": "https://www.cochilco.cl/web/cartera-de-inversion-minera-alcanza-us111-149-millones-el-mayor-monto-en-13-anos/",
+      "ref": "turn123375785view1",
+      "type": "政府原始公告",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "locator": "正文第24行：Salar Futuro与Albemarle TED均在环境评价"
+    },
+    {
+      "id": "cochilco-copper-week-20261120",
+      "title": "Informe del Mercado Internacional del Cobre, semana del 16 al 20 de noviembre de 2026",
+      "publisher": "Cochilco",
+      "published_at": "2026-11-20",
+      "url": "https://www.cochilco.cl/web/informe-del-mercado-internacional-del-cobre-semana-del-16-al-20-de-noviembre-de-2026/",
+      "ref": "turn370995747view1",
+      "type": "政府市场研究",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "locator": "正文第19—20行；周报观察截止11月20日"
+    },
+    {
+      "id": "cochilco-daily-20261124",
+      "title": "La Rueda — 24 de noviembre de 2026",
+      "publisher": "Cochilco",
+      "published_at": "2026-11-24",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17098/rueda-24-11-2026.pdf",
+      "ref": "turn957320254view1",
+      "type": "政府公开行情汇编",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "locator": "PDF第1页：LME Contado US$/TM；Otros metales y litio"
+    },
+    {
+      "id": "cochilco-daily-20261125",
+      "title": "La Rueda — 25 de noviembre de 2026",
+      "publisher": "Cochilco",
+      "published_at": "2026-11-25",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17105/rueda-25-11-2026.pdf",
+      "ref": "turn957320254view0",
+      "type": "政府公开行情汇编",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "locator": "PDF第1页：铜US$/TM第12行；铝/镍第42/44行；锂第47—49行；库存各自带日期"
+    },
+    {
+      "id": "jiayuan-annual-2025",
+      "title": "广东嘉元科技股份有限公司2025年年度报告",
+      "publisher": "嘉元科技 / 巨潮资讯",
+      "published_at": "2026-04-21",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225126560.PDF",
+      "ref": "turn453061311view2",
+      "type": "上市公司年度报告",
+      "verified_at": "2026-11-25T15:14:49+00:00",
+      "locator": "报告页41：原材料价格波动风险（铜价+加工费、定价时点错配）；页38：极薄化与成品率；页45—46：产品结构和加工费"
+    },
+    {
+      "id": "tech-catl-naxtra-20260421",
+      "title": "CATL：Naxtra钠电工程瓶颈与2026年底量产目标",
+      "publisher": "CATL",
+      "published_at": "2026-04-21",
+      "url": "https://www.catl.com/en/news/6811.html",
+      "ref": "turn806338299view1",
+      "type": "企业原始披露",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "tech-catl-tener-sodium-20260622",
+      "title": "CATL：TENER Sodium发布、NFPP材料与交付计划",
+      "publisher": "CATL",
+      "published_at": "2026-06-22",
+      "url": "https://www.catl.com/en/news/6861.html",
+      "ref": "turn806338299view2",
+      "type": "企业原始披露",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "tech-catl-intilion-20261027",
+      "title": "CATL与INTILION：欧洲3GWh储能部署谅解备忘录",
+      "publisher": "CATL",
+      "published_at": "2026-10-27",
+      "url": "https://www.catl.com/en/news/7046.html",
+      "ref": "turn963081116view1",
+      "type": "企业原始披露",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "tech-na-cost-nature-20250113",
+      "title": "Yao等：钠离子相对锂离子成本竞争力的技术路线与情景研究",
+      "publisher": "Stanford / SLAC；Nature Energy",
+      "published_at": "2025-01-13",
+      "url": "https://d-nb.info/136757269X/34",
+      "ref": "turn963081116view0",
+      "type": "原始研究（开放获取论文）",
+      "verified_at": "2026-11-25",
+      "note": "DOI 10.1038/s41560-024-01701-9；德国国家图书馆公开原文。模型用于解释敏感因素，不代表2026年CATL实际成本或必然商业化时间。"
+    },
+    {
+      "id": "tech-na-cell-characterization-20250401",
+      "title": "Marangon等：商用钠电电芯解剖、硬碳负极及双铝集流体",
+      "publisher": "KIT / Helmholtz / ZSW；Journal of Power Sources",
+      "published_at": "2025-04-01",
+      "url": "https://publikationen.bibliothek.kit.edu/1000179923/157703094",
+      "ref": "turn792634586search0",
+      "type": "原始研究（商用样品测试）",
+      "verified_at": "2026-11-25",
+      "note": "研究为非CATL的1.5Ah圆柱商用样品，不能外推为CATL具体配方或性能；论文月份2025年4月，KIT仓储发布日期为3月14日。 开放原文使用作者机构KIT仓储链接。"
+    },
+    {
+      "id": "tech-pls-power-20261028",
+      "title": "PLS：20年PPA、非保证供电与矿区电源策略调整",
+      "publisher": "PLS / ASX",
+      "published_at": "2026-10-28",
+      "url": "https://www.pls.com/storage/announcements/pls-signs-long-term-power-agreement-2026-10-28.pdf",
+      "ref": "turn684577560view2",
+      "type": "上市公司原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "tech-fortescue-green-grid-20261027",
+      "title": "Fortescue：Green Grid首个外部客户及区域电力网络",
+      "publisher": "Fortescue",
+      "published_at": "2026-10-27",
+      "url": "https://www.fortescue.com/en/articles/fortescue-signs-first-green-grid-power-deal-securing-20-year-customer",
+      "ref": "turn120610058view3",
+      "type": "企业原始披露",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "tech-arena-yarwun-20261021",
+      "title": "ARENA：Yarwun工业热储能示范及分阶段资助",
+      "publisher": "澳大利亚可再生能源署ARENA",
+      "published_at": "2026-10-21",
+      "url": "https://arena.gov.au/news/demonstrating-a-new-pathway-for-electrifying-industrial-heat-at-scale/",
+      "ref": "turn963081116view2",
+      "type": "政府资助方原始披露",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "tech-arena-yarwun-project",
+      "title": "ARENA项目页：Yarwun热储能的负荷、工艺和投资门槛",
+      "publisher": "澳大利亚可再生能源署ARENA",
+      "published_at": "2026-10-21",
+      "url": "https://arena.gov.au/projects/rio-tinto-yarwun-thermal-energy-storage-industrial-demonstration-project/",
+      "ref": "turn120610058view2",
+      "type": "政府项目原始资料",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-arecoms-communique-20261123",
+      "title": "ARECOMS第2026/004号钴出口通知：监管机构签署原件（公开媒体镜像）",
+      "publisher": "ARECOMS（签署原件；SMM公开图片镜像）",
+      "published_at": "2026-11-23",
+      "url": "https://news.metal.com/fr/newscontent/DB3YVMTKX7ZOHJXNC2OAMVV6N2O57BWM2AMHH4Y-smm-analysis-la-rdc-suspend-%C3%A0-nouveau-ses-exportations-de-cobalt-combien-de-temps-la-reprise-peut-elle-durer",
+      "type": "监管机构签署原件（媒体镜像）",
+      "verified_at": "2026-11-25",
+      "document_urls": [
+        "https://imgqn.smm.cn/production/admin/votes/imagesyPjhO20261124201543.jpeg",
+        "https://imgqn.smm.cn/production/admin/votes/imagesLsZjh20261124201543.jpeg",
+        "https://imgqn.smm.cn/production/admin/votes/imageslkzbV20261124201543.jpeg"
+      ],
+      "note": "已核对三页签署原件；链接为公开镜像，恢复出口须另行公布决定。"
+    },
+    {
+      "id": "resource-glencore-q3-20261029",
+      "title": "Glencore Third Quarter 2026 Production Report，第1、5页",
+      "publisher": "Glencore",
+      "published_at": "2026-10-29",
+      "url": "https://www.glencore.com/.rest/api/v1/documents/static/7ed50c65-7d84-4cc1-a2c4-216060583297/GLEN_2026-Q3_ProductionReport.pdf",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-mbma-q3-20261102",
+      "title": "Merdeka Battery Materials Q3 2026 Quarterly Activities Report",
+      "publisher": "PT Merdeka Battery Materials Tbk",
+      "published_at": "2026-11-02",
+      "url": "https://assets.merdekabattery.com/dist/documents/MBMA_Q3_2026_Quarterly_Activities_Report_vF.pdf",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-mbma-9m-20261123",
+      "title": "Merdeka Group 9M 2026 Financial Results Presentation，第19页",
+      "publisher": "Merdeka Group / PT Merdeka Battery Materials Tbk",
+      "published_at": "2026-11-23",
+      "url": "https://assets.merdekabattery.com/dist/documents/9M26%20Merdeka%20Group%20Financial%20Presentation_vF.pdf",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-vale-rkab-q3-2026",
+      "title": "PT Vale Indonesia截至2026-09-30中期财报，附注40(g) Work and Budget Plan（PDF第101页）",
+      "publisher": "PT Vale Indonesia Tbk",
+      "published_at": null,
+      "source_doc_date": "2026-10-29",
+      "report_period_end": "2026-09-30",
+      "url": "https://www.valeindonesia.com/documents/44618/1374000/PT%2BVale%2BIndonesia%2BTbk%2BFinancial%2BStatements%2B30%2BSeptember%2B2026.pdf",
+      "type": "企业原始财报",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-esdm-rkab-evaluation-20260625",
+      "title": "Kementerian ESDM Belum Putuskan Besaran RKAB Nikel 2026",
+      "publisher": "印度尼西亚能源与矿产资源部 ESDM",
+      "published_at": "2026-06-25",
+      "url": "https://www.esdm.go.id/id/media-center/arsip-berita/kementerian-esdm-belum-putuskan-besaran-rkab-nikel-2026",
+      "type": "政府原始公告（审批机制基线）",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-nmc-process-baseline",
+      "title": "High-Energy Lithium-Ion Batteries — 高镍层状正极的共沉淀、锂化与颗粒控制",
+      "publisher": "University of Münster / Helmholtz Institute Münster作者；Material Matters",
+      "published_at": "2020",
+      "url": "https://b2b.sigmaaldrich.com/GB/en/technical-documents/technical-article/materials-science-and-engineering/batteries-supercapacitors-and-fuel-cells/lib-couette-taylor-flow-reactor",
+      "type": "研究者原始技术文章（稳定工艺基线）",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "syrah-q3-execution-20261029",
+      "title": "Syrah 2026年第三季度活动报告：公司原始公告PDF（公开镜像）",
+      "publisher": "Syrah Resources",
+      "published_at": "2026-10-29",
+      "url": "https://company-announcements.afr.com/asx/syr/6788725f-d31a-11f1-a069-b6b1a9c70e34.pdf",
+      "type": "企业原始公告PDF（公告镜像）",
+      "verified_at": "2026-11-25",
+      "note": "实际读取14页公司原始公告，重点第1—4页；不是媒体摘要。官网报告目录https://www.syrahresources.com.au/investors/reports-presentations的公开页面数据指向同名原件https://www.datocms-assets.com/65260/1793225322-september-2026-quarterly-activities-and-cashflow-report_final.pdf；该CDN本次返回403，故保留可读原始文件镜像。"
+    },
+    {
+      "id": "syrah-products-qualification",
+      "title": "Products and Technology: Natural Graphite and Active Anode Material",
+      "publisher": "Syrah Resources",
+      "published_at": null,
+      "url": "https://www.syrahresources.com.au/our-business/products-and-technology",
+      "type": "企业产品与工艺说明",
+      "verified_at": "2026-11-25",
+      "note": "无明确发布日期，只用于解释天然鳞片石墨与球形纯化包覆负极材料的区别，不用核验日替代事件日期。"
+    },
+    {
+      "id": "novonix-csample-feedback-20260909",
+      "title": "Lead Customer Feedback Marks Progress in Qualification",
+      "publisher": "NOVONIX",
+      "published_at": "2026-09-09",
+      "url": "https://ir.novonixgroup.com/news-releases/news-release-details/lead-customer-feedback-marks-progress-qualification-0",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25",
+      "note": "采用新闻页及正文9月9日日期；ASX目录显示9月10日，保留日期差异。公告未披露主要客户姓名，不将该测试结果自动归属PowerCo。"
+    },
+    {
+      "id": "novonix-iso9001-20261008",
+      "title": "NOVONIX Achieves ISO 9001 Quality Management Certification",
+      "publisher": "NOVONIX",
+      "published_at": "2026-10-08",
+      "url": "https://ir.novonixgroup.com/news-releases/news-release-details/novonix-achieves-iso-9001-quality-management-certification-0",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "novonix-powerco-framework-20261019",
+      "title": "NOVONIX and PowerCo Amend Supply Agreement",
+      "publisher": "NOVONIX",
+      "published_at": "2026-10-19",
+      "url": "https://ir.novonixgroup.com/static-files/efe88eb1-1bb7-4369-a7eb-e045b99a0090",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25",
+      "note": "采用公告正文10月19日日期；IR目录显示10月18日。保留原文日期差异，不将日期设为本次核验日。"
+    },
+    {
+      "id": "novonix-q3-qualification-20261030",
+      "title": "Quarterly Activities / Appendix 4C Cash Flow Report, September 2026 quarter",
+      "publisher": "NOVONIX",
+      "published_at": "2026-10-30",
+      "url": "https://ir.novonixgroup.com/static-files/1a8f8ac8-1660-4a76-b13a-54262191331c",
+      "type": "企业原始季度公告",
+      "verified_at": "2026-11-25",
+      "note": "重点第2、4、5页：剩余客户规格、2027年下半年有条件销售目标、现金与PowerCo框架变化。"
+    },
+    {
+      "id": "powerco-stthomas-phasing-20260924",
+      "title": "PowerCo Advances St. Thomas Gigafactory with EllisDon Appointment and Phased Development Approach",
+      "publisher": "PowerCo Canada（St. Thomas Economic Development刊载原始声明）",
+      "published_at": "2026-09-25",
+      "url": "https://www.st-thomas.org/megasite/powerco-advances-st-thomas-gigafactory-with-ellisdon-appointment-and-phased-development-approach",
+      "type": "企业原始声明（地方经济发展机构刊载）",
+      "verified_at": "2026-11-25",
+      "note": "公司声明日期9月24日，机构页面刊载9月25日；2029年为预计开始运营时间，非已实现产量。"
+    },
+    {
+      "id": "novonix-amortisation-20261022",
+      "title": "Second Amortisation Payment under Funding Agreement",
+      "publisher": "NOVONIX",
+      "published_at": "2026-10-22",
+      "url": "https://ir.novonixgroup.com/static-files/6e3fef5b-27af-4075-9214-76b67839bd28",
+      "type": "企业原始公告",
+      "verified_at": "2026-11-25"
+    },
+    {
+      "id": "resource-acp-cobalt-20261124",
+      "title": "ACP：刚果（金）11月30日起暂停钴出口的官方通讯社报道",
+      "publisher": "Agence Congolaise de Presse（刚果（金）官方通讯社）",
+      "published_at": "2026-11-24",
+      "url": "https://acp.cd/economie/la-rdc-suspend-la-commercialisation-du-cobalt-des-le-30-novembre-2026/",
+      "type": "官方通讯社交叉核验",
+      "verified_at": "2026-11-25",
+      "note": "用于交叉核对通知身份、范围及生效日期；规则以三页签署原件为准。"
+    },
+    {
+      "id": "terna-macse-2029-award-20261124",
+      "title": "Terna completes second MACSE auction: 16 GWh of energy storage capacity awarded",
+      "publisher": "Terna",
+      "published_at": "2026-11-24",
+      "url": "https://www.terna.it/en/media/press-releases/detail/completed-second-macse-auction",
+      "type": "电网运营方原始公告",
+      "verified_at": "2026-11-26",
+      "access_note": "官方索引正文可读；直连仅返回动态页面框架。意大利当地11月24日17:24发布，北京时间11月25日00:24，属于本轮补录背景。"
+    },
+    {
+      "id": "bwess-a2a-macse-award-20261125",
+      "title": "BW ESS and A2A: Success in Italy’s MACSE Auction for Battery Energy Storage Systems",
+      "publisher": "BW ESS / A2A",
+      "published_at": "2026-11-25",
+      "url": "https://www.bw-ess.com/news/bw-ess-and-a2a-success-in-italys-macse-auction-for-battery-energy-storage-systems",
+      "type": "中标企业联合公告",
+      "verified_at": "2026-11-26",
+      "access_note": "官方索引正文可读，直接抓取失败；A2A同文公开镜像及ANSA报道交叉核对，同一联合公告只计一个来源。"
+    },
+    {
+      "id": "terna-macse-first-20251013",
+      "title": "M for MACSE",
+      "publisher": "Terna Lightbox",
+      "published_at": "2025-10-13",
+      "url": "https://lightbox.terna.it/en/insight/m-for-macse",
+      "type": "电网运营方机制说明",
+      "verified_at": "2026-11-26",
+      "access_note": "原文直接可读；第一轮招标的历史背景，不作为本日新增事件。"
+    },
+    {
+      "id": "cer-qcmr-q3-20261126",
+      "title": "Quarterly Carbon Market Report September quarter 2026",
+      "publisher": "Australian Clean Energy Regulator",
+      "published_at": "2026-11-26",
+      "url": "https://cer.gov.au/markets/reports-and-data/quarterly-carbon-market-reports/quarterly-carbon-market-report-september-quarter-2026",
+      "type": "政府监管机构报告网页摘要",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "Highlights：13.8/20 GWh FID；10.3 GWh已安装获批；13–15.5 GWh预测"
+    },
+    {
+      "id": "aemo-qed-q3-20261023",
+      "title": "Warmer weather, solar and batteries reshape energy markets",
+      "publisher": "AEMO",
+      "published_at": "2026-10-23",
+      "url": "https://www.aemo.com.au/newsroom/media-release/qed-q3-2026",
+      "type": "电网运营商原始披露",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "National Electricity Market；Q3 2026"
+    },
+    {
+      "id": "cec-h1-storage-20261026",
+      "title": "Clean energy investment surges, Australian energy security strengthens",
+      "publisher": "Clean Energy Council",
+      "published_at": "2026-10-26",
+      "url": "https://cleanenergycouncil.org.au/news-resources/clean-energy-investment-surges,-australian-energy-security-strengthens",
+      "type": "行业协会原始投资报告摘要",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "H1 2026投运容量"
+    },
+    {
+      "id": "cochilco-daily-20261126",
+      "title": "La Rueda — 26 de noviembre de 2026",
+      "publisher": "Cochilco",
+      "published_at": "2026-11-26",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17106/rueda-26-11-2026.pdf",
+      "type": "政府公开行情汇编",
+      "verified_at": "2026-11-27T08:55:08+08:00",
+      "locator": "PDF第1页，经页面图像核对；LME Contado US$/TM，Otros metales y litio"
+    }
+  ],
+  "insights": [
+    {
+      "id": "drc-cobalt-export-deliverability",
+      "title": "刚果钴出口将再暂停：旧配额与境内库存不能替代已出境的可用料",
+      "thesis": "研判：这轮变化首先改变钴的合法出境条件和交付时间。把矿中钴、溶液留钴、可销售氢氧化钴、出口资格、实际出运和电池级钴盐分开，才能识别三元链真正承压的环节；不能用矿山产量下降直接推算CATL缺料。",
+      "why_now": "ARECOMS于11月23日签署通知，规定11月30日起暂停出口，并明确旧配额不构成豁免。截至11月25日，这是已公布、尚未到生效日的变化；此前企业关于库存可满足配额的判断，不能继续直接当作未来交付保证。",
+      "as_of": "2026-11-25",
+      "categories": [
+        "贸易与政策",
+        "供需平衡",
+        "原材料"
+      ],
+      "category": "钴 / 出口与交付",
+      "tags": [
+        "刚果（金）",
+        "钴",
+        "氢氧化钴",
+        "硫酸钴",
+        "出口资格",
+        "三元"
+      ],
+      "chain_routes": [
+        "nmc"
+      ],
+      "chain_node_ids": [
+        "co_ore",
+        "ncm_salts",
+        "pcam",
+        "nmc",
+        "nca"
+      ],
+      "related_event_ids": [
+        "arecoms-cobalt-suspension-announced-20261123"
+      ],
+      "facts": [
+        {
+          "text": "ARECOMS第2026/004号签署通知规定，2026年11月30日起暂停刚果（金）所有矿业来源钴出口；11月出口业务须最迟11月29日完成。通知没有给定自动终止日。",
+          "source_ids": [
+            "resource-arecoms-communique-20261123",
+            "resource-acp-cobalt-20261124"
+          ]
+        },
+        {
+          "text": "暂停适用于已获授权但生效日尚未实际出口的货物；旧配额不能豁免，未出口额度不自动恢复、结转或重分配。四个月后的评估也不自动恢复出口，恢复须另行公布决定。",
+          "source_ids": [
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "text": "Glencore在10月29日Q3报告中解释，受当时配额制度与优先产铜策略影响，更多钴留在溶液中而不制成可销售氢氧化钴，且留在溶液中的钴不计作产量；该报告称KCC与Mutanda当时库存足以满足近期配额。",
+          "source_ids": [
+            "resource-glencore-q3-20261029"
+          ]
+        },
+        {
+          "text": "NMC/NCA的材料组成及前驱体制造均涉及镍钴化学原料；前驱体共沉淀、锂化与颗粒控制是不同工序。含钴中间品不能直接代替合格前驱体或正极材料。",
+          "source_ids": [
+            "resource-nmc-process-baseline"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "track": "企业物料与库存",
+          "event": "Glencore披露溶液留钴的生产策略及当时满足近期配额的库存条件。",
+          "stage": "新通知之前的企业经营基线",
+          "source_ids": [
+            "resource-glencore-q3-20261029"
+          ]
+        },
+        {
+          "date": "2026-11-23",
+          "track": "出境规则",
+          "event": "ARECOMS签署第2026/004号通知，公布新一轮暂停及旧配额处理规则。",
+          "stage": "已公布",
+          "source_ids": [
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "date": "2026-11-29",
+          "track": "通知规定的时间窗口",
+          "event": "11月出口操作的最迟完成日；这是通知规定的截止日，不是已完成装运记录。",
+          "stage": "未来截止日",
+          "source_ids": [
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "date": "2026-11-30",
+          "track": "通知规定的生效",
+          "event": "暂停出口开始；四个月后的评估并非自动复航日期。",
+          "stage": "已公布的未来生效日",
+          "source_ids": [
+            "resource-arecoms-communique-20261123"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "铜钴矿中的钴 → 溶液中的钴 → 可销售氢氧化钴",
+          "mechanism": "企业可在继续产铜时调整钴的后续处理，降低当期可销售钴产量并保留溶液中的钴。",
+          "boundary": "溶液留钴不等于可立即装运库存；已采出的钴也不等于已经形成可售氢氧化钴。",
+          "source_ids": [
+            "resource-glencore-q3-20261029"
+          ]
+        },
+        {
+          "material": "氢氧化钴 → 出境与到岸 → 电池级钴盐",
+          "mechanism": "暂停措施卡在出境环节；对炼化来料的影响还经过既有境外库存、在途运输、到港接收和精炼。",
+          "boundary": "本组资料没有给出客户级已出境量、在途量或境外库存天数，因此不推算某月必然短缺。",
+          "source_ids": [
+            "resource-arecoms-communique-20261123",
+            "resource-glencore-q3-20261029"
+          ]
+        },
+        {
+          "material": "CoSO₄等合格钴原料 → 三元前驱体 → NMC/NCA",
+          "mechanism": "只有当合格钴盐的交付或成本发生变化，才沿配方和前驱体合同向相应含钴正极传导。",
+          "boundary": "这里讨论含钴材料路线，不把钴限制直接作用到LFP或钠电，也不假定CATL已披露特定料源敞口。",
+          "source_ids": [
+            "resource-nmc-process-baseline"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "矿与溶液",
+          "text": "先判断企业改变的是采矿、产铜还是钴沉淀工序；可销售产量下降不必然等于矿中钴消失。",
+          "kind": "经营机制研判",
+          "source_ids": [
+            "resource-glencore-q3-20261029"
+          ]
+        },
+        {
+          "step": "境内物料与许可",
+          "text": "有境内库存、有旧配额、有出口授权是三个条件；新通知要求这些条件与实际出境状态重新核对。",
+          "kind": "政策与交付研判",
+          "source_ids": [
+            "resource-arecoms-communique-20261123",
+            "resource-glencore-q3-20261029"
+          ]
+        },
+        {
+          "step": "出运与到岸",
+          "text": "已合法出境的在途货与仍在刚果境内的货物面临不同约束；前者何时到港仍取决于具体运输，而不是通知发布日。",
+          "kind": "条件性物流研判",
+          "source_ids": [
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "step": "精炼与材料",
+          "text": "到岸中间品仍须经过精炼和材料品质控制；应分别观察氢氧化钴、钴盐、前驱体的交付变化。",
+          "kind": "材料链研判",
+          "source_ids": [
+            "resource-nmc-process-baseline",
+            "resource-glencore-q3-20261029"
+          ]
+        },
+        {
+          "step": "经营选择",
+          "text": "以可验证的交付状态调整含钴路线的备料情景、替代料源资格与投资风险，而不是直接把禁运标题换算成电芯涨价幅度。",
+          "kind": "条件性决策研判",
+          "source_ids": [
+            "resource-arecoms-communique-20261123",
+            "resource-nmc-process-baseline"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "材料采购",
+          "point": "对含钴正极方案，按物料所在位置、出口完成状态与电池级品质拆分供应保障；公开数据只支持行业情景，不代表CATL实际库存。"
+        },
+        {
+          "dimension": "资源投资",
+          "point": "资源控制、化学转化能力和出境权利共同决定供应安全价值，单看矿山权益或当期产量容易误判可交付性。"
+        },
+        {
+          "dimension": "产品路线",
+          "point": "将风险映射至含钴正极与对应前驱体；其他路线的间接市场竞争影响应另作分析，不能套用同一材料缺口。"
+        }
+      ],
+      "counterpoint": "新措施未要求停止采矿；境外可用库存、已经出境的货物或后续恢复决定可能缓冲影响。反过来，境内库存即使充足，也不能绕过生效后的出境限制。没有实际装运和合格盐交付数据，不能判定整个钴市场或CATL已经短缺。",
+      "watch_signals": [
+        {
+          "indicator": "ARECOMS后续生效、恢复或配额重分配原件",
+          "interpretation": "解除须以正式发布的新决定为准，评估日与旧配额都不能替代恢复决定。",
+          "observation_source": "ARECOMS正式通知；可核验的签署原件",
+          "frequency": "生效窗口内按日；后续按政策事件",
+          "decision_use": "更新可合法出境的时间假设与长单执行情景。",
+          "source_ids": [
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "indicator": "生产企业已实际出口、发运与销售披露",
+          "interpretation": "分别记录境内货、已出境在途货与已交付货，避免将获配额或装运计划当作出境完成。",
+          "observation_source": "Glencore等生产企业正式经营报告；政府公开海关或矿业统计",
+          "frequency": "重大披露按事件；月度整理实物流",
+          "decision_use": "判断交付缓冲能否延续，决定是否加强含钴中间品来源与物流方案的比对。",
+          "source_ids": [
+            "resource-glencore-q3-20261029",
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "indicator": "可销售氢氧化钴产出、合格钴盐与前驱体交付变化",
+          "interpretation": "只有上游约束进一步影响精炼材料交付时，才能提高三元材料供应风险判断；内部批次和合同不在公开监测覆盖内。",
+          "observation_source": "矿冶及材料企业原始经营披露；官方技术与质量文件",
+          "frequency": "企业披露按事件；季度复核",
+          "decision_use": "区分原料物流风险与材料制造风险，调整供应商认证及采购情景。",
+          "source_ids": [
+            "resource-glencore-q3-20261029",
+            "resource-nmc-process-baseline"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "出口限制持续收紧的风险",
+          "current_reading": "11月23日原件已公布11月30日生效，且旧配额不能豁免；截至11月25日尚未到生效日。",
+          "upgrade_when": "暂停按期生效且没有正式恢复决定，或后续决定进一步收紧允许出境的条件。",
+          "downgrade_when": "取得正式生效的恢复决定，并能将新条件对应到具体生产商及货物。",
+          "decision_use": "调整未来可出境供应情景与合同执行安排；不以四个月评估日承诺复航。",
+          "source_ids": [
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "signal": "境内库存无法转化为到岸物料的风险",
+          "current_reading": "Glencore10月报告确认的是境内生产策略与当时配额库存条件，没有证明新暂停后的实际交付。",
+          "upgrade_when": "企业披露已授权货物未完成出境或因出口条件修改而推迟既定交付。",
+          "downgrade_when": "公司或政府原始记录持续确认实际出境，且随后到港或交付得到对应证明。",
+          "decision_use": "把缓冲来源限定为可验证物料，选择物流、备料和替代来源情景。",
+          "source_ids": [
+            "resource-glencore-q3-20261029",
+            "resource-arecoms-communique-20261123"
+          ]
+        },
+        {
+          "signal": "上游限制传到合格钴盐和含钴正极的风险",
+          "current_reading": "已确认的是出口规则及矿冶处理变化；这些证据没有给出合格钴盐或CATL材料的供给缺口。",
+          "upgrade_when": "相关精炼或前驱体企业正式披露缺料、交付延后，或合格供货持续性受损。",
+          "downgrade_when": "合格精炼材料的持续交付或已认证替代来源经公开原始披露确认，且能够解释上游限制的缓冲机制。",
+          "decision_use": "决定是否把资源国事件升级为含钴材料供应议题；不向LFP、钠电直接外推。",
+          "source_ids": [
+            "resource-nmc-process-baseline",
+            "resource-glencore-q3-20261029"
+          ]
+        }
+      ],
+      "management_question": "我们讨论的是矿里有多少钴、境内有多少可售氢氧化钴，还是已经出境并能按要求转成钴盐的物料？哪一个环节的证据足以改变含钴材料的采购与投资选择？",
+      "source_ids": [
+        "resource-arecoms-communique-20261123",
+        "resource-glencore-q3-20261029",
+        "resource-nmc-process-baseline",
+        "resource-acp-cobalt-20261124"
+      ],
+      "claimconfidence": {
+        "facts": "高：监管机构三页签署原件已实际读取（公开媒体镜像）；企业原始报告已读并核对本地渲染。发布日期与未来生效日分开。",
+        "analysis": "条件性机制研判：无CATL内部采购、库存、航次及批次质量信息，不估算公司缺口或利润影响。"
+      }
+    },
+    {
+      "id": "indonesia-nickel-quota-process-allocation",
+      "title": "印尼镍要按矿区和工艺判断：矿端利润上移，HPAL与高冰镍的供给弹性已经不同",
+      "thesis": "研判：矿石配额决定能采多少，矿种和基础设施决定能送到哪条工艺，转换利润与合格交付决定能形成多少电池镍。Merdeka的最新经营拆分显示，上游矿利润改善可以与高冰镍转换承压同时发生；总矿量或镍铁产量不能直接代表电池级镍盐供应。",
+      "why_now": "Vale最新Q3财报显示分矿区配额约束及已提交修订；Merdeka11月2日活动报告与11月23日财务展示进一步拆出RKEF/高冰镍与HPAL实绩：ESG已有MHP实产，SLNC的首次进矿仍需与稳定产出分开。这比全国名义总量或新建产能总额更接近项目可交付性。",
+      "as_of": "2026-11-25",
+      "categories": [
+        "资源与矿权",
+        "供需平衡",
+        "原材料"
+      ],
+      "category": "印尼镍 / 配额与加工分流",
+      "tags": [
+        "RKAB",
+        "褐铁矿",
+        "腐泥土矿",
+        "HPAL",
+        "MHP",
+        "RKEF",
+        "高冰镍"
+      ],
+      "chain_routes": [
+        "nmc"
+      ],
+      "chain_node_ids": [
+        "ni_ore",
+        "co_ore",
+        "hpal",
+        "rkef",
+        "reagents",
+        "ncm_salts",
+        "pcam",
+        "nmc"
+      ],
+      "related_event_ids": [
+        "merdeka-hpal-9m-update-20261123"
+      ],
+      "facts": [
+        {
+          "text": "Vale最新Q3财报附注40(g)仍记载2026年1月Sorowako获批所申请配额的100%，Pomalaa与Bahodopi为30%，并称已提交修订申请。财报于10月29日获董事会授权；该附注没有确认修订已批准，不能据此宣称11月25日比例必然未变。ESDM此前也明确修订需正式评估。",
+          "source_ids": [
+            "resource-vale-rkab-q3-2026",
+            "resource-esdm-rkab-evaluation-20260625"
+          ]
+        },
+        {
+          "text": "Merdeka Q3报告分别披露SCM腐泥土矿产量330万湿吨、褐铁矿900万湿吨；自有腐泥土矿供给其RKEF冶炼，褐铁矿通过道路、前端制浆及管线供应HPAL。矿石湿吨与MHP/镍产品的含镍吨是不同口径。",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "text": "Merdeka披露Q3腐泥土矿现金利润35.8美元/湿吨，NPI现金利润842美元/含镍吨，高冰镍现金利润为负1,048美元/含镍吨；其解释包括矿价/HPM、能源与冶炼成本变化。上述是公司分环节经营口径，不是全行业利润或现货市场报价。",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "text": "11月23日展示披露，ESG在2026年前三季度产出MHP中的镍19,767吨，9月产能利用率约96%；Q3活动报告对应单季含镍产量9,742吨。96%不能当作整个季度或行业利用率。",
+          "source_ids": [
+            "resource-mbma-9m-20261123",
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "text": "SLNC在8月取得IUI、9月底首次进矿；Q3活动报告说明其名义能力为每年9万吨MHP含镍量，首批MHP生产仍列为当年目标。设备投料、名义年产能与稳定MHP实产须分别记录。",
+          "source_ids": [
+            "resource-mbma-q3-20261102",
+            "resource-mbma-9m-20261123"
+          ]
+        },
+        {
+          "text": "CATL在2025年6月公开的印尼一体化项目包含镍开采加工、电池材料、电芯与回收。该布局解释了本议题的关联性，但不能据此把Vale或Merdeka认定为CATL未披露的供应商或投资标的。",
+          "source_ids": [
+            "catl-idn-project"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "track": "监管程序",
+          "event": "ESDM说明RKAB修订需评估，申请本身不等于批准。",
+          "stage": "审批机制基线",
+          "source_ids": [
+            "resource-esdm-rkab-evaluation-20260625"
+          ]
+        },
+        {
+          "date": "2026-09",
+          "track": "HPAL实物流",
+          "event": "ESG两条线运营、9月利用率约96%；SLNC在月底首次进矿。",
+          "stage": "在产爬坡与初始进料并存",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "track": "矿区许可披露",
+          "event": "Vale董事会授权Q3财报；附注再次披露年初分矿区配额差异，并明确修订申请已提交。",
+          "stage": "企业财报披露，修订获批不能由申请推定",
+          "source_ids": [
+            "resource-vale-rkab-q3-2026"
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "track": "分环节经营",
+          "event": "Q3活动报告披露矿端利润与NPI、高冰镍利润分化。",
+          "stage": "季度实绩披露",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "date": "2026-11-23",
+          "track": "产出确认",
+          "event": "最新财务展示确认ESG前三季度MHP含镍产量19,767吨及SLNC阶段。",
+          "stage": "累计实产与项目进度更新",
+          "source_ids": [
+            "resource-mbma-9m-20261123"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "褐铁矿 → HPAL → MHP → 电池级镍钴盐",
+          "mechanism": "HPAL需要匹配矿种、矿浆输送、酸与尾渣等配套；ESG的实产及SLNC的首次进料说明同一园区各装置阶段也不同。",
+          "boundary": "MHP是中间品；含镍吨不等于MHP实物吨，也不等于已获客户资格的镍盐交付。",
+          "source_ids": [
+            "resource-mbma-q3-20261102",
+            "resource-mbma-9m-20261123"
+          ]
+        },
+        {
+          "material": "腐泥土矿 → RKEF/NPI → 高冰镍 → 后续精炼",
+          "mechanism": "矿端价格变化沿RKEF和高冰镍转换成本传递，转换利润影响维持产出和进一步扩产的经济性。",
+          "boundary": "NPI通常并非可直接进入电池的材料；一体化企业的中间品内部转化可能重复计量，不能把NPI与高冰镍吨数简单相加。",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "material": "硫酸及物料基础设施 → HPAL可运行能力",
+          "mechanism": "Q3报告将矿浆管线、尾渣设施和硫酸供给列入HPAL运行及扩张安排；这些配套影响矿石能否兑现为持续产出。",
+          "boundary": "配套建成或首次进料都不是最终材料交付，不能据其直接计算CATL可采购吨数。",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "矿区许可",
+          "text": "把获批范围与矿区及下游需求匹配；全国总量不能证明某一矿区、矿种或工厂已经获得足够合法来料。",
+          "kind": "审批与项目研判",
+          "source_ids": [
+            "resource-vale-rkab-q3-2026",
+            "resource-esdm-rkab-evaluation-20260625"
+          ]
+        },
+        {
+          "step": "分矿种配送",
+          "text": "腐泥土矿与褐铁矿通过不同物料链进入RKEF或HPAL，品位、水分和运输能力会改变有效处理量。",
+          "kind": "材料链研判",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "step": "转换经济性",
+          "text": "矿端捕获更高利润时，下游高冰镍仍可能承压；应分别评估资源收益与把镍转成电池可用原料的成本。",
+          "kind": "经营研判",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "step": "产量兑现",
+          "text": "ESG已有实际含镍产出，SLNC是进料及调试阶段；把在产与规划能力分开，再确认后续精炼和合格交付。",
+          "kind": "供给兑现研判",
+          "source_ids": [
+            "resource-mbma-9m-20261123",
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "step": "CATL布局与合作选择",
+          "text": "对公开的印尼一体化布局，比较矿区许可、工艺转换、化工配套及产品权利的完整组合；相同名义镍吨数的项目可能解决不同约束。",
+          "kind": "条件性投资研判",
+          "source_ids": [
+            "catl-idn-project",
+            "resource-mbma-q3-20261102"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "公开印尼布局",
+          "point": "CATL已披露镍开采加工到电池材料的一体化方向，因此矿区许可和冶炼工艺匹配是直接相关的观察维度。公开资料未给出本研究样本与其项目的采购绑定。",
+          "source_ids": [
+            "catl-idn-project"
+          ]
+        },
+        {
+          "dimension": "投资回报",
+          "point": "将矿山利润、RKEF利润、转换利润和HPAL运行质量分别观察，识别利润在产业链内部转移；不能用矿端利润代表整个电池材料项目收益。"
+        },
+        {
+          "dimension": "采购与竞争",
+          "point": "比较MHP、高冰镍及其他合格料源的连续交付与精炼条件；名义产能、矿石吨位和中间品产量应分别进入供应情景。"
+        }
+      ],
+      "counterpoint": "Merdeka是企业样本，不能外推全部印尼矿冶；其高冰镍现金利润为负不等于已停产，一体化矿端收益可能支持持续经营。更充足的分矿区配额、稳定HPAL运行或转换成本改善都会缓解约束。本研究不采用缺少原始批准依据的全国配额数字，也不由中间品扩产直接判断电池镍过剩。",
+      "watch_signals": [
+        {
+          "indicator": "分矿区RKAB批准及其对应矿种、年度和下游用途",
+          "interpretation": "申请修订、获批和实际开采须分开；财报中的披露状态须由后续正式批准或运行记录更新。",
+          "observation_source": "ESDM正式决定；矿山公司原始财报与许可公告",
+          "frequency": "年度审批和修订按事件；月度回顾",
+          "decision_use": "筛选能把合法料源与目标工艺匹配的项目和供应安排。",
+          "source_ids": [
+            "resource-vale-rkab-q3-2026",
+            "resource-esdm-rkab-evaluation-20260625"
+          ]
+        },
+        {
+          "indicator": "NPI、高冰镍转换及矿端分部成本/利润",
+          "interpretation": "同一矿源成本变化对矿山和加工环节的影响方向可能不同；内部转移价格与集团利润须区分。",
+          "observation_source": "Merdeka Battery Materials季度活动报告及财务展示",
+          "frequency": "季度；重大运行变更按事件",
+          "decision_use": "比较RKEF转电池链与HPAL路径的现金成本韧性，识别扩产经济性变化。",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "indicator": "HPAL持续MHP产量、首次产品、酸/矿浆/尾渣配套及合格交付",
+          "interpretation": "将许可、机械完成、首次进料、实产和客户可用材料分别对照；不以单月利用率替代季度稳定性。",
+          "observation_source": "Merdeka及相关项目公司的原始运行披露",
+          "frequency": "首次产品及交付按事件；季度量复核",
+          "decision_use": "决定何时将新项目由未来储备纳入现实材料供应情景。",
+          "source_ids": [
+            "resource-mbma-q3-20261102",
+            "resource-mbma-9m-20261123"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "获批矿源与加工装置失配的风险",
+          "current_reading": "Vale最新Q3财报仍披露年初分矿区批准比例，并称已提交修订；该附注没有确认修订获批。ESDM明确申请需正式评估，不能用全国总量证明特定工厂料源已落实。",
+          "upgrade_when": "企业原始披露矿区许可或可采矿种不能满足已建加工装置，且已影响实际进料或交付。",
+          "downgrade_when": "明确的批准文件与持续矿石交付共同证明目标工艺获得相匹配的合法来料。",
+          "decision_use": "调整项目供料假设与投资排序，不用全国总量替代项目尽调。",
+          "source_ids": [
+            "resource-vale-rkab-q3-2026",
+            "resource-esdm-rkab-evaluation-20260625"
+          ]
+        },
+        {
+          "signal": "转换利润压缩导致供给收缩的风险",
+          "current_reading": "Merdeka Q3 NPI现金利润为842美元/含镍吨，高冰镍为负1,048美元/含镍吨，同时矿端利润上升；公司并未因此披露停产。",
+          "upgrade_when": "后续正式披露转换利润持续承压并导致减产、停线、项目延期或交付调整。",
+          "downgrade_when": "同口径披露显示转换经济性改善，且连续产出与交付确认供给能够维持。",
+          "decision_use": "比较工艺路线和采购期限，区分利润压力与实际供给损失。",
+          "source_ids": [
+            "resource-mbma-q3-20261102"
+          ]
+        },
+        {
+          "signal": "HPAL名义产能延迟兑现的风险",
+          "current_reading": "ESG前三季度MHP含镍产量19,767吨已披露；SLNC的9万吨/年为名义含镍能力，公开阶段为首次进矿，不能直接并入已实现供应。",
+          "upgrade_when": "企业披露矿浆、酸、尾渣或装置运行问题使新项目产出或交付落后于正式指引。",
+          "downgrade_when": "新装置持续产出、产品交付与后续精炼合格情况依次得到原始披露确认。",
+          "decision_use": "确定何时把规划供给转入可采购情景，比较配套投资及合作时点。",
+          "source_ids": [
+            "resource-mbma-q3-20261102",
+            "resource-mbma-9m-20261123"
+          ]
+        }
+      ],
+      "management_question": "需要解决的究竟是某矿区的合法矿源、HPAL运行、NPI到高冰镍的转换成本，还是合格镍盐交付？项目投资和采购安排是否对应同一个真实约束？",
+      "source_ids": [
+        "resource-vale-rkab-q3-2026",
+        "resource-esdm-rkab-evaluation-20260625",
+        "resource-mbma-q3-20261102",
+        "resource-mbma-9m-20261123",
+        "catl-idn-project"
+      ],
+      "claimconfidence": {
+        "facts": "高：政府和企业原始披露；Vale最新Q3附注和Merdeka关键页均下载并实际查看图像。财报中的批准与申请状态，不自动延伸为11月25日仍完全相同。",
+        "analysis": "项目与工艺研判：不推断全国供需缺口，不把样本经营指标当行业指标，不推定CATL未披露敞口。"
+      }
+    },
+    {
+      "id": "anode-qualified-supply-execution",
+      "title": "海外负极本地化进入兑现关口：加工良率、客户验收与订单现金流决定有效供给",
+      "thesis": "研判：天然与人造石墨的海外本地化，应按合格商业交付和持续经营能力评估。Syrah矿端已有实物销售，但Vidalia仍在最终客户认证与爬坡阶段；NOVONIX的客户规格整改、PowerCo合同重谈又显示，技术验收和下游工厂节奏会同时改变可交付吨数。对CATL的合作价值及竞争压力，应随这几道关口的实际兑现逐级调整。",
+      "why_now": "9—10月披露把三个常被合并的状态拆开了：矿端已售出、负极样品在验收、包销条款可随客户计划重写。与此同时，Vidalia满产稳态成本指引上调，说明本地化供应必须同时验证加工效率和经济性。11月25日复核这些节点，有助于避免把历史产能、ISO认证或旧包销数量继续计作当前可用供给。",
+      "as_of": "2026-11-25",
+      "categories": [
+        "原材料",
+        "竞争与合作",
+        "供需平衡"
+      ],
+      "category": "负极供应兑现",
+      "tags": [
+        "天然石墨",
+        "人造石墨",
+        "Syrah",
+        "Vidalia",
+        "NOVONIX",
+        "客户认证",
+        "PowerCo",
+        "加工成本"
+      ],
+      "chain_routes": [
+        "anode"
+      ],
+      "chain_node_ids": [
+        "graphite_ore",
+        "natural_processing",
+        "natural_anode",
+        "synthetic_processing",
+        "synthetic_anode"
+      ],
+      "related_event_ids": [
+        "syrah-q3-anode-execution-20261029",
+        "novonix-powerco-reset-20261019"
+      ],
+      "facts": [
+        {
+          "text": "Syrah第三季度Balama生产19.3kt天然石墨，平均固定碳95%，对外售出并发运18.1kt；其中已完成向POSCO Future M的首次天然石墨销售。该记录对应矿端石墨产品，不能计为Vidalia负极活性材料交付。",
+          "source_ids": [
+            "syrah-q3-execution-20261029"
+          ]
+        },
+        {
+          "text": "截至该季度披露，Vidalia累计生产超过550t AAM，用于量产认证和可销售库存建设；首批商业销售目标仍是2026年第四季度并以最终客户认证为条件。公司明确把研磨收率和炉线能力列为后续整体产能利用率的关键约束。",
+          "source_ids": [
+            "syrah-q3-execution-20261029"
+          ]
+        },
+        {
+          "text": "Vidalia满产稳态经营成本指引由US$4.30—4.80/kg上调为US$4.85—5.25/kg AAM；新值包含Balama原料US$500/t FOB假设，排除贷款相关咨询法律费和45X生产抵免。这是满产指引，不是已实现的季度加工成本，也不是电芯采购报价。",
+          "source_ids": [
+            "syrah-q3-execution-20261029"
+          ]
+        },
+        {
+          "text": "NOVONIX 9月9日披露，主要客户对首批C样检测的14项规格中有12项达标，而公司内部检测判断全部达标；两项未通过指标中一项差距约1%，另一项按通过/不通过判定。公告没有公开指标名称，不能推断具体失效机理。10月季度报告仍保留客户进一步检测、审批及2027年下半年量产销售的条件。",
+          "source_ids": [
+            "novonix-csample-feedback-20260909",
+            "novonix-q3-qualification-20261030"
+          ]
+        },
+        {
+          "text": "NOVONIX 10月取得ISO 9001:2015质量管理体系认证。公司明确说明该认证支持客户认可，但不替代客户针对材料产品的资格验证。",
+          "source_ids": [
+            "novonix-iso9001-20261008"
+          ]
+        },
+        {
+          "text": "10月19日新框架取代NOVONIX与PowerCo的原包销协议；原协议曾约定自2027年起五年最低32,000t，且附认证、合规和融资条件。新安排要求完成PowerCo认证及适用工业认证后再协商数量和价格；季度报告明确原数量、价格和交付承诺已移除。PowerCo自己在9月声明，St. Thomas预计2029年开始运营，按需求分期推进。",
+          "source_ids": [
+            "novonix-powerco-framework-20261019",
+            "novonix-q3-qualification-20261030",
+            "powerco-stthomas-phasing-20260924"
+          ]
+        },
+        {
+          "text": "资金也在等待期内消耗：NOVONIX 9月30日现金为US$33.652m，10月22日已再从现金支付US$7m可转债摊还款。该还款由融资协议的股价条件触发，不是新增生产投资；期末现金不能直接当作11月25日余额。",
+          "source_ids": [
+            "novonix-q3-qualification-20261030",
+            "novonix-amortisation-20261022"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "track": "人造石墨验收",
+          "event": "主要客户反馈C样12/14项达标，与厂内检测结果存在差异。",
+          "stage": "客户检测反馈，未完成资格验证",
+          "source_ids": [
+            "novonix-csample-feedback-20260909"
+          ]
+        },
+        {
+          "date": "2026-09-24",
+          "track": "下游需求节奏",
+          "event": "PowerCo宣布St. Thomas按需求分期推进，预计2029年开始运营。",
+          "stage": "建设中，未来运营目标",
+          "source_ids": [
+            "powerco-stthomas-phasing-20260924"
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "track": "人造石墨质量体系",
+          "event": "NOVONIX取得ISO 9001质量管理体系认证。",
+          "stage": "体系认证完成，产品认证独立推进",
+          "source_ids": [
+            "novonix-iso9001-20261008"
+          ]
+        },
+        {
+          "date": "2026-10-19",
+          "track": "商业协议",
+          "event": "PowerCo原包销被新框架取代，后续商业条款需在认证后重议。",
+          "stage": "框架协议，后续商业条款另议",
+          "source_ids": [
+            "novonix-powerco-framework-20261019",
+            "novonix-q3-qualification-20261030"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "track": "天然石墨经营披露",
+          "event": "Syrah确认第三季度矿端生产和销售；Vidalia仍以最终客户认证作为首批商业销售条件，并上调满产稳态成本指引。",
+          "stage": "矿端销售已发生；AAM在认证与爬坡",
+          "source_ids": [
+            "syrah-q3-execution-20261029"
+          ]
+        },
+        {
+          "date": "2026-10-30",
+          "track": "人造石墨经营披露",
+          "event": "NOVONIX继续披露剩余规格整改和客户审批条件，保留2027年下半年量产销售预期。",
+          "stage": "有条件销售目标",
+          "source_ids": [
+            "novonix-q3-qualification-20261030"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "天然鳞片石墨C → 球形纯化、包覆的负极材料",
+          "mechanism": "Balama浮选产品已有产销，但后续形貌加工、提纯及包覆形成的是另一级产品。合格加工收率、炉线能力和客户对量产一致性的验收共同决定可交付AAM。",
+          "boundary": "矿端95%固定碳产品、累计认证用料和最终合格负极吨数分别记录；不能对矿端吨数直接套用一比一转换。",
+          "source_ids": [
+            "syrah-products-qualification",
+            "syrah-q3-execution-20261029"
+          ]
+        },
+        {
+          "material": "人造石墨负极材料 → 客户电芯使用资格",
+          "mechanism": "生产线C样进入客户验证后，内部检测与客户验收仍可能出现差异；工厂体系认证与客户产品批准是两类不同证据。",
+          "boundary": "12/14是一次样品的规格结果，不是86%的量产良率、客户认证概率或销售完成比例；公告未披露两项指标的具体名称。",
+          "source_ids": [
+            "novonix-csample-feedback-20260909",
+            "novonix-iso9001-20261008"
+          ]
+        },
+        {
+          "material": "负极可销售量 → 海外电芯厂实际采购",
+          "mechanism": "下游电芯厂投产节奏可改变负极采购窗口和合同承诺，进一步影响材料厂产能利用率、单位固定成本及融资需求。",
+          "boundary": "PowerCo框架变化是已披露商业事实；对其他客户、整个负极行业以及CATL实际订单的影响只能作条件性判断。",
+          "source_ids": [
+            "novonix-powerco-framework-20261019",
+            "powerco-stthomas-phasing-20260924"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "矿物先进入加工",
+          "text": "已有矿端发运说明资源可以进入加工链；只有加工后的材料通过特定客户验证，才构成该客户电芯可用的供应。",
+          "kind": "材料链机制",
+          "source_ids": [
+            "syrah-q3-execution-20261029",
+            "syrah-products-qualification"
+          ]
+        },
+        {
+          "step": "量产一致性决定有效产能",
+          "text": "研磨收率和炉线吞吐影响每吨投入能形成多少合格产出；客户对样品、过程控制和连续批次的验收决定这些产出能否销售。",
+          "kind": "机制研判",
+          "source_ids": [
+            "syrah-q3-execution-20261029",
+            "novonix-csample-feedback-20260909"
+          ]
+        },
+        {
+          "step": "客户计划传回材料厂",
+          "text": "下游工厂延后可使原有包销转为重谈，并拉长材料厂从投资到销售回款的时间。认证通过和客户采购时点必须同时成立，才能释放名义产能对应的需求。",
+          "kind": "商业研判",
+          "source_ids": [
+            "powerco-stthomas-phasing-20260924",
+            "novonix-powerco-framework-20261019"
+          ]
+        },
+        {
+          "step": "成本与现金决定能否等待",
+          "text": "加工成本上修与债务现金支付会压缩等待认证及订单恢复的财务余量。合作或投资应核对爬坡资金、真实约束性订单和持续合格出货，不能只按建成设备估值。",
+          "kind": "经营研判",
+          "source_ids": [
+            "syrah-q3-execution-20261029",
+            "novonix-amortisation-20261022",
+            "novonix-q3-qualification-20261030"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "海外竞争",
+          "point": "海外材料本地化可提高当地电芯厂的供应自主性；竞争强度应按已认证客户、商业交付和稳定成本上调。当前证据说明两条路线仍在不同兑现阶段，不能据此否定其后续竞争力。"
+        },
+        {
+          "dimension": "合作与投资",
+          "point": "考察资源与负极项目时，除矿源和厂房外，应优先验证加工收率、量产检测一致性及客户采用路径。投资分期可与客户批准、商业交付及融资完成挂钩；这是一项研究建议，未假定CATL持股或正在谈判。"
+        },
+        {
+          "dimension": "采购与成本",
+          "point": "比较地区方案时使用相同的AAM产品级别、交付条件、合格率及税收口径。Vidalia满产成本指引不能直接与矿端FOB价格或已抵税的净成本比较，公开资料也不能替代CATL内部供应商认证。"
+        }
+      ],
+      "counterpoint": "若后续客户正式确认认证完成，持续商业交付和同口径实际成本证明爬坡兑现，本议题对短期有效供给的谨慎判断应上调；若新客户采购填补PowerCo调整、融资也顺利完成，订单重谈的影响会减轻。现有两家公司样本不能推导全球石墨短缺，也不能推导CATL拥有相同测试、报价或供应风险。",
+      "watch_signals": [
+        {
+          "indicator": "客户资格验证完成与随后商业交付",
+          "interpretation": "把样品寄送、客户通过、商业销售及重复交付分开记录；只有后两类事实逐步形成可用供给证据。",
+          "observation_source": "Syrah及NOVONIX季度经营报告、重大客户公告、客户自身采购或生产披露",
+          "frequency": "重大认证或销售公告触发复核；每季度核对量与阶段",
+          "decision_use": "调整海外负极竞争强度和合作优先级；内部供应资格仍需企业自身验证。",
+          "source_ids": [
+            "syrah-q3-execution-20261029",
+            "novonix-csample-feedback-20260909",
+            "novonix-q3-qualification-20261030"
+          ]
+        },
+        {
+          "indicator": "加工产出、持续运行与同口径成本",
+          "interpretation": "关注研磨收率、炉线能力、合格交付和实际成本是否共同改善；没有公开良率时只根据已披露经营结果判断。",
+          "observation_source": "Syrah季度运营、现金流及成本指引；NOVONIX季度经营及财务公告",
+          "frequency": "季度复核，成本指引变化即时更新",
+          "decision_use": "比较资源投资、加工合作与直接采购的经济性，避免把稳态目标成本当作爬坡实绩。",
+          "source_ids": [
+            "syrah-q3-execution-20261029",
+            "novonix-q3-qualification-20261030"
+          ]
+        },
+        {
+          "indicator": "约束性采购条款、下游工厂日程和已落实资金",
+          "interpretation": "核对数量、交付期、认证和融资生效条件是否改变；单纯维持合作关系不能恢复被移除的订单承诺。",
+          "observation_source": "NOVONIX合同修订及融资公告；PowerCo项目声明；相关季度现金流报告",
+          "frequency": "合同、融资及工厂日程事件触发；季度汇总",
+          "decision_use": "决定供应及投资情景采用哪一个兑现时点，设置分期资金安排与备选方案。",
+          "source_ids": [
+            "novonix-powerco-framework-20261019",
+            "powerco-stthomas-phasing-20260924",
+            "novonix-amortisation-20261022"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "客户认证转为重复商业交付",
+          "current_reading": "截至已核验季度公告，Vidalia首批销售仍附最终认证条件；NOVONIX仍在处理C样规格与客户审批。ISO 9001已经取得，但不等于材料获批。",
+          "upgrade_when": "研判上调规则：正式披露或客户确认认证通过，随后后续多期经营披露列明商业交付及客户接受；届时分批将相应实际量纳入有效供应情景。",
+          "downgrade_when": "研判下调规则：客户测试重新出现实质不符，商业销售目标再次延后，或披露的产出仍主要用于认证和库存而未形成交付。",
+          "decision_use": "区分技术观察对象、可进入合作验证的项目与已形成供应竞争的项目。",
+          "source_ids": [
+            "syrah-q3-execution-20261029",
+            "novonix-csample-feedback-20260909",
+            "novonix-iso9001-20261008",
+            "novonix-q3-qualification-20261030"
+          ]
+        },
+        {
+          "signal": "加工效率与经济性兑现",
+          "current_reading": "Syrah已明确研磨收率和炉线能力是爬坡关键；Vidalia满产稳态成本指引上修至US$4.85—5.25/kg，尚不能视为实际合格交付单位成本。",
+          "upgrade_when": "研判上调规则：连续经营披露显示合格交付提高，同时同产品、同税收及交付口径的实际单位成本下降或稳定达到已披露目标，且持续运行得到验证。",
+          "downgrade_when": "研判下调规则：成本继续上修、加工瓶颈限制交付，或反复停开工使满产经济性难以兑现。",
+          "decision_use": "调整加工项目与资源项目的估值关注点，并决定技术协作是否比新增矿权更能解决当前供应约束。",
+          "source_ids": [
+            "syrah-q3-execution-20261029",
+            "syrah-products-qualification"
+          ]
+        },
+        {
+          "signal": "客户采购窗口与资金安排匹配",
+          "current_reading": "PowerCo旧最低包销量已被框架替代，St. Thomas预计运营时间为2029年；NOVONIX10月又以现金偿付US$7m债务。不能按旧合同32,000t直接推算未来已锁定销量。",
+          "upgrade_when": "研判上调规则：签署并满足条件的新协议明确数量和交期，或其他客户形成可核验替代需求；已落实融资及披露的可用现金能够支持对应建设、认证和爬坡安排。",
+          "downgrade_when": "研判下调规则：下游工厂继续延期、约束性条款进一步弱化，或额外偿债和融资延迟压缩已披露项目资金安排。",
+          "decision_use": "校正海外产能兑现年份，并将投资、合作和采购安排与实际商业里程碑对齐。",
+          "source_ids": [
+            "novonix-powerco-framework-20261019",
+            "powerco-stthomas-phasing-20260924",
+            "novonix-amortisation-20261022",
+            "novonix-q3-qualification-20261030"
+          ]
+        }
+      ],
+      "management_question": "我们评估的海外石墨项目，究竟已经拿到哪些客户的产品批准、形成多少重复商业交付、以什么实际加工成本运行？如果客户工厂延后，订单与现金能否支撑其穿过这段爬坡期？",
+      "source_ids": [
+        "syrah-q3-execution-20261029",
+        "syrah-products-qualification",
+        "novonix-csample-feedback-20260909",
+        "novonix-iso9001-20261008",
+        "novonix-powerco-framework-20261019",
+        "novonix-q3-qualification-20261030",
+        "powerco-stthomas-phasing-20260924",
+        "novonix-amortisation-20261022"
+      ],
+      "claimconfidence": {
+        "facts": "高：公司原始季度和重大事项披露；客户工厂日程由PowerCo自己的声明交叉核验。成本为企业指引，测试为企业转述客户结果，均非独立审计测试。",
+        "analysis": "机制与条件性经营研判：三项升降级条件是本Dashboard的观察规则，不是已经发生的结果；没有内部良率、报价、库存、客户验收报告或CATL采购敞口。"
+      }
+    },
+    {
+      "id": "australia-storage-fid-dispatch-economics",
+      "title": "澳洲储能投资加速，但储能本身也会改变电价：大储项目和户储渠道应分开估值",
+      "thesis": "研判：CER新报告同时确认大储FID规模扩张和家用电池安装需求；AEMO早期运营统计显示储能参与率上升可压低晚峰价格。对产业投资而言，设备需求与电站收入不是同一变量，需将订单兑现、时段收益、系统责任和渠道经济性拆开。",
+      "why_now": "11月26日CER首次在该季度报告中展示大储项目进度追踪，并上调全年家用电池预测；为观察市场阶段、需求和调度反馈提供可用官方数据。",
+      "timeline": [
+        {
+          "date": "2026-10-23",
+          "event": "AEMO披露Q3实际运行情况：晚峰电池供电占比8%，高于燃气5.1%；NEM平均批发电价同比下降27%。",
+          "stage": "运行基线",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "date": "2026-10-26",
+          "event": "CEC披露H1九个大型电池项目投入运行，合计2.3GW/7.1GWh。",
+          "stage": "历史投运基线",
+          "source_ids": [
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "date": "2026-11-26",
+          "event": "CER披露Q3大储13.8GWh达到FID、前三季度20GWh；家用电池计划已安装获批10.3GWh，上调全年预测。",
+          "stage": "新报告披露",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "CER报告的20GWh是前三季度达到FID的大储能量容量，不是已运行或已确认设备订单。Q3单季为13.8GWh，包含在20GWh内。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        },
+        {
+          "text": "2026年前三季度家用电池计划下已安装获批10.3GWh，全年预测上调至13–15.5GWh，不能将预测与已批准容量相加。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        },
+        {
+          "text": "AEMO报告Q3 NEM平均批发电价为63澳元/MWh，同比下降27%；晚峰电池供电占8%，高于燃气的5.1%。天气、需求和其他发电条件也有影响。",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "text": "CEC报告H1已投运大型电池2.3GW/7.1GWh，属于不同阶段统计，不应与CER FID直接相加。",
+          "source_ids": [
+            "cec-h1-storage-20261026"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "需求形成",
+          "text": "FID代表项目资本决策，后续仍需采购、施工、并网与验收；已安装获批户储则属于不同商业渠道。",
+          "kind": "事实与机制",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "step": "电网反馈",
+          "text": "更多储能在低价时充电、高价时放电，有可能压缩价差；AEMO指出电池活动与晚峰价格下降有关。",
+          "kind": "事实与机制",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "step": "经济性分化",
+          "text": "若套利价差收窄，项目收益更依赖运行策略、合同收入、可用率、效率和资金成本；不同节点和时长不能同价估算。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "aemo-qed-q3-20261023",
+            "cer-qcmr-q3-20261126"
+          ]
+        },
+        {
+          "step": "合作入口",
+          "text": "设备商应区分大型项目直流舱、完整AC系统与分布式产品渠道；以实际订单及验收证明商业兑现。",
+          "kind": "投资研究",
+          "source_ids": [
+            "cec-h1-storage-20261026",
+            "cer-qcmr-q3-20261126",
+            "aemo-qed-q3-20261023"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "市场",
+          "point": "用FID项目库筛选大储潜在采购入口；分布式项目按渠道及产品准入观察，不用全国规模直接推定份额。"
+        },
+        {
+          "dimension": "技术与成本",
+          "point": "在实际时段与调度工况下比较可用能量、往返效率、衰减、补容和EMS能力；区分设备成本与电站收益。 "
+        },
+        {
+          "dimension": "资本",
+          "point": "项目股权投资需要现金流与合同收益证据；电芯或系统供货则需按验收、担保与收款责任评价。"
+        }
+      ],
+      "counterpoint": "批发均价下降并不等于每个电站套利收入下降；区域、小时级价差、辅助服务、容量或其他合同收入可不同。未披露电池化学配方、供应商及项目现金流，不推算CATL份额、利润或锂盐吨数。",
+      "watch_signals": [
+        {
+          "indicator": "已FID项目的系统采购、施工及投运节点",
+          "interpretation": "验证投资计划到设备订单和实际装机的转化。",
+          "observation_source": "CER项目追踪、CEC投运报告及开发商公开披露",
+          "frequency": "季度及项目里程碑",
+          "decision_use": "按兑现程度筛选系统机会。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "indicator": "NEM分时价差、实际充放电与调度收入",
+          "interpretation": "辨别储能渗透率变化对项目可实现收入的影响；均价不能代替套利价差。",
+          "observation_source": "AEMO季度报告及公开市场数据",
+          "frequency": "月度或季度",
+          "decision_use": "评估调度、时长、合同和系统效率的重要性。",
+          "source_ids": [
+            "aemo-qed-q3-20261023"
+          ]
+        },
+        {
+          "indicator": "户储计划的实际获批容量和后续预测变化",
+          "interpretation": "区分销量、安装及补贴获批，识别分布式需求兑现。",
+          "observation_source": "CER季度报告与方案公开数据",
+          "frequency": "季度",
+          "decision_use": "决定渠道和产品适配研究优先级。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ],
+      "management_question": "澳洲大储的20GWh FID与户储获批量分别对应何种可追踪采购入口？在电池参与调度改变收益曲线时，系统方案及投资收益模型是否采用实际分时价格和合同边界？",
+      "source_ids": [
+        "cer-qcmr-q3-20261126",
+        "aemo-qed-q3-20261023",
+        "cec-h1-storage-20261026"
+      ],
+      "claimconfidence": {
+        "facts": "高：CER监管报告网页摘要、AEMO运行披露及CEC行业协会投运统计；不同阶段不相加。",
+        "analysis": "条件性产业研判；没有CATL实际订单、项目IRR或分时利润数据。"
+      },
+      "categories": [
+        "供需平衡",
+        "竞争与合作"
+      ],
+      "tags": [
+        "澳洲储能",
+        "FID",
+        "户储",
+        "调度",
+        "项目经济性"
+      ],
+      "chain_routes": [
+        "ess"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "ess_dc",
+        "ess_ac",
+        "grid_users",
+        "mine_ci_users"
+      ],
+      "related_event_ids": [
+        "australia-cer-storage-pipeline-20261126"
+      ],
+      "as_of": "2026-11-27",
+      "material_exposure": [
+        {
+          "material": "储能电芯 / 直流舱",
+          "mechanism": "项目进入FID扩大潜在系统采购需求；户储获批显示另一类已安装市场。",
+          "boundary": "没有具体化学配方与系统商份额，不换算LFP、三元或钠电材料吨数。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "material": "PCS / EMS / 完整AC系统",
+          "mechanism": "电池参与分时调度与市场价格反馈可能增加优化系统效率和可用率的价值。",
+          "boundary": "没有具体项目合同与收入分项，不能从NEM均价推算IRR。",
+          "source_ids": [
+            "aemo-qed-q3-20261023",
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "澳洲大储FID向可验证交付转化的确定性",
+          "current_reading": "CER确认前三季度20GWh达到FID；CEC历史投运基线另计。",
+          "upgrade_when": "明确项目采购合同、设备到场、并网验收和商业运行，增强兑现判断。",
+          "downgrade_when": "项目延期、取消或缩减规模，削弱兑现判断。",
+          "decision_use": "将FID、订单、投运分层管理，不重复统计。",
+          "source_ids": [
+            "cer-qcmr-q3-20261126",
+            "cec-h1-storage-20261026"
+          ]
+        },
+        {
+          "signal": "高储能渗透率下的项目收益压缩风险",
+          "current_reading": "AEMO确认晚峰电池参与及均价下降；尚无同口径项目净收入数据。",
+          "upgrade_when": "实际节点价差及净调度收益持续下降，且无合同或其他收入抵消，增强风险判断。",
+          "downgrade_when": "价差恢复或合同、辅助服务等收入抵消压力，削弱风险判断。",
+          "decision_use": "用实际运行工况、效率、衰减、合同收益与资金成本比较方案。",
+          "source_ids": [
+            "aemo-qed-q3-20261023",
+            "cer-qcmr-q3-20261126"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "italy-macse-contracted-demand-system-economics",
+      "title": "意大利储能招标扩量降价：收入端承压，系统生命周期成本与交付成为竞争关键",
+      "thesis": "研判：2029年意大利MACSE授予16GWh，比2028年交付轮次的10GWh增加60%，但加权年容量价格降低12%。11月25日BW ESS与A2A披露具体中标组合，需求从市场总量落实到开发商；CATL观察重点应从GWh市场规模推进到采购入口、可用能量保证、融资与交付责任。不能将容量收入价格等同于电池价格或项目收益率。",
+      "why_now": "11月25日新披露的合资项目明确四个中标项目及分工。结合此前一晚Terna公布的第二轮结果，可判断需求有明确授予对象，但尚未证明设备采购和并网兑现。",
+      "tags": [
+        "欧洲储能",
+        "MACSE",
+        "项目经济性",
+        "系统交付"
+      ],
+      "categories": [
+        "供需平衡",
+        "竞争与合作"
+      ],
+      "chain_routes": [
+        "ess"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "ess_dc",
+        "ess_ac",
+        "grid_users"
+      ],
+      "related_event_ids": [
+        "italy-macse-second-auction-20261124",
+        "bwess-a2a-italy-macse-awards-20261125"
+      ],
+      "as_of": "2026-11-26",
+      "timeline": [
+        {
+          "date": "2025-09-30",
+          "event": "第一轮MACSE招标授予10GWh，目标2028年投运。",
+          "stage": "历史招标基线",
+          "source_ids": [
+            "terna-macse-first-20251013"
+          ]
+        },
+        {
+          "date": "2026-11-24",
+          "event": "第二轮授予16GWh，公布加权中标价11,382欧元/MWh·年及2029年目标。",
+          "stage": "容量授予",
+          "source_ids": [
+            "terna-macse-2029-award-20261124"
+          ]
+        },
+        {
+          "date": "2026-11-25",
+          "event": "BW ESS与A2A披露四个项目、合计2,608MWh及建设与调度分工。",
+          "stage": "中标方披露",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "date": "2029",
+          "event": "第二轮中标设施预计进入运行，实际完工、并网与验收以届时披露为准。",
+          "stage": "未来目标",
+          "source_ids": [
+            "terna-macse-2029-award-20261124"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "第二轮约43GWh提交报价，授予16GWh；加权年容量中标价11,382欧元/MWh·年，较上一轮低12%。招标对象为锂离子储能。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124"
+          ]
+        },
+        {
+          "text": "BW ESS/A2A四个项目合计约400MW和2,608MWh，属于16GWh的一部分，不能重复累加。",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125",
+            "terna-macse-2029-award-20261124"
+          ]
+        },
+        {
+          "text": "由中标方承担设施建设并按机制提供储能容量；中标方联合公告未披露电池供应商或价格。",
+          "source_ids": [
+            "terna-macse-first-20251013",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "收入机制",
+          "text": "竞争性容量招标给项目长期收入框架；较低年容量价意味着相同条件下固定收入降低。",
+          "kind": "事实与机制",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "terna-macse-first-20251013"
+          ]
+        },
+        {
+          "step": "系统经济性",
+          "text": "条件相同下，开发商需优化设备采购、工程、融资、衰减与可用率成本；实际经济性还取决于合同和其他收入。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "terna-macse-first-20251013"
+          ]
+        },
+        {
+          "step": "采购与交付",
+          "text": "中标开发商分工清晰，为后续系统设备、EPC及性能担保形成可追踪的合作对象。中标不代表采购已完成。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "step": "产业投资",
+          "text": "若设备供应商能在满足长时运行、可用容量和担保要求的前提下降低全寿命成本，则可能改善竞争地位；不能据此推算CATL市场份额。",
+          "kind": "投资研究",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125",
+            "terna-macse-first-20251013"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "市场",
+          "point": "用已授予项目筛选潜在客户和采购窗口，区别整个16GWh市场与合资企业2.608GWh子集。"
+        },
+        {
+          "dimension": "技术与成本",
+          "point": "比较可用能量、衰减、补容、效率、可用率和安全的全寿命交付成本；不能只比较电芯元/Wh。"
+        },
+        {
+          "dimension": "资本与合作",
+          "point": "区分电芯/直流舱供应、完整AC系统集成、工程交付与项目投资；评估各角色承担的性能、延迟和融资责任。"
+        }
+      ],
+      "counterpoint": "容量价格下降也可能反映融资成本、其他收入预期、竞标策略或项目配置变化；在没有项目CAPEX、合同及现金流的情况下，不推导利润率、IRR或电池降价幅度。",
+      "material_exposure": [
+        {
+          "material": "锂离子电芯 / 储能系统",
+          "mechanism": "明确的容量授予为系统需求提供更强依据，后续电芯订单取决于项目技术规格和采购选择。",
+          "boundary": "没有披露LFP或三元具体配方，不把项目容量直接换算锂盐、镍钴、石墨采购量。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "material": "DC电池舱 / AC侧PCS、EMS及并网",
+          "mechanism": "系统交付、容量保证、衰减和效率共同影响履约成本与项目经济性。",
+          "boundary": "四个项目具体设备、责任边界和报价尚未披露，不能认定CATL或任一系统商中标。",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125",
+            "terna-macse-first-20251013"
+          ]
+        }
+      ],
+      "watch_signals": [
+        {
+          "indicator": "中标项目公布系统/EPC供应商与合同范围",
+          "interpretation": "识别容量授予能否转成设备采购和可验证订单。",
+          "observation_source": "BW ESS、A2A及项目公司公开公告",
+          "frequency": "按项目里程碑及季度披露",
+          "decision_use": "筛选实际采购机会，区分系统集成与电芯供货。",
+          "source_ids": [
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "indicator": "建设、融资、并网及商业运行",
+          "interpretation": "验证2029年运行目标能否兑现；融资框架或计划不算实际提款与完工。",
+          "observation_source": "Terna及中标开发商项目公告",
+          "frequency": "季度或重大里程碑",
+          "decision_use": "调整订单兑现概率的定性判断和合作时间窗口。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "indicator": "实际可用容量、效率和全寿命成本口径",
+          "interpretation": "同口径的系统指标及担保责任有助于区分低报价和低履约成本。",
+          "observation_source": "项目公开招标、验收或运营披露；未公开合同条款不作推定",
+          "frequency": "公开采购或运营数据出现时",
+          "decision_use": "比较系统方案及性能风险承担。",
+          "source_ids": [
+            "terna-macse-first-20251013",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "意大利中标容量向可执行系统设备需求转化的确定性",
+          "current_reading": "Terna公布16GWh授予量；BW ESS/A2A确认其中四个项目，但未披露设备供应商。",
+          "upgrade_when": "公布具有约束力的设备合同、融资落实及建设进展，增强需求兑现判断。",
+          "downgrade_when": "延期、取消、融资失败或规模调整削弱兑现判断。",
+          "decision_use": "将获授容量、系统订单和实际交付分阶段跟踪。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "signal": "低容量收入环境下全寿命成本竞争压力",
+          "current_reading": "第二轮加权容量价较上一轮低12%；尚无同口径项目实际成本与现金流。",
+          "upgrade_when": "若后续采购和财务披露显示同等服务要求下成本约束收紧，增强系统成本压力判断。",
+          "downgrade_when": "若其他收入、融资或合同安排改善并抵消容量收入下降，削弱由该价格推导的成本压力判断。",
+          "decision_use": "优先比较全寿命成本、担保与融资，而非直接压缩电芯报价。",
+          "source_ids": [
+            "terna-macse-2029-award-20261124",
+            "terna-macse-first-20251013"
+          ]
+        }
+      ],
+      "management_question": "对意大利长时锂离子储能项目，如何在已授予的容量收入约束下，选择电芯、直流舱或AC系统合作入口，并用可用能量和履约成本验证竞争力？",
+      "source_ids": [
+        "terna-macse-2029-award-20261124",
+        "bwess-a2a-macse-award-20261125",
+        "terna-macse-first-20251013"
+      ],
+      "claimconfidence": {
+        "facts": "高：Terna原始公告、机制说明与中标方联合公告；两家独立发布主体，联合公告镜像不重复计数。",
+        "analysis": "条件性经营研判；无CATL供应关系、项目利润率或报价数据。"
+      }
+    },
+    {
+      "id": "lithium-effective-supply-and-offtake",
+      "title": "锂矿复产、项目投资和包销不能相加：真正要数的是可交付、可采购的锂盐",
+      "thesis": "研判：锂供应弹性要同时通过生产、化学转化与商业可得性三道关。新增矿石或项目投资可能增加长期供给选择，但可供采购的电池级材料仍取决于合格产出、既有销售安排和融资建设进度。",
+      "why_now": "11月出现复产首船、材料企业拟包销和智利项目库扩大三类信号；它们分别对应近期实物流、未来供应权和长期投资储备，适合放到同一阶段表比较，不能合并成当期供给增量。",
+      "as_of": "2026-11-25",
+      "categories": [
+        "供需平衡",
+        "资源与矿权",
+        "原材料"
+      ],
+      "category": "锂资源 / 供给兑现",
+      "tags": [
+        "锂",
+        "复产",
+        "包销",
+        "融资",
+        "电池级材料"
+      ],
+      "chain_routes": [
+        "lfp",
+        "nmc"
+      ],
+      "chain_node_ids": [
+        "li_rock",
+        "li_brine",
+        "hard_li_process",
+        "brine_process",
+        "li_carbonate",
+        "li_hydroxide",
+        "lfp",
+        "nmc"
+      ],
+      "related_event_ids": [
+        "core-finniss-shipment-20261125",
+        "pursuit-ecopro-rio-grande-sur-20261109",
+        "cochilco-chile-project-pipeline-20261119"
+      ],
+      "facts": [
+        {
+          "text": "Core披露，Finniss复产后的约1万湿吨、约5.1% Li₂O精矿已售出，计划11月25日装船；交易经Glencore营销安排执行，最终结算仍取决于价格、重量及化验。",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        },
+        {
+          "text": "Pursuit与EcoPro的非约束MoU拟以20%项目股权及预付款融资配合一期全部产量包销，目标规模约5,000吨LCE/年。20%股权和100%拟包销说明资源权益与产品采购权是不同权利。",
+          "source_ids": [
+            "pursuit-ecopro-mou-20261109"
+          ]
+        },
+        {
+          "text": "Cochilco新项目库将Salar Futuro和Albemarle直接提锂转型项目列为锂投资增加的重要来源，两者仍处于环境评价阶段。",
+          "source_ids": [
+            "cochilco-project-pipeline-20261119"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09",
+          "track": "澳洲复产",
+          "event": "Finniss升级选厂首次生产复产后的精矿；后续优化继续。",
+          "stage": "初产与优化",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        },
+        {
+          "date": "2026-11-09",
+          "track": "阿根廷供应安排",
+          "event": "EcoPro与Pursuit公布股权、预付款及拟包销组合。",
+          "stage": "非约束MoU",
+          "source_ids": [
+            "pursuit-ecopro-mou-20261109"
+          ]
+        },
+        {
+          "date": "2026-11-19",
+          "track": "智利长期项目",
+          "event": "项目库显示新增锂技术投资，其中重要项目尚在环评。",
+          "stage": "项目储备 / 环评",
+          "source_ids": [
+            "cochilco-project-pipeline-20261119"
+          ]
+        },
+        {
+          "date": "2026-11-25",
+          "track": "澳洲实物流",
+          "event": "首船货物已售出、计划开始装载；公告未确认到港交付完成。",
+          "stage": "售出 / 计划装船",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "锂辉石精矿 → 电池级锂盐",
+          "mechanism": "实物流首先增加矿物原料；是否形成可采购锂盐，还取决于化学转化、品质和具体销售安排。",
+          "boundary": "湿吨、Li₂O品位、LCE和电池级盐的实物吨不可直接相加。此公告未给足水分和转化收率，不能据此估算CATL可获得吨数。",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        },
+        {
+          "material": "盐湖锂 → 碳酸锂 / 下游材料",
+          "mechanism": "投资与预付款可支持建设，产品包销安排可能预先分配未来销售去向。",
+          "boundary": "MoU尚非已生效采购权，环评项目尚非当前产出；不能把目标全部扣除为第三方不可得量。",
+          "source_ids": [
+            "pursuit-ecopro-mou-20261109",
+            "cochilco-project-pipeline-20261119"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "实物流",
+          "text": "先看是否连续产出、装运及最终结算，判断供给正在形成的速度。",
+          "kind": "机制研判",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        },
+        {
+          "step": "化学转化",
+          "text": "把矿物原料与合格锂盐分层，避免精矿发运被直接计作正极可用原料。",
+          "kind": "材料链研判",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        },
+        {
+          "step": "供应权",
+          "text": "分别识别股权、营销代理和包销合同；它们对产品流向的约束程度不同。",
+          "kind": "商业研判",
+          "source_ids": [
+            "core-first-restart-cargo-20261125",
+            "pursuit-ecopro-mou-20261109"
+          ]
+        },
+        {
+          "step": "资本取舍",
+          "text": "近期采购看连续合格交付，资源投资看许可、融资与工艺兑现；不能用同一个名义吨数给所有项目排序。",
+          "kind": "经营研判",
+          "source_ids": [
+            "cochilco-project-pipeline-20261119",
+            "pursuit-ecopro-mou-20261109"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "采购",
+          "point": "建立可交付物料及潜在销售去向清单，区分现货机会、长期合作和仍在建设的资源储备。"
+        },
+        {
+          "dimension": "投资",
+          "point": "供应安全价值取决于真实产品权利与合格交付条件；少数股权比例不能直接替代可采购产量。"
+        },
+        {
+          "dimension": "竞争",
+          "point": "材料企业向上游延伸的关键是融资与产品安排如何联动，而不只是披露的投资金额。"
+        }
+      ],
+      "counterpoint": "如果Finniss不能持续装运，或盐湖项目融资、环评和工艺进度落后，短期可用供给改善会减弱；若未来包销协议未落地或明确保留大量第三方销售量，对开放市场供给的影响也会不同。本组证据不能直接判定锂行业短缺或过剩。",
+      "watch_signals": [
+        {
+          "indicator": "Finniss装船完成、连续季度销量与最终结算",
+          "interpretation": "连续实物流比首船计划更能支持近期供应弹性判断。",
+          "observation_source": "Core Lithium / ASX公告",
+          "frequency": "重大装运事件跟踪；季度经营报告复核",
+          "decision_use": "决定是否把项目纳入近期物料供应情景，而非只列长期资源。",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        },
+        {
+          "indicator": "EcoPro/Pursuit正式股权、预付款及包销合同，尤其生效条件与产品权利",
+          "interpretation": "只有正式安排及条件满足后，才能评价资金与产品去向锁定程度。",
+          "observation_source": "Pursuit Minerals / ASX；EcoPro正式披露",
+          "frequency": "按签约、审批及融资事件",
+          "decision_use": "判断未来采购竞争与可合作产量，比较股权和包销两类工具。",
+          "source_ids": [
+            "pursuit-ecopro-mou-20261109"
+          ]
+        },
+        {
+          "indicator": "Salar Futuro及Albemarle TED环评、最终投资决定与工艺投产里程碑",
+          "interpretation": "把投资意向逐步转化为可计入供给的项目阶段。",
+          "observation_source": "Cochilco及项目业主正式公告",
+          "frequency": "项目事件跟踪；月度回顾",
+          "decision_use": "选择技术、装备和材料合作进入时点，校正长期供给情景。",
+          "source_ids": [
+            "cochilco-project-pipeline-20261119"
+          ]
+        }
+      ],
+      "management_question": "这项新增资源将在什么时间、以什么化学品和品质、经由什么合同成为可采购材料？股权、预付款和包销中，哪一种安排真正解决我们的供应约束？",
+      "source_ids": [
+        "core-first-restart-cargo-20261125",
+        "pursuit-ecopro-mou-20261109",
+        "cochilco-project-pipeline-20261119"
+      ],
+      "claimconfidence": {
+        "facts": "高：公司及政府原始披露；保留计划、MoU与环评阶段",
+        "analysis": "机制研判：没有公司内部采购合同，不估算CATL实际可得吨数或行业供需缺口"
+      },
+      "decision_checkpoints": [
+        {
+          "signal": "复产形成可重复交付",
+          "current_reading": "Core已披露首批复产精矿销售，11月25日装船仍是公告中的计划；最终品位、重量和结算按合同确认。",
+          "upgrade_when": "后续公告确认实际装运、客户接收及持续合格产出，可增强复产供给能够兑现的判断。",
+          "downgrade_when": "装运、品质验收或生产连续性出现实质变化，应降低对近期有效供应的预期。",
+          "decision_use": "把资源量、复产计划与采购可用量分别纳入供应情景，避免按名义产能安排需求。",
+          "source_ids": [
+            "core-first-restart-cargo-20261125"
+          ]
+        },
+        {
+          "signal": "资源合作跨过约束性协议与项目批准",
+          "current_reading": "Pursuit/EcoPro披露的是非约束性合作意向；智利项目管线仍需区分审批和建设阶段。",
+          "upgrade_when": "明确约束性条款、关键许可、融资与建设进度，并随后披露合格产品时，再逐级提高供给兑现判断。",
+          "downgrade_when": "停留在意向、许可或资金条件未满足，或项目时间表改变，应推后对应供应情景。",
+          "decision_use": "识别值得进入工艺、客户及融资尽调的项目，不以包销意向等同已锁定可用锂盐。",
+          "source_ids": [
+            "pursuit-ecopro-mou-20261109",
+            "cochilco-project-pipeline-20261119"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "copper-price-foil-conversion-working-capital",
+      "title": "铜价先跌后反弹怎样进入电池成本：金属基价、加工费与定价时点需分开",
+      "thesis": "研判：铜现金参考价25日回落、26日反弹，说明短期价格方向不稳定。金属基价可以影响后续铜箔采购，但加工费、规格、合同窗口、资金占用决定传导幅度与速度；不能从一天行情推导已签电池或储能系统的成本变化。",
+      "why_now": "Cochilco 11月26日同口径铜价较前日报价反弹2.24%，仍低于24日；这削弱由25日下跌直接推导持续降本的判断，但没有改变铜箔加工费和定价窗口的结构机制。",
+      "as_of": "2026-11-27",
+      "categories": [
+        "原材料",
+        "供需平衡"
+      ],
+      "category": "铜 / 集流体 / 成本",
+      "tags": [
+        "铜价",
+        "铜箔",
+        "加工费",
+        "营运资金",
+        "储能"
+      ],
+      "chain_routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "collectors",
+        "cu_al_feed",
+        "electrode_mix",
+        "formation",
+        "ev_pack",
+        "ess_dc",
+        "ess_ac"
+      ],
+      "related_event_ids": [
+        "cochilco-copper-weekly-20261120",
+        "cochilco-metals-daily-20261125",
+        "jiayuan-copper-foil-pricing-20260421",
+        "cochilco-metals-daily-20261126"
+      ],
+      "facts": [
+        {
+          "text": "Cochilco 11月25日日报列示LME现货铜11,703美元/吨，较前一日报价下降2.76%；11月24日同口径为12,035美元/吨。",
+          "source_ids": [
+            "cochilco-daily-20261124",
+            "cochilco-daily-20261125"
+          ]
+        },
+        {
+          "text": "11月20日周报在说明铜价下跌时，同时指出中国部分现货金属偏紧。它说明价格和地区可交付性可以出现不同方向，但不代表11月25日所有地区的现货情况。",
+          "source_ids": [
+            "cochilco-copper-week-20261120"
+          ]
+        },
+        {
+          "text": "嘉元科技2025年报披露铜箔采用金属基价加加工费的定价方式，并指出采购点价与销售定价时点不能完全匹配；公司也说明产品结构改善会提高平均加工费。",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "text": "11月26日LME现货铜11,965美元/吨，较25日上涨2.24%，仍低于24日12,035美元/吨。三日观察不构成长期走势。",
+          "source_ids": [
+            "cochilco-daily-20261126",
+            "cochilco-daily-20261125",
+            "cochilco-daily-20261124"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-04-21",
+          "track": "铜箔商业模式基线",
+          "event": "嘉元年报说明定价机制、时点错配及铜价对资金占用的影响。",
+          "stage": "年度披露基线",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "track": "铜市场",
+          "event": "周报记录价格回落，并讨论部分地区现货可得性。",
+          "stage": "周度观察",
+          "source_ids": [
+            "cochilco-copper-week-20261120"
+          ]
+        },
+        {
+          "date": "2026-11-24—2026-11-25",
+          "track": "价格更新",
+          "event": "同口径LME现货参考价从12,035变为11,703美元/吨。",
+          "stage": "日报参考；非盘中实时价",
+          "source_ids": [
+            "cochilco-daily-20261124",
+            "cochilco-daily-20261125"
+          ]
+        },
+        {
+          "date": "2026-11-26",
+          "event": "铜现金参考价反弹至11,965美元/吨。",
+          "stage": "新日报观察",
+          "source_ids": [
+            "cochilco-daily-20261126"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "电解铜 → 铜箔 → 负极集流体",
+          "mechanism": "金属基价通过铜箔定价进入采购成本；加工费与特定规格工艺能力需分别评价。",
+          "boundary": "LME现货铜不是电池级铜箔报价；需要匹配定价窗口、币种及交货条件。",
+          "source_ids": [
+            "cochilco-daily-20261125",
+            "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "material": "极薄铜箔与制造工艺",
+          "mechanism": "薄化可减少单位面积金属用量，但其成品率和工艺成本会影响合格极片成本。",
+          "boundary": "不能只比较每吨铜箔报价或厚度；还需看实际良率和客户认证。",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "material": "电芯 / 储能系统成本",
+          "mechanism": "金属基价进入材料、再进入电芯及系统报价，合同重定价与库存会造成时间差。",
+          "boundary": "单一金属涨跌幅不能直接套用到电芯总成本、ESS总价或CATL利润。",
+          "source_ids": [
+            "jiayuan-annual-2025",
+            "cochilco-daily-20261125"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "金属参考",
+          "text": "先固定品种、单位、交货口径及观察日，再比较行情变化。",
+          "kind": "监测方法",
+          "source_ids": [
+            "cochilco-daily-20261124",
+            "cochilco-daily-20261125"
+          ]
+        },
+        {
+          "step": "产品加工",
+          "text": "铜箔采购价还含加工费；产品升级或规格变化可能抵消部分金属降价。",
+          "kind": "机制研判",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "step": "合同与库存",
+          "text": "采购和销售定价窗口不同，会使利润与现金流的变化滞后或偏离当日铜价。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "step": "经营选择",
+          "text": "同时评估议价窗口、供应稳定性与材料工艺升级，避免只根据金属价格调整供应商评价。",
+          "kind": "经营研判",
+          "source_ids": [
+            "jiayuan-annual-2025",
+            "cochilco-copper-week-20261120"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "成本",
+          "point": "把铜基价与加工费、规格、定价窗口分开，才能判断降价何时进入材料采购和电芯报价。"
+        },
+        {
+          "dimension": "供应",
+          "point": "地区现货和供应商资金周转可能独立于全球价格变化；采购保障需看可交付性。"
+        },
+        {
+          "dimension": "投后",
+          "point": "观察合格面积成本、产品组合、产销与现金周转，避免把金属价格造成的营收变化等同于技术进步或退步。"
+        }
+      ],
+      "counterpoint": "若合同可以同步传导金属价格、库存较低且规格与加工费稳定，降价会更直接进入采购；若加工费上涨、交付地区紧张或存在定价错配，短期收益可能缩小。公开资料没有给出CATL具体合同，不能据此测算公司降本金额。",
+      "watch_signals": [
+        {
+          "indicator": "同口径LME铜参考价及各交易所库存的独立观察日期",
+          "interpretation": "价格方向与地区库存需共同阅读；库存日期不同，不混作一个当日总量。",
+          "observation_source": "Cochilco La Rueda日公开报告",
+          "frequency": "每个发布交易日",
+          "decision_use": "识别需要复核采购定价窗口的价格变化，不直接判定短缺或过剩。",
+          "source_ids": [
+            "cochilco-daily-20261125",
+            "cochilco-daily-20261126"
+          ]
+        },
+        {
+          "indicator": "铜箔企业加工费、规格结构、产销及客户认证披露",
+          "interpretation": "辨别盈利变化来自材料价格、产品结构还是制造能力。",
+          "observation_source": "嘉元科技等上市铜箔企业定期报告及正式公告",
+          "frequency": "季度、半年和年度；重大订单/认证事件",
+          "decision_use": "支持供应商与投后经营评价，比较合格材料成本。",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        },
+        {
+          "indicator": "公开披露的应收、存货、现金周转和定价风险变化",
+          "interpretation": "检视收入及毛利改善是否同步转成现金，而非只看名义营收。",
+          "observation_source": "铜箔企业财务报告及风险说明",
+          "frequency": "按报告期；融资与重大经营事件",
+          "decision_use": "评估供应连续性及投后资金需求，决定是否深入复核经营质量。",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        }
+      ],
+      "management_question": "铜价变化会在何时、经由哪一个采购合同和规格进入成本？我们评价铜箔供应商时，是否把金属价格、加工能力和现金周转分开了？",
+      "source_ids": [
+        "cochilco-copper-week-20261120",
+        "cochilco-daily-20261124",
+        "cochilco-daily-20261125",
+        "jiayuan-annual-2025",
+        "cochilco-daily-20261126"
+      ],
+      "claimconfidence": {
+        "facts": "高：政府公开价格汇编与上市公司原始年报；价格保留真实观察日",
+        "analysis": "条件性传导分析；不将市场指数当CATL采购价，不用价格单独推断供需缺口"
+      },
+      "decision_checkpoints": [
+        {
+          "signal": "金属降价传到合格铜箔采购成本",
+          "current_reading": "11月24日12,035、25日11,703、26日11,965美元/吨：短期回升削弱持续基价下降的证据，但加工费和采购窗口仍决定实际传导。",
+          "upgrade_when": "金属价格变化持续，且实际适用品种的加工费和采购定价窗口支持传导，才增强箔材成本下降的判断。",
+          "downgrade_when": "加工费、产品结构、定价时差或认证要求抵消金属降价时，削弱直接降本判断。",
+          "decision_use": "分别观察金属基价、加工价值与采购时间窗口；采购端结论还需内部合同。",
+          "source_ids": [
+            "cochilco-daily-20261124",
+            "cochilco-daily-20261125",
+            "jiayuan-annual-2025",
+            "cochilco-daily-20261126"
+          ]
+        },
+        {
+          "signal": "价格变化与供应商现金周转",
+          "current_reading": "嘉元年报说明铜材采购和销售的计价时间可能不同，经营还受存货、应收及资金占用影响。",
+          "upgrade_when": "后续披露显示计价差、库存和应收周转改善，且经营现金流支持交付，可增强经营韧性的判断。",
+          "downgrade_when": "价格波动伴随存货积压、回款放慢或资金约束，则需提高对供应连续性的关注。",
+          "decision_use": "把铜箔供应商的加工竞争力与金属价格波动分开评价，不从铜价单独推算利润。",
+          "source_ids": [
+            "jiayuan-annual-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sodium-material-system-economics",
+      "title": "钠电改变锂、石墨与铜箔需求，竞争力最终落在硬碳、合格制造和系统效率",
+      "category": "钠电 / 材料替代 / 储能",
+      "thesis": "研判：钠电把部分资源风险转移到硬碳、专用材料与制造控制。CATL的材料投资应同时看被替代环节和新瓶颈；同口径项目全寿命成本与客户验收，比钠盐单价更能判断替代速度。",
+      "why_now": "CATL已把工程化进展、储能产品平台和欧洲合作目标分别披露。接近此前公布的2026年底节点，应把观察从技术发布推进到合格供货、实际项目采用和应用条件。",
+      "as_of": "2026-11-25",
+      "categories": [
+        "技术突破",
+        "供需平衡",
+        "竞争与合作"
+      ],
+      "tags": [
+        "钠离子",
+        "硬碳",
+        "NFPP",
+        "双铝集流体",
+        "系统成本"
+      ],
+      "chain_routes": [
+        "sodium",
+        "lfp",
+        "anode",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "hard_carbon",
+        "na_salts",
+        "na_cathode",
+        "na_cell",
+        "li_carbonate",
+        "natural_anode",
+        "synthetic_anode",
+        "collectors",
+        "ess_dc",
+        "ess_ac"
+      ],
+      "related_event_ids": [
+        "catl-tener-sodium-launch-20260622",
+        "catl-intilion-mou-20261027"
+      ],
+      "facts": [
+        {
+          "text": "CATL 4月披露钠电控水、硬碳产气、铝箔附着与自形成负极等工程进展，并提出Naxtra在2026年底全面量产的目标。该披露说明技术和产线阶段，未给出全年实际交付结果。",
+          "source_ids": [
+            "tech-catl-naxtra-20260421"
+          ]
+        },
+        {
+          "text": "6月TENER Sodium公告涉及NFPP、专用电压调节与BMS，并提出年底累计出货1GWh、2027年6月开始国际交付的计划；这些是当时的目标。",
+          "source_ids": [
+            "tech-catl-tener-sodium-20260622"
+          ]
+        },
+        {
+          "text": "10月CATL公告称与INTILION签署MoU，拟在未来五年于德语区等市场部署3GWh TENER系统；正文同时提及钠离子与锂离子合作，不据此把全部框架规模记为已交付钠电。",
+          "source_ids": [
+            "tech-catl-intilion-20261027"
+          ]
+        },
+        {
+          "text": "商用圆柱钠电样品研究确认硬碳负极、层状正极及双铝集流体；它支持材料替换的可行性，样品不是CATL产品。成本情景研究则表明能量密度、材料用量和矿物价格会共同改变竞争结果。",
+          "source_ids": [
+            "tech-na-cell-characterization-20250401",
+            "tech-na-cost-nature-20250113"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025-01-13",
+          "event": "原始成本研究建立多情景比较，识别能量密度和锂、石墨、镍供应条件的作用。",
+          "track": "经济性证据",
+          "stage": "模型研究；非厂商实时报价",
+          "source_ids": [
+            "tech-na-cost-nature-20250113"
+          ]
+        },
+        {
+          "date": "2025-04-01",
+          "event": "商用样品论文说明硬碳、双铝及电极设计的实际实现。",
+          "track": "材料与电芯",
+          "stage": "特定样品实验",
+          "source_ids": [
+            "tech-na-cell-characterization-20250401"
+          ]
+        },
+        {
+          "date": "2026-04-21",
+          "event": "CATL公开钠电工程化瓶颈处理进展。",
+          "track": "CATL制造",
+          "stage": "企业披露与量产目标",
+          "source_ids": [
+            "tech-catl-naxtra-20260421"
+          ]
+        },
+        {
+          "date": "2026-06-22",
+          "event": "TENER Sodium发布，把电芯化学扩展到电压调节、BMS和储能平台。",
+          "track": "系统产品",
+          "stage": "产品发布及交付计划",
+          "source_ids": [
+            "tech-catl-tener-sodium-20260622"
+          ]
+        },
+        {
+          "date": "2026-10-27",
+          "event": "CATL公布与INTILION的欧洲部署MoU。",
+          "track": "市场采用",
+          "stage": "框架部署目标",
+          "source_ids": [
+            "tech-catl-intilion-20261027"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "锂盐与LFP链",
+          "mechanism": "钠体系不以锂盐承担其主要储能反应；若在同一应用中形成实际替代，会改变对应新增锂材料需求。",
+          "boundary": "推论针对被替代的具体需求，不能把钠电规划GWh直接从全球锂需求中扣除。",
+          "source_ids": [
+            "tech-na-cost-nature-20250113",
+            "tech-catl-tener-sodium-20260622"
+          ]
+        },
+        {
+          "material": "石墨 → 硬碳",
+          "mechanism": "常规钠电采用硬碳后，材料价值转向前驱体、孔结构、首效、产气和批次稳定性。",
+          "boundary": "硬碳合格产出与电芯认证比宣布的材料吨位更重要；不宣称CATL使用某家未披露供应商。",
+          "source_ids": [
+            "tech-na-cell-characterization-20250401",
+            "tech-catl-naxtra-20260421"
+          ]
+        },
+        {
+          "material": "负极铜箔 → 适用铝箔",
+          "mechanism": "双铝集流体具备材料降本潜力；电极附着、表面处理及制造一致性形成新的验证需求。",
+          "boundary": "样品研究证明可行性，不证明各型号均采用相同厚度、配方或采购量。",
+          "source_ids": [
+            "tech-na-cell-characterization-20250401",
+            "tech-catl-naxtra-20260421"
+          ]
+        },
+        {
+          "material": "NFPP与其他钠正极",
+          "mechanism": "铁基聚阴离子与含镍层状正极的金属暴露不同，技术路线选择会改变上游观察对象。",
+          "boundary": "NFPP不代表全部钠电；通用层状材料研究不能替代CATL产品配方披露。",
+          "source_ids": [
+            "tech-na-cost-nature-20250113",
+            "tech-catl-tener-sodium-20260622"
+          ]
+        },
+        {
+          "material": "电芯 → DC/AC储能系统",
+          "mechanism": "电压窗口、辅助耗能、可用能量和寿命会影响PCS配置、占地及可售电量。",
+          "boundary": "先统一交付边界、温度、循环任务和质保，再比较成本。",
+          "source_ids": [
+            "tech-catl-tener-sodium-20260622",
+            "tech-na-cost-nature-20250113"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "材料替换",
+          "text": "钠盐、硬碳和适用铝箔组合，改变相应锂盐、石墨与铜箔的需求关系。",
+          "kind": "材料机制",
+          "source_ids": [
+            "tech-na-cell-characterization-20250401",
+            "tech-na-cost-nature-20250113"
+          ]
+        },
+        {
+          "step": "制造约束",
+          "text": "新的电极体系仍要解决含水、产气、附着和一致性；矿物丰富不能替代电池级质量。",
+          "kind": "机制研判",
+          "source_ids": [
+            "tech-catl-naxtra-20260421",
+            "tech-na-cell-characterization-20250401"
+          ]
+        },
+        {
+          "step": "经济比较",
+          "text": "按每kWh可用能量计算，能量密度与物料用量可抵消部分原料价差；锂价回落也会改变对LFP的相对优势。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "tech-na-cost-nature-20250113"
+          ]
+        },
+        {
+          "step": "客户采用",
+          "text": "系统平台、认证及实际交付决定技术能否进入项目；应把框架目标逐步转成可核对的验收里程碑。",
+          "kind": "经营研判",
+          "source_ids": [
+            "tech-catl-tener-sodium-20260622",
+            "tech-catl-intilion-20261027"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "材料投资",
+          "point": "把硬碳、界面和工艺验证能力作为新增观察对象，同时重估石墨及铜箔项目对化学体系的依赖。"
+        },
+        {
+          "dimension": "采购与产品",
+          "point": "建立同温度、同功率/时长、同交付边界的钠电与LFP比较；原料多元化的价值可与最低初始价格分开评价。"
+        },
+        {
+          "dimension": "海外储能",
+          "point": "从框架合作追到具体产品、认证、现场交付和性能验收；客户采用证据决定材料与产能投入节奏。"
+        }
+      ],
+      "counterpoint": "如果硬碳成本或良率改善慢、LFP继续降本，或目标工况下可用能量和效率不足，钠电的替代速度会放缓。反之，若同口径验收显示寿命、低温或供应风险优势能被客户付费接受，采用可能早于单看电芯价格的判断。2025模型不是对CATL 2026成本的估计。",
+      "watch_signals": [
+        {
+          "indicator": "钠电具体项目的产品确认、到场、并网与性能验收",
+          "interpretation": "已验收交付比MoU规模更能支持真实替代需求；没有项目证据时不累计为商运装机。",
+          "observation_source": "CATL、INTILION及项目业主公开公告",
+          "frequency": "按事件；每周核验",
+          "decision_use": "调整钠电材料和产能扩张的研究优先级",
+          "source_ids": [
+            "tech-catl-tener-sodium-20260622",
+            "tech-catl-intilion-20261027"
+          ]
+        },
+        {
+          "indicator": "硬碳及电极工艺的客户认证、稳定供货和一致性披露",
+          "interpretation": "若供货持续且工程问题收敛，新瓶颈可能从材料转向规模制造；单个实验性能不足以支持该判断。",
+          "observation_source": "材料厂法定披露、CATL技术说明和原始论文",
+          "frequency": "按事件；季度复核",
+          "decision_use": "比较硬碳、辅材和制造工艺合作机会",
+          "source_ids": [
+            "tech-catl-naxtra-20260421",
+            "tech-na-cell-characterization-20250401"
+          ]
+        },
+        {
+          "indicator": "同应用条件下钠电与LFP的可用kWh、效率、寿命及交付范围",
+          "interpretation": "只有同口径的设备与运行数据才能判断项目经济性，不以单一材料价格设通用切换阈值。",
+          "observation_source": "产品数据表、公开招标技术条件及项目验收资料",
+          "frequency": "每次产品或项目披露",
+          "decision_use": "选择适用场景与合作方案，避免跨系统报价比较",
+          "source_ids": [
+            "tech-catl-tener-sodium-20260622",
+            "tech-na-cost-nature-20250113"
+          ]
+        },
+        {
+          "indicator": "锂材料价格变化与产品成本/采用变化是否同时出现",
+          "interpretation": "矿价改变相对优势，但长协、库存和制造改善可能延缓传导；用持续证据更新情景而非追随单日涨跌。",
+          "observation_source": "公开同口径价格、企业财报与成本情景研究",
+          "frequency": "价格按周；企业信息按报告期",
+          "decision_use": "校准锂资源保障与钠电技术选项的相对价值",
+          "source_ids": [
+            "tech-na-cost-nature-20250113"
+          ]
+        }
+      ],
+      "management_question": "我们要通过钠电解决的是锂资源风险、某类工况性能，还是项目全寿命成本？当前最限制商业化的环节是硬碳、合格制造、系统适配还是客户采用？",
+      "source_ids": [
+        "tech-catl-naxtra-20260421",
+        "tech-catl-tener-sodium-20260622",
+        "tech-catl-intilion-20261027",
+        "tech-na-cost-nature-20250113",
+        "tech-na-cell-characterization-20250401"
+      ],
+      "claimconfidence": {
+        "facts": "高：CATL原始公告、开放原始论文；产品性能与里程碑分别保留企业披露和实验样品口径",
+        "analysis": "材料替换与商业化路径研判；不估计未披露成本、供应份额或实际订单转化率"
+      },
+      "decision_checkpoints": [
+        {
+          "signal": "钠电工程目标转成客户实际采用",
+          "current_reading": "Naxtra与TENER Sodium披露了工程和交付目标；INTILION合作为五年3GWh谅解备忘录，不能计为已交付钠电。",
+          "upgrade_when": "具体型号完成客户验收、持续商业交付或项目运行验证后，再增强其替代相应用途锂电的判断。",
+          "downgrade_when": "交付目标延后、认证或运行性能不足，或仍只有合作意向而缺少实际应用证据时，应放缓采用预期。",
+          "decision_use": "按动力与储能各自用途安排材料和系统观察，区分产品进度与市场订单。",
+          "source_ids": [
+            "tech-catl-naxtra-20260421",
+            "tech-catl-tener-sodium-20260622",
+            "tech-catl-intilion-20261027"
+          ]
+        },
+        {
+          "signal": "材料替代能否形成同工况系统经济性",
+          "current_reading": "公开研究说明成本受硬碳、制造、能量及规模共同影响；一个商用钠电样本的双铝方案不能代表所有产品。",
+          "upgrade_when": "同用途、同寿命和可用能量口径的项目表现支持经济性，且关键材料制造兑现，可增强商业采用判断。",
+          "downgrade_when": "只展示钠源便宜或单项性能，系统效率、材料收率或寿命仍不支持应用时，削弱成本领先判断。",
+          "decision_use": "同时观察新增硬碳等材料机会及锂、石墨、铜需求的具体替代范围。",
+          "source_ids": [
+            "tech-na-cost-nature-20250113",
+            "tech-na-cell-characterization-20250401"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mining-energy-load-boundaries",
+      "title": "矿山绿电接入会重排自建项目，电池储能与工业热储能要按负荷和责任分开判断",
+      "category": "矿山零碳 / 区域电网 / 工业热",
+      "thesis": "研判：矿业能源转型正在改变采购对象与项目边界。区域绿电网络可能承接单矿自建投资，现场可靠性仍需保障；工业蒸汽则可能由热储能承担。CATL应先识别电力、运输和工艺热各自的任务，再判断电池需求及合作入口。",
+      "why_now": "PLS在10月PPA中同时调整现场光伏与备电策略；同月Yarwun热储能进入设计阶段。两份原始文件显示，减碳目标相近的矿业项目，可能形成不同的储能配置和客户结构。",
+      "as_of": "2026-11-25",
+      "categories": [
+        "矿山零碳",
+        "资源与矿权"
+      ],
+      "tags": [
+        "PLS",
+        "Fortescue",
+        "矿山微网",
+        "工业热储能",
+        "能源成本"
+      ],
+      "chain_routes": [
+        "ess"
+      ],
+      "chain_node_ids": [
+        "mine_ci_users",
+        "ess_ac",
+        "ess_dc",
+        "li_rock",
+        "reagents"
+      ],
+      "related_event_ids": [
+        "pls-fortescue-power-20261028",
+        "arena-rio-tinto-thermal-storage-20261021"
+      ],
+      "facts": [
+        {
+          "text": "PLS的20年PPA最低约定325GWh/年，目标2029年供电；公告明确供电并非firm supply，矿区将扩展现场电源应对中断，并继续组合使用既有发电、光伏和BESS。",
+          "source_ids": [
+            "tech-pls-power-20261028"
+          ]
+        },
+        {
+          "text": "同一策略调整取消了此前拟议的中间阶段现场光伏投资。新连接容量超过100MW，为扩产以及潜在地下开采和车队电动化预留条件，后两项不能当已落实需求。",
+          "source_ids": [
+            "tech-pls-power-20261028"
+          ]
+        },
+        {
+          "text": "Fortescue确认PLS为Green Grid首个外部客户，其区域网络组合风光、储能、输电与能源管理；这使供能关系从矿企自用延伸到第三方供电。",
+          "source_ids": [
+            "tech-fortescue-green-grid-20261027"
+          ]
+        },
+        {
+          "text": "ARENA为Yarwun热储能先提供360万澳元设计支持，后续建设需阶段审查和最终投资决定。规划为360MWh热储能、78MW电输入和30MW热输出，服务连续工艺蒸汽。",
+          "source_ids": [
+            "tech-arena-yarwun-20261021",
+            "tech-arena-yarwun-project"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "event": "ARENA公布Yarwun示范，先设计研究，再按条件推进建设。",
+          "track": "工业热",
+          "stage": "FEED/可研；未据此认定商运",
+          "source_ids": [
+            "tech-arena-yarwun-20261021",
+            "tech-arena-yarwun-project"
+          ]
+        },
+        {
+          "date": "2026-10-27",
+          "event": "Fortescue宣布区域Green Grid取得首个外部客户。",
+          "track": "区域供电",
+          "stage": "长期合作披露",
+          "source_ids": [
+            "tech-fortescue-green-grid-20261027"
+          ]
+        },
+        {
+          "date": "2026-10-28",
+          "event": "PLS公告明确非保证供电、现场备电和光伏策略变化。",
+          "track": "矿区配置",
+          "stage": "PPA已签；生效及建设有条件",
+          "source_ids": [
+            "tech-pls-power-20261028"
+          ]
+        },
+        {
+          "date": "2029（目标）",
+          "event": "PPA计划开始供电，取决于设计、许可、建设与调试。",
+          "track": "未来里程碑",
+          "stage": "目标日期",
+          "source_ids": [
+            "tech-pls-power-20261028"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "锂辉石生产的能源成本",
+          "mechanism": "若低成本供电如期实现，可影响矿山长期单位成本和扩产韧性，进而影响上游项目竞争力。",
+          "boundary": "不能把矿山预期成本节约直接等同于CATL采购价格下降。",
+          "source_ids": [
+            "tech-pls-power-20261028"
+          ]
+        },
+        {
+          "material": "电池舱、PCS、EMS与矿区供电",
+          "mechanism": "区域网络与现场备电需要协调可靠性、调度和责任；电池项目可能由单矿业主、区域供能商或集成商采购。",
+          "boundary": "PPA电量不是储能容量；公告没有证明CATL获得该项目设备订单。",
+          "source_ids": [
+            "tech-pls-power-20261028",
+            "tech-fortescue-green-grid-20261027"
+          ]
+        },
+        {
+          "material": "铝产业链工艺热",
+          "mechanism": "Yarwun热储能把电转成热，向氧化铝工艺提供蒸汽，可改变燃料消耗和工业用电任务。",
+          "boundary": "热量容量与电池可放电能量不是同一口径，360MWh热不能计为锂电需求。",
+          "source_ids": [
+            "tech-arena-yarwun-20261021",
+            "tech-arena-yarwun-project"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "供电组织",
+          "text": "区域网络开放给外部矿山，单矿可把一部分自建能源投资转为购电和接入工程。",
+          "kind": "经营机制",
+          "source_ids": [
+            "tech-pls-power-20261028",
+            "tech-fortescue-green-grid-20261027"
+          ]
+        },
+        {
+          "step": "可靠性责任",
+          "text": "合同电量与连续供电责任不同；非保证供电保留现场发电、储能和控制系统的配置问题。",
+          "kind": "机制研判",
+          "source_ids": [
+            "tech-pls-power-20261028"
+          ]
+        },
+        {
+          "step": "终端任务",
+          "text": "供电、车队动力和连续蒸汽分别需要不同设备与验收指标，不能把矿业减碳投资统一换算成电池GWh。",
+          "kind": "技术与市场研判",
+          "source_ids": [
+            "tech-pls-power-20261028",
+            "tech-arena-yarwun-project"
+          ]
+        },
+        {
+          "step": "合作入口",
+          "text": "先明确谁承担停电和交付责任，再比较电池、备用电源、热储能与网络接入的组合，识别客户与集成伙伴。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "tech-pls-power-20261028",
+            "tech-fortescue-green-grid-20261027",
+            "tech-arena-yarwun-project"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "市场入口",
+          "point": "跟踪区域供能商及其集成伙伴，同时观察矿山现场独立供电需求的变化，避免只盯单矿设备招标。"
+        },
+        {
+          "dimension": "方案价值",
+          "point": "把矿山可靠性、峰值需量、黑启动/并网要求和运行任务作为系统设计问题；年度购电量不能直接决定储能时长。"
+        },
+        {
+          "dimension": "资源与材料",
+          "point": "能源基础设施可能改变上游矿山成本和扩产条件，但价格传导仍取决于实际供应、合同和市场。"
+        },
+        {
+          "dimension": "产业投资",
+          "point": "电化学储能关注可放电量与电力服务；热储能关注连续供汽和热成本，分别评估再识别协同。"
+        }
+      ],
+      "counterpoint": "如果接入工程或PPA条件迟延，矿山仍可能依赖更多现场供能；若网络可保证更高可靠性，现场配置需求也会改变。热储能若无法在电价、接入和连续供汽条件下成立，其示范规模不会自动转成可复制市场。",
+      "watch_signals": [
+        {
+          "indicator": "PPA生效、输电许可、接入施工与送电调试",
+          "interpretation": "这些里程碑决定区域供电何时真正替代部分现场方案；签约本身不足以调整供电风险假设。",
+          "observation_source": "PLS ASX公告、Fortescue项目披露",
+          "frequency": "按事件；季度工程复核",
+          "decision_use": "判断区域储能集成与矿区项目开发的时间窗口",
+          "source_ids": [
+            "tech-pls-power-20261028",
+            "tech-fortescue-green-grid-20261027"
+          ]
+        },
+        {
+          "indicator": "矿区备电、BESS和现场光伏的实际配置或招标变化",
+          "interpretation": "配置变化能显示可靠性需求由谁承担；非保证供电不能只用年度电量评价。",
+          "observation_source": "PLS电力策略及公开项目采购资料",
+          "frequency": "按事件；月度检索",
+          "decision_use": "识别系统供货对象、伙伴和责任边界",
+          "source_ids": [
+            "tech-pls-power-20261028"
+          ]
+        },
+        {
+          "indicator": "Green Grid新增外部客户及明确储能建设里程碑",
+          "interpretation": "若外部需求增加且项目转为建设，区域供能平台可能成为更集中的采购入口；计划量仍单列。",
+          "observation_source": "Fortescue正式公告和项目进展",
+          "frequency": "按事件；季度复核",
+          "decision_use": "评价区域平台合作与单矿项目的相对优先级",
+          "source_ids": [
+            "tech-fortescue-green-grid-20261027"
+          ]
+        },
+        {
+          "indicator": "Yarwun阶段审查、最终投资决定、接入和连续供汽试验",
+          "interpretation": "关注电价及真实供汽表现能否支撑复制；把研究、建设和运行分别记录。",
+          "observation_source": "ARENA项目页、Rio Tinto及项目知识分享",
+          "frequency": "按事件；季度里程碑复核",
+          "decision_use": "判断热储能承接哪些工业需求，以及电池与热系统的协同边界",
+          "source_ids": [
+            "tech-arena-yarwun-20261021",
+            "tech-arena-yarwun-project"
+          ]
+        }
+      ],
+      "management_question": "目标矿业客户真正要采购的是可靠电力、运输动力还是连续工艺热？哪一段责任由矿山、区域供能商或系统集成商承担，我们的电池和服务应该进入哪一段？",
+      "source_ids": [
+        "tech-pls-power-20261028",
+        "tech-fortescue-green-grid-20261027",
+        "tech-arena-yarwun-20261021",
+        "tech-arena-yarwun-project"
+      ],
+      "claimconfidence": {
+        "facts": "高：PPA原始文件、交易对手公告与政府资助项目文件；规模与时点保留目标/条件口径",
+        "analysis": "客户结构与技术分工研判；未假设CATL订单、矿山负荷曲线或未公开合同电价"
+      },
+      "decision_checkpoints": [
+        {
+          "signal": "矿山供电合同转成可靠电力与储能需求",
+          "current_reading": "PLS披露20年供电协议及2029年开始供电目标，供电为非保供（non-firm）安排，并保留矿区自身电源和储能需求。",
+          "upgrade_when": "电网建设、接入和实际供电推进，且公开负荷与调度安排明确储能作用时，增强项目需求兑现判断。",
+          "downgrade_when": "建设延期、供电条件或矿山运行方案变化，应相应调整储能项目时点与使用场景。",
+          "decision_use": "围绕具体负荷、可用率和供电缺口评估矿山储能，而非仅根据PPA金额或年电量。",
+          "source_ids": [
+            "tech-pls-power-20261028",
+            "tech-fortescue-green-grid-20261027"
+          ]
+        },
+        {
+          "signal": "工业热储能跨过设计与投资决策",
+          "current_reading": "Yarwun项目是热储能示范设计与开发，电输入、热输出和热储容量分别披露，仍附后续投资条件。",
+          "upgrade_when": "最终投资决定、建设及目标蒸汽工况验证推进，可增强工业热负荷采用该方案的判断。",
+          "downgrade_when": "停留在设计研究，或蒸汽供给、运行经济性和项目资金条件未落实，则不计入已兑现市场。",
+          "decision_use": "把电化学储电和工业供热分开匹配，识别适合CATL研究的电力侧与系统协同环节。",
+          "source_ids": [
+            "tech-arena-yarwun-20261021",
+            "tech-arena-yarwun-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-indonesia-three-chains",
+      "title": "欧洲与印尼合作：贸易规则、两轮车回收、CATL镍链是三条不同路径",
+      "thesis": "研判：真正影响CATL的，是印尼材料进入欧洲的条件、当地回收料的控制权，以及与既有镍材料布局的衔接。把三者合成“欧洲要回收印尼镍”会判断错竞争对象和投资环节。",
+      "why_now": "CEPA/IPA刚完成签署；印尼的回收示范仍处于2025—2027项目周期；CATL已有公开的一体化项目布局。三类行动正在同一市场汇合，但商业成熟度不同。",
+      "tags": [
+        "印尼",
+        "欧洲",
+        "镍钴",
+        "回收",
+        "市场准入"
+      ],
+      "chain_routes": [
+        "nmc",
+        "lfp",
+        "recycling"
+      ],
+      "timeline": [
+        {
+          "date": "2025-06-30",
+          "track": "CATL产业项目",
+          "event": "CBL与ANTAM、IBC合作项目宣布开工，覆盖镍矿、材料、电芯和回收。",
+          "stage": "项目建设",
+          "source_ids": [
+            "catl-idn-project"
+          ]
+        },
+        {
+          "date": "2025-09-23",
+          "track": "欧盟—印尼贸易规则",
+          "event": "CEPA与IPA谈判完成。",
+          "stage": "谈判完成",
+          "source_ids": [
+            "ec-cepa-benefits"
+          ]
+        },
+        {
+          "date": "2025-10—2027-09",
+          "track": "德国—印尼回收示范",
+          "event": "EV-Recycling-IDN项目周期，重点是退役电动两轮车锂电池的安全诊断和拆解。",
+          "stage": "示范与能力建设",
+          "source_ids": [
+            "german-idn-recycling"
+          ]
+        },
+        {
+          "date": "2026-03-31",
+          "track": "德国—印尼回收示范",
+          "event": "EKONID说明接收、放电、诊断、拆解及初步材料分离方案。",
+          "stage": "项目实施说明",
+          "source_ids": [
+            "ekonid-recycling"
+          ]
+        },
+        {
+          "date": "2026-11-21",
+          "track": "欧盟—印尼贸易规则",
+          "event": "双方签署CEPA/IPA；欧委会称完成内部程序后预计2027年初临时适用。",
+          "stage": "已签署，适用程序尚在推进",
+          "source_ids": [
+            "ec-cepa-sign"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "欧委会把镍、钴列为合作涉及的关键原材料；能源和原材料章节涉及出口、价格与许可透明度、环境评价等规则。协议本身不是某家企业的采购或回收订单。",
+          "source_ids": [
+            "ec-cepa-benefits",
+            "ec-cepa-chapters"
+          ]
+        },
+        {
+          "text": "德国资助示范针对的是电动两轮车用过的锂离子电池。实施方描述的核心环节为安全接收、放电、诊断、拆解和初分选；未披露商业规模电池级金属盐产出。",
+          "source_ids": [
+            "german-idn-recycling",
+            "ekonid-recycling"
+          ]
+        },
+        {
+          "text": "CATL印尼项目披露近60亿美元规划投资、一期电芯6.9GWh；满产目标包括每年处理约2万吨回收电池。这些是建设与满产目标，不能当作当前产量。",
+          "source_ids": [
+            "catl-idn-project"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "镍 Ni / 钴 Co",
+          "mechanism": "印尼资源、精炼中间品与NMC/NCA正极链相关；贸易投资条件变化可能改变参与者和销售去向。",
+          "boundary": "LFP正极不含镍钴；不能把所有储能需求都换算为印尼镍需求。",
+          "source_ids": [
+            "ec-cepa-benefits",
+            "doe-battery-chain"
+          ]
+        },
+        {
+          "material": "锂 Li",
+          "mechanism": "退役锂电池可成为二次锂源；LFP和NMC均涉及锂回收。",
+          "boundary": "两轮车拆解示范不等于已经生产合格碳酸锂，更不等于印尼新增锂矿。",
+          "source_ids": [
+            "ekonid-recycling",
+            "fraunhofer-recycling"
+          ]
+        },
+        {
+          "material": "铜 Cu / 铝 Al / 石墨 C",
+          "mechanism": "预处理可以分离壳体、铜铝组分；石墨再利用还取决于后续净化与产品认证。",
+          "boundary": "不能把含石墨的黑粉直接计作可售负极材料。",
+          "source_ids": [
+            "fraunhofer-recycling"
+          ]
+        },
+        {
+          "material": "LFP与NMC来料",
+          "mechanism": "NMC含镍钴，LFP主要回收价值来源不同；分选决定工艺、产品和收益。",
+          "boundary": "示范公告未给实际来料化学体系占比，不据此推算金属吨数。",
+          "source_ids": [
+            "doe-battery-chain",
+            "iea-ev-batteries-2026"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "规则",
+          "text": "贸易与投资安排提高欧洲参与者进入印尼材料链的可预期性。",
+          "kind": "机制研判",
+          "source_ids": [
+            "ec-cepa-chapters"
+          ]
+        },
+        {
+          "step": "竞争",
+          "text": "若形成实际投资与包销，竞争会落到优质中间品、客户认证和可追溯供货上。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "ec-cepa-benefits"
+          ]
+        },
+        {
+          "step": "循环",
+          "text": "两轮车回收示范可能先形成收集、诊断和拆解网络；其价值首先在于取得合格来料。",
+          "kind": "机制研判",
+          "source_ids": [
+            "ekonid-recycling"
+          ]
+        },
+        {
+          "step": "CATL",
+          "text": "产业项目的镍材料保障与回收网络需要分别考察，再判断是否能协同降低材料成本和供应风险。",
+          "kind": "经营研判",
+          "source_ids": [
+            "catl-idn-project"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "供应",
+          "point": "把原生镍中间品、可售正极和二次原料分开统计；一体化项目仍需要锂、锰及负极等其他输入。"
+        },
+        {
+          "dimension": "市场",
+          "point": "欧洲合作可能带来新客户和新材料伙伴，也可能争夺同一批合格供给；决定性证据是合同和实际交付。"
+        },
+        {
+          "dimension": "资本",
+          "point": "回收机会优先看料源合同、分选能力与下游合格产品买方；示范设备数量不能替代现金流。"
+        }
+      ],
+      "counterpoint": "如果协议适用推迟、实际优惠不覆盖相关产品，或回收示范无法取得足够同质化来料，短期经营影响会很小；不能据签约标题推定CATL订单变化。",
+      "watch_signals": [
+        {
+          "indicator": "CEPA正式适用日期、产品税则和原产地条件",
+          "interpretation": "判断具体镍中间品、正极或电芯能否取得实际待遇。",
+          "source_ids": [
+            "ec-cepa-sign",
+            "ec-cepa-chapters"
+          ],
+          "observation_source": "欧委会贸易局与正式协议公告",
+          "frequency": "按生效、税则和原产地规则公告复核",
+          "decision_use": "确定具体材料与销售目的地的准入条件，再比较出口和当地加工方案。"
+        },
+        {
+          "indicator": "示范厂实际接收吨数、LFP/NMC组成、合格产物与销售去向",
+          "interpretation": "区分回收网络能力和金属精炼能力。",
+          "source_ids": [
+            "ekonid-recycling"
+          ],
+          "observation_source": "德国环境保护出口倡议、EKONID项目进展",
+          "frequency": "每月查项目进展；投产或来料披露时复核",
+          "decision_use": "判断投资应先解决收集分选、金属精炼还是产物销路。"
+        },
+        {
+          "indicator": "CATL项目分项投产、可售产量和当地回收料采购公告",
+          "interpretation": "判断建设目标何时转成供应保障。",
+          "source_ids": [
+            "catl-idn-project"
+          ],
+          "observation_source": "CATL、ANTAM及IBC的项目与经营披露",
+          "frequency": "按项目里程碑及季度披露观察",
+          "decision_use": "将建设目标与可售产量分开，安排材料替代与供应商验证。"
+        }
+      ],
+      "management_question": "印尼机会应分别投向资源保障、材料加工、回收料渠道还是面向欧洲的合规交付？每一笔资本要解决哪个真实瓶颈？",
+      "source_ids": [
+        "ec-cepa-sign",
+        "ec-cepa-benefits",
+        "ec-cepa-chapters",
+        "german-idn-recycling",
+        "ekonid-recycling",
+        "catl-idn-project",
+        "doe-battery-chain",
+        "fraunhofer-recycling",
+        "iea-ev-batteries-2026"
+      ],
+      "as_of": "2026-11-25",
+      "claimconfidence": {
+        "facts": "高：政府、资助方与企业原始披露交叉核验",
+        "analysis": "机制研判：收益取决于适用规则、真实料源和产品认证"
+      },
+      "categories": [
+        "贸易与政策",
+        "资源与矿权",
+        "竞争与合作"
+      ],
+      "related_event_ids": [
+        "eu-indonesia-cepa-sign-20261121",
+        "idn-scooter-recycling-pilot-20260331",
+        "catl-indonesia-integration-20250630"
+      ],
+      "chain_node_ids": [
+        "ni_ore",
+        "hpal",
+        "ncm_salts",
+        "mechanical_recycle",
+        "hydro_recycle"
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "欧洲—印尼合作转成具体材料流",
+          "current_reading": "贸易框架、两轮车电池回收试点和CATL印尼一体化项目属于不同事实链；框架本身没有证明欧洲新增电池级材料采购。",
+          "upgrade_when": "适用规则实施，且披露明确产品、阶段、买方和实际交付的商业案例，可增强跨区域材料协同判断。",
+          "downgrade_when": "仅有政策或合作表述，缺少合格产品、执行安排与商业流向时，不能提高近期供给预期。",
+          "decision_use": "分别跟踪贸易准入、镍材料与电池回收，避免把三条链合成一项已完成业务。",
+          "source_ids": [
+            "ec-cepa-benefits",
+            "ec-cepa-chapters",
+            "catl-idn-project"
+          ]
+        },
+        {
+          "signal": "回收试点向稳定处理与再生材料销售推进",
+          "current_reading": "德国—印尼试点侧重废旧两轮车锂电池接收、诊断、放电、拆解与分类，并未披露商业电池盐产量。",
+          "upgrade_when": "持续合规来料、处理实绩及再生产品客户验收得到披露，才增强商业回收闭环判断。",
+          "downgrade_when": "来料来源或规模不稳定，或只完成收集拆解而未形成下游材料去向，则降低完整闭环的判断。",
+          "decision_use": "识别机会究竟在回收网络、诊断拆解、黑粉加工还是电池级再生材料。",
+          "source_ids": [
+            "german-idn-recycling",
+            "ekonid-recycling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basf-local-cam-recycling",
+      "title": "BASF开始供货、同时出售回收业务：欧洲本地化的价值落在不同环节",
+      "thesis": "研判：欧洲电池链正在分化——正极客户认证可以转成供货，回收资产却仍要解决来料与买方。合作价值应按每个环节的瓶颈判断，不能用“全产业链布局”统一估值。",
+      "why_now": "11月23日BASF同日披露德国向CATL初次CAM交付及回收业务出售安排；11月25日Fraunhofer更新指出欧洲回收产能与来料量不匹配。",
+      "tags": [
+        "欧洲本地化",
+        "BASF",
+        "正极",
+        "回收经济性"
+      ],
+      "chain_routes": [
+        "nmc",
+        "recycling"
+      ],
+      "timeline": [
+        {
+          "date": "2025-07-28",
+          "event": "CATL与BASF签署全球正极活性材料框架协议。",
+          "stage": "框架合作",
+          "source_ids": [
+            "basf-catl-framework"
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "event": "BASF与cylib签署回收业务出售协议。",
+          "stage": "交易签约",
+          "source_ids": [
+            "basf-cylib-sale"
+          ]
+        },
+        {
+          "date": "2026-11-23",
+          "event": "BASF宣布Schwarzheide向CATL开始初次CAM交付。",
+          "stage": "初始供货",
+          "source_ids": [
+            "basf-catl-delivery"
+          ]
+        },
+        {
+          "date": "2026-11-25",
+          "event": "Fraunhofer研究指出，欧洲回收容量口径多样，真实料源和本地买方决定经营效果。",
+          "stage": "产业研究",
+          "source_ids": [
+            "fraunhofer-recycling"
+          ]
+        },
+        {
+          "date": "2027年Q2—Q3",
+          "event": "回收交易预计交割窗口，附审批等条件。",
+          "stage": "未来目标",
+          "source_ids": [
+            "basf-cylib-sale"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "德国CAM交付经过开发、认证和本地生产转换；BASF也从长沙供货。公告没有给出此次供货吨数或价格。",
+          "source_ids": [
+            "basf-catl-delivery"
+          ]
+        },
+        {
+          "text": "拟出售业务含欧洲、北美回收活动及Schwarzheide黑粉工厂和试验设施，既有客户关系继续维持；交易还未交割。",
+          "source_ids": [
+            "basf-cylib-sale"
+          ]
+        },
+        {
+          "text": "Fraunhofer将预处理产黑粉与后端金属精炼分开，认为宣布产能不能替代实际处理量；IEA也指出退役电池形成料源有明显时滞。",
+          "source_ids": [
+            "fraunhofer-recycling",
+            "iea-ev-batteries-2026"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "材料认证",
+          "text": "客户专用CAM完成认证并供货，才形成可使用的本地材料供应。",
+          "kind": "事实与机制",
+          "source_ids": [
+            "basf-catl-delivery"
+          ]
+        },
+        {
+          "step": "本地配套",
+          "text": "若连续批次合格、交付稳定，本地化可减少跨区域调度风险；采购成本仍需含能源、加工与利用率。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "basf-catl-delivery"
+          ]
+        },
+        {
+          "step": "回收分工",
+          "text": "黑粉预处理与金属精炼分工加深；料源、精炼合格率和稳定买方比名义吨数更重要。",
+          "kind": "经营研判",
+          "source_ids": [
+            "fraunhofer-recycling"
+          ]
+        },
+        {
+          "step": "投资取舍",
+          "text": "正极投资看认证后订单兑现；回收投资看已锁定来料与合格产物去向，采用不同的验收指标。",
+          "kind": "投资研究",
+          "source_ids": [
+            "basf-catl-delivery",
+            "basf-cylib-sale"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "供应",
+          "point": "德国本地CAM多一个已发生供货的配套选择，但不推定其供货量足以覆盖CATL全部欧洲产能。"
+        },
+        {
+          "dimension": "资本",
+          "point": "回收资产收购价格之外，关键是可得黑粉数量、精炼损耗及回收盐的客户认证。"
+        },
+        {
+          "dimension": "合作",
+          "point": "欧洲回收与正极环节可能由不同专业伙伴承接；合同应明确物料所有权、规格和交付责任。"
+        }
+      ],
+      "counterpoint": "如果欧洲电芯产量恢复带来更多生产废料、且金属价格上升，回收收益条件会改善。此次出售本身不证明回收技术失败，也不证明cylib已获得盈利。",
+      "watch_signals": [
+        {
+          "indicator": "CATL欧洲CAM连续供货和产品认证进展",
+          "interpretation": "识别一次交付能否变成稳定材料配套。",
+          "source_ids": [
+            "basf-catl-delivery"
+          ],
+          "observation_source": "BASF与CATL后续产品、供货及经营公告",
+          "frequency": "按交付、认证和季度披露观察",
+          "decision_use": "比较已认证材料配套的持续交付能力，避免只按名义产能筛选合作方。"
+        },
+        {
+          "indicator": "BASF/cylib交割、料源合同和精炼产品买方",
+          "interpretation": "检验资产整合是否改善利用率与销路。",
+          "source_ids": [
+            "basf-cylib-sale"
+          ],
+          "observation_source": "BASF交易交割公告、买方及项目公开披露",
+          "frequency": "交易事件发生时；季度检查执行进展",
+          "decision_use": "区分资产交易完成与工厂利用率改善，核对合作责任和产物去向。"
+        },
+        {
+          "indicator": "欧洲实际电芯产出、生产废料与退役料结构",
+          "interpretation": "决定回收装置的真实负荷。",
+          "source_ids": [
+            "fraunhofer-recycling"
+          ],
+          "observation_source": "Fraunhofer ISI研究、欧洲电芯及回收企业经营披露",
+          "frequency": "季度汇总；重大停产或扩产事件复核",
+          "decision_use": "评估回收装置的来料保障和投产节奏。"
+        }
+      ],
+      "management_question": "欧洲每新增一笔材料或回收投资，是否已有经过认证的客户和可以交付的物料，而不仅是工厂与许可？",
+      "source_ids": [
+        "basf-catl-framework",
+        "basf-catl-delivery",
+        "basf-cylib-sale",
+        "fraunhofer-recycling",
+        "iea-ev-batteries-2026"
+      ],
+      "as_of": "2026-11-25",
+      "claimconfidence": {
+        "facts": "高：双方合作公告、交易公告及独立研究",
+        "analysis": "机制研判：未测算未披露的合同利润"
+      },
+      "categories": [
+        "竞争与合作",
+        "供需平衡"
+      ],
+      "related_event_ids": [
+        "basf-catl-europe-delivery-20261123",
+        "basf-cylib-recycling-agreement-20261123",
+        "fraunhofer-eu-recycling-20261125"
+      ],
+      "chain_node_ids": [
+        "electrode_mix",
+        "scrap",
+        "mechanical_recycle",
+        "hydro_recycle"
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "本地正极供应从首次交付走向持续合作",
+          "current_reading": "BASF披露完成客户认证并向CATL欧洲工厂交付正极材料；具体化学配方、数量、价格与份额未公开。",
+          "upgrade_when": "持续合格交付、更多客户应用或可比经营结果被披露，可增强本地正极供应成熟度判断。",
+          "downgrade_when": "后续认证、生产或供货条件改变，应降低对应项目的供应确定性；不能以未公开份额反推依赖度。",
+          "decision_use": "跟踪欧洲正极本地供给及客户采用，保留NMC等具体配方的披露边界。",
+          "source_ids": [
+            "basf-catl-delivery"
+          ]
+        },
+        {
+          "signal": "回收资产交易与真实处理量",
+          "current_reading": "BASF披露拟出售相关回收业务，包含Schwarzheide黑粉设施及试验装置；规划回收能力不代表可获得来料或盈利。",
+          "upgrade_when": "交易完成，持续来料、处理与产品去向得到验证，才增强新运营安排可兑现的判断。",
+          "downgrade_when": "交易条件未完成、来料不足或下游材料消纳不清晰，应降低按名义产能推导的收益预期。",
+          "decision_use": "把资产归属变化、运营连续性与回收经济性分别纳入合作研究。",
+          "source_ids": [
+            "basf-cylib-sale",
+            "fraunhofer-recycling",
+            "iea-ev-batteries-2026"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lithium-ownership-processing",
+      "title": "同一批正极业务19.94亿元销售额、6.87亿元净额收入：材料控制与加工能力要分开看",
+      "thesis": "研判：CATL可分别组织锂原料采购和正极加工。评估供应商时，营收、产量和材料所有权必须分开；锂价变化也不能直接等同于加工技术价值变化。",
+      "why_now": "POSCO于11月18日确认2026—2028年供锂协议已执行；湖南裕能年报提供了另一类真实合作机制：CATL提供碳酸锂、材料厂加工指定磷酸盐正极。",
+      "tags": [
+        "锂盐",
+        "磷酸铁锂",
+        "采购机制",
+        "供应商分析"
+      ],
+      "chain_routes": [
+        "lfp",
+        "nmc"
+      ],
+      "timeline": [
+        {
+          "date": "2025年度",
+          "event": "湖南裕能报告存在CATL提供碳酸锂、加工指定磷酸盐正极材料的业务。",
+          "stage": "已发生业务",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "event": "年报披露相关业务按净额法核算，并列示对应销售额与抵消成本。",
+          "stage": "法定报告披露",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ]
+        },
+        {
+          "date": "2026-11-18",
+          "event": "POSCO公告对CATL的2026—2028年锂供应协议已开始供货。",
+          "stage": "合同执行",
+          "source_ids": [
+            "posco-catl-lithium"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "湖南裕能2025年报第22、75页明确上述采购销售采用净额法；第75页列示对应销售额199,398.93万元、抵消成本130,674.65万元、净额收入68,724.28万元。",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ]
+        },
+        {
+          "text": "按公告金额换算，19.94亿元销售额减13.07亿元抵消成本，约为6.87亿元净额收入；净额收入仍需承担其他成本费用，不能当作利润。",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ]
+        },
+        {
+          "text": "POSCO公告确认已供锂，但未披露吨数和具体锂盐种类。两份披露证明不同合作环节存在，不能据此连成“POSCO这批锂送到湖南裕能”的物流事实。",
+          "source_ids": [
+            "posco-catl-lithium",
+            "yuneng-annual-2025"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "原料安排",
+          "text": "客户提供锂原料与材料厂自购原料，对采购资金、价格风险和收入确认的影响不同。",
+          "kind": "机制研判",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ]
+        },
+        {
+          "step": "加工环节",
+          "text": "材料厂仍需要前驱体、配方、烧结、包覆和质量控制，供应价值并未因原料由客户提供而消失。",
+          "kind": "技术与经营研判",
+          "source_ids": [
+            "yuneng-annual-2025",
+            "doe-battery-chain"
+          ]
+        },
+        {
+          "step": "指标变化",
+          "text": "同等物理加工量可能对应不同收入规模；只看营收增速或毛利率，容易误判份额和效率。",
+          "kind": "分析口径",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ]
+        },
+        {
+          "step": "CATL决策",
+          "text": "资源保障与加工伙伴选择可以分开比较；重点转向合格吨成本、锂损耗、稳定性和客户认证。",
+          "kind": "经营研判",
+          "source_ids": [
+            "posco-catl-lithium",
+            "yuneng-annual-2025"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "成本",
+          "point": "按自购料、客户供料等合同模式拆分锂价暴露，观察结算窗口及损耗分担。"
+        },
+        {
+          "dimension": "供应",
+          "point": "锂来源多元化只有在品级与材料配方匹配、认证通过后，才形成有效替代。"
+        },
+        {
+          "dimension": "资本",
+          "point": "比较材料标的时同时看出货吨数、加工收益和营运资金；不能拿净额收入与其他公司的总额收入直接比规模。"
+        }
+      ],
+      "counterpoint": "披露只涉及特定业务，不能外推为湖南裕能全部业务或CATL全部采购模式。净额确认也不自动意味着没有库存、信用或原料价格风险。",
+      "watch_signals": [
+        {
+          "indicator": "客户供料与自购料业务占比、实物出货量",
+          "interpretation": "把会计口径变化与实际产能利用率分离。",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ],
+          "observation_source": "湖南裕能年报、半年报及经营公告",
+          "frequency": "随法定报告更新",
+          "decision_use": "统一实物量与会计收入的分母，再比较材料厂份额和加工效率。"
+        },
+        {
+          "indicator": "不同型号加工费、良率、锂损耗和回款周期",
+          "interpretation": "用于评估加工能力的经营价值；公开资料只能提供部分证据。",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ],
+          "observation_source": "企业公开经营说明；内部采购与质量数据可补足的观察项",
+          "frequency": "公开披露时更新；企业内部数据按自身管理周期对照",
+          "decision_use": "在有真实业务数据时核对合格吨成本、资金占用和价格承担方；公开版不估造参数。"
+        },
+        {
+          "indicator": "POSCO供货产品、吨数及交付地域的后续正式披露",
+          "interpretation": "再判断对LFP或高镍链的实际覆盖，不凭“供锂”标题推定。",
+          "source_ids": [
+            "posco-catl-lithium"
+          ],
+          "observation_source": "POSCO与CATL后续供货披露",
+          "frequency": "按供货和产品公告事件复核",
+          "decision_use": "确认具体盐种和交付区域后，再判断对不同正极路线的支持。"
+        }
+      ],
+      "management_question": "我们要控制的是锂资源、合格材料配方，还是低成本加工能力？供应商的收入变化中，有多少来自锂价、合同模式，有多少来自真实份额和技术？",
+      "source_ids": [
+        "yuneng-annual-2025",
+        "posco-catl-lithium",
+        "doe-battery-chain"
+      ],
+      "as_of": "2026-11-25",
+      "claimconfidence": {
+        "facts": "高：法定年报金额核对及供应方执行公告",
+        "analysis": "分析口径明确；不推断未披露的具体物流与合同利润"
+      },
+      "categories": [
+        "原材料",
+        "供需平衡",
+        "竞争与合作"
+      ],
+      "related_event_ids": [
+        "csrc-lithium-hydroxide-registration-20261106",
+        "yuneng-catl-net-revenue-20260423",
+        "posco-catl-lithium-20261118"
+      ],
+      "chain_node_ids": [
+        "li_carbonate",
+        "lfp",
+        "fe_phosphate"
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "原料归属变化后的加工竞争力",
+          "current_reading": "湖南裕能披露的客户供锂模式影响收入净额确认；抵销原料金额不能等同利润，净额收入也不能直接用于推断售价暴跌。",
+          "upgrade_when": "同口径的加工毛利、单位损耗、合格交付和现金周转改善，可增强材料加工能力的判断。",
+          "downgrade_when": "仅净额收入变化而缺少工艺与成本证据，或合格交付和回款恶化时，不提高加工竞争力评价。",
+          "decision_use": "用加工价值与质量稳定性比较供应商，避免会计口径掩盖真实经营变化。",
+          "source_ids": [
+            "yuneng-annual-2025"
+          ]
+        },
+        {
+          "signal": "锂资源到正极加工的实际商业衔接",
+          "current_reading": "POSCO披露向CATL供应锂产品，但未公开数量、盐种及其是否流向某家具体正极厂。",
+          "upgrade_when": "相关主体明确披露产品、供给阶段和合同关系时，再把特定企业关系加入实际商业链。",
+          "downgrade_when": "仅凭同属一条化学路线或各自与CATL有合作，不能增强三方已形成闭环的判断。",
+          "decision_use": "区分资源安全、锂盐供应和代加工能力，并以实际合同决定资金及库存责任。",
+          "source_ids": [
+            "posco-catl-lithium",
+            "yuneng-annual-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ess-localization-bankability",
+      "title": "北美ESS竞争已延伸到本地材料、系统交付和融资，电芯报价只是其中一项",
+      "thesis": "研判：竞争对手把EV资产转向ESS并补齐本地材料与系统集成，会改变客户采购标准。CATL的海外机会需要同时满足产品性能、可交付性和项目融资，而不只是低元/Wh。",
+      "why_now": "LG与三星近期均披露北美ESS扩张和本地LFP配套；CATL与Crédit Agricole刚公布全球储能销售融资框架。",
+      "tags": [
+        "储能",
+        "北美",
+        "LFP",
+        "系统集成",
+        "项目融资"
+      ],
+      "chain_routes": [
+        "lfp",
+        "ess"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "event": "三星SDI披露年内ESS订单超过60GWh，并称美国方形LFP开始量产。",
+          "stage": "订单与生产启动分别披露",
+          "source_ids": [
+            "sdi-q3-2026"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "event": "LG提出通过EV线转换和新增产线，在2027年底使北美ESS产能超过70GWh。",
+          "stage": "扩产目标",
+          "source_ids": [
+            "lges-q3-2026"
+          ]
+        },
+        {
+          "date": "2026-11-14",
+          "event": "LG高管阐述硬件、软件与交钥匙方案一体化竞争路径。",
+          "stage": "经营战略",
+          "source_ids": [
+            "lges-ess-strategy"
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "event": "CATL公布5亿美元全球储能项目销售融资战略框架。",
+          "stage": "融资框架",
+          "source_ids": [
+            "catl-financing"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "LG披露扩大本地LFP正极供应商及原料来源，同时转换部分EV产线。三星也披露与韩国材料公司签订LFP正极长期供应协议。",
+          "source_ids": [
+            "lges-q3-2026",
+            "sdi-q3-2026"
+          ]
+        },
+        {
+          "text": "LG的70GWh是2027年底产能目标，三星60GWh是当年所获订单口径，两者不能相加为现有产能，也不能作为实际交付量。",
+          "source_ids": [
+            "lges-q3-2026",
+            "sdi-q3-2026"
+          ]
+        },
+        {
+          "text": "CATL的5亿美元是销售融资框架，服务全球合作伙伴的储能项目；原公告未披露已提款金额或对应电池订单。",
+          "source_ids": [
+            "catl-financing"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "已有资产",
+          "text": "EV生产资产向ESS转换，为竞争对手提供新增产能路径，但转产仍需产品、工艺与客户认证。",
+          "kind": "机制研判",
+          "source_ids": [
+            "lges-q3-2026"
+          ]
+        },
+        {
+          "step": "材料配套",
+          "text": "本地正极和锂来源配套，将竞争从电芯工厂延伸到上游材料资格。",
+          "kind": "经营研判",
+          "source_ids": [
+            "lges-q3-2026",
+            "sdi-q3-2026"
+          ]
+        },
+        {
+          "step": "系统交付",
+          "text": "客户购买可运行的储能资产，需电池与电力转换、控制、质保和服务共同兑现性能。",
+          "kind": "经营研判",
+          "source_ids": [
+            "lges-ess-strategy"
+          ]
+        },
+        {
+          "step": "项目兑现",
+          "text": "技术可用之后，融资与交付条件影响开工；框架融资转为实际项目交割，才可能推动设备订单。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "catl-financing"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "市场",
+          "point": "按国家和客户类别比较准入、交付和服务条件，不能把美国本地策略直接外推到全部海外市场。"
+        },
+        {
+          "dimension": "合作",
+          "point": "关注能补齐PCS/EMS、并网、运维与项目开发能力的伙伴；电芯优势需要通过系统合同兑现。"
+        },
+        {
+          "dimension": "资本",
+          "point": "把储能订单跟踪延伸到融资交割、开工和商业运行，避免将框架额度当收入。"
+        }
+      ],
+      "counterpoint": "如果转产良率、材料认证或客户项目进度不达预期，公布的产能目标未必形成有效竞争。企业声称的供应链资格仍应以适用规则和项目事实判断。",
+      "watch_signals": [
+        {
+          "indicator": "分工厂的量产、认证、实际出货和产线利用率",
+          "interpretation": "衡量北美新增ESS供给，而非累加公告数字。",
+          "source_ids": [
+            "lges-q3-2026",
+            "sdi-q3-2026"
+          ],
+          "observation_source": "LG新能源、三星SDI的工厂与季度经营公告",
+          "frequency": "季度检查；量产或交付事件复核",
+          "decision_use": "按合格出货和客户采用判断竞争供给，避免把订单与产能相加。"
+        },
+        {
+          "indicator": "本地正极长协执行、系统质保与运维合同",
+          "interpretation": "判断竞争优势是否超出电芯价格。",
+          "source_ids": [
+            "lges-ess-strategy",
+            "sdi-q3-2026"
+          ],
+          "observation_source": "材料供应商、系统集成商及电池企业公告",
+          "frequency": "按合同或产品认证事件观察",
+          "decision_use": "评估当地材料资格、系统责任和生命周期服务对成交的影响。"
+        },
+        {
+          "indicator": "CATL框架下具体项目融资交割与设备交付",
+          "interpretation": "判断融资合作是否真正促成新增需求。",
+          "source_ids": [
+            "catl-financing"
+          ],
+          "observation_source": "CATL、融资机构与项目业主的公开里程碑",
+          "frequency": "按融资交割、设备交付和并网事件观察",
+          "decision_use": "区分融资框架与可执行项目，判断需求何时转为交付和收入。"
+        }
+      ],
+      "management_question": "面对海外储能客户，我们提供的是电芯、直流侧系统，还是可融资的完整项目方案？最影响成交的是材料资格、系统责任、质保还是资金？",
+      "source_ids": [
+        "lges-q3-2026",
+        "sdi-q3-2026",
+        "lges-ess-strategy",
+        "catl-financing"
+      ],
+      "as_of": "2026-11-25",
+      "claimconfidence": {
+        "facts": "高：三家企业原始公告",
+        "analysis": "竞争机制研判；未估计CATL订单损益"
+      },
+      "categories": [
+        "竞争与合作",
+        "供需平衡"
+      ],
+      "related_event_ids": [
+        "lges-north-america-ess-20261103",
+        "samsung-sdi-ess-orders-20261029",
+        "catl-credit-agricole-financing-framework-20261120"
+      ],
+      "chain_node_ids": [
+        "ess_dc",
+        "ess_ac",
+        "grid_users",
+        "lfp"
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "储能本地化产能变成客户合格交付",
+          "current_reading": "LGES披露本地LFP布局与产线转换目标；Samsung SDI披露的订单规模不是当期已投产能力。",
+          "upgrade_when": "转换后的产线通过客户认证并持续出货，项目收入和运行实绩得到验证，再增强当地供给竞争判断。",
+          "downgrade_when": "工厂、认证或客户项目延期，或订单阶段和可交付能力不匹配时，降低近期产能兑现预期。",
+          "decision_use": "比较实际系统供应与本地服务能力，将竞争出现的年份和地区定位清楚。",
+          "source_ids": [
+            "lges-q3-2026",
+            "sdi-q3-2026",
+            "lges-ess-strategy"
+          ]
+        },
+        {
+          "signal": "融资支持转化为项目落地",
+          "current_reading": "CATL披露5亿美元销售融资框架；框架额度不代表实际提款、项目订单或已经完成融资关闭。",
+          "upgrade_when": "具体项目完成融资、执行交付并形成验收与回款，可增强融资协同促进业务的判断。",
+          "downgrade_when": "项目尚未满足融资条件，或系统交付、并网和客户回款受阻，则不按额度推算已实现销售。",
+          "decision_use": "把电芯成本、系统性能、项目融资和全周期交付一起评估。",
+          "source_ids": [
+            "catl-financing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solid-state-engineering-gates",
+      "title": "固态突破要沿材料—电芯—制造验证：低压力测试与电解质吨位解决的是不同问题",
+      "thesis": "研判：QuantumScape的界面/压力方案与Solid Power的连续电解质生产，分别触及固态电池的性能和制造瓶颈。对CATL产业投资，重点是这些进展能否在同一商业电芯中同时成立。",
+      "why_now": "11月两家公司分别披露全固态平台测试及硫化物电解质生产线调试，容易被新闻标题合并为“固态已经量产”。",
+      "tags": [
+        "固态电池",
+        "硫化物",
+        "锂金属",
+        "制造良率"
+      ],
+      "chain_routes": [
+        "nmc",
+        "anode"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-03",
+          "event": "Solid Power宣布MOBIUS已投入材料，预计年底完成调试；计划新增45吨/年电解质产能。",
+          "stage": "材料线调试",
+          "source_ids": [
+            "solid-power-q3"
+          ]
+        },
+        {
+          "date": "2026-11-11",
+          "event": "QuantumScape发布Osprey全固态开发平台与早期测试数据。",
+          "stage": "平台研发测试",
+          "source_ids": [
+            "qs-osprey"
+          ]
+        },
+        {
+          "date": "2026年底",
+          "event": "MOBIUS完成调试为公司提出的目标，届时还须观察合格产品实际产量。",
+          "stage": "未来工程节点",
+          "source_ids": [
+            "solid-power-q3"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "Osprey把陶瓷隔膜、无负极锂金属设计与固态正极结合。公司披露一大气压条件和循环、快充结果，并将约1,100Wh/L写为预测值；它是开发平台。",
+          "source_ids": [
+            "qs-osprey"
+          ]
+        },
+        {
+          "text": "Solid Power的45吨/年是计划新增电解质产能，总产能目标75吨/年；公司披露第三季度向三星SDI、SK On提供电解质材料。",
+          "source_ids": [
+            "solid-power-q3"
+          ]
+        },
+        {
+          "text": "电解质吨数缺少配方用量、加工损耗与电芯设计信息，不能直接换算为GWh；不同测试样本的各项最佳指标也不能拼成单一量产电芯规格。",
+          "source_ids": [
+            "qs-osprey",
+            "solid-power-q3"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "界面问题",
+          "text": "低压力下维持循环若可复现，可能降低堆压与封装负担；必须同时满足电芯尺寸和使用条件。",
+          "kind": "技术研判",
+          "source_ids": [
+            "qs-osprey"
+          ]
+        },
+        {
+          "step": "材料供给",
+          "text": "连续电解质生产若保持批次一致性，才可能改善供货与成本；产线调试只完成其中一步。",
+          "kind": "技术研判",
+          "source_ids": [
+            "solid-power-q3"
+          ]
+        },
+        {
+          "step": "制造整合",
+          "text": "材料、界面、湿度控制、成型和良率共同决定可交付电芯，任何一项都不能由单个实验指标替代。",
+          "kind": "工程研判",
+          "source_ids": [
+            "qs-osprey",
+            "solid-power-q3"
+          ]
+        },
+        {
+          "step": "价值迁移",
+          "text": "采用锂金属/无负极的具体路线可能减少石墨需求，并增加固态电解质和界面工艺价值；不能推广到所有固态路线。",
+          "kind": "路线条件研判",
+          "source_ids": [
+            "qs-osprey"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "技术",
+          "point": "用相同尺寸、面容量、温度、倍率和外压比较测试，避免把不同最佳结果混为性能包。"
+        },
+        {
+          "dimension": "供应",
+          "point": "材料投资要观察稳定交付与客户验证；电芯产能投资还需客户定点及规模良率证据。"
+        },
+        {
+          "dimension": "资本",
+          "point": "按材料收入、许可里程碑、设备收入和电芯交付分开估值，防止同一预期重复计入不同环节。"
+        }
+      ],
+      "counterpoint": "如果数据只在小面积、特殊温度或难以放大的制造条件下成立，近期替代价值有限；反之，客户验证和连续批量合格将显著增强其商业意义。",
+      "watch_signals": [
+        {
+          "indicator": "多层大面积电芯、实际面容量、外压及测试一致性",
+          "interpretation": "检验性能是否跨过从样品到产品的门槛。",
+          "source_ids": [
+            "qs-osprey"
+          ],
+          "observation_source": "QuantumScape原始测试披露及白皮书",
+          "frequency": "按新测试、客户验证及季度披露观察",
+          "decision_use": "判断不同性能是否在同一电芯和同一条件下成立，再决定技术跟进重点。"
+        },
+        {
+          "indicator": "MOBIUS完成调试、合格吨数与客户重复采购",
+          "interpretation": "检验材料制造与销售能力，不只看名义产能。",
+          "source_ids": [
+            "solid-power-q3"
+          ],
+          "observation_source": "Solid Power季度披露及连续电解质产线公告",
+          "frequency": "季度检查；调试完成或客户采购事件复核",
+          "decision_use": "区分名义材料产能、合格产出与稳定供货能力。"
+        },
+        {
+          "indicator": "客户定点、连续良率、单位成本和质保责任",
+          "interpretation": "决定何时从研发期权进入商业竞争。",
+          "source_ids": [
+            "qs-osprey",
+            "solid-power-q3"
+          ],
+          "observation_source": "电池企业及汽车客户的公开定点与量产披露",
+          "frequency": "按客户定点、批量交付及量产事件观察",
+          "decision_use": "据商业验证阶段调整技术合作与投资评估，而非根据单项实验指标定价。"
+        }
+      ],
+      "management_question": "一个新技术项目究竟解决了哪一个瓶颈？其性能、批量制造和客户采用三个门槛中，已经跨过了哪一项？",
+      "source_ids": [
+        "qs-osprey",
+        "solid-power-q3"
+      ],
+      "as_of": "2026-11-25",
+      "claimconfidence": {
+        "facts": "高：企业原始阶段披露；性能属于企业自述",
+        "analysis": "工程门槛分析；没有宣称量产替代已发生"
+      },
+      "categories": [
+        "技术突破",
+        "竞争与合作"
+      ],
+      "related_event_ids": [
+        "quantumscape-osprey-20261111",
+        "solid-power-mobius-commissioning-20261103"
+      ],
+      "chain_node_ids": [
+        "formation",
+        "natural_anode",
+        "synthetic_anode",
+        "cell_assembly"
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "固态技术跨过同一电芯的工程验证",
+          "current_reading": "QuantumScape的Osprey是研发平台，包含特定测试条件和能量密度预测；不能与其他样本最佳指标合成量产产品。",
+          "upgrade_when": "同一产品在相关温度、压力、寿命与能量口径下获得客户验证，并披露稳定制造与交付，才增强商业化判断。",
+          "downgrade_when": "性能只能在不一致条件下成立，或批次一致性、工艺和客户验证延迟时，降低近期替代预期。",
+          "decision_use": "围绕真正尚未跨过的工程关口比较路线与合作价值。",
+          "source_ids": [
+            "qs-osprey"
+          ]
+        },
+        {
+          "signal": "固态电解质吨数转成实际材料采用",
+          "current_reading": "Solid Power披露新增电解质产能计划及向SDI、SK On供样；材料产能吨数不能直接换算客户电芯GWh。",
+          "upgrade_when": "连续合格材料交付、客户电芯应用与适用单位用量明确后，再增强规模化材料需求判断。",
+          "downgrade_when": "仅扩产目标、送样或缺少客户采用证据时，不提高已兑现市场规模。",
+          "decision_use": "分别判断电解质材料业务、制造设备能力与电芯技术采用的投资逻辑。",
+          "source_ids": [
+            "solid-power-q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shipping-route-specific-risk",
+      "title": "苏伊士部分复航与霍尔木兹风险同时存在：供应链预警要落到具体航线",
+      "thesis": "研判：同一个“中东风险”标题，对欧洲交付、海湾项目和能源成本的传导路径不同。用区域新闻直接触发全线库存预警，会同时产生误报和漏报。",
+      "why_now": "Maersk在11月宣布ME1恢复苏伊士航线，而联合国随后仍警示霍尔木兹及曼德海峡风险。两组事实可以同时成立。",
+      "tags": [
+        "航运",
+        "欧洲交付",
+        "海湾项目",
+        "库存"
+      ],
+      "chain_routes": [
+        "ess",
+        "lfp",
+        "nmc",
+        "anode"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "event": "Maersk宣布印度—欧洲ME1服务从绕好望角改走苏伊士。",
+          "stage": "特定航线调整公告",
+          "source_ids": [
+            "maersk-me1"
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "event": "公告列示首个西向航次从Salalah出发的生效计划。",
+          "stage": "公布的航次安排",
+          "source_ids": [
+            "maersk-me1"
+          ]
+        },
+        {
+          "date": "2026-11-09",
+          "event": "Maersk区域更新把ME1变化与霍尔木兹相关运营公告分开说明。",
+          "stage": "运营更新",
+          "source_ids": [
+            "maersk-imea"
+          ]
+        },
+        {
+          "date": "2026-11-13",
+          "event": "联合国通报仍警示中东通航风险；同时说明近期未收到红海商船遇袭报告。",
+          "stage": "安全态势通报",
+          "source_ids": [
+            "un-maritime-20261113"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "ME1连接印度与欧洲，公告列出Mundra、Nhava Sheva、Salalah、苏伊士和欧洲港口；它不代表全部亚洲—欧洲航线同步恢复。",
+          "source_ids": [
+            "maersk-me1"
+          ]
+        },
+        {
+          "text": "承运人明确相关服务调整取决于红海安全持续稳定，11月区域更新仍要求关注海湾航线与陆桥衔接。",
+          "source_ids": [
+            "maersk-me1",
+            "maersk-imea"
+          ]
+        },
+        {
+          "text": "联合国11月13日的统计和风险说明有明确时点，不能当成所有航线当天的订舱或危险品受理指令。",
+          "source_ids": [
+            "un-maritime-20261113"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "具体通道",
+          "text": "先区分红海—苏伊士、霍尔木兹及陆桥转运，再匹配实际装卸港和航线。",
+          "kind": "分析方法",
+          "source_ids": [
+            "maersk-imea"
+          ]
+        },
+        {
+          "step": "交付影响",
+          "text": "运期改变通过船期、转运和危险品受理，影响电芯/系统交付以及在途库存。",
+          "kind": "经营研判",
+          "source_ids": [
+            "maersk-me1",
+            "maersk-imea"
+          ]
+        },
+        {
+          "step": "间接成本",
+          "text": "海湾能源运输风险可通过能源、燃料及保险成本传导；不等于CATL某条原料运输链已经停运。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "un-maritime-20261113"
+          ]
+        },
+        {
+          "step": "应对选择",
+          "text": "只有路线与交付期限重合，才比较改道、替代港、库存和交付调整，避免按地图颜色统一备货。",
+          "kind": "经营研判",
+          "source_ids": [
+            "maersk-imea"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "供应",
+          "point": "矿石、化工材料、电芯和储能整柜的运输条件不同，预警应落到物料和具体服务。"
+        },
+        {
+          "dimension": "成本",
+          "point": "拆开基础运费、附加费、保险和在途资金占用，避免只看集装箱指数。"
+        },
+        {
+          "dimension": "市场",
+          "point": "对接客户工程节点；晚到一批材料与推迟储能商业运行的损失机制不同。"
+        }
+      ],
+      "counterpoint": "若承运人临时撤回恢复计划或客户改用其他路线，当前推演需要重算。公开报道能够识别通道风险，不能识别CATL具体船货敞口。",
+      "watch_signals": [
+        {
+          "indicator": "承运人具体服务及危险品订舱公告",
+          "interpretation": "比区域风险标题更接近电池货物实际可运输性。",
+          "source_ids": [
+            "maersk-me1",
+            "maersk-imea"
+          ],
+          "observation_source": "承运人服务调整及危险品受理公告",
+          "frequency": "高风险时每日检索；具体航线变更立即复核",
+          "decision_use": "明确可用服务、港口及货类，比较改道或调整交付的可行性。"
+        },
+        {
+          "indicator": "实际ETA变化、转运等待和目的港交付条件",
+          "interpretation": "决定交付承诺和安全库存是否需要调整。",
+          "source_ids": [
+            "maersk-imea"
+          ],
+          "observation_source": "承运人公开时刻和港口通告；具体货物需企业运输记录",
+          "frequency": "公开事件发生时；运输记录按企业自身周期对照",
+          "decision_use": "把公开通道风险与实际交期匹配，识别是否需要库存或运输安排调整。"
+        },
+        {
+          "indicator": "同一路线运费、保险与库存覆盖天数",
+          "interpretation": "比较改道和增加缓冲的总成本；不在公开版虚构公司内部参数。",
+          "source_ids": [
+            "un-maritime-20261113",
+            "maersk-imea"
+          ],
+          "observation_source": "承运人公开附加费；保险与库存取决于实际合同和内部记录",
+          "frequency": "按费率公告及合同复核",
+          "decision_use": "用同一路线、货类与交期比较总成本；公开版不据区域新闻估算企业损益。"
+        }
+      ],
+      "management_question": "这条风险影响哪一种材料、哪一个客户和哪段交付期限？可替代路线是否接受该货类，总成本和交付影响是多少？",
+      "source_ids": [
+        "un-maritime-20261113",
+        "maersk-me1",
+        "maersk-imea"
+      ],
+      "as_of": "2026-11-25",
+      "claimconfidence": {
+        "facts": "高：承运人实际服务公告与联合国通报",
+        "analysis": "路线条件研判；未声称掌握CATL实际船货"
+      },
+      "categories": [
+        "地缘与航运",
+        "贸易与政策"
+      ],
+      "related_event_ids": [
+        "un-hormuz-bab-al-mandab-20261113",
+        "maersk-me1-suez-20261102"
+      ],
+      "chain_node_ids": [
+        "ess_ac",
+        "ev_pack",
+        "collectors"
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "航线恢复转成适用船货的实际可达性",
+          "current_reading": "Maersk披露的是具体印度—欧洲ME1航线安排，并附安全条件；不能代表所有亚洲—欧洲业务恢复苏伊士航行。",
+          "upgrade_when": "同一航线实际班期、承运与航行记录支持恢复，且持续运行，可增强该路径交付稳定性判断。",
+          "downgrade_when": "该航线再次改道、停航或限制接货，应提高相关交付窗口与运输成本关注。",
+          "decision_use": "只有获得具体起讫港、承运人与货物路径，才将公共事件映射为企业敞口。",
+          "source_ids": [
+            "maersk-me1"
+          ]
+        },
+        {
+          "signal": "地区风险映射到材料和项目物流",
+          "current_reading": "红海、海湾及陆桥公告对应不同地理与时间范围；联合国地区信息可提供背景，不能单独证明某批货已中断。",
+          "upgrade_when": "承运人或项目企业明确披露与有关材料航线相关的中断、成本或到货变化，增强具体供应影响判断。",
+          "downgrade_when": "只有广域冲突消息，没有适用线路、供应商或项目证据时，不上调某项材料交付损失判断。",
+          "decision_use": "聚焦受影响的矿产品、化工试剂与设备运输，评估备选路径及库存问题。",
+          "source_ids": [
+            "maersk-imea",
+            "un-maritime-20261113"
+          ]
+        }
+      ]
+    }
+  ]
+}
