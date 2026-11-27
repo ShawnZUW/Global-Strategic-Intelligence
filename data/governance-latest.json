@@ -1,12 +1,12 @@
 {
   "meta": {
-    "as_of": "2026-11-26",
-    "generated_at": "2026-11-26T08:36:42+08:00",
+    "as_of": "2026-11-27",
+    "generated_at": "2026-11-27T08:42:18+08:00",
     "scope": "海外法人治理免费数据POC；10个公开产业测试法人，不代表宁德时代持股；加拿大为非营利行业组织",
-    "mode": "首次基线；公开登记网页、官方文件及企业披露；无付费或已成功调用API",
-    "update_note": "原治理latest及history不存在（404），本轮建立首次基线。10国10主体，10/10取得可追踪官方主体标识（NZBN非公司注册号；日本法人番号非商事登记号；印尼为历史登记编号）。5国直接读到主体官方登记/官方基础数据网页（英国、挪威、加拿大、澳大利亚、日本）；法国官方索引；另4国采用披露/官方文件补充。确认当日变更0（历史不可比），10个基线主体均有未核验字段。字段可得51/100（含部分人员/控制信息及明确标注的历史地址；非完整性或实时性）。",
-    "baseline": true,
-    "comparison_status": "不可比对",
+    "mode": "第二次公开原文核验；无付费，无成功API调用",
+    "update_note": "固定10国10实体均取得至少一项官方/企业原始信息（法国登记仅索引，另以企业公告补充）。当前核验字段与累计字段分开。新发现的PLS股权/员工股份事项发生在11月26日基线前，ACC及Mercury历史任命亦非日间变化。已确认基线后生效变化0（非全量无变化）；发现两组待生效事项。",
+    "baseline": false,
+    "comparison_status": "可靠基线已读取；部分字段可比，未覆盖字段不可比",
     "target_countries": 10,
     "target_entities": 10,
     "successful_countries": 10,
@@ -16,8 +16,8 @@
     "disclosure_fallback_entities": 4,
     "confirmed_changes": 0,
     "pending_entities": 10,
-    "restricted_entities": 8,
-    "restricted_definition": "英国、法国、德国、挪威、新西兰、澳大利亚、新加坡、印尼有直接采集/登记详细字段限制；加拿大、日本另有法定覆盖边界。",
+    "restricted_entities": 7,
+    "restricted_definition": "法国、德国、挪威（角色API本轮未重查）、新西兰、澳大利亚、新加坡、印尼仍未取得完整登记/角色；英国人员页本轮已读。加拿大、日本仍有制度性覆盖边界。",
     "coverage": {
       "denominator": 100,
       "field_denominator": 10,
@@ -25,21 +25,290 @@
         "legal_name": 10,
         "identifier": 10,
         "status": 5,
-        "address": 8,
-        "directors": 7,
+        "address": 10,
+        "directors": 9,
         "supervisors": 3,
-        "executives": 3,
-        "secretary": 3,
-        "capital": 0,
-        "ownership": 2
+        "executives": 6,
+        "secretary": 4,
+        "capital": 2,
+        "ownership": 4
       },
-      "obtained": 51,
-      "definition": "有可追溯值即计1，部分及有明确日期的历史值也计；空白/不适用计未取得，不代表数据完整或实时。"
+      "obtained": 63,
+      "current_counts": {
+        "legal_name": 10,
+        "identifier": 7,
+        "status": 5,
+        "address": 9,
+        "directors": 9,
+        "supervisors": 3,
+        "executives": 6,
+        "secretary": 4,
+        "capital": 2,
+        "ownership": 4
+      },
+      "current_obtained": 59,
+      "previous_obtained": 51,
+      "definition": "累计字段可得率，10实体×10目标类；有可追溯的部分或历史/企业披露值计1，不等同完整或现行官方登记。capital允许明确授权/实缴或企业声明注册资本；证券发行数量单列。当前核验数仅计本次实际读取字段。未复核旧值保留原日期。"
     },
-    "missing_fields": "完整资本、完整股东名册、部分现任/离任角色、任免生效日及披露日；登记/披露数据口径差异。",
-    "previous_snapshot": null
+    "missing_fields": "所有样本仍有未覆盖字段；完整非上市公司股权、法定代表权、现行注册资本及任免披露时差，登记与披露口径仍不同。",
+    "previous_snapshot": "data/governance-history/2026-11-26.json",
+    "newly_discovered_historical_events": 5,
+    "pending_proposal_events": 2,
+    "coverage_completion_events": 1,
+    "source_attempt_count": 38,
+    "source_status_counts": {
+      "success": 30,
+      "partial": 2,
+      "unavailable": 6
+    }
   },
   "events": [
+    {
+      "id": "governance-gb-11227726-officer-completion-20261127",
+      "category": "法人治理",
+      "title": "英国 UKBIC：补齐两项既有董事任职",
+      "summary": "Marie Lowe兼任董事及秘书；Carol Rose-Burke也是现任董事。任职日期分别为2024-04-01及2023-08-01。基线原为部分名单。",
+      "impact": "公开文件所载事实；不表示宁德时代持股。事件发生在前一日基线之前或为此前缺失的观察，非本轮快照确认的新增变更。",
+      "action": "按人+角色+生效日存储，不把一人兼任视作重复或新任。",
+      "entity": "UK BATTERY INDUSTRIALISATION CENTRE LTD",
+      "country": "英国",
+      "published_at": null,
+      "event_date": null,
+      "priority": "P2",
+      "evidence_level": "官方原文",
+      "source_name": "Companies House 人员",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/11227726/officers",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "coverage_completion",
+      "old_value": "前次名单不全",
+      "new_value": "6名现任董事及1项秘书任职",
+      "discovered_at": "2026-11-27",
+      "additional_sources": [
+        {
+          "name": "申报历史",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11227726/filing-history"
+        }
+      ]
+    },
+    {
+      "id": "governance-fr-acc-ceo-20260501",
+      "category": "法人治理",
+      "title": "法国 ACC：补录2026年5月CEO交接",
+      "summary": "企业4月30日公告称 Allan Swan 5月1日起接任CEO，Yann Vincent退休；董事会主席为Alex Nediger。",
+      "impact": "公开文件所载事实；不表示宁德时代持股。事件发生在前一日基线之前或为此前缺失的观察，非本轮快照确认的新增变更。",
+      "action": "管理职务与法定代表权独立核验。",
+      "entity": "AUTOMOTIVE CELLS COMPANY SE",
+      "country": "法国",
+      "published_at": "2026-04-30",
+      "event_date": "2026-05-01",
+      "priority": "P2",
+      "evidence_level": "企业披露",
+      "source_name": "企业或交易所原始披露",
+      "source_url": "https://www.acc-emotion.com/stories/acc-appoints-allan-swan-chief-executive-officer-honors-retiring-ceo-yann-vincent-and",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "historical_disclosure",
+      "old_value": "Yann Vincent",
+      "new_value": "Allan Swan",
+      "discovered_at": "2026-11-27"
+    },
+    {
+      "id": "governance-nz-mercury-elt-title-20261112",
+      "category": "法人治理",
+      "title": "新西兰 Mercury：两项高管职称历史调整",
+      "summary": "2026-11-12公告，Tim Thompson由Executive GM Wholesale转为Chief Commercial Officer；Matt Tolcher由Executive GM Generation Development转为Chief Generation Development Officer，当日生效。",
+      "impact": "公开文件所载事实；不表示宁德时代持股。事件发生在前一日基线之前或为此前缺失的观察，非本轮快照确认的新增变更。",
+      "action": "核对权限矩阵及职务变更是否涉及授权签字权。",
+      "entity": "Mercury NZ Limited",
+      "country": "新西兰",
+      "published_at": "2026-11-12",
+      "event_date": "2026-11-12",
+      "priority": "P2",
+      "evidence_level": "企业披露",
+      "source_name": "企业或交易所原始披露",
+      "source_url": "https://www.mercury.co.nz/investors/news/2026-nov-executive-leadership-team-changes",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "historical_disclosure",
+      "old_value": [
+        "Executive GM Wholesale",
+        "Executive GM Generation Development"
+      ],
+      "new_value": [
+        "Chief Commercial Officer",
+        "Chief Generation Development Officer"
+      ],
+      "discovered_at": "2026-11-27"
+    },
+    {
+      "id": "governance-nz-mercury-elt-pending-20261112",
+      "category": "法人治理",
+      "title": "新西兰 Mercury：两项未来高管任命",
+      "summary": "Tomas Toomata将于2026-12-05任Chief Generation Officer；Duane Makin将于2027-03-08任新设CTO。Kevin Taylor将于12月退休，准确日未披露。",
+      "impact": "已披露计划，尚非生效变更；不表示宁德时代持股。",
+      "action": "到生效日复核任职，不提前写入现任名单。",
+      "entity": "Mercury NZ Limited",
+      "country": "新西兰",
+      "published_at": "2026-11-12",
+      "event_date": null,
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "企业或交易所原始披露",
+      "source_url": "https://www.mercury.co.nz/investors/news/2026-nov-executive-leadership-team-changes",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "proposal",
+      "old_value": null,
+      "new_value": [
+        {
+          "name": "Tomas Toomata",
+          "effective": "2026-12-05"
+        },
+        {
+          "name": "Duane Makin",
+          "effective": "2027-03-08"
+        }
+      ],
+      "discovered_at": "2026-11-27"
+    },
+    {
+      "id": "governance-au-pls-australiansuper-20261123",
+      "category": "法人治理",
+      "title": "澳大利亚 PLS：AustralianSuper 投票权升至15.32%",
+      "summary": "Form 604记录11月23日重大权益变化：前次459,209,563票、14.23%；本次494,166,496票、15.32%。",
+      "impact": "公开文件所载事实；不表示宁德时代持股。事件发生在前一日基线之前或为此前缺失的观察，非本轮快照确认的新增变更。",
+      "action": "检查股东集中度、投票影响及重要股东变化；不推断控制权。",
+      "entity": "PLS GROUP LIMITED",
+      "country": "澳大利亚",
+      "published_at": "2026-11-25",
+      "event_date": "2026-11-23",
+      "priority": "P2",
+      "evidence_level": "企业披露",
+      "source_name": "PLS发布的ASIC Form 604",
+      "source_url": "https://www.pls.com/storage/announcements/change-in-substantial-holding-2026-11-25.pdf",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "historical_disclosure",
+      "old_value": {
+        "votes": 459209563,
+        "voting_power_pct": 14.23
+      },
+      "new_value": {
+        "votes": 494166496,
+        "voting_power_pct": 15.32
+      },
+      "discovered_at": "2026-11-27"
+    },
+    {
+      "id": "governance-au-pls-northerntrust-20261124",
+      "category": "法人治理",
+      "title": "澳大利亚 PLS：Northern Trust 初次重大持有人申报",
+      "summary": "Form 603称11月24日成为重大持有人，涉及212,870,908票、6.60%投票权。包含证券借贷及投资管理授权，不是同等比例自有股权。",
+      "impact": "公开文件所载事实；不表示宁德时代持股。事件发生在前一日基线之前或为此前缺失的观察，非本轮快照确认的新增变更。",
+      "action": "区分登记股东、权益持有人、投票/处分权与受益所有权。",
+      "entity": "PLS GROUP LIMITED",
+      "country": "澳大利亚",
+      "published_at": "2026-11-26",
+      "event_date": "2026-11-24",
+      "priority": "P2",
+      "evidence_level": "企业披露",
+      "source_name": "PLS发布的ASIC Form 603",
+      "source_url": "https://www.pls.com/storage/announcements/becoming-a-substantial-holder-2026-11-26.pdf",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "historical_disclosure",
+      "old_value": null,
+      "new_value": {
+        "votes": 212870908,
+        "voting_power_pct": 6.6
+      },
+      "discovered_at": "2026-11-27"
+    },
+    {
+      "id": "governance-au-pls-employee-issue-20261118",
+      "category": "法人治理",
+      "title": "澳大利亚 PLS：员工激励股份发行",
+      "summary": "11月18日发行1,201,941股普通股，11月25日提交上市申请。申请后普通股数3,227,148,709为表格自动生成值，非确认当前总股数。",
+      "impact": "公开文件所载事实；不表示宁德时代持股。事件发生在前一日基线之前或为此前缺失的观察，非本轮快照确认的新增变更。",
+      "action": "核对激励计划、股份稀释、上市获准情况；不以申请代替批准。",
+      "entity": "PLS GROUP LIMITED",
+      "country": "澳大利亚",
+      "published_at": "2026-11-25",
+      "event_date": "2026-11-18",
+      "priority": "P2",
+      "evidence_level": "企业披露",
+      "source_name": "PLS ASX Appendix 2A",
+      "source_url": "https://www.pls.com/storage/announcements/application-for-quotation-of-securities-pls-2026-11-25.pdf",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "historical_disclosure",
+      "old_value": null,
+      "new_value": {
+        "issued_shares": 1201941,
+        "after_quotation_reported": 3227148709
+      },
+      "discovered_at": "2026-11-27"
+    },
+    {
+      "id": "governance-id-mbma-npr2-20261117",
+      "category": "法人治理",
+      "title": "印尼 MBMA：拟非优先认购增发，12月8日待审议",
+      "summary": "拟发行至多10,799,541,990股（发行前实缴股数10%）。若全额发行，PT Merdeka Energi Nusantara比例按公告情景从50.04%降至45.50%，非已实现控制变化。11月17日公告称尚无表达认购意向的潜在投资者。",
+      "impact": "已披露计划，尚非生效变更；不表示宁德时代持股。",
+      "action": "12月8日审议后核对独立股东批准、实际认购人、章程变更及投票安排。",
+      "entity": "PT Merdeka Battery Materials Tbk",
+      "country": "印度尼西亚",
+      "published_at": "2026-11-17",
+      "event_date": null,
+      "priority": "P1",
+      "evidence_level": "企业披露",
+      "source_name": "企业或交易所原始披露",
+      "source_url": "https://assets.merdekabattery.com/dist/documents/186.%20OJK_Penyesuaian%20KI_PMTHMETD%20II%20MBMA%202026.pdf",
+      "verified_at": "2026-11-27T08:42:18+08:00",
+      "metrics": [],
+      "lat": null,
+      "lon": null,
+      "is_baseline": false,
+      "change_status": "proposal",
+      "old_value": {
+        "issued_shares": 107995419900,
+        "major_holder_pct": 50.04
+      },
+      "new_value": {
+        "proforma_issued_shares": 118794961890,
+        "proforma_major_holder_pct": 45.5
+      },
+      "discovered_at": "2026-11-27",
+      "additional_sources": [
+        {
+          "name": "临时股东会通知",
+          "url": "https://assets.merdekabattery.com/dist/documents/180.%20Pemanggilan%20RUPSLB%20MBMA_2026.pdf"
+        }
+      ],
+      "scheduled_date": "2026-12-08"
+    },
     {
       "id": "governance-baseline-GB-11227726",
       "category": "法人治理",
@@ -362,293 +631,383 @@
   "prices": [],
   "sources": [
     {
-      "id": "GB-11227726-source-0",
+      "id": "GB-11227726-20261127-0",
       "name": "Companies House 概览",
       "url": "https://find-and-update.company-information.service.gov.uk/company/11227726",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "基本页及PSC页直接可读；officers直读403，官方索引仅读取部分在任董事，18条人员记录/11条离任记录，未确认完整人员表。",
+      "last_checked": "2026-11-27",
+      "note": "官方网页读取名称、编号、注册地址、Active。",
       "country": "英国"
     },
     {
-      "id": "GB-11227726-source-1",
-      "name": "Companies House officers",
+      "id": "GB-11227726-20261127-1",
+      "name": "Companies House 人员",
       "url": "https://find-and-update.company-information.service.gov.uk/company/11227726/officers",
       "category": "法人治理",
-      "status": "partial",
-      "last_checked": "2026-11-26",
-      "note": "基本页及PSC页直接可读；officers直读403，官方索引仅读取部分在任董事，18条人员记录/11条离任记录，未确认完整人员表。",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "本次读取18条任职、11条离任；6名现任董事及1项秘书任职，Marie Lowe兼任。",
       "country": "英国"
     },
     {
-      "id": "GB-11227726-source-2",
+      "id": "GB-11227726-20261127-2",
       "name": "Companies House PSC",
       "url": "https://find-and-update.company-information.service.gov.uk/company/11227726/persons-with-significant-control",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "基本页及PSC页直接可读；officers直读403，官方索引仅读取部分在任董事，18条人员记录/11条离任记录，未确认完整人员表。",
+      "last_checked": "2026-11-27",
+      "note": "Coventry City Council控制范围与前期一致。",
       "country": "英国"
     },
     {
-      "id": "FR-884638586-source-0",
-      "name": "法国官方企业目录：法人索引",
-      "url": "https://annuaire-entreprises.data.gouv.fr/etablissement/88463858600054",
+      "id": "GB-11227726-20261127-3",
+      "name": "Companies House filing history",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11227726/filing-history",
       "category": "法人治理",
-      "status": "partial",
-      "last_checked": "2026-11-26",
-      "note": "官方企业目录索引确认法人名称、SIREN及在营；企业正文无可读内容，子机构SIRET 88463858600054不可当总部。API尝试未返回可读数据。未取得现行总部、资本及董事。",
-      "country": "法国"
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "最近显示2026-04-21董事离任申报，2026-03-11确认声明；未读确认声明附件。",
+      "country": "英国"
     },
     {
-      "id": "FR-884638586-source-1",
-      "name": "法国官方企业目录：法人页面",
+      "id": "FR-884638586-20261127-4",
+      "name": "法国官方法人目录",
       "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/automotive-cells-company-se-884638586",
       "category": "法人治理",
       "status": "unavailable",
-      "last_checked": "2026-11-26",
-      "note": "官方企业目录索引确认法人名称、SIREN及在营；企业正文无可读内容，子机构SIRET 88463858600054不可当总部。API尝试未返回可读数据。未取得现行总部、资本及董事。",
+      "last_checked": "2026-11-27",
+      "note": "法人正文无可读行；API端点未返回数据。",
       "country": "法国"
     },
     {
-      "id": "FR-884638586-source-2",
-      "name": "法国企业搜索API（未取得结果）",
+      "id": "FR-884638586-20261127-5",
+      "name": "法国 Recherche d'entreprises API",
       "url": "https://recherche-entreprises.api.gouv.fr/search?q=884638586",
       "category": "法人治理",
       "status": "unavailable",
-      "last_checked": "2026-11-26",
-      "note": "官方企业目录索引确认法人名称、SIREN及在营；企业正文无可读内容，子机构SIRET 88463858600054不可当总部。API尝试未返回可读数据。未取得现行总部、资本及董事。",
+      "last_checked": "2026-11-27",
+      "note": "工具无法访问端点；无成功API响应。",
       "country": "法国"
     },
     {
-      "id": "DE-ULM-HRB728059-source-0",
-      "name": "VARTA法律声明",
-      "url": "https://www.varta-ag.com/en/imprint",
+      "id": "FR-884638586-20261127-6",
+      "name": "法国官方SIRET索引",
+      "url": "https://annuaire-entreprises.data.gouv.fr/etablissement/88463858600054",
       "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "企业法律声明有编号和职务；Handelsregister入口400，无登记摘录。管理董事会与监事会分别记录；登记状态、资本、股东未核验。",
-      "country": "德国"
+      "status": "partial",
+      "last_checked": "2026-11-27",
+      "note": "检索索引显示法人SIREN及在营，打开正文无可读行。分支地址不作总部。",
+      "country": "法国"
     },
     {
-      "id": "DE-ULM-HRB728059-source-1",
-      "name": "德国商业登记门户",
+      "id": "FR-884638586-20261127-7",
+      "name": "ACC 法律声明",
+      "url": "https://www.acc-emotion.com/terms-conditions",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "声明总部及注册资本，未标注该值生效日期；未取得RNE当前摘录。",
+      "country": "法国"
+    },
+    {
+      "id": "FR-884638586-20261127-8",
+      "name": "ACC CEO任命公告",
+      "url": "https://www.acc-emotion.com/stories/acc-appoints-allan-swan-chief-executive-officer-honors-retiring-ceo-yann-vincent-and",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "2026-04-30公告确认CEO任命及董事会主席。",
+      "country": "法国"
+    },
+    {
+      "id": "DE-ULM-HRB728059-20261127-9",
+      "name": "德国 Handelsregister",
       "url": "https://www.handelsregister.de/rp_web/welcome.do?language=en",
       "category": "法人治理",
       "status": "unavailable",
-      "last_checked": "2026-11-26",
-      "note": "企业法律声明有编号和职务；Handelsregister入口400，无登记摘录。管理董事会与监事会分别记录；登记状态、资本、股东未核验。",
+      "last_checked": "2026-11-27",
+      "note": "400 Bad Request，未取得登记摘录。",
       "country": "德国"
     },
     {
-      "id": "NO-913102436-source-0",
-      "name": "Brønnøysund 法人登记",
+      "id": "DE-ULM-HRB728059-20261127-10",
+      "name": "VARTA 英文法律声明",
+      "url": "https://www.varta-ag.com/en/imprint",
+      "category": "法人治理",
+      "status": "unavailable",
+      "last_checked": "2026-11-27",
+      "note": "重定向循环。",
+      "country": "德国"
+    },
+    {
+      "id": "DE-ULM-HRB728059-20261127-11",
+      "name": "VARTA 德文法律声明",
+      "url": "https://www.varta-ag.com/de/impressum",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "名称、地址、Ulm HRB编号、三位管理董事及监事主席与旧值一致。",
+      "country": "德国"
+    },
+    {
+      "id": "NO-913102436-20261127-12",
+      "name": "Brønnøysund 企业登记",
       "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/913102436",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "官方登记网页可读；破产财团另有编号937675429，不能把其管理人当原公司董事。API实体/角色端点未返回可读结果。",
+      "last_checked": "2026-11-27",
+      "note": "原法人破产及关联破产财团编号、地址与基线一致；未重新尝试角色API。",
       "country": "挪威"
     },
     {
-      "id": "NO-913102436-source-1",
-      "name": "破产财团登记",
-      "url": "https://virksomhet.brreg.no/nb/oppslag/enheter/937675429",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "官方登记网页可读；破产财团另有编号937675429，不能把其管理人当原公司董事。API实体/角色端点未返回可读结果。",
-      "country": "挪威"
-    },
-    {
-      "id": "NO-913102436-source-2",
-      "name": "实体API",
-      "url": "https://data.brreg.no/enhetsregisteret/api/enheter/913102436",
-      "category": "法人治理",
-      "status": "unavailable",
-      "last_checked": "2026-11-26",
-      "note": "官方登记网页可读；破产财团另有编号937675429，不能把其管理人当原公司董事。API实体/角色端点未返回可读结果。",
-      "country": "挪威"
-    },
-    {
-      "id": "NO-913102436-source-3",
-      "name": "角色API",
-      "url": "https://data.brreg.no/enhetsregisteret/api/enheter/913102436/roller",
-      "category": "法人治理",
-      "status": "unavailable",
-      "last_checked": "2026-11-26",
-      "note": "官方登记网页可读；破产财团另有编号937675429，不能把其管理人当原公司董事。API实体/角色端点未返回可读结果。",
-      "country": "挪威"
-    },
-    {
-      "id": "CA-11188917-source-0",
-      "name": "Corporations Canada 法人资料",
+      "id": "CA-11188917-20261127-13",
+      "name": "Corporations Canada 联邦登记",
       "url": "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpDtls.html?corpId=11188917&lang=eng",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "联邦登记直接可读，2024–2026年度申报均显示已提交；非营利行业组织，资本和股东字段不适用，不能作为持股样本。仅覆盖联邦登记。",
+      "last_checked": "2026-11-27",
+      "note": "名称、编号、Active、登记地址及5名董事与基线一致；不保存董事个人地址。",
       "country": "加拿大"
     },
     {
-      "id": "NZ-NZBN9429037705305-source-0",
-      "name": "Electricity Authority 2024审计报告封面",
-      "url": "https://www.ea.govt.nz/documents/5169/Mercury_NZ_Limited_-_27_May_Audit_report.pdf",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "官方电力监管审计报告确认NZBN，企业董事页及交易所披露补充；登记详情及NZBN详情无法读取，公司注册号尚未独立核验。Future Director无决策权，不计正式董事。",
-      "country": "新西兰"
-    },
-    {
-      "id": "NZ-NZBN9429037705305-source-1",
-      "name": "Mercury董事页",
-      "url": "https://www.mercury.co.nz/investors/board-of-directors",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "官方电力监管审计报告确认NZBN，企业董事页及交易所披露补充；登记详情及NZBN详情无法读取，公司注册号尚未独立核验。Future Director无决策权，不计正式董事。",
-      "country": "新西兰"
-    },
-    {
-      "id": "NZ-NZBN9429037705305-source-2",
-      "name": "NZX秘书披露",
-      "url": "https://www.nzx.com/announcements/477461",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "官方电力监管审计报告确认NZBN，企业董事页及交易所披露补充；登记详情及NZBN详情无法读取，公司注册号尚未独立核验。Future Director无决策权，不计正式董事。",
-      "country": "新西兰"
-    },
-    {
-      "id": "NZ-NZBN9429037705305-source-3",
-      "name": "NZX地址公告",
-      "url": "https://www.nzx.com/announcements/329696",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "官方电力监管审计报告确认NZBN，企业董事页及交易所披露补充；登记详情及NZBN详情无法读取，公司注册号尚未独立核验。Future Director无决策权，不计正式董事。",
-      "country": "新西兰"
-    },
-    {
-      "id": "NZ-NZBN9429037705305-source-4",
-      "name": "Mercury投资者中心",
-      "url": "https://www.mercury.co.nz/investors",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "官方电力监管审计报告确认NZBN，企业董事页及交易所披露补充；登记详情及NZBN详情无法读取，公司注册号尚未独立核验。Future Director无决策权，不计正式董事。",
-      "country": "新西兰"
-    },
-    {
-      "id": "NZ-NZBN9429037705305-source-5",
-      "name": "新西兰登记详情",
+      "id": "NZ-NZBN9429037705305-20261127-14",
+      "name": "NZ Companies Register",
       "url": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/936901",
       "category": "法人治理",
       "status": "unavailable",
-      "last_checked": "2026-11-26",
-      "note": "官方电力监管审计报告确认NZBN，企业董事页及交易所披露补充；登记详情及NZBN详情无法读取，公司注册号尚未独立核验。Future Director无决策权，不计正式董事。",
+      "last_checked": "2026-11-27",
+      "note": "实体详情无法访问。",
       "country": "新西兰"
     },
     {
-      "id": "AU-112425788-source-0",
-      "name": "ABN Lookup 历史资料",
+      "id": "NZ-NZBN9429037705305-20261127-15",
+      "name": "Mercury 董事会",
+      "url": "https://www.mercury.co.nz/investors/board-of-directors",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "8名正式董事，Future Director单列。",
+      "country": "新西兰"
+    },
+    {
+      "id": "NZ-NZBN9429037705305-20261127-16",
+      "name": "Mercury 投资者中心",
+      "url": "https://www.mercury.co.nz/investors",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "Crown 51%法定持股信息。",
+      "country": "新西兰"
+    },
+    {
+      "id": "NZ-NZBN9429037705305-20261127-17",
+      "name": "Mercury 高管名单",
+      "url": "https://www.mercury.co.nz/investors/executive-leadership",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "企业现任高管页面可读。",
+      "country": "新西兰"
+    },
+    {
+      "id": "NZ-NZBN9429037705305-20261127-18",
+      "name": "Mercury 2026-11-12高管公告",
+      "url": "https://www.mercury.co.nz/investors/news/2026-nov-executive-leadership-team-changes",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "两项任命待生效、两项职称已变。",
+      "country": "新西兰"
+    },
+    {
+      "id": "NZ-NZBN9429037705305-20261127-19",
+      "name": "NZX Scott Scoullar任命公告",
+      "url": "https://www.nzx.com/announcements/477917",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "确认2026-09-01起任董事；公告署名Howard Thomas为公司秘书。",
+      "country": "新西兰"
+    },
+    {
+      "id": "NZ-NZBN9429037705305-20261127-20",
+      "name": "NZX 原基线链接477461",
+      "url": "https://www.nzx.com/announcements/477461",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "该公告主题为信用评级，不用作任命日期依据。",
+      "country": "新西兰"
+    },
+    {
+      "id": "AU-112425788-20261127-21",
+      "name": "ABR历史登记",
       "url": "https://abr.business.gov.au/AbnHistory/View?id=95112425788",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "ABR官方历史页可读；主营业地点WA 6005仅为邮编，不计完整地址。ASIC详细董事摘录未获取。旧名Pilbara Minerals Limited于2025-11-28终止使用。",
+      "last_checked": "2026-11-27",
+      "note": "ABN Active，名称更名史不变；不代表ASIC存续状态。",
       "country": "澳大利亚"
     },
     {
-      "id": "SG-198402886H-source-0",
-      "name": "SGX公司公告（历史编号证据）",
-      "url": "https://links.sgx.com/FileOpen/VCL-Press%20Release-Changes%20to%20Executive%20Leadership%20and%20Corporate%20Structure-5%20Nov%202021.ashx?App=Announcement&FileID=689681",
-      "category": "法人治理",
-      "status": "partial",
-      "last_checked": "2026-11-26",
-      "note": "Bizfile需JavaScript，本次只读到入口；SGX 2021公告文本确认注册号、截图403；企业网页列举部分董事及高管，非完整名册。",
-      "country": "新加坡"
-    },
-    {
-      "id": "SG-198402886H-source-1",
-      "name": "Venture管理层",
-      "url": "https://www.venture.com.sg/about/",
+      "id": "AU-112425788-20261127-22",
+      "name": "PLS 董事与管理层",
+      "url": "https://www.pls.com/about/leadership",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "Bizfile需JavaScript，本次只读到入口；SGX 2021公告文本确认注册号、截图403；企业网页列举部分董事及高管，非完整名册。",
-      "country": "新加坡"
+      "last_checked": "2026-11-27",
+      "note": "官网现任6名董事及高管。",
+      "country": "澳大利亚"
     },
     {
-      "id": "SG-198402886H-source-2",
+      "id": "AU-112425788-20261127-23",
+      "name": "PLS ASX Form 604",
+      "url": "https://www.pls.com/storage/announcements/change-in-substantial-holding-2026-11-25.pdf",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "Form 604第1页显示前次和本次投票权。",
+      "country": "澳大利亚"
+    },
+    {
+      "id": "AU-112425788-20261127-24",
+      "name": "PLS ASX Form 603",
+      "url": "https://www.pls.com/storage/announcements/becoming-a-substantial-holder-2026-11-26.pdf",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "Form 603第1页显示初次重大持有申报。含证券借贷/投资管理。",
+      "country": "澳大利亚"
+    },
+    {
+      "id": "AU-112425788-20261127-25",
+      "name": "PLS ASX Appendix 2A",
+      "url": "https://www.pls.com/storage/announcements/application-for-quotation-of-securities-pls-2026-11-25.pdf",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "员工激励股发行日及上市申请，资本总量为申请后的自动生成数。",
+      "country": "澳大利亚"
+    },
+    {
+      "id": "AU-112425788-20261127-26",
+      "name": "PLS 2026 AGM结果",
+      "url": "https://www.pls.com/storage/announcements/results-of-2026-agm-2026-11-24.pdf",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "公司秘书署名及公司办公地址；全部提案通过。",
+      "country": "澳大利亚"
+    },
+    {
+      "id": "SG-198402886H-20261127-27",
       "name": "ACRA Bizfile",
       "url": "https://www.bizfile.gov.sg/",
       "category": "法人治理",
-      "status": "partial",
-      "last_checked": "2026-11-26",
-      "note": "Bizfile需JavaScript，本次只读到入口；SGX 2021公告文本确认注册号、截图403；企业网页列举部分董事及高管，非完整名册。",
+      "status": "unavailable",
+      "last_checked": "2026-11-27",
+      "note": "仅JavaScript提示，无主体结果。",
       "country": "新加坡"
     },
     {
-      "id": "JP-6120001235593-source-0",
-      "name": "METI gBizINFO",
+      "id": "SG-198402886H-20261127-28",
+      "name": "Venture 概览",
+      "url": "https://www.venture.com.sg/about/",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "公司名、地址及部分人员。",
+      "country": "新加坡"
+    },
+    {
+      "id": "SG-198402886H-20261127-29",
+      "name": "Venture 董事会",
+      "url": "https://www.venture.com.sg/board-of-directors/",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "读取11名董事名单。",
+      "country": "新加坡"
+    },
+    {
+      "id": "SG-198402886H-20261127-30",
+      "name": "Venture 高管",
+      "url": "https://www.venture.com.sg/key-management-executives/",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "执行主席、集团CEO及CFO。",
+      "country": "新加坡"
+    },
+    {
+      "id": "JP-6120001235593-20261127-31",
+      "name": "日本 gBizINFO",
       "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=6120001235593",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "经产省gBizINFO引用国税厅法人数据，源数据日期2025-12-05；公司官网补充法定董事、监査役和执行役员。法人番号系统本身不提供董事。",
+      "last_checked": "2026-11-27",
+      "note": "法人番号、名称、总部一致；资本字段空白。",
       "country": "日本"
     },
     {
-      "id": "JP-6120001235593-source-1",
-      "name": "Panasonic Energy 役員一覧",
+      "id": "JP-6120001235593-20261127-32",
+      "name": "Panasonic Energy 会社概要",
       "url": "https://www.panasonic.com/jp/energy/company/profile.html",
       "category": "法人治理",
       "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "经产省gBizINFO引用国税厅法人数据，源数据日期2025-12-05；公司官网补充法定董事、监査役和执行役员。法人番号系统本身不提供董事。",
+      "last_checked": "2026-11-27",
+      "note": "4名董事、3名监察役、12名执行役员名单/角色与基线一致。",
       "country": "日本"
     },
     {
-      "id": "ID-AHU-0145851-2019-source-0",
-      "name": "MBMA 2023年报",
-      "url": "https://assets.merdekabattery.com/dist/documents/MBM_2023%20-%20Annual%20Report%20%28opt%29.pdf",
-      "category": "法人治理",
-      "status": "partial",
-      "last_checked": "2026-11-26",
-      "note": "2023年报正文第38页确认历史登记号，PDF截图超时；AHU只读到检索表单，未取得最新profile。公司官网分别列Direksi和Dewan Komisaris；子公司高管不计入母公司高管。现行资本与完整股权未核验。",
-      "country": "印度尼西亚"
-    },
-    {
-      "id": "ID-AHU-0145851-2019-source-1",
-      "name": "MBMA治理人员",
-      "url": "https://merdekabattery.com/en/company/board-of-directors",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "2023年报正文第38页确认历史登记号，PDF截图超时；AHU只读到检索表单，未取得最新profile。公司官网分别列Direksi和Dewan Komisaris；子公司高管不计入母公司高管。现行资本与完整股权未核验。",
-      "country": "印度尼西亚"
-    },
-    {
-      "id": "ID-AHU-0145851-2019-source-2",
-      "name": "MBMA公司秘书",
-      "url": "https://merdekabattery.com/en/sustainability/corporate-governance/corporate-secretary",
-      "category": "法人治理",
-      "status": "success",
-      "last_checked": "2026-11-26",
-      "note": "2023年报正文第38页确认历史登记号，PDF截图超时；AHU只读到检索表单，未取得最新profile。公司官网分别列Direksi和Dewan Komisaris；子公司高管不计入母公司高管。现行资本与完整股权未核验。",
-      "country": "印度尼西亚"
-    },
-    {
-      "id": "ID-AHU-0145851-2019-source-3",
-      "name": "AHU企业检索",
+      "id": "ID-AHU-0145851-2019-20261127-33",
+      "name": "AHU 法人检索",
       "url": "https://ahu.go.id/profil-pt",
       "category": "法人治理",
       "status": "partial",
-      "last_checked": "2026-11-26",
-      "note": "2023年报正文第38页确认历史登记号，PDF截图超时；AHU只读到检索表单，未取得最新profile。公司官网分别列Direksi和Dewan Komisaris；子公司高管不计入母公司高管。现行资本与完整股权未核验。",
+      "last_checked": "2026-11-27",
+      "note": "仅入口可读，未取得主体profile。",
+      "country": "印度尼西亚"
+    },
+    {
+      "id": "ID-AHU-0145851-2019-20261127-34",
+      "name": "MBMA 管理层",
+      "url": "https://merdekabattery.com/en/company/board-of-directors",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "4名管理董事、3名监事与基线一致。",
+      "country": "印度尼西亚"
+    },
+    {
+      "id": "ID-AHU-0145851-2019-20261127-35",
+      "name": "MBMA 公司秘书",
+      "url": "https://merdekabattery.com/en/sustainability/corporate-governance/corporate-secretary",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "秘书及任命函日期一致。",
+      "country": "印度尼西亚"
+    },
+    {
+      "id": "ID-AHU-0145851-2019-20261127-36",
+      "name": "MBMA 2026-11-17增资补充公告",
+      "url": "https://assets.merdekabattery.com/dist/documents/186.%20OJK_Penyesuaian%20KI_PMTHMETD%20II%20MBMA%202026.pdf",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "第1、14页核对股本及股东表、日期；拟发行并非已生效。",
+      "country": "印度尼西亚"
+    },
+    {
+      "id": "ID-AHU-0145851-2019-20261127-37",
+      "name": "MBMA 2026-11-16临时股东大会通知",
+      "url": "https://assets.merdekabattery.com/dist/documents/180.%20Pemanggilan%20RUPSLB%20MBMA_2026.pdf",
+      "category": "法人治理",
+      "status": "success",
+      "last_checked": "2026-11-27",
+      "note": "12月8日股东会审议，尚非决议。",
       "country": "印度尼西亚"
     }
   ],
@@ -665,23 +1024,26 @@
         "Ian William CONSTANCE",
         "Sean GILGUNN",
         "Robert Simon JOYCE",
-        "Richard Edward MOON"
+        "Marie LOWE",
+        "Richard Edward MOON",
+        "Carol ROSE-BURKE"
       ],
       "secretary": [
         "Marie LOWE（2024-04-01任命）"
       ],
       "ownership": "Coventry City Council：PSC，股份及投票权均≥75%，有权任免董事；非全量股东表",
-      "registry_result": "partial",
-      "note": "基本页及PSC页直接可读；officers直读403，官方索引仅读取部分在任董事，18条人员记录/11条离任记录，未确认完整人员表。",
+      "registry_result": "success",
+      "note": "原基线人员不全；补齐Marie Lowe董事及Carol Rose-Burke董事，任职分别始于2024、2023年；不计新增任命。当前页面读取不等于实时API。",
       "action": "后续按人员角色及任免日期比较；核对完整股本申报。",
       "jurisdiction": "英国",
       "identifier": "11227726",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://find-and-update.company-information.service.gov.uk/company/11227726",
         "https://find-and-update.company-information.service.gov.uk/company/11227726/officers",
-        "https://find-and-update.company-information.service.gov.uk/company/11227726/persons-with-significant-control"
+        "https://find-and-update.company-information.service.gov.uk/company/11227726/persons-with-significant-control",
+        "https://find-and-update.company-information.service.gov.uk/company/11227726/filing-history"
       ],
       "field_coverage": {
         "legal_name": true,
@@ -694,7 +1056,71 @@
         "secretary": true,
         "capital": false,
         "ownership": true
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": true,
+        "status": true,
+        "address": true,
+        "directors": true,
+        "supervisors": false,
+        "executives": false,
+        "secretary": true,
+        "capital": false,
+        "ownership": true
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-27",
+        "status": "2026-11-27",
+        "address": "2026-11-27",
+        "directors": "2026-11-27",
+        "secretary": "2026-11-27",
+        "ownership": "2026-11-27"
+      },
+      "newly_obtained_fields": [],
+      "carried_forward_fields": [],
+      "previous_registry_result": "partial",
+      "officer_appointments": [
+        {
+          "name": "Ian William CONSTANCE",
+          "role": "Director",
+          "appointed": "2019-10-09"
+        },
+        {
+          "name": "Sean GILGUNN",
+          "role": "Director",
+          "appointed": "2023-10-02"
+        },
+        {
+          "name": "Robert Simon JOYCE",
+          "role": "Director",
+          "appointed": "2022-09-14"
+        },
+        {
+          "name": "Marie LOWE",
+          "role": "Director",
+          "appointed": "2024-04-01"
+        },
+        {
+          "name": "Richard Edward MOON",
+          "role": "Director",
+          "appointed": "2018-02-27"
+        },
+        {
+          "name": "Carol ROSE-BURKE",
+          "role": "Director",
+          "appointed": "2023-08-01"
+        },
+        {
+          "name": "Marie LOWE",
+          "role": "Secretary",
+          "appointed": "2024-04-01"
+        }
+      ],
+      "officer_record_count": 18,
+      "resigned_record_count": 11
     },
     {
       "id": "FR-884638586",
@@ -703,29 +1129,70 @@
       "number_type": "SIREN（法人）",
       "status": "en activité（官方索引）",
       "registry_result": "partial",
-      "note": "官方企业目录索引确认法人名称、SIREN及在营；企业正文无可读内容，子机构SIRET 88463858600054不可当总部。API尝试未返回可读数据。未取得现行总部、资本及董事。",
+      "note": "法国登记正文仍受限；企业声明及历史任命公告首次补充地址、资本、董事会主席及CEO。不能认定现行登记资本或完整董事名单。",
       "action": "优先核验RNE摘录与现行代表人；不要把分支机构地址当法人总部。",
       "jurisdiction": "法国",
       "identifier": "884638586",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://annuaire-entreprises.data.gouv.fr/etablissement/88463858600054",
         "https://annuaire-entreprises.data.gouv.fr/entreprise/automotive-cells-company-se-884638586",
-        "https://recherche-entreprises.api.gouv.fr/search?q=884638586"
+        "https://recherche-entreprises.api.gouv.fr/search?q=884638586",
+        "https://www.acc-emotion.com/terms-conditions",
+        "https://www.acc-emotion.com/stories/acc-appoints-allan-swan-chief-executive-officer-honors-retiring-ceo-yann-vincent-and"
       ],
       "field_coverage": {
         "legal_name": true,
         "identifier": true,
         "status": true,
-        "address": false,
-        "directors": false,
+        "address": true,
+        "directors": true,
         "supervisors": false,
-        "executives": false,
+        "executives": true,
         "secretary": false,
-        "capital": false,
+        "capital": true,
         "ownership": false
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": true,
+        "status": true,
+        "address": true,
+        "directors": true,
+        "supervisors": false,
+        "executives": true,
+        "secretary": false,
+        "capital": true,
+        "ownership": false
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-27",
+        "status": "2026-11-27",
+        "address": "2026-11-27",
+        "directors": "2026-11-27",
+        "executives": "2026-11-27",
+        "capital": "2026-11-27"
+      },
+      "newly_obtained_fields": [
+        "address",
+        "directors",
+        "executives",
+        "capital"
+      ],
+      "carried_forward_fields": [],
+      "previous_registry_result": "partial",
+      "address": "140 avenue d’Aquitaine, 33520 Bruges",
+      "address_type": "企业法律声明所列总部；登记未核验",
+      "directors": [
+        "Alex Nediger（董事会主席；2026-04-30公告，非完整现任名单）"
+      ],
+      "executives": [
+        "Allan Swan（CEO，自2026-05-01；企业公告）"
+      ],
+      "capital": "EUR 74,000,000（企业法律声明的registered capital，未注明生效日；未获RNE核验）"
     },
     {
       "id": "DE-ULM-HRB728059",
@@ -748,15 +1215,16 @@
         "Sebastian Rudow（CTRO）"
       ],
       "registry_result": "fallback",
-      "note": "企业法律声明有编号和职务；Handelsregister入口400，无登记摘录。管理董事会与监事会分别记录；登记状态、资本、股东未核验。",
+      "note": "德文法律声明替代英文页面，已披露职务与前期一致；登记资本、所有权及完整监事名单未核验。",
       "action": "取得现行登记摘录前，勿将公司自述当代表权的法律证明。",
       "jurisdiction": "德国",
       "identifier": "HRB 728059",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://www.varta-ag.com/en/imprint",
-        "https://www.handelsregister.de/rp_web/welcome.do?language=en"
+        "https://www.handelsregister.de/rp_web/welcome.do?language=en",
+        "https://www.varta-ag.com/de/impressum"
       ],
       "field_coverage": {
         "legal_name": true,
@@ -769,7 +1237,31 @@
         "secretary": false,
         "capital": false,
         "ownership": false
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": true,
+        "status": false,
+        "address": true,
+        "directors": true,
+        "supervisors": true,
+        "executives": true,
+        "secretary": false,
+        "capital": false,
+        "ownership": false
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-27",
+        "address": "2026-11-27",
+        "directors": "2026-11-27",
+        "supervisors": "2026-11-27",
+        "executives": "2026-11-27"
+      },
+      "newly_obtained_fields": [],
+      "carried_forward_fields": [],
+      "previous_registry_result": "fallback"
     },
     {
       "id": "NO-913102436",
@@ -780,7 +1272,7 @@
       "address": "Kristian Birkelands trasé 6, 4849 Arendal",
       "address_type": "forretningsadresse",
       "registry_result": "partial",
-      "note": "官方登记网页可读；破产财团另有编号937675429，不能把其管理人当原公司董事。API实体/角色端点未返回可读结果。",
+      "note": "原法人2026-05-06破产状态仍显示，关联破产财团937675429；角色、资本未核验，API本轮未调用。",
       "action": "核验破产财团及资产处置权限；如有实际敞口，再核对债权申报与合同。",
       "historical": {
         "old_value": null,
@@ -790,7 +1282,7 @@
       },
       "jurisdiction": "挪威",
       "identifier": "913102436",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://virksomhet.brreg.no/nb/oppslag/enheter/913102436",
@@ -809,7 +1301,29 @@
         "secretary": false,
         "capital": false,
         "ownership": false
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": true,
+        "status": true,
+        "address": true,
+        "directors": false,
+        "supervisors": false,
+        "executives": false,
+        "secretary": false,
+        "capital": false,
+        "ownership": false
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-27",
+        "status": "2026-11-27",
+        "address": "2026-11-27"
+      },
+      "newly_obtained_fields": [],
+      "carried_forward_fields": [],
+      "previous_registry_result": "partial"
     },
     {
       "id": "CA-11188917",
@@ -827,11 +1341,11 @@
         "Mitchell Smith"
       ],
       "registry_result": "success",
-      "note": "联邦登记直接可读，2024–2026年度申报均显示已提交；非营利行业组织，资本和股东字段不适用，不能作为持股样本。仅覆盖联邦登记。",
+      "note": "联邦非营利法人5名董事未见差异；资本、普通股东不适用；省级公司不在此库覆盖内。",
       "action": "以法人编号锁定同一主体；监测申报与董事变动，另行测试省级公司。",
       "jurisdiction": "加拿大",
       "identifier": "1118891-7",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpDtls.html?corpId=11188917&lang=eng"
@@ -847,7 +1361,30 @@
         "secretary": false,
         "capital": false,
         "ownership": false
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": true,
+        "status": true,
+        "address": true,
+        "directors": true,
+        "supervisors": false,
+        "executives": false,
+        "secretary": false,
+        "capital": false,
+        "ownership": false
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-27",
+        "status": "2026-11-27",
+        "address": "2026-11-27",
+        "directors": "2026-11-27"
+      },
+      "newly_obtained_fields": [],
+      "carried_forward_fields": [],
+      "previous_registry_result": "success"
     },
     {
       "id": "NZ-NZBN9429037705305",
@@ -868,14 +1405,14 @@
         "Rachel Taulelei"
       ],
       "secretary": [
-        "Howard Thomas（2026-08-06 NZX披露）"
+        "Howard Thomas（NZX 477917公告署名为General Counsel and Company Secretary，2026-08）"
       ],
       "ownership": "公司IR披露Crown持股51%；非完整股东表",
       "registry_result": "fallback",
-      "note": "官方电力监管审计报告确认NZBN，企业董事页及交易所披露补充；登记详情及NZBN详情无法读取，公司注册号尚未独立核验。Future Director无决策权，不计正式董事。",
+      "note": "董事名单和51%持股描述未见差异；新补高管；秘书以8月NZX任命公告署名佐证，非现行登记。NZBN和地址沿用昨日已读取值，未重新核验。",
       "action": "取得免费登记摘录，核验当前地址、任职生效日期及股权；不将董事观察员算作法定董事。",
       "jurisdiction": "新西兰",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://www.ea.govt.nz/documents/5169/Mercury_NZ_Limited_-_27_May_Audit_report.pdf",
@@ -883,7 +1420,10 @@
         "https://www.nzx.com/announcements/477461",
         "https://www.nzx.com/announcements/329696",
         "https://www.mercury.co.nz/investors",
-        "https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/936901"
+        "https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/936901",
+        "https://www.mercury.co.nz/investors/executive-leadership",
+        "https://www.mercury.co.nz/investors/news/2026-nov-executive-leadership-team-changes",
+        "https://www.nzx.com/announcements/477917"
       ],
       "field_coverage": {
         "legal_name": true,
@@ -892,11 +1432,63 @@
         "address": true,
         "directors": true,
         "supervisors": false,
-        "executives": false,
+        "executives": true,
         "secretary": true,
         "capital": false,
         "ownership": true
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": false,
+        "status": false,
+        "address": false,
+        "directors": true,
+        "supervisors": false,
+        "executives": true,
+        "secretary": true,
+        "capital": false,
+        "ownership": true
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-26",
+        "address": "2026-11-26",
+        "directors": "2026-11-27",
+        "executives": "2026-11-27",
+        "secretary": "2026-11-27",
+        "ownership": "2026-11-27"
+      },
+      "newly_obtained_fields": [
+        "executives"
+      ],
+      "carried_forward_fields": [
+        "identifier",
+        "address"
+      ],
+      "previous_registry_result": "fallback",
+      "executives": [
+        "Stew Hamilton（CEO）",
+        "Richard Hopkins（CFO）",
+        "Michele Mauger（Chief People Officer）",
+        "Suraiya Phillimore-Smith（Chief Customer Officer）",
+        "Kevin Taylor（COO – Generation）",
+        "Catherine Thompson（Chief Strategy and Corporate Affairs Officer）",
+        "Tim Thompson（Chief Commercial Officer）",
+        "Matt Tolcher（Chief Generation Development Officer）"
+      ],
+      "pending_appointments": [
+        {
+          "name": "Tomas Toomata",
+          "role": "Chief Generation Officer",
+          "effective_date": "2026-12-05"
+        },
+        {
+          "name": "Duane Makin",
+          "role": "Chief Technology Officer",
+          "effective_date": "2027-03-08"
+        }
+      ]
     },
     {
       "id": "AU-112425788",
@@ -905,7 +1497,7 @@
       "number_type": "ACN；ABN 95112425788",
       "status": "ABN Active（非ASIC现行状态证明）",
       "registry_result": "partial",
-      "note": "ABR官方历史页可读；主营业地点WA 6005仅为邮编，不计完整地址。ASIC详细董事摘录未获取。旧名Pilbara Minerals Limited于2025-11-28终止使用。",
+      "note": "免费披露补齐人员、办公地址、秘书及重大持有申报；此前无股权基线。三项已披露事项实际日期均早于11月26日基线，新增发现不等于日间新增变化；无ASIC完整摘录。",
       "action": "名称变化按ACN关联历史，董事补充上市公司披露；正式登记状态需ASIC核对。",
       "historical": {
         "old_value": "PILBARA MINERALS LIMITED",
@@ -915,22 +1507,88 @@
       },
       "jurisdiction": "澳大利亚",
       "identifier": "112425788",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
-        "https://abr.business.gov.au/AbnHistory/View?id=95112425788"
+        "https://abr.business.gov.au/AbnHistory/View?id=95112425788",
+        "https://www.pls.com/about/leadership",
+        "https://www.pls.com/storage/announcements/change-in-substantial-holding-2026-11-25.pdf",
+        "https://www.pls.com/storage/announcements/becoming-a-substantial-holder-2026-11-26.pdf",
+        "https://www.pls.com/storage/announcements/application-for-quotation-of-securities-pls-2026-11-25.pdf",
+        "https://www.pls.com/storage/announcements/results-of-2026-agm-2026-11-24.pdf"
       ],
       "field_coverage": {
         "legal_name": true,
         "identifier": true,
         "status": true,
-        "address": false,
-        "directors": false,
+        "address": true,
+        "directors": true,
         "supervisors": false,
-        "executives": false,
-        "secretary": false,
+        "executives": true,
+        "secretary": true,
         "capital": false,
-        "ownership": false
+        "ownership": true
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": true,
+        "status": true,
+        "address": true,
+        "directors": true,
+        "supervisors": false,
+        "executives": true,
+        "secretary": true,
+        "capital": false,
+        "ownership": true
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-27",
+        "status": "2026-11-27",
+        "address": "2026-11-27",
+        "directors": "2026-11-27",
+        "executives": "2026-11-27",
+        "secretary": "2026-11-27",
+        "ownership": "2026-11-27"
+      },
+      "newly_obtained_fields": [
+        "address",
+        "directors",
+        "executives",
+        "secretary",
+        "ownership"
+      ],
+      "carried_forward_fields": [],
+      "previous_registry_result": "partial",
+      "address": "Level 2, 146 Colin Street, West Perth WA 6005",
+      "address_type": "2026-11-26 Form 603公司地址；非ASIC摘录",
+      "directors": [
+        "Kathleen Conlon（主席、非执行董事）",
+        "Dale Henderson（Managing Director、CEO）",
+        "Sally-Anne Layman（非执行董事）",
+        "Nicholas Cernotta（非执行董事）",
+        "Miriam Stanborough（非执行董事）",
+        "Robert Nicholson（非执行董事）"
+      ],
+      "executives": [
+        "Dale Henderson（CEO）",
+        "Alex Willcocks（CFO）",
+        "Brett McFadgen（COO）",
+        "Sandra McInnes（Chief People and Sustainability Officer）",
+        "John Stanning（Chief Development Officer）",
+        "Paul Laybourne（Project Director）"
+      ],
+      "secretary": [
+        "Danielle Webber（2026-11-24 AGM结果公告署名）"
+      ],
+      "ownership": "AustralianSuper Pty Ltd 15.32% voting power（2026-11-23，Form 604）；The Northern Trust Company及关联方6.60% voting power（2026-11-24，Form 603，含借贷和管理授权）；非全股东表、非最终受益持股",
+      "issued_securities": {
+        "new_ordinary_shares": 1201941,
+        "issue_date": "2026-11-18",
+        "quotation_application_date": "2026-11-25",
+        "after_quotation_ordinary_shares": 3227148709,
+        "note": "自动生成的申请后数量，非现行ASIC注册资本"
       }
     },
     {
@@ -942,24 +1600,35 @@
       "address_type": "公司披露地址",
       "directors": [
         "Wong Ngit Liong（执行主席）",
+        "Wong Yew Meng（非独立非执行董事）",
+        "Han Thong Kwang（非独立非执行董事）",
         "Kay Kuok Oon Kwong（独立非执行董事）",
-        "Tan Seok Hoong @ Mrs Audrey Liow（独立非执行董事）"
+        "Tan Seok Hoong @ Mrs Audrey Liow（独立非执行董事）",
+        "Chua Kee Lock（独立非执行董事）",
+        "Chong Siak Ching（独立非执行董事）",
+        "Robert Mahlik（独立非执行董事）",
+        "Luo Dan（独立非执行董事）",
+        "Simon Yeo（独立非执行董事）",
+        "Wong Su-Yin（非独立非执行董事）"
       ],
       "executives": [
+        "Wong Ngit Liong（执行主席）",
         "Wong Chee Kheong（集团CEO）",
         "Anthea Ng（CFO）"
       ],
       "registry_result": "fallback",
-      "note": "Bizfile需JavaScript，本次只读到入口；SGX 2021公告文本确认注册号、截图403；企业网页列举部分董事及高管，非完整名册。",
+      "note": "基线部分名单扩展为企业官网11名董事；新增8名为覆盖补齐而非任命。UEN沿用上轮历史披露，本轮未重新核验登记；ACRA详细信息未取得。",
       "action": "核对ACRA基础记录；私营公司完整董监高可能需要付费Business Profile。",
       "jurisdiction": "新加坡",
       "identifier": "198402886H",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://links.sgx.com/FileOpen/VCL-Press%20Release-Changes%20to%20Executive%20Leadership%20and%20Corporate%20Structure-5%20Nov%202021.ashx?App=Announcement&FileID=689681",
         "https://www.venture.com.sg/about/",
-        "https://www.bizfile.gov.sg/"
+        "https://www.bizfile.gov.sg/",
+        "https://www.venture.com.sg/board-of-directors/",
+        "https://www.venture.com.sg/key-management-executives/"
       ],
       "field_coverage": {
         "legal_name": true,
@@ -972,7 +1641,32 @@
         "secretary": false,
         "capital": false,
         "ownership": false
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": false,
+        "status": false,
+        "address": true,
+        "directors": true,
+        "supervisors": false,
+        "executives": true,
+        "secretary": false,
+        "capital": false,
+        "ownership": false
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-26",
+        "address": "2026-11-27",
+        "directors": "2026-11-27",
+        "executives": "2026-11-27"
+      },
+      "newly_obtained_fields": [],
+      "carried_forward_fields": [
+        "identifier"
+      ],
+      "previous_registry_result": "fallback"
     },
     {
       "id": "JP-6120001235593",
@@ -1007,11 +1701,11 @@
         "中雄 三郎（CLO）"
       ],
       "registry_result": "success",
-      "note": "经产省gBizINFO引用国税厅法人数据，源数据日期2025-12-05；公司官网补充法定董事、监査役和执行役员。法人番号系统本身不提供董事。",
+      "note": "政府法人番号和企业人员披露均可读；不代表完整商事登记。资本及股权未核验。",
       "action": "分别监测代表取締役与执行役员；商事登记与官网口径不可混用。",
       "jurisdiction": "日本",
       "identifier": "6120001235593",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=6120001235593",
@@ -1028,7 +1722,31 @@
         "secretary": false,
         "capital": false,
         "ownership": false
-      }
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": true,
+        "status": false,
+        "address": true,
+        "directors": true,
+        "supervisors": true,
+        "executives": true,
+        "secretary": false,
+        "capital": false,
+        "ownership": false
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-27",
+        "address": "2026-11-27",
+        "directors": "2026-11-27",
+        "supervisors": "2026-11-27",
+        "executives": "2026-11-27"
+      },
+      "newly_obtained_fields": [],
+      "carried_forward_fields": [],
+      "previous_registry_result": "success"
     },
     {
       "id": "ID-AHU-0145851-2019",
@@ -1052,17 +1770,19 @@
         "Teddy Nuryanto Oetomo（董事会任命函2025-03-28）"
       ],
       "registry_result": "fallback",
-      "note": "2023年报正文第38页确认历史登记号，PDF截图超时；AHU只读到检索表单，未取得最新profile。公司官网分别列Direksi和Dewan Komisaris；子公司高管不计入母公司高管。现行资本与完整股权未核验。",
+      "note": "公司原始股本/股权表补齐两个字段；未取得AHU现行profile；历史登记标识沿用基线，未在本轮重核。增资计划尚未完成。",
       "action": "通过AHU最新profile核对任命及章程备案，企业公告不能替代登记证明。",
       "jurisdiction": "印度尼西亚",
       "identifier": "AHU-0145851.AH.01.11.TAHUN 2019",
-      "observed_at": "2026-11-26",
+      "observed_at": "2026-11-27",
       "sample_only": true,
       "source_urls": [
         "https://assets.merdekabattery.com/dist/documents/MBM_2023%20-%20Annual%20Report%20%28opt%29.pdf",
         "https://merdekabattery.com/en/company/board-of-directors",
         "https://merdekabattery.com/en/sustainability/corporate-governance/corporate-secretary",
-        "https://ahu.go.id/profil-pt"
+        "https://ahu.go.id/profil-pt",
+        "https://assets.merdekabattery.com/dist/documents/186.%20OJK_Penyesuaian%20KI_PMTHMETD%20II%20MBMA%202026.pdf",
+        "https://assets.merdekabattery.com/dist/documents/180.%20Pemanggilan%20RUPSLB%20MBMA_2026.pdf"
       ],
       "field_coverage": {
         "legal_name": true,
@@ -1073,8 +1793,47 @@
         "supervisors": true,
         "executives": false,
         "secretary": true,
-        "capital": false,
-        "ownership": false
+        "capital": true,
+        "ownership": true
+      },
+      "previous_observed_at": "2026-11-26",
+      "current_check_fields": {
+        "legal_name": true,
+        "identifier": false,
+        "status": false,
+        "address": true,
+        "directors": true,
+        "supervisors": true,
+        "executives": false,
+        "secretary": true,
+        "capital": true,
+        "ownership": true
+      },
+      "field_last_observed": {
+        "legal_name": "2026-11-27",
+        "identifier": "2026-11-26",
+        "address": "2026-11-27",
+        "directors": "2026-11-27",
+        "supervisors": "2026-11-27",
+        "secretary": "2026-11-27",
+        "capital": "2026-11-27",
+        "ownership": "2026-11-27"
+      },
+      "newly_obtained_fields": [
+        "capital",
+        "ownership"
+      ],
+      "carried_forward_fields": [
+        "identifier"
+      ],
+      "previous_registry_result": "fallback",
+      "capital": "2026-11-17披露增资前基准：授权资本IDR43,000,000,000,000；已发行实缴资本IDR10,799,541,990,000；107,995,419,900股，每股面值IDR100；非最新AHU摘录",
+      "ownership": "增资前披露：PT Merdeka Energi Nusantara 50.04%；Huayong International (Hong Kong) Limited 7.55%；PT Alam Permai 5.46%；非全量穿透。",
+      "pending_capital_proposal": {
+        "meeting_date": "2026-12-08",
+        "max_new_shares": 10799541990,
+        "proforma_major_holder_pct": 45.5,
+        "condition": "独立股东批准及实际发行"
       }
     }
   ]
