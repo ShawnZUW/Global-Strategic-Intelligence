@@ -1,15 +1,15 @@
 {
   "meta": {
     "schema_version": 1,
-    "generated_at": "2026-11-26T05:27:03Z",
-    "as_of": "2026-11-26",
+    "generated_at": "2026-11-27T05:20:14Z",
+    "as_of": "2026-11-27",
     "mode": "tiered-public-source-leads",
     "collection_status": "partial",
     "note": "标题来自原始披露、专业研究、媒体或社区RSS及固定新闻列表，逐条保留来源层级；关键词分类不构成事实核验。未提供发布日期的条目保留空值，首次发现时间不是事件发生时间。社区与媒体线索须回原始资料核验后才进入主面板结论。",
     "source_count": 45,
     "successful_sources": 41,
-    "item_count": 503,
-    "newly_discovered_count": 13,
+    "item_count": 521,
+    "newly_discovered_count": 29,
     "discovery_count_label": "本次首次发现（含新源历史建库，非今日发生事件）",
     "baseline_source_count": 0,
     "initial_baseline": false,
@@ -18,11 +18,11 @@
   },
   "items": [
     {
-      "title": "Humid greenhouse off-grid rebuild: EG4 12kPV + 48V lithium, later house backup (no interconnection allowed) - sanity check?",
-      "url": "https://diysolarforum.com/threads/humid-greenhouse-off-grid-rebuild-eg4-12kpv-48v-lithium-later-house-backup-no-interconnection-allowed-sanity-check.132995/",
-      "published_at": "2026-11-26T05:05:23Z",
+      "title": "looking for a quiet or no fan inverter for 24 or 48v. any recommendations?",
+      "url": "https://diysolarforum.com/threads/looking-for-a-quiet-or-no-fan-inverter-for-24-or-48v-any-recommendations.36384/",
+      "published_at": "2026-11-27T05:08:50Z",
       "source_updated_at": null,
-      "id": "c060ede970e7a22ccaa57c17",
+      "id": "1e0b98b5ea1c92b051498a95",
       "source_id": "specialist-diysolar",
       "source_name": "DIY Solar Forum",
       "source_url": "https://diysolarforum.com/forums/-/index.rss",
@@ -30,21 +30,62 @@
       "publisher_type": "论坛社区",
       "source_tier": "community",
       "evidence_level": "社区讨论线索",
-      "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
-        "技术突破",
-        "矿产与原材料"
+        "技术突破"
       ],
       "collection_method": "rss",
       "status": "待核验"
     },
     {
-      "title": "Inverter recomendation for future expansion",
-      "url": "https://diysolarforum.com/threads/inverter-recomendation-for-future-expansion.132996/",
-      "published_at": "2026-11-26T04:57:54Z",
+      "title": "Victron MPPT SmartSolar 100/15 on a 24V LiFePO4 system failure",
+      "url": "https://diysolarforum.com/threads/victron-mppt-smartsolar-100-15-on-a-24v-lifepo4-system-failure.133058/",
+      "published_at": "2026-11-27T05:01:37Z",
       "source_updated_at": null,
-      "id": "da8fd7c548107e5f599c50a1",
+      "id": "36f1802a90820bfc3051eccb",
+      "source_id": "specialist-diysolar",
+      "source_name": "DIY Solar Forum",
+      "source_url": "https://diysolarforum.com/forums/-/index.rss",
+      "publisher_id": "diysolar",
+      "publisher_type": "论坛社区",
+      "source_tier": "community",
+      "evidence_level": "社区讨论线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "技术突破"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Your favorite 12v charger (5a up to 20a) w/ BMS wakeup feature.",
+      "url": "https://diysolarforum.com/threads/your-favorite-12v-charger-5a-up-to-20a-w-bms-wakeup-feature.133051/",
+      "published_at": "2026-11-27T04:26:33Z",
+      "source_updated_at": null,
+      "id": "326e2298b02e5902c6ea13ee",
+      "source_id": "specialist-diysolar",
+      "source_name": "DIY Solar Forum",
+      "source_url": "https://diysolarforum.com/forums/-/index.rss",
+      "publisher_id": "diysolar",
+      "publisher_type": "论坛社区",
+      "source_tier": "community",
+      "evidence_level": "社区讨论线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "技术突破"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Lightning go boom. Inverter go poof.",
+      "url": "https://diysolarforum.com/threads/lightning-go-boom-inverter-go-poof.132965/",
+      "published_at": "2026-11-27T04:15:17Z",
+      "source_updated_at": null,
+      "id": "8e9053d7008f9eca5a69df84",
       "source_id": "specialist-diysolar",
       "source_name": "DIY Solar Forum",
       "source_url": "https://diysolarforum.com/forums/-/index.rss",
@@ -53,7 +94,7 @@
       "source_tier": "community",
       "evidence_level": "社区讨论线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -61,11 +102,140 @@
       "status": "待核验"
     },
     {
-      "title": "Off-Grid All-In-One solar charge Inverter. SPI-10K-UP.",
-      "url": "https://diysolarforum.com/threads/off-grid-all-in-one-solar-charge-inverter-spi-10k-up.133034/",
-      "published_at": "2026-11-26T04:06:56Z",
+      "title": "Solar Insiders Podcast: The “electric jerry can” bridging the gap to plug-in batteries",
+      "url": "https://reneweconomy.com.au/solar-insiders-podcast-the-electric-jerry-can-bridging-the-gap-to-plug-in-batteries/",
+      "published_at": "2026-11-27T03:40:58Z",
       "source_updated_at": null,
-      "id": "3270bfa8dbf33a652e9e1812",
+      "id": "91a278d3520cf3f0603f679e",
+      "source_id": "specialist-reneweconomy",
+      "source_name": "RenewEconomy",
+      "source_url": "https://reneweconomy.com.au/feed/",
+      "publisher_id": "reneweconomy",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "矿山零碳",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Chart of the Day: The evolution of the home battery boom – and signs of market distress",
+      "url": "https://reneweconomy.com.au/chart-of-the-day-the-evolution-of-the-home-battery-boom-and-signs-of-market-distress/",
+      "published_at": "2026-11-27T02:33:29Z",
+      "source_updated_at": null,
+      "id": "87e124de91f77cbec9fc8882",
+      "source_id": "specialist-reneweconomy",
+      "source_name": "RenewEconomy",
+      "source_url": "https://reneweconomy.com.au/feed/",
+      "publisher_id": "reneweconomy",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "矿山零碳",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Ryobi Zero-Turn Mower SLA to LiFePo4 Conversion - (Updated - Build Complete With Pics!)",
+      "url": "https://diysolarforum.com/threads/ryobi-zero-turn-mower-sla-to-lifepo4-conversion-updated-build-complete-with-pics.22922/",
+      "published_at": "2026-11-26T23:10:13Z",
+      "source_updated_at": null,
+      "id": "344ef996f42300727c2f4e3a",
+      "source_id": "specialist-diysolar",
+      "source_name": "DIY Solar Forum",
+      "source_url": "https://diysolarforum.com/forums/-/index.rss",
+      "publisher_id": "diysolar",
+      "publisher_type": "论坛社区",
+      "source_tier": "community",
+      "evidence_level": "社区讨论线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "技术突破"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Another big renewables project abandoned, as council changes tune on separate wind and battery plan",
+      "url": "https://reneweconomy.com.au/another-big-renewables-project-abandoned-as-council-changes-tune-on-separate-wind-and-battery-plan/",
+      "published_at": "2026-11-26T22:21:18Z",
+      "source_updated_at": null,
+      "id": "97e13784f3a483cc7e65611e",
+      "source_id": "specialist-reneweconomy",
+      "source_name": "RenewEconomy",
+      "source_url": "https://reneweconomy.com.au/feed/",
+      "publisher_id": "reneweconomy",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "矿山零碳",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "li-time 3k inverter/charger died.",
+      "url": "https://diysolarforum.com/threads/li-time-3k-inverter-charger-died.131390/",
+      "published_at": "2026-11-26T22:14:11Z",
+      "source_updated_at": null,
+      "id": "72c18729a6c9ddf98b3100de",
+      "source_id": "specialist-diysolar",
+      "source_name": "DIY Solar Forum",
+      "source_url": "https://diysolarforum.com/forums/-/index.rss",
+      "publisher_id": "diysolar",
+      "publisher_type": "论坛社区",
+      "source_tier": "community",
+      "evidence_level": "社区讨论线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "技术突破"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "PackPilot: JK BMS monitor for iPhone, iPad and Mac (developer here)",
+      "url": "https://diysolarforum.com/threads/packpilot-jk-bms-monitor-for-iphone-ipad-and-mac-developer-here.133047/",
+      "published_at": "2026-11-26T21:23:03Z",
+      "source_updated_at": null,
+      "id": "b839b23799cea84014170fe5",
+      "source_id": "specialist-diysolar",
+      "source_name": "DIY Solar Forum",
+      "source_url": "https://diysolarforum.com/forums/-/index.rss",
+      "publisher_id": "diysolar",
+      "publisher_type": "论坛社区",
+      "source_tier": "community",
+      "evidence_level": "社区讨论线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "技术突破"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Hello from Sweden. Looking for good budget lifepo4 batteries",
+      "url": "https://diysolarforum.com/threads/hello-from-sweden-looking-for-good-budget-lifepo4-batteries.108911/",
+      "published_at": "2026-11-26T20:46:02Z",
+      "source_updated_at": null,
+      "id": "e8af954e65e59fb210aa07fe",
       "source_id": "specialist-diysolar",
       "source_name": "DIY Solar Forum",
       "source_url": "https://diysolarforum.com/forums/-/index.rss",
@@ -74,9 +244,273 @@
       "source_tier": "community",
       "evidence_level": "社区讨论线索",
       "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
-        "技术突破"
+        "技术突破",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Informe Mercado del Oro",
+      "url": "https://www.cochilco.cl/web/informe-mercado-del-oro/",
+      "published_at": "2026-11-26T17:56:09Z",
+      "source_updated_at": null,
+      "id": "e160e3d8553be570f012966c",
+      "source_id": "cochilco",
+      "source_name": "智利铜业委员会 Cochilco",
+      "source_url": "https://www.cochilco.cl/web/feed/",
+      "publisher_id": "cochilco",
+      "publisher_type": "公共机构",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "原材料"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Zelestra and Statkraft agree 8-year Italy BESS toll as ‘bilateral market develops in parallel to MACSE’",
+      "url": "https://www.energy-storage.news/zelestra-statkraft-8-year-italy-bess-toll-bilateral-market-develops-parallel-macse/",
+      "published_at": "2026-11-26T15:03:14Z",
+      "source_updated_at": null,
+      "id": "d505f3585439f4b8f3c993bd",
+      "source_id": "specialist-informa",
+      "source_name": "Informa / Energy-Storage.news · Battery Technology",
+      "source_url": "https://www.energy-storage.news/feed/",
+      "publisher_id": "informa",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Energy Storage Awards 2026: Fluence, Quinbrook & NHOA win again, CMBlu & ContourGlobal among first-timers",
+      "url": "https://www.energy-storage.news/energy-storage-awards-2026-fluence-quinbrook-nhoa-win-again-cmblu-contourglobal-among-first-timers/",
+      "published_at": "2026-11-26T14:20:22Z",
+      "source_updated_at": null,
+      "id": "d4a391b7a953a723f98ab7bc",
+      "source_id": "specialist-informa",
+      "source_name": "Informa / Energy-Storage.news · Battery Technology",
+      "source_url": "https://www.energy-storage.news/feed/",
+      "publisher_id": "informa",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作",
+        "能源与供需"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Energy Vault backlog hits US$2.3 billion as it closes financing for 150MW Texas BESS",
+      "url": "https://www.energy-storage.news/energy-vault-backlog-hits-us2-3-billion-as-it-closes-financing-for-150mw-texas-bess/",
+      "published_at": "2026-11-26T13:03:53Z",
+      "source_updated_at": null,
+      "id": "82da18ebc5019e27e804c7fb",
+      "source_id": "specialist-informa",
+      "source_name": "Informa / Energy-Storage.news · Battery Technology",
+      "source_url": "https://www.energy-storage.news/feed/",
+      "publisher_id": "informa",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作",
+        "能源与供需"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Spain could reach 10 GW of batteries by 2030, but bankability remains the major challenge",
+      "url": "https://www.pv-magazine.com/2026/11/26/spain-could-reach-10-gw-of-batteries-by-2030-but-bankability-remains-the-major-challenge/",
+      "published_at": "2026-11-26T13:00:59Z",
+      "source_updated_at": null,
+      "id": "22bbc8044392c16a05208e56",
+      "source_id": "specialist-pv-magazine",
+      "source_name": "pv magazine / ESS News",
+      "source_url": "https://www.pv-magazine.com/feed/",
+      "publisher_id": "pv-magazine",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "供需平衡",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Estonian solar park energized with 55 MW/250 MWh battery",
+      "url": "https://www.pv-magazine.com/2026/11/26/estonian-hybrid-park-energized-with-55-mw-250-mwh-battery/",
+      "published_at": "2026-11-26T12:30:00Z",
+      "source_updated_at": null,
+      "id": "08f89eed3a8306195944bf53",
+      "source_id": "specialist-pv-magazine",
+      "source_name": "pv magazine / ESS News",
+      "source_url": "https://www.pv-magazine.com/feed/",
+      "publisher_id": "pv-magazine",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "供需平衡",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "DR Congo: Peacekepers step up civilian protection amid fighting in Ituri",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168883",
+      "published_at": "2026-11-26T12:00:00Z",
+      "source_updated_at": null,
+      "id": "5ae09920b122763949023412",
+      "source_id": "un-news",
+      "source_name": "联合国新闻 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_id": "united-nations",
+      "publisher_type": "公共机构",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "地缘与航运"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Maritime trade stagnates amid geopolitical uncertainty",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168884",
+      "published_at": "2026-11-26T12:00:00Z",
+      "source_updated_at": null,
+      "id": "2662f04af74a1ed55bc31318",
+      "source_id": "un-news",
+      "source_name": "联合国新闻 UN News",
+      "source_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "publisher_id": "united-nations",
+      "publisher_type": "公共机构",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "地缘与航运",
+        "航道与物流",
+        "地缘与贸易"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Actuate Energy orders 1.5GWh of BESS from Sungrow for 2027/2028 pipeline in Spain",
+      "url": "https://www.energy-storage.news/actuate-energy-orders-1-5gwh-bess-sungrow-2027-2028-pipeline-spain/",
+      "published_at": "2026-11-26T11:42:32Z",
+      "source_updated_at": null,
+      "id": "673756e3c6e74423412cd145",
+      "source_id": "specialist-informa",
+      "source_name": "Informa / Energy-Storage.news · Battery Technology",
+      "source_url": "https://www.energy-storage.news/feed/",
+      "publisher_id": "informa",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作",
+        "能源与供需"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "‘An early Christmas present’: European Energy takes delivery of 88MWh battery storage units in Australia",
+      "url": "https://www.energy-storage.news/european-energy-88mwh-battery-storage-australia/",
+      "published_at": "2026-11-26T09:30:59Z",
+      "source_updated_at": null,
+      "id": "5dba93db900d3a604a93dd94",
+      "source_id": "specialist-informa",
+      "source_name": "Informa / Energy-Storage.news · Battery Technology",
+      "source_url": "https://www.energy-storage.news/feed/",
+      "publisher_id": "informa",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作",
+        "能源与供需",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Heavily curtailed solar farm in weak part of grid seeks approval to add a big battery",
+      "url": "https://reneweconomy.com.au/another-heavily-curtailed-solar-farm-seeks-approval-to-add-a-big-battery/",
+      "published_at": "2026-11-26T05:55:24Z",
+      "source_updated_at": null,
+      "id": "c9d42fc03bd98287084a97d4",
+      "source_id": "specialist-reneweconomy",
+      "source_name": "RenewEconomy",
+      "source_url": "https://reneweconomy.com.au/feed/",
+      "publisher_id": "reneweconomy",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "矿山零碳",
+        "技术与竞对"
+      ],
+      "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Massive new solar farm and battery hybrid joins rush to connect to major new transmission line",
+      "url": "https://reneweconomy.com.au/massive-new-solar-farm-and-battery-hybrid-joins-rush-to-connect-to-major-new-transmission-line/",
+      "published_at": "2026-11-26T05:50:00Z",
+      "source_updated_at": null,
+      "id": "0a353dedc8cd1e680b6cca5e",
+      "source_id": "specialist-reneweconomy",
+      "source_name": "RenewEconomy",
+      "source_url": "https://reneweconomy.com.au/feed/",
+      "publisher_id": "reneweconomy",
+      "publisher_type": "专业媒体",
+      "source_tier": "media",
+      "evidence_level": "专业媒体线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "矿山零碳",
+        "技术与竞对"
       ],
       "collection_method": "rss",
       "status": "待核验"
@@ -127,109 +561,23 @@
       "status": "待核验"
     },
     {
-      "title": "Hello from Sweden. Looking for good budget lifepo4 batteries",
-      "url": "https://diysolarforum.com/threads/hello-from-sweden-looking-for-good-budget-lifepo4-batteries.108911/",
-      "published_at": "2026-11-26T02:10:40Z",
+      "title": "EU launches Supply Chain Early Warning Network with Trans-Pacific bloc",
+      "url": "https://policy.trade.ec.europa.eu/news/eu-launches-supply-chain-early-warning-network-trans-pacific-bloc-2026-11-26_en",
+      "published_at": "2026-11-25T23:00:00Z",
       "source_updated_at": null,
-      "id": "e8af954e65e59fb210aa07fe",
-      "source_id": "specialist-diysolar",
-      "source_name": "DIY Solar Forum",
-      "source_url": "https://diysolarforum.com/forums/-/index.rss",
-      "publisher_id": "diysolar",
-      "publisher_type": "论坛社区",
-      "source_tier": "community",
-      "evidence_level": "社区讨论线索",
-      "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "id": "ef7f516fde7127108bbf6d2d",
+      "source_id": "eu-commission",
+      "source_name": "欧盟委员会贸易与经济安全部门",
+      "source_url": "https://policy.trade.ec.europa.eu/node/2/rss_en",
+      "publisher_id": "eu-commission",
+      "publisher_type": "公共机构",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
-        "技术突破",
-        "技术与竞对"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "jk bms not reading 2 cells",
-      "url": "https://diysolarforum.com/threads/jk-bms-not-reading-2-cells.132451/",
-      "published_at": "2026-11-26T01:53:00Z",
-      "source_updated_at": null,
-      "id": "aed405a2397cb0676a71b535",
-      "source_id": "specialist-diysolar",
-      "source_name": "DIY Solar Forum",
-      "source_url": "https://diysolarforum.com/forums/-/index.rss",
-      "publisher_id": "diysolar",
-      "publisher_type": "论坛社区",
-      "source_tier": "community",
-      "evidence_level": "社区讨论线索",
-      "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "技术突破"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "Lutnick asked battery startup Pure Lithium to accept US takeover",
-      "url": "https://diysolarforum.com/threads/lutnick-asked-battery-startup-pure-lithium-to-accept-us-takeover.132848/",
-      "published_at": "2026-11-26T01:27:28Z",
-      "source_updated_at": null,
-      "id": "6494ebae26e535bb6b170559",
-      "source_id": "specialist-diysolar",
-      "source_name": "DIY Solar Forum",
-      "source_url": "https://diysolarforum.com/forums/-/index.rss",
-      "publisher_id": "diysolar",
-      "publisher_type": "论坛社区",
-      "source_tier": "community",
-      "evidence_level": "社区讨论线索",
-      "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "技术突破",
-        "矿产与原材料",
-        "技术与竞对"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "Lightning go boom. Inverter go poof.",
-      "url": "https://diysolarforum.com/threads/lightning-go-boom-inverter-go-poof.132965/",
-      "published_at": "2026-11-26T00:55:15Z",
-      "source_updated_at": null,
-      "id": "8e9053d7008f9eca5a69df84",
-      "source_id": "specialist-diysolar",
-      "source_name": "DIY Solar Forum",
-      "source_url": "https://diysolarforum.com/forums/-/index.rss",
-      "publisher_id": "diysolar",
-      "publisher_type": "论坛社区",
-      "source_tier": "community",
-      "evidence_level": "社区讨论线索",
-      "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "技术突破"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "Sungold SPH10048P Parameters with 2x Yixiang 48v JK BMS",
-      "url": "https://diysolarforum.com/threads/sungold-sph10048p-parameters-with-2x-yixiang-48v-jk-bms.132944/",
-      "published_at": "2026-11-25T18:21:52Z",
-      "source_updated_at": null,
-      "id": "6521c7a7f4a62914cd68b5ed",
-      "source_id": "specialist-diysolar",
-      "source_name": "DIY Solar Forum",
-      "source_url": "https://diysolarforum.com/forums/-/index.rss",
-      "publisher_id": "diysolar",
-      "publisher_type": "论坛社区",
-      "source_tier": "community",
-      "evidence_level": "社区讨论线索",
-      "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "技术突破"
+        "贸易与政策",
+        "能源与供需"
       ],
       "collection_method": "rss",
       "status": "待核验"
@@ -248,7 +596,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -293,7 +641,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -314,7 +662,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -381,7 +729,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -404,7 +752,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -425,7 +773,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -446,7 +794,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -467,7 +815,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -489,7 +837,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T15:29:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -534,7 +882,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -556,7 +904,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -622,7 +970,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -643,7 +991,7 @@
       "source_tier": "community",
       "evidence_level": "社区讨论线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -664,7 +1012,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -686,7 +1034,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -708,7 +1056,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -730,7 +1078,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -752,7 +1100,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "矿产与原材料",
@@ -775,7 +1123,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -796,7 +1144,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运"
       ],
@@ -817,7 +1165,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -839,7 +1187,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -861,7 +1209,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -882,7 +1230,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -903,7 +1251,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -947,7 +1295,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -969,7 +1317,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -990,7 +1338,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -1011,7 +1359,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -1034,7 +1382,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -1056,7 +1404,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运"
       ],
@@ -1077,7 +1425,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -1099,7 +1447,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "航道与物流",
@@ -1123,7 +1471,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -1144,7 +1492,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -1167,7 +1515,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -1212,7 +1560,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -1233,7 +1581,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运"
       ],
@@ -1254,7 +1602,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -1276,7 +1624,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运"
       ],
@@ -1297,7 +1645,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -1319,7 +1667,7 @@
       "source_tier": "community",
       "evidence_level": "社区讨论线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -1340,7 +1688,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资",
@@ -1363,7 +1711,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -1385,7 +1733,7 @@
       "source_tier": "community",
       "evidence_level": "社区讨论线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -1406,7 +1754,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -1427,7 +1775,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -1450,7 +1798,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -1494,7 +1842,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "地缘与贸易"
@@ -1516,7 +1864,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运"
       ],
@@ -1537,7 +1885,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -1558,7 +1906,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -1579,7 +1927,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -1602,7 +1950,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -1623,7 +1971,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -1645,7 +1993,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -1690,7 +2038,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需",
@@ -1713,7 +2061,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需",
@@ -1736,7 +2084,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需",
@@ -1759,7 +2107,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -1781,7 +2129,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -1802,7 +2150,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -1824,7 +2172,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -1846,7 +2194,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -1869,7 +2217,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -1890,7 +2238,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -1911,118 +2259,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "竞争与合作"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "Most of BESS supply industry is not ready for EU’s 2027 Battery Regulations, report says",
-      "url": "https://www.energy-storage.news/most-bess-supply-industry-not-ready-for-eu-2027-battery-regulations-report/",
-      "published_at": "2026-11-19T10:45:43Z",
-      "source_updated_at": null,
-      "id": "4172c2276a3d14285989a440",
-      "source_id": "specialist-informa",
-      "source_name": "Informa / Energy-Storage.news · Battery Technology",
-      "source_url": "https://www.energy-storage.news/feed/",
-      "publisher_id": "informa",
-      "publisher_type": "专业媒体",
-      "source_tier": "media",
-      "evidence_level": "专业媒体线索",
-      "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "竞争与合作",
-        "能源与供需",
-        "技术与竞对"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "BW ESS and Wattmen to develop 500MW of battery energy storage in France",
-      "url": "https://www.energy-storage.news/bw-ess-wattmen-500mw-battery-storage-france/",
-      "published_at": "2026-11-19T09:50:44Z",
-      "source_updated_at": null,
-      "id": "1b978eb0e078c3cb8742ad4c",
-      "source_id": "specialist-informa",
-      "source_name": "Informa / Energy-Storage.news · Battery Technology",
-      "source_url": "https://www.energy-storage.news/feed/",
-      "publisher_id": "informa",
-      "publisher_type": "专业媒体",
-      "source_tier": "media",
-      "evidence_level": "专业媒体线索",
-      "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "竞争与合作",
-        "能源与供需",
-        "技术与竞对"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "Statkraft pairs PPA with part-tolled, part-merchant BESS contract at Dutch solar site",
-      "url": "https://www.energy-storage.news/statkraft-ppa-tolled-merchant-bess-dutch-solar-site/",
-      "published_at": "2026-11-19T09:34:01Z",
-      "source_updated_at": null,
-      "id": "6650799e3035dc4fb0273f4a",
-      "source_id": "specialist-informa",
-      "source_name": "Informa / Energy-Storage.news · Battery Technology",
-      "source_url": "https://www.energy-storage.news/feed/",
-      "publisher_id": "informa",
-      "publisher_type": "专业媒体",
-      "source_tier": "media",
-      "evidence_level": "专业媒体线索",
-      "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "竞争与合作"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "‘Technical and non-controversial’: New Zealand regulator corrects battery storage price band rule date",
-      "url": "https://www.energy-storage.news/nz-regulator-corrects-bess-price-band-rule-date/",
-      "published_at": "2026-11-19T09:21:02Z",
-      "source_updated_at": null,
-      "id": "637aed9fd00d6d9f3cc1425a",
-      "source_id": "specialist-informa",
-      "source_name": "Informa / Energy-Storage.news · Battery Technology",
-      "source_url": "https://www.energy-storage.news/feed/",
-      "publisher_id": "informa",
-      "publisher_type": "专业媒体",
-      "source_tier": "media",
-      "evidence_level": "专业媒体线索",
-      "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
-      "categories": [
-        "竞争与合作",
-        "能源与供需",
-        "技术与竞对"
-      ],
-      "collection_method": "rss",
-      "status": "待核验"
-    },
-    {
-      "title": "AGL installs first 100 units at 2,000MWh Tomago BESS in New South Wales, Australia",
-      "url": "https://www.energy-storage.news/agl-tomago-bess-first-100-units-installed-nsw/",
-      "published_at": "2026-11-19T09:13:31Z",
-      "source_updated_at": null,
-      "id": "b85ee99adf6d7113485c8958",
-      "source_id": "specialist-informa",
-      "source_name": "Informa / Energy-Storage.news · Battery Technology",
-      "source_url": "https://www.energy-storage.news/feed/",
-      "publisher_id": "informa",
-      "publisher_type": "专业媒体",
-      "source_tier": "media",
-      "evidence_level": "专业媒体线索",
-      "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -2043,7 +2280,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -2065,7 +2302,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资"
@@ -2109,7 +2346,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -2131,7 +2368,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -2197,7 +2434,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -2219,7 +2456,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -2264,7 +2501,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -2285,7 +2522,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -2329,7 +2566,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -2350,7 +2587,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -2416,7 +2653,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -2437,7 +2674,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -2458,7 +2695,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -2480,7 +2717,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -2502,7 +2739,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -2524,7 +2761,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -2545,7 +2782,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -2567,7 +2804,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -2589,7 +2826,7 @@
       "source_tier": "community",
       "evidence_level": "社区讨论线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -2632,7 +2869,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -2654,7 +2891,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -2675,7 +2912,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -2696,7 +2933,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -2717,7 +2954,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -2738,7 +2975,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -2761,7 +2998,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -2783,7 +3020,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需",
@@ -2806,7 +3043,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -2827,7 +3064,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -2848,7 +3085,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资",
@@ -2871,7 +3108,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -2893,7 +3130,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -2915,7 +3152,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -2937,7 +3174,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -2959,7 +3196,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -2981,7 +3218,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -3003,7 +3240,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -3024,7 +3261,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -3045,7 +3282,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -3067,7 +3304,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -3088,7 +3325,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -3109,7 +3346,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "技术与竞对"
@@ -3131,7 +3368,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -3153,7 +3390,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -3174,7 +3411,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -3195,7 +3432,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -3217,7 +3454,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -3238,7 +3475,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -3260,7 +3497,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资"
@@ -3282,7 +3519,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资",
@@ -3305,7 +3542,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -3326,7 +3563,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -3348,7 +3585,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -3371,7 +3608,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3393,7 +3630,7 @@
       "source_tier": "media",
       "evidence_level": "专业媒体线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -3415,7 +3652,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3437,7 +3674,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3459,7 +3696,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -3480,7 +3717,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3502,7 +3739,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -3524,7 +3761,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -3547,7 +3784,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -3569,7 +3806,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3591,7 +3828,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -3612,7 +3849,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3634,7 +3871,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资"
@@ -3656,7 +3893,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资",
@@ -3679,7 +3916,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -3700,7 +3937,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -3721,7 +3958,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "能源与供需",
@@ -3744,7 +3981,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -3765,7 +4002,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -3788,7 +4025,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -3809,7 +4046,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -3830,7 +4067,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "合作与投资"
@@ -3852,7 +4089,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -3874,7 +4111,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -3895,7 +4132,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3917,7 +4154,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -3938,7 +4175,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -3960,7 +4197,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -3981,7 +4218,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡",
         "能源与供需"
@@ -4003,7 +4240,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4025,7 +4262,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4047,7 +4284,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4069,7 +4306,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4090,7 +4327,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -4113,7 +4350,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4135,7 +4372,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -4156,7 +4393,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4178,7 +4415,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -4199,7 +4436,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4220,7 +4457,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -4241,7 +4478,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4263,7 +4500,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -4284,7 +4521,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4306,7 +4543,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4328,7 +4565,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4350,7 +4587,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -4371,7 +4608,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -4393,7 +4630,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4414,7 +4651,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -4435,7 +4672,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4456,7 +4693,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -4498,7 +4735,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4519,7 +4756,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4541,7 +4778,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4563,7 +4800,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4585,7 +4822,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4606,7 +4843,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4627,7 +4864,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -4650,7 +4887,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对",
@@ -4673,7 +4910,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -4696,7 +4933,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4717,7 +4954,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4738,7 +4975,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4760,7 +4997,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4782,7 +5019,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4804,7 +5041,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "合作与投资"
@@ -4826,7 +5063,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -4849,7 +5086,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4870,7 +5107,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -4892,7 +5129,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -4914,7 +5151,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -4935,7 +5172,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -4958,7 +5195,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -4982,7 +5219,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5007,7 +5244,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -5028,7 +5265,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5050,7 +5287,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5072,7 +5309,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5096,7 +5333,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5120,7 +5357,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -5142,7 +5379,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -5164,7 +5401,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -5187,7 +5424,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5209,7 +5446,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -5230,7 +5467,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -5253,7 +5490,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5277,7 +5514,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -5299,7 +5536,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5321,7 +5558,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -5342,7 +5579,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -5365,7 +5602,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破"
       ],
@@ -5386,7 +5623,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5408,7 +5645,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5432,7 +5669,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5456,7 +5693,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5481,7 +5718,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5504,7 +5741,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5528,7 +5765,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5550,7 +5787,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -5573,7 +5810,7 @@
       "source_tier": "research",
       "evidence_level": "专业研究线索",
       "first_seen_at": "2026-11-25T14:57:50Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "技术与竞对"
@@ -5595,7 +5832,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -5618,7 +5855,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5640,7 +5877,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -5663,7 +5900,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
@@ -5685,7 +5922,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需",
@@ -5708,7 +5945,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5733,7 +5970,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5758,7 +5995,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "矿产与原材料",
@@ -5782,12 +6019,176 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "技术突破",
         "能源与供需"
       ],
       "collection_method": "rss",
+      "status": "待核验"
+    },
+    {
+      "title": "Supply Chains Power Battery Competitiveness",
+      "url": "https://news.samsungsdi.com/global/click?seq=485",
+      "published_at": null,
+      "parser_version": 2,
+      "source_updated_at": null,
+      "date_note": "列表未提供可核验发布日期；不以发现时间代替",
+      "id": "fe9eebad26f68021fc6fabf9",
+      "source_id": "samsung-sdi",
+      "source_name": "Samsung SDI",
+      "source_url": "https://news.samsungsdi.com/global/",
+      "publisher_id": "samsung-sdi",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作",
+        "能源与供需",
+        "技术与竞对"
+      ],
+      "collection_method": "html",
+      "status": "待核验"
+    },
+    {
+      "title": "商务部服贸司负责人解读《服务贸易发展“十五五”规划》",
+      "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_c0338aed34274384b2bcc6afb75a1106.html",
+      "published_at": null,
+      "parser_version": 2,
+      "source_updated_at": null,
+      "date_note": "列表未提供可核验发布日期；不以发现时间代替",
+      "id": "c919838373e17dc0c327643c",
+      "source_id": "cn-mofcom",
+      "source_name": "中国商务部",
+      "source_url": "https://www.mofcom.gov.cn/xwfb/",
+      "publisher_id": "cn-mofcom",
+      "publisher_type": "公共机构",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "贸易与政策"
+      ],
+      "collection_method": "html",
+      "status": "待核验"
+    },
+    {
+      "title": "“出口中国”丹麦专场活动在哥本哈根举行",
+      "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_659bd4c3639b4ff2b9e7adbc9480c3cf.html",
+      "published_at": null,
+      "parser_version": 2,
+      "source_updated_at": null,
+      "date_note": "列表未提供可核验发布日期；不以发现时间代替",
+      "id": "b5a0c0f59d0bb5dfe4530c1d",
+      "source_id": "cn-mofcom",
+      "source_name": "中国商务部",
+      "source_url": "https://www.mofcom.gov.cn/xwfb/",
+      "publisher_id": "cn-mofcom",
+      "publisher_type": "公共机构",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "贸易与政策"
+      ],
+      "collection_method": "html",
+      "status": "待核验"
+    },
+    {
+      "title": "关于发布对外投资管理办法配套格式文本(2026年版)的通知",
+      "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202611/t20261126_1409103.html",
+      "published_at": null,
+      "parser_version": 2,
+      "source_updated_at": null,
+      "date_note": "列表未提供可核验发布日期；不以发现时间代替",
+      "id": "7f066c60892180e19a3716b4",
+      "source_id": "cn-ndrc",
+      "source_name": "中国国家发展改革委",
+      "source_url": "https://www.ndrc.gov.cn/xwdt/",
+      "publisher_id": "cn-ndrc",
+      "publisher_type": "公共机构",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "矿山零碳"
+      ],
+      "collection_method": "html",
+      "status": "待核验"
+    },
+    {
+      "title": "Umicore updates sustainability goals and sets SBTi-validated net-zero target",
+      "url": "https://www.umicore.com/en/media/newsroom/umicore-sets-sbti-validated-net-zero-target/",
+      "published_at": null,
+      "parser_version": 2,
+      "source_updated_at": null,
+      "date_note": "列表未提供可核验发布日期；不以发现时间代替",
+      "id": "6cae88bc6b4922c961688a8d",
+      "source_id": "umicore",
+      "source_name": "Umicore 优美科",
+      "source_url": "https://www.umicore.com/en/media/newsroom/",
+      "publisher_id": "umicore",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "原材料"
+      ],
+      "collection_method": "html",
+      "status": "待核验"
+    },
+    {
+      "title": "SAMSUNG SDI Clears Strict Global Standards — A Cornerstone of UPS and ESS Safety",
+      "url": "https://news.samsungsdi.com/global/click?seq=458",
+      "published_at": null,
+      "parser_version": 2,
+      "source_updated_at": null,
+      "date_note": "列表未提供可核验发布日期；不以发现时间代替",
+      "id": "4eb0e9adc6fcd87fe2267989",
+      "source_id": "samsung-sdi",
+      "source_name": "Samsung SDI",
+      "source_url": "https://news.samsungsdi.com/global/",
+      "publisher_id": "samsung-sdi",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作"
+      ],
+      "collection_method": "html",
+      "status": "待核验"
+    },
+    {
+      "title": "APEC 2026 | EVE Energy Chairman Dr. Liu Jincheng Met Malaysian Prime Minister Anwar Ibrahim",
+      "url": "https://www.evebattery.com/en/news-1902",
+      "published_at": null,
+      "parser_version": 2,
+      "source_updated_at": null,
+      "date_note": "列表未提供可核验发布日期；不以发现时间代替",
+      "id": "3f34a69b11306fa86b3e4ac9",
+      "source_id": "eve",
+      "source_name": "亿纬锂能 EVE",
+      "source_url": "https://www.evebattery.com/en/news",
+      "publisher_id": "eve",
+      "publisher_type": "企业原始披露",
+      "source_tier": "primary",
+      "evidence_level": "原始披露线索",
+      "first_seen_at": "2026-11-27T05:20:14Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
+      "categories": [
+        "竞争与合作",
+        "能源与供需"
+      ],
+      "collection_method": "html",
       "status": "待核验"
     },
     {
@@ -5806,7 +6207,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -5829,7 +6230,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-26T05:27:03Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -5852,7 +6253,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -5876,7 +6277,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -5899,7 +6300,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -5945,7 +6346,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -5992,7 +6393,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -6015,7 +6416,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -6038,7 +6439,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -6085,7 +6486,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -6109,7 +6510,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "技术与竞对"
@@ -6133,7 +6534,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -6179,7 +6580,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对",
@@ -6252,7 +6653,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -6275,7 +6676,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -6298,7 +6699,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -6322,7 +6723,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -6368,7 +6769,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -6391,7 +6792,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -6414,7 +6815,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权",
         "矿产与原材料",
@@ -6439,7 +6840,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -6486,7 +6887,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -6533,7 +6934,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -6580,7 +6981,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -6603,7 +7004,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -6626,7 +7027,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -6674,7 +7075,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权",
         "矿产与原材料",
@@ -6699,7 +7100,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "矿产与原材料",
@@ -6724,7 +7125,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -6770,7 +7171,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -6887,7 +7288,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -6933,7 +7334,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -6956,7 +7357,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -6979,7 +7380,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -7002,7 +7403,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7025,7 +7426,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -7048,7 +7449,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -7071,7 +7472,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -7118,7 +7519,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -7165,7 +7566,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -7188,7 +7589,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -7213,7 +7614,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -7237,7 +7638,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "技术与竞对"
@@ -7261,7 +7662,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -7285,7 +7686,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -7308,7 +7709,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -7332,7 +7733,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料",
@@ -7358,7 +7759,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7381,7 +7782,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7404,7 +7805,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -7429,7 +7830,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -7452,7 +7853,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7475,7 +7876,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -7544,7 +7945,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7567,7 +7968,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7590,7 +7991,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -7614,7 +8015,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -7637,7 +8038,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -7661,7 +8062,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -7684,7 +8085,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -7755,7 +8156,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7778,7 +8179,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7801,7 +8202,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -7825,7 +8226,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7848,7 +8249,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -7871,7 +8272,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -7894,7 +8295,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -7917,7 +8318,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -7940,7 +8341,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -7987,7 +8388,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -8010,7 +8411,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -8058,7 +8459,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "合作与投资"
@@ -8130,7 +8531,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -8153,7 +8554,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -8176,7 +8577,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料"
@@ -8200,7 +8601,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -8269,7 +8670,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -8292,7 +8693,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -8315,7 +8716,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -8338,7 +8739,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -8361,7 +8762,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -8386,7 +8787,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运"
       ],
@@ -8409,7 +8810,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需",
@@ -8434,7 +8835,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -8459,7 +8860,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -8506,7 +8907,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -8529,7 +8930,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -8552,7 +8953,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "能源与供需"
@@ -8576,7 +8977,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -8599,7 +9000,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -8622,7 +9023,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -8646,7 +9047,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -8716,7 +9117,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -8765,7 +9166,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -8812,7 +9213,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -8858,7 +9259,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -8905,7 +9306,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -8953,7 +9354,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -8976,7 +9377,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料"
@@ -9000,7 +9401,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -9023,7 +9424,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -9070,7 +9471,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -9093,7 +9494,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -9116,7 +9517,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -9139,7 +9540,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "技术与竞对"
@@ -9163,7 +9564,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -9210,7 +9611,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -9233,7 +9634,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -9256,7 +9657,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "合作与投资"
@@ -9280,7 +9681,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "矿产与原材料"
@@ -9304,7 +9705,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -9327,7 +9728,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -9374,7 +9775,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运"
       ],
@@ -9397,7 +9798,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "航道与物流"
@@ -9421,7 +9822,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料"
@@ -9445,7 +9846,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -9468,7 +9869,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -9515,7 +9916,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料"
@@ -9563,7 +9964,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -9586,7 +9987,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料"
@@ -9610,7 +10011,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -9634,7 +10035,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -9657,7 +10058,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料",
@@ -9706,7 +10107,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -9729,7 +10130,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -9753,7 +10154,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -9776,7 +10177,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -9799,7 +10200,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -9845,7 +10246,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -9868,7 +10269,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -9891,7 +10292,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -9938,7 +10339,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -9961,7 +10362,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -9984,7 +10385,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -10030,7 +10431,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "矿产与原材料",
@@ -10055,7 +10456,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料"
@@ -10102,7 +10503,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -10125,7 +10526,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -10148,7 +10549,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -10171,7 +10572,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -10195,7 +10596,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "能源与供需",
@@ -10221,7 +10622,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -10244,7 +10645,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -10268,7 +10669,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需"
@@ -10292,7 +10693,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -10338,7 +10739,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -10410,7 +10811,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策"
       ],
@@ -10457,7 +10858,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -10482,7 +10883,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权",
         "矿产与原材料"
@@ -10506,7 +10907,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -10529,7 +10930,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "合作与投资"
@@ -10553,7 +10954,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -10576,7 +10977,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -10624,7 +11025,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -10647,7 +11048,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -10670,7 +11071,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "能源与供需"
@@ -10718,7 +11119,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -10741,7 +11142,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -10787,7 +11188,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -10810,7 +11211,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -10904,7 +11305,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -10927,7 +11328,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "贸易与政策",
         "地缘与贸易"
@@ -10951,7 +11352,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "矿产与原材料"
@@ -10975,7 +11376,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -10998,7 +11399,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -11021,7 +11422,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "地缘与航运",
         "航道与物流"
@@ -11045,7 +11446,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "航道与物流"
@@ -11069,7 +11470,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -11092,7 +11493,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -11115,7 +11516,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权",
         "矿产与原材料"
@@ -11139,7 +11540,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -11162,7 +11563,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -11185,7 +11586,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -11208,7 +11609,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳"
       ],
@@ -11231,7 +11632,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作",
         "能源与供需",
@@ -11256,7 +11657,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -11279,7 +11680,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "竞争与合作"
       ],
@@ -11302,7 +11703,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料"
       ],
@@ -11325,7 +11726,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "原材料",
         "合作与投资"
@@ -11349,7 +11750,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "矿山零碳",
         "合作与投资"
@@ -11373,7 +11774,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:48:32Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "资源与矿权"
       ],
@@ -11417,7 +11818,7 @@
       "source_tier": "primary",
       "evidence_level": "原始披露线索",
       "first_seen_at": "2026-11-25T13:25:12Z",
-      "last_seen_at": "2026-11-26T05:27:03Z",
+      "last_seen_at": "2026-11-27T05:20:14Z",
       "categories": [
         "供需平衡"
       ],
@@ -11440,8 +11841,8 @@
       "initial_baseline": false,
       "coverage_note": "电池技术、储能、国际工厂、合作和服务；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 9,
       "relevant_count": 9,
       "latest_publication_at": null,
@@ -11463,14 +11864,14 @@
       "initial_baseline": false,
       "coverage_note": "储能与动力电池、工厂产线、订单与技术发布；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
-      "item_count": 2,
-      "relevant_count": 2,
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
+      "item_count": 1,
+      "relevant_count": 1,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 82064
+      "bytes": 81777
     },
     {
       "id": "calb",
@@ -11486,8 +11887,8 @@
       "initial_baseline": false,
       "coverage_note": "动力储能电池、客户合作、技术与电池护照；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": null,
@@ -11509,8 +11910,8 @@
       "initial_baseline": false,
       "coverage_note": "储能系统、动力电池、海外客户与工厂合作；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": null,
@@ -11532,7 +11933,7 @@
       "initial_baseline": false,
       "coverage_note": "电池财报、储能布局、材料供应链与产能计划；免费公开新闻与公告标题、链接及披露事实。",
       "status": "failed",
-      "checked_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
       "last_success_at": "2026-11-25T13:53:53Z",
       "item_count": 0,
       "relevant_count": 0,
@@ -11553,14 +11954,14 @@
       "initial_baseline": false,
       "coverage_note": "动力储能电池、固态样品、订单与产能；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 8,
       "relevant_count": 8,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 23342
+      "bytes": 23081
     },
     {
       "id": "panasonic",
@@ -11576,8 +11977,8 @@
       "initial_baseline": false,
       "coverage_note": "电池研发、量产、数据中心电源及海外工厂；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 60,
       "relevant_count": 60,
       "latest_publication_at": "2026-11-24T15:00:00Z",
@@ -11599,8 +12000,8 @@
       "initial_baseline": false,
       "coverage_note": "固态电池研发、客户验证和产线进展；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": "2026-11-11T14:00:33Z",
@@ -11622,8 +12023,8 @@
       "initial_baseline": false,
       "coverage_note": "硅负极高能量密度电芯、产能与客户验证；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": "2026-11-10T21:05:00Z",
@@ -11645,8 +12046,8 @@
       "initial_baseline": false,
       "coverage_note": "盐湖锂资源、产销、合资与新建项目；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 4,
       "relevant_count": 4,
       "latest_publication_at": null,
@@ -11668,7 +12069,7 @@
       "initial_baseline": false,
       "coverage_note": "锂辉石产销、季度报告、融资和矿山电力合同；免费公开新闻与公告标题、链接及披露事实。",
       "status": "failed",
-      "checked_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
       "last_success_at": "2026-11-25T13:53:53Z",
       "item_count": 0,
       "relevant_count": 0,
@@ -11689,7 +12090,7 @@
       "initial_baseline": false,
       "coverage_note": "Finniss锂矿复产、出货、季度经营及董事公告；免费公开新闻与公告标题、链接及披露事实。",
       "status": "failed",
-      "checked_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
       "last_success_at": "2026-11-25T13:53:53Z",
       "item_count": 0,
       "relevant_count": 0,
@@ -11710,8 +12111,8 @@
       "initial_baseline": false,
       "coverage_note": "天然石墨矿山、负极材料、客户认证与供应；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 9,
       "relevant_count": 9,
       "latest_publication_at": null,
@@ -11733,8 +12134,8 @@
       "initial_baseline": false,
       "coverage_note": "铜钴矿山、海外资源项目与产销披露；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 12,
       "relevant_count": 12,
       "latest_publication_at": null,
@@ -11756,8 +12157,8 @@
       "initial_baseline": false,
       "coverage_note": "镍钴冶炼、前驱体正极、印尼项目及合作；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 7,
       "relevant_count": 7,
       "latest_publication_at": null,
@@ -11779,8 +12180,8 @@
       "initial_baseline": false,
       "coverage_note": "正极材料、镍资源与电池材料客户；原文韩语；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": null,
@@ -11802,14 +12203,14 @@
       "initial_baseline": false,
       "coverage_note": "正极材料、回收、金属加工和工厂策略；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 20,
       "relevant_count": 20,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 276272
+      "bytes": 276254
     },
     {
       "id": "novonix",
@@ -11825,8 +12226,8 @@
       "initial_baseline": false,
       "coverage_note": "人造石墨负极、量产资格、客户合同与北美融资；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 8,
       "relevant_count": 8,
       "latest_publication_at": null,
@@ -11848,14 +12249,14 @@
       "initial_baseline": false,
       "coverage_note": "矿山绿电、电动矿卡、电池系统和能源合作；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 8,
       "relevant_count": 8,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 308764
+      "bytes": 244158
     },
     {
       "id": "caterpillar",
@@ -11871,14 +12272,14 @@
       "initial_baseline": false,
       "coverage_note": "矿山电动装备、离网供电、发电机及客户试验；免费公开新闻与公告标题、链接及披露事实。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 30,
       "relevant_count": 30,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 637402
+      "bytes": 637389
     },
     {
       "id": "eia-today-in-energy",
@@ -11894,8 +12295,8 @@
       "initial_baseline": false,
       "coverage_note": "能源供需、发电、电池储能、电力与油气航运的公开数据和分析",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 32,
       "relevant_count": 32,
       "latest_publication_at": "2026-11-25T14:00:00Z",
@@ -11917,7 +12318,7 @@
       "initial_baseline": false,
       "coverage_note": "公开能源、电动车、电池、关键矿产及能源安全新闻与报告",
       "status": "failed",
-      "checked_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
       "last_success_at": "2026-11-25T13:53:53Z",
       "item_count": 0,
       "relevant_count": 0,
@@ -11938,14 +12339,14 @@
       "initial_baseline": false,
       "coverage_note": "海上安全、通航风险和航运规则的官方公开通报",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 4,
       "relevant_count": 4,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 78370
+      "bytes": 78498
     },
     {
       "id": "un-news",
@@ -11961,14 +12362,14 @@
       "initial_baseline": false,
       "coverage_note": "冲突、能源、贸易及人道事件官方报道",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 30,
-      "relevant_count": 15,
-      "latest_publication_at": "2026-11-25T12:00:00Z",
+      "relevant_count": 16,
+      "latest_publication_at": "2026-11-26T12:00:00Z",
       "error": null,
       "http_status": 200,
-      "bytes": 34558
+      "bytes": 34346
     },
     {
       "id": "us-ofac",
@@ -11984,14 +12385,14 @@
       "initial_baseline": false,
       "coverage_note": "制裁名单变动、一般许可、豁免与执法公告",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 8,
       "relevant_count": 8,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 44715
+      "bytes": 44493
     },
     {
       "id": "eu-commission",
@@ -12007,14 +12408,14 @@
       "initial_baseline": false,
       "coverage_note": "贸易协定、保障措施、反倾销和市场准入公开新闻",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 30,
       "relevant_count": 30,
-      "latest_publication_at": "2026-11-23T23:00:00Z",
+      "latest_publication_at": "2026-11-25T23:00:00Z",
       "error": null,
       "http_status": 200,
-      "bytes": 41798
+      "bytes": 41469
     },
     {
       "id": "cn-mofcom",
@@ -12030,14 +12431,14 @@
       "initial_baseline": false,
       "coverage_note": "出口管制、贸易救济、协定、对外投资和经贸谈判信息",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 30,
-      "relevant_count": 10,
+      "relevant_count": 11,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 21461
+      "bytes": 21322
     },
     {
       "id": "cn-ndrc",
@@ -12053,14 +12454,14 @@
       "initial_baseline": false,
       "coverage_note": "能源价格、储能、产业投资和项目政策公开信息",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 18,
-      "relevant_count": 3,
+      "relevant_count": 4,
       "latest_publication_at": null,
       "error": null,
       "http_status": 200,
-      "bytes": 16249
+      "bytes": 16273
     },
     {
       "id": "us-doe",
@@ -12076,14 +12477,14 @@
       "initial_baseline": false,
       "coverage_note": "能源政策、项目资助、储能及关键材料计划公开发布",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": "2026-11-20T22:49:34Z",
       "error": null,
       "http_status": 200,
-      "bytes": 7830
+      "bytes": 7853
     },
     {
       "id": "csiro",
@@ -12099,8 +12500,8 @@
       "initial_baseline": false,
       "coverage_note": "电池、关键矿产、制造工艺、矿山能源与商业化研究",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 6,
       "relevant_count": 0,
       "latest_publication_at": null,
@@ -12122,8 +12523,8 @@
       "initial_baseline": false,
       "coverage_note": "电池材料、制造、回收、先进计算与能源科研原始披露",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 12,
       "relevant_count": 1,
       "latest_publication_at": "2026-11-24T13:26:31Z",
@@ -12145,8 +12546,8 @@
       "initial_baseline": false,
       "coverage_note": "储能电池、材料、电网可靠性和技术示范研究",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 11,
       "relevant_count": 0,
       "latest_publication_at": null,
@@ -12168,8 +12569,8 @@
       "initial_baseline": false,
       "coverage_note": "矿产下游化、镍煤能源政策和矿业项目官方消息",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 15,
       "relevant_count": 15,
       "latest_publication_at": null,
@@ -12191,14 +12592,14 @@
       "initial_baseline": false,
       "coverage_note": "铜与锂市场、矿业投资组合、用能/用水公开报告及统计",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 9,
       "relevant_count": 9,
-      "latest_publication_at": "2026-11-25T12:40:34Z",
+      "latest_publication_at": "2026-11-26T17:56:09Z",
       "error": null,
       "http_status": 200,
-      "bytes": 13738
+      "bytes": 13399
     },
     {
       "id": "specialist-informa",
@@ -12214,14 +12615,14 @@
       "initial_baseline": false,
       "coverage_note": "BESS订单、系统集成商、产线、材料和电芯制造；合并Energy-Storage.news、PV Tech与Battery Technology入口。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 300,
       "relevant_count": 300,
-      "latest_publication_at": "2026-11-25T14:36:37Z",
+      "latest_publication_at": "2026-11-26T15:03:14Z",
       "error": null,
       "http_status": 200,
-      "bytes": 391501
+      "bytes": 390416
     },
     {
       "id": "specialist-pv-magazine",
@@ -12237,14 +12638,14 @@
       "initial_baseline": false,
       "coverage_note": "储能招标、并网、电站收益、技术与回收；优先ESS News与储能栏目，排除泛光伏组件营销。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
-      "relevant_count": 4,
-      "latest_publication_at": "2026-11-25T15:37:20Z",
+      "relevant_count": 2,
+      "latest_publication_at": "2026-11-26T21:30:00Z",
       "error": null,
       "http_status": 200,
-      "bytes": 56091
+      "bytes": 82837
     },
     {
       "id": "specialist-charged",
@@ -12260,8 +12661,8 @@
       "initial_baseline": false,
       "coverage_note": "电池工程、正负极与电解液、生产设备、热管理、充电与整车供应链。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 4,
       "latest_publication_at": "2026-11-25T18:16:00Z",
@@ -12283,14 +12684,14 @@
       "initial_baseline": false,
       "coverage_note": "年度Battery Report与专业作者博客：材料认证、LFP迭代、制造、隔膜及产业链生态。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": "2026-10-30T13:39:59Z",
       "error": null,
       "http_status": 200,
-      "bytes": 179068
+      "bytes": 179067
     },
     {
       "id": "specialist-fraunhofer",
@@ -12306,8 +12707,8 @@
       "initial_baseline": false,
       "coverage_note": "电池产业链路线图、欧洲生产与回收能力、材料供需和技术商业化的研究者博客。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 16,
       "relevant_count": 16,
       "latest_publication_at": "2026-11-25T09:00:00Z",
@@ -12329,8 +12730,8 @@
       "initial_baseline": false,
       "coverage_note": "储能安全、热失控测试、系统可靠性、长时储能与公开工程工具。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 10,
       "latest_publication_at": "2026-09-03T22:22:33Z",
@@ -12352,14 +12753,14 @@
       "initial_baseline": false,
       "coverage_note": "澳洲大型电池、矿山供电、离网系统、并网和电力市场新闻。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
-      "relevant_count": 3,
-      "latest_publication_at": "2026-11-26T03:42:04Z",
+      "relevant_count": 5,
+      "latest_publication_at": "2026-11-27T03:40:58Z",
       "error": null,
       "http_status": 200,
-      "bytes": 19974
+      "bytes": 18947
     },
     {
       "id": "specialist-canary",
@@ -12375,8 +12776,8 @@
       "initial_baseline": false,
       "coverage_note": "美国储能、电池制造、供应链和商业模式的深度报道。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 100,
       "relevant_count": 12,
       "latest_publication_at": "2026-11-25T08:30:00Z",
@@ -12398,8 +12799,8 @@
       "initial_baseline": false,
       "coverage_note": "构网型变流器、储能并网、运行、可靠性与系统规划的工程研究。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 10,
       "relevant_count": 0,
       "latest_publication_at": "2026-11-09T17:13:18Z",
@@ -12421,14 +12822,14 @@
       "initial_baseline": false,
       "coverage_note": "终端用户的LFP一致性、BMS兼容、待机损耗、实际运行和故障反馈。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 100,
       "relevant_count": 11,
-      "latest_publication_at": "2026-11-26T05:26:24Z",
+      "latest_publication_at": "2026-11-27T05:08:50Z",
       "error": null,
       "http_status": 200,
-      "bytes": 142976
+      "bytes": 135003
     },
     {
       "id": "specialist-secondlife",
@@ -12444,8 +12845,8 @@
       "initial_baseline": false,
       "coverage_note": "退役电池分选、梯次利用、BMS、储能运行与实测讨论。",
       "status": "success",
-      "checked_at": "2026-11-26T05:27:03Z",
-      "last_success_at": "2026-11-26T05:27:03Z",
+      "checked_at": "2026-11-27T05:20:14Z",
+      "last_success_at": "2026-11-27T05:20:14Z",
       "item_count": 15,
       "relevant_count": 4,
       "latest_publication_at": "2026-11-26T01:33:27Z",
