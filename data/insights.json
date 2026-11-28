@@ -1,15 +1,15 @@
 {
   "meta": {
-    "as_of": "2026-11-27",
+    "as_of": "2026-11-28",
     "title": "CATL产业链决策洞察",
     "scope": "公开产业投资视角；把事实、工程阶段和经营研判分别标识",
     "method": "企业/政府原文与独立研究交叉检查；时间轴保留发生日、披露日、未来目标的区别；不编造内部采购、船货或投资敞口",
-    "insight_count": 15,
-    "source_count": 62,
-    "review_notes": "新增澳洲储能FID、户储与电价反馈分析，更新铜价判断条件；其他有效议题保留原日期。钴、镍、负极没有足以改变结论的新证据。",
-    "generated_at": "2026-11-27T08:55:08+08:00",
+    "insight_count": 16,
+    "source_count": 67,
+    "review_notes": "新增EU—CPTPP预警网络运行条款研究，补录11月26日意大利双边tolling签约；更新11月27日铜铝镍三项同口径价格，锂保留24日。铜价连续反弹削弱短期基价降本证据。钴、镍工艺、负极未获得足以改变结论的新证据。",
+    "generated_at": "2026-11-28T08:43:15+08:00",
     "editorial_note": "重点议题连接事实、时间线、材料节点、经营问题及判断更新条件；条件为研究规则，不表示已触发自动预警或掌握内部敞口。",
-    "decision_checkpoint_count": 33
+    "decision_checkpoint_count": 36
   },
   "sources": [
     {
@@ -641,6 +641,56 @@
       "type": "政府公开行情汇编",
       "verified_at": "2026-11-27T08:55:08+08:00",
       "locator": "PDF第1页，经页面图像核对；LME Contado US$/TM，Otros metales y litio"
+    },
+    {
+      "id": "eu-cptpp-early-warning-launch-20261126",
+      "title": "EU launches Supply Chain Early Warning Network with Trans-Pacific bloc",
+      "publisher": "European Commission",
+      "published_at": "2026-11-26",
+      "type": "政府原文",
+      "locator": "公告：首次会议预计2027年初",
+      "url": "https://policy.trade.ec.europa.eu/news/eu-launches-supply-chain-early-warning-network-trans-pacific-bloc-2026-11-26_en",
+      "verified_at": "2026-11-28T08:43:15+08:00"
+    },
+    {
+      "id": "uk-cptpp-eu-early-warning-tor-20261127",
+      "title": "Terms of reference for the CPTPP-EU supply chain early warning network",
+      "publisher": "UK government",
+      "published_at": "2026-11-27",
+      "type": "政府原文",
+      "locator": "第1—7节；自愿、非约束、信息共享、共同主席、保密及复审",
+      "url": "https://www.gov.uk/government/publications/cptpp-eu-supply-chain-early-warning-network-terms-of-reference/terms-of-reference-for-the-cptpp-eu-supply-chain-early-warning-network",
+      "verified_at": "2026-11-28T08:43:15+08:00"
+    },
+    {
+      "id": "zelestra-statkraft-tolling-20261126",
+      "title": "Zelestra and Statkraft sign 700 MWh long-term battery tolling agreement in Italy",
+      "publisher": "Zelestra",
+      "published_at": "2026-11-26",
+      "type": "企业联合披露",
+      "locator": "项目规模、八年合同、建设运营与市场优化分工",
+      "url": "https://zelestra.energy/en/news/zelestra-statkraft-battery-tolling-agreement-italy",
+      "verified_at": "2026-11-28T08:43:15+08:00"
+    },
+    {
+      "id": "esn-italy-bilateral-tolling-20261126",
+      "title": "Zelestra and Statkraft agree 8-year Italy BESS toll",
+      "publisher": "Energy-Storage.news",
+      "published_at": "2026-11-26",
+      "type": "专业媒体",
+      "locator": "市场背景及开发商访谈；项目事实回Zelestra原文，不作为独立项目验证",
+      "url": "https://www.energy-storage.news/zelestra-statkraft-8-year-italy-bess-toll-bilateral-market-develops-parallel-macse/",
+      "verified_at": "2026-11-28T08:43:15+08:00"
+    },
+    {
+      "id": "cochilco-daily-20261127",
+      "title": "La Rueda — 27 de noviembre de 2026",
+      "publisher": "Cochilco",
+      "published_at": "2026-11-27",
+      "type": "政府公开行情汇编",
+      "locator": "PDF第1页，文本与图像核对；铝价日涨跌栏与26、27日实值不一致，采用实值重算",
+      "url": "https://www.cochilco.cl/web/download/1040/noviembre-2026/17112/rueda-27-11-2026.pdf",
+      "verified_at": "2026-11-28T08:43:15+08:00"
     }
   ],
   "insights": [
@@ -1522,6 +1572,236 @@
       }
     },
     {
+      "id": "eu-cptpp-supply-chain-early-warning-policy-transmission",
+      "title": "EU—CPTPP供应链预警网络从宣布走向运行条款：政策信号可跟踪，尚未形成电池准入约束",
+      "thesis": "研判：新增政府间预警协调渠道，可用于提前识别潜在跨境材料和物流政策，但自愿且非约束的制度安排不能直接视为贸易限制、补贴或订单变化。投资与供应风险要在后续正式措施落地后按材料、产品、原产地与司法辖区判断。",
+      "why_now": "11月26日欧委会公布网络成立；11月27日英国发布运行条款，补足参与者、信息交换、保密、会议启动及复审规则。原先合作意向现在有可观察的制度安排，但首次会议尚在未来。",
+      "as_of": "2026-11-28",
+      "category": "贸易 / 供应链 / 政策预警",
+      "categories": [
+        "贸易与政策",
+        "地缘与航运",
+        "资源与矿权"
+      ],
+      "tags": [
+        "CPTPP",
+        "欧盟",
+        "供应链预警",
+        "政策阶段",
+        "跨境材料"
+      ],
+      "chain_routes": [
+        "lfp",
+        "nmc",
+        "anode",
+        "ess"
+      ],
+      "chain_node_ids": [
+        "li_carbonate",
+        "li_hydroxide",
+        "ncm_salts",
+        "natural_anode",
+        "synthetic_anode",
+        "ess_ac"
+      ],
+      "related_event_ids": [
+        "eu-cptpp-early-warning-tor-20261127"
+      ],
+      "facts": [
+        {
+          "text": "11月26日网络在河内第二次EU—CPTPP贸易与投资对话启动；欧委会预计首次会议于2027年初举行。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126"
+          ]
+        },
+        {
+          "text": "11月27日运行条款明确论坛自愿、非约束，重大运输冲击和关键物资采购困难可成为讨论事项；除非另有共识，参与并不产生信息共享义务。",
+          "source_ids": [
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "text": "成员以政府专家代表为主，日本任初始CPTPP共同主席一年。信息分享受各方国内规则及保密约束，2027年底前复审。",
+          "source_ids": [
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-26",
+          "event": "欧委会公布网络启动。",
+          "stage": "制度宣布",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126"
+          ]
+        },
+        {
+          "date": "2026-11-27",
+          "event": "英国公布运行条款。",
+          "stage": "运行规则公开；非约束论坛",
+          "source_ids": [
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "date": "2027年初",
+          "event": "预计召开首次会议。",
+          "stage": "未来计划，尚未召开",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126"
+          ]
+        },
+        {
+          "date": "2027年底前",
+          "event": "按条款复审运行情况。",
+          "stage": "未来复审安排",
+          "source_ids": [
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        }
+      ],
+      "material_exposure": [
+        {
+          "material": "碳酸锂、氢氧化锂与镍钴盐",
+          "mechanism": "若未来公开措施涉及某一关键材料、采购来源或运输通道，先匹配实际规格与正极路线，再评估替代加工能力。",
+          "boundary": "本次文件未列出电池材料专属限制、配额或采购资格；镍钴盐不直接进入LFP正极。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "material": "天然及人造石墨负极",
+          "mechanism": "跨区域物流与政策若变化，可能影响加工端及认证后交付的可行性。",
+          "boundary": "网络建立不等于石墨原产地要求已经改变，亦不能证明海外负极认证成功。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "material": "储能系统与动力相关供应链",
+          "mechanism": "只有具体适用的物流、准入或政策措施变化才影响项目采购与交期评估。",
+          "boundary": "没有具体CATL船货、合同、项目损益或订单数据。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        }
+      ],
+      "effect_chain": [
+        {
+          "step": "制度入口",
+          "text": "政府间风险沟通和临时会议形成观察渠道。",
+          "kind": "已披露机制",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "step": "识别实质措施",
+          "text": "区分信息交流与后续具法律效力的规则或明确运营变化。",
+          "kind": "分析方法",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "step": "匹配材料和项目",
+          "text": "将实际措施按材料形态、适用司法辖区、原产地与交付环节映射。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "step": "资本与经营",
+          "text": "只有确认具体适用条件，才比较区域布局、认证、替代供应或物流方案。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        }
+      ],
+      "catl_relevance": [
+        {
+          "dimension": "资源与材料",
+          "point": "将矿产、精炼盐和合格材料作为不同风险节点；不根据论坛成立直接调整供应短缺判断。"
+        },
+        {
+          "dimension": "海外布局",
+          "point": "跟踪正式政策的适用范围与有效日期，识别可能影响市场准入、采购来源和投资布局的实际规则。"
+        },
+        {
+          "dimension": "投后",
+          "point": "可将政府间预警机制纳入公开政策情报源，但不能据此构建声称有内部数据的自动告警。"
+        }
+      ],
+      "counterpoint": "该机制不承担强制信息共享义务且含保密规定，公开信息可能滞后或不足。若仅有会议而没有可验证的新措施，维持材料与市场敞口判断；实际业务影响取决于企业合同、工厂位置及贸易路径。",
+      "watch_signals": [
+        {
+          "indicator": "首会日期及公开议题",
+          "interpretation": "判断机制是否开始实际运作，不能将会议召开等同于贸易措施。",
+          "observation_source": "欧委会贸易与经济安全总司及CPTPP成员政府公告",
+          "frequency": "按官方重大披露；2027年初重点复核",
+          "decision_use": "确认该机制是否值得纳入重点政策源。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "indicator": "具体材料、产品或物流措施的正式法律文件",
+          "interpretation": "区分制度对话与对采购、交付、原产地或准入真正产生约束的规则。",
+          "observation_source": "参与经济体官方法规、监管通告与承运人实际服务公告",
+          "frequency": "重大政策或航线变化时",
+          "decision_use": "按路线和司法辖区匹配敞口；评估区域配置与备选供应。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        }
+      ],
+      "decision_checkpoints": [
+        {
+          "signal": "EU—CPTPP预警网络形成可用公开早期政策信息的能力",
+          "current_reading": "运行条款已发布，但首次会议预计2027年初；自愿与保密规则意味着不能假定全量公开。",
+          "upgrade_when": "后续会议公开具体风险、适用范围及及时可追溯的文件，增强可用性判断。",
+          "downgrade_when": "会议无具体公开输出、信息仅限政府内部或披露持续滞后，削弱其作为公开预警源的价值。",
+          "decision_use": "决定其作为核心政策源还是辅助背景源。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        },
+        {
+          "signal": "网络后续措施对具体电池材料及跨境项目产生实质约束的风险",
+          "current_reading": "两份原文仅确认合作与运行机制，不含针对电池的新增贸易限制。",
+          "upgrade_when": "正式规则或措施明确适用材料、产品、地域和生效条件，增强对应风险判断。",
+          "downgrade_when": "后续仍为非约束交流，或正式措施明确不适用相关产品，削弱由此机制推导的风险判断。",
+          "decision_use": "避免把政府间对话当成采购或布局调整指令。",
+          "source_ids": [
+            "eu-cptpp-early-warning-launch-20261126",
+            "uk-cptpp-eu-early-warning-tor-20261127"
+          ]
+        }
+      ],
+      "management_question": "当某项供应链预警从政府间讨论变成正式规则时，能否准确识别受影响的材料规格、加工路线、实际工厂和交付市场，并区分应对政策变化与尚无证据的风险？",
+      "source_ids": [
+        "eu-cptpp-early-warning-launch-20261126",
+        "uk-cptpp-eu-early-warning-tor-20261127"
+      ],
+      "claimconfidence": {
+        "facts": "高：欧委会启动公告与英国政府公布的运行条款，互相补充；系同一机制，不视为两次独立启动。",
+        "analysis": "条件性政策传导；未证明任何实际企业敞口、订单或新增准入限制。"
+      }
+    },
+    {
       "id": "australia-storage-fid-dispatch-economics",
       "title": "澳洲储能投资加速，但储能本身也会改变电价：大储项目和户储渠道应分开估值",
       "thesis": "研判：CER新报告同时确认大储FID规模扩张和家用电池安装需求；AEMO早期运营统计显示储能参与率上升可压低晚峰价格。对产业投资而言，设备需求与电站收入不是同一变量，需将订单兑现、时段收益、系统责任和渠道经济性拆开。",
@@ -1747,8 +2027,8 @@
     {
       "id": "italy-macse-contracted-demand-system-economics",
       "title": "意大利储能招标扩量降价：收入端承压，系统生命周期成本与交付成为竞争关键",
-      "thesis": "研判：2029年意大利MACSE授予16GWh，比2028年交付轮次的10GWh增加60%，但加权年容量价格降低12%。11月25日BW ESS与A2A披露具体中标组合，需求从市场总量落实到开发商；CATL观察重点应从GWh市场规模推进到采购入口、可用能量保证、融资与交付责任。不能将容量收入价格等同于电池价格或项目收益率。",
-      "why_now": "11月25日新披露的合资项目明确四个中标项目及分工。结合此前一晚Terna公布的第二轮结果，可判断需求有明确授予对象，但尚未证明设备采购和并网兑现。",
+      "thesis": "研判：2029年意大利MACSE授予16GWh，比2028年交付轮次的10GWh增加60%，但加权年容量价格降低12%。11月25日BW ESS与A2A披露具体中标组合，需求从市场总量落实到开发商；CATL观察重点应从GWh市场规模推进到采购入口、可用能量保证、融资与交付责任。不能将容量收入价格等同于电池价格或项目收益率。 补充：11月26日双边物理tolling合同展示了另一条收入组织路径；不能用MACSE清算价直接估算双边合同收益。",
+      "why_now": "11月25日新披露的合资项目明确四个中标项目及分工。结合此前一晚Terna公布的第二轮结果，可判断需求有明确授予对象，但尚未证明设备采购和并网兑现。 本轮补录Zelestra与Statkraft的11月26日原始公告，补足独立于政府招标的双边合同观察口径。",
       "tags": [
         "欧洲储能",
         "MACSE",
@@ -1770,9 +2050,10 @@
       ],
       "related_event_ids": [
         "italy-macse-second-auction-20261124",
-        "bwess-a2a-italy-macse-awards-20261125"
+        "bwess-a2a-italy-macse-awards-20261125",
+        "zelestra-statkraft-italy-tolling-20261126"
       ],
-      "as_of": "2026-11-26",
+      "as_of": "2026-11-28",
       "timeline": [
         {
           "date": "2025-09-30",
@@ -1805,6 +2086,14 @@
           "source_ids": [
             "terna-macse-2029-award-20261124"
           ]
+        },
+        {
+          "date": "2026-11-26",
+          "event": "Zelestra与Statkraft公布八年物理tolling协议。",
+          "stage": "签约；已获许可，2028年投运目标",
+          "source_ids": [
+            "zelestra-statkraft-tolling-20261126"
+          ]
         }
       ],
       "facts": [
@@ -1826,6 +2115,12 @@
           "source_ids": [
             "terna-macse-first-20251013",
             "bwess-a2a-macse-award-20261125"
+          ]
+        },
+        {
+          "text": "Zelestra披露意大利中部175MW/700MWh项目签署八年全容量物理tolling协议，计划2028年投运；开发商建设运营，Statkraft进行市场接入及优化。未公布价格与电池供应商。",
+          "source_ids": [
+            "zelestra-statkraft-tolling-20261126"
           ]
         }
       ],
@@ -1865,6 +2160,15 @@
             "bwess-a2a-macse-award-20261125",
             "terna-macse-first-20251013"
           ]
+        },
+        {
+          "step": "双边合同路径",
+          "text": "与MACSE授予分开跟踪合同权责、项目可融资性与实际设备采购，不假定容量无重叠。",
+          "kind": "条件性研判",
+          "source_ids": [
+            "zelestra-statkraft-tolling-20261126",
+            "esn-italy-bilateral-tolling-20261126"
+          ]
         }
       ],
       "catl_relevance": [
@@ -1881,7 +2185,7 @@
           "point": "区分电芯/直流舱供应、完整AC系统集成、工程交付与项目投资；评估各角色承担的性能、延迟和融资责任。"
         }
       ],
-      "counterpoint": "容量价格下降也可能反映融资成本、其他收入预期、竞标策略或项目配置变化；在没有项目CAPEX、合同及现金流的情况下，不推导利润率、IRR或电池降价幅度。",
+      "counterpoint": "容量价格下降也可能反映融资成本、其他收入预期、竞标策略或项目配置变化；在没有项目CAPEX、合同及现金流的情况下，不推导利润率、IRR或电池降价幅度。 双边合同费率未披露，亦未证明项目容量与MACSE授予量不存在重叠，不将700MWh直接加至16GWh。",
       "material_exposure": [
         {
           "material": "锂离子电芯 / 储能系统",
@@ -1934,6 +2238,17 @@
             "terna-macse-first-20251013",
             "bwess-a2a-macse-award-20261125"
           ]
+        },
+        {
+          "indicator": "双边tolling项目实际融资、采购及可用容量责任",
+          "interpretation": "双边合同为另一种收入组织方式，具体权责和融资结果须后续核实。",
+          "observation_source": "Zelestra等开发商、承购方及后续融资、设备合同公开披露",
+          "frequency": "重大里程碑",
+          "decision_use": "比较合同收益结构、系统性能保障与合作模式。",
+          "source_ids": [
+            "zelestra-statkraft-tolling-20261126",
+            "esn-italy-bilateral-tolling-20261126"
+          ]
         }
       ],
       "decision_checkpoints": [
@@ -1958,17 +2273,30 @@
             "terna-macse-2029-award-20261124",
             "terna-macse-first-20251013"
           ]
+        },
+        {
+          "signal": "双边储能合同为意大利项目提供可执行融资与系统需求的能力",
+          "current_reading": "700MWh项目公告八年合同，尚未公布融资关闭及设备采购情况。",
+          "upgrade_when": "实际融资关闭、具有约束力的采购及工程进度支持项目兑现，增强判断。",
+          "downgrade_when": "取消、延期、融资未落实或容量缩减，削弱判断。",
+          "decision_use": "分别评估MACSE与双边项目，不能以容量价替代tolling价格。",
+          "source_ids": [
+            "zelestra-statkraft-tolling-20261126",
+            "esn-italy-bilateral-tolling-20261126"
+          ]
         }
       ],
       "management_question": "对意大利长时锂离子储能项目，如何在已授予的容量收入约束下，选择电芯、直流舱或AC系统合作入口，并用可用能量和履约成本验证竞争力？",
       "source_ids": [
         "terna-macse-2029-award-20261124",
         "bwess-a2a-macse-award-20261125",
-        "terna-macse-first-20251013"
+        "terna-macse-first-20251013",
+        "zelestra-statkraft-tolling-20261126",
+        "esn-italy-bilateral-tolling-20261126"
       ],
       "claimconfidence": {
         "facts": "高：Terna原始公告、机制说明与中标方联合公告；两家独立发布主体，联合公告镜像不重复计数。",
-        "analysis": "条件性经营研判；无CATL供应关系、项目利润率或报价数据。"
+        "analysis": "条件性经营研判；无CATL供应关系、项目利润率或报价数据。 双边合同项目事实为联合披露，产业媒体用于理解市场背景，不作为独立性能或交付验证。"
       }
     },
     {
@@ -2205,10 +2533,10 @@
     },
     {
       "id": "copper-price-foil-conversion-working-capital",
-      "title": "铜价先跌后反弹怎样进入电池成本：金属基价、加工费与定价时点需分开",
-      "thesis": "研判：铜现金参考价25日回落、26日反弹，说明短期价格方向不稳定。金属基价可以影响后续铜箔采购，但加工费、规格、合同窗口、资金占用决定传导幅度与速度；不能从一天行情推导已签电池或储能系统的成本变化。",
-      "why_now": "Cochilco 11月26日同口径铜价较前日报价反弹2.24%，仍低于24日；这削弱由25日下跌直接推导持续降本的判断，但没有改变铜箔加工费和定价窗口的结构机制。",
-      "as_of": "2026-11-27",
+      "title": "铜价连续两次反弹怎样进入电池成本：金属基价、加工费与定价时点需分开",
+      "thesis": "研判：25日回落后，26、27日铜现金参考价连续反弹，27日已高于24日观察值。短期金属降价的证据进一步削弱；实际采购仍取决于加工费、规格与合同窗口，不能从四个交易日推断长期趋势或电池总成本。",
+      "why_now": "27日Cochilco LME现金铜参考价12,311.5美元/吨，较26日+2.90%，较24日+2.30%。这改变四日净方向，不证明持续短缺；铝、镍亦保留各自实值及口径。",
+      "as_of": "2026-11-28",
       "categories": [
         "原材料",
         "供需平衡"
@@ -2240,7 +2568,8 @@
         "cochilco-copper-weekly-20261120",
         "cochilco-metals-daily-20261125",
         "jiayuan-copper-foil-pricing-20260421",
-        "cochilco-metals-daily-20261126"
+        "cochilco-metals-daily-20261126",
+        "cochilco-metals-daily-20261127"
       ],
       "facts": [
         {
@@ -2267,6 +2596,14 @@
           "source_ids": [
             "cochilco-daily-20261126",
             "cochilco-daily-20261125",
+            "cochilco-daily-20261124"
+          ]
+        },
+        {
+          "text": "11月27日铜12,311.5美元/吨、铝2,983、镍15,745；铜价已超过24日12,035。铝原表日变动+0.10%与26日2,975及27日2,983的实值计算+0.27%不一致，按实值比较。",
+          "source_ids": [
+            "cochilco-daily-20261127",
+            "cochilco-daily-20261126",
             "cochilco-daily-20261124"
           ]
         }
@@ -2306,6 +2643,14 @@
           "stage": "新日报观察",
           "source_ids": [
             "cochilco-daily-20261126"
+          ]
+        },
+        {
+          "date": "2026-11-27",
+          "event": "铜现金参考价再次升至12,311.5美元/吨，高于24日。",
+          "stage": "实际报价观察；非长期趋势",
+          "source_ids": [
+            "cochilco-daily-20261127"
           ]
         }
       ],
@@ -2397,7 +2742,8 @@
           "decision_use": "识别需要复核采购定价窗口的价格变化，不直接判定短缺或过剩。",
           "source_ids": [
             "cochilco-daily-20261125",
-            "cochilco-daily-20261126"
+            "cochilco-daily-20261126",
+            "cochilco-daily-20261127"
           ]
         },
         {
@@ -2427,7 +2773,8 @@
         "cochilco-daily-20261124",
         "cochilco-daily-20261125",
         "jiayuan-annual-2025",
-        "cochilco-daily-20261126"
+        "cochilco-daily-20261126",
+        "cochilco-daily-20261127"
       ],
       "claimconfidence": {
         "facts": "高：政府公开价格汇编与上市公司原始年报；价格保留真实观察日",
@@ -2436,7 +2783,7 @@
       "decision_checkpoints": [
         {
           "signal": "金属降价传到合格铜箔采购成本",
-          "current_reading": "11月24日12,035、25日11,703、26日11,965美元/吨：短期回升削弱持续基价下降的证据，但加工费和采购窗口仍决定实际传导。",
+          "current_reading": "11月24日12,035、25日11,703、26日11,965、27日12,311.5美元/吨。此前短期基价下降依据进一步削弱；实际采购降本还须核对加工费与合同窗口。",
           "upgrade_when": "金属价格变化持续，且实际适用品种的加工费和采购定价窗口支持传导，才增强箔材成本下降的判断。",
           "downgrade_when": "加工费、产品结构、定价时差或认证要求抵消金属降价时，削弱直接降本判断。",
           "decision_use": "分别观察金属基价、加工价值与采购时间窗口；采购端结论还需内部合同。",
@@ -2444,7 +2791,8 @@
             "cochilco-daily-20261124",
             "cochilco-daily-20261125",
             "jiayuan-annual-2025",
-            "cochilco-daily-20261126"
+            "cochilco-daily-20261126",
+            "cochilco-daily-20261127"
           ]
         },
         {
